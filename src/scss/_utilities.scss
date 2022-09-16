@@ -1,0 +1,185 @@
+@each $name,
+  $value
+    in map-merge-multiple(
+      $color-blues,
+      $color-yellows,
+      $color-greens,
+      $color-purples,
+      $color-teals,
+      $color-reds,
+      $color-neutrals
+    )
+{
+  .text-#{$name} {
+    color: $value !important;
+  }
+  .bg-#{$name} {
+    background-color: $value !important;
+  }
+  .border-#{$name} {
+    --#{$prefix}border-color: #{$value};
+    border-color: $value !important;
+  }
+}
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "align": (
+      property: vertical-align,
+      class: align,
+      values: baseline top middle bottom text-bottom text-top sub super,
+    ),
+    "border-style": (
+      property: border-style,
+      css-var: true,
+      css-variable-name: border-style,
+      class: border,
+      values: solid dashed dotted double hidden none,
+    ),
+    "font-size": (
+      rfs: true,
+      property: font-size,
+      class: fs,
+      values:
+        map-merge(
+          $font-sizes,
+          (
+            xs: 0.75rem,
+            sm: 0.875rem,
+          )
+        ),
+    ),
+    "rounded":
+      map-merge(
+        map-get($utilities, "rounded"),
+        (
+          values:
+            map-merge(
+              $border-radius-values,
+              (
+                circle: 50%,
+                pill: $border-radius-pill,
+              )
+            ),
+        )
+      ),
+    "rounded-top":
+      map-merge(
+        map-get($utilities, "rounded-top"),
+        (
+          values: $border-radius-values,
+        )
+      ),
+    "rounded-end":
+      map-merge(
+        map-get($utilities, "rounded-end"),
+        (
+          values: $border-radius-values,
+        )
+      ),
+    "rounded-bottom":
+      map-merge(
+        map-get($utilities, "rounded-bottom"),
+        (
+          values: $border-radius-values,
+        )
+      ),
+    "rounded-start":
+      map-merge(
+        map-get($utilities, "rounded-start"),
+        (
+          values: $border-radius-values,
+        )
+      ),
+    "text-align":
+      map-merge(
+        map-get($utilities, "text-align"),
+        (
+          values: (
+            start: left,
+            end: right,
+            center: center,
+            justify: justify,
+          ),
+        )
+      ),
+    "text-decoration":
+      map-merge(
+        map-get($utilities, "text-decoration"),
+        (
+          values: none underline line-through overline,
+        )
+      ),
+    "z-index": (
+      property: z-index,
+      class: z,
+      values: (
+        0,
+        10,
+        20,
+        30,
+        40,
+        50,
+        auto,
+      ),
+    ),
+    "overflow": (
+      property: overflow,
+      values: auto hidden visible scroll,
+    ),
+    "overflow-x": (
+      property: overflow-x,
+      values: auto hidden visible scroll,
+    ),
+    "overflow-y": (
+      property: overflow-y,
+      values: auto hidden visible scroll,
+    ),
+    "clear": (
+      responsive: true,
+      property: clear,
+      values: (
+        start: left,
+        end: right,
+        both: both,
+        none: none,
+      ),
+    ),
+    "letter-spacing": (
+      property: letter-spacing,
+      class: ls,
+      values: (
+        tighter: -0.05em,
+        tight: -0.025em,
+        normal: 0em,
+        wide: 0.025em,
+        wider: 0.05em,
+        widest: 0.1em,
+      ),
+    ),
+    "order":
+      map-merge(
+        map-get($utilities, "order"),
+        (
+          values: (
+            first: -9999,
+            0: 0,
+            1: 1,
+            2: 2,
+            3: 3,
+            4: 4,
+            5: 5,
+            6: 6,
+            7: 7,
+            8: 8,
+            9: 9,
+            10: 10,
+            11: 11,
+            12: 12,
+            last: 9999,
+          ),
+        )
+      ),
+  )
+);

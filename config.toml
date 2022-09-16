@@ -1,0 +1,21 @@
+baseURL = "https://fastbootstrap.com"
+languageCode = "en"
+title = "Fast Bootstrap: Bootstrap UI Components with Atlassian Design"
+
+enableRobotsTXT = true
+disableKinds = ["404", "taxonomy", "term", "RSS"]
+
+publishDir = "_site"
+enableInlineShortcodes = true
+
+[params]
+description = "Atlassian Design for Bootstrap 5. Powerful and free UI Kits for Bootstrap with Atlassian Design."
+page_title_suffix = "Fast Bootstrap"
+github_org = "https://github.com/fastbootstrap"
+repo = "https://github.com/fastbootstrap/atlassian-design-for-bootstrap"
+
+[params.cdn]
+css = "css"
+css_hash = "css_hash"
+js = "js"
+js_hash = "js_hash"

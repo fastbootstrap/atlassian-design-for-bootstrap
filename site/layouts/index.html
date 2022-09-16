@@ -1,0 +1,201 @@
+{{ define "main" }}
+  <main>
+    {{ template "home/hero" $ }}
+    {{ template "home/features" $ }}
+  </main>
+{{ end }}
+
+{{ define "home/hero" }}
+  <section class="my-6 my-lg-7">
+    <div class="container">
+      <h2 class="fs-6 fw-bolder text-center text-md-start text-secondary mb-3">Atlassian Design for Bootstrap v5</h2>
+      <div class="row gx-lg-6">
+        <div class="col-md-6 text-center text-md-start">
+          <h1 class="display-5 fw-bolder mb-4 lh-1">Build modern websites with beautiful UI components</h1>
+          <p class="fs-4 mb-3 mb-md-4 pe-lg-4 text-neutral-500">
+            FastBootstrap is a free, open source frontend framework that provides beautifully crafted components and utility-first CSS, built on Bootstrap and Atlassian Design. The perfect starting point for your next project.
+          </p>
+          <div class="d-flex align-items-center mb-3 mb-md-4"><input class="form-check-input form-check-input-lg pe-none border-green-300 bg-green-300" type="checkbox" checked /> <span class="fw-bold fs-5 text-green-300 ms-2">100% compatibility with Bootstrap</span></div>
+          <a class="btn btn-primary btn-lg fs-sm" href="/docs" role="button">Get Started</a>
+        </div>
+        <div class="col-md-6 d-none d-md-block">
+          <div class="mb-4">
+            <ol class="progress-tracker">
+              <li class="progress-tracker-item completed">
+                <span class="progress-tracker-label"><i class="fa-regular fa-circle-check text-blue-300"></i> First Step</span>
+              </li>
+              <li class="progress-tracker-item completed">
+                <span class="progress-tracker-label"><i class="fa-regular fa-circle-check text-blue-300"></i> Second Step</span>
+              </li>
+              <li class="progress-tracker-item active">
+                <span class="progress-tracker-label"><i class="fa-solid fa-circle-half-stroke text-blue-300"></i> Step 3</span>
+              </li>
+              <li class="progress-tracker-item w-auto text-nowrap">
+                <span class="progress-tracker-label">Step 4</span>
+              </li>
+            </ol>
+            <div class="my-4 d-flex align-items-start justify-content-end gap-5">
+              <div class="col-5 d-flex flex-column justify-content-end pb-2">
+                <div class="my-3 d-flex align-items-center justify-content-end gap-3">
+                  <span class="badge bg-red-50 text-red-500">-100</span>
+                  <span class="lozenge lozenge-success">Success</span>
+                  <span class="badge text-bg-primary">5K</span>
+                </div>
+                <div class="my-3 d-flex align-items-center justify-content-end">
+                  <input class="form-check-input me-3" type="checkbox" value="" checked />
+                  <div class="form-check form-switch form-switch-lg d-inline-block">
+                    <input class="form-check-input" type="checkbox" role="switch" />
+                  </div>
+                  <div class="form-check form-switch form-switch-lg d-inline-block">
+                    <input class="form-check-input" type="checkbox" role="switch" checked />
+                  </div>
+                </div>
+                <div class="btn-toolbar justify-content-end my-3" role="toolbar">
+                  <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked />
+                    <label class="btn btn-default" for="btnradio1"><i class="fa-solid fa-align-left"></i></label>
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" />
+                    <label class="btn btn-default" for="btnradio2"><i class="fa-solid fa-align-center"></i></label>
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" />
+                    <label class="btn btn-default" for="btnradio3"><i class="fa-solid fa-align-right"></i></label>
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio4" disabled autocomplete="off" />
+                    <label class="btn btn-default" for="btnradio4"><i class="fa-solid fa-align-justify"></i></label>
+                  </div>
+                </div>
+                <div class="my-3 text-end">
+                  <button class="btn btn-primary" type="button">Button</button>
+                  <button class="btn btn-primary active">Selected</button>
+                </div>
+                <div class="text-end">
+                  <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Hello Bootstrap!">Tooltip</a>
+                </div>
+              </div>
+              <div class="col-7">
+                <ul class="list-group border w-100">
+                  <li class="list-group-item d-flex justify-content-between align-items-center border-bottom py-3">
+                    <div class="d-flex align-items-center">
+                      <img class="avatar avatar-lg" src="/images/avatar/1.jpg" alt="" />
+                      <div class="ms-3 fs-sm">
+                        <p class="fw-semibold mb-0">John Doe</p>
+                        <p class="text-muted mb-0 fs-sm">@hotmail</p>
+                      </div>
+                    </div>
+                    <button class="btn btn-outline-primary btn-sm" type="button">View</button>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center border-bottom py-3">
+                    <div class="d-flex align-items-center">
+                      <img class="avatar avatar-lg" src="/images/avatar/3.jpg" alt="" />
+                      <div class="ms-3 fs-sm">
+                        <p class="fw-semibold mb-0">Alex Ray</p>
+                        <p class="text-muted mb-0">@gmail</p>
+                      </div>
+                    </div>
+                    <button class="btn btn-outline-primary btn-sm" type="button">View</button>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center border-bottom py-3">
+                    <div class="d-flex align-items-center">
+                      <img class="avatar avatar-lg" src="/images/avatar/5.jpg" alt="" />
+                      <div class="ms-3 fs-sm">
+                        <p class="fw-semibold mb-0">Kate Hunington</p>
+                        <p class="text-muted mb-0 fs-sm">@example</p>
+                      </div>
+                    </div>
+                    <button class="btn btn-outline-primary btn-sm" type="button">View</button>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-center align-items-center">
+                    <a href="#" class="btn btn-link">View All</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="alert alert-success alert-dismissible">
+              Check out this library!
+              <button type="button" class="btn-close pe-none" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </div>
+  </section>
+{{ end }}
+
+{{ define "home/features" }}
+  <section class="py-5 py-lg-8 bg-neutral-30">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card bd-card h-100">
+            <div class="card-body p-4 p-lg-5">
+              <div class="card-title d-flex align-items-center mb-3">
+                <span class="avatar avatar-sm rounded bg-green-200 text-white me-2 lh-1 fw-bold font-monospace">C</span>
+                <h3 class="fs-4 fw-normal mb-0">Components</h3>
+              </div>
+              <p class="card-text text-neutral-300 pe-5">Over 40+ professionally designed, expertly crafted components and 300+ UI elements ready for your next project.</p>
+              <a class="stretched-link" href="/components">Explore components</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bd-card h-100">
+            <div class="card-body p-4 p-lg-5">
+              <div class="card-title d-flex align-items-center mb-3">
+                <span class="avatar avatar-sm rounded bg-blue-200 text-white me-2 lh-1 fw-bold font-monospace">A</span>
+                <h3 class="fs-4 fw-normal mb-0">Atlassian Design</h3>
+              </div>
+              <p class="card-text text-neutral-300 pe-5">Atlassian design is a design system developed by Atlassian which to create simple, intuitive and beautiful experiences.</p>
+              <a class="stretched-link" href="/docs/atlassian-design">Get atlassian design</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bd-card h-100">
+            <div class="card-body p-4 p-lg-5">
+              <div class="card-title d-flex align-items-center mb-3">
+                <span class="avatar avatar-sm rounded bg-yellow-200 text-white me-2 lh-1 fw-bold font-monospace">F</span>
+                <h3 class="fs-4 fw-normal mb-0">Free & Open Source</h3>
+              </div>
+              <p class="card-text text-neutral-300 pe-5">For free, open souce under MIT license, contribute by the community.</p>
+              <a class="stretched-link" href="{{ .Site.Params.repo }}">Open souce on Github</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}
+{{ define "home/component" }}
+  <section class="mt-9 mt-lg-11">
+    <div class="container">
+      <h2 class="text-primary fw-semibold mb-3 fs-6">New Components</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 class="display-6 lh-1 fw-bold mb-3">Beautifully UI components</h3>
+          <p class="pe-md-3">Over 40+ professionally designed, expertly crafted component ready for your next project</p>
+          <a class="text-decoration-underline" href="/components">Browse all components</a>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}
+
+{{ define "home/design" }}
+  <div class="mt-9 mt-lg-11">
+    <div class="container">
+      <h2 class="text-primary fw-semibold mb-3 fs-6">Design System</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <h2 class="text-primary fw-semibold mb-3 fs-6">Design System</h2>
+          <h3 class="display-6 lh-1 fw-bold">From Atlassian Design</h3>
+          <p>Atlassian design is a design system developed by Atlassian which to create simple, intuitive and beautiful experiences.</p>
+          <p>
+            <a class="text-decoration-underline" href="/design">Learn more <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+{{ end }}
+
+{{ define "footer" }}
+  {{ partial "footer" $ }}
+{{ end }}

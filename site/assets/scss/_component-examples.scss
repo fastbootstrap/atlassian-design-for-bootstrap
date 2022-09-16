@@ -1,0 +1,137 @@
+.bd-example {
+  position: relative;
+  padding: 1rem;
+  margin-top: 1rem;
+  border: 1px solid $border-color;
+  ///border-bottom: none;
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+
+  @include media-breakpoint-up(lg) {
+    padding: 1.5rem;
+  }
+
+  & > :last-child {
+    //margin-bottom: 0;
+  }
+}
+
+.bd-code-snippet {
+  padding: 1rem !important;
+  margin-bottom: 1rem !important;
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+
+  @include media-breakpoint-up(lg) {
+    padding: 1.5rem !important;
+  }
+}
+
+.custom-tooltip {
+  --bs-tooltip-bg: var(--bs-primary);
+}
+
+.custom-tooltip-secondary {
+  --bs-tooltip-bg: var(--bs-secondary);
+}
+
+.bd-example-card {
+  & > .card {
+    max-width: 346px;
+  }
+}
+
+.bd-example-grid [class^="col"] {
+  border: 1px solid $teal-75;
+  padding: 0.75rem;
+  background-color: $teal-50;
+}
+
+.bd-example-row {
+  [class^="col"] {
+    border: 1px solid $teal-75;
+    padding: 0.75rem;
+    background-color: $teal-50;
+  }
+
+  .row + .row {
+    margin-top: 1rem;
+  }
+}
+
+.bd-example-row-flex-cols {
+  .row {
+    min-height: 10rem;
+  }
+}
+
+.bd-example-cssgrid {
+  .grid > * {
+    border: 1px solid $teal-75;
+    padding: 0.75rem;
+    background-color: $teal-50;
+  }
+}
+
+.bd-example-flex {
+  div {
+    border: 1px solid $teal-75;
+    background-color: $teal-50;
+  }
+}
+
+.bd-example-position-utils {
+  position: relative;
+  padding: 2rem;
+
+  .position-relative {
+    height: 200px;
+    background-color: $neutral-50;
+  }
+
+  .position-absolute {
+    width: 2rem;
+    height: 2rem;
+    background-color: $neutral-900;
+    border-radius: 0.375rem;
+  }
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  text-anchor: middle;
+}
+
+.bd-example-position-examples {
+  &::after {
+    display: none;
+  }
+}
+
+.simple-list-example-scrollspy .active {
+  background-color: $purple-50;
+}
+
+.bd-example-carousel {
+  .carousel-item > img {
+    max-height: 480px;
+  }
+}
+
+.bd-example-list-group {
+  .list-group {
+    width: 100%;
+    max-width: 360px;
+    background-color: #fff;
+  }
+}
+
+.bd-example-modal-static {
+  .modal {
+    display: block;
+    position: static;
+  }
+}

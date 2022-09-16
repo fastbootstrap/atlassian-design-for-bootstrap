@@ -1,0 +1,29 @@
+.form-switch {
+  .form-check-input {
+    height: $form-switch-height;
+    border-color: transparent !important;
+    border-width: 1px;
+    background-color: $form-switch-bg-color;
+    cursor: pointer;
+
+    &:checked {
+      background-color: $green-400;
+      background-image: escape-svg($form-switch-checked-bg-image) !important;
+    }
+
+    &[disabled],
+    &:disabled {
+      opacity: $form-switch-disabled-opacity;
+    }
+  }
+}
+
+.form-switch-lg {
+  padding-left: $form-switch-padding-start-lg * 1;
+
+  .form-check-input {
+    width: $form-switch-width-lg;
+    height: $form-switch-height-lg;
+    margin-left: $form-switch-padding-start-lg * -1;
+  }
+}

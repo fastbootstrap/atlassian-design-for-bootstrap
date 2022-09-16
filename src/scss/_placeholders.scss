@@ -1,0 +1,49 @@
+.placeholder {
+  position: relative;
+  background-color: $placeholder-bg-color;
+  border-radius: $border-radius;
+  overflow: hidden;
+
+  &.placeholder-glow {
+    animation: placeholder-glow 2s ease-in-out infinite;
+  }
+}
+
+.placeholder-wave {
+  -webkit-mask-image: none; // disabled bootstrap behavior.
+  mask-image: none; // disabled bootstrap behavior.
+}
+
+.placeholder-wave {
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: $border-radius;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba($neutral-900, 0.04),
+      transparent
+    );
+    animation: animate-placeholder-wave 1.6s linear 0.5s infinite;
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes animate-placeholder-wave {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}

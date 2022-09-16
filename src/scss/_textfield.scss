@@ -1,0 +1,82 @@
+.form-control {
+  &:hover {
+    background-color: $input-hover-bg;
+  }
+
+  &:focus-visible {
+    background-color: $input-focus-bg;
+    border-color: $input-focus-border-color;
+  }
+
+  &:disabled {
+    &:hover {
+      background-color: $input-disabled-bg;
+      border-color: $input-disabled-border-color;
+    }
+  }
+
+  &::placeholder {
+    color: $input-placeholder-color;
+  }
+}
+
+.form-control-color {
+  height: $form-color-height;
+  padding: 1px;
+  line-height: 1;
+  border: $input-border-width solid transparent;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  &:hover {
+    border-color: $input-focus-border-color;
+  }
+
+  &::-moz-color-swatch {
+    height: $form-color-width;
+    border-color: transparent;
+  }
+
+  &::-webkit-color-swatch {
+    height: $form-color-width;
+    border-color: transparent;
+  }
+
+  &::-webkit-color-swatch-wrapper {
+    height: $form-color-width;
+    border-radius: $input-border-radius;
+    line-height: 1;
+    overflow: hidden;
+  }
+}
+
+.input-field {
+  position: relative;
+
+  .input-field-leading {
+    position: absolute;
+    left: $input-btn-padding-x;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+
+    & ~ .form-control {
+      padding-left: ($input-btn-padding-x * 2.5);
+    }
+  }
+
+  .input-field-trailing {
+    position: absolute;
+    right: $input-btn-padding-x;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+
+    & ~ .form-control {
+      padding-right: ($input-btn-padding-x * 2.5);
+    }
+  }
+}

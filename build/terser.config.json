@@ -1,0 +1,9 @@
+{
+  "compress": {
+    "passes": 2
+  },
+  "format": {
+    "comments": "/^!/"
+  },
+  "sourceMap":{}
+}

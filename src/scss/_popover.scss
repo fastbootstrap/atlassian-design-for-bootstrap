@@ -1,0 +1,13 @@
+.popover {
+  box-shadow: $popover-box-shadow;
+}
+
+.popover-header {
+  border-bottom: none;
+  padding-bottom: 0.5rem;
+  font-weight: $font-weight-semibold;
+}
+
+.popover-header + .popover-body {
+  padding-top: 0;
+}

@@ -1,0 +1,89 @@
+{{ if .Inner }}{{ end }}
+
+{{ $id := .Get 0 }}
+{{ $group := printf "tabs-%s" $id }}
+
+
+<div class="nav nav-tabs bg-light doc-tabs" role="tablist">
+  <div class="container">
+    <div class="d-flex flex-row gap-3">
+      {{ range $index, $tab :=  .Scratch.Get $group }}
+        {{ $is_active := eq $index 0 }}
+        <button class="btn nav-link {{ if $is_active }}active{{ end }}" data-bs-toggle="tab" data-bs-target="#tabpanel-{{ $index }}" role="tab" aria-selected="{{ if $is_active }}true{{ else }}false{{ end }}">
+          {{ $tab.name }}
+        </button>
+      {{ end }}
+    </div>
+  </div>
+</div>
+
+<div class="doc-contents pt-5 pb-5 pb-lg-6">
+  <div class="container">
+    <div class="tab-content" id="tab-content">
+      {{ range $index, $tab :=  .Scratch.Get $group }}
+        {{ $is_active := eq $index 0 }}
+        {{ $content := $tab.content | $.Page.RenderString  }}
+
+        <div class="tab-pane {{ if $is_active }}active{{ end }}" id="tabpanel-{{ $index }}" role="tabpanel">
+          <div class="d-flex flex-column flex-lg-row-reverse justify-content-lg-end gap-xl-6">
+            {{ if (eq $.Page.Params.toc true) }}
+              <div class="doc-nav align-self-start d-none d-xl-flex flex-column fs-sm">
+                <span class="fw-semibold fs-xs text-uppercase">Contents</span>
+                <div class="doc-nav-content position-relative mt-2" id="doc-nav-{{ $index }}">
+                  {{ $headers := findRE "<h[2-3].*?>(.|\n])+?</h[2-3]>" $content }}
+                  {{ $toc := slice }}
+                  {{ $last_level := 2 }}
+
+                  {{ range $headers }}
+                    {{ $header := . }}
+                    {{ $anchorId := ($header | plainify | htmlUnescape | anchorize) }}
+                    {{ $href := printf "#%s" $anchorId }}
+                    {{ $text := $header | plainify | htmlUnescape }}
+                    {{ $item := dict "title" $text "href" $href "items" slice }}
+
+                    {{ $next_level  := int (index (findRE "[2-3]" $header) 0) }}
+                    {{ if eq $next_level 2 }}
+                      {{ $toc = $toc | append $item }}
+                    {{ else if eq $next_level 3 }}
+                      {{ $last_toc := index (last 1 $toc ) 0 }}
+                      {{ $last_toc_items := $last_toc.items | append $item }}
+                      {{ $last_toc = merge $last_toc (dict "items" $last_toc_items) }}
+
+                      {{ $new_toc := first (sub (len $toc ) 1) $toc }}
+                      {{ $toc = $new_toc | append $last_toc }}
+                    {{ end }}
+                  {{ end }}
+
+
+                  <nav id="TableOfContents">
+                    {{ with $toc }}
+                      <ul>
+                        {{ range . }}
+                          <li>
+                            <a href="{{ .href }}">{{ .title }}</a>
+                            {{ with .items }}
+                              <ul>
+                                {{ range . }}
+                                  <li><a href="{{ .href }}">{{ .title }}</a></li>
+                                {{ end }}
+                              </ul>
+                            {{ end }}
+                          </li>
+                        {{ end }}
+                      </ul>
+                    {{ end }}
+                  </nav>
+                </div>
+              </div>
+            {{ end }}
+
+
+            <div class="doc-content d-flex flex-grow-1 flex-column" data-bs-spy="scroll" data-bs-target="#doc-nav-{{ $index }}" data-bs-smooth-scroll="true" tabindex="0">
+              {{ $content }}
+            </div>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</div>

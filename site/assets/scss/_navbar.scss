@@ -1,0 +1,97 @@
+.header-navbar {
+  height: $navbar-height;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    top: 100%;
+    right: 0px;
+    left: 0px;
+    background: linear-gradient(
+      rgba(9, 30, 66, 0.13) 0px,
+      rgba(9, 30, 66, 0.13) 1px,
+      rgba(9, 30, 66, 0.08) 1px,
+      rgba(9, 30, 66, 0) 4px
+    );
+  }
+
+  .navbar-brand {
+    &:hover,
+    &:focus {
+      background-color: rgba($blue-50, 0.9);
+    }
+  }
+
+  .navbar-toggler {
+    padding: 0;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .navbar-nav {
+    height: $navbar-height;
+    flex-grow: 1;
+    align-items: center;
+
+    .nav-item {
+      position: relative;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 6px;
+      margin-right: 6px;
+
+      @include media-breakpoint-up(xl) {
+        margin-left: 12px;
+        margin-right: 12px;
+      }
+
+      &.active {
+        .nav-link {
+          color: $blue-400;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 6px;
+          right: 6px;
+          height: 3px;
+          background-color: $blue-400;
+          border-top-left-radius: 1px;
+          border-top-right-radius: 1px;
+        }
+      }
+    }
+
+    .nav-link {
+      color: $neutral-600;
+      line-height: 1.15;
+      padding: 8px 6px !important;
+
+      &:hover {
+        color: $blue-400;
+        text-decoration: none;
+        background-color: rgba($blue-50, 0.9);
+      }
+
+      &:focus {
+        color: $blue-400;
+        background-color: transparent;
+      }
+    }
+
+    .navbar-nav-svg {
+      display: inline-block;
+    }
+  }
+}
+
+.brand-img {
+  fill: $brand-color;
+}

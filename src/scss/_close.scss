@@ -1,0 +1,21 @@
+.btn-close {
+  background: transparent escape-svg($btn-close-bg) center no-repeat;
+
+  .offcanvas-header &,
+  .modal-header & {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.btn-close-lg {
+  height: 1.5rem !important;
+  width: 1.5rem !important;
+}
+
+.btn-close-sm {
+  height: 0.75rem !important;
+  width: 0.75rem !important;
+}

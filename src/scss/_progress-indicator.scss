@@ -1,0 +1,56 @@
+.progress-indicator {
+  --progress-indicator-bg: #{$neutral-50};
+  --progress-indicator-active-bg: #{$neutral-900};
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+  & > * {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    margin-left: 4px;
+    margin-right: 4px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--progress-indicator-bg);
+    text-indent: -999px;
+    @include transition(all 0.25s ease);
+    cursor: pointer;
+
+    &.active {
+      background-color: var(--progress-indicator-active-bg);
+    }
+  }
+}
+
+.progress-indicator-sm {
+  & > * {
+    width: 4px;
+    height: 4px;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+}
+
+.progress-indicator-lg {
+  & > * {
+    width: 12px;
+    height: 12px;
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+}
+
+.progress-indicator-primary {
+  --progress-indicator-bg: #{$blue-75};
+  --progress-indicator-active-bg: #{$blue-400};
+}
+
+.progress-indicator-secondary {
+  --progress-indicator-bg: #{$purple-75};
+  --progress-indicator-active-bg: #{$purple-400};
+}

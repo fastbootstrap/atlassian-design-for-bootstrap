@@ -1,0 +1,27 @@
+- name: primary
+  hex: "#0052cc"
+  rgb: "0, 82, 204"
+- name: secondary
+  hex: "#5243AA"
+  rgb: "82, 67, 170"
+- name: success
+  hex: "#00875A"
+  rgb: "0, 135, 90"
+- name: danger
+  hex: "#DE350B"
+  rgb: "222, 53, 11"
+- name: warning
+  hex: "#FFAB00"
+  rgb: "255, 171, 0"
+  contrast_color: dark
+- name: info
+  hex: "#42526E"
+  rgb: "66, 82, 110"
+  contrast_color: dark
+- name: light
+  hex: "#FAFBFC"
+  rgb: "250, 251, 252"
+  contrast_color: dark
+- name: dark
+  hex: "#091E42"
+  rgb: "9, 30, 66"

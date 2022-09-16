@@ -1,0 +1,21 @@
+{
+  "overrides": [
+    {
+      "files": ["*.html"],
+      "options": {
+        "parser": "go-template",
+        "goTemplateBracketSpacing": true,
+        "bracketSameLine": true,
+        "proseWrap": "never",
+        "printWidth": 220
+      }
+    },
+    {
+      "files": "*.js",
+      "options": {
+        "singleQuote": true,
+        "printWidth": 1000
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{{ hugo.Generator }}
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+{{ if .Param "noindex" }}
+  <meta name="robots" content="noindex" />
+{{ end }}
+<link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}" type="image/x-icon" />
+
+{{ partialCached "sections/head-src.html" . "-" }}

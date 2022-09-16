@@ -1,0 +1,63 @@
+.spinner-spin {
+  --#{$prefix}spinner-width: #{$spinner-width};
+  --#{$prefix}spinner-height: #{$spinner-height};
+
+  width: var(--#{$prefix}spinner-width);
+  height: var(--#{$prefix}spinner-height);
+  display: inline-flex;
+  vertical-align: middle;
+  animation: spinner-spin-keyframe 0.86s cubic-bezier(0.4, 0.15, 0.6, 0.85)
+    infinite;
+  transform-origin: center center;
+
+  & > svg {
+    width: 100%;
+    height: 100%;
+    animation: spinner-spin-rotate-keyframe 1s ease-in-out 1 forwards;
+
+    circle {
+      stroke: currentColor;
+      fill: none;
+      stroke-dasharray: 60;
+      stroke-dashoffset: inherit;
+      stroke-linecap: round;
+      stroke-width: 1.5;
+    }
+  }
+}
+
+@keyframes spinner-spin-keyframe {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner-spin-rotate-keyframe {
+  0% {
+    transform: rotate(50deg);
+    opacity: 0;
+    stroke-dashoffset: 60;
+  }
+
+  100% {
+    transform: rotate(230deg);
+    opacity: 1;
+    stroke-dashoffset: 50;
+  }
+}
+
+.spinner-spin-sm {
+  --#{$prefix}spinner-width: #{$spinner-width-sm};
+  --#{$prefix}spinner-height: #{$spinner-height-sm};
+}
+
+.spinner-spin-lg,
+.spinner-grow-lg,
+.spinner-border-lg {
+  --#{$prefix}spinner-width: #{$spinner-width-lg};
+  --#{$prefix}spinner-height: #{$spinner-height-lg};
+}
+
+.spinner-border-lg {
+  --#{$prefix}spinner-border-width: #{$spinner-border-width-lg};
+}

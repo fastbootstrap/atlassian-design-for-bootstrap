@@ -1,0 +1,22 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+@import "../../../src/scss/variables";
+
+// Load docs components
+@import "variables";
+@import "navbar";
+@import "sidebar";
+@import "codebox";
+@import "docs";
+@import "layout";
+@import "utilities";
+@import "component-examples";
+
+@import "vendor/prism";
+
+$enable-grid-classes: false; 
+$enable-cssgrid: true;
+@import "node_modules/bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/utilities/api";

@@ -1,0 +1,47 @@
+.toast {
+  position: relative;
+
+  button[data-bs-dismiss="toast"] {
+    position: absolute;
+    top: $toast-padding-y;
+    right: $toast-padding-x;
+  }
+}
+
+.toast-header {
+  padding-bottom: 6px;
+  padding-right: $toast-padding-r;
+  border-bottom: none;
+  font-weight: $font-weight-semibold;
+  border-top-left-radius: $toast-border-radius;
+  border-top-right-radius: $toast-border-radius;
+
+  & + .toast-body {
+    padding-top: 0;
+  }
+}
+
+.toast-body {
+  padding-right: $toast-padding-r;
+}
+
+@each $state, $icon in $toast-states {
+  .toast-#{$state} {
+    &::after {
+      content: "";
+      position: absolute;
+      left: $toast-padding-x;
+      top: $toast-padding-y;
+      display: block;
+      width: 24px;
+      height: 24px;
+      background-image: escape-svg($icon);
+      background-repeat: no-repeat;
+    }
+
+    .toast-header,
+    .toast-body {
+      padding-left: ($alert-padding-x + 2rem);
+    }
+  }
+}

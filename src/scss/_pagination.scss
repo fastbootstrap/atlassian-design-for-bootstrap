@@ -1,0 +1,38 @@
+.pagination {
+  --#{$prefix}pagination-width: #{$pagination-width};
+  --#{$prefix}pagination-height: #{$pagination-height};
+}
+
+.page-link {
+  height: var(--#{$prefix}pagination-height);
+  min-width: var(--#{$prefix}pagination-width);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: $pagination-font-weight;
+  line-height: 1;
+  border-radius: $border-radius;
+}
+
+.page-ellipsis {
+  display: inline-flex;
+  padding: 0px 8px;
+  align-items: center;
+  text-align: center;
+
+  &::before {
+    content: "...";
+  }
+}
+
+.pagination-lg {
+  --#{$prefix}pagination-width: #{$pagination-width-lg};
+  --#{$prefix}pagination-height: #{$pagination-height-lg};
+  --#{$prefix}pagination-font-size: 1rem;
+}
+
+.pagination-sm {
+  --#{$prefix}pagination-width: #{$pagination-width-sm};
+  --#{$prefix}pagination-height: #{$pagination-height-sm};
+  --#{$prefix}pagination-font-size: 0.75rem;
+}

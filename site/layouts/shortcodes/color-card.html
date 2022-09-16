@@ -1,0 +1,27 @@
+{{- $color := index (index .Page.Site.Data.colors (.Get 0)) (.Get 1) -}}
+<div class="d-flex h-100 flex-column fs-sm">
+  {{- $style := printf `style="min-height: 140px; background:rgb(%s)"` $color.rgb -}}
+  <div class="rounded-top p-2 d-flex justify-content-center align-items-end" {{ $style | safeHTMLAttr }}>
+    {{ with .Inner }}
+     {{ . | safeHTML }}
+    {{ end }}
+  </div>
+  <div class="p-4 bg-neutral-20 fs-sm rounded-bottom">
+    <div class="p-2">
+      <div class="d-flex flex-column">
+        <span class="fw-semibold fs-xs">NAME</span>
+        <span>{{ $color.name }}</span>
+      </div>
+      <div class="mt-2 d-flex justify-content-between">
+        <div class="d-flex flex-column">
+          <span class="fw-semibold fs-xs">HEX</span>
+          <span>{{ $color.hex }}</span>
+        </div>
+        <div class="d-flex flex-column">
+          <span class="fw-semibold fs-xs">RGB</span>
+          <span>{{ $color.rgb }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

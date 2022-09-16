@@ -1,0 +1,11 @@
+{{ $title :=  .Params.seo_title | default .Title }}
+
+{{ if and .Parent .Parent.Params.page_title_format }}
+  {{ $title = printf .Parent.Params.page_title_format $title }}
+{{ end }}
+
+{{ if not .IsHome }}
+  {{ $title = printf "%s - %s" $title  $.Site.Params.page_title_suffix }}
+{{ end }}
+
+{{ return $title }}

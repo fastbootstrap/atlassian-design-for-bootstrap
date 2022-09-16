@@ -1,0 +1,27 @@
+{{ $page := .page }}
+{{ $active_menu := .active_menu }}
+{{ $menus := dict }}
+
+{{ range index .page.Site.Menus $active_menu }}
+  {{ $menu := . }}
+  {{ $name := lower (.Page.Params.group | default $active_menu) }}
+  {{ $list := slice }}
+  {{ with index $menus $name }}
+    {{ $list = . | append $menu }}
+  {{ else }}
+    {{ $list = slice . }}
+  {{ end }}
+  {{ $menus = merge $menus (dict $name $list) }}
+{{ end }}
+
+{{ range (index .page.Site.Data.sidebar $active_menu) }}
+  <div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">{{ .title }}</div>
+  <ul class="list-unstyled">
+    {{ range index $menus .name }}
+      <li>
+        {{ $is_active := $page.IsMenuCurrent $active_menu . }}
+        <a href="{{ .URL }}" class="sidebar__link d-block {{ if $is_active }}active{{ end }}">{{ .Name }}{{ with .Page.Params.status }}<span class="lozenge {{.}} ms-1 fw-normal">{{ . }}</span>{{ end }}</a>
+      </li>
+    {{ end }}
+  </ul>
+{{ end }}

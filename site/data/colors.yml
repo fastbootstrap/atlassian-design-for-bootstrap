@@ -1,0 +1,259 @@
+neutral:
+  "900":
+      name: "N900 - Slate"
+      hex: "#091E42"
+      rgb: "9, 30, 66"
+  "800":
+      name: "N800 - Squid ink"
+      hex: "#172B4D"
+      rgb: "23, 43, 77"
+  "700":
+      name: "N700 - Snorlax"
+      hex: "#253858"
+      rgb: "37, 56, 88"
+  "600":
+      name: "N600 - Pet rock"
+      hex: "#344563"
+      rgb: "52, 69, 99"
+  "500":
+      name: "N500 - McFanning"
+      hex: "#42526E"
+      rgb: "66, 82, 110"
+  "400":
+      name: "N400 - Concrete jungle"
+      hex: "#505F79"
+      rgb: "80, 95, 121"
+  "300":
+      name: "N300 - Clooney"
+      hex: "#5E6C84"
+      rgb: "94, 108, 132"
+  "200":
+      name: "N200 - Bling bling"
+      hex: "#6B778C"
+      rgb: "107, 119, 140"
+  "100":
+      name: "N100 - Humboldt fog"
+      hex: "#7A869A"
+      rgb: "122, 134, 154"
+  "90":
+      name: "N90 - Meredith"
+      hex: "#8993A4"
+      rgb: "137, 147, 164"
+  "80":
+      name: "N80 - Spooky ghost"
+      hex: "#97A0AF"
+      rgb: "151, 160, 175"
+  "70":
+      name: "N70 - Blanche"
+      hex: "#A5ADBA"
+      rgb: "165, 173, 186"
+  "60":
+      name: "N60 - Sentinel"
+      hex: "#B3BAC5"
+      rgb: "179, 186, 197"
+  "50":
+      name: "N50 - Karl"
+      hex: "#C1C7D0"
+      rgb: "193, 199, 208"
+  "40":
+      name: "N40 - Jolly fun time"
+      hex: "#DFE1E6"
+      rgb: "223, 225, 230"     
+  "30":
+      name: "N30 - Northeast snow"
+      hex: "#EBECF0"
+      rgb: "235, 236, 240"
+  "20":
+      name: "N20 - Gram's hair"
+      hex: "#F4F5F7"
+      rgb: "244, 245, 247"  
+  "10":
+      name: "N10 - Wash me"
+      hex: "#FAFBFC"
+      rgb: "250, 251, 252"  
+  "0":
+      name: "N0 - Doctor"
+      hex: "#FFFFFF"
+      rgb: "255, 255, 255"        
+
+red:
+  "500":
+      name: "R500 - Dragon's blood"
+      hex: "#BF2600"
+      rgb: "191, 38, 0"
+  "400":
+      name: "R400 - Red dirt"
+      hex: "#DE350B"
+      rgb: "222, 53, 11"
+  "300":
+      name: "R300 - Poppy surprise"
+      hex: "#FF5630"
+      rgb: "255, 86, 48"
+  "200":
+      name: "R200 - Salmon sashimi"
+      hex: "#FF7452"
+      rgb: "255, 116, 82"
+  "100":
+      name: "R100 - Alexandria"
+      hex: "#FF8F73"
+      rgb: "255, 143, 115"
+  "75":
+      name: "R75 - Bondi sunburn"
+      hex: "#FFBDAD"
+      rgb: "255, 189, 173"
+  "50":
+      name: "R50 - Rosie"
+      hex: "#FFEBE6"
+      rgb: "255, 235, 230"     
+
+yellow:
+  "500":
+      name: "Y500 - Debrito"
+      hex: "#FF8B00"
+      rgb: "255, 139, 0"
+  "400":
+      name: "Y400 - Cheezy blasters"
+      hex: "#FF991F"
+      rgb: "255, 153, 31"
+  "300":
+      name: "Y300 - Golden state"
+      hex: "#FFAB00"
+      rgb: "255, 171, 0"
+  "200":
+      name: "Y200 - Pub mix"
+      hex: "#FFC400"
+      rgb: "255, 196, 0"
+  "100":
+      name: "Y100 - Cowbell"
+      hex: "#FFE380"
+      rgb: "255, 227, 128"
+  "75":
+      name: "Y75 - Dandelion whisper"
+      hex: "#FFF0B3"
+      rgb: "255, 240, 179"
+  "50":
+      name: "Y50 - James blonde"
+      hex: "#FFFAE6"
+      rgb: "255, 250, 230"  
+
+
+green:
+  "500":
+      name: "G500 - Keen green"
+      hex: "#006644"
+      rgb: "0, 102, 68"
+  "400":
+      name: "G400 - Slime"
+      hex: "#00875A"
+      rgb: "0, 135, 90"
+  "300":
+      name: "G300 - Fine pine"
+      hex: "#36B37E"
+      rgb: "54, 179, 126"
+  "200":
+      name: "G200 - Green tea"
+      hex: "#57D9A3"
+      rgb: "87, 217, 163"
+  "100":
+      name: "G100 - Cloverleaf"
+      hex: "#79F2C0"
+      rgb: "121, 242, 192"
+  "75":
+      name: "G75 - Mintie"
+      hex: "#ABF5D1"
+      rgb: "171, 245, 209"
+  "50":
+      name: "G50 - The smell"
+      hex: "#E3FCEF"
+      rgb: "227, 252, 239"  
+ 
+blue:
+  "500":
+      name: "B500 - Chore coat"
+      hex: "#0747A6"
+      rgb: "7, 71, 166"
+  "400":
+      name: "B400 - Pacific bridge"
+      hex: "#0052CC"
+      rgb: "0, 82, 204"
+  "300":
+      name: "B300 - Sodium explosion"
+      hex: "#0065FF"
+      rgb: "0, 101, 255"
+  "200":
+      name: "B200 - Coogee"
+      hex: "#2684FF"
+      rgb: "38, 132, 255"
+  "100":
+      name: "B100 - Arvo breeze"
+      hex: "#4C9AFF"
+      rgb: "76, 154, 255"
+  "75":
+      name: "B75 - Schwag"
+      hex: "#B3D4FF"
+      rgb: "179, 212, 255"
+  "50":
+      name: "B50 - Pixie dust"
+      hex: "#DEEBFF"
+      rgb: "222, 235, 255"     
+
+ 
+teal:
+  "500":
+      name: "T500 - Shabby chic"
+      hex: "#008DA6"
+      rgb: "0, 141, 166"
+  "400":
+      name: "T400 - Prom dress"
+      hex: "#00A3BF"
+      rgb: "0, 163, 191"
+  "300":
+      name: "T300 - Tamarama"
+      hex: "#00B8D9"
+      rgb: "0, 184, 217"
+  "200":
+      name: "T200 - Mermaid net"
+      hex: "#00C7E6"
+      rgb: "0, 199, 230"
+  "100":
+      name: "T100 - Hairy fairy"
+      hex: "#79E2F2"
+      rgb: "121, 226, 242"
+  "75":
+      name: "T75 - Arctic chill"
+      hex: "#B3F5FF"
+      rgb: "179, 245, 255"
+  "50":
+      name: "T50 - Gram's sofa"
+      hex: "#E6FCFF"
+      rgb: "230, 252, 255"    
+ 
+purple:
+  "500":
+      name: "P500 - Prince"
+      hex: "#403294"
+      rgb: "64, 50, 148"
+  "400":
+      name: "P400 - Snozzberry"
+      hex: "#5243AA"
+      rgb: "82, 67, 170"
+  "300":
+      name: "P300 - Da' juice"
+      hex: "#6554C0"
+      rgb: "101, 84, 192"
+  "200":
+      name: "P200 - Pastelli"
+      hex: "#8777D9"
+      rgb: "135, 119, 217"
+  "100":
+      name: "P100 - Herky jerky"
+      hex: "#998DD9"
+      rgb: "153, 141, 217"
+  "75":
+      name: "P75 - Phantom mist"
+      hex: "#C0B6F2"
+      rgb: "192, 182, 242"
+  "50":
+      name: "P50 - Lavender secret"
+      hex: "#EAE6FF"
+      rgb: "234, 230, 255"    

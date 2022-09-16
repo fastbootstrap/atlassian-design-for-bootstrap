@@ -1,0 +1,43 @@
+.table {
+  font-size: 0.875rem;
+  border-spacing: 0;
+
+  & > thead {
+    &:not(.table-dark) {
+      color: $neutral-300;
+      background-color: $neutral-0;
+    }
+  }
+
+  th {
+    font-weight: $font-weight-bold;
+  }
+
+  td {
+    vertical-align: middle;
+  }
+}
+
+.table-active {
+  --#{$prefix}table-hover-bg: #{$blue-75};
+}
+
+.table-borderless {
+  > .table-group-divider {
+    border-top-width: $table-border-width * 2;
+  }
+}
+
+.table-hover {
+  > tbody > tr:hover > * {
+    &:first-child {
+      border-top-left-radius: $border-radius;
+      border-bottom-left-radius: $border-radius;
+    }
+
+    &:last-child {
+      border-top-right-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
+    }
+  }
+}

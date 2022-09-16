@@ -1,0 +1,14 @@
+.card {
+  box-shadow: $card-box-shadow;
+}
+
+.card-subtitle {
+  color: $text-muted;
+}
+
+.card-header-tabs {
+  margin-left: -1 * $card-cap-padding-x;
+  margin-right: -1 * $card-cap-padding-x;
+  padding-left: 0.5 * $card-cap-padding-x;
+  padding-right: 0.5 * $card-cap-padding-x;
+}

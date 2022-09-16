@@ -1,0 +1,13 @@
+#### Main Navigation ###########
+
+[[global]]
+name = "Components"
+identifier = "components"
+url = "/components"
+weight = 25
+
+[[global]]
+name = "Docs"
+identifier = "docs"
+url = "/docs"
+weight = 15

@@ -1,0 +1,17 @@
+{{- $css_class := .Get 0 | default "info" -}}
+
+
+<section class="callout {{ $css_class }} d-flex">
+  <div>
+    {{- if eq $css_class "warning" -}}
+      <span><i class="fa-solid fa-circle-exclamation fa-lg text-yellow-500"></i></span>
+    {{- else if eq $css_class "danger" -}}
+      <span><i class="fa-solid fa-triangle-exclamation fa-lg text-red-500"></i></span>
+    {{- else -}}
+      <span><i class="fa-solid fa-circle-info fa-lg text-blue-500"></i></span>
+    {{- end -}}
+  </div>
+  <div class="ms-3">
+    {{ .Inner | markdownify }}
+  </div>
+</section>

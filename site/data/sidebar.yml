@@ -1,0 +1,45 @@
+docs:
+  - name: getting-started
+    title: Getting Started
+  - name: customize
+    title: Customize
+  - name: base-styles
+    title: Base Styles
+  - name: layout
+    title: Layout
+  - name: flexbox
+    title: Flexbox & Grid
+  - name: spacing
+    title: Spacing
+  - name: sizing
+    title: Sizing
+  - name: typography
+    title: Typography
+  - name: backgrounds
+    title: Backgrounds
+  - name: borders
+    title: Borders
+  - name: effects
+    title: Effects
+  - name: animation
+    title: Animation
+  - name: interactivity
+    title: Interactivity
+components:    
+  - name: actions
+    title: Actions
+  - name: inputs
+    title: Inputs
+  - name: navigation
+    title: navigation
+  - name: feedback
+    title: Feedback
+  - name: data-display
+    title: Data Display
+  - name: surfaces
+    title: surfaces
+design:
+  - name: foundations
+    title: Foundations
+  - name: patterns
+    title: Patterns

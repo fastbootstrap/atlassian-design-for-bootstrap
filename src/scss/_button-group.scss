@@ -1,0 +1,85 @@
+.btn-group,
+.btn-group-vertical {
+  position: relative;
+  display: inline-flex;
+  vertical-align: middle;
+
+  > .btn {
+    position: relative;
+    flex: 1 1 auto;
+  }
+
+  > .btn-check:checked + .btn,
+  > .btn-check:focus + .btn,
+  > .btn:hover,
+  > .btn:focus,
+  > .btn:active,
+  > .btn.active {
+    z-index: 1;
+  }
+}
+
+.btn-group {
+  & > .btn ~ .btn {
+    margin-left: $button-group-spacing;
+  }
+
+  &.btn-group-lg {
+    & > .btn {
+      @extend .btn-lg;
+    }
+  }
+
+  &.btn-group-sm {
+    & > .btn {
+      @extend .btn-sm;
+    }
+  }
+}
+
+.btn-group-vertical {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  > .btn,
+  > .btn-group {
+    width: 100%;
+  }
+
+  > .btn-group:not(:first-child),
+  > .btn + .btn,
+  > .btn-group + .btn {
+    margin-top: $button-group-spacing;
+  }
+}
+
+.btn-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  .input-group {
+    width: auto;
+  }
+
+  .btn-group {
+    
+    & > .btn ~ .btn {
+      margin-left: -$btn-border-width;
+      z-index: 1;
+    }
+
+    > .btn:not(:last-child):not(.dropdown-toggle),
+    > .btn.dropdown-toggle-split:first-child,
+    > .btn-group:not(:last-child) > .btn {
+      @include border-end-radius(0);
+    }
+
+    > .btn:nth-child(n + 3),
+    > :not(.btn-check) + .btn,
+    > .btn-group:not(:first-child) > .btn {
+      @include border-start-radius(0);
+    }
+  }
+}
