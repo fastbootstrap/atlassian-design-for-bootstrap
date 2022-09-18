@@ -5,7 +5,10 @@
   "homepage": "https://fastbootstrap.com/",
   "author": "FastBootstrap",
   "license": "MIT",
-  "repository": "https://github.com/fastbootstrap/atlassian-design-for-bootstrap",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fastbootstrap/atlassian-design-for-bootstrap.git"
+  },
   "keywords": [
     "css",
     "sass",
@@ -56,5 +59,9 @@
     "rtlcss": "^4.0.0",
     "sass": "^1.52.3",
     "terser": "^5.15.0"
-  }
+  },
+  "files": [
+    "dist/{css,js}/*.{css,js,map}",
+    "src/{js,scss}/**/*.{js,scss}"
+  ]
 }
