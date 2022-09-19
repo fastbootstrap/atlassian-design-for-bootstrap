@@ -16,13 +16,6 @@
     );
   }
 
-  .navbar-brand {
-    &:hover,
-    &:focus {
-      background-color: rgba($blue-50, 0.9);
-    }
-  }
-
   .navbar-toggler {
     padding: 0;
 
@@ -42,17 +35,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-left: 6px;
-      margin-right: 6px;
-
-      @include media-breakpoint-up(xl) {
-        margin-left: 12px;
-        margin-right: 12px;
-      }
 
       &.active {
         .nav-link {
-          color: $blue-400;
+          color: #0052CC;
         }
 
         &::after {
@@ -62,7 +48,7 @@
           left: 6px;
           right: 6px;
           height: 3px;
-          background-color: $blue-400;
+          background-color: #0052CC;
           border-top-left-radius: 1px;
           border-top-right-radius: 1px;
         }
@@ -70,19 +56,14 @@
     }
 
     .nav-link {
-      color: $neutral-600;
+      color: #344563;
       line-height: 1.15;
       padding: 8px 6px !important;
 
       &:hover {
-        color: $blue-400;
+        color: #0052CC;
         text-decoration: none;
-        background-color: rgba($blue-50, 0.9);
-      }
-
-      &:focus {
-        color: $blue-400;
-        background-color: transparent;
+        background-color: rgba(222, 235, 255, 0.9);
       }
     }
 

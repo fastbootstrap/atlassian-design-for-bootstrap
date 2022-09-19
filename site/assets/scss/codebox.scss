@@ -15,7 +15,7 @@
     right: 0;
     padding: 8px;
     opacity: 0;
-    transition: all .25s;
+    transition: all 0.25s;
 
     .toolbar-item {
       display: inline-block;
@@ -27,17 +27,17 @@
       padding: 4px 6px;
       border-radius: 3px;
       box-shadow: none;
-      color: $neutral-0;
+      color: #fff;
       transition: color 0.25s, background-color 0.25s;
 
       &:hover {
-        color: $neutral-0;
+        color: #fff;
         background-color: rgba(116, 118, 121, 0.6);
       }
 
       &:focus,
       &[data-copy-state="copy-success"] {
-        color: $neutral-0;
+        color: #fff;
         background-color: rgba(116, 118, 121, 0.6);
       }
     }

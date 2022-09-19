@@ -13,11 +13,11 @@
         {{ $page := . }}
         {{ range .Site.Menus.global }}
           {{ $active := or ($page.IsMenuCurrent "global" .) (eq $page.Section .Identifier) }}
-          <li class="nav-item {{ if $active }}active{{ end }}">
+          <li class="nav-item mx-2 mx-lg-3 {{ if $active }}active{{ end }}">
             <a class="nav-link fw-semibold rounded fs-sm" href="{{ .URL }}">{{ .Name }}</a>
           </li>
         {{ end }}
-        <li class="nav-item ms-4 ms-auto">
+        <li class="nav-item ms-auto">
           <a class="nav-link rounded-circle" href="{{ .Site.Params.repo }}">
             <i class="fa-brands fa-github fa-xl"></i>
           </a>

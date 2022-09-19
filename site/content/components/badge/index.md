@@ -83,7 +83,7 @@ You can also replace the `.badge` class with a few more utilities without a coun
 
 You can use our icons and `.position` help classes to create a facebook-like notification.
 
-{{< example class="d-grid gap-2" >}}
+{{< example class="d-flex flex-column gap-3" >}}
 <a class="position-relative" href="#">
   <i class="fa-solid fa-envelope fa-lg"></i>
   <span class="badge position-absolute translate-middle-x text-bg-danger border p-1">

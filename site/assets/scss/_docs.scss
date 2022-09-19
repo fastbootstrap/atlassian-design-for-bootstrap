@@ -1,6 +1,6 @@
 code {
-  background-color: $blue-50;
-  color: $neutral-800;
+  background-color: #deebff;
+  color: #172b4d;
   padding: 2px 4px;
   border-radius: 3px;
 }
@@ -94,7 +94,7 @@ code {
     left: 0;
     width: 1px;
     height: 100%;
-    background-color: $neutral-30;
+    background-color: #ebecf0;
     z-index: 1;
   }
 
@@ -125,7 +125,7 @@ code {
       display: flex;
       align-items: center;
       min-height: 24px;
-      color: $neutral-200;
+      color: #6b778c;
       text-decoration: none;
       padding-left: 12px;
 
@@ -137,19 +137,19 @@ code {
         width: 1px;
         height: 100%;
         display: block;
-        background-color: $blue-300;
+        background-color: #0065ff;
         opacity: 0;
         transition: all 0.3s linear;
         z-index: 2;
       }
 
       &:hover {
-        color: $blue-400;
+        color: #0052cc;
         text-decoration: none;
       }
 
       &.active {
-        color: $blue-400;
+        color: #0052cc;
 
         &::after {
           opacity: 1;
@@ -163,23 +163,22 @@ code {
   padding: 20px;
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
-  color: $neutral-800;
 
   code {
-    color: $red-400;
+    color: #de350b;
     background-color: transparent;
   }
 
   &.info {
-    background-color: $blue-50;
+    background-color: #deebff;
   }
 
   &.danger {
-    background-color: $red-50;
+    background-color: #ffebe6;
   }
 
   &.warning {
-    background-color: $yellow-50;
+    background-color: #fffae6;
   }
 
   h2,
@@ -213,7 +212,7 @@ code {
 
 .lozenge {
   &.new {
-    background-color: $purple-50;
-    color: $purple-500;
+    background-color: #eae6ff;
+    color: #403294;
   }
 }
