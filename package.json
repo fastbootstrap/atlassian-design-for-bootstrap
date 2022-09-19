@@ -33,8 +33,7 @@
     "js": "npm-run-all js-compile js-minify",
     "js-compile": "rollup --config build/rollup.config.js --sourcemap",
     "js-minify": "terser --compress passes=2 --mangle --comments \"/^!/\" --source-map \"content=dist/js/fastbootstrap.js.map,includeSources,url=fastbootstrap.min.js.map\" --output dist/js/fastbootstrap.min.js dist/js/fastbootstrap.js",
-    "dist": "npm-run-all --aggregate-output --parallel css js",
-    "build": "hugo --cleanDestinationDir --minify --gc"
+    "dist": "npm-run-all --aggregate-output --parallel css js"
   },
   "dependencies": {
     "bootstrap": "^5.2.1"
