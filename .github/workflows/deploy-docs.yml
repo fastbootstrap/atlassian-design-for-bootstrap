@@ -32,7 +32,9 @@ jobs:
         run: hugo --minify
 
       - name: Log 
-        run: ls
+        run: |
+          pwd
+          ls _site
       
       - name: Deploy to Github Pages
         uses: peaceiris/actions-gh-pages@v3
