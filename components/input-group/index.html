@@ -1,0 +1,222 @@
+<!doctype html><html lang=en><head><meta name=generator content="Hugo 0.103.1"><meta http-equiv=x-ua-compatible content="IE=edge"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" href=/favicon.ico type=image/x-icon><link href=/css/fastbootstrap.min.css rel=stylesheet><link href=/css/site.89e375fc829b142a487ae2d67a47a5518cef63838910cba2d65c78bb8f932acd.css rel=stylesheet><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css><title>Bootstrap Input Group Component - Examples & Tutorial - FastBootstrap</title><meta name=description content="Input group allows users to grouping related form controls in a single input."></head><body><header class="navbar navbar-expand-lg header-navbar py-0 sticky-top bg-white shadow-none"><nav class="container-fluid px-md-3 px-lg-4"><a class="navbar-brand d-inline-flex align-items-center m-0 p-0 me-lg-6 me-xl-9 p-1 rounded text-reset" href=/><svg class="brand-img" width="24" height="24" viewBox="0 0 32 32"><rect x="4" y="3" width="24" height="7" rx="3.5" ry="3.5"/><rect x="4" y="12" width="20" height="7" rx="3.5" ry="3.5"/><rect x="4" y="21" width="14" height="7" rx="3.5" ry="3.5"/></svg><h2 class="d-none d-md-block fw-semibold fs-5 ls-wide ms-2 mb-0">FastBootstrap</h2></a><div class="collapse navbar-collapse"><ul class=navbar-nav><li class="nav-item mx-2 mx-lg-3"><a class="nav-link fw-semibold rounded fs-sm" href=/docs>Docs</a></li><li class="nav-item mx-2 mx-lg-3 active"><a class="nav-link fw-semibold rounded fs-sm" href=/components>Components</a></li><li class="nav-item ms-auto"><a class="nav-link rounded-circle" href=https://github.com/fastbootstrap/atlassian-design-for-bootstrap><i class="fa-brands fa-github fa-xl"></i></a></li></ul></div><button class=navbar-toggler type=bdnavbar data-bs-toggle=offcanvas data-bs-target=#bdNavbar aria-controls=bdNavbar aria-label="Toggle navigation"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentcolor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 11.5A.5.5.0 013 11h10a.5.5.0 010 1H3a.5.5.0 01-.5-.5zm0-4A.5.5.0 013 7h10a.5.5.0 010 1H3a.5.5.0 01-.5-.5zm0-4A.5.5.0 013 3h10a.5.5.0 010 1H3a.5.5.0 01-.5-.5z"/></svg></button></nav></header><div class="offcanvas offcanvas-end w-100 mw-100" tabindex=-1 id=bdNavbar><div class="offcanvas-header border-bottom px-5"><svg class="brand-img" width="24" height="24" viewBox="0 0 32 32"><rect x="4" y="3" width="24" height="7" rx="3.5" ry="3.5"/><rect x="4" y="12" width="20" height="7" rx="3.5" ry="3.5"/><rect x="4" y="21" width="14" height="7" rx="3.5" ry="3.5"/></svg><button type=button class=btn-close data-bs-dismiss=offcanvas aria-label=Close></button></div><div class="offcanvas-body px-5"><div class="d-flex flex-column"><a class="py-2 fw-bold text-reset" href=/docs>Docs</a><a class="py-2 fw-bold text-reset" href=/components>Components</a></div><ul class="list-inline mt-3 text-center border-top pt-5"><li><a class="nav-link rounded-circle" href=https://github.com/fastbootstrap/atlassian-design-for-bootstrap><i class="fa-brands fa-github fa-xl"></i></a></li></ul></div></div><div class="d-flex flex-column flex-lg-row"><div class=sidebar><div class="d-flex d-lg-none align-items-center"><div class=container><div class="d-flex justify-content-between align-items-center py-3"><nav aria-label=breadcrumb><ol class="breadcrumb mb-0"><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/components/>Components</a></li><li class="breadcrumb-item active" aria-current=page>Input Group</li></ol></nav><button class="btn btn-sm p-0 border-0" data-bs-toggle=collapse href=#sidebar-nav aria-expanded=false><i class="fas fa-chevron-down"></i></button></div></div></div><div class="collapse d-lg-block py-3 py-lg-4" id=sidebar-nav><div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">Actions</div><ul class=list-unstyled><li><a href=/components/button/ class="sidebar__link d-block">Button</a></li><li><a href=/components/button-group/ class="sidebar__link d-block">Button Group</a></li><li><a href=/components/close-button/ class="sidebar__link d-block">Close Button</a></li></ul><div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">Inputs</div><ul class=list-unstyled><li><a href=/components/checkbox/ class="sidebar__link d-block">Checkbox</a></li><li><a href=/components/dropdown/ class="sidebar__link d-block">Dropdown</a></li><li><a href=/components/floating-label/ class="sidebar__link d-block">Floating Label</a></li><li><a href=/components/form/ class="sidebar__link d-block">Form</a></li><li><a href=/components/input-group/ class="sidebar__link d-block active">Input Group</a></li><li><a href=/components/radio/ class="sidebar__link d-block">Radio</a></li><li><a href=/components/range/ class="sidebar__link d-block">Range</a></li><li><a href=/components/select/ class="sidebar__link d-block">Select Input</a></li><li><a href=/components/switch/ class="sidebar__link d-block">Switch</a></li><li><a href=/components/textfield/ class="sidebar__link d-block">Text field</a></li></ul><div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">navigation</div><ul class=list-unstyled><li><a href=/components/breadcrumb/ class="sidebar__link d-block">Breadcrumb</a></li><li><a href=/components/navbar/ class="sidebar__link d-block">Navbar</a></li><li><a href=/components/offcanvas/ class="sidebar__link d-block">Offcanvas</a></li><li><a href=/components/pagination/ class="sidebar__link d-block">Pagination</a></li><li><a href=/components/pills/ class="sidebar__link d-block">Pills</a></li><li><a href=/components/scrollspy/ class="sidebar__link d-block">Scrollspy</a></li><li><a href=/components/stretched-link/ class="sidebar__link d-block">Stretched Link</a></li><li><a href=/components/tabs/ class="sidebar__link d-block">Tabs</a></li></ul><div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">Feedback</div><ul class=list-unstyled><li><a href=/components/alerts/ class="sidebar__link d-block">Alerts</a></li><li><a href=/components/modal/ class="sidebar__link d-block">Modal</a></li><li><a href=/components/placeholders/ class="sidebar__link d-block">Placeholders</a></li><li><a href=/components/popover/ class="sidebar__link d-block">Popover</a></li><li><a href=/components/progress-bar/ class="sidebar__link d-block">Progress bar</a></li><li><a href=/components/progress-indicator/ class="sidebar__link d-block">Progress Indicator<span class="lozenge new ms-1 fw-normal">new</span></a></li><li><a href=/components/progress-tracker/ class="sidebar__link d-block">Progress Tracker<span class="lozenge new ms-1 fw-normal">new</span></a></li><li><a href=/components/spinner/ class="sidebar__link d-block">Spinner</a></li><li><a href=/components/toast/ class="sidebar__link d-block">Toast</a></li><li><a href=/components/tooltip/ class="sidebar__link d-block">Tooltip</a></li><li><a href=/components/validation/ class="sidebar__link d-block">Validation</a></li></ul><div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">Data Display</div><ul class=list-unstyled><li><a href=/components/avatar/ class="sidebar__link d-block">Avatar<span class="lozenge new ms-1 fw-normal">new</span></a></li><li><a href=/components/avatar-group/ class="sidebar__link d-block">Avatar Group<span class="lozenge new ms-1 fw-normal">new</span></a></li><li><a href=/components/badge/ class="sidebar__link d-block">Badge</a></li><li><a href=/components/lozenge/ class="sidebar__link d-block">Lozenge<span class="lozenge new ms-1 fw-normal">new</span></a></li><li><a href=/components/table/ class="sidebar__link d-block">Table</a></li><li><a href=/components/tag/ class="sidebar__link d-block">Tag<span class="lozenge new ms-1 fw-normal">new</span></a></li></ul><div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">surfaces</div><ul class=list-unstyled><li><a href=/components/accordion/ class="sidebar__link d-block">Accordion</a></li><li><a href=/components/blankslate/ class="sidebar__link d-block">Blankslate<span class="lozenge new ms-1 fw-normal">new</span></a></li><li><a href=/components/card/ class="sidebar__link d-block">Card</a></li><li><a href=/components/carousel/ class="sidebar__link d-block">Carousel</a></li><li><a href=/components/collapse/ class="sidebar__link d-block">Collapse</a></li><li><a href=/components/list-group/ class="sidebar__link d-block">List Group</a></li></ul></div></div><main class="doc-main d-flex flex-grow-1 flex-column"><div class=bg-light><div class="container py-3 py-md-4 py-lg-5 py-xl-6"><div class=doc-intro><div class="d-flex align-items-center gap-2"><h1 class="fw-semibold fs-2">Input Group</h1></div><div class="mt-3 text-muted">Input group allows users to grouping related form controls in a single input.</div></div></div></div><div class="doc-contents pt-5 pb-5 pb-lg-6"><div class=container><div class="d-flex flex-column flex-lg-row-reverse justify-content-lg-end gap-xl-6"><div class="doc-nav align-self-start d-none d-xl-flex flex-column fs-sm"><span class="fw-semibold fs-xs text-uppercase">Contents</span><div class="doc-nav-content position-relative mt-2"><nav id=TableOfContents><ul><li><a href=#basic-example>Basic example</a></li><li><a href=#sizing>Sizing</a></li><li><a href=#checkboxes-and-radios>Checkboxes and radios</a></li><li><a href=#multiple-inputs>Multiple inputs</a></li><li><a href=#multiple-addons>Multiple addons</a></li><li><a href=#button-addons>Button addons</a></li><li><a href=#buttons-with-dropdowns>Buttons with dropdowns</a></li><li><a href=#segmented-buttons>Segmented buttons</a></li><li><a href=#file-input>File input</a></li><li><a href=#wrapping>Wrapping</a></li><li><a href=#accessibility>Accessibility</a></li></ul></nav></div></div><div class="doc-content d-flex flex-grow-1 flex-column" data-bs-spy=scroll data-bs-target=.doc-nav-content data-bs-smooth-scroll=true tabindex=0><p><strong>Bootstrap 5 Input group component</strong></p><p>Easily extend form controls by adding text, buttons, or button groups on either side of textual inputs, custom selects, and custom file inputs.</p><h2 id=basic-example>Basic example</h2><p>Place one add-on or button on either side of an input. You may also place one on both sides of an input. Remember to place <code>&lt;label></code>s outside the input group.</p><div class=bd-example><div class="input-group mb-3"><span class=input-group-text id=basic-addon1>@</span>
+<input type=text class=form-control placeholder=Username aria-label=Username aria-describedby=basic-addon1></div><div class="input-group mb-3"><input type=text class=form-control placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby=basic-addon2>
+<span class=input-group-text id=basic-addon2>@example.com</span></div><label for=basic-url class=form-label>Your vanity URL</label><div class="input-group mb-3"><span class=input-group-text id=basic-addon3>https://example.com/users/</span>
+<input type=text class=form-control id=basic-url aria-describedby=basic-addon3></div><div class="input-group mb-3"><span class=input-group-text>$</span>
+<input type=text class=form-control aria-label="Amount (to the nearest dollar)">
+<span class=input-group-text>.00</span></div><div class="input-group mb-3"><input type=text class=form-control placeholder=Username aria-label=Username>
+<span class=input-group-text>@</span>
+<input type=text class=form-control placeholder=Server aria-label=Server></div><div class=input-group><span class=input-group-text>With textarea</span>
+<textarea class=form-control aria-label="With textarea"></textarea></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;input-group mb-3&#34;&gt;
+  &lt;span class=&#34;input-group-text&#34; id=&#34;basic-addon1&#34;&gt;@&lt;/span&gt;
+  &lt;input type=&#34;text&#34; class=&#34;form-control&#34; placeholder=&#34;Username&#34; aria-label=&#34;Username&#34; aria-describedby=&#34;basic-addon1&#34; /&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;input-group mb-3&#34;&gt;
+  &lt;input type=&#34;text&#34; class=&#34;form-control&#34; placeholder=&#34;Recipient&#39;s username&#34; aria-label=&#34;Recipient&#39;s username&#34; aria-describedby=&#34;basic-addon2&#34; /&gt;
+  &lt;span class=&#34;input-group-text&#34; id=&#34;basic-addon2&#34;&gt;@example.com&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;label for=&#34;basic-url&#34; class=&#34;form-label&#34;&gt;Your vanity URL&lt;/label&gt;
+&lt;div class=&#34;input-group mb-3&#34;&gt;
+  &lt;span class=&#34;input-group-text&#34; id=&#34;basic-addon3&#34;&gt;https://example.com/users/&lt;/span&gt;
+  &lt;input type=&#34;text&#34; class=&#34;form-control&#34; id=&#34;basic-url&#34; aria-describedby=&#34;basic-addon3&#34; /&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;input-group mb-3&#34;&gt;
+  &lt;span class=&#34;input-group-text&#34;&gt;$&lt;/span&gt;
+  &lt;input type=&#34;text&#34; class=&#34;form-control&#34; aria-label=&#34;Amount (to the nearest dollar)&#34; /&gt;
+  &lt;span class=&#34;input-group-text&#34;&gt;.00&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;input-group mb-3&#34;&gt;
+  &lt;input type=&#34;text&#34; class=&#34;form-control&#34; placeholder=&#34;Username&#34; aria-label=&#34;Username&#34; /&gt;
+  &lt;span class=&#34;input-group-text&#34;&gt;@&lt;/span&gt;
+  &lt;input type=&#34;text&#34; class=&#34;form-control&#34; placeholder=&#34;Server&#34; aria-label=&#34;Server&#34;&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;input-group&#34;&gt;
+  &lt;span class=&#34;input-group-text&#34;&gt;With textarea&lt;/span&gt;
+  &lt;textarea class=&#34;form-control&#34; aria-label=&#34;With textarea&#34;&gt;&lt;/textarea&gt;
+&lt;/div&gt;</code></pre></div><h2 id=sizing>Sizing</h2><p>Add the relative form sizing classes to the <code>.input-group</code> itself and contents within will automatically resize—no need for repeating the form control size classes on each element.</p><p><strong>Sizing on the individual input group elements isn’t supported.</strong></p><div class=bd-example><div class="input-group input-group-sm mb-3"><span class=input-group-text id=inputGroup-sizing-sm>Small</span>
+<input type=text class=form-control aria-label="Sizing example input" aria-describedby=inputGroup-sizing-sm></div><div class="input-group mb-3"><span class=input-group-text id=inputGroup-sizing-default>Default</span>
+<input type=text class=form-control aria-label="Sizing example input" aria-describedby=inputGroup-sizing-default></div><div class="input-group input-group-lg"><span class=input-group-text id=inputGroup-sizing-lg>Large</span>
+<input type=text class=form-control aria-label="Sizing example input" aria-describedby=inputGroup-sizing-lg></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;input-group input-group-sm mb-3&#34;&gt;
+  &lt;span class=&#34;input-group-text&#34; id=&#34;inputGroup-sizing-sm&#34;&gt;Small&lt;/span&gt;
+  &lt;input type=&#34;text&#34; class=&#34;form-control&#34; aria-label=&#34;Sizing example input&#34; aria-describedby=&#34;inputGroup-sizing-sm&#34;&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;input-group mb-3&#34;&gt;
+  &lt;span class=&#34;input-group-text&#34; id=&#34;inputGroup-sizing-default&#34;&gt;Default&lt;/span&gt;
+  &lt;input type=&#34;text&#34; class=&#34;form-control&#34; aria-label=&#34;Sizing example input&#34; aria-describedby=&#34;inputGroup-sizing-default&#34;&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;input-group input-group-lg&#34;&gt;
+  &lt;span class=&#34;input-group-text&#34; id=&#34;inputGroup-sizing-lg&#34;&gt;Large&lt;/span&gt;
+  &lt;input type=&#34;text&#34; class=&#34;form-control&#34; aria-label=&#34;Sizing example input&#34; aria-describedby=&#34;inputGroup-sizing-lg&#34;&gt;
+&lt;/div&gt;</code></pre></div><h2 id=checkboxes-and-radios>Checkboxes and radios</h2><div class=bd-example><div class="input-group mb-3"><div class=input-group-text><input class="form-check-input mt-0" type=checkbox aria-label="Checkbox for following text input"></div><input type=text class=form-control aria-label="Text input with checkbox"></div><div class=input-group><div class=input-group-text><input class="form-check-input mt-0" type=radio value aria-label="Radio button for following text input"></div><input type=text class=form-control aria-label="Text input with radio button"></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;input-group mb-3&#34;&gt;
+  &lt;div class=&#34;input-group-text&#34;&gt;
+    &lt;input class=&#34;form-check-input mt-0&#34; type=&#34;checkbox&#34; value=&#34;&#34; aria-label=&#34;Checkbox for following text input&#34;&gt;
+  &lt;/div&gt;
+  &lt;input type=&#34;text&#34; class=&#34;form-control&#34; aria-label=&#34;Text input with checkbox&#34;&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;input-group&#34;&gt;
+  &lt;div class=&#34;input-group-text&#34;&gt;
+    &lt;input class=&#34;form-check-input mt-0&#34; type=&#34;radio&#34; value=&#34;&#34; aria-label=&#34;Radio button for following text input&#34;&gt;
+  &lt;/div&gt;
+  &lt;input type=&#34;text&#34; class=&#34;form-control&#34; aria-label=&#34;Text input with radio button&#34;&gt;
+&lt;/div&gt;</code></pre></div><h2 id=multiple-inputs>Multiple inputs</h2><p>While multiple <code>&lt;input></code>s are supported visually, validation styles are only available for input groups with a single <code>&lt;input></code>.</p><div class=bd-example><div class=input-group><span class=input-group-text>First and last name</span>
+<input type=text aria-label="First name" class=form-control>
+<input type=text aria-label="Last name" class=form-control></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;input-group&#34;&gt;
+  &lt;span class=&#34;input-group-text&#34;&gt;First and last name&lt;/span&gt;
+  &lt;input type=&#34;text&#34; aria-label=&#34;First name&#34; class=&#34;form-control&#34;&gt;
+  &lt;input type=&#34;text&#34; aria-label=&#34;Last name&#34; class=&#34;form-control&#34;&gt;
+&lt;/div&gt;</code></pre></div><h2 id=multiple-addons>Multiple addons</h2><p>Multiple add-ons are supported and can be mixed with checkbox and radio input versions.</p><div class=bd-example><div class="input-group mb-3"><span class=input-group-text>$</span>
+<span class=input-group-text>0.00</span>
+<input type=text class=form-control aria-label="Dollar amount (with dot and two decimal places)"></div><div class=input-group><input type=text class=form-control aria-label="Dollar amount (with dot and two decimal places)">
+<span class=input-group-text>$</span>
+<span class=input-group-text>0.00</span></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;input-group mb-3&#34;&gt;
+  &lt;span class=&#34;input-group-text&#34;&gt;$&lt;/span&gt;
+  &lt;span class=&#34;input-group-text&#34;&gt;0.00&lt;/span&gt;
+  &lt;input type=&#34;text&#34; class=&#34;form-control&#34; aria-label=&#34;Dollar amount (with dot and two decimal places)&#34;&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;input-group&#34;&gt;
+  &lt;input type=&#34;text&#34; class=&#34;form-control&#34; aria-label=&#34;Dollar amount (with dot and two decimal places)&#34;&gt;
+  &lt;span class=&#34;input-group-text&#34;&gt;$&lt;/span&gt;
+  &lt;span class=&#34;input-group-text&#34;&gt;0.00&lt;/span&gt;
+&lt;/div&gt;</code></pre></div><h2 id=button-addons>Button addons</h2><div class=bd-example><div class="input-group mb-3"><button class="btn btn-outline-primary" type=button id=button-addon1>Button</button>
+<input type=text class=form-control placeholder aria-label="Example text with button addon" aria-describedby=button-addon1></div><div class="input-group mb-3"><input type=text class=form-control placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby=button-addon2>
+<button class="btn btn-outline-primary" type=button id=button-addon2>Button</button></div><div class="input-group mb-3"><button class="btn btn-outline-primary" type=button>Button</button>
+<button class="btn btn-outline-primary" type=button>Button</button>
+<input type=text class=form-control placeholder aria-label="Example text with two button addons"></div><div class=input-group><input type=text class=form-control placeholder="Recipient's username" aria-label="Recipient's username with two button addons">
+<button class="btn btn-outline-primary" type=button>Button</button>
+<button class="btn btn-outline-primary" type=button>Button</button></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;input-group mb-3&#34;&gt;
+  &lt;button class=&#34;btn btn-outline-primary&#34; type=&#34;button&#34; id=&#34;button-addon1&#34;&gt;Button&lt;/button&gt;
+  &lt;input type=&#34;text&#34; class=&#34;form-control&#34; placeholder=&#34;&#34; aria-label=&#34;Example text with button addon&#34; aria-describedby=&#34;button-addon1&#34;&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;input-group mb-3&#34;&gt;
+  &lt;input type=&#34;text&#34; class=&#34;form-control&#34; placeholder=&#34;Recipient&#39;s username&#34; aria-label=&#34;Recipient&#39;s username&#34; aria-describedby=&#34;button-addon2&#34;&gt;
+  &lt;button class=&#34;btn btn-outline-primary&#34; type=&#34;button&#34; id=&#34;button-addon2&#34;&gt;Button&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;input-group mb-3&#34;&gt;
+  &lt;button class=&#34;btn btn-outline-primary&#34; type=&#34;button&#34;&gt;Button&lt;/button&gt;
+  &lt;button class=&#34;btn btn-outline-primary&#34; type=&#34;button&#34;&gt;Button&lt;/button&gt;
+  &lt;input type=&#34;text&#34; class=&#34;form-control&#34; placeholder=&#34;&#34; aria-label=&#34;Example text with two button addons&#34;&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;input-group&#34;&gt;
+  &lt;input type=&#34;text&#34; class=&#34;form-control&#34; placeholder=&#34;Recipient&#39;s username&#34; aria-label=&#34;Recipient&#39;s username with two button addons&#34;&gt;
+  &lt;button class=&#34;btn btn-outline-primary&#34; type=&#34;button&#34;&gt;Button&lt;/button&gt;
+  &lt;button class=&#34;btn btn-outline-primary&#34; type=&#34;button&#34;&gt;Button&lt;/button&gt;
+&lt;/div&gt;</code></pre></div><h2 id=buttons-with-dropdowns>Buttons with dropdowns</h2><p>Use buttons with dropdowns to place dropdown on either side of an input.</p><div class=bd-example><div class="input-group mb-3"><button class="btn btn-primary dropdown-toggle" type=button data-bs-toggle=dropdown aria-expanded=false>Dropdown</button><ul class=dropdown-menu><li><a class=dropdown-item href=#>Action</a></li><li><a class=dropdown-item href=#>Another action</a></li><li><a class=dropdown-item href=#>Something else here</a></li><li><hr class=dropdown-divider></li><li><a class=dropdown-item href=#>Separated link</a></li></ul><input type=text class=form-control aria-label="Text input with dropdown button"></div><div class="input-group mb-3"><input type=text class=form-control aria-label="Text input with dropdown button">
+<button class="btn btn-primary dropdown-toggle" type=button data-bs-toggle=dropdown aria-expanded=false>Dropdown</button><ul class="dropdown-menu dropdown-menu-end"><li><a class=dropdown-item href=#>Action</a></li><li><a class=dropdown-item href=#>Another action</a></li><li><a class=dropdown-item href=#>Something else here</a></li><li><hr class=dropdown-divider></li><li><a class=dropdown-item href=#>Separated link</a></li></ul></div><div class=input-group><button class="btn btn-primary dropdown-toggle" type=button data-bs-toggle=dropdown aria-expanded=false>Dropdown</button><ul class=dropdown-menu><li><a class=dropdown-item href=#>Action before</a></li><li><a class=dropdown-item href=#>Another action before</a></li><li><a class=dropdown-item href=#>Something else here</a></li><li><hr class=dropdown-divider></li><li><a class=dropdown-item href=#>Separated link</a></li></ul><input type=text class=form-control aria-label="Text input with 2 dropdown buttons">
+<button class="btn btn-primary dropdown-toggle" type=button data-bs-toggle=dropdown aria-expanded=false>Dropdown</button><ul class="dropdown-menu dropdown-menu-end"><li><a class=dropdown-item href=#>Action</a></li><li><a class=dropdown-item href=#>Another action</a></li><li><a class=dropdown-item href=#>Something else here</a></li><li><hr class=dropdown-divider></li><li><a class=dropdown-item href=#>Separated link</a></li></ul></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;input-group mb-3&#34;&gt;
+  &lt;button class=&#34;btn btn-primary dropdown-toggle&#34; type=&#34;button&#34; data-bs-toggle=&#34;dropdown&#34; aria-expanded=&#34;false&#34;&gt;Dropdown&lt;/button&gt;
+  &lt;ul class=&#34;dropdown-menu&#34;&gt;
+    &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;hr class=&#34;dropdown-divider&#34;&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;input type=&#34;text&#34; class=&#34;form-control&#34; aria-label=&#34;Text input with dropdown button&#34;&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;input-group mb-3&#34;&gt;
+  &lt;input type=&#34;text&#34; class=&#34;form-control&#34; aria-label=&#34;Text input with dropdown button&#34;&gt;
+  &lt;button class=&#34;btn btn-primary dropdown-toggle&#34; type=&#34;button&#34; data-bs-toggle=&#34;dropdown&#34; aria-expanded=&#34;false&#34;&gt;Dropdown&lt;/button&gt;
+  &lt;ul class=&#34;dropdown-menu dropdown-menu-end&#34;&gt;
+    &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;hr class=&#34;dropdown-divider&#34;&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;input-group&#34;&gt;
+  &lt;button class=&#34;btn btn-primary dropdown-toggle&#34; type=&#34;button&#34; data-bs-toggle=&#34;dropdown&#34; aria-expanded=&#34;false&#34;&gt;Dropdown&lt;/button&gt;
+  &lt;ul class=&#34;dropdown-menu&#34;&gt;
+    &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Action before&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Another action before&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;hr class=&#34;dropdown-divider&#34;&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;input type=&#34;text&#34; class=&#34;form-control&#34; aria-label=&#34;Text input with 2 dropdown buttons&#34;&gt;
+  &lt;button class=&#34;btn btn-primary dropdown-toggle&#34; type=&#34;button&#34; data-bs-toggle=&#34;dropdown&#34; aria-expanded=&#34;false&#34;&gt;Dropdown&lt;/button&gt;
+  &lt;ul class=&#34;dropdown-menu dropdown-menu-end&#34;&gt;
+    &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;hr class=&#34;dropdown-divider&#34;&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre></div><h2 id=segmented-buttons>Segmented buttons</h2><p>Segmented Buttons allow users to select one item at a time from two to four options. Selecting one option automatically turns off the last selection made.</p><div class=bd-example><div class="input-group mb-3"><button type=button class="btn btn-outline-primary">Action</button>
+<button type=button class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle=dropdown aria-expanded=false>
+<span class=visually-hidden>Toggle Dropdown</span></button><ul class=dropdown-menu><li><a class=dropdown-item href=#>Action</a></li><li><a class=dropdown-item href=#>Another action</a></li><li><a class=dropdown-item href=#>Something else here</a></li><li><hr class=dropdown-divider></li><li><a class=dropdown-item href=#>Separated link</a></li></ul><input type=text class=form-control aria-label="Text input with segmented dropdown button"></div><div class=input-group><input type=text class=form-control aria-label="Text input with segmented dropdown button">
+<button type=button class="btn btn-outline-primary">Action</button>
+<button type=button class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle=dropdown aria-expanded=false>
+<span class=visually-hidden>Toggle Dropdown</span></button><ul class="dropdown-menu dropdown-menu-end"><li><a class=dropdown-item href=#>Action</a></li><li><a class=dropdown-item href=#>Another action</a></li><li><a class=dropdown-item href=#>Something else here</a></li><li><hr class=dropdown-divider></li><li><a class=dropdown-item href=#>Separated link</a></li></ul></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;input-group mb-3&#34;&gt;
+  &lt;button type=&#34;button&#34; class=&#34;btn btn-outline-primary&#34;&gt;Action&lt;/button&gt;
+  &lt;button type=&#34;button&#34; class=&#34;btn btn-outline-primary dropdown-toggle dropdown-toggle-split&#34; data-bs-toggle=&#34;dropdown&#34; aria-expanded=&#34;false&#34;&gt;
+    &lt;span class=&#34;visually-hidden&#34;&gt;Toggle Dropdown&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class=&#34;dropdown-menu&#34;&gt;
+    &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;hr class=&#34;dropdown-divider&#34;&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;input type=&#34;text&#34; class=&#34;form-control&#34; aria-label=&#34;Text input with segmented dropdown button&#34;&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;input-group&#34;&gt;
+  &lt;input type=&#34;text&#34; class=&#34;form-control&#34; aria-label=&#34;Text input with segmented dropdown button&#34;&gt;
+  &lt;button type=&#34;button&#34; class=&#34;btn btn-outline-primary&#34;&gt;Action&lt;/button&gt;
+  &lt;button type=&#34;button&#34; class=&#34;btn btn-outline-primary dropdown-toggle dropdown-toggle-split&#34; data-bs-toggle=&#34;dropdown&#34; aria-expanded=&#34;false&#34;&gt;
+    &lt;span class=&#34;visually-hidden&#34;&gt;Toggle Dropdown&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class=&#34;dropdown-menu dropdown-menu-end&#34;&gt;
+    &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;hr class=&#34;dropdown-divider&#34;&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre></div><h2 id=file-input>File input</h2><p>Input groups include support for custom file inputs. Browser default versions of these are not supported.</p><div class=bd-example><div class="input-group mb-3"><label class=input-group-text for=inputGroupFile01>Upload</label>
+<input type=file class=form-control id=inputGroupFile01></div><div class="input-group mb-3"><input type=file class=form-control id=inputGroupFile02>
+<label class=input-group-text for=inputGroupFile02>Upload</label></div><div class="input-group mb-3"><button class="btn btn-outline-primary" type=button id=inputGroupFileAddon03>Button</button>
+<input type=file class=form-control id=inputGroupFile03 aria-describedby=inputGroupFileAddon03 aria-label=Upload></div><div class=input-group><input type=file class=form-control id=inputGroupFile04 aria-describedby=inputGroupFileAddon04 aria-label=Upload>
+<button class="btn btn-primary" type=button id=inputGroupFileAddon04>Button</button></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;input-group mb-3&#34;&gt;
+  &lt;label class=&#34;input-group-text&#34; for=&#34;inputGroupFile01&#34;&gt;Upload&lt;/label&gt;
+  &lt;input type=&#34;file&#34; class=&#34;form-control&#34; id=&#34;inputGroupFile01&#34;&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;input-group mb-3&#34;&gt;
+  &lt;input type=&#34;file&#34; class=&#34;form-control&#34; id=&#34;inputGroupFile02&#34;&gt;
+  &lt;label class=&#34;input-group-text&#34; for=&#34;inputGroupFile02&#34;&gt;Upload&lt;/label&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;input-group mb-3&#34;&gt;
+  &lt;button class=&#34;btn btn-outline-primary&#34; type=&#34;button&#34; id=&#34;inputGroupFileAddon03&#34;&gt;Button&lt;/button&gt;
+  &lt;input type=&#34;file&#34; class=&#34;form-control&#34; id=&#34;inputGroupFile03&#34; aria-describedby=&#34;inputGroupFileAddon03&#34; aria-label=&#34;Upload&#34;&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;input-group&#34;&gt;
+  &lt;input type=&#34;file&#34; class=&#34;form-control&#34; id=&#34;inputGroupFile04&#34; aria-describedby=&#34;inputGroupFileAddon04&#34; aria-label=&#34;Upload&#34;&gt;
+  &lt;button class=&#34;btn btn-primary&#34; type=&#34;button&#34; id=&#34;inputGroupFileAddon04&#34;&gt;Button&lt;/button&gt;
+&lt;/div&gt;</code></pre></div><h2 id=wrapping>Wrapping</h2><p>Input groups wrap by default via <code>flex-wrap: wrap</code> in order to accommodate custom form field validation within an input group. You may disable this with <code>.flex-nowrap</code>.</p><div class=bd-example><div class="input-group flex-nowrap"><span class=input-group-text id=addon-wrapping>@</span>
+<input type=text class=form-control placeholder=Username aria-label=Username aria-describedby=addon-wrapping></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;input-group flex-nowrap&#34;&gt;
+  &lt;span class=&#34;input-group-text&#34; id=&#34;addon-wrapping&#34;&gt;@&lt;/span&gt;
+  &lt;input type=&#34;text&#34; class=&#34;form-control&#34; placeholder=&#34;Username&#34; aria-label=&#34;Username&#34; aria-describedby=&#34;addon-wrapping&#34; /&gt;
+&lt;/div&gt;</code></pre></div><h2 id=accessibility>Accessibility</h2><p>Screen readers will have trouble with your forms if you don’t include a label for every input. For these input groups, ensure that any additional label or functionality is conveyed to assistive technologies.</p><p>The exact technique to be used (<code>&lt;label></code> elements hidden using the <code>.visually-hidden</code> class, or use of the <code>aria-label</code> and <code>aria-labelledby</code> attributes, possibly in combination with <code>aria-describedby</code>) and what additional information will need to be conveyed will vary depending on the exact type of interface widget you’re implementing. The examples in this section provide a few suggested, case-specific approaches.</p></div></div></div></div></main></div><script src=/js/fastbootstrap.min.js></script>
+<script src=/assets/js/main.fde7d879dae825e25af76bc7a2bee4490111d6bbc85a2677a12da3e73b6d23cc.min.ae4669210f157da040028477dda101132523de4d5312ba5dfbd37710ed096d9d.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/toolbar/prism-toolbar.min.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CR6EJXJK4S"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-CR6EJXJK4S")</script></body></html>

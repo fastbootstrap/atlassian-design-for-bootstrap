@@ -1,0 +1,488 @@
+<!doctype html><html lang=en><head><meta name=generator content="Hugo 0.103.1"><meta http-equiv=x-ua-compatible content="IE=edge"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" href=/favicon.ico type=image/x-icon><link href=/css/fastbootstrap.min.css rel=stylesheet><link href=/css/site.89e375fc829b142a487ae2d67a47a5518cef63838910cba2d65c78bb8f932acd.css rel=stylesheet><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css><title>Bootstrap Card Component - Examples & Tutorial - FastBootstrap</title><meta name=description content="Cards used to group similar information into flexible containers to let users to browse a collection of related items and actions."></head><body><header class="navbar navbar-expand-lg header-navbar py-0 sticky-top bg-white shadow-none"><nav class="container-fluid px-md-3 px-lg-4"><a class="navbar-brand d-inline-flex align-items-center m-0 p-0 me-lg-6 me-xl-9 p-1 rounded text-reset" href=/><svg class="brand-img" width="24" height="24" viewBox="0 0 32 32"><rect x="4" y="3" width="24" height="7" rx="3.5" ry="3.5"/><rect x="4" y="12" width="20" height="7" rx="3.5" ry="3.5"/><rect x="4" y="21" width="14" height="7" rx="3.5" ry="3.5"/></svg><h2 class="d-none d-md-block fw-semibold fs-5 ls-wide ms-2 mb-0">FastBootstrap</h2></a><div class="collapse navbar-collapse"><ul class=navbar-nav><li class="nav-item mx-2 mx-lg-3"><a class="nav-link fw-semibold rounded fs-sm" href=/docs>Docs</a></li><li class="nav-item mx-2 mx-lg-3 active"><a class="nav-link fw-semibold rounded fs-sm" href=/components>Components</a></li><li class="nav-item ms-auto"><a class="nav-link rounded-circle" href=https://github.com/fastbootstrap/atlassian-design-for-bootstrap><i class="fa-brands fa-github fa-xl"></i></a></li></ul></div><button class=navbar-toggler type=bdnavbar data-bs-toggle=offcanvas data-bs-target=#bdNavbar aria-controls=bdNavbar aria-label="Toggle navigation"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentcolor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 11.5A.5.5.0 013 11h10a.5.5.0 010 1H3a.5.5.0 01-.5-.5zm0-4A.5.5.0 013 7h10a.5.5.0 010 1H3a.5.5.0 01-.5-.5zm0-4A.5.5.0 013 3h10a.5.5.0 010 1H3a.5.5.0 01-.5-.5z"/></svg></button></nav></header><div class="offcanvas offcanvas-end w-100 mw-100" tabindex=-1 id=bdNavbar><div class="offcanvas-header border-bottom px-5"><svg class="brand-img" width="24" height="24" viewBox="0 0 32 32"><rect x="4" y="3" width="24" height="7" rx="3.5" ry="3.5"/><rect x="4" y="12" width="20" height="7" rx="3.5" ry="3.5"/><rect x="4" y="21" width="14" height="7" rx="3.5" ry="3.5"/></svg><button type=button class=btn-close data-bs-dismiss=offcanvas aria-label=Close></button></div><div class="offcanvas-body px-5"><div class="d-flex flex-column"><a class="py-2 fw-bold text-reset" href=/docs>Docs</a><a class="py-2 fw-bold text-reset" href=/components>Components</a></div><ul class="list-inline mt-3 text-center border-top pt-5"><li><a class="nav-link rounded-circle" href=https://github.com/fastbootstrap/atlassian-design-for-bootstrap><i class="fa-brands fa-github fa-xl"></i></a></li></ul></div></div><div class="d-flex flex-column flex-lg-row"><div class=sidebar><div class="d-flex d-lg-none align-items-center"><div class=container><div class="d-flex justify-content-between align-items-center py-3"><nav aria-label=breadcrumb><ol class="breadcrumb mb-0"><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/components/>Components</a></li><li class="breadcrumb-item active" aria-current=page>Card</li></ol></nav><button class="btn btn-sm p-0 border-0" data-bs-toggle=collapse href=#sidebar-nav aria-expanded=false><i class="fas fa-chevron-down"></i></button></div></div></div><div class="collapse d-lg-block py-3 py-lg-4" id=sidebar-nav><div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">Actions</div><ul class=list-unstyled><li><a href=/components/button/ class="sidebar__link d-block">Button</a></li><li><a href=/components/button-group/ class="sidebar__link d-block">Button Group</a></li><li><a href=/components/close-button/ class="sidebar__link d-block">Close Button</a></li></ul><div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">Inputs</div><ul class=list-unstyled><li><a href=/components/checkbox/ class="sidebar__link d-block">Checkbox</a></li><li><a href=/components/dropdown/ class="sidebar__link d-block">Dropdown</a></li><li><a href=/components/floating-label/ class="sidebar__link d-block">Floating Label</a></li><li><a href=/components/form/ class="sidebar__link d-block">Form</a></li><li><a href=/components/input-group/ class="sidebar__link d-block">Input Group</a></li><li><a href=/components/radio/ class="sidebar__link d-block">Radio</a></li><li><a href=/components/range/ class="sidebar__link d-block">Range</a></li><li><a href=/components/select/ class="sidebar__link d-block">Select Input</a></li><li><a href=/components/switch/ class="sidebar__link d-block">Switch</a></li><li><a href=/components/textfield/ class="sidebar__link d-block">Text field</a></li></ul><div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">navigation</div><ul class=list-unstyled><li><a href=/components/breadcrumb/ class="sidebar__link d-block">Breadcrumb</a></li><li><a href=/components/navbar/ class="sidebar__link d-block">Navbar</a></li><li><a href=/components/offcanvas/ class="sidebar__link d-block">Offcanvas</a></li><li><a href=/components/pagination/ class="sidebar__link d-block">Pagination</a></li><li><a href=/components/pills/ class="sidebar__link d-block">Pills</a></li><li><a href=/components/scrollspy/ class="sidebar__link d-block">Scrollspy</a></li><li><a href=/components/stretched-link/ class="sidebar__link d-block">Stretched Link</a></li><li><a href=/components/tabs/ class="sidebar__link d-block">Tabs</a></li></ul><div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">Feedback</div><ul class=list-unstyled><li><a href=/components/alerts/ class="sidebar__link d-block">Alerts</a></li><li><a href=/components/modal/ class="sidebar__link d-block">Modal</a></li><li><a href=/components/placeholders/ class="sidebar__link d-block">Placeholders</a></li><li><a href=/components/popover/ class="sidebar__link d-block">Popover</a></li><li><a href=/components/progress-bar/ class="sidebar__link d-block">Progress bar</a></li><li><a href=/components/progress-indicator/ class="sidebar__link d-block">Progress Indicator<span class="lozenge new ms-1 fw-normal">new</span></a></li><li><a href=/components/progress-tracker/ class="sidebar__link d-block">Progress Tracker<span class="lozenge new ms-1 fw-normal">new</span></a></li><li><a href=/components/spinner/ class="sidebar__link d-block">Spinner</a></li><li><a href=/components/toast/ class="sidebar__link d-block">Toast</a></li><li><a href=/components/tooltip/ class="sidebar__link d-block">Tooltip</a></li><li><a href=/components/validation/ class="sidebar__link d-block">Validation</a></li></ul><div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">Data Display</div><ul class=list-unstyled><li><a href=/components/avatar/ class="sidebar__link d-block">Avatar<span class="lozenge new ms-1 fw-normal">new</span></a></li><li><a href=/components/avatar-group/ class="sidebar__link d-block">Avatar Group<span class="lozenge new ms-1 fw-normal">new</span></a></li><li><a href=/components/badge/ class="sidebar__link d-block">Badge</a></li><li><a href=/components/lozenge/ class="sidebar__link d-block">Lozenge<span class="lozenge new ms-1 fw-normal">new</span></a></li><li><a href=/components/table/ class="sidebar__link d-block">Table</a></li><li><a href=/components/tag/ class="sidebar__link d-block">Tag<span class="lozenge new ms-1 fw-normal">new</span></a></li></ul><div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">surfaces</div><ul class=list-unstyled><li><a href=/components/accordion/ class="sidebar__link d-block">Accordion</a></li><li><a href=/components/blankslate/ class="sidebar__link d-block">Blankslate<span class="lozenge new ms-1 fw-normal">new</span></a></li><li><a href=/components/card/ class="sidebar__link d-block active">Card</a></li><li><a href=/components/carousel/ class="sidebar__link d-block">Carousel</a></li><li><a href=/components/collapse/ class="sidebar__link d-block">Collapse</a></li><li><a href=/components/list-group/ class="sidebar__link d-block">List Group</a></li></ul></div></div><main class="doc-main d-flex flex-grow-1 flex-column"><div class=bg-light><div class="container py-3 py-md-4 py-lg-5 py-xl-6"><div class=doc-intro><div class="d-flex align-items-center gap-2"><h1 class="fw-semibold fs-2">Card</h1></div><div class="mt-3 text-muted">Cards used to group similar information into flexible containers to let users to browse a collection of related items and actions.</div></div></div></div><div class="doc-contents pt-5 pb-5 pb-lg-6"><div class=container><div class="d-flex flex-column flex-lg-row-reverse justify-content-lg-end gap-xl-6"><div class="doc-nav align-self-start d-none d-xl-flex flex-column fs-sm"><span class="fw-semibold fs-xs text-uppercase">Contents</span><div class="doc-nav-content position-relative mt-2"><nav id=TableOfContents><ul><li><a href=#basic-example>Basic example</a><ul><li><a href=#outlined-card>Outlined Card</a></li></ul></li><li><a href=#media-card>Media card</a></li><li><a href=#complex-interaction>Complex Interaction</a></li><li><a href=#structure>Structure</a><ul><li><a href=#body>Body</a></li><li><a href=#header>Header</a></li><li><a href=#footer>Footer</a></li></ul></li><li><a href=#content>Content</a><ul><li><a href=#titles-text-and-links>Titles, text and links</a></li><li><a href=#images>Images</a></li><li><a href=#list-groups>List groups</a></li><li><a href=#kitchen-sink>Kitchen sink</a></li></ul></li><li><a href=#card-width>Card width</a><ul><li><a href=#using-grid-markup>Using grid markup</a></li><li><a href=#using-utilities>Using utilities</a></li><li><a href=#using-custom-css>Using custom CSS</a></li></ul></li><li><a href=#text-alignment>Text alignment</a></li><li><a href=#horizontal>Horizontal</a></li><li><a href=#navigation>Navigation</a><ul><li><a href=#with-tabs>With tabs</a></li><li><a href=#with-pills>With pills</a></li></ul></li><li><a href=#images-1>Images</a><ul><li><a href=#image-caps>Image caps</a></li><li><a href=#image-overlays>Image overlays</a></li></ul></li><li><a href=#card-styles>Card styles</a><ul><li><a href=#background-and-color>Background and color</a></li></ul></li><li><a href=#card-layout>Card layout</a><ul><li><a href=#card-groups>Card groups</a></li><li><a href=#grid-cards>Grid cards</a></li></ul></li></ul></nav></div></div><div class="doc-content d-flex flex-grow-1 flex-column" data-bs-spy=scroll data-bs-target=.doc-nav-content data-bs-smooth-scroll=true tabindex=0><p><strong>Bootstrap 5 Card component</strong></p><p>Responsive card built with the latest Bootstrap 5. The card component is a flexible and extensible content container includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options.</p><h2 id=basic-example>Basic example</h2><div class="bd-example bd-example-card d-flex justify-content-center bg-light"><div class=card><div class=card-body><h5 class=card-title>Card title</h5><p class=card-text>Some quick example text to build on the card title
+and make up the bulk of the card's content.</p><button type=button class="btn btn-primary">Learn More</button></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;card&#34;&gt;
+  &lt;div class=&#34;card-body&#34;&gt;
+    &lt;h5 class=&#34;card-title&#34;&gt;Card title&lt;/h5&gt;
+    &lt;p class=&#34;card-text&#34;&gt;
+      Some quick example text to build on the card title 
+      and make up the bulk of the card&#39;s content.
+    &lt;/p&gt;
+    &lt;button type=&#34;button&#34; class=&#34;btn btn-primary&#34;&gt;Learn More&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h3 id=outlined-card>Outlined Card</h3><p>Use the <code>shadow-none</code> to disable shadow of card.</p><div class="bd-example bd-example-card d-flex justify-content-center bg-light"><div class="card shadow-none border"><div class=card-body><h5 class=card-title>Card title</h5><p class=card-text>Some quick example text to build on the card title
+and make up the bulk of the card's content.</p><button type=button class="btn btn-primary">Learn More</button></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;card shadow-none border&#34;&gt;
+  &lt;div class=&#34;card-body&#34;&gt;
+    &lt;h5 class=&#34;card-title&#34;&gt;Card title&lt;/h5&gt;
+    &lt;p class=&#34;card-text&#34;&gt;
+      Some quick example text to build on the card title 
+      and make up the bulk of the card&#39;s content.
+    &lt;/p&gt;
+    &lt;button type=&#34;button&#34; class=&#34;btn btn-primary&#34;&gt;Learn More&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h2 id=media-card>Media card</h2><p>Using <code>.card-img-top</code> adding an image to reinforce the content.</p><div class="bd-example bd-example-card d-flex justify-content-center bg-light"><div class=card><img src=/images/cards/1.jpg class=card-img-top alt="green iguana"><div class=card-body><h4>Lizard</h4><p class=card-text>Lizards are a widespread group of squamate reptiles, with over
+6,000 species, ranging across all continents except Antarctica.</p><div><button class="btn btn-primary" type=button>Share</button>
+<button class="btn btn-link" type=button>Learn More</button></div></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;card&#34;&gt;
+  &lt;img src=&#34;/images/cards/1.jpg&#34; class=&#34;card-img-top&#34; alt=&#34;green iguana&#34; /&gt;
+  &lt;div class=&#34;card-body&#34;&gt;
+    &lt;h4&gt;Lizard&lt;/h4&gt;
+    &lt;p class=&#34;card-text&#34;&gt;
+      Lizards are a widespread group of squamate reptiles, with over 
+      6,000 species, ranging across all continents except Antarctica.
+    &lt;/p&gt;
+    &lt;div&gt;
+      &lt;button class=&#34;btn btn-primary&#34; type=&#34;button&#34;&gt;Share&lt;/button&gt;
+      &lt;button class=&#34;btn btn-link&#34; type=&#34;button&#34;&gt;Learn More&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h2 id=complex-interaction>Complex Interaction</h2><p>In this example, using the <code>.card-header</code>, <code>.card-footer</code>, <code>.card-img-top</code> and <a href=/components/dropdown/>dropdown menu</a> to build.</p><div class="bd-example bd-example-card d-flex justify-content-center bg-light"><div class=card><div class="card-header d-flex align-items-center"><span class="avatar text-bg-primary avatar-lg fs-5">R</span><div class=ms-3><h6 class="mb-0 fs-sm">Shrimp and Chorizo Paella</h6><span class="text-muted fs-sm">September 14, 2022</span></div><div class="dropstart ms-auto"><button class="btn text-muted" type=btn data-bs-toggle=dropdown aria-expanded=false>
+<i class="fas fa-ellipsis-v"></i></button><ul class=dropdown-menu><li><a class=dropdown-item href=#>Action</a></li><li><a class=dropdown-item href=#>Another action</a></li></ul></div></div><img src=/images/cards/2.jpg class=card-img-top alt="green iguana"><div class=card-body><p class=card-text>This impressive paella is a perfect party dish and a fun meal to cook together with your guests.
+Add 1 cup of frozen peas along with the mussels, if you like.</p></div><div class="card-footer d-flex"><button class="btn btn-link p-0 me-auto fw-bold" href=#>Action</button>
+<button class="btn btn-subtle" type=button><i class="fas fa-heart fa-lg"></i></button>
+<button class="btn btn-subtle" type=button><i class="fas fa-share fa-lg"></i></button></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;card&#34;&gt;
+  &lt;div class=&#34;card-header d-flex align-items-center&#34;&gt;
+    &lt;span class=&#34;avatar text-bg-primary avatar-lg fs-5&#34;&gt;R&lt;/span&gt;
+    &lt;div class=&#34;ms-3&#34;&gt;
+      &lt;h6 class=&#34;mb-0 fs-sm&#34;&gt;Shrimp and Chorizo Paella&lt;/h6&gt;
+      &lt;span class=&#34;text-muted fs-sm&#34;&gt;September 14, 2022&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dropstart ms-auto&#34;&gt;
+      &lt;button class=&#34;btn text-muted&#34; type=&#34;btn&#34; data-bs-toggle=&#34;dropdown&#34; aria-expanded=&#34;false&#34;&gt;
+        &lt;i class=&#34;fas fa-ellipsis-v&#34;&gt;&lt;/i&gt;
+      &lt;/button&gt;
+      &lt;ul class=&#34;dropdown-menu&#34;&gt;
+        &lt;li&gt;
+          &lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Action&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;img src=&#34;/images/cards/2.jpg&#34; class=&#34;card-img-top&#34; alt=&#34;green iguana&#34; /&gt;
+  &lt;div class=&#34;card-body&#34;&gt;
+    &lt;p class=&#34;card-text&#34;&gt;
+    This impressive paella is a perfect party dish and a fun meal to cook together with your guests. 
+    Add 1 cup of frozen peas along with the mussels, if you like.
+    &lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;card-footer d-flex&#34;&gt;
+    &lt;button class=&#34;btn btn-link p-0 me-auto fw-bold&#34; href=&#34;#&#34;&gt;Action&lt;/button&gt;
+    &lt;button class=&#34;btn btn-subtle&#34; type=&#34;button&#34;&gt;&lt;i class=&#34;fas fa-heart fa-lg&#34;&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;button class=&#34;btn btn-subtle&#34; type=&#34;button&#34;&gt;&lt;i class=&#34;fas fa-share fa-lg&#34;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h2 id=structure>Structure</h2><h3 id=body>Body</h3><p>The building block of a card is the <code>.card-body</code>. Use it whenever you need a padded section within a card.</p><div class="bd-example bd-example-card d-flex justify-content-center bg-light"><div class=card><div class=card-body>This is some text within a card body.</div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;card&#34;&gt;
+  &lt;div class=&#34;card-body&#34;&gt;
+    This is some text within a card body.
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h3 id=header>Header</h3><p>Add an optional header <code>.card-header</code> within a card.</p><div class="bd-example bd-example-card d-flex justify-content-center bg-light"><div class=card><div class="card-header d-flex align-items-center border-bottom"><span class="avatar text-bg-primary avatar-lg fs-5">R</span><div class=ms-3><h6 class="mb-0 fs-sm">Special title treatment</h6><span class="text-muted fs-sm">September 14, 2022</span></div><button class="btn text-muted ms-auto" type=btn><i class="fas fa-ellipsis-v"></i></button></div><div class=card-body>With supporting text below as a natural lead-in to additional content.</div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;card&#34;&gt;
+  &lt;div class=&#34;card-header d-flex align-items-center border-bottom&#34;&gt;
+    &lt;span class=&#34;avatar text-bg-primary avatar-lg fs-5&#34;&gt;R&lt;/span&gt;
+    &lt;div class=&#34;ms-3&#34;&gt;
+      &lt;h6 class=&#34;mb-0 fs-sm&#34;&gt;Special title treatment&lt;/h6&gt;
+      &lt;span class=&#34;text-muted fs-sm&#34;&gt;September 14, 2022&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;button class=&#34;btn text-muted ms-auto&#34; type=&#34;btn&#34;&gt;&lt;i class=&#34;fas fa-ellipsis-v&#34;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;card-body&#34;&gt;
+    With supporting text below as a natural lead-in to additional content.
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><p>Card headers can be styled by adding <code>.card-header</code> to <code>&lt;h*></code> elements.</p><div class="bd-example bd-example-card d-flex justify-content-center bg-light"><div class=card><h5 class=card-header>Featured</h5><div class=card-body><h5 class=card-title>Special title treatment</h5><p class=card-text>With supporting text below as a natural lead-in to additional content.</p></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;card&#34;&gt;
+  &lt;h5 class=&#34;card-header&#34;&gt;Featured&lt;/h5&gt;
+  &lt;div class=&#34;card-body&#34;&gt;
+    &lt;h5 class=&#34;card-title&#34;&gt;Special title treatment&lt;/h5&gt;
+    &lt;p class=&#34;card-text&#34;&gt;
+      With supporting text below as a natural lead-in to additional content.
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h3 id=footer>Footer</h3><p>Add an optional footer <code>.card-footer</code> within a card.</p><div class="bd-example bd-example-card d-flex justify-content-center bg-light"><div class=card><div class=card-body><h5 class=card-title>Special title treatment</h5><p class=card-text>With supporting text below as a natural lead-in to additional content.</p></div><div class="card-footer text-muted">September 14, 2022</div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;card&#34;&gt;
+  &lt;div class=&#34;card-body&#34;&gt;
+    &lt;h5 class=&#34;card-title&#34;&gt;Special title treatment&lt;/h5&gt;
+    &lt;p class=&#34;card-text&#34;&gt;
+      With supporting text below as a natural lead-in to additional content.
+    &lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;card-footer text-muted&#34;&gt;
+    September 14, 2022
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h2 id=content>Content</h2><p>Cards support a wide variety of content, including images, text, list groups, links, and more. Below are examples of what’s supported.</p><h3 id=titles-text-and-links>Titles, text and links</h3><p>Card titles are used by adding <code>.card-title</code> to a <code>&lt;h*></code> tag. In the same way, links are added and placed next to each other by adding <code>.card-link</code> to an <code>&lt;a></code> tag.</p><p>Subtitles are used by adding a <code>.card-subtitle</code> to a <code>&lt;h*></code> tag. If the <code>.card-title</code> and the <code>.card-subtitle</code> items are placed in a <code>.card-body</code> item, the card title and subtitle are aligned nicely.</p><div class="bd-example bd-example-card d-flex justify-content-center bg-light"><div class=card><div class=card-body><h5 class=card-title>Card title</h5><h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6><p class=card-text>Some quick example text to build on the card title and make up the bulk of the card's content.</p><a href=# class=card-link>Card link</a>
+<a href=# class=card-link>Another link</a></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;card&#34;&gt;
+  &lt;div class=&#34;card-body&#34;&gt;
+    &lt;h5 class=&#34;card-title&#34;&gt;Card title&lt;/h5&gt;
+    &lt;h6 class=&#34;card-subtitle mb-2 text-muted&#34;&gt;Card subtitle&lt;/h6&gt;
+    &lt;p class=&#34;card-text&#34;&gt;Some quick example text to build on the card title and make up the bulk of the card&#39;s content.&lt;/p&gt;
+    &lt;a href=&#34;#&#34; class=&#34;card-link&#34;&gt;Card link&lt;/a&gt;
+    &lt;a href=&#34;#&#34; class=&#34;card-link&#34;&gt;Another link&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h3 id=images>Images</h3><p><code>.card-img-top</code> places an image to the top of the card. With <code>.card-text</code>, text can be added to the card. Text within <code>.card-text</code> can also be styled with the standard HTML tags.</p><div class="bd-example bd-example-card d-flex justify-content-center bg-light"><div class=card><img src=/images/cards/1.jpg class=card-img-top alt="green iguana"><div class=card-body><p class=card-text>Lizards are a widespread group of squamate reptiles, with over
+6,000 species, ranging across all continents except Antarctica.</p></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;card&#34;&gt;
+  &lt;img src=&#34;/images/cards/1.jpg&#34; class=&#34;card-img-top&#34; alt=&#34;green iguana&#34; /&gt;
+  &lt;div class=&#34;card-body&#34;&gt;
+    &lt;p class=&#34;card-text&#34;&gt;
+      Lizards are a widespread group of squamate reptiles, with over 
+      6,000 species, ranging across all continents except Antarctica.
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h3 id=list-groups>List groups</h3><p>Create lists of content in a card with a flush list group.</p><div class="bd-example bd-example-card d-flex justify-content-center bg-light"><div class=card><ul class="list-group list-group-flush"><li class="list-group-item px-3">Cras justo odio</li><li class="list-group-item px-3">Dapibus ac facilisis in</li><li class="list-group-item px-3">Vestibulum at eros</li></ul></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;card&#34;&gt;
+  &lt;ul class=&#34;list-group list-group-flush&#34;&gt;
+    &lt;li class=&#34;list-group-item px-3&#34;&gt;Cras justo odio&lt;/li&gt;
+    &lt;li class=&#34;list-group-item px-3&#34;&gt;Dapibus ac facilisis in&lt;/li&gt;
+    &lt;li class=&#34;list-group-item px-3&#34;&gt;Vestibulum at eros&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre></div><h3 id=kitchen-sink>Kitchen sink</h3><p>Mix and match multiple content types to create the card you need, or throw everything in there. Shown below are image styles, blocks, text styles, and a list group—all wrapped in a fixed-width card.</p><div class="bd-example bd-example-card d-flex justify-content-center bg-light"><div class=card><img src=/images/cards/1.jpg class=card-img-top alt="green iguana"><div class=card-body><p class=card-text>Lizards are a widespread group of squamate reptiles, with over
+6,000 species, ranging across all continents except Antarctica.</p></div><ul class="list-group list-group-flush"><li class="list-group-item px-3">Cras justo odio</li><li class="list-group-item px-3">Dapibus ac facilisis in</li><li class="list-group-item px-3">Vestibulum at eros</li></ul><div class=card-body><a href=# class=card-link>Card link</a>
+<a href=# class=card-link>Another link</a></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;card&#34;&gt;
+  &lt;img src=&#34;/images/cards/1.jpg&#34; class=&#34;card-img-top&#34; alt=&#34;green iguana&#34; /&gt;
+  &lt;div class=&#34;card-body&#34;&gt;
+    &lt;p class=&#34;card-text&#34;&gt;
+      Lizards are a widespread group of squamate reptiles, with over 
+      6,000 species, ranging across all continents except Antarctica.
+    &lt;/p&gt;
+  &lt;/div&gt;
+  &lt;ul class=&#34;list-group list-group-flush&#34;&gt;
+    &lt;li class=&#34;list-group-item px-3&#34;&gt;Cras justo odio&lt;/li&gt;
+    &lt;li class=&#34;list-group-item px-3&#34;&gt;Dapibus ac facilisis in&lt;/li&gt;
+    &lt;li class=&#34;list-group-item px-3&#34;&gt;Vestibulum at eros&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;div class=&#34;card-body&#34;&gt;
+    &lt;a href=&#34;#&#34; class=&#34;card-link&#34;&gt;Card link&lt;/a&gt;
+    &lt;a href=&#34;#&#34; class=&#34;card-link&#34;&gt;Another link&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h2 id=card-width>Card width</h2><p>Cards assume no specific <code>width</code> to start, so they’ll be 100% wide unless otherwise stated. You can change this as needed with custom CSS, grid classes, grid Sass mixins, or utilities.</p><h3 id=using-grid-markup>Using grid markup</h3><p>Using the grid, wrap cards in columns and rows as needed.</p><div class="bd-example container bg-light"><div class=row><div class=col-sm-6><div class=card><div class=card-body><h5 class=card-title>Special title treatment</h5><p class=card-text>With supporting text below as a natural lead-in to additional content.</p><a href=# class="btn btn-primary">Go somewhere</a></div></div></div><div class=col-sm-6><div class=card><div class=card-body><h5 class=card-title>Special title treatment</h5><p class=card-text>With supporting text below as a natural lead-in to additional content.</p><a href=# class="btn btn-primary">Go somewhere</a></div></div></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;row&#34;&gt;
+  &lt;div class=&#34;col-sm-6&#34;&gt;
+    &lt;div class=&#34;card&#34;&gt;
+      &lt;div class=&#34;card-body&#34;&gt;
+        &lt;h5 class=&#34;card-title&#34;&gt;Special title treatment&lt;/h5&gt;
+        &lt;p class=&#34;card-text&#34;&gt;
+          With supporting text below as a natural lead-in to additional content.
+        &lt;/p&gt;
+        &lt;a href=&#34;#&#34; class=&#34;btn btn-primary&#34;&gt;Go somewhere&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;col-sm-6&#34;&gt;
+    &lt;div class=&#34;card&#34;&gt;
+      &lt;div class=&#34;card-body&#34;&gt;
+        &lt;h5 class=&#34;card-title&#34;&gt;Special title treatment&lt;/h5&gt;
+        &lt;p class=&#34;card-text&#34;&gt;
+          With supporting text below as a natural lead-in to additional content.
+        &lt;/p&gt;
+        &lt;a href=&#34;#&#34; class=&#34;btn btn-primary&#34;&gt;Go somewhere&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h3 id=using-utilities>Using utilities</h3><p>Use our handful of available sizing utilities to quickly set a card’s width.</p><div class="bd-example d-grid gap-3 bg-light"><div class="card w-75"><div class=card-body><h5 class=card-title>Card title</h5><p class=card-text>With supporting text below as a natural lead-in to additional content.</p><a href=# class="btn btn-primary">Button</a></div></div><div class="card w-50"><div class=card-body><h5 class=card-title>Card title</h5><p class=card-text>With supporting text below as a natural lead-in to additional content.</p><a href=# class="btn btn-primary">Button</a></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;card w-75&#34;&gt;
+  &lt;div class=&#34;card-body&#34;&gt;
+    &lt;h5 class=&#34;card-title&#34;&gt;Card title&lt;/h5&gt;
+    &lt;p class=&#34;card-text&#34;&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+    &lt;a href=&#34;#&#34; class=&#34;btn btn-primary&#34;&gt;Button&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;card w-50&#34;&gt;
+  &lt;div class=&#34;card-body&#34;&gt;
+    &lt;h5 class=&#34;card-title&#34;&gt;Card title&lt;/h5&gt;
+    &lt;p class=&#34;card-text&#34;&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+    &lt;a href=&#34;#&#34; class=&#34;btn btn-primary&#34;&gt;Button&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h3 id=using-custom-css>Using custom CSS</h3><p>Use custom CSS in your stylesheets or as inline styles to set a width.</p><div class="bd-example d-flex justify-content-center bg-light"><div class=card style=width:18rem><div class=card-body><h5 class=card-title>Special title treatment</h5><p class=card-text>With supporting text below as a natural lead-in to additional content.</p><a href=# class="btn btn-primary">Go somewhere</a></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;card&#34; style=&#34;width: 18rem;&#34;&gt;
+  &lt;div class=&#34;card-body&#34;&gt;
+    &lt;h5 class=&#34;card-title&#34;&gt;Special title treatment&lt;/h5&gt;
+    &lt;p class=&#34;card-text&#34;&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+    &lt;a href=&#34;#&#34; class=&#34;btn btn-primary&#34;&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h2 id=text-alignment>Text alignment</h2><p>You can quickly change the text alignment of any card—in its entirety or specific parts—with our <a href=/docs/text-align/>text align classes</a>.</p><div class="bd-example bd-example-card d-grid gap-3 bg-light"><div class=card><div class=card-body><h5 class=card-title>Special title treatment</h5><p class=card-text>With supporting text below as a natural lead-in to additional content.</p><a href=# class="btn btn-primary">Go somewhere</a></div></div><div class="card text-center"><div class=card-body><h5 class=card-title>Special title treatment</h5><p class=card-text>With supporting text below as a natural lead-in to additional content.</p><a href=# class="btn btn-primary">Go somewhere</a></div></div><div class="card text-end"><div class=card-body><h5 class=card-title>Special title treatment</h5><p class=card-text>With supporting text below as a natural lead-in to additional content.</p><a href=# class="btn btn-primary">Go somewhere</a></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;card&#34;&gt;
+  &lt;div class=&#34;card-body&#34;&gt;
+    &lt;h5 class=&#34;card-title&#34;&gt;Special title treatment&lt;/h5&gt;
+    &lt;p class=&#34;card-text&#34;&gt;
+      With supporting text below as a natural lead-in to additional content.
+    &lt;/p&gt;
+    &lt;a href=&#34;#&#34; class=&#34;btn btn-primary&#34;&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;card text-center&#34;&gt;
+  &lt;div class=&#34;card-body&#34;&gt;
+    &lt;h5 class=&#34;card-title&#34;&gt;Special title treatment&lt;/h5&gt;
+    &lt;p class=&#34;card-text&#34;&gt;
+      With supporting text below as a natural lead-in to additional content.
+    &lt;/p&gt;
+    &lt;a href=&#34;#&#34; class=&#34;btn btn-primary&#34;&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;card text-end&#34;&gt;
+  &lt;div class=&#34;card-body&#34;&gt;
+    &lt;h5 class=&#34;card-title&#34;&gt;Special title treatment&lt;/h5&gt;
+    &lt;p class=&#34;card-text&#34;&gt;
+      With supporting text below as a natural lead-in to additional content.
+    &lt;/p&gt;
+    &lt;a href=&#34;#&#34; class=&#34;btn btn-primary&#34;&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h2 id=horizontal>Horizontal</h2><p>Using a combination of grid and utility classes, cards can be made horizontal in a mobile-friendly and responsive way. In the example below, we remove the grid gutters with <code>.g-0</code> and use <code>.col-md-*</code> classes to make the card horizontal at the <code>md</code> breakpoint. Further adjustments may be needed depending on your card content.</p><div class="bd-example bg-light d-flex justify-content-center"><div class=card style=max-width:640px><div class="row g-0"><div class=col-md-4><img src=/images/cards/3.jpg class="img-fluid rounded-start"></div><div class=col-md-8><div class=card-body><h5 class=card-title>Card title</h5><p class=card-text>This is a wider card with supporting text below as a natural lead-in
+to additional content. This content is a little bit longer.</p><p class=card-text><small class=text-muted>Last updated 3 mins ago</small></p></div></div></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;card&#34; style=&#34;max-width: 640px;&#34;&gt;
+  &lt;div class=&#34;row g-0&#34;&gt;
+    &lt;div class=&#34;col-md-4&#34;&gt;
+      &lt;img src=&#34;/images/cards/3.jpg&#34; class=&#34;img-fluid rounded-start&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;col-md-8&#34;&gt;
+      &lt;div class=&#34;card-body&#34;&gt;
+        &lt;h5 class=&#34;card-title&#34;&gt;Card title&lt;/h5&gt;
+        &lt;p class=&#34;card-text&#34;&gt;
+          This is a wider card with supporting text below as a natural lead-in 
+          to additional content. This content is a little bit longer.
+        &lt;/p&gt;
+        &lt;p class=&#34;card-text&#34;&gt;
+          &lt;small class=&#34;text-muted&#34;&gt;Last updated 3 mins ago&lt;/small&gt;
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h2 id=navigation>Navigation</h2><p>Add some navigation to a card’s header (or block) with pills or <a href=https://fastbootstrap.com/components/tabs/>tabs</a> components.</p><h3 id=with-tabs>With tabs</h3><p>Add the <code>.card-header-tabs</code> class to the <code>.nav</code>.</p><div class="bd-example bg-light"><div class=card><div class=card-header><ul class="nav nav-tabs card-header-tabs"><li class=nav-item><a class="nav-link active" aria-current=true href=#>Active</a></li><li class=nav-item><a class=nav-link href=#>Link</a></li><li class=nav-item><a class="nav-link disabled">Disabled</a></li></ul></div><div class="card-body text-center"><h5 class=card-title>Special title treatment</h5><p class=card-text>With supporting text below as a natural lead-in to additional content.</p><a href=# class="btn btn-primary">Go somewhere</a></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;card&#34;&gt;
+  &lt;div class=&#34;card-header&#34;&gt;
+    &lt;ul class=&#34;nav nav-tabs card-header-tabs&#34;&gt;
+      &lt;li class=&#34;nav-item&#34;&gt;
+        &lt;a class=&#34;nav-link active&#34; aria-current=&#34;true&#34; href=&#34;#&#34;&gt;Active&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&#34;nav-item&#34;&gt;
+        &lt;a class=&#34;nav-link&#34; href=&#34;#&#34;&gt;Link&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&#34;nav-item&#34;&gt;
+        &lt;a class=&#34;nav-link disabled&#34;&gt;Disabled&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;card-body text-center&#34;&gt;
+    &lt;h5 class=&#34;card-title&#34;&gt;Special title treatment&lt;/h5&gt;
+    &lt;p class=&#34;card-text&#34;&gt;
+      With supporting text below as a natural lead-in to additional content.
+    &lt;/p&gt;
+    &lt;a href=&#34;#&#34; class=&#34;btn btn-primary&#34;&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h3 id=with-pills>With pills</h3><p>Add the <code>.card-header-pills</code> class to the <code>.nav</code>.</p><div class="bd-example bg-light"><div class=card><div class=card-header><ul class="nav nav-pills card-header-pills"><li class=nav-item><a class="nav-link active" href=#>Active</a></li><li class=nav-item><a class=nav-link href=#>Link</a></li><li class=nav-item><a class="nav-link disabled">Disabled</a></li></ul></div><div class="card-body text-center"><h5 class=card-title>Special title treatment</h5><p class=card-text>With supporting text below as a natural lead-in to additional content.</p><a href=# class="btn btn-primary">Go somewhere</a></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;card&#34;&gt;
+  &lt;div class=&#34;card-header&#34;&gt;
+    &lt;ul class=&#34;nav nav-pills card-header-pills&#34;&gt;
+      &lt;li class=&#34;nav-item&#34;&gt;
+        &lt;a class=&#34;nav-link active&#34; href=&#34;#&#34;&gt;Active&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&#34;nav-item&#34;&gt;
+        &lt;a class=&#34;nav-link&#34; href=&#34;#&#34;&gt;Link&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&#34;nav-item&#34;&gt;
+        &lt;a class=&#34;nav-link disabled&#34;&gt;Disabled&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;card-body text-center&#34;&gt;
+    &lt;h5 class=&#34;card-title&#34;&gt;Special title treatment&lt;/h5&gt;
+    &lt;p class=&#34;card-text&#34;&gt;
+      With supporting text below as a natural lead-in to additional content.
+    &lt;/p&gt;
+    &lt;a href=&#34;#&#34; class=&#34;btn btn-primary&#34;&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h2 id=images-1>Images</h2><p>Cards include a few options for working with images. Choose from appending “image caps” at either end of a card, overlaying images with card content, or simply embedding the image in a card.</p><h3 id=image-caps>Image caps</h3><p>Similar to headers and footers, cards can include top and bottom “image caps”—images at the top or bottom of a card.</p><div class="bd-example bd-example-card d-flex justify-content-center bg-light"><div class=card><img src=/images/cards/1.jpg class=card-img-top alt="green iguana"><div class=card-body><h4>Lizard</h4><p class=card-text>Lizards are a widespread group of squamate reptiles, with over
+6,000 species, ranging across all continents except Antarctica.</p></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;card&#34;&gt;
+  &lt;img src=&#34;/images/cards/1.jpg&#34; class=&#34;card-img-top&#34; alt=&#34;green iguana&#34; /&gt;
+  &lt;div class=&#34;card-body&#34;&gt;
+    &lt;h4&gt;Lizard&lt;/h4&gt;
+    &lt;p class=&#34;card-text&#34;&gt;
+      Lizards are a widespread group of squamate reptiles, with over 
+      6,000 species, ranging across all continents except Antarctica.
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><p>Images at the bottom of a card by <code>.card-img-bottom</code>.</p><div class="bd-example bd-example-card d-flex justify-content-center bg-light"><div class=card><div class=card-body><h4>Lizard</h4><p class=card-text>Lizards are a widespread group of squamate reptiles, with over
+6,000 species, ranging across all continents except Antarctica.</p></div><img src=/images/cards/1.jpg class=card-img-bottom alt="green iguana"></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;card&#34;&gt;
+  &lt;div class=&#34;card-body&#34;&gt;
+    &lt;h4&gt;Lizard&lt;/h4&gt;
+    &lt;p class=&#34;card-text&#34;&gt;
+      Lizards are a widespread group of squamate reptiles, with over 
+      6,000 species, ranging across all continents except Antarctica.
+    &lt;/p&gt;
+  &lt;/div&gt;
+  &lt;img src=&#34;/images/cards/1.jpg&#34; class=&#34;card-img-bottom&#34; alt=&#34;green iguana&#34; /&gt;
+&lt;/div&gt;</code></pre></div><h3 id=image-overlays>Image overlays</h3><p>Turn an image into a card background and overlay your card’s text. Depending on the image, you may or may not need additional styles or utilities.</p><div class="bd-example bd-example-card d-flex justify-content-center bg-light"><div class=card><img src=/images/cards/1.jpg class=card-img-top alt="green iguana"><div class="card-img-overlay text-white"><h4>Lizard</h4><p class=card-text>Lizards are a widespread group of squamate reptiles, with over
+6,000 species, ranging across all continents except Antarctica.</p></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;card&#34;&gt;
+  &lt;img src=&#34;/images/cards/1.jpg&#34; class=&#34;card-img-top&#34; alt=&#34;green iguana&#34; /&gt;
+  &lt;div class=&#34;card-img-overlay text-white&#34;&gt;
+    &lt;h4&gt;Lizard&lt;/h4&gt;
+    &lt;p class=&#34;card-text&#34;&gt;
+      Lizards are a widespread group of squamate reptiles, with over 
+      6,000 species, ranging across all continents except Antarctica.
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h2 id=card-styles>Card styles</h2><p>Cards include various options for customizing their backgrounds, borders, and color.</p><h3 id=background-and-color>Background and color</h3><p>Set a <code>background-color</code> with contrasting foreground color with our <code>.text-bg-{color}</code> helpers.</p><div class="bd-example bd-example-card d-grid gap-2 justify-content-center"><div class="card text-bg-primary"><div class=card-header>Header</div><div class=card-body><h5 class=card-title>Primary card title</h5><p class=card-text>Some quick example text to build on the card title
+and make up the bulk of the card's content.</p></div></div><div class="card text-bg-secondary"><div class=card-header>Header</div><div class=card-body><h5 class=card-title>Secondary card title</h5><p class=card-text>Some quick example text to build on the card title
+and make up the bulk of the card's content.</p></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;card text-bg-primary&#34;&gt;
+  &lt;div class=&#34;card-header&#34;&gt;Header&lt;/div&gt;
+  &lt;div class=&#34;card-body&#34;&gt;
+    &lt;h5 class=&#34;card-title&#34;&gt;Primary card title&lt;/h5&gt;
+    &lt;p class=&#34;card-text&#34;&gt;Some quick example text to build on the card title 
+      and make up the bulk of the card&#39;s content.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;card text-bg-secondary&#34;&gt;
+  &lt;div class=&#34;card-header&#34;&gt;Header&lt;/div&gt;
+  &lt;div class=&#34;card-body&#34;&gt;
+    &lt;h5 class=&#34;card-title&#34;&gt;Secondary card title&lt;/h5&gt;
+    &lt;p class=&#34;card-text&#34;&gt;Some quick example text to build on the card title 
+      and make up the bulk of the card&#39;s content.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h2 id=card-layout>Card layout</h2><p>In addition to styling the content within cards, Bootstrap includes a few options for laying out series of cards.</p><section class="callout warning d-flex"><div><span><i class="fa-solid fa-circle-exclamation fa-lg text-yellow-500"></i></span></div><div class=ms-3>For the time being, these layout options are not yet responsive.</div></section><h3 id=card-groups>Card groups</h3><p>Use card groups to render cards as a single, attached element with equal width and height columns. Card groups start off stacked and use <code>display: flex</code>; to become attached with uniform dimensions starting at the <code>sm</code> breakpoint.</p><div class=bd-example><div class=card-group><div class=card><img src=/images/cards/4.jpg class=card-img-top alt="card example"><div class=card-body><h5 class=card-title>Card title</h5><p class=card-text>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p><p class=card-text><small class=text-muted>Last updated 3 mins ago</small></p></div></div><div class=card><img src=/images/cards/4.jpg class=card-img-top alt="card example"><div class=card-body><h5 class=card-title>Card title</h5><p class=card-text>This card has supporting text below as a natural lead-in to additional content.</p><p class=card-text><small class=text-muted>Last updated 3 mins ago</small></p></div></div><div class=card><img src=/images/cards/4.jpg class=card-img-top alt="card example"><div class=card-body><h5 class=card-title>Card title</h5><p class=card-text>This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p><p class=card-text><small class=text-muted>Last updated 3 mins ago</small></p></div></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;card-group&#34;&gt;
+  &lt;div class=&#34;card&#34;&gt;
+    &lt;img src=&#34;/images/cards/4.jpg&#34; class=&#34;card-img-top&#34; alt=&#34;card example&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;h5 class=&#34;card-title&#34;&gt;Card title&lt;/h5&gt;
+      &lt;p class=&#34;card-text&#34;&gt;This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+      &lt;p class=&#34;card-text&#34;&gt;&lt;small class=&#34;text-muted&#34;&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;card&#34;&gt;
+    &lt;img src=&#34;/images/cards/4.jpg&#34; class=&#34;card-img-top&#34; alt=&#34;card example&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;h5 class=&#34;card-title&#34;&gt;Card title&lt;/h5&gt;
+      &lt;p class=&#34;card-text&#34;&gt;This card has supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+      &lt;p class=&#34;card-text&#34;&gt;&lt;small class=&#34;text-muted&#34;&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;card&#34;&gt;
+    &lt;img src=&#34;/images/cards/4.jpg&#34; class=&#34;card-img-top&#34; alt=&#34;card example&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;h5 class=&#34;card-title&#34;&gt;Card title&lt;/h5&gt;
+      &lt;p class=&#34;card-text&#34;&gt;This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.&lt;/p&gt;
+      &lt;p class=&#34;card-text&#34;&gt;&lt;small class=&#34;text-muted&#34;&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><p>When using card groups with footers, their content will automatically line up.</p><div class=bd-example><div class=card-group><div class=card><img src=/images/cards/4.jpg class=card-img-top alt="card example"><div class=card-body><h5 class=card-title>Card title</h5><p class=card-text>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div><div class=card-footer><small class=text-muted>Last updated 3 mins ago</small></div></div><div class=card><img src=/images/cards/4.jpg class=card-img-top alt="card example"><div class=card-body><h5 class=card-title>Card title</h5><p class=card-text>This card has supporting text below as a natural lead-in to additional content.</p></div><div class=card-footer><small class=text-muted>Last updated 3 mins ago</small></div></div><div class=card><img src=/images/cards/4.jpg class=card-img-top alt="card example"><div class=card-body><h5 class=card-title>Card title</h5><p class=card-text>This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p></div><div class=card-footer><small class=text-muted>Last updated 3 mins ago</small></div></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;card-group&#34;&gt;
+  &lt;div class=&#34;card&#34;&gt;
+    &lt;img src=&#34;/images/cards/4.jpg&#34; class=&#34;card-img-top&#34; alt=&#34;card example&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;h5 class=&#34;card-title&#34;&gt;Card title&lt;/h5&gt;
+      &lt;p class=&#34;card-text&#34;&gt;This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;card-footer&#34;&gt;
+      &lt;small class=&#34;text-muted&#34;&gt;Last updated 3 mins ago&lt;/small&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;card&#34;&gt;
+    &lt;img src=&#34;/images/cards/4.jpg&#34; class=&#34;card-img-top&#34; alt=&#34;card example&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;h5 class=&#34;card-title&#34;&gt;Card title&lt;/h5&gt;
+      &lt;p class=&#34;card-text&#34;&gt;This card has supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;card-footer&#34;&gt;
+      &lt;small class=&#34;text-muted&#34;&gt;Last updated 3 mins ago&lt;/small&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;card&#34;&gt;
+    &lt;img src=&#34;/images/cards/4.jpg&#34; class=&#34;card-img-top&#34; alt=&#34;card example&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;h5 class=&#34;card-title&#34;&gt;Card title&lt;/h5&gt;
+      &lt;p class=&#34;card-text&#34;&gt;This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;card-footer&#34;&gt;
+      &lt;small class=&#34;text-muted&#34;&gt;Last updated 3 mins ago&lt;/small&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h3 id=grid-cards>Grid cards</h3><p>Use the Bootstrap grid system and its <a href=/docs/grid/#row-columns><code>.row-cols</code> classes</a> to control how many grid columns (wrapped around your cards) you show per row. For example, here’s <code>.row-cols-1</code> laying out the cards on one column, and <code>.row-cols-md-2</code> splitting four cards to equal width across multiple rows, from the medium breakpoint up.</p><div class="bd-example container"><div class="row row-cols-1 row-cols-md-2 g-4"><div class=col><div class=card><img src=/images/cards/4.jpg class=card-img-top alt="card example"><div class=card-body><h5 class=card-title>Card title</h5><p class=card-text>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div></div></div><div class=col><div class=card><img src=/images/cards/5.jpg class=card-img-top alt="card example"><div class=card-body><h5 class=card-title>Card title</h5><p class=card-text>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div></div></div><div class=col><div class=card><img src=/images/cards/6.jpg class=card-img-top alt="card example"><div class=card-body><h5 class=card-title>Card title</h5><p class=card-text>This is a longer card with supporting text below as a natural lead-in to additional content.</p></div></div></div><div class=col><div class=card><img src=/images/cards/7.jpg class=card-img-top alt="card example"><div class=card-body><h5 class=card-title>Card title</h5><p class=card-text>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div></div></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;row row-cols-1 row-cols-md-2 g-4&#34;&gt;
+  &lt;div class=&#34;col&#34;&gt;
+    &lt;div class=&#34;card&#34;&gt;
+      &lt;img src=&#34;/images/cards/4.jpg&#34; class=&#34;card-img-top&#34; alt=&#34;card example&#34; /&gt;
+      &lt;div class=&#34;card-body&#34;&gt;
+        &lt;h5 class=&#34;card-title&#34;&gt;Card title&lt;/h5&gt;
+        &lt;p class=&#34;card-text&#34;&gt;This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;col&#34;&gt;
+    &lt;div class=&#34;card&#34;&gt;
+      &lt;img src=&#34;/images/cards/5.jpg&#34; class=&#34;card-img-top&#34; alt=&#34;card example&#34; /&gt;
+      &lt;div class=&#34;card-body&#34;&gt;
+        &lt;h5 class=&#34;card-title&#34;&gt;Card title&lt;/h5&gt;
+        &lt;p class=&#34;card-text&#34;&gt;This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;col&#34;&gt;
+    &lt;div class=&#34;card&#34;&gt;
+      &lt;img src=&#34;/images/cards/6.jpg&#34; class=&#34;card-img-top&#34; alt=&#34;card example&#34; /&gt;
+      &lt;div class=&#34;card-body&#34;&gt;
+        &lt;h5 class=&#34;card-title&#34;&gt;Card title&lt;/h5&gt;
+        &lt;p class=&#34;card-text&#34;&gt;This is a longer card with supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;col&#34;&gt;
+    &lt;div class=&#34;card&#34;&gt;
+      &lt;img src=&#34;/images/cards/7.jpg&#34; class=&#34;card-img-top&#34; alt=&#34;card example&#34; /&gt;
+      &lt;div class=&#34;card-body&#34;&gt;
+        &lt;h5 class=&#34;card-title&#34;&gt;Card title&lt;/h5&gt;
+        &lt;p class=&#34;card-text&#34;&gt;This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><p>Change it to <code>.row-cols-3</code> and you’ll see the fourth card wrap.</p><div class="bd-example container"><div class="row row-cols-1 row-cols-md-3 g-4"><div class=col><div class=card><img src=/images/cards/4.jpg class=card-img-top alt="card example"><div class=card-body><h5 class=card-title>Card title</h5><p class=card-text>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div></div></div><div class=col><div class=card><img src=/images/cards/5.jpg class=card-img-top alt="card example"><div class=card-body><h5 class=card-title>Card title</h5><p class=card-text>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div></div></div><div class=col><div class=card><img src=/images/cards/6.jpg class=card-img-top alt="card example"><div class=card-body><h5 class=card-title>Card title</h5><p class=card-text>This is a longer card with supporting text below as a natural lead-in to additional content.</p></div></div></div><div class=col><div class=card><img src=/images/cards/7.jpg class=card-img-top alt="card example"><div class=card-body><h5 class=card-title>Card title</h5><p class=card-text>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div></div></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;row row-cols-1 row-cols-md-3 g-4&#34;&gt;
+  &lt;div class=&#34;col&#34;&gt;
+    &lt;div class=&#34;card&#34;&gt;
+      &lt;img src=&#34;/images/cards/4.jpg&#34; class=&#34;card-img-top&#34; alt=&#34;card example&#34; /&gt;
+      &lt;div class=&#34;card-body&#34;&gt;
+        &lt;h5 class=&#34;card-title&#34;&gt;Card title&lt;/h5&gt;
+        &lt;p class=&#34;card-text&#34;&gt;This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;col&#34;&gt;
+    &lt;div class=&#34;card&#34;&gt;
+      &lt;img src=&#34;/images/cards/5.jpg&#34; class=&#34;card-img-top&#34; alt=&#34;card example&#34; /&gt;
+      &lt;div class=&#34;card-body&#34;&gt;
+        &lt;h5 class=&#34;card-title&#34;&gt;Card title&lt;/h5&gt;
+        &lt;p class=&#34;card-text&#34;&gt;This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;col&#34;&gt;
+    &lt;div class=&#34;card&#34;&gt;
+      &lt;img src=&#34;/images/cards/6.jpg&#34; class=&#34;card-img-top&#34; alt=&#34;card example&#34; /&gt;
+      &lt;div class=&#34;card-body&#34;&gt;
+        &lt;h5 class=&#34;card-title&#34;&gt;Card title&lt;/h5&gt;
+        &lt;p class=&#34;card-text&#34;&gt;This is a longer card with supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;col&#34;&gt;
+    &lt;div class=&#34;card&#34;&gt;
+      &lt;img src=&#34;/images/cards/7.jpg&#34; class=&#34;card-img-top&#34; alt=&#34;card example&#34; /&gt;
+      &lt;div class=&#34;card-body&#34;&gt;
+        &lt;h5 class=&#34;card-title&#34;&gt;Card title&lt;/h5&gt;
+        &lt;p class=&#34;card-text&#34;&gt;This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><p>When you need equal height, add <code>.h-100</code> to the cards. If you want equal heights by default, you can set <code>$card-height: 100%</code> in Sass.</p><div class="bd-example container"><div class="row row-cols-1 row-cols-md-3 g-4"><div class=col><div class="card h-100"><img src=/images/cards/4.jpg class=card-img-top alt="card example"><div class=card-body><h5 class=card-title>Card title</h5><p class=card-text>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div></div></div><div class=col><div class="card h-100"><img src=/images/cards/6.jpg class=card-img-top alt="card example"><div class=card-body><h5 class=card-title>Card title</h5><p class=card-text>This is a longer card with supporting text below as a natural lead-in to additional content.</p></div></div></div><div class=col><div class="card h-100"><img src=/images/cards/7.jpg class=card-img-top alt="card example"><div class=card-body><h5 class=card-title>Card title</h5><p class=card-text>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></div></div></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;row row-cols-1 row-cols-md-3 g-4&#34;&gt;
+  &lt;div class=&#34;col&#34;&gt;
+    &lt;div class=&#34;card h-100&#34;&gt;
+      &lt;img src=&#34;/images/cards/4.jpg&#34; class=&#34;card-img-top&#34; alt=&#34;card example&#34; /&gt;
+      &lt;div class=&#34;card-body&#34;&gt;
+        &lt;h5 class=&#34;card-title&#34;&gt;Card title&lt;/h5&gt;
+        &lt;p class=&#34;card-text&#34;&gt;This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;col&#34;&gt;
+    &lt;div class=&#34;card h-100&#34;&gt;
+      &lt;img src=&#34;/images/cards/6.jpg&#34; class=&#34;card-img-top&#34; alt=&#34;card example&#34; /&gt;
+      &lt;div class=&#34;card-body&#34;&gt;
+        &lt;h5 class=&#34;card-title&#34;&gt;Card title&lt;/h5&gt;
+        &lt;p class=&#34;card-text&#34;&gt;This is a longer card with supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;col&#34;&gt;
+    &lt;div class=&#34;card h-100&#34;&gt;
+      &lt;img src=&#34;/images/cards/7.jpg&#34; class=&#34;card-img-top&#34; alt=&#34;card example&#34; /&gt;
+      &lt;div class=&#34;card-body&#34;&gt;
+        &lt;h5 class=&#34;card-title&#34;&gt;Card title&lt;/h5&gt;
+        &lt;p class=&#34;card-text&#34;&gt;This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div></div></div></div></div></main></div><script src=/js/fastbootstrap.min.js></script>
+<script src=/assets/js/main.fde7d879dae825e25af76bc7a2bee4490111d6bbc85a2677a12da3e73b6d23cc.min.ae4669210f157da040028477dda101132523de4d5312ba5dfbd37710ed096d9d.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/toolbar/prism-toolbar.min.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CR6EJXJK4S"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-CR6EJXJK4S")</script></body></html>

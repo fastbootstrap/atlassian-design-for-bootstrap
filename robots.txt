@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: https://fastbootstrap.com/sitemap.xml

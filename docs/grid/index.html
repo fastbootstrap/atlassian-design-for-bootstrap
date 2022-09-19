@@ -1,0 +1,270 @@
+<!doctype html><html lang=en><head><meta name=generator content="Hugo 0.103.1"><meta http-equiv=x-ua-compatible content="IE=edge"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" href=/favicon.ico type=image/x-icon><link href=/css/fastbootstrap.min.css rel=stylesheet><link href=/css/site.89e375fc829b142a487ae2d67a47a5518cef63838910cba2d65c78bb8f932acd.css rel=stylesheet><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css><title>Grid - FastBootstrap</title><meta name=description content="A responsive grid allows a layout to change dynamically based on the size of the screen."></head><body><header class="navbar navbar-expand-lg header-navbar py-0 sticky-top bg-white shadow-none"><nav class="container-fluid px-md-3 px-lg-4"><a class="navbar-brand d-inline-flex align-items-center m-0 p-0 me-lg-6 me-xl-9 p-1 rounded text-reset" href=/><svg class="brand-img" width="24" height="24" viewBox="0 0 32 32"><rect x="4" y="3" width="24" height="7" rx="3.5" ry="3.5"/><rect x="4" y="12" width="20" height="7" rx="3.5" ry="3.5"/><rect x="4" y="21" width="14" height="7" rx="3.5" ry="3.5"/></svg><h2 class="d-none d-md-block fw-semibold fs-5 ls-wide ms-2 mb-0">FastBootstrap</h2></a><div class="collapse navbar-collapse"><ul class=navbar-nav><li class="nav-item mx-2 mx-lg-3 active"><a class="nav-link fw-semibold rounded fs-sm" href=/docs>Docs</a></li><li class="nav-item mx-2 mx-lg-3"><a class="nav-link fw-semibold rounded fs-sm" href=/components>Components</a></li><li class="nav-item ms-auto"><a class="nav-link rounded-circle" href=https://github.com/fastbootstrap/atlassian-design-for-bootstrap><i class="fa-brands fa-github fa-xl"></i></a></li></ul></div><button class=navbar-toggler type=bdnavbar data-bs-toggle=offcanvas data-bs-target=#bdNavbar aria-controls=bdNavbar aria-label="Toggle navigation"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentcolor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 11.5A.5.5.0 013 11h10a.5.5.0 010 1H3a.5.5.0 01-.5-.5zm0-4A.5.5.0 013 7h10a.5.5.0 010 1H3a.5.5.0 01-.5-.5zm0-4A.5.5.0 013 3h10a.5.5.0 010 1H3a.5.5.0 01-.5-.5z"/></svg></button></nav></header><div class="offcanvas offcanvas-end w-100 mw-100" tabindex=-1 id=bdNavbar><div class="offcanvas-header border-bottom px-5"><svg class="brand-img" width="24" height="24" viewBox="0 0 32 32"><rect x="4" y="3" width="24" height="7" rx="3.5" ry="3.5"/><rect x="4" y="12" width="20" height="7" rx="3.5" ry="3.5"/><rect x="4" y="21" width="14" height="7" rx="3.5" ry="3.5"/></svg><button type=button class=btn-close data-bs-dismiss=offcanvas aria-label=Close></button></div><div class="offcanvas-body px-5"><div class="d-flex flex-column"><a class="py-2 fw-bold text-reset" href=/docs>Docs</a><a class="py-2 fw-bold text-reset" href=/components>Components</a></div><ul class="list-inline mt-3 text-center border-top pt-5"><li><a class="nav-link rounded-circle" href=https://github.com/fastbootstrap/atlassian-design-for-bootstrap><i class="fa-brands fa-github fa-xl"></i></a></li></ul></div></div><div class="d-flex flex-column flex-lg-row"><div class=sidebar><div class="d-flex d-lg-none align-items-center"><div class=container><div class="d-flex justify-content-between align-items-center py-3"><nav aria-label=breadcrumb><ol class="breadcrumb mb-0"><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/docs/>Docs</a></li><li class="breadcrumb-item active" aria-current=page>Grid</li></ol></nav><button class="btn btn-sm p-0 border-0" data-bs-toggle=collapse href=#sidebar-nav aria-expanded=false><i class="fas fa-chevron-down"></i></button></div></div></div><div class="collapse d-lg-block py-3 py-lg-4" id=sidebar-nav><div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">Getting Started</div><ul class=list-unstyled><li><a href=/docs/overview/ class="sidebar__link d-block">Overview</a></li><li><a href=/docs/quick-start/ class="sidebar__link d-block">Quick Start</a></li><li><a href=/docs/atlassian-design/ class="sidebar__link d-block">Atlassian Design</a></li><li><a href=/docs/browsers-devices/ class="sidebar__link d-block">Browsers & devices</a></li><li><a href=/docs/migration/ class="sidebar__link d-block">Migration</a></li><li><a href=/docs/rtl/ class="sidebar__link d-block">RTL</a></li></ul><div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">Customize</div><ul class=list-unstyled><li><a href=/docs/color/ class="sidebar__link d-block">Color</a></li><li><a href=/docs/css-variables/ class="sidebar__link d-block">CSS variables</a></li></ul><div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">Base Styles</div><ul class=list-unstyled><li><a href=/docs/reboot/ class="sidebar__link d-block">Reboot</a></li><li><a href=/docs/figures/ class="sidebar__link d-block">Figures</a></li><li><a href=/docs/images/ class="sidebar__link d-block">Images</a></li><li><a href=/docs/link/ class="sidebar__link d-block">Link</a></li></ul><div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">Layout</div><ul class=list-unstyled><li><a href=/docs/breakpoints/ class="sidebar__link d-block">Breakpoints</a></li><li><a href=/docs/containers/ class="sidebar__link d-block">Containers</a></li><li><a href=/docs/grid/ class="sidebar__link d-block active">Grid</a></li><li><a href=/docs/columns/ class="sidebar__link d-block">Columns</a></li><li><a href=/docs/gutters/ class="sidebar__link d-block">Gutters</a></li><li><a href=/docs/aspect-ratio/ class="sidebar__link d-block">Aspect Ratio</a></li><li><a href=/docs/clear/ class="sidebar__link d-block">Clear</a></li><li><a href=/docs/clearfix/ class="sidebar__link d-block">Clearfix</a></li><li><a href=/docs/display/ class="sidebar__link d-block">Display</a></li><li><a href=/docs/floats/ class="sidebar__link d-block">Floats</a></li><li><a href=/docs/overflow/ class="sidebar__link d-block">Overflow</a></li><li><a href=/docs/position/ class="sidebar__link d-block">Position</a></li><li><a href=/docs/stacks/ class="sidebar__link d-block">Stacks</a></li><li><a href=/docs/visibility/ class="sidebar__link d-block">Visibility</a></li><li><a href=/docs/visually-hidden/ class="sidebar__link d-block">Visually hidden</a></li><li><a href=/docs/z-index/ class="sidebar__link d-block">Z-Index</a></li></ul><div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">Flexbox & Grid</div><ul class=list-unstyled><li><a href=/docs/css-grid/ class="sidebar__link d-block">CSS Grid</a></li><li><a href=/docs/flex-direction/ class="sidebar__link d-block">Flex Direction</a></li><li><a href=/docs/flex-wrap/ class="sidebar__link d-block">Flex Wrap</a></li><li><a href=/docs/flex-grow/ class="sidebar__link d-block">Flex Grow</a></li><li><a href=/docs/flex-shrink/ class="sidebar__link d-block">Flex Shrink</a></li><li><a href=/docs/flex/ class="sidebar__link d-block">Flex</a></li><li><a href=/docs/order/ class="sidebar__link d-block">Order</a></li><li><a href=/docs/justify-content/ class="sidebar__link d-block">Justify Content</a></li><li><a href=/docs/gap/ class="sidebar__link d-block">Gap</a></li><li><a href=/docs/align-content/ class="sidebar__link d-block">Align Content</a></li><li><a href=/docs/align-items/ class="sidebar__link d-block">Align Items</a></li><li><a href=/docs/align-self/ class="sidebar__link d-block">Align Self</a></li></ul><div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">Spacing</div><ul class=list-unstyled><li><a href=/docs/margin/ class="sidebar__link d-block">Margin</a></li><li><a href=/docs/padding/ class="sidebar__link d-block">Padding</a></li></ul><div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">Sizing</div><ul class=list-unstyled><li><a href=/docs/width/ class="sidebar__link d-block">Width</a></li><li><a href=/docs/height/ class="sidebar__link d-block">Height</a></li></ul><div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">Typography</div><ul class=list-unstyled><li><a href=/docs/font-family/ class="sidebar__link d-block">Font Family</a></li><li><a href=/docs/font-size/ class="sidebar__link d-block">Font Size</a></li><li><a href=/docs/font-style/ class="sidebar__link d-block">Font Style</a></li><li><a href=/docs/font-weight/ class="sidebar__link d-block">Font Weight</a></li><li><a href=/docs/letter-spacing/ class="sidebar__link d-block">Letter Spacing</a></li><li><a href=/docs/line-height/ class="sidebar__link d-block">Line Height</a></li><li><a href=/docs/text-align/ class="sidebar__link d-block">Text Align</a></li><li><a href=/docs/text-color/ class="sidebar__link d-block">Text Color</a></li><li><a href=/docs/text-decoration/ class="sidebar__link d-block">Text Decoration</a></li><li><a href=/docs/text-overflow/ class="sidebar__link d-block">Text Overflow</a></li><li><a href=/docs/text-transform/ class="sidebar__link d-block">Text Transform</a></li><li><a href=/docs/vertical-align/ class="sidebar__link d-block">Vertical Align</a></li><li><a href=/docs/whitespace/ class="sidebar__link d-block">Whitespace</a></li><li><a href=/docs/word-break/ class="sidebar__link d-block">Word Break</a></li></ul><div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">Backgrounds</div><ul class=list-unstyled><li><a href=/docs/background-color/ class="sidebar__link d-block">Background Color</a></li></ul><div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">Borders</div><ul class=list-unstyled><li><a href=/docs/border/ class="sidebar__link d-block">Border Overview</a></li><li><a href=/docs/border-color/ class="sidebar__link d-block">Border Color</a></li><li><a href=/docs/border-opacity/ class="sidebar__link d-block">Border Opacity</a></li><li><a href=/docs/border-radius/ class="sidebar__link d-block">Border Radius</a></li><li><a href=/docs/border-style/ class="sidebar__link d-block">Border Style</a></li><li><a href=/docs/border-width/ class="sidebar__link d-block">Border Width</a></li><li><a href=/docs/vertical-rule/ class="sidebar__link d-block">Vertical Rule</a></li></ul><div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">Effects</div><ul class=list-unstyled><li><a href=/docs/box-shadow/ class="sidebar__link d-block">Box shadow</a></li><li><a href=/docs/opacity/ class="sidebar__link d-block">Opacity</a></li></ul><div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">Animation</div><ul class=list-unstyled><li><a href=/docs/animation/ class="sidebar__link d-block">Animation</a></li></ul><div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">Interactivity</div><ul class=list-unstyled><li><a href=/docs/pointer-events/ class="sidebar__link d-block">Pointer Events</a></li><li><a href=/docs/user-select/ class="sidebar__link d-block">User Select</a></li></ul></div></div><main class="doc-main d-flex flex-grow-1 flex-column"><div class=bg-light><div class="container py-3 py-md-4 py-lg-5 py-xl-6"><div class=doc-intro><div class="d-flex align-items-center gap-2"><h1 class="fw-semibold fs-2">Grid</h1></div><div class="mt-3 text-muted">A responsive grid allows a layout to change dynamically based on the size of the screen.</div></div></div></div><div class="doc-contents pt-5 pb-5 pb-lg-6"><div class=container><div class="d-flex flex-column flex-lg-row-reverse justify-content-lg-end gap-xl-6"><div class="doc-nav align-self-start d-none d-xl-flex flex-column fs-sm"><span class="fw-semibold fs-xs text-uppercase">Contents</span><div class="doc-nav-content position-relative mt-2"><nav id=TableOfContents><ul><li><a href=#how-it-works>How it works</a></li><li><a href=#basic-grid>Basic grid</a></li><li><a href=#grid-options>Grid options</a></li><li><a href=#auto-layout-columns>Auto-layout columns</a><ul><li><a href=#equal-width>Equal-width</a></li><li><a href=#setting-one-column-width>Setting one column width</a></li><li><a href=#variable-width-content>Variable width content</a></li></ul></li><li><a href=#responsive-classes>Responsive classes</a><ul><li><a href=#all-breakpoints>All breakpoints</a></li><li><a href=#stacked-to-horizontal>Stacked to horizontal</a></li><li><a href=#mix-and-match>Mix and match</a></li><li><a href=#row-columns>Row columns</a></li></ul></li><li><a href=#nesting>Nesting</a></li><li><a href=#sass>Sass</a><ul><li><a href=#variables>Variables</a></li><li><a href=#mixins>Mixins</a></li><li><a href=#example-usage>Example usage</a></li></ul></li><li><a href=#customizing-the-grid>Customizing the grid</a><ul><li><a href=#columns-and-gutters>Columns and gutters</a></li><li><a href=#grid-tiers>Grid tiers</a></li></ul></li></ul></nav></div></div><div class="doc-content d-flex flex-grow-1 flex-column" data-bs-spy=scroll data-bs-target=.doc-nav-content data-bs-smooth-scroll=true tabindex=0><p>Bootstrap&rsquo;s grid system is a powerful mobile-first flexbox grid to build layouts of all shapes and sizes. thanks to a twelve column system(12 columns), six default responsive tiers, Sass variables and mixins, and dozens of predefined classes.</p><h2 id=how-it-works>How it works</h2><p>Breaking it down, here&rsquo;s how the grid system comes together:</p><ul><li><p><strong>Our grid supports <a href=/docs/breakpoints/#available-breakpoints>six responsive breakpoints</a>.</strong> Breakpoints are based on <code>min-width</code> media queries, meaning they affect that breakpoint and all those above it (e.g., <code>.col-sm-4</code> applies to <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>, and <code>xxl</code>). This means you can control container and column sizing and behavior by each breakpoint.</p></li><li><p><strong>Containers center and horizontally pad your content.</strong> Use <code>.container</code> for a responsive pixel width, <code>.container-fluid</code> for <code>width: 100%</code> across all viewports and devices, or a responsive container (e.g., <code>.container-md</code>) for a combination of fluid and pixel widths.</p></li><li><p><strong>Rows are wrappers for columns.</strong> Each column has horizontal <code>padding</code> (called a gutter) for controlling the space between them. This <code>padding</code> is then counteracted on the rows with negative margins to ensure the content in your columns is visually aligned down the left side. Rows also support modifier classes to <a href=#row-columns>uniformly apply column sizing</a> and <a href=/docs/gutters/>gutter classes</a> to change the spacing of your content.</p></li><li><p><strong>Columns are incredibly flexible.</strong> There are 12 template columns available per row, allowing you to create different combinations of elements that span any number of columns. Column classes indicate the number of template columns to span (e.g., <code>col-4</code> spans four). <code>width</code>s are set in percentages so you always have the same relative sizing.</p></li><li><p><strong>Gutters are also responsive and customizable.</strong> <a href=/docs/gutters/>Gutter classes are available</a> across all breakpoints, with all the same sizes as our <a href=/docs/margin/>margin</a> and <a href=/docs/padding/>padding</a> spacing. Change horizontal gutters with <code>.gx-*</code> classes, vertical gutters with <code>.gy-*</code>, or all gutters with <code>.g-*</code> classes. <code>.g-0</code> is also available to remove gutters.</p></li><li><p><strong>Sass variables, maps, and mixins power the grid.</strong> If you don&rsquo;t want to use the predefined grid classes in Bootstrap, you can use our <a href=#sass>grid&rsquo;s source Sass</a> to create your own with more semantic markup. We also include some CSS custom properties to consume these Sass variables for even greater flexibility for you.</p></li></ul><p>Be aware of the limitations and <a href=https://github.com/philipwalton/flexbugs>bugs around flexbox</a>, like the <a href=https://github.com/philipwalton/flexbugs#flexbug-9>inability to use some HTML elements as flex containers</a>.</p><h2 id=basic-grid>Basic grid</h2><p>Bootstrap&rsquo;s grid system uses a series of containers, rows, and columns to layout and align content. It&rsquo;s built with <a href=https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox>flexbox</a> and is fully responsive. Below is an example and an in-depth explanation for how the grid system comes together.</p><section class="callout info d-flex"><div><span><i class="fa-solid fa-circle-info fa-lg text-blue-500"></i></span></div><div class=ms-3><strong>New to or unfamiliar with flexbox?</strong> <a href=https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background>Read this CSS Tricks flexbox guide</a> for background, terminology, guidelines, and code snippets.</div></section><div class="bd-example bd-example-row"><div class="container text-center"><div class=row><div class=col-8>col-8</div><div class=col-4>col-4</div></div><div class=row><div class=col-4>col-4</div><div class=col-8>col-8</div></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;container text-center&#34;&gt;
+  &lt;div class=&#34;row&#34;&gt;
+    &lt;div class=&#34;col-8&#34;&gt;col-8&lt;/div&gt;
+    &lt;div class=&#34;col-4&#34;&gt;col-4&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;row&#34;&gt;
+    &lt;div class=&#34;col-4&#34;&gt;col-4&lt;/div&gt;
+    &lt;div class=&#34;col-8&#34;&gt;col-8&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><p>The above example creates two columns in each of row that across all devices and viewports using our predefined grid classes. Those columns are centered in the page with the parent <code>.container</code>.</p><h2 id=grid-options>Grid options</h2><p>Bootstrap&rsquo;s grid system can adapt across all six default breakpoints, and any breakpoints you customize. The six default grid tiers are as follows:</p><ul><li>Extra small (xs)</li><li>Small (sm)</li><li>Medium (md)</li><li>Large (lg)</li><li>Extra large (xl)</li><li>Extra extra large (xxl)</li></ul><p>As noted above, each of these breakpoints have their own container, unique class prefix, and modifiers. Here&rsquo;s how the grid changes across these breakpoints:</p><div class=table-responsive><table class="table mb-4"><thead><tr><th scope=col></th><th scope=col>xs<br><span class=fw-normal>&lt;576px</span></th><th scope=col>sm<br><span class=fw-normal>&ge;576px</span></th><th scope=col>md<br><span class=fw-normal>&ge;768px</span></th><th scope=col>lg<br><span class=fw-normal>&ge;992px</span></th><th scope=col>xl<br><span class=fw-normal>&ge;1200px</span></th><th scope=col>xxl<br><span class=fw-normal>&ge;1400px</span></th></tr></thead><tbody><tr><th class=text-nowrap scope=row>Container <code class=fw-normal>max-width</code></th><td>None (auto)</td><td>540px</td><td>720px</td><td>960px</td><td>1140px</td><td>1320px</td></tr><tr><th class=text-nowrap scope=row>Class prefix</th><td><code>.col-</code></td><td><code>.col-sm-</code></td><td><code>.col-md-</code></td><td><code>.col-lg-</code></td><td><code>.col-xl-</code></td><td><code>.col-xxl-</code></td></tr><tr><th class=text-nowrap scope=row># of columns</th><td colspan=6>12</td></tr><tr><th class=text-nowrap scope=row>Gutter width</th><td colspan=6>1.5rem (.75rem on left and right)</td></tr><tr><th class=text-nowrap scope=row>Custom gutters</th><td colspan=6><a href=/docs/gutters/>Yes</a></td></tr><tr><th class=text-nowrap scope=row>Nestable</th><td colspan=6><a href=#nesting>Yes</a></td></tr><tr><th class=text-nowrap scope=row>Column ordering</th><td colspan=6><a href=/docs/columns/#reordering>Yes</a></td></tr></tbody></table></div><h2 id=auto-layout-columns>Auto-layout columns</h2><p>Utilize breakpoint-specific column classes for easy column sizing without an explicit numbered class like <code>.col-sm-6</code>.</p><h3 id=equal-width>Equal-width</h3><p>For example, here are two grid layouts that apply to every device and viewport, from <code>xs</code> to <code>xxl</code>. Add any number of unit-less classes for each breakpoint you need and every column will be the same width.</p><div class="bd-example bd-example-row"><div class="container text-center"><div class=row><div class=col>1 of 2</div><div class=col>2 of 2</div></div><div class=row><div class=col>1 of 3</div><div class=col>2 of 3</div><div class=col>3 of 3</div></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;container text-center&#34;&gt;
+  &lt;div class=&#34;row&#34;&gt;
+    &lt;div class=&#34;col&#34;&gt;
+      1 of 2
+    &lt;/div&gt;
+    &lt;div class=&#34;col&#34;&gt;
+      2 of 2
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;row&#34;&gt;
+    &lt;div class=&#34;col&#34;&gt;
+      1 of 3
+    &lt;/div&gt;
+    &lt;div class=&#34;col&#34;&gt;
+      2 of 3
+    &lt;/div&gt;
+    &lt;div class=&#34;col&#34;&gt;
+      3 of 3
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h3 id=setting-one-column-width>Setting one column width</h3><p>Auto-layout for flexbox grid columns also means you can set the width of one column and have the sibling columns automatically resize around it. You may use predefined grid classes (as shown below), grid mixins, or inline widths. Note that the other columns will resize no matter the width of the center column.</p><div class="bd-example bd-example-row"><div class="container text-center"><div class=row><div class=col>1 of 3</div><div class=col-6>2 of 3 (wider)</div><div class=col>3 of 3</div></div><div class=row><div class=col>1 of 3</div><div class=col-5>2 of 3 (wider)</div><div class=col>3 of 3</div></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;container text-center&#34;&gt;
+  &lt;div class=&#34;row&#34;&gt;
+    &lt;div class=&#34;col&#34;&gt;
+      1 of 3
+    &lt;/div&gt;
+    &lt;div class=&#34;col-6&#34;&gt;
+      2 of 3 (wider)
+    &lt;/div&gt;
+    &lt;div class=&#34;col&#34;&gt;
+      3 of 3
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;row&#34;&gt;
+    &lt;div class=&#34;col&#34;&gt;
+      1 of 3
+    &lt;/div&gt;
+    &lt;div class=&#34;col-5&#34;&gt;
+      2 of 3 (wider)
+    &lt;/div&gt;
+    &lt;div class=&#34;col&#34;&gt;
+      3 of 3
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h3 id=variable-width-content>Variable width content</h3><p>Use <code>col-{breakpoint}-auto</code> classes to size columns based on the natural width of their content.</p><div class="bd-example bd-example-row"><div class="container text-center"><div class="row justify-content-md-center"><div class="col col-lg-2">1 of 3</div><div class=col-md-auto>Variable width content</div><div class="col col-lg-2">3 of 3</div></div><div class=row><div class=col>1 of 3</div><div class=col-md-auto>Variable width content</div><div class="col col-lg-2">3 of 3</div></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;container text-center&#34;&gt;
+  &lt;div class=&#34;row justify-content-md-center&#34;&gt;
+    &lt;div class=&#34;col col-lg-2&#34;&gt;
+      1 of 3
+    &lt;/div&gt;
+    &lt;div class=&#34;col-md-auto&#34;&gt;
+      Variable width content
+    &lt;/div&gt;
+    &lt;div class=&#34;col col-lg-2&#34;&gt;
+      3 of 3
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;row&#34;&gt;
+    &lt;div class=&#34;col&#34;&gt;
+      1 of 3
+    &lt;/div&gt;
+    &lt;div class=&#34;col-md-auto&#34;&gt;
+      Variable width content
+    &lt;/div&gt;
+    &lt;div class=&#34;col col-lg-2&#34;&gt;
+      3 of 3
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h2 id=responsive-classes>Responsive classes</h2><p>Bootstrap&rsquo;s grid includes six tiers of predefined classes for building complex responsive layouts. Customize the size of your columns on extra small, small, medium, large, or extra large devices however you see fit.</p><h3 id=all-breakpoints>All breakpoints</h3><p>For grids that are the same from the smallest of devices to the largest, use the <code>.col</code> and <code>.col-*</code> classes. Specify a numbered class when you need a particularly sized column; otherwise, feel free to stick to <code>.col</code>.</p><div class="bd-example bd-example-row"><div class="container text-center"><div class=row><div class=col>col</div><div class=col>col</div><div class=col>col</div><div class=col>col</div></div><div class=row><div class=col-8>col-8</div><div class=col-4>col-4</div></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;container text-center&#34;&gt;
+  &lt;div class=&#34;row&#34;&gt;
+    &lt;div class=&#34;col&#34;&gt;col&lt;/div&gt;
+    &lt;div class=&#34;col&#34;&gt;col&lt;/div&gt;
+    &lt;div class=&#34;col&#34;&gt;col&lt;/div&gt;
+    &lt;div class=&#34;col&#34;&gt;col&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;row&#34;&gt;
+    &lt;div class=&#34;col-8&#34;&gt;col-8&lt;/div&gt;
+    &lt;div class=&#34;col-4&#34;&gt;col-4&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h3 id=stacked-to-horizontal>Stacked to horizontal</h3><p>Using a single set of <code>.col-sm-*</code> classes, you can create a basic grid system that starts out stacked and becomes horizontal at the small breakpoint (<code>sm</code>).</p><div class="bd-example bd-example-row"><div class="container text-center"><div class=row><div class=col-sm-8>col-sm-8</div><div class=col-sm-4>col-sm-4</div></div><div class=row><div class=col-sm>col-sm</div><div class=col-sm>col-sm</div><div class=col-sm>col-sm</div></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;container text-center&#34;&gt;
+  &lt;div class=&#34;row&#34;&gt;
+    &lt;div class=&#34;col-sm-8&#34;&gt;col-sm-8&lt;/div&gt;
+    &lt;div class=&#34;col-sm-4&#34;&gt;col-sm-4&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;row&#34;&gt;
+    &lt;div class=&#34;col-sm&#34;&gt;col-sm&lt;/div&gt;
+    &lt;div class=&#34;col-sm&#34;&gt;col-sm&lt;/div&gt;
+    &lt;div class=&#34;col-sm&#34;&gt;col-sm&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h3 id=mix-and-match>Mix and match</h3><p>Don&rsquo;t want your columns to simply stack in some grid tiers? Use a combination of different classes for each tier as needed. See the example below for a better idea of how it all works.</p><div class="bd-example bd-example-row"><div class="container text-center"><div class=row><div class=col-md-8>.col-md-8</div><div class="col-6 col-md-4">.col-6 .col-md-4</div></div><div class=row><div class="col-6 col-md-4">.col-6 .col-md-4</div><div class="col-6 col-md-4">.col-6 .col-md-4</div><div class="col-6 col-md-4">.col-6 .col-md-4</div></div><div class=row><div class=col-6>.col-6</div><div class=col-6>.col-6</div></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;container text-center&#34;&gt;
+  &lt;!-- Stack the columns on mobile by making one full-width and the other half-width --&gt;
+  &lt;div class=&#34;row&#34;&gt;
+    &lt;div class=&#34;col-md-8&#34;&gt;.col-md-8&lt;/div&gt;
+    &lt;div class=&#34;col-6 col-md-4&#34;&gt;.col-6 .col-md-4&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop --&gt;
+  &lt;div class=&#34;row&#34;&gt;
+    &lt;div class=&#34;col-6 col-md-4&#34;&gt;.col-6 .col-md-4&lt;/div&gt;
+    &lt;div class=&#34;col-6 col-md-4&#34;&gt;.col-6 .col-md-4&lt;/div&gt;
+    &lt;div class=&#34;col-6 col-md-4&#34;&gt;.col-6 .col-md-4&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Columns are always 50% wide, on mobile and desktop --&gt;
+  &lt;div class=&#34;row&#34;&gt;
+    &lt;div class=&#34;col-6&#34;&gt;.col-6&lt;/div&gt;
+    &lt;div class=&#34;col-6&#34;&gt;.col-6&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h3 id=row-columns>Row columns</h3><p>Use the responsive <code>.row-cols-*</code> classes to quickly set the number of columns that best render your content and layout. Whereas normal <code>.col-*</code> classes apply to the individual columns (e.g., <code>.col-md-4</code>), the row columns classes are set on the parent <code>.row</code> as a shortcut. With <code>.row-cols-auto</code> you can give the columns their natural width.</p><p>Use these row columns classes to quickly create basic grid layouts or to control your card layouts.</p><div class="bd-example bd-example-row"><div class="container text-center"><div class="row row-cols-2"><div class=col>Column</div><div class=col>Column</div><div class=col>Column</div><div class=col>Column</div></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;container text-center&#34;&gt;
+  &lt;div class=&#34;row row-cols-2&#34;&gt;
+    &lt;div class=&#34;col&#34;&gt;Column&lt;/div&gt;
+    &lt;div class=&#34;col&#34;&gt;Column&lt;/div&gt;
+    &lt;div class=&#34;col&#34;&gt;Column&lt;/div&gt;
+    &lt;div class=&#34;col&#34;&gt;Column&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><div class="bd-example bd-example-row"><div class="container text-center"><div class="row row-cols-3"><div class=col>Column</div><div class=col>Column</div><div class=col>Column</div><div class=col>Column</div></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;container text-center&#34;&gt;
+  &lt;div class=&#34;row row-cols-3&#34;&gt;
+    &lt;div class=&#34;col&#34;&gt;Column&lt;/div&gt;
+    &lt;div class=&#34;col&#34;&gt;Column&lt;/div&gt;
+    &lt;div class=&#34;col&#34;&gt;Column&lt;/div&gt;
+    &lt;div class=&#34;col&#34;&gt;Column&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><div class="bd-example bd-example-row"><div class="container text-center"><div class="row row-cols-auto"><div class=col>Column</div><div class=col>Column</div><div class=col>Column</div><div class=col>Column</div></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;container text-center&#34;&gt;
+  &lt;div class=&#34;row row-cols-auto&#34;&gt;
+    &lt;div class=&#34;col&#34;&gt;Column&lt;/div&gt;
+    &lt;div class=&#34;col&#34;&gt;Column&lt;/div&gt;
+    &lt;div class=&#34;col&#34;&gt;Column&lt;/div&gt;
+    &lt;div class=&#34;col&#34;&gt;Column&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><div class="bd-example bd-example-row"><div class="container text-center"><div class="row row-cols-4"><div class=col>Column</div><div class=col>Column</div><div class=col>Column</div><div class=col>Column</div></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;container text-center&#34;&gt;
+  &lt;div class=&#34;row row-cols-4&#34;&gt;
+    &lt;div class=&#34;col&#34;&gt;Column&lt;/div&gt;
+    &lt;div class=&#34;col&#34;&gt;Column&lt;/div&gt;
+    &lt;div class=&#34;col&#34;&gt;Column&lt;/div&gt;
+    &lt;div class=&#34;col&#34;&gt;Column&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><div class="bd-example bd-example-row"><div class="container text-center"><div class="row row-cols-4"><div class=col>Column</div><div class=col>Column</div><div class=col-6>Column</div><div class=col>Column</div></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;container text-center&#34;&gt;
+  &lt;div class=&#34;row row-cols-4&#34;&gt;
+    &lt;div class=&#34;col&#34;&gt;Column&lt;/div&gt;
+    &lt;div class=&#34;col&#34;&gt;Column&lt;/div&gt;
+    &lt;div class=&#34;col-6&#34;&gt;Column&lt;/div&gt;
+    &lt;div class=&#34;col&#34;&gt;Column&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><div class="bd-example bd-example-row"><div class="container text-center"><div class="row row-cols-1 row-cols-sm-2 row-cols-md-4"><div class=col>Column</div><div class=col>Column</div><div class=col>Column</div><div class=col>Column</div></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;container text-center&#34;&gt;
+  &lt;div class=&#34;row row-cols-1 row-cols-sm-2 row-cols-md-4&#34;&gt;
+    &lt;div class=&#34;col&#34;&gt;Column&lt;/div&gt;
+    &lt;div class=&#34;col&#34;&gt;Column&lt;/div&gt;
+    &lt;div class=&#34;col&#34;&gt;Column&lt;/div&gt;
+    &lt;div class=&#34;col&#34;&gt;Column&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><p>You can also use the accompanying Sass mixin, <code>row-cols()</code>:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-scss data-lang=scss><span class=line><span class=cl><span class=nc>.element</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=c1>// Three columns to start
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=k>@include</span><span class=nd> row-cols</span><span class=p>(</span><span class=mi>3</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=c1>// Five columns from medium breakpoint up
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=k>@include</span><span class=nd> media-breakpoint-up</span><span class=p>(</span><span class=n>md</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>@include</span><span class=nd> row-cols</span><span class=p>(</span><span class=mi>5</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><h2 id=nesting>Nesting</h2><p>To nest your content with the default grid, add a new <code>.row</code> and set of <code>.col-sm-*</code> columns within an existing <code>.col-sm-*</code> column. Nested rows should include a set of columns that add up to 12 or fewer (it is not required that you use all 12 available columns).</p><div class="bd-example bd-example-row"><div class="container text-center"><div class=row><div class=col-sm-3>Level 1: .col-sm-3</div><div class=col-sm-9><div class=row><div class="col-8 col-sm-6">Level 2: .col-8 .col-sm-6</div><div class="col-4 col-sm-6">Level 2: .col-4 .col-sm-6</div></div></div></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;container text-center&#34;&gt;
+  &lt;div class=&#34;row&#34;&gt;
+    &lt;div class=&#34;col-sm-3&#34;&gt;
+      Level 1: .col-sm-3
+    &lt;/div&gt;
+    &lt;div class=&#34;col-sm-9&#34;&gt;
+      &lt;div class=&#34;row&#34;&gt;
+        &lt;div class=&#34;col-8 col-sm-6&#34;&gt;
+          Level 2: .col-8 .col-sm-6
+        &lt;/div&gt;
+        &lt;div class=&#34;col-4 col-sm-6&#34;&gt;
+          Level 2: .col-4 .col-sm-6
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h2 id=sass>Sass</h2><p>When using Bootstrap&rsquo;s source Sass files, you have the option of using Sass variables and mixins to create custom, semantic, and responsive page layouts. Our predefined grid classes use these same variables and mixins to provide a whole suite of ready-to-use classes for fast responsive layouts.</p><h3 id=variables>Variables</h3><p>Variables and maps determine the number of columns, the gutter width, and the media query point at which to begin floating columns. We use these to generate the predefined grid classes documented above, as well as for the custom mixins listed below.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-scss data-lang=scss><span class=line><span class=cl><span class=nv>$grid-columns</span><span class=o>:</span>      <span class=mi>12</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=nv>$grid-gutter-width</span><span class=o>:</span> <span class=mi>1</span><span class=mf>.5</span><span class=kt>rem</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=nv>$grid-row-columns</span><span class=o>:</span>  <span class=mi>6</span><span class=p>;</span>
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-scss data-lang=scss><span class=line><span class=cl><span class=nv>$grid-breakpoints</span><span class=o>:</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>  <span class=na>xs</span><span class=o>:</span> <span class=mi>0</span><span class=o>,</span>
+</span></span><span class=line><span class=cl>  <span class=na>sm</span><span class=o>:</span> <span class=mi>576</span><span class=kt>px</span><span class=o>,</span>
+</span></span><span class=line><span class=cl>  <span class=na>md</span><span class=o>:</span> <span class=mi>768</span><span class=kt>px</span><span class=o>,</span>
+</span></span><span class=line><span class=cl>  <span class=na>lg</span><span class=o>:</span> <span class=mi>992</span><span class=kt>px</span><span class=o>,</span>
+</span></span><span class=line><span class=cl>  <span class=na>xl</span><span class=o>:</span> <span class=mi>1200</span><span class=kt>px</span><span class=o>,</span>
+</span></span><span class=line><span class=cl>  <span class=na>xxl</span><span class=o>:</span> <span class=mi>1400</span><span class=kt>px</span>
+</span></span><span class=line><span class=cl><span class=p>);</span>
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-scss data-lang=scss><span class=line><span class=cl><span class=nv>$container-max-widths</span><span class=o>:</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>  <span class=na>sm</span><span class=o>:</span> <span class=mi>540</span><span class=kt>px</span><span class=o>,</span>
+</span></span><span class=line><span class=cl>  <span class=na>md</span><span class=o>:</span> <span class=mi>720</span><span class=kt>px</span><span class=o>,</span>
+</span></span><span class=line><span class=cl>  <span class=na>lg</span><span class=o>:</span> <span class=mi>960</span><span class=kt>px</span><span class=o>,</span>
+</span></span><span class=line><span class=cl>  <span class=na>xl</span><span class=o>:</span> <span class=mi>1140</span><span class=kt>px</span><span class=o>,</span>
+</span></span><span class=line><span class=cl>  <span class=na>xxl</span><span class=o>:</span> <span class=mi>1320</span><span class=kt>px</span>
+</span></span><span class=line><span class=cl><span class=p>);</span>
+</span></span></code></pre></div><h3 id=mixins>Mixins</h3><p>Mixins are used in conjunction with the grid variables to generate semantic CSS for individual grid columns.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-scss data-lang=scss><span class=line><span class=cl><span class=c1>// Creates a wrapper for a series of columns
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=k>@include</span><span class=nd> make-row</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// Make the element grid-ready (applying everything but the width)
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=k>@include</span><span class=nd> make-col-ready</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// Without optional size values, the mixin will create equal columns (similar to using .col)
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=k>@include</span><span class=nd> make-col</span><span class=p>();</span>
+</span></span><span class=line><span class=cl><span class=k>@include</span><span class=nd> make-col</span><span class=p>(</span><span class=nv>$size</span><span class=o>,</span> <span class=nv>$columns</span><span class=o>:</span> <span class=nv>$grid-columns</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// Offset with margins
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=k>@include</span><span class=nd> make-col-offset</span><span class=p>(</span><span class=nv>$size</span><span class=o>,</span> <span class=nv>$columns</span><span class=o>:</span> <span class=nv>$grid-columns</span><span class=p>);</span>
+</span></span></code></pre></div><h3 id=example-usage>Example usage</h3><p>You can modify the variables to your own custom values, or just use the mixins with their default values. Here&rsquo;s an example of using the default settings to create a two-column layout with a gap between.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-scss data-lang=scss><span class=line><span class=cl><span class=nc>.example-container</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=k>@include</span><span class=nd> make-container</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>  <span class=c1>// Make sure to define this width after the mixin to override
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=c1>// `width: 100%` generated by `make-container()`
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=na>width</span><span class=o>:</span> <span class=mi>800</span><span class=kt>px</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nc>.example-row</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=k>@include</span><span class=nd> make-row</span><span class=p>();</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nc>.example-content-main</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=k>@include</span><span class=nd> make-col-ready</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=k>@include</span><span class=nd> media-breakpoint-up</span><span class=p>(</span><span class=n>sm</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>@include</span><span class=nd> make-col</span><span class=p>(</span><span class=mi>6</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl>  <span class=k>@include</span><span class=nd> media-breakpoint-up</span><span class=p>(</span><span class=n>lg</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>@include</span><span class=nd> make-col</span><span class=p>(</span><span class=mi>8</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nc>.example-content-secondary</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=k>@include</span><span class=nd> make-col-ready</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=k>@include</span><span class=nd> media-breakpoint-up</span><span class=p>(</span><span class=n>sm</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>@include</span><span class=nd> make-col</span><span class=p>(</span><span class=mi>6</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl>  <span class=k>@include</span><span class=nd> media-breakpoint-up</span><span class=p>(</span><span class=n>lg</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>@include</span><span class=nd> make-col</span><span class=p>(</span><span class=mi>4</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><div class=bd-example><div class=example-container><div class=example-row><div class=example-content-main>Main content</div><div class=example-content-secondary>Secondary content</div></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;example-container&#34;&gt;
+  &lt;div class=&#34;example-row&#34;&gt;
+    &lt;div class=&#34;example-content-main&#34;&gt;Main content&lt;/div&gt;
+    &lt;div class=&#34;example-content-secondary&#34;&gt;Secondary content&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h2 id=customizing-the-grid>Customizing the grid</h2><p>Using our built-in grid Sass variables and maps, it&rsquo;s possible to completely customize the predefined grid classes. Change the number of tiers, the media query dimensions, and the container widths—then recompile.</p><h3 id=columns-and-gutters>Columns and gutters</h3><p>The number of grid columns can be modified via Sass variables. <code>$grid-columns</code> is used to generate the widths (in percent) of each individual column while <code>$grid-gutter-width</code> sets the width for the column gutters. <code>$grid-row-columns</code> is used to set the maximum number of columns of <code>.row-cols-*</code>, any number over this limit is ignored.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-scss data-lang=scss><span class=line><span class=cl><span class=nv>$grid-columns</span><span class=o>:</span> <span class=mi>12</span> <span class=k>!default</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=nv>$grid-gutter-width</span><span class=o>:</span> <span class=mi>1</span><span class=mf>.5</span><span class=kt>rem</span> <span class=k>!default</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=nv>$grid-row-columns</span><span class=o>:</span> <span class=mi>6</span> <span class=k>!default</span><span class=p>;</span>
+</span></span></code></pre></div><h3 id=grid-tiers>Grid tiers</h3><p>Moving beyond the columns themselves, you may also customize the number of grid tiers. If you wanted just four grid tiers, you&rsquo;d update the <code>$grid-breakpoints</code> and <code>$container-max-widths</code> to something like this:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-scss data-lang=scss><span class=line><span class=cl><span class=nv>$grid-breakpoints</span><span class=o>:</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>  <span class=na>xs</span><span class=o>:</span> <span class=mi>0</span><span class=o>,</span>
+</span></span><span class=line><span class=cl>  <span class=na>sm</span><span class=o>:</span> <span class=mi>480</span><span class=kt>px</span><span class=o>,</span>
+</span></span><span class=line><span class=cl>  <span class=na>md</span><span class=o>:</span> <span class=mi>768</span><span class=kt>px</span><span class=o>,</span>
+</span></span><span class=line><span class=cl>  <span class=na>lg</span><span class=o>:</span> <span class=mi>1024</span><span class=kt>px</span>
+</span></span><span class=line><span class=cl><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nv>$container-max-widths</span><span class=o>:</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>  <span class=na>sm</span><span class=o>:</span> <span class=mi>420</span><span class=kt>px</span><span class=o>,</span>
+</span></span><span class=line><span class=cl>  <span class=na>md</span><span class=o>:</span> <span class=mi>720</span><span class=kt>px</span><span class=o>,</span>
+</span></span><span class=line><span class=cl>  <span class=na>lg</span><span class=o>:</span> <span class=mi>960</span><span class=kt>px</span>
+</span></span><span class=line><span class=cl><span class=p>);</span>
+</span></span></code></pre></div><p>When making any changes to the Sass variables or maps, you&rsquo;ll need to save your changes and recompile. Doing so will output a brand-new set of predefined grid classes for column widths, offsets, and ordering. Responsive visibility utilities will also be updated to use the custom breakpoints. Make sure to set grid values in <code>px</code> (not <code>rem</code>, <code>em</code>, or <code>%</code>).</p></div></div></div></div></main></div><script src=/js/fastbootstrap.min.js></script>
+<script src=/assets/js/main.fde7d879dae825e25af76bc7a2bee4490111d6bbc85a2677a12da3e73b6d23cc.min.ae4669210f157da040028477dda101132523de4d5312ba5dfbd37710ed096d9d.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/toolbar/prism-toolbar.min.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CR6EJXJK4S"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-CR6EJXJK4S")</script></body></html>

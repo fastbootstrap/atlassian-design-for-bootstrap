@@ -1,0 +1,516 @@
+<!doctype html><html lang=en><head><meta name=generator content="Hugo 0.103.1"><meta http-equiv=x-ua-compatible content="IE=edge"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" href=/favicon.ico type=image/x-icon><link href=/css/fastbootstrap.min.css rel=stylesheet><link href=/css/site.89e375fc829b142a487ae2d67a47a5518cef63838910cba2d65c78bb8f932acd.css rel=stylesheet><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css><title>Bootstrap Navbar Component - Examples & Tutorial - FastBootstrap</title><meta name=description content="Navbars are allows users quickly navigate the entire content of a product or a section of the application."></head><body><header class="navbar navbar-expand-lg header-navbar py-0 sticky-top bg-white shadow-none"><nav class="container-fluid px-md-3 px-lg-4"><a class="navbar-brand d-inline-flex align-items-center m-0 p-0 me-lg-6 me-xl-9 p-1 rounded text-reset" href=/><svg class="brand-img" width="24" height="24" viewBox="0 0 32 32"><rect x="4" y="3" width="24" height="7" rx="3.5" ry="3.5"/><rect x="4" y="12" width="20" height="7" rx="3.5" ry="3.5"/><rect x="4" y="21" width="14" height="7" rx="3.5" ry="3.5"/></svg><h2 class="d-none d-md-block fw-semibold fs-5 ls-wide ms-2 mb-0">FastBootstrap</h2></a><div class="collapse navbar-collapse"><ul class=navbar-nav><li class="nav-item mx-2 mx-lg-3"><a class="nav-link fw-semibold rounded fs-sm" href=/docs>Docs</a></li><li class="nav-item mx-2 mx-lg-3 active"><a class="nav-link fw-semibold rounded fs-sm" href=/components>Components</a></li><li class="nav-item ms-auto"><a class="nav-link rounded-circle" href=https://github.com/fastbootstrap/atlassian-design-for-bootstrap><i class="fa-brands fa-github fa-xl"></i></a></li></ul></div><button class=navbar-toggler type=bdnavbar data-bs-toggle=offcanvas data-bs-target=#bdNavbar aria-controls=bdNavbar aria-label="Toggle navigation"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentcolor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 11.5A.5.5.0 013 11h10a.5.5.0 010 1H3a.5.5.0 01-.5-.5zm0-4A.5.5.0 013 7h10a.5.5.0 010 1H3a.5.5.0 01-.5-.5zm0-4A.5.5.0 013 3h10a.5.5.0 010 1H3a.5.5.0 01-.5-.5z"/></svg></button></nav></header><div class="offcanvas offcanvas-end w-100 mw-100" tabindex=-1 id=bdNavbar><div class="offcanvas-header border-bottom px-5"><svg class="brand-img" width="24" height="24" viewBox="0 0 32 32"><rect x="4" y="3" width="24" height="7" rx="3.5" ry="3.5"/><rect x="4" y="12" width="20" height="7" rx="3.5" ry="3.5"/><rect x="4" y="21" width="14" height="7" rx="3.5" ry="3.5"/></svg><button type=button class=btn-close data-bs-dismiss=offcanvas aria-label=Close></button></div><div class="offcanvas-body px-5"><div class="d-flex flex-column"><a class="py-2 fw-bold text-reset" href=/docs>Docs</a><a class="py-2 fw-bold text-reset" href=/components>Components</a></div><ul class="list-inline mt-3 text-center border-top pt-5"><li><a class="nav-link rounded-circle" href=https://github.com/fastbootstrap/atlassian-design-for-bootstrap><i class="fa-brands fa-github fa-xl"></i></a></li></ul></div></div><div class="d-flex flex-column flex-lg-row"><div class=sidebar><div class="d-flex d-lg-none align-items-center"><div class=container><div class="d-flex justify-content-between align-items-center py-3"><nav aria-label=breadcrumb><ol class="breadcrumb mb-0"><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/components/>Components</a></li><li class="breadcrumb-item active" aria-current=page>Navbar</li></ol></nav><button class="btn btn-sm p-0 border-0" data-bs-toggle=collapse href=#sidebar-nav aria-expanded=false><i class="fas fa-chevron-down"></i></button></div></div></div><div class="collapse d-lg-block py-3 py-lg-4" id=sidebar-nav><div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">Actions</div><ul class=list-unstyled><li><a href=/components/button/ class="sidebar__link d-block">Button</a></li><li><a href=/components/button-group/ class="sidebar__link d-block">Button Group</a></li><li><a href=/components/close-button/ class="sidebar__link d-block">Close Button</a></li></ul><div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">Inputs</div><ul class=list-unstyled><li><a href=/components/checkbox/ class="sidebar__link d-block">Checkbox</a></li><li><a href=/components/dropdown/ class="sidebar__link d-block">Dropdown</a></li><li><a href=/components/floating-label/ class="sidebar__link d-block">Floating Label</a></li><li><a href=/components/form/ class="sidebar__link d-block">Form</a></li><li><a href=/components/input-group/ class="sidebar__link d-block">Input Group</a></li><li><a href=/components/radio/ class="sidebar__link d-block">Radio</a></li><li><a href=/components/range/ class="sidebar__link d-block">Range</a></li><li><a href=/components/select/ class="sidebar__link d-block">Select Input</a></li><li><a href=/components/switch/ class="sidebar__link d-block">Switch</a></li><li><a href=/components/textfield/ class="sidebar__link d-block">Text field</a></li></ul><div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">navigation</div><ul class=list-unstyled><li><a href=/components/breadcrumb/ class="sidebar__link d-block">Breadcrumb</a></li><li><a href=/components/navbar/ class="sidebar__link d-block active">Navbar</a></li><li><a href=/components/offcanvas/ class="sidebar__link d-block">Offcanvas</a></li><li><a href=/components/pagination/ class="sidebar__link d-block">Pagination</a></li><li><a href=/components/pills/ class="sidebar__link d-block">Pills</a></li><li><a href=/components/scrollspy/ class="sidebar__link d-block">Scrollspy</a></li><li><a href=/components/stretched-link/ class="sidebar__link d-block">Stretched Link</a></li><li><a href=/components/tabs/ class="sidebar__link d-block">Tabs</a></li></ul><div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">Feedback</div><ul class=list-unstyled><li><a href=/components/alerts/ class="sidebar__link d-block">Alerts</a></li><li><a href=/components/modal/ class="sidebar__link d-block">Modal</a></li><li><a href=/components/placeholders/ class="sidebar__link d-block">Placeholders</a></li><li><a href=/components/popover/ class="sidebar__link d-block">Popover</a></li><li><a href=/components/progress-bar/ class="sidebar__link d-block">Progress bar</a></li><li><a href=/components/progress-indicator/ class="sidebar__link d-block">Progress Indicator<span class="lozenge new ms-1 fw-normal">new</span></a></li><li><a href=/components/progress-tracker/ class="sidebar__link d-block">Progress Tracker<span class="lozenge new ms-1 fw-normal">new</span></a></li><li><a href=/components/spinner/ class="sidebar__link d-block">Spinner</a></li><li><a href=/components/toast/ class="sidebar__link d-block">Toast</a></li><li><a href=/components/tooltip/ class="sidebar__link d-block">Tooltip</a></li><li><a href=/components/validation/ class="sidebar__link d-block">Validation</a></li></ul><div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">Data Display</div><ul class=list-unstyled><li><a href=/components/avatar/ class="sidebar__link d-block">Avatar<span class="lozenge new ms-1 fw-normal">new</span></a></li><li><a href=/components/avatar-group/ class="sidebar__link d-block">Avatar Group<span class="lozenge new ms-1 fw-normal">new</span></a></li><li><a href=/components/badge/ class="sidebar__link d-block">Badge</a></li><li><a href=/components/lozenge/ class="sidebar__link d-block">Lozenge<span class="lozenge new ms-1 fw-normal">new</span></a></li><li><a href=/components/table/ class="sidebar__link d-block">Table</a></li><li><a href=/components/tag/ class="sidebar__link d-block">Tag<span class="lozenge new ms-1 fw-normal">new</span></a></li></ul><div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">surfaces</div><ul class=list-unstyled><li><a href=/components/accordion/ class="sidebar__link d-block">Accordion</a></li><li><a href=/components/blankslate/ class="sidebar__link d-block">Blankslate<span class="lozenge new ms-1 fw-normal">new</span></a></li><li><a href=/components/card/ class="sidebar__link d-block">Card</a></li><li><a href=/components/carousel/ class="sidebar__link d-block">Carousel</a></li><li><a href=/components/collapse/ class="sidebar__link d-block">Collapse</a></li><li><a href=/components/list-group/ class="sidebar__link d-block">List Group</a></li></ul></div></div><main class="doc-main d-flex flex-grow-1 flex-column"><div class=bg-light><div class="container py-3 py-md-4 py-lg-5 py-xl-6"><div class=doc-intro><div class="d-flex align-items-center gap-2"><h1 class="fw-semibold fs-2">Navbar</h1></div><div class="mt-3 text-muted">Navbars are allows users quickly navigate the entire content of a product or a section of the application.</div></div></div></div><div class="doc-contents pt-5 pb-5 pb-lg-6"><div class=container><div class="d-flex flex-column flex-lg-row-reverse justify-content-lg-end gap-xl-6"><div class="doc-nav align-self-start d-none d-xl-flex flex-column fs-sm"><span class="fw-semibold fs-xs text-uppercase">Contents</span><div class="doc-nav-content position-relative mt-2"><nav id=TableOfContents><ul><li><a href=#basic-navbar-example>Basic navbar example</a></li><li><a href=#how-it-works>How it works</a></li><li><a href=#supported-content>Supported content</a><ul><li><a href=#brand>Brand</a></li><li><a href=#nav>Nav</a></li><li><a href=#forms>Forms</a></li><li><a href=#text>Text</a></li><li><a href=#dropdown>Dropdown</a></li><li><a href=#icons>Icons</a></li><li><a href=#badges>Badges</a></li><li><a href=#avatar>Avatar</a></li></ul></li><li><a href=#position>Position</a><ul><li><a href=#fixed-top>Fixed top</a></li><li><a href=#fixed-bottom>Fixed bottom</a></li><li><a href=#sticky-top>Sticky top</a></li><li><a href=#sticky-bottom>Sticky bottom</a></li></ul></li><li><a href=#themes>Themes</a></li><li><a href=#containers>Containers</a></li><li><a href=#content-alignment>Content alignment</a><ul><li><a href=#left-aligned>Left aligned</a></li><li><a href=#right-aligned>Right aligned</a></li><li><a href=#centered>Centered</a></li></ul></li><li><a href=#scrolling>Scrolling</a></li><li><a href=#responsive-behaviors>Responsive behaviors</a><ul><li><a href=#toggler-button>Toggler Button</a></li><li><a href=#external-content>External content</a></li><li><a href=#offcanvas>Offcanvas</a></li></ul></li></ul></nav></div></div><div class="doc-content d-flex flex-grow-1 flex-column" data-bs-spy=scroll data-bs-target=.doc-nav-content data-bs-smooth-scroll=true tabindex=0><p><strong>Bootstrap 5 Navbar component</strong></p><p>Responsive navbar built with the latest Bootstrap 5. Navbars are allows users quickly navigate the entire content of a product or a section of the application.</p><p>Documentation and examples for Bootstrap’s powerful, responsive navigation header, the navbar. Includes support for branding, navigation, and more, including support for our collapse plugin.</p><h2 id=basic-navbar-example>Basic navbar example</h2><p>The navbar is a horizontal list of links. The navbar component can includes <a href=/components/dropdown/>dropdown</a>, <a href=/components/button/>button</a>, <a href=/components/form/>form</a> etc.</p><div class=bd-example><nav class="navbar navbar-expand-lg"><div class=container-fluid><a class=navbar-brand href=#><img src=/images/bootstrap-logo.svg width=36 alt=Logo></a>
+<button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=navbarSupportedContent><ul class="navbar-nav me-auto mb-0"><li class=nav-item><a class="nav-link active" aria-current=page href=#>Dashboards</a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href=# role=button data-bs-toggle=dropdown aria-expanded=false>Projects</a><ul class=dropdown-menu><li><a class=dropdown-item href=#>Mobile Research</a></li><li><a class=dropdown-item href=#>IT Services</a></li><li><a class=dropdown-item href=#>New features</a></li><li><a class=dropdown-item href=#>Sass</a></li><li><hr class=dropdown-divider></li><li><a class=dropdown-item href=#>View all projects</a></li></ul></li><li class=nav-item><a class=nav-link aria-current=page href=#>Team</a></li></ul><div class="d-flex align-items-center flex-column flex-lg-row"><form class="me-2 mb-2 mb-lg-0"><input type=text class="form-control form-control-sm" placeholder=Search></form><a class="btn btn-primary" href>Sign up</a></div></div></div></nav></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;nav class=&#34;navbar navbar-expand-lg&#34;&gt;
+  &lt;div class=&#34;container-fluid&#34;&gt;
+    &lt;a class=&#34;navbar-brand&#34; href=&#34;#&#34;&gt;
+      &lt;img src=&#34;/images/bootstrap-logo.svg&#34; width=&#34;36&#34; alt=&#34;Logo&#34; /&gt;
+    &lt;/a&gt;
+    &lt;button class=&#34;navbar-toggler&#34; type=&#34;button&#34; data-bs-toggle=&#34;collapse&#34; data-bs-target=&#34;#navbarSupportedContent&#34; aria-controls=&#34;navbarSupportedContent&#34; aria-expanded=&#34;false&#34; aria-label=&#34;Toggle navigation&#34;&gt;
+      &lt;span class=&#34;navbar-toggler-icon&#34;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;div class=&#34;collapse navbar-collapse&#34; id=&#34;navbarSupportedContent&#34;&gt;
+      &lt;ul class=&#34;navbar-nav me-auto mb-0&#34;&gt;
+        &lt;li class=&#34;nav-item&#34;&gt;
+          &lt;a class=&#34;nav-link active&#34; aria-current=&#34;page&#34; href=&#34;#&#34;&gt;Dashboards&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&#34;nav-item dropdown&#34;&gt;
+          &lt;a class=&#34;nav-link dropdown-toggle&#34; href=&#34;#&#34; role=&#34;button&#34; data-bs-toggle=&#34;dropdown&#34; aria-expanded=&#34;false&#34;&gt; Projects &lt;/a&gt;
+          &lt;ul class=&#34;dropdown-menu&#34;&gt;
+            &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Mobile Research&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;IT Services&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;New features&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Sass&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;hr class=&#34;dropdown-divider&#34; /&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;View all projects&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class=&#34;nav-item&#34;&gt;
+          &lt;a class=&#34;nav-link&#34; aria-current=&#34;page&#34; href=&#34;#&#34;&gt;Team&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div class=&#34;d-flex align-items-center flex-column flex-lg-row&#34;&gt;
+        &lt;form class=&#34;me-2 mb-2 mb-lg-0&#34;&gt;
+          &lt;input type=&#34;text&#34; class=&#34;form-control form-control-sm&#34; placeholder=&#34;Search&#34; /&gt;
+        &lt;/form&gt;
+        &lt;a class=&#34;btn btn-primary&#34; href=&#34;&#34;&gt;Sign up&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre></div><h2 id=how-it-works>How it works</h2><p>Here&rsquo;s what you need to know before getting started with the navbar:</p><ul><li>Navbars require a wrapping <code>.navbar</code> with <code>.navbar-expand{-sm|-md|-lg|-xl|-xxl}</code> for responsive collapsing and <a href=#color-schemes>color scheme</a> classes.</li><li>Navbars and their contents are fluid by default. Change the <a href=#containers>container</a> to limit their horizontal width in different ways.</li><li>Use our spacing <a href=/docs/width/>width</a>, <a href=/docs/height/>height</a> and <a href=/docs/flex/>flex</a> utility classes for controlling spacing and alignment within navbars.</li><li>Navbars are responsive by default, but you can easily modify them to change that. Responsive behavior depends on our Collapse JavaScript plugin.</li><li>Ensure accessibility by using a <code>&lt;nav></code> element or, if using a more generic element such as a <code>&lt;div></code>, add a <code>role="navigation"</code> to every navbar to explicitly identify it as a landmark region for users of assistive technologies.</li><li>Indicate the current item by using <code>aria-current="page"</code> for the current page or <code>aria-current="true"</code> for the current item in a set.</li></ul><h2 id=supported-content>Supported content</h2><p>Navbars come with built-in support for a handful of sub-components. Choose from the following as needed:</p><ul><li><code>.navbar-brand</code> for your company, product, or project name.</li><li><code>.navbar-nav</code> for a full-height and lightweight navigation (including support for dropdowns).</li><li><code>.navbar-toggler</code> for use with our collapse plugin and other <a href=#responsive-behaviors>navigation toggling</a> behaviors.</li><li>Flex and spacing utilities for any form controls and actions.</li><li><code>.navbar-text</code> for adding vertically centered strings of text.</li><li><code>.collapse.navbar-collapse</code> for grouping and hiding navbar contents by a parent breakpoint.</li><li>Add an optional <code>.navbar-scroll</code> to set a <code>max-height</code> and <a href=#scrolling>scroll expanded navbar content</a>.</li></ul><p>Apart from listed above, navbar supports also components like breadcrumbs, forms, buttons, icons, flags, avatars, badges, and a few more.</p><h3 id=brand>Brand</h3><p>The <code>.navbar-brand</code> can be applied to most elements, but an anchor works best, as some elements might require utility classes or custom styles.</p><p>Add your text within an element with the <code>.navbar-brand</code> class or can replace the text within the <code>.navbar-brand</code> with an <code>&lt;img></code>.</p><div class="bd-example d-grid gap-3"><nav class=navbar><div class=container><a class=navbar-brand href=#>Navbar</a></div></nav><nav class=navbar><div class=container><a class=navbar-brand href=#><img src=/images/bootstrap-logo.svg width=36 alt=Logo></a></div></nav></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;nav class=&#34;navbar&#34;&gt;
+  &lt;div class=&#34;container&#34;&gt;
+    &lt;a class=&#34;navbar-brand&#34; href=&#34;#&#34;&gt;
+      Navbar
+    &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+&lt;nav class=&#34;navbar&#34;&gt;
+  &lt;div class=&#34;container&#34;&gt;
+    &lt;a class=&#34;navbar-brand&#34; href=&#34;#&#34;&gt;
+      &lt;img src=&#34;/images/bootstrap-logo.svg&#34; width=&#34;36&#34; alt=&#34;Logo&#34; /&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre></div><p>You can also make use of some additional utilities to add an image and text at the same time. Note the addition of <code>.d-inline-block</code> and <code>.align-text-top</code> on the <code>&lt;img></code>.</p><div class=bd-example><nav class=navbar><div class=container-fluid><a class=navbar-brand href=#><img class="d-inline-block align-text-top" src=/images/bootstrap-logo.svg alt width=36>
+Bootstrap</a></div></nav></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;nav class=&#34;navbar&#34;&gt;
+  &lt;div class=&#34;container-fluid&#34;&gt;
+    &lt;a class=&#34;navbar-brand&#34; href=&#34;#&#34;&gt;
+      &lt;img class=&#34;d-inline-block align-text-top&#34; src=&#34;/images/bootstrap-logo.svg&#34; alt=&#34;&#34; width=&#34;36&#34; /&gt;
+      Bootstrap
+    &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre></div><h3 id=nav>Nav</h3><p>Navbar navigation links build on our <code>.nav</code> options with their own modifier class and require the use of <a href=#toggler>toggler classes</a> for proper responsive styling.</p><section class="callout info d-flex"><div><span><i class="fa-solid fa-circle-info fa-lg text-blue-500"></i></span></div><div class=ms-3>Navigation in navbars will also grow to occupy as much horizontal space as possible to keep your navbar contents securely aligned.</div></section><p>Add the <code>.active</code> class on <code>.nav-link</code> to indicate the current page. Please note that you should also add the <code>aria-current</code> attribute on the active <code>.nav-link</code>.</p><div class=bd-example><nav class="navbar navbar-expand-lg"><div class=container-fluid><a class=navbar-brand href=#>Navbar</a>
+<button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarNav aria-controls=navbarNav aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=navbarNav><ul class=navbar-nav><li class=nav-item><a class="nav-link active" aria-current=page href=#>Home</a></li><li class=nav-item><a class=nav-link href=#>Features</a></li><li class=nav-item><a class=nav-link href=#>Pricing</a></li><li class=nav-item><a class="nav-link disabled">Disabled</a></li></ul></div></div></nav></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;nav class=&#34;navbar navbar-expand-lg&#34;&gt;
+  &lt;div class=&#34;container-fluid&#34;&gt;
+    &lt;a class=&#34;navbar-brand&#34; href=&#34;#&#34;&gt;Navbar&lt;/a&gt;
+    &lt;button class=&#34;navbar-toggler&#34; type=&#34;button&#34; data-bs-toggle=&#34;collapse&#34; data-bs-target=&#34;#navbarNav&#34; aria-controls=&#34;navbarNav&#34; aria-expanded=&#34;false&#34; aria-label=&#34;Toggle navigation&#34;&gt;
+      &lt;span class=&#34;navbar-toggler-icon&#34;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;div class=&#34;collapse navbar-collapse&#34; id=&#34;navbarNav&#34;&gt;
+      &lt;ul class=&#34;navbar-nav&#34;&gt;
+        &lt;li class=&#34;nav-item&#34;&gt;
+          &lt;a class=&#34;nav-link active&#34; aria-current=&#34;page&#34; href=&#34;#&#34;&gt;Home&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&#34;nav-item&#34;&gt;
+          &lt;a class=&#34;nav-link&#34; href=&#34;#&#34;&gt;Features&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&#34;nav-item&#34;&gt;
+          &lt;a class=&#34;nav-link&#34; href=&#34;#&#34;&gt;Pricing&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&#34;nav-item&#34;&gt;
+          &lt;a class=&#34;nav-link disabled&#34;&gt;Disabled&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre></div><p>And because we use classes for our navs, you can avoid the list-based approach entirely if you like.</p><div class=bd-example><nav class="navbar navbar-expand-lg"><div class=container-fluid><a class=navbar-brand href=#>Navbar</a>
+<button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarNavAltMarkup aria-controls=navbarNavAltMarkup aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=navbarNavAltMarkup><div class=navbar-nav><a class="nav-link active" aria-current=page href=#>Home</a>
+<a class=nav-link href=#>Features</a>
+<a class=nav-link href=#>Pricing</a>
+<a class="nav-link disabled">Disabled</a></div></div></div></nav></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;nav class=&#34;navbar navbar-expand-lg&#34;&gt;
+  &lt;div class=&#34;container-fluid&#34;&gt;
+    &lt;a class=&#34;navbar-brand&#34; href=&#34;#&#34;&gt;Navbar&lt;/a&gt;
+    &lt;button class=&#34;navbar-toggler&#34; type=&#34;button&#34; data-bs-toggle=&#34;collapse&#34; data-bs-target=&#34;#navbarNavAltMarkup&#34; aria-controls=&#34;navbarNavAltMarkup&#34; aria-expanded=&#34;false&#34; aria-label=&#34;Toggle navigation&#34;&gt;
+      &lt;span class=&#34;navbar-toggler-icon&#34;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;div class=&#34;collapse navbar-collapse&#34; id=&#34;navbarNavAltMarkup&#34;&gt;
+      &lt;div class=&#34;navbar-nav&#34;&gt;
+        &lt;a class=&#34;nav-link active&#34; aria-current=&#34;page&#34; href=&#34;#&#34;&gt;Home&lt;/a&gt;
+        &lt;a class=&#34;nav-link&#34; href=&#34;#&#34;&gt;Features&lt;/a&gt;
+        &lt;a class=&#34;nav-link&#34; href=&#34;#&#34;&gt;Pricing&lt;/a&gt;
+        &lt;a class=&#34;nav-link disabled&#34;&gt;Disabled&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre></div><h3 id=forms>Forms</h3><p>Place various form controls and components within a navbar:</p><div class=bd-example><nav class=navbar><div class=container-fluid><form class=d-flex role=search><input class="form-control me-2" type=search placeholder=Search aria-label=Search>
+<button class="btn btn-primary" type=submit>Search</button></form></div></nav></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;nav class=&#34;navbar&#34;&gt;
+  &lt;div class=&#34;container-fluid&#34;&gt;
+    &lt;form class=&#34;d-flex&#34; role=&#34;search&#34;&gt;
+      &lt;input class=&#34;form-control me-2&#34; type=&#34;search&#34; placeholder=&#34;Search&#34; aria-label=&#34;Search&#34;&gt;
+      &lt;button class=&#34;btn btn-primary&#34; type=&#34;submit&#34;&gt;Search&lt;/button&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre></div><p>Immediate child elements of <code>.navbar</code> use flex layout and will default to <code>justify-content: space-between</code>. Use additional flex utilities as needed to adjust this behavior.</p><div class=bd-example><nav class=navbar><div class=container-fluid><a class=navbar-brand>Navbar</a><form class=d-flex role=search><input class="form-control me-2" type=search placeholder=Search aria-label=Search>
+<button class="btn btn-primary" type=submit>Search</button></form></div></nav></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;nav class=&#34;navbar&#34;&gt;
+  &lt;div class=&#34;container-fluid&#34;&gt;
+    &lt;a class=&#34;navbar-brand&#34;&gt;Navbar&lt;/a&gt;
+    &lt;form class=&#34;d-flex&#34; role=&#34;search&#34;&gt;
+      &lt;input class=&#34;form-control me-2&#34; type=&#34;search&#34; placeholder=&#34;Search&#34; aria-label=&#34;Search&#34;&gt;
+      &lt;button class=&#34;btn btn-primary&#34; type=&#34;submit&#34;&gt;Search&lt;/button&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre></div><p><a href=https://fastbootstrap.com/components/input-group/>Input groups</a> work, too. If your navbar is an entire form, or mostly a form, you can use the <code>&lt;form></code> element as the container and save some HTML.</p><div class=bd-example><nav class=navbar><form class=container-fluid><div class=input-group><span class=input-group-text id=basic-addon1>@</span>
+<input type=text class=form-control placeholder=Username aria-label=Username aria-describedby=basic-addon1></div></form></nav></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;nav class=&#34;navbar&#34;&gt;
+  &lt;form class=&#34;container-fluid&#34;&gt;
+    &lt;div class=&#34;input-group&#34;&gt;
+      &lt;span class=&#34;input-group-text&#34; id=&#34;basic-addon1&#34;&gt;@&lt;/span&gt;
+      &lt;input type=&#34;text&#34; class=&#34;form-control&#34; placeholder=&#34;Username&#34; aria-label=&#34;Username&#34; aria-describedby=&#34;basic-addon1&#34;&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;
+&lt;/nav&gt;</code></pre></div><h3 id=text>Text</h3><p>Navbars may contain bits of text with the help of <code>.navbar-text</code>. This class adjusts vertical alignment and horizontal spacing for strings of text.</p><div class=bd-example><nav class=navbar><div class=container-fluid><span class=navbar-text>Navbar text with an inline element</span></div></nav></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;nav class=&#34;navbar&#34;&gt;
+  &lt;div class=&#34;container-fluid&#34;&gt;
+    &lt;span class=&#34;navbar-text&#34;&gt;
+      Navbar text with an inline element
+    &lt;/span&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre></div><p>Mix and match with other components and utilities as needed.</p><div class=bd-example><nav class="navbar navbar-expand-lg"><div class=container-fluid><a class=navbar-brand href=#>Navbar w/ text</a>
+<button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarText aria-controls=navbarText aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=navbarText><ul class="navbar-nav me-auto mb-2 mb-lg-0"><li class=nav-item><a class="nav-link active" aria-current=page href=#>Home</a></li><li class=nav-item><a class=nav-link href=#>Features</a></li><li class=nav-item><a class=nav-link href=#>Pricing</a></li></ul><span class=navbar-text>Navbar text with an inline element</span></div></div></nav></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;nav class=&#34;navbar navbar-expand-lg&#34;&gt;
+  &lt;div class=&#34;container-fluid&#34;&gt;
+    &lt;a class=&#34;navbar-brand&#34; href=&#34;#&#34;&gt;Navbar w/ text&lt;/a&gt;
+    &lt;button class=&#34;navbar-toggler&#34; type=&#34;button&#34; data-bs-toggle=&#34;collapse&#34; data-bs-target=&#34;#navbarText&#34; aria-controls=&#34;navbarText&#34; aria-expanded=&#34;false&#34; aria-label=&#34;Toggle navigation&#34;&gt;
+      &lt;span class=&#34;navbar-toggler-icon&#34;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;div class=&#34;collapse navbar-collapse&#34; id=&#34;navbarText&#34;&gt;
+      &lt;ul class=&#34;navbar-nav me-auto mb-2 mb-lg-0&#34;&gt;
+        &lt;li class=&#34;nav-item&#34;&gt;
+          &lt;a class=&#34;nav-link active&#34; aria-current=&#34;page&#34; href=&#34;#&#34;&gt;Home&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&#34;nav-item&#34;&gt;
+          &lt;a class=&#34;nav-link&#34; href=&#34;#&#34;&gt;Features&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&#34;nav-item&#34;&gt;
+          &lt;a class=&#34;nav-link&#34; href=&#34;#&#34;&gt;Pricing&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;span class=&#34;navbar-text&#34;&gt;Navbar text with an inline element&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre></div><h3 id=dropdown>Dropdown</h3><p>You can also use <a href=https://fastbootstrap.com/components/dropdown/>dropdowns</a> in your navbar nav. <a href=https://fastbootstrap.com/components/dropdown/>Dropdown menus</a> require a wrapping element for positioning, so be sure to use separate and nested elements for <code>.nav-item</code> and <code>.nav-link</code> as shown below.</p><div class=bd-example><nav class="navbar navbar-expand-lg"><div class=container-fluid><a class=navbar-brand href=#>Navbar</a><div class="collapse navbar-collapse" id=navbarNavDropdown><ul class=navbar-nav><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href=# role=button data-bs-toggle=dropdown aria-expanded=false>Menu</a><ul class=dropdown-menu><li><a class=dropdown-item href=#>Action</a></li><li><a class=dropdown-item href=#>Another action</a></li><li><a class=dropdown-item href=#>Something else here</a></li></ul></li></ul></div></div></nav></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;nav class=&#34;navbar navbar-expand-lg&#34;&gt;
+  &lt;div class=&#34;container-fluid&#34;&gt;
+    &lt;a class=&#34;navbar-brand&#34; href=&#34;#&#34;&gt;Navbar&lt;/a&gt;
+    &lt;div class=&#34;collapse navbar-collapse&#34; id=&#34;navbarNavDropdown&#34;&gt;
+      &lt;ul class=&#34;navbar-nav&#34;&gt;
+        &lt;li class=&#34;nav-item dropdown&#34;&gt;
+          &lt;a class=&#34;nav-link dropdown-toggle&#34; href=&#34;#&#34; role=&#34;button&#34; data-bs-toggle=&#34;dropdown&#34; aria-expanded=&#34;false&#34;&gt;Menu&lt;/a&gt;
+          &lt;ul class=&#34;dropdown-menu&#34;&gt;
+            &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Action&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre></div><h3 id=icons>Icons</h3><p>Add an icon as link.</p><div class=bd-example><nav class="navbar navbar-expand-lg"><div class=container-fluid><ul class=navbar-nav><li class="nav-item me-3 me-lg-0"><a class=nav-link href=#><i class="fas fa-shopping-cart"></i></a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href=# id=navbarDropdown role=button data-bs-toggle=dropdown aria-expanded=false><i class="fas fa-user"></i></a><ul class=dropdown-menu aria-labelledby=navbarDropdown><li><a class=dropdown-item href=#>Action</a></li><li><a class=dropdown-item href=#>Another action</a></li><li><hr class=dropdown-divider></li><li><a class=dropdown-item href=#>Something else here</a></li></ul></li></ul></div></nav></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;nav class=&#34;navbar navbar-expand-lg&#34;&gt;
+  &lt;div class=&#34;container-fluid&#34;&gt;
+    &lt;ul class=&#34;navbar-nav&#34;&gt;
+      &lt;li class=&#34;nav-item me-3 me-lg-0&#34;&gt;
+        &lt;a class=&#34;nav-link&#34; href=&#34;#&#34;&gt;
+          &lt;i class=&#34;fas fa-shopping-cart&#34;&gt;&lt;/i&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&#34;nav-item dropdown&#34;&gt;
+        &lt;a class=&#34;nav-link dropdown-toggle&#34; href=&#34;#&#34; id=&#34;navbarDropdown&#34; role=&#34;button&#34; data-bs-toggle=&#34;dropdown&#34; aria-expanded=&#34;false&#34;&gt;
+          &lt;i class=&#34;fas fa-user&#34;&gt;&lt;/i&gt;
+        &lt;/a&gt;
+        &lt;ul class=&#34;dropdown-menu&#34; aria-labelledby=&#34;navbarDropdown&#34;&gt;
+          &lt;li&gt;
+            &lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Action&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Another action&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;hr class=&#34;dropdown-divider&#34; /&gt;&lt;/li&gt;
+          &lt;li&gt;
+            &lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Something else here&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre></div><h3 id=badges>Badges</h3><p><a href=https://fastbootstrap.com/components/badge/>Badges</a> can be very useful for presenting counters, for example in the shopping cart.</p><div class=bd-example><nav class="navbar navbar-expand-lg"><div class=container-fluid><a class=navbar-brand href=#><img src=/images/bootstrap-logo.svg width=36 alt=Logo></a><ul class=navbar-nav><li class=nav-item><a class="nav-link position-relative" href=#><span class="badge position-absolute top-0 end-0 text-bg-danger">1</span>
+<span><i class="fas fa-shopping-cart"></i></span></a></li></ul></div></nav></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;nav class=&#34;navbar navbar-expand-lg&#34;&gt;
+  &lt;div class=&#34;container-fluid&#34;&gt;
+    &lt;a class=&#34;navbar-brand&#34; href=&#34;#&#34;&gt;
+      &lt;img src=&#34;/images/bootstrap-logo.svg&#34; width=&#34;36&#34; alt=&#34;Logo&#34; /&gt;
+    &lt;/a&gt;
+    &lt;ul class=&#34;navbar-nav&#34;&gt;
+      &lt;li class=&#34;nav-item&#34;&gt;
+        &lt;a class=&#34;nav-link position-relative&#34; href=&#34;#&#34;&gt;
+          &lt;span class=&#34;badge position-absolute top-0 end-0 text-bg-danger&#34;&gt;1&lt;/span&gt;
+          &lt;span&gt;&lt;i class=&#34;fas fa-shopping-cart&#34;&gt;&lt;/i&gt;&lt;/span&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre></div><h3 id=avatar>Avatar</h3><p>Add an <a href=https://fastbootstrap.com/components/avatar/>Avatar</a> with <a href=https://fastbootstrap.com/components/dropdown/>Dropdown</a> to navbar show a user profile.</p><div class=bd-example><nav class="navbar navbar-expand-lg"><div class=container-fluid><a class=navbar-brand href=#><img src=/images/bootstrap-logo.svg width=36 alt=Logo></a><ul class=navbar-nav><li class="nav-item dropdown"><a class=avatar href=# data-bs-toggle=dropdown aria-expanded=false><img src=/images/avatar/1.jpg>
+<span class="avatar-badge border bg-red-300 p-1"></span></a><ul class=dropdown-menu><li><a class=dropdown-item href=#>Settings</a></li><li><a class=dropdown-item href=#>Profile</a></li><li><a class=dropdown-item href=#>Logout</a></li></ul></li></ul></div></nav></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;nav class=&#34;navbar navbar-expand-lg&#34;&gt;
+  &lt;div class=&#34;container-fluid&#34;&gt;
+    &lt;a class=&#34;navbar-brand&#34; href=&#34;#&#34;&gt;
+      &lt;img src=&#34;/images/bootstrap-logo.svg&#34; width=&#34;36&#34; alt=&#34;Logo&#34; /&gt;
+    &lt;/a&gt;
+    &lt;ul class=&#34;navbar-nav&#34;&gt;
+      &lt;li class=&#34;nav-item dropdown&#34;&gt;
+        &lt;a class=&#34;avatar&#34; href=&#34;#&#34; data-bs-toggle=&#34;dropdown&#34; aria-expanded=&#34;false&#34;&gt;
+          &lt;img src=&#34;/images/avatar/1.jpg&#34; /&gt;
+          &lt;span class=&#34;avatar-badge border bg-red-300 p-1&#34;&gt;&lt;/span&gt;
+        &lt;/a&gt;
+        &lt;ul class=&#34;dropdown-menu&#34;&gt;
+          &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Settings&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Profile&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Logout&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre></div><h2 id=position>Position</h2><p>Use our <a href=/docs/position/>position utilities</a> to place navbars in non-static positions. Choose from fixed to the top, fixed to the bottom, stickied to the top (scrolls with the page until it reaches the top, then stays there), or stickied to the bottom (scrolls with the page until it reaches the bottom, then stays there).</p><h3 id=fixed-top>Fixed top</h3><p>Fixed navbars use <code>position: fixed</code>, meaning they’re pulled from the normal flow of the DOM and may require custom CSS (e.g., <code>padding-top</code> on the <code>&lt;body></code>) to prevent overlap with other elements.</p><p>Add the <code>.fixed-top</code> class to the <code>.navbar</code>.</p><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;nav class=&#34;navbar fixed-top&#34;&gt;
+  &lt;div class=&#34;container-fluid&#34;&gt;
+    &lt;a class=&#34;navbar-brand&#34; href=&#34;#&#34;&gt;Fixed top&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre></div><h3 id=fixed-bottom>Fixed bottom</h3><p>Add the <code>.fixed-bottom</code> class to the <code>.navbar</code>.</p><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;nav class=&#34;navbar fixed-bottom&#34;&gt;
+  &lt;div class=&#34;container-fluid&#34;&gt;
+    &lt;a class=&#34;navbar-brand&#34; href=&#34;#&#34;&gt;Fixed bottom&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre></div><h3 id=sticky-top>Sticky top</h3><p>Sticky positioning is a hybrid of relative and fixed positioning, but it&rsquo;s treated as relative positioned until it crosses a specified threshold.</p><p>Add the <code>.sticky-top</code> class to the <code>.navbar</code>.</p><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;nav class=&#34;navbar sticky-top&#34;&gt;
+  &lt;div class=&#34;container-fluid&#34;&gt;
+    &lt;a class=&#34;navbar-brand&#34; href=&#34;#&#34;&gt;Sticky top&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre></div><h3 id=sticky-bottom>Sticky bottom</h3><p>Add the <code>.sticky-bottom</code> class to the <code>.navbar</code>.</p><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;nav class=&#34;navbar sticky-bottom&#34;&gt;
+  &lt;div class=&#34;container-fluid&#34;&gt;
+    &lt;a class=&#34;navbar-brand&#34; href=&#34;#&#34;&gt;Sticky top&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre></div><h2 id=themes>Themes</h2><p>Navbar themes are easier than ever thanks to Bootstrap’s combination of Sass and CSS variables. The default is our “light navbar” for use with light background colors, but you can also apply <code>.navbar-dark</code> for dark background colors. Then, customize with <code>.bg-*</code> utilities.</p><div class="bd-example d-grid gap-3"><nav class="navbar navbar-expand-lg navbar-dark bg-dark"><div class=container-fluid><a class=navbar-brand href=#>Navbar</a>
+<button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarColor01 aria-controls=navbarColor01 aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=navbarColor01><ul class="navbar-nav me-auto mb-2 mb-lg-0"><li class=nav-item><a class="nav-link active" aria-current=page href=#>Home</a></li><li class=nav-item><a class=nav-link href=#>Features</a></li><li class=nav-item><a class=nav-link href=#>Pricing</a></li><li class=nav-item><a class=nav-link href=#>About</a></li></ul></div></div></nav><nav class="navbar navbar-expand-lg navbar-dark bg-primary"><div class=container-fluid><a class=navbar-brand href=#>Navbar</a>
+<button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarColor01 aria-controls=navbarColor01 aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=navbarColor01><ul class="navbar-nav me-auto mb-2 mb-lg-0"><li class=nav-item><a class="nav-link active" aria-current=page href=#>Home</a></li><li class=nav-item><a class=nav-link href=#>Features</a></li><li class=nav-item><a class=nav-link href=#>Pricing</a></li><li class=nav-item><a class=nav-link href=#>About</a></li></ul></div></div></nav><nav class="navbar navbar-expand-lg" style=background-color:#e3f2fd><div class=container-fluid><a class=navbar-brand href=#>Navbar</a>
+<button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarColor01 aria-controls=navbarColor01 aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=navbarColor01><ul class="navbar-nav me-auto mb-2 mb-lg-0"><li class=nav-item><a class="nav-link active" aria-current=page href=#>Home</a></li><li class=nav-item><a class=nav-link href=#>Features</a></li><li class=nav-item><a class=nav-link href=#>Pricing</a></li><li class=nav-item><a class=nav-link href=#>About</a></li></ul></div></div></nav></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;nav class=&#34;navbar navbar-dark bg-dark&#34;&gt;
+  &lt;!-- Navbar content --&gt;
+&lt;/nav&gt;
+&lt;nav class=&#34;navbar navbar-dark bg-primary&#34;&gt;
+  &lt;!-- Navbar content --&gt;
+&lt;/nav&gt;
+&lt;nav class=&#34;navbar&#34; style=&#34;background-color: #e3f2fd;&#34;&gt;
+  &lt;!-- Navbar content --&gt;
+&lt;/nav&gt;</code></pre></div><h2 id=containers>Containers</h2><p>Although it’s not required, you can wrap a navbar in a <code>.container</code> to center it on a page–though note that an inner container is still required. Or you can add a container inside the <code>.navbar</code> to only center the contents of a fixed or static top navbar.</p><div class=bd-example><div class=container><nav class="navbar navbar-expand-lg"><div class=container-fluid><a class=navbar-brand href=#>Navbar</a></div></nav></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;container&#34;&gt;
+  &lt;nav class=&#34;navbar navbar-expand-lg&#34;&gt;
+    &lt;div class=&#34;container-fluid&#34;&gt;
+      &lt;a class=&#34;navbar-brand&#34; href=&#34;#&#34;&gt;Navbar&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/nav&gt;
+&lt;/div&gt;</code></pre></div><p>Use any of the responsive containers to change how wide the content in your navbar is presented.</p><div class=bd-example><nav class="navbar navbar-expand-lg"><div class=container-md><a class=navbar-brand href=#>Navbar</a></div></nav></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;nav class=&#34;navbar navbar-expand-lg&#34;&gt;
+  &lt;div class=&#34;container-md&#34;&gt;
+    &lt;a class=&#34;navbar-brand&#34; href=&#34;#&#34;&gt;Navbar&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre></div><h2 id=content-alignment>Content alignment</h2><p>Use our <a href=/docs/justify-content/>flex</a> utility classes to align navbar content to the right, left or center.</p><h3 id=left-aligned>Left aligned</h3><p>Add <code>.me-auto</code> class to the <code>.navbar-nav</code> to align the content to the left.</p><div class=bd-example><nav class="navbar navbar-expand-lg navbar-light"><div class=container-fluid><a class=navbar-brand href=#>Navbar</a>
+<button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarNavAltMarkup aria-controls=navbarNavAltMarkup aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=navbarNavAltMarkup><div class="navbar-nav me-auto"><a class="nav-link active" aria-current=page href=#>Home</a>
+<a class=nav-link href=#>Features</a>
+<a class=nav-link href=#>Pricing</a>
+<a class="nav-link disabled">Disabled</a></div></div></div></nav></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;nav class=&#34;navbar navbar-expand-lg navbar-light&#34;&gt;
+  &lt;div class=&#34;container-fluid&#34;&gt;
+    &lt;a class=&#34;navbar-brand&#34; href=&#34;#&#34;&gt;Navbar&lt;/a&gt;
+    &lt;button class=&#34;navbar-toggler&#34; type=&#34;button&#34; data-bs-toggle=&#34;collapse&#34; data-bs-target=&#34;#navbarNavAltMarkup&#34; aria-controls=&#34;navbarNavAltMarkup&#34; aria-expanded=&#34;false&#34; aria-label=&#34;Toggle navigation&#34;&gt;
+      &lt;span class=&#34;navbar-toggler-icon&#34;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;div class=&#34;collapse navbar-collapse&#34; id=&#34;navbarNavAltMarkup&#34;&gt;
+      &lt;div class=&#34;navbar-nav me-auto&#34;&gt;
+        &lt;a class=&#34;nav-link active&#34; aria-current=&#34;page&#34; href=&#34;#&#34;&gt;Home&lt;/a&gt;
+        &lt;a class=&#34;nav-link&#34; href=&#34;#&#34;&gt;Features&lt;/a&gt;
+        &lt;a class=&#34;nav-link&#34; href=&#34;#&#34;&gt;Pricing&lt;/a&gt;
+        &lt;a class=&#34;nav-link disabled&#34;&gt;Disabled&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre></div><h3 id=right-aligned>Right aligned</h3><p>Add <code>.ms-auto</code> class to the .navbar-nav to align the content to the right.</p><div class=bd-example><nav class="navbar navbar-expand-lg navbar-light"><div class=container-fluid><a class=navbar-brand href=#>Navbar</a>
+<button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarNavAltMarkup aria-controls=navbarNavAltMarkup aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=navbarNavAltMarkup><div class="navbar-nav ms-auto"><a class="nav-link active" aria-current=page href=#>Home</a>
+<a class=nav-link href=#>Features</a>
+<a class=nav-link href=#>Pricing</a>
+<a class="nav-link disabled">Disabled</a></div></div></div></nav></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;nav class=&#34;navbar navbar-expand-lg navbar-light&#34;&gt;
+  &lt;div class=&#34;container-fluid&#34;&gt;
+    &lt;a class=&#34;navbar-brand&#34; href=&#34;#&#34;&gt;Navbar&lt;/a&gt;
+    &lt;button class=&#34;navbar-toggler&#34; type=&#34;button&#34; data-bs-toggle=&#34;collapse&#34; data-bs-target=&#34;#navbarNavAltMarkup&#34; aria-controls=&#34;navbarNavAltMarkup&#34; aria-expanded=&#34;false&#34; aria-label=&#34;Toggle navigation&#34;&gt;
+      &lt;span class=&#34;navbar-toggler-icon&#34;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;div class=&#34;collapse navbar-collapse&#34; id=&#34;navbarNavAltMarkup&#34;&gt;
+      &lt;div class=&#34;navbar-nav ms-auto&#34;&gt;
+        &lt;a class=&#34;nav-link active&#34; aria-current=&#34;page&#34; href=&#34;#&#34;&gt;Home&lt;/a&gt;
+        &lt;a class=&#34;nav-link&#34; href=&#34;#&#34;&gt;Features&lt;/a&gt;
+        &lt;a class=&#34;nav-link&#34; href=&#34;#&#34;&gt;Pricing&lt;/a&gt;
+        &lt;a class=&#34;nav-link disabled&#34;&gt;Disabled&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre></div><h3 id=centered>Centered</h3><p>Add <code>.mx-auto</code> class to the <code>.navbar-nav</code> to make content are centered.</p><div class=bd-example><nav class="navbar navbar-expand-lg navbar-light"><div class=container-fluid><a class=navbar-brand href=#>Navbar</a>
+<button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarNavAltMarkup aria-controls=navbarNavAltMarkup aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=navbarNavAltMarkup><div class="navbar-nav mx-auto"><a class="nav-link active" aria-current=page href=#>Home</a>
+<a class=nav-link href=#>Features</a>
+<a class=nav-link href=#>Pricing</a>
+<a class="nav-link disabled">Disabled</a></div></div></div></nav></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;nav class=&#34;navbar navbar-expand-lg navbar-light&#34;&gt;
+  &lt;div class=&#34;container-fluid&#34;&gt;
+    &lt;a class=&#34;navbar-brand&#34; href=&#34;#&#34;&gt;Navbar&lt;/a&gt;
+    &lt;button class=&#34;navbar-toggler&#34; type=&#34;button&#34; data-bs-toggle=&#34;collapse&#34; data-bs-target=&#34;#navbarNavAltMarkup&#34; aria-controls=&#34;navbarNavAltMarkup&#34; aria-expanded=&#34;false&#34; aria-label=&#34;Toggle navigation&#34;&gt;
+      &lt;span class=&#34;navbar-toggler-icon&#34;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;div class=&#34;collapse navbar-collapse&#34; id=&#34;navbarNavAltMarkup&#34;&gt;
+      &lt;div class=&#34;navbar-nav mx-auto&#34;&gt;
+        &lt;a class=&#34;nav-link active&#34; aria-current=&#34;page&#34; href=&#34;#&#34;&gt;Home&lt;/a&gt;
+        &lt;a class=&#34;nav-link&#34; href=&#34;#&#34;&gt;Features&lt;/a&gt;
+        &lt;a class=&#34;nav-link&#34; href=&#34;#&#34;&gt;Pricing&lt;/a&gt;
+        &lt;a class=&#34;nav-link disabled&#34;&gt;Disabled&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre></div><h2 id=scrolling>Scrolling</h2><p>Add <code>.navbar-nav-scroll</code> to a <code>.navbar-nav</code> (or other navbar sub-component) to enable vertical scrolling within the toggleable contents of a collapsed navbar. By default, scrolling kicks in at <code>75vh</code> (or 75% of the viewport height), but you can override that with the local CSS custom property <code>--bs-navbar-height</code> or custom styles. At larger viewports when the navbar is expanded, content will appear as it does in a default navbar.</p><p>Please note that this behavior comes with a potential drawback of <code>overflow</code>—when setting <code>overflow-y: auto</code> (required to scroll the content here), <code>overflow-x</code> is the equivalent of auto, which will crop some horizontal content.</p><p>Here’s an example navbar using <code>.navbar-nav-scroll</code> with <code>style="--bs-scroll-height: 100px;"</code>, with some extra margin utilities for optimum spacing.</p><div class=bd-example><nav class="navbar navbar-expand-lg"><div class=container-fluid><a class=navbar-brand href=#>Navbar scroll</a>
+<button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarScroll aria-controls=navbarScroll aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=navbarScroll><ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style=--bs-scroll-height:100px><li class=nav-item><a class="nav-link active" aria-current=page href=#>Home</a></li><li class=nav-item><a class=nav-link href=#>Link</a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href=# role=button data-bs-toggle=dropdown aria-expanded=false>Link</a><ul class=dropdown-menu><li><a class=dropdown-item href=#>Action</a></li><li><a class=dropdown-item href=#>Another action</a></li><li><hr class=dropdown-divider></li><li><a class=dropdown-item href=#>Something else here</a></li></ul></li><li class=nav-item><a class="nav-link disabled">Link</a></li></ul><form class=d-flex role=search><input class="form-control me-2" type=search placeholder=Search aria-label=Search>
+<button class="btn btn-outline-success" type=submit>Search</button></form></div></div></nav></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;nav class=&#34;navbar navbar-expand-lg&#34;&gt;
+  &lt;div class=&#34;container-fluid&#34;&gt;
+    &lt;a class=&#34;navbar-brand&#34; href=&#34;#&#34;&gt;Navbar scroll&lt;/a&gt;
+    &lt;button class=&#34;navbar-toggler&#34; type=&#34;button&#34; data-bs-toggle=&#34;collapse&#34; data-bs-target=&#34;#navbarScroll&#34; aria-controls=&#34;navbarScroll&#34; aria-expanded=&#34;false&#34; aria-label=&#34;Toggle navigation&#34;&gt;
+      &lt;span class=&#34;navbar-toggler-icon&#34;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;div class=&#34;collapse navbar-collapse&#34; id=&#34;navbarScroll&#34;&gt;
+      &lt;ul class=&#34;navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll&#34; style=&#34;--bs-scroll-height: 100px;&#34;&gt;
+        &lt;li class=&#34;nav-item&#34;&gt;
+          &lt;a class=&#34;nav-link active&#34; aria-current=&#34;page&#34; href=&#34;#&#34;&gt;Home&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&#34;nav-item&#34;&gt;
+          &lt;a class=&#34;nav-link&#34; href=&#34;#&#34;&gt;Link&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&#34;nav-item dropdown&#34;&gt;
+          &lt;a class=&#34;nav-link dropdown-toggle&#34; href=&#34;#&#34; role=&#34;button&#34; data-bs-toggle=&#34;dropdown&#34; aria-expanded=&#34;false&#34;&gt;
+            Link
+          &lt;/a&gt;
+          &lt;ul class=&#34;dropdown-menu&#34;&gt;
+            &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Action&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;hr class=&#34;dropdown-divider&#34;&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class=&#34;nav-item&#34;&gt;
+          &lt;a class=&#34;nav-link disabled&#34;&gt;Link&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;form class=&#34;d-flex&#34; role=&#34;search&#34;&gt;
+        &lt;input class=&#34;form-control me-2&#34; type=&#34;search&#34; placeholder=&#34;Search&#34; aria-label=&#34;Search&#34;&gt;
+        &lt;button class=&#34;btn btn-outline-success&#34; type=&#34;submit&#34;&gt;Search&lt;/button&gt;
+      &lt;/form&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre></div><h2 id=responsive-behaviors>Responsive behaviors</h2><p>Navbars can use <code>.navbar-toggler</code>, <code>.navbar-collapse</code>, and <code>.navbar-expand{-sm|-md|-lg|-xl|-xxl}</code> classes to determine when their content collapses behind a button. In combination with other utilities, you can easily choose when to show or hide particular elements.</p><p>For navbars that never collapse, add the <code>.navbar-expand</code> class on the navbar. For navbars that always collapse, don’t add any <code>.navbar-expand</code> class.</p><h3 id=toggler-button>Toggler Button</h3><p>Navbar togglers <code>.navbar-toggler</code> are left-aligned by default, but should they follow a sibling element like a <code>.navbar-brand</code>, they’ll automatically be aligned to the far right. Reversing your markup will reverse the placement of the toggler.</p><p>Below are examples of different toggle styles With no <code>.navbar-brand</code> shown at the smallest breakpoint:</p><div class=bd-example><nav class="navbar navbar-expand-lg"><div class=container-fluid><button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarTogglerDemo01 aria-controls=navbarTogglerDemo01 aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=navbarTogglerDemo01><a class=navbar-brand href=#>Hidden brand</a><ul class="navbar-nav me-auto mb-2 mb-lg-0"><li class=nav-item><a class="nav-link active" aria-current=page href=#>Home</a></li><li class=nav-item><a class=nav-link href=#>Link</a></li><li class=nav-item><a class="nav-link disabled">Disabled</a></li></ul><form class=d-flex role=search><input class="form-control me-2" type=search placeholder=Search aria-label=Search>
+<button class="btn btn-outline-success" type=submit>Search</button></form></div></div></nav></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;nav class=&#34;navbar navbar-expand-lg&#34;&gt;
+  &lt;div class=&#34;container-fluid&#34;&gt;
+    &lt;button class=&#34;navbar-toggler&#34; type=&#34;button&#34; data-bs-toggle=&#34;collapse&#34; data-bs-target=&#34;#navbarTogglerDemo01&#34; aria-controls=&#34;navbarTogglerDemo01&#34; aria-expanded=&#34;false&#34; aria-label=&#34;Toggle navigation&#34;&gt;
+      &lt;span class=&#34;navbar-toggler-icon&#34;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;div class=&#34;collapse navbar-collapse&#34; id=&#34;navbarTogglerDemo01&#34;&gt;
+      &lt;a class=&#34;navbar-brand&#34; href=&#34;#&#34;&gt;Hidden brand&lt;/a&gt;
+      &lt;ul class=&#34;navbar-nav me-auto mb-2 mb-lg-0&#34;&gt;
+        &lt;li class=&#34;nav-item&#34;&gt;
+          &lt;a class=&#34;nav-link active&#34; aria-current=&#34;page&#34; href=&#34;#&#34;&gt;Home&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&#34;nav-item&#34;&gt;
+          &lt;a class=&#34;nav-link&#34; href=&#34;#&#34;&gt;Link&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&#34;nav-item&#34;&gt;
+          &lt;a class=&#34;nav-link disabled&#34;&gt;Disabled&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;form class=&#34;d-flex&#34; role=&#34;search&#34;&gt;
+        &lt;input class=&#34;form-control me-2&#34; type=&#34;search&#34; placeholder=&#34;Search&#34; aria-label=&#34;Search&#34;&gt;
+        &lt;button class=&#34;btn btn-outline-success&#34; type=&#34;submit&#34;&gt;Search&lt;/button&gt;
+      &lt;/form&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre></div><p>With a brand name shown on the left and toggler on the right:</p><div class=bd-example><nav class="navbar navbar-expand-lg"><div class=container-fluid><a class=navbar-brand href=#>Navbar</a>
+<button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarTogglerDemo02 aria-controls=navbarTogglerDemo02 aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=navbarTogglerDemo02><ul class="navbar-nav me-auto mb-2 mb-lg-0"><li class=nav-item><a class="nav-link active" aria-current=page href=#>Home</a></li><li class=nav-item><a class=nav-link href=#>Link</a></li><li class=nav-item><a class="nav-link disabled">Disabled</a></li></ul><form class=d-flex role=search><input class="form-control me-2" type=search placeholder=Search aria-label=Search>
+<button class="btn btn-outline-success" type=submit>Search</button></form></div></div></nav></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;nav class=&#34;navbar navbar-expand-lg&#34;&gt;
+  &lt;div class=&#34;container-fluid&#34;&gt;
+    &lt;a class=&#34;navbar-brand&#34; href=&#34;#&#34;&gt;Navbar&lt;/a&gt;
+    &lt;button class=&#34;navbar-toggler&#34; type=&#34;button&#34; data-bs-toggle=&#34;collapse&#34; data-bs-target=&#34;#navbarTogglerDemo02&#34; aria-controls=&#34;navbarTogglerDemo02&#34; aria-expanded=&#34;false&#34; aria-label=&#34;Toggle navigation&#34;&gt;
+      &lt;span class=&#34;navbar-toggler-icon&#34;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;div class=&#34;collapse navbar-collapse&#34; id=&#34;navbarTogglerDemo02&#34;&gt;
+      &lt;ul class=&#34;navbar-nav me-auto mb-2 mb-lg-0&#34;&gt;
+        &lt;li class=&#34;nav-item&#34;&gt;
+          &lt;a class=&#34;nav-link active&#34; aria-current=&#34;page&#34; href=&#34;#&#34;&gt;Home&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&#34;nav-item&#34;&gt;
+          &lt;a class=&#34;nav-link&#34; href=&#34;#&#34;&gt;Link&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&#34;nav-item&#34;&gt;
+          &lt;a class=&#34;nav-link disabled&#34;&gt;Disabled&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;form class=&#34;d-flex&#34; role=&#34;search&#34;&gt;
+        &lt;input class=&#34;form-control me-2&#34; type=&#34;search&#34; placeholder=&#34;Search&#34; aria-label=&#34;Search&#34;&gt;
+        &lt;button class=&#34;btn btn-outline-success&#34; type=&#34;submit&#34;&gt;Search&lt;/button&gt;
+      &lt;/form&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre></div><p>With a toggler on the left and brand name on the right:</p><div class=bd-example><nav class="navbar navbar-expand-lg"><div class=container-fluid><button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarTogglerDemo03 aria-controls=navbarTogglerDemo03 aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button>
+<a class=navbar-brand href=#>Navbar</a><div class="collapse navbar-collapse" id=navbarTogglerDemo03><ul class="navbar-nav me-auto mb-2 mb-lg-0"><li class=nav-item><a class="nav-link active" aria-current=page href=#>Home</a></li><li class=nav-item><a class=nav-link href=#>Link</a></li><li class=nav-item><a class="nav-link disabled">Disabled</a></li></ul><form class=d-flex role=search><input class="form-control me-2" type=search placeholder=Search aria-label=Search>
+<button class="btn btn-outline-success" type=submit>Search</button></form></div></div></nav></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;nav class=&#34;navbar navbar-expand-lg&#34;&gt;
+  &lt;div class=&#34;container-fluid&#34;&gt;
+    &lt;button class=&#34;navbar-toggler&#34; type=&#34;button&#34; data-bs-toggle=&#34;collapse&#34; data-bs-target=&#34;#navbarTogglerDemo03&#34; aria-controls=&#34;navbarTogglerDemo03&#34; aria-expanded=&#34;false&#34; aria-label=&#34;Toggle navigation&#34;&gt;
+      &lt;span class=&#34;navbar-toggler-icon&#34;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;a class=&#34;navbar-brand&#34; href=&#34;#&#34;&gt;Navbar&lt;/a&gt;
+    &lt;div class=&#34;collapse navbar-collapse&#34; id=&#34;navbarTogglerDemo03&#34;&gt;
+      &lt;ul class=&#34;navbar-nav me-auto mb-2 mb-lg-0&#34;&gt;
+        &lt;li class=&#34;nav-item&#34;&gt;
+          &lt;a class=&#34;nav-link active&#34; aria-current=&#34;page&#34; href=&#34;#&#34;&gt;Home&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&#34;nav-item&#34;&gt;
+          &lt;a class=&#34;nav-link&#34; href=&#34;#&#34;&gt;Link&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&#34;nav-item&#34;&gt;
+          &lt;a class=&#34;nav-link disabled&#34;&gt;Disabled&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;form class=&#34;d-flex&#34; role=&#34;search&#34;&gt;
+        &lt;input class=&#34;form-control me-2&#34; type=&#34;search&#34; placeholder=&#34;Search&#34; aria-label=&#34;Search&#34;&gt;
+        &lt;button class=&#34;btn btn-outline-success&#34; type=&#34;submit&#34;&gt;Search&lt;/button&gt;
+      &lt;/form&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre></div><h3 id=external-content>External content</h3><p>Sometimes you want to use the collapse plugin to trigger a container element for content that structurally sits outside of the <code>.navbar</code> . Because our plugin works on the <code>id</code> and <code>data-bs-target</code> matching, that’s easily done!</p><div class=bd-example><nav class="navbar navbar-dark bg-dark"><div class=container-fluid><button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarToggleExternalContent aria-controls=navbarToggleExternalContent aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button></div></nav><div class=collapse id=navbarToggleExternalContent><div class="bg-dark p-4"><h5 class="text-white h4">Collapsed content</h5><span class=text-muted>Toggleable via the navbar brand.</span></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;nav class=&#34;navbar navbar-dark bg-dark&#34;&gt;
+  &lt;div class=&#34;container-fluid&#34;&gt;
+    &lt;button class=&#34;navbar-toggler&#34; type=&#34;button&#34; data-bs-toggle=&#34;collapse&#34; data-bs-target=&#34;#navbarToggleExternalContent&#34; aria-controls=&#34;navbarToggleExternalContent&#34; aria-expanded=&#34;false&#34; aria-label=&#34;Toggle navigation&#34;&gt;
+      &lt;span class=&#34;navbar-toggler-icon&#34;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+&lt;div class=&#34;collapse&#34; id=&#34;navbarToggleExternalContent&#34;&gt;
+  &lt;div class=&#34;bg-dark p-4&#34;&gt;
+    &lt;h5 class=&#34;text-white h4&#34;&gt;Collapsed content&lt;/h5&gt;
+    &lt;span class=&#34;text-muted&#34;&gt;Toggleable via the navbar brand.&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><p>When you do this, we recommend including additional JavaScript to move the focus programmatically to the container when it is opened. Otherwise, keyboard users and users of assistive technologies will likely have a hard time finding the newly revealed content - particularly if the container that was opened comes before the toggler in the document’s structure. We also recommend making sure that the toggler has the <code>aria-controls</code> attribute, pointing to the <code>id</code> of the content container. In theory, this allows assistive technology users to jump directly from the toggler to the container it controls–but support for this is currently quite patchy.</p><h3 id=offcanvas>Offcanvas</h3><p>Transform your expanding and collapsing navbar into an offcanvas drawer with the offcanvas component. We extend both the offcanvas default styles and use our <code>.navbar-expand-*</code> classes to create a dynamic and flexible navigation sidebar.</p><p>In the example below, to create an offcanvas navbar that is always collapsed across all breakpoints, omit the .navbar-expand-* class entirely.</p><div class=bd-example><nav class=navbar><div class=container-fluid><a class=navbar-brand href=#>Offcanvas navbar</a>
+<button class=navbar-toggler type=button data-bs-toggle=offcanvas data-bs-target=#offcanvasNavbar aria-controls=offcanvasNavbar>
+<span class=navbar-toggler-icon></span></button><div class="offcanvas offcanvas-end" tabindex=-1 id=offcanvasNavbar aria-labelledby=offcanvasNavbarLabel><div class=offcanvas-header><h5 class=offcanvas-title id=offcanvasNavbarLabel>Offcanvas</h5><button type=button class=btn-close data-bs-dismiss=offcanvas aria-label=Close></button></div><div class=offcanvas-body><ul class="navbar-nav justify-content-end flex-grow-1 pe-3"><li class=nav-item><a class="nav-link active" aria-current=page href=#>Home</a></li><li class=nav-item><a class=nav-link href=#>Link</a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href=# role=button data-bs-toggle=dropdown aria-expanded=false>Dropdown</a><ul class=dropdown-menu><li><a class=dropdown-item href=#>Action</a></li><li><a class=dropdown-item href=#>Another action</a></li><li><hr class=dropdown-divider></li><li><a class=dropdown-item href=#>Something else here</a></li></ul></li></ul><form class=d-flex role=search><input class="form-control me-2" type=search placeholder=Search aria-label=Search>
+<button class="btn btn-primary" type=submit>Search</button></form></div></div></div></nav></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;nav class=&#34;navbar&#34;&gt;
+  &lt;div class=&#34;container-fluid&#34;&gt;
+    &lt;a class=&#34;navbar-brand&#34; href=&#34;#&#34;&gt;Offcanvas navbar&lt;/a&gt;
+    &lt;button class=&#34;navbar-toggler&#34; type=&#34;button&#34; data-bs-toggle=&#34;offcanvas&#34; data-bs-target=&#34;#offcanvasNavbar&#34; aria-controls=&#34;offcanvasNavbar&#34;&gt;
+      &lt;span class=&#34;navbar-toggler-icon&#34;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;div class=&#34;offcanvas offcanvas-end&#34; tabindex=&#34;-1&#34; id=&#34;offcanvasNavbar&#34; aria-labelledby=&#34;offcanvasNavbarLabel&#34;&gt;
+      &lt;div class=&#34;offcanvas-header&#34;&gt;
+        &lt;h5 class=&#34;offcanvas-title&#34; id=&#34;offcanvasNavbarLabel&#34;&gt;Offcanvas&lt;/h5&gt;
+        &lt;button type=&#34;button&#34; class=&#34;btn-close&#34; data-bs-dismiss=&#34;offcanvas&#34; aria-label=&#34;Close&#34;&gt;&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;offcanvas-body&#34;&gt;
+        &lt;ul class=&#34;navbar-nav justify-content-end flex-grow-1 pe-3&#34;&gt;
+          &lt;li class=&#34;nav-item&#34;&gt;
+            &lt;a class=&#34;nav-link active&#34; aria-current=&#34;page&#34; href=&#34;#&#34;&gt;Home&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&#34;nav-item&#34;&gt;
+            &lt;a class=&#34;nav-link&#34; href=&#34;#&#34;&gt;Link&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&#34;nav-item dropdown&#34;&gt;
+            &lt;a class=&#34;nav-link dropdown-toggle&#34; href=&#34;#&#34; role=&#34;button&#34; data-bs-toggle=&#34;dropdown&#34; aria-expanded=&#34;false&#34;&gt;
+              Dropdown
+            &lt;/a&gt;
+            &lt;ul class=&#34;dropdown-menu&#34;&gt;
+              &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Action&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;
+                &lt;hr class=&#34;dropdown-divider&#34;&gt;
+              &lt;/li&gt;
+              &lt;li&gt;&lt;a class=&#34;dropdown-item&#34; href=&#34;#&#34;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;form class=&#34;d-flex&#34; role=&#34;search&#34;&gt;
+          &lt;input class=&#34;form-control me-2&#34; type=&#34;search&#34; placeholder=&#34;Search&#34; aria-label=&#34;Search&#34;&gt;
+          &lt;button class=&#34;btn btn-primary&#34; type=&#34;submit&#34;&gt;Search&lt;/button&gt;
+        &lt;/form&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre></div></div></div></div></div></main></div><script src=/js/fastbootstrap.min.js></script>
+<script src=/assets/js/main.fde7d879dae825e25af76bc7a2bee4490111d6bbc85a2677a12da3e73b6d23cc.min.ae4669210f157da040028477dda101132523de4d5312ba5dfbd37710ed096d9d.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/toolbar/prism-toolbar.min.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CR6EJXJK4S"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-CR6EJXJK4S")</script></body></html>

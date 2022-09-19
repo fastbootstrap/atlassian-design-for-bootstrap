@@ -1,0 +1,214 @@
+<!doctype html><html lang=en><head><meta name=generator content="Hugo 0.103.1"><meta http-equiv=x-ua-compatible content="IE=edge"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" href=/favicon.ico type=image/x-icon><link href=/css/fastbootstrap.min.css rel=stylesheet><link href=/css/site.89e375fc829b142a487ae2d67a47a5518cef63838910cba2d65c78bb8f932acd.css rel=stylesheet><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css><title>Bootstrap Form Component - Examples & Tutorial - FastBootstrap</title><meta name=description content="Form element allows users to input information."></head><body><header class="navbar navbar-expand-lg header-navbar py-0 sticky-top bg-white shadow-none"><nav class="container-fluid px-md-3 px-lg-4"><a class="navbar-brand d-inline-flex align-items-center m-0 p-0 me-lg-6 me-xl-9 p-1 rounded text-reset" href=/><svg class="brand-img" width="24" height="24" viewBox="0 0 32 32"><rect x="4" y="3" width="24" height="7" rx="3.5" ry="3.5"/><rect x="4" y="12" width="20" height="7" rx="3.5" ry="3.5"/><rect x="4" y="21" width="14" height="7" rx="3.5" ry="3.5"/></svg><h2 class="d-none d-md-block fw-semibold fs-5 ls-wide ms-2 mb-0">FastBootstrap</h2></a><div class="collapse navbar-collapse"><ul class=navbar-nav><li class="nav-item mx-2 mx-lg-3"><a class="nav-link fw-semibold rounded fs-sm" href=/docs>Docs</a></li><li class="nav-item mx-2 mx-lg-3 active"><a class="nav-link fw-semibold rounded fs-sm" href=/components>Components</a></li><li class="nav-item ms-auto"><a class="nav-link rounded-circle" href=https://github.com/fastbootstrap/atlassian-design-for-bootstrap><i class="fa-brands fa-github fa-xl"></i></a></li></ul></div><button class=navbar-toggler type=bdnavbar data-bs-toggle=offcanvas data-bs-target=#bdNavbar aria-controls=bdNavbar aria-label="Toggle navigation"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentcolor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 11.5A.5.5.0 013 11h10a.5.5.0 010 1H3a.5.5.0 01-.5-.5zm0-4A.5.5.0 013 7h10a.5.5.0 010 1H3a.5.5.0 01-.5-.5zm0-4A.5.5.0 013 3h10a.5.5.0 010 1H3a.5.5.0 01-.5-.5z"/></svg></button></nav></header><div class="offcanvas offcanvas-end w-100 mw-100" tabindex=-1 id=bdNavbar><div class="offcanvas-header border-bottom px-5"><svg class="brand-img" width="24" height="24" viewBox="0 0 32 32"><rect x="4" y="3" width="24" height="7" rx="3.5" ry="3.5"/><rect x="4" y="12" width="20" height="7" rx="3.5" ry="3.5"/><rect x="4" y="21" width="14" height="7" rx="3.5" ry="3.5"/></svg><button type=button class=btn-close data-bs-dismiss=offcanvas aria-label=Close></button></div><div class="offcanvas-body px-5"><div class="d-flex flex-column"><a class="py-2 fw-bold text-reset" href=/docs>Docs</a><a class="py-2 fw-bold text-reset" href=/components>Components</a></div><ul class="list-inline mt-3 text-center border-top pt-5"><li><a class="nav-link rounded-circle" href=https://github.com/fastbootstrap/atlassian-design-for-bootstrap><i class="fa-brands fa-github fa-xl"></i></a></li></ul></div></div><div class="d-flex flex-column flex-lg-row"><div class=sidebar><div class="d-flex d-lg-none align-items-center"><div class=container><div class="d-flex justify-content-between align-items-center py-3"><nav aria-label=breadcrumb><ol class="breadcrumb mb-0"><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/components/>Components</a></li><li class="breadcrumb-item active" aria-current=page>Form</li></ol></nav><button class="btn btn-sm p-0 border-0" data-bs-toggle=collapse href=#sidebar-nav aria-expanded=false><i class="fas fa-chevron-down"></i></button></div></div></div><div class="collapse d-lg-block py-3 py-lg-4" id=sidebar-nav><div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">Actions</div><ul class=list-unstyled><li><a href=/components/button/ class="sidebar__link d-block">Button</a></li><li><a href=/components/button-group/ class="sidebar__link d-block">Button Group</a></li><li><a href=/components/close-button/ class="sidebar__link d-block">Close Button</a></li></ul><div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">Inputs</div><ul class=list-unstyled><li><a href=/components/checkbox/ class="sidebar__link d-block">Checkbox</a></li><li><a href=/components/dropdown/ class="sidebar__link d-block">Dropdown</a></li><li><a href=/components/floating-label/ class="sidebar__link d-block">Floating Label</a></li><li><a href=/components/form/ class="sidebar__link d-block active">Form</a></li><li><a href=/components/input-group/ class="sidebar__link d-block">Input Group</a></li><li><a href=/components/radio/ class="sidebar__link d-block">Radio</a></li><li><a href=/components/range/ class="sidebar__link d-block">Range</a></li><li><a href=/components/select/ class="sidebar__link d-block">Select Input</a></li><li><a href=/components/switch/ class="sidebar__link d-block">Switch</a></li><li><a href=/components/textfield/ class="sidebar__link d-block">Text field</a></li></ul><div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">navigation</div><ul class=list-unstyled><li><a href=/components/breadcrumb/ class="sidebar__link d-block">Breadcrumb</a></li><li><a href=/components/navbar/ class="sidebar__link d-block">Navbar</a></li><li><a href=/components/offcanvas/ class="sidebar__link d-block">Offcanvas</a></li><li><a href=/components/pagination/ class="sidebar__link d-block">Pagination</a></li><li><a href=/components/pills/ class="sidebar__link d-block">Pills</a></li><li><a href=/components/scrollspy/ class="sidebar__link d-block">Scrollspy</a></li><li><a href=/components/stretched-link/ class="sidebar__link d-block">Stretched Link</a></li><li><a href=/components/tabs/ class="sidebar__link d-block">Tabs</a></li></ul><div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">Feedback</div><ul class=list-unstyled><li><a href=/components/alerts/ class="sidebar__link d-block">Alerts</a></li><li><a href=/components/modal/ class="sidebar__link d-block">Modal</a></li><li><a href=/components/placeholders/ class="sidebar__link d-block">Placeholders</a></li><li><a href=/components/popover/ class="sidebar__link d-block">Popover</a></li><li><a href=/components/progress-bar/ class="sidebar__link d-block">Progress bar</a></li><li><a href=/components/progress-indicator/ class="sidebar__link d-block">Progress Indicator<span class="lozenge new ms-1 fw-normal">new</span></a></li><li><a href=/components/progress-tracker/ class="sidebar__link d-block">Progress Tracker<span class="lozenge new ms-1 fw-normal">new</span></a></li><li><a href=/components/spinner/ class="sidebar__link d-block">Spinner</a></li><li><a href=/components/toast/ class="sidebar__link d-block">Toast</a></li><li><a href=/components/tooltip/ class="sidebar__link d-block">Tooltip</a></li><li><a href=/components/validation/ class="sidebar__link d-block">Validation</a></li></ul><div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">Data Display</div><ul class=list-unstyled><li><a href=/components/avatar/ class="sidebar__link d-block">Avatar<span class="lozenge new ms-1 fw-normal">new</span></a></li><li><a href=/components/avatar-group/ class="sidebar__link d-block">Avatar Group<span class="lozenge new ms-1 fw-normal">new</span></a></li><li><a href=/components/badge/ class="sidebar__link d-block">Badge</a></li><li><a href=/components/lozenge/ class="sidebar__link d-block">Lozenge<span class="lozenge new ms-1 fw-normal">new</span></a></li><li><a href=/components/table/ class="sidebar__link d-block">Table</a></li><li><a href=/components/tag/ class="sidebar__link d-block">Tag<span class="lozenge new ms-1 fw-normal">new</span></a></li></ul><div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">surfaces</div><ul class=list-unstyled><li><a href=/components/accordion/ class="sidebar__link d-block">Accordion</a></li><li><a href=/components/blankslate/ class="sidebar__link d-block">Blankslate<span class="lozenge new ms-1 fw-normal">new</span></a></li><li><a href=/components/card/ class="sidebar__link d-block">Card</a></li><li><a href=/components/carousel/ class="sidebar__link d-block">Carousel</a></li><li><a href=/components/collapse/ class="sidebar__link d-block">Collapse</a></li><li><a href=/components/list-group/ class="sidebar__link d-block">List Group</a></li></ul></div></div><main class="doc-main d-flex flex-grow-1 flex-column"><div class=bg-light><div class="container py-3 py-md-4 py-lg-5 py-xl-6"><div class=doc-intro><div class="d-flex align-items-center gap-2"><h1 class="fw-semibold fs-2">Form</h1></div><div class="mt-3 text-muted">Form element allows users to input information.</div></div></div></div><div class="doc-contents pt-5 pb-5 pb-lg-6"><div class=container><div class="d-flex flex-column flex-lg-row-reverse justify-content-lg-end gap-xl-6"><div class="doc-nav align-self-start d-none d-xl-flex flex-column fs-sm"><span class="fw-semibold fs-xs text-uppercase">Contents</span><div class="doc-nav-content position-relative mt-2"><nav id=TableOfContents><ul><li><a href=#overview>Overview</a></li><li><a href=#form-label>Form label</a></li><li><a href=#form-text>Form text</a></li><li><a href=#form-grid>Form grid</a><ul><li><a href=#gutters>Gutters</a></li></ul></li><li><a href=#horizontal-form>Horizontal form</a><ul><li><a href=#label-sizing>Label sizing</a></li></ul></li><li><a href=#inline-forms>Inline forms</a></li><li><a href=#column-sizing>Column sizing</a></li><li><a href=#auto-sizing>Auto-sizing</a></li><li><a href=#utilities>Utilities</a></li><li><a href=#accessibility>Accessibility</a></li></ul></nav></div></div><div class="doc-content d-flex flex-grow-1 flex-column" data-bs-spy=scroll data-bs-target=.doc-nav-content data-bs-smooth-scroll=true tabindex=0><h2 id=overview>Overview</h2><p>A form consists of a group of related fields. You can customize the fields with components such as <a href=https://fastbootstrap.com/components/textfield/>text field</a>, <a href=https://fastbootstrap.com/components/range/>range field</a>, and <a href=https://fastbootstrap.com/components/checkbox/>checkbox field</a>. You can also pass in default values.</p><p>Form is a wrapper that does not render anything itself. Instead, it passes props and information down into the <code>&lt;form></code> element and its children. This includes information about whether the form is dirty, disabled, reset or submitting.</p><div class=bd-example><form><div class=mb-3><label for=exampleInputEmail1 class=form-label>Email address</label>
+<input type=email class=form-control id=exampleInputEmail1 aria-describedby=emailHelp><div id=emailHelp class=form-text>We'll never share your email with anyone else.</div></div><div class=mb-3><label for=exampleInputPassword1 class=form-label>Password</label>
+<input type=password class=form-control id=exampleInputPassword1></div><div class="mb-3 form-check"><input type=checkbox class=form-check-input id=exampleCheck1 checked>
+<label class=form-check-label for=exampleCheck1>Always sign in on this device</label></div><div class=text-end><button type=submit class="btn btn-subtle me-2">Cancel</button>
+<button type=submit class="btn btn-primary">Submit</button></div></form></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;form&gt;
+  &lt;div class=&#34;mb-3&#34;&gt;
+    &lt;label for=&#34;exampleInputEmail1&#34; class=&#34;form-label&#34;&gt;Email address&lt;/label&gt;
+    &lt;input type=&#34;email&#34; class=&#34;form-control&#34; id=&#34;exampleInputEmail1&#34; aria-describedby=&#34;emailHelp&#34; /&gt;
+    &lt;div id=&#34;emailHelp&#34; class=&#34;form-text&#34;&gt;We&#39;ll never share your email with anyone else.&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;mb-3&#34;&gt;
+    &lt;label for=&#34;exampleInputPassword1&#34; class=&#34;form-label&#34;&gt;Password&lt;/label&gt;
+    &lt;input type=&#34;password&#34; class=&#34;form-control&#34; id=&#34;exampleInputPassword1&#34; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;mb-3 form-check&#34;&gt;
+    &lt;input type=&#34;checkbox&#34; class=&#34;form-check-input&#34; id=&#34;exampleCheck1&#34; checked /&gt;
+    &lt;label class=&#34;form-check-label&#34; for=&#34;exampleCheck1&#34;&gt;Always sign in on this device&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;text-end&#34;&gt;
+    &lt;button type=&#34;submit&#34; class=&#34;btn btn-subtle me-2&#34;&gt;Cancel&lt;/button&gt;
+    &lt;button type=&#34;submit&#34; class=&#34;btn btn-primary&#34;&gt;Submit&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre></div><h2 id=form-label>Form label</h2><p>A form label should use either the <code>&lt;label></code> or <code>&lt;legend></code> elements with the class <code>.form-label</code>.</p><div class=bd-example><form><label class=form-label for=inputUsername>Username</label>
+<input class=form-control type=text id=inputUsername></form></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;form&gt;
+  &lt;label class=&#34;form-label&#34; for=&#34;inputUsername&#34;&gt;Username&lt;/label&gt;
+  &lt;input class=&#34;form-control&#34; type=&#34;text&#34; id=&#34;inputUsername&#34; /&gt;
+&lt;/form&gt;</code></pre></div><h2 id=form-text>Form text</h2><p>Block-level or inline-level form text can be created using <code>.form-text</code>.</p><p>Form text below inputs can be styled with <code>.form-text</code>. If a block-level element will be used, a top margin is added for easy spacing from the inputs above.</p><div class=bd-example><label for=inputPassword5 class=form-label>Password</label>
+<input type=password id=inputPassword5 class=form-control aria-describedby=passwordHelpBlock><div id=passwordHelpBlock class=form-text>Your password must be 8-20 characters long.</div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;label for=&#34;inputPassword5&#34; class=&#34;form-label&#34;&gt;Password&lt;/label&gt;
+&lt;input type=&#34;password&#34; id=&#34;inputPassword5&#34; class=&#34;form-control&#34; aria-describedby=&#34;passwordHelpBlock&#34;&gt;
+&lt;div id=&#34;passwordHelpBlock&#34; class=&#34;form-text&#34;&gt;
+  Your password must be 8-20 characters long.
+&lt;/div&gt;</code></pre></div><p>Inline text can use any typical inline HTML element (be it a <code>&lt;span></code>, <code>&lt;small></code>, or something else) with nothing more than the <code>.form-text</code> class.</p><div class=bd-example><div class="row g-3 align-items-center"><div class=col-auto><label for=inputPassword6 class=col-form-label>Password</label></div><div class=col-auto><input type=password id=inputPassword6 class=form-control aria-describedby=passwordHelpInline></div><div class=col-auto><span id=passwordHelpInline class=form-text>Must be 8-20 characters long.</span></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;row g-3 align-items-center&#34;&gt;
+  &lt;div class=&#34;col-auto&#34;&gt;
+    &lt;label for=&#34;inputPassword6&#34; class=&#34;col-form-label&#34;&gt;Password&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;col-auto&#34;&gt;
+    &lt;input type=&#34;password&#34; id=&#34;inputPassword6&#34; class=&#34;form-control&#34;
+     aria-describedby=&#34;passwordHelpInline&#34; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;col-auto&#34;&gt;
+    &lt;span id=&#34;passwordHelpInline&#34; class=&#34;form-text&#34;&gt;Must be 8-20 characters long.&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><section class="callout warning d-flex"><div><span><i class="fa-solid fa-circle-exclamation fa-lg text-yellow-500"></i></span></div><div class=ms-3><h4 id=associating-form-text-with-form-controls>Associating form text with form controls</h4><p>Form text should be explicitly associated with the form control it relates to using the <code>aria-describedby</code> attribute. This will ensure that assistive technologies—such as screen readers—will announce this form text when the user focuses or enters the control.</div></section><h2 id=form-grid>Form grid</h2><p>More complex forms can be built using our grid classes. Use these for form layouts that require multiple columns, varied widths, and additional alignment options.</p><div class=bd-example><div class=row><div class=col><input type=text class=form-control placeholder="First name" aria-label="First name"></div><div class=col><input type=text class=form-control placeholder="Last name" aria-label="Last name"></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;row&#34;&gt;
+  &lt;div class=&#34;col&#34;&gt;
+    &lt;input type=&#34;text&#34; class=&#34;form-control&#34; placeholder=&#34;First name&#34; aria-label=&#34;First name&#34;&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;col&#34;&gt;
+    &lt;input type=&#34;text&#34; class=&#34;form-control&#34; placeholder=&#34;Last name&#34; aria-label=&#34;Last name&#34;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h3 id=gutters>Gutters</h3><p>By adding <a href=/docs/gutters/>gutter modifier classes</a>, you can have control over the gutter width in as well the inline as block direction.</p><div class=bd-example><div class="row g-5"><div class=col><input type=text class=form-control placeholder="First name" aria-label="First name"></div><div class=col><input type=text class=form-control placeholder="Last name" aria-label="Last name"></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;row g-5&#34;&gt;
+  &lt;div class=&#34;col&#34;&gt;
+    &lt;input type=&#34;text&#34; class=&#34;form-control&#34; placeholder=&#34;First name&#34; aria-label=&#34;First name&#34;&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;col&#34;&gt;
+    &lt;input type=&#34;text&#34; class=&#34;form-control&#34; placeholder=&#34;Last name&#34; aria-label=&#34;Last name&#34;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h2 id=horizontal-form>Horizontal form</h2><p>Create horizontal forms with the grid by adding the <code>.row</code> class to form groups and using the <code>.col-*-*</code> classes to specify the width of your labels and controls. Be sure to add <code>.col-form-label</code> to your <code>&lt;label></code>s as well so they’re vertically centered with their associated form controls.</p><p>At times, you maybe need to use margin or padding utilities to create that perfect alignment you need. For example, we’ve removed the <code>padding-top</code> on our stacked radio inputs label to better align the text baseline.</p><div class=bd-example><form><div class="row mb-3"><label for=inputEmail3 class="col-sm-2 col-form-label">Email</label><div class=col-sm-10><input type=email class=form-control id=inputEmail3></div></div><div class="row mb-3"><label for=inputPassword3 class="col-sm-2 col-form-label">Password</label><div class=col-sm-10><input type=password class=form-control id=inputPassword3></div></div><fieldset class="row mb-3"><legend class="col-form-label col-sm-2 pt-0">Radios</legend><div class=col-sm-10><div class=form-check><input class=form-check-input type=radio name=gridRadios id=gridRadios1 value=option1 checked>
+<label class=form-check-label for=gridRadios1>First radio</label></div><div class=form-check><input class=form-check-input type=radio name=gridRadios id=gridRadios2 value=option2>
+<label class=form-check-label for=gridRadios2>Second radio</label></div><div class="form-check disabled"><input class=form-check-input type=radio name=gridRadios id=gridRadios3 value=option3 disabled>
+<label class=form-check-label for=gridRadios3>Third disabled radio</label></div></div></fieldset><div class="row mb-3"><div class="col-sm-10 offset-sm-2"><div class=form-check><input class=form-check-input type=checkbox id=gridCheck1>
+<label class=form-check-label for=gridCheck1>Example checkbox</label></div></div></div><button type=submit class="btn btn-primary">Sign in</button></form></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;form&gt;
+  &lt;div class=&#34;row mb-3&#34;&gt;
+    &lt;label for=&#34;inputEmail3&#34; class=&#34;col-sm-2 col-form-label&#34;&gt;Email&lt;/label&gt;
+    &lt;div class=&#34;col-sm-10&#34;&gt;
+      &lt;input type=&#34;email&#34; class=&#34;form-control&#34; id=&#34;inputEmail3&#34;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;row mb-3&#34;&gt;
+    &lt;label for=&#34;inputPassword3&#34; class=&#34;col-sm-2 col-form-label&#34;&gt;Password&lt;/label&gt;
+    &lt;div class=&#34;col-sm-10&#34;&gt;
+      &lt;input type=&#34;password&#34; class=&#34;form-control&#34; id=&#34;inputPassword3&#34;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;fieldset class=&#34;row mb-3&#34;&gt;
+    &lt;legend class=&#34;col-form-label col-sm-2 pt-0&#34;&gt;Radios&lt;/legend&gt;
+    &lt;div class=&#34;col-sm-10&#34;&gt;
+      &lt;div class=&#34;form-check&#34;&gt;
+        &lt;input class=&#34;form-check-input&#34; type=&#34;radio&#34; name=&#34;gridRadios&#34; id=&#34;gridRadios1&#34; value=&#34;option1&#34; checked&gt;
+        &lt;label class=&#34;form-check-label&#34; for=&#34;gridRadios1&#34;&gt;
+          First radio
+        &lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;form-check&#34;&gt;
+        &lt;input class=&#34;form-check-input&#34; type=&#34;radio&#34; name=&#34;gridRadios&#34; id=&#34;gridRadios2&#34; value=&#34;option2&#34;&gt;
+        &lt;label class=&#34;form-check-label&#34; for=&#34;gridRadios2&#34;&gt;
+          Second radio
+        &lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;form-check disabled&#34;&gt;
+        &lt;input class=&#34;form-check-input&#34; type=&#34;radio&#34; name=&#34;gridRadios&#34; id=&#34;gridRadios3&#34; value=&#34;option3&#34; disabled&gt;
+        &lt;label class=&#34;form-check-label&#34; for=&#34;gridRadios3&#34;&gt;
+          Third disabled radio
+        &lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
+  &lt;div class=&#34;row mb-3&#34;&gt;
+    &lt;div class=&#34;col-sm-10 offset-sm-2&#34;&gt;
+      &lt;div class=&#34;form-check&#34;&gt;
+        &lt;input class=&#34;form-check-input&#34; type=&#34;checkbox&#34; id=&#34;gridCheck1&#34;&gt;
+        &lt;label class=&#34;form-check-label&#34; for=&#34;gridCheck1&#34;&gt;
+          Example checkbox
+        &lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button type=&#34;submit&#34; class=&#34;btn btn-primary&#34;&gt;Sign in&lt;/button&gt;
+&lt;/form&gt;</code></pre></div><h3 id=label-sizing>Label sizing</h3><p>Be sure to use <code>.col-form-label-sm</code> or <code>.col-form-label-lg</code> to your <code>&lt;label></code>s or <code>&lt;legend></code>s to correctly follow the size of .<code>form-control-lg</code> and <code>.form-control-sm</code>.</p><div class=bd-example><div class="row mb-3"><label for=colFormLabelSm class="col-sm-2 col-form-label col-form-label-sm">Email</label><div class=col-sm-10><input type=email class="form-control form-control-sm" id=colFormLabelSm placeholder=col-form-label-sm></div></div><div class="row mb-3"><label for=colFormLabel class="col-sm-2 col-form-label">Email</label><div class=col-sm-10><input type=email class=form-control id=colFormLabel placeholder=col-form-label></div></div><div class=row><label for=colFormLabelLg class="col-sm-2 col-form-label col-form-label-lg">Email</label><div class=col-sm-10><input type=email class="form-control form-control-lg" id=colFormLabelLg placeholder=col-form-label-lg></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;row mb-3&#34;&gt;
+  &lt;label for=&#34;colFormLabelSm&#34; class=&#34;col-sm-2 col-form-label col-form-label-sm&#34;&gt;Email&lt;/label&gt;
+  &lt;div class=&#34;col-sm-10&#34;&gt;
+    &lt;input type=&#34;email&#34; class=&#34;form-control form-control-sm&#34; id=&#34;colFormLabelSm&#34; placeholder=&#34;col-form-label-sm&#34;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;row mb-3&#34;&gt;
+  &lt;label for=&#34;colFormLabel&#34; class=&#34;col-sm-2 col-form-label&#34;&gt;Email&lt;/label&gt;
+  &lt;div class=&#34;col-sm-10&#34;&gt;
+    &lt;input type=&#34;email&#34; class=&#34;form-control&#34; id=&#34;colFormLabel&#34; placeholder=&#34;col-form-label&#34;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;row&#34;&gt;
+  &lt;label for=&#34;colFormLabelLg&#34; class=&#34;col-sm-2 col-form-label col-form-label-lg&#34;&gt;Email&lt;/label&gt;
+  &lt;div class=&#34;col-sm-10&#34;&gt;
+    &lt;input type=&#34;email&#34; class=&#34;form-control form-control-lg&#34; id=&#34;colFormLabelLg&#34; placeholder=&#34;col-form-label-lg&#34;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h2 id=inline-forms>Inline forms</h2><p>Use the <code>.row-cols-*</code> classes to create responsive horizontal layouts. By adding gutter modifier classes, we’ll have gutters in horizontal and vertical directions. On narrow mobile viewports, the <code>.col-12</code> helps stack the form controls and more. The <code>.align-items-center</code> aligns the form elements to the middle, making the <code>.form-checkbox</code> align properly.</p><div class=bd-example><form class="row row-cols-lg-auto g-3 align-items-center"><div class=col-12><label class=visually-hidden for=inlineFormInputGroupUsername>Username</label><div class=input-group><div class=input-group-text>@</div><input type=text class=form-control id=inlineFormInputGroupUsername placeholder=Username></div></div><div class=col-12><label class=visually-hidden for=inlineFormSelectPref>Preference</label>
+<select class=form-select id=inlineFormSelectPref><option selected>Choose...</option><option value=1>One</option><option value=2>Two</option><option value=3>Three</option></select></div><div class=col-12><div class=form-check><input class=form-check-input type=checkbox id=inlineFormCheck>
+<label class=form-check-label for=inlineFormCheck>Remember me</label></div></div><div class=col-12><button type=submit class="btn btn-primary">Submit</button></div></form></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;form class=&#34;row row-cols-lg-auto g-3 align-items-center&#34;&gt;
+  &lt;div class=&#34;col-12&#34;&gt;
+    &lt;label class=&#34;visually-hidden&#34; for=&#34;inlineFormInputGroupUsername&#34;&gt;Username&lt;/label&gt;
+    &lt;div class=&#34;input-group&#34;&gt;
+      &lt;div class=&#34;input-group-text&#34;&gt;@&lt;/div&gt;
+      &lt;input type=&#34;text&#34; class=&#34;form-control&#34; id=&#34;inlineFormInputGroupUsername&#34; placeholder=&#34;Username&#34;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;col-12&#34;&gt;
+    &lt;label class=&#34;visually-hidden&#34; for=&#34;inlineFormSelectPref&#34;&gt;Preference&lt;/label&gt;
+    &lt;select class=&#34;form-select&#34; id=&#34;inlineFormSelectPref&#34;&gt;
+      &lt;option selected&gt;Choose...&lt;/option&gt;
+      &lt;option value=&#34;1&#34;&gt;One&lt;/option&gt;
+      &lt;option value=&#34;2&#34;&gt;Two&lt;/option&gt;
+      &lt;option value=&#34;3&#34;&gt;Three&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;col-12&#34;&gt;
+    &lt;div class=&#34;form-check&#34;&gt;
+      &lt;input class=&#34;form-check-input&#34; type=&#34;checkbox&#34; id=&#34;inlineFormCheck&#34;&gt;
+      &lt;label class=&#34;form-check-label&#34; for=&#34;inlineFormCheck&#34;&gt;
+        Remember me
+      &lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;col-12&#34;&gt;
+    &lt;button type=&#34;submit&#34; class=&#34;btn btn-primary&#34;&gt;Submit&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre></div><h2 id=column-sizing>Column sizing</h2><p>As shown in the previous examples, our grid system allows you to place any number of <code>.col</code>s within a <code>.row</code>. They’ll split the available width equally between them. You may also pick a subset of your columns to take up more or less space, while the remaining <code>.col</code>s equally split the rest, with specific column classes like <code>.col-sm-7</code>.</p><div class=bd-example><div class="row g-3"><div class=col-sm-7><input type=text class=form-control placeholder=City aria-label=City></div><div class=col-sm><input type=text class=form-control placeholder=State aria-label=State></div><div class=col-sm><input type=text class=form-control placeholder=Zip aria-label=Zip></div></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;row g-3&#34;&gt;
+  &lt;div class=&#34;col-sm-7&#34;&gt;
+    &lt;input type=&#34;text&#34; class=&#34;form-control&#34; placeholder=&#34;City&#34; aria-label=&#34;City&#34;&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;col-sm&#34;&gt;
+    &lt;input type=&#34;text&#34; class=&#34;form-control&#34; placeholder=&#34;State&#34; aria-label=&#34;State&#34;&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;col-sm&#34;&gt;
+    &lt;input type=&#34;text&#34; class=&#34;form-control&#34; placeholder=&#34;Zip&#34; aria-label=&#34;Zip&#34;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h2 id=auto-sizing>Auto-sizing</h2><p>The example below uses a flexbox utility to vertically center the contents and changes .col to .col-auto so that your columns only take up as much space as needed. Put another way, the column sizes itself based on the contents.</p><div class=bd-example><form class="row gy-2 gx-3 align-items-center"><div class=col-auto><label class=visually-hidden for=autoSizingInput>Name</label>
+<input type=text class=form-control id=autoSizingInput placeholder="Jane Doe"></div><div class=col-auto><label class=visually-hidden for=autoSizingInputGroup>Username</label><div class=input-group><div class=input-group-text>@</div><input type=text class=form-control id=autoSizingInputGroup placeholder=Username></div></div><div class=col-auto><label class=visually-hidden for=autoSizingSelect>Preference</label>
+<select class=form-select id=autoSizingSelect><option selected>Choose...</option><option value=1>One</option><option value=2>Two</option><option value=3>Three</option></select></div><div class=col-auto><div class=form-check><input class=form-check-input type=checkbox id=autoSizingCheck>
+<label class=form-check-label for=autoSizingCheck>Remember me</label></div></div><div class=col-auto><button type=submit class="btn btn-primary">Submit</button></div></form></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;form class=&#34;row gy-2 gx-3 align-items-center&#34;&gt;
+  &lt;div class=&#34;col-auto&#34;&gt;
+    &lt;label class=&#34;visually-hidden&#34; for=&#34;autoSizingInput&#34;&gt;Name&lt;/label&gt;
+    &lt;input type=&#34;text&#34; class=&#34;form-control&#34; id=&#34;autoSizingInput&#34; placeholder=&#34;Jane Doe&#34;&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;col-auto&#34;&gt;
+    &lt;label class=&#34;visually-hidden&#34; for=&#34;autoSizingInputGroup&#34;&gt;Username&lt;/label&gt;
+    &lt;div class=&#34;input-group&#34;&gt;
+      &lt;div class=&#34;input-group-text&#34;&gt;@&lt;/div&gt;
+      &lt;input type=&#34;text&#34; class=&#34;form-control&#34; id=&#34;autoSizingInputGroup&#34; placeholder=&#34;Username&#34;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;col-auto&#34;&gt;
+    &lt;label class=&#34;visually-hidden&#34; for=&#34;autoSizingSelect&#34;&gt;Preference&lt;/label&gt;
+    &lt;select class=&#34;form-select&#34; id=&#34;autoSizingSelect&#34;&gt;
+      &lt;option selected&gt;Choose...&lt;/option&gt;
+      &lt;option value=&#34;1&#34;&gt;One&lt;/option&gt;
+      &lt;option value=&#34;2&#34;&gt;Two&lt;/option&gt;
+      &lt;option value=&#34;3&#34;&gt;Three&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;col-auto&#34;&gt;
+    &lt;div class=&#34;form-check&#34;&gt;
+      &lt;input class=&#34;form-check-input&#34; type=&#34;checkbox&#34; id=&#34;autoSizingCheck&#34;&gt;
+      &lt;label class=&#34;form-check-label&#34; for=&#34;autoSizingCheck&#34;&gt;
+        Remember me
+      &lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;col-auto&#34;&gt;
+    &lt;button type=&#34;submit&#34; class=&#34;btn btn-primary&#34;&gt;Submit&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre></div><h2 id=utilities>Utilities</h2><p><a href=/docs/margin/>Margin utilities</a> are the easiest way to add some structure to forms. They provide basic grouping of labels, controls, optional form text, and form validation messaging. We recommend sticking to <code>margin-bottom</code> utilities, and using a single direction throughout the form for consistency.</p><p>Feel free to build your forms however you like, with <code>&lt;fieldset></code>s, <code>&lt;div></code>s, or nearly any other element.</p><div class=bd-example><div class=mb-3><label for=formGroupExampleInput class=form-label>Example label</label>
+<input type=text class=form-control id=formGroupExampleInput placeholder="Example input placeholder"></div><div class=mb-3><label for=formGroupExampleInput2 class=form-label>Another label</label>
+<input type=text class=form-control id=formGroupExampleInput2 placeholder="Another input placeholder"></div></div><div class=position-relative><pre class=bd-code-snippet><code class=language-markup>&lt;div class=&#34;mb-3&#34;&gt;
+  &lt;label for=&#34;formGroupExampleInput&#34; class=&#34;form-label&#34;&gt;Example label&lt;/label&gt;
+  &lt;input type=&#34;text&#34; class=&#34;form-control&#34; id=&#34;formGroupExampleInput&#34; placeholder=&#34;Example input placeholder&#34;&gt;
+&lt;/div&gt;
+&lt;div class=&#34;mb-3&#34;&gt;
+  &lt;label for=&#34;formGroupExampleInput2&#34; class=&#34;form-label&#34;&gt;Another label&lt;/label&gt;
+  &lt;input type=&#34;text&#34; class=&#34;form-control&#34; id=&#34;formGroupExampleInput2&#34; placeholder=&#34;Another input placeholder&#34;&gt;
+&lt;/div&gt;</code></pre></div><h2 id=accessibility>Accessibility</h2><p>Ensure that all form controls have an appropriate accessible name so that their purpose can be conveyed to users of assistive technologies. The simplest way to achieve this is to use a <code>&lt;label></code> element, or—in the case of buttons—to include sufficiently descriptive text as part of the <code>&lt;button>...&lt;/button></code> content.</p><p>For situations where it’s not possible to include a visible <code>&lt;label></code> or appropriate text content, there are alternative ways of still providing an accessible name, such as:</p><ul><li><code>&lt;label></code> elements hidden using the .visually-hidden class</li><li>Pointing to an existing element that can act as a label using aria-labelledby</li><li>Providing a title attribute</li><li>Explicitly setting the accessible name on an element using aria-label</li></ul><p>If none of these are present, assistive technologies may resort to using the <code>placeholder</code> attribute as a fallback for the accessible name on <code>&lt;input></code> and <code>&lt;textarea></code> elements. The examples in this section provide a few suggested, case-specific approaches.</p><p>While using visually hidden content (<code>.visually-hidden</code>, <code>aria-label</code>, and even <code>placeholder</code> content, which disappears once a form field has content) will benefit assistive technology users, a lack of visible label text may still be problematic for certain users. Some form of visible label is generally the best approach, both for accessibility and usability.</p></div></div></div></div></main></div><script src=/js/fastbootstrap.min.js></script>
+<script src=/assets/js/main.fde7d879dae825e25af76bc7a2bee4490111d6bbc85a2677a12da3e73b6d23cc.min.ae4669210f157da040028477dda101132523de4d5312ba5dfbd37710ed096d9d.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/toolbar/prism-toolbar.min.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CR6EJXJK4S"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-CR6EJXJK4S")</script></body></html>
