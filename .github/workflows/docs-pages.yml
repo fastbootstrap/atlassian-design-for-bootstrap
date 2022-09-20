@@ -1,8 +1,7 @@
-name: Deploy Docs
+name: Docs Pages
 
 on:
-  workflow_dispatch:
-  
+  workflow_dispatch:  
   push:
     branches:
       - main
@@ -31,10 +30,10 @@ jobs:
       - name: Build pages
         run: hugo --minify
       
-      - name: Deploy to Github Pages
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
           allow_empty_commit: true
+          cname: fastbootstrap.com
