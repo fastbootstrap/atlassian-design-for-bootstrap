@@ -8119,6 +8119,56 @@ textarea.form-control-lg {
   --bs-progress-tracker-border-radius: 4px;
 }
 
+.menu {
+  font-size: 1rem;
+}
+
+.menu-item {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 0.5rem 1.25rem;
+  color: #42526e;
+  border-radius: 3px;
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+}
+.menu-item:hover {
+  background-color: #f4f5f7;
+  color: #42526e;
+  text-decoration: none;
+}
+.menu-item.active {
+  color: #0052cc;
+  background-color: rgba(222, 235, 255, 0.65);
+}
+.menu-item.disabled, .menu-item:disabled {
+  color: #6b778c;
+  pointer-events: none;
+}
+
+.menu-list {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.menu-list a:hover {
+  text-decoration: none;
+}
+
+.menu-header {
+  display: block;
+  padding: 0 1.25rem;
+  margin-top: 20px;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  color: #5e6c84;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
 .clearfix::after {
   display: block;
   clear: both;
