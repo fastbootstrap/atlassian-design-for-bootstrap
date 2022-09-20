@@ -16,6 +16,12 @@
         "singleQuote": true,
         "printWidth": 1000
       }
+    },
+    {
+      "files": "*.yml",
+      "options": {
+        "singleQuote": true
+      }
     }
   ]
 }
