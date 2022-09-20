@@ -3,10 +3,14 @@ layout: docs
 title: List Group
 description: "List gorup used for displays a continuous group of text or images."
 toc: true
+tabs: true
 group: surfaces
 menu:
   components:
 ---
+
+{{< tabs "list-group" >}}
+{{< tab "Overview" >}}
 
 **Bootstrap 5 List group component**
 
@@ -235,7 +239,7 @@ In this example, we use [lozenge]({{< ref "lozenge" >}}) and any HTML element to
         <p class="text-muted mb-0 fs-sm">john.doe@gmail.com</p>
       </div>
     </div>
-    <span class="lozenge lozenge-success">Active</span>
+    <span class="lozenge bg-green-50 text-green-500">Active</span>
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-center">
     <div class="d-flex align-items-center">
@@ -245,7 +249,7 @@ In this example, we use [lozenge]({{< ref "lozenge" >}}) and any HTML element to
         <p class="text-muted mb-0 fs-sm">alex.ray@gmail.com</p>
       </div>
     </div>
-    <span class="lozenge lozenge-removed">Removed</span>
+    <span class="lozenge bg-red-50 text-red-500">Removed</span>
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-center">
     <div class="d-flex align-items-center">
@@ -255,7 +259,7 @@ In this example, we use [lozenge]({{< ref "lozenge" >}}) and any HTML element to
         <p class="text-muted mb-0 fs-sm">kate.hunington@gmail.com</p>
       </div>
     </div>
-    <span class="lozenge lozenge-inprogress">Awaiting</span>
+    <span class="lozenge bg-blue-50 text-blue-500">Awaiting</span>
   </li>
 </ul>
 {{</ example >}}
@@ -310,46 +314,215 @@ Place [checkboxes]({{< ref "checkbox" >}}) and [radios]({{< ref "radio" >}}) wit
 </ul>
 {{</ example >}}
 
-## Customization
+{{</ tab >}}
+{{< tab "API" >}}
+## Usage
 
-### With Tabs
 
-Use the [tab plugin]({{< ref "tabs" >}}) to extend our list group to create tabbable panes of local content. Check out our [tabs compoment]({{< ref "tabs" >}}) for more information.
+Use the [tab plugin]({{< ref "tabs" >}}) to extend our list group to create tabbable panes of local content. Check out [tabs compoment]({{< ref "tabs" >}}) for more information.
 
-{{< example >}}
-<div class="row">
-  <div class="col-4">
-    <div class="list-group" id="list-tab" role="tablist">
-      <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">
-        Home
-      </a>
-      <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">
-        Profile
-      </a>
-      <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">
-        Messages
-      </a>
-      <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">
-        Settings
-      </a>
+<div class="bd-example" role="tabpanel">
+  <div class="row">
+    <div class="col-4">
+      <div class="list-group" id="list-tab" role="tablist">
+        <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="tab" href="#list-home" role="tab" aria-controls="list-home">Home</a>
+        <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="tab" href="#list-profile" role="tab" aria-controls="list-profile">Profile</a>
+        <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="tab" href="#list-messages" role="tab" aria-controls="list-messages">Messages</a>
+        <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="tab" href="#list-settings" role="tab" aria-controls="list-settings">Settings</a>
+      </div>
     </div>
-  </div>
-  <div class="col-8">
-    <div class="tab-content" id="nav-tabContent">
-      <div class="tab-pane  show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-        Home content
-      </div>
-      <div class="tab-pane " id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-        Profile content
-      </div>
-      <div class="tab-pane " id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-        Messages content
-      </div>
-      <div class="tab-pane " id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
-        Settings content
+    <div class="col-8">
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+          <p>Some placeholder content in a paragraph relating to "Home". And some more content, used here just to pad out and fill this tab panel. In production, you would obviously have more real content here. And not just text. It could be anything, really. Text, images, forms.</p>
+        </div>
+        <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+          <p>Some placeholder content in a paragraph relating to "Profile". And some more content, used here just to pad out and fill this tab panel. In production, you would obviously have more real content here. And not just text. It could be anything, really. Text, images, forms.</p>
+        </div>
+        <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+          <p>Some placeholder content in a paragraph relating to "Messages". And some more content, used here just to pad out and fill this tab panel. In production, you would obviously have more real content here. And not just text. It could be anything, really. Text, images, forms.</p>
+        </div>
+        <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+          <p>Some placeholder content in a paragraph relating to "Settings". And some more content, used here just to pad out and fill this tab panel. In production, you would obviously have more real content here. And not just text. It could be anything, really. Text, images, forms.</p>
+        </div>
       </div>
     </div>
   </div>
 </div>
-{{</ example >}}
 
+```html
+<div class="row">
+  <div class="col-4">
+    <div class="list-group" id="list-tab" role="tablist">
+      <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Home</a>
+      <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Profile</a>
+      <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Messages</a>
+      <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Settings</a>
+    </div>
+  </div>
+  <div class="col-8">
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">...</div>
+      <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
+      <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+      <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+    </div>
+  </div>
+</div>
+```
+
+### Using data attributes
+
+You can activate a list group navigation without writing any JavaScript by simply specifying `data-bs-toggle="list"` or on an element. Use these data attributes on `.list-group-item`.
+
+```html
+<div role="tabpanel">
+  <!-- List group -->
+  <div class="list-group" id="myList" role="tablist">
+    <a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#home" role="tab">Home</a>
+    <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#profile" role="tab">Profile</a>
+    <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#messages" role="tab">Messages</a>
+    <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#settings" role="tab">Settings</a>
+  </div>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div class="tab-pane active" id="home" role="tabpanel">...</div>
+    <div class="tab-pane" id="profile" role="tabpanel">...</div>
+    <div class="tab-pane" id="messages" role="tabpanel">...</div>
+    <div class="tab-pane" id="settings" role="tabpanel">...</div>
+  </div>
+</div>
+```
+
+### Via JavaScript
+
+Enable tabbable list item via JavaScript (each list item needs to be activated individually):
+
+```js
+const triggerTabList = document.querySelectorAll('#myTab a')
+triggerTabList.forEach(triggerEl => {
+  const tabTrigger = new bootstrap.Tab(triggerEl)
+
+  triggerEl.addEventListener('click', event => {
+    event.preventDefault()
+    tabTrigger.show()
+  })
+})
+```
+
+You can activate individual list item in several ways:
+
+```js
+const triggerEl = document.querySelector('#myTab a[href="#profile"]')
+bootstrap.Tab.getInstance(triggerEl).show() // Select tab by name
+
+const triggerFirstTabEl = document.querySelector('#myTab li:first-child a')
+bootstrap.Tab.getInstance(triggerFirstTabEl).show() // Select first tab
+```
+
+### Fade effect
+
+To make tabs panel fade in, add `.fade` to each `.tab-pane`. The first tab pane must also have `.show` to make the initial content visible.
+
+```html
+<div class="tab-content">
+  <div class="tab-pane fade show active" id="home" role="tabpanel">...</div>
+  <div class="tab-pane fade" id="profile" role="tabpanel">...</div>
+  <div class="tab-pane fade" id="messages" role="tabpanel">...</div>
+  <div class="tab-pane fade" id="settings" role="tabpanel">...</div>
+</div>
+```
+
+
+## Methods
+
+#### constructor
+
+Activates a list item element and content container. Tab should have either a `data-bs-target` or an `href` targeting a container node in the DOM.
+
+```html
+<div class="list-group" id="myList" role="tablist">
+  <a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#home" role="tab">Home</a>
+  <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#profile" role="tab">Profile</a>
+  <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#messages" role="tab">Messages</a>
+  <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#settings" role="tab">Settings</a>
+</div>
+
+<div class="tab-content">
+  <div class="tab-pane active" id="home" role="tabpanel">...</div>
+  <div class="tab-pane" id="profile" role="tabpanel">...</div>
+  <div class="tab-pane" id="messages" role="tabpanel">...</div>
+  <div class="tab-pane" id="settings" role="tabpanel">...</div>
+</div>
+
+<script>
+  const firstTabEl = document.querySelector('#myTab a:last-child')
+  const firstTab = new bootstrap.Tab(firstTabEl)
+
+  firstTab.show()
+</script>
+```
+
+#### show
+
+Selects the given list item and shows its associated pane. Any other list item that was previously selected becomes unselected and its associated pane is hidden. **Returns to the caller before the tab pane has actually been shown** (for example, before the `shown.bs.tab` event occurs).
+
+```js
+const tab = new bootstrap.Tab('#someListItem')
+
+tab.show()
+```
+
+#### dispose
+
+Destroys an element's tab.
+
+#### getInstance
+
+*Static* method which allows you to get the tab instance associated with a DOM element
+
+```js
+const tab = bootstrap.Tab.getInstance('#trigger') // Returns a Bootstrap tab instance
+```
+
+#### getOrCreateInstance
+
+*Static* method which allows you to get the tab instance associated with a DOM element, or create a new one in case it wasn't initialized
+
+```js
+const tab = bootstrap.Tab.getOrCreateInstance('#trigger') // Returns a Bootstrap tab instance
+```
+
+## Events
+
+When showing a new tab, the events fire in the following order:
+
+1. `hide.bs.tab` (on the current active tab)
+2. `show.bs.tab` (on the to-be-shown tab)
+3. `hidden.bs.tab` (on the previous active tab, the same one as for the `hide.bs.tab` event)
+4. `shown.bs.tab` (on the newly-active just-shown tab, the same one as for the `show.bs.tab` event)
+
+If no tab was already active, the `hide.bs.tab` and `hidden.bs.tab` events will not be fired.
+
+{{< bs-table >}}
+| Event type | Description |
+| --- | --- |
+| `hide.bs.tab` | This event fires when a new tab is to be shown (and thus the previous active tab is to be hidden). Use `event.target` and `event.relatedTarget` to target the current active tab and the new soon-to-be-active tab, respectively. |
+| `hidden.bs.tab` | This event fires after a new tab is shown (and thus the previous active tab is hidden). Use `event.target` and `event.relatedTarget` to target the previous active tab and the new active tab, respectively. |
+| `show.bs.tab` | This event fires on tab show, but before the new tab has been shown. Use `event.target` and `event.relatedTarget` to target the active tab and the previous active tab (if available) respectively. |
+| `shown.bs.tab` | This event fires on tab show after a tab has been shown. Use `event.target` and `event.relatedTarget` to target the active tab and the previous active tab (if available) respectively. |
+{{< /bs-table >}}
+
+```js
+const tabElms = document.querySelectorAll('a[data-bs-toggle="list"]')
+tabElms.forEach(tabElm => {
+  tabElm.addEventListener('shown.bs.tab', event => {
+    event.target // newly activated tab
+    event.relatedTarget // previous active tab
+  })
+})
+```
+
+{{</ tab >}}
+{{</ tabs >}}
