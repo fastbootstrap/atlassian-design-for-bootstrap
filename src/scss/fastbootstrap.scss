@@ -14,7 +14,7 @@
 @import "bootstrap/scss/grid";
 @import "bootstrap/scss/tables";
 
-// Components
+// Basic components
 @import "bootstrap/scss/forms";
 @import "bootstrap/scss/transitions";
 @import "bootstrap/scss/dropdown";
@@ -74,6 +74,8 @@
 @import "progress-indicator";
 @import "tags";
 @import "progress-tracker";
+@import "menu";
+
 // utilities & helpers
 @import "bootstrap/scss/helpers";
 @import "helpers/animation";

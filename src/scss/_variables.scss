@@ -725,3 +725,16 @@ $hr-margin-y: 0.5rem;
 $hr-opacity: 0.08;
 $hr-color: $neutral-800;
 $hr-border-width: 2px;
+
+/* Menu */
+$menu-item-color: $neutral-500;
+$menu-item-padding-x: 1.25rem;
+$menu-item-padding-y: 0.5rem;
+$menu-item-active-bg: rgba($blue-50, 0.65);
+$menu-item-active-color: $blue-400;
+$menu-item-hover-bg: $neutral-20;
+$menu-item-disabled-color: $neutral-200;
+
+$menu-header-color: $neutral-300;
+$menu-header-padding-x: $menu-item-padding-x;
+$menu-header-padding-y: 0.375rem;
