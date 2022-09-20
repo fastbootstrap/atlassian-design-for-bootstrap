@@ -21,6 +21,8 @@ docs:
     title: Borders
   - name: effects
     title: Effects
+  - name: transforms
+    title: Transforms
   - name: animation
     title: Animation
   - name: interactivity

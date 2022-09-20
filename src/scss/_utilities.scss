@@ -181,5 +181,24 @@ $utilities: map-merge(
           ),
         )
       ),
+    "rotate": (
+      property: transform,
+      class: rotate,
+      values: (
+        none: none,
+        0: rotate(0deg),
+        45: rotate(45deg),
+        90: rotate(90deg),
+        180: rotate(180deg),
+      ),
+    ),
+    "nagative-rotate": (
+      property: transform,
+      class: rotate,
+      values: (
+        n45: rotate(-45deg),
+        n90: rotate(-90deg),
+      ),
+    ),
   )
 );

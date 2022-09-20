@@ -44,6 +44,7 @@
 /* figure */
 /* carousel */
 /* hr */
+/* Menu */
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11271,6 +11272,34 @@ textarea.form-control-lg {
 
 .ls-widest {
   letter-spacing: 0.1em !important;
+}
+
+.rotate-none {
+  transform: none !important;
+}
+
+.rotate-0 {
+  transform: rotate(0deg) !important;
+}
+
+.rotate-45 {
+  transform: rotate(45deg) !important;
+}
+
+.rotate-90 {
+  transform: rotate(90deg) !important;
+}
+
+.rotate-180 {
+  transform: rotate(180deg) !important;
+}
+
+.rotate-n45 {
+  transform: rotate(-45deg) !important;
+}
+
+.rotate-n90 {
+  transform: rotate(-90deg) !important;
 }
 
 @media (min-width: 576px) {

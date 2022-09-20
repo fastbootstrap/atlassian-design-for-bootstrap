@@ -14,7 +14,7 @@ font-family:
   - property: font-family
     class: font
     values:
-      - monospace: "SFMono-Medium, SF Mono, Segoe UI Mono, Roboto Mono, Ubuntu Mono, Menlo, Consolas, Courier, monospace"
+      - monospace: 'SFMono-Medium, SF Mono, Segoe UI Mono, Roboto Mono, Ubuntu Mono, Menlo, Consolas, Courier, monospace'
 font-weight:
   - property: font-weight
     class: fw
@@ -29,7 +29,7 @@ font-size:
   - property: font-size
     class: lead
     values:
-      - "-": "1.25rem; <br/> font-weight: 300"
+      - '-': '1.25rem; <br/> font-weight: 300'
   - property: font-size
     class: fs
     values:
@@ -43,23 +43,23 @@ font-size:
       - xs: 0.75rem
   - property: font-size
     class: h
-    format: "%s%s"
+    format: '%s%s'
     values:
-      - 1: "2.5rem; <br/>font-weight: 500; <br/>line-height: 1.2"
-      - 2: "2rem; <br/>font-weight: 500; <br/>line-height: 1.2"
-      - 3: "1.75rem; <br/>font-weight: 500; <br/>line-height: 1.2"
-      - 4: "1.5rem; <br/>font-weight: 500; <br/>line-height: 1.2"
-      - 5: "1.25rem; <br/>font-weight: 500; <br/>line-height: 1.2"
-      - 6: "1rem; <br/>font-weight: 500; <br/>line-height: 1.2"
+      - 1: '2.5rem; <br/>font-weight: 500; <br/>line-height: 1.2'
+      - 2: '2rem; <br/>font-weight: 500; <br/>line-height: 1.2'
+      - 3: '1.75rem; <br/>font-weight: 500; <br/>line-height: 1.2'
+      - 4: '1.5rem; <br/>font-weight: 500; <br/>line-height: 1.2'
+      - 5: '1.25rem; <br/>font-weight: 500; <br/>line-height: 1.2'
+      - 6: '1rem; <br/>font-weight: 500; <br/>line-height: 1.2'
   - property: font-size
     class: display
     values:
-      - 1: "5rem; <br/>font-weight: 300; <br/>line-height: 1.2"
-      - 2: "4.5rem; <br/>font-weight: 300; <br/>line-height: 1.2"
-      - 3: "4rem; <br/>font-weight: 300; <br/>line-height: 1.2"
-      - 4: "3.5rem; <br/>font-weight: 300; <br/>line-height: 1.2"
-      - 5: "3rem; <br/>font-weight: 300; <br/>line-height: 1.2"
-      - 6: "2.5rem; <br/>font-weight: 300; <br/>line-height: 1.2"
+      - 1: '5rem; <br/>font-weight: 300; <br/>line-height: 1.2'
+      - 2: '4.5rem; <br/>font-weight: 300; <br/>line-height: 1.2'
+      - 3: '4rem; <br/>font-weight: 300; <br/>line-height: 1.2'
+      - 4: '3.5rem; <br/>font-weight: 300; <br/>line-height: 1.2'
+      - 5: '3rem; <br/>font-weight: 300; <br/>line-height: 1.2'
+      - 6: '2.5rem; <br/>font-weight: 300; <br/>line-height: 1.2'
 font-style:
   - property: font-style
     class: fst
@@ -70,7 +70,7 @@ border-radius:
   - property: border-radius
     class: rounded
     values:
-      - "-": 0.1875rem
+      - '-': 0.1875rem
       - 0: 0
       - 1: 0.125rem
       - 2: 0.25rem
@@ -82,7 +82,7 @@ border-radius:
   - property: border-top-left-radius border-top-right-radius
     class: rounded-top
     values:
-      - "-": 0.1875rem
+      - '-': 0.1875rem
       - 0: 0
       - 1: 0.125rem
       - 2: 0.25rem
@@ -92,7 +92,7 @@ border-radius:
   - property: border-top-right-radius border-bottom-right-radius
     class: rounded-end
     values:
-      - "-": 0.1875rem
+      - '-': 0.1875rem
       - 0: 0
       - 1: 0.125rem
       - 2: 0.25rem
@@ -102,7 +102,7 @@ border-radius:
   - property: border-bottom-right-radius border-bottom-left-radius
     class: rounded-bottom
     values:
-      - "-": 0.1875rem
+      - '-': 0.1875rem
       - 0: 0
       - 1: 0.125rem
       - 2: 0.25rem
@@ -112,7 +112,7 @@ border-radius:
   - property: border-bottom-left-radius border-top-left-radius
     class: rounded-start
     values:
-      - "-": 0.1875rem
+      - '-': 0.1875rem
       - 0: 0
       - 1: 0.125rem
       - 2: 0.25rem
@@ -122,25 +122,25 @@ border-radius:
 border:
   - property: border
     values:
-      - "-": 1px solid rgb(235, 236, 240)
+      - '-': 1px solid rgb(235, 236, 240)
       - 0
   - property: border-top
     values:
-      - "-": 1px solid rgb(235, 236, 240)
+      - '-': 1px solid rgb(235, 236, 240)
       - 0
   - property: border-bottom
     values:
-      - "-": 1px solid rgb(235, 236, 240)
+      - '-': 1px solid rgb(235, 236, 240)
       - 0
   - property: border-left
     class: border-start
     values:
-      - "-": 1px solid rgb(235, 236, 240)
+      - '-': 1px solid rgb(235, 236, 240)
       - 0
   - property: border-right
     class: border-end
     values:
-      - "-": 1px solid rgb(235, 236, 240)
+      - '-': 1px solid rgb(235, 236, 240)
       - 0
 border-width:
   - property: border-width
@@ -420,7 +420,7 @@ box-shadow:
       - none
 visibility:
   - property: visibility
-    class: "-"
+    class: '-'
     values:
       - visible: visible
       - invisible: hidden
@@ -510,15 +510,15 @@ text-overflow:
   - property: text-overflow
     class: text-truncate
     values:
-      - "-": "ellipsis; <br/>overflow: hidden; <br/>white-space: nowrap"
+      - '-': 'ellipsis; <br/>overflow: hidden; <br/>white-space: nowrap'
   - property: text-overflow
     class: text-ellipsis
     values:
-      - "-": ellipsis
+      - '-': ellipsis
   - property: text-overflow
     class: text-clip
     values:
-      - "-": clip
+      - '-': clip
 gap:
   - property: gap
     responsive: true
@@ -660,3 +660,12 @@ z-index:
       - 40
       - 50
       - auto
+rotate:
+  - property: transform
+    class: rotate
+    values:
+      - none: none
+      - 0: rotate(0deg)
+      - 45: rotate(45deg)
+      - 90: rotate(90deg)
+      - 180: rotate(180deg)
