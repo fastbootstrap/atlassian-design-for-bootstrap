@@ -1,0 +1,23 @@
+.layout {
+  display: grid;
+  grid-template-areas: "sidebar main";
+  grid-template-columns: min-content 1fr;
+}
+
+.layout-sidebar {
+  grid-area: sidebar;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+
+  @include media-breakpoint-down(sm) {
+    position: absolute;
+  }
+}
+
+.layout-main {
+  grid-area: main;
+  position: relative;
+  min-width: 0;
+  overflow: auto;
+}
