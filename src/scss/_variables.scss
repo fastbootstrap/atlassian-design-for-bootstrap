@@ -738,3 +738,13 @@ $menu-item-disabled-color: $neutral-200;
 $menu-header-color: $neutral-300;
 $menu-header-padding-x: $menu-item-padding-x;
 $menu-header-padding-y: 0.375rem;
+
+/* Sidenav */
+$sidenav-padding-x: 0.5rem;
+$sidenav-padding-y: 0.875rem;
+
+$zindex-sidenav-backdrop: 1100;
+$zindex-sidenav: 1105;
+
+$sidenav-backdrop-bg: rgba($neutral-900, 54%);
+$sidenav-backdrop-opacity: 1;

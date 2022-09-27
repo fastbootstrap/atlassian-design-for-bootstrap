@@ -1,0 +1,322 @@
+---
+layout: docs
+title: Side Navigation
+description: "Side navigation allows users navigate to another pages or sections on the left or right side of a page."
+toc: true
+tabs: true
+group: navigation
+status: new
+menu:
+  components:
+---
+
+{{< tabs "side-navigation" >}}
+{{< tab "Overview" >}}
+
+**Bootstrap 5 Sidenav component**
+
+Responsive Sidenav built with the latest Bootstrap 5. Sidenav component can be used for a single level or a multi-level navigation.
+
+Sidenav is a sidebar component that can be toggled via JavaScript to appear from left or right edge of the viewport. Buttons or anchors are used as triggers that are attached to specific elements you toggle, and data attributes are used to invoke our JavaScript.
+
+## Basic example 
+
+Below is an sidenav example that is shown by default (via `.show` on `.sidenav`).  
+
+The `layout` component is a responsive friendly page layouts with 2 columns: `sidebar` and `main`. Sidenav is a flex-box that position top of the parent element, we suggest that wrapper `.sidenav` in the `.layout-sidebar` maked sidenav appear on the left edge of the viewport.
+
+- `.sidenav` hides content (default)
+- `.sidenav.show` shows content
+
+{{< example class="bd-example-sidenav bd-h-96 p-0">}}
+<div class="layout">
+  <div class="layout-sidebar">
+    <div class="sidenav show border-end">
+      <div class="sidenav-body">
+        <div class="menu accordion">
+          <ul class="menu-list">
+            <li>
+              <a class="menu-item" href="#">Home</a>
+            </li>
+            <li>
+              <a class="menu-item active" href="#">Apps</a>
+            </li>
+            <li>
+              <div class="menu-item">
+                <button class="accordion-button p-0 bg-transparent text-reset" type="button" data-bs-toggle="collapse" aria-expanded="true" data-bs-target="#submenu-1">Storage</button>
+              </div>
+              <div class="accordion-collapse collapse show" id="submenu-1">
+                <ul class="menu-list">
+                  <li>
+                    <a class="menu-item" href="#">Document Cloud</a>
+                  </li>
+                  <li>
+                    <a class="menu-item" href="#">Creative Cloud</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="menu-item">
+                <button class="accordion-button collapsed p-0 bg-transparent text-reset" type="button" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#submenu-2">Shared</button>
+              </div>
+              <div class="accordion-collapse collapse" id="submenu-2">
+                <ul class="menu-list">
+                  <li>
+                    <a class="menu-item" href="#">Send & Track</a>
+                  </li>
+                  <li>
+                    <a class="menu-item" href="#">Reviews</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{</ example >}}
+
+## Open sidenav
+
+Use the buttons below to show and hide an sidenav element via JavaScript that toggles the `.show` class on an element with the `.sidenav` class.
+
+You can use a link with the href attribute, or a button with the `data-bs-target` attribute. In both cases, the `data-fbs-toggle="sidenav"` is required. Press <kbd>Esc</kbd> or clicking outside of sidenav to close.
+
+{{< example class="bd-example-sidenav bd-h-96 p-0">}}
+<div class="layout gap-3">
+  <div class="layout-main p-5">
+    <a class="btn btn-primary" href="#exampleSidenav" data-fbs-toggle="sidenav">
+      <i class="fa-solid fa-bars"></i> Link with href
+    </a>
+    <button class="btn btn-primary" type="button" data-fbs-toggle="sidenav" data-bs-target="#exampleSidenav">
+      <i class="fa-solid fa-bars"></i> Button with data-bs-target
+    </button>
+  </div>
+  <div class="layout-sidebar">
+    <div class="sidenav border-end" tabindex="-1" id="exampleSidenav">
+      <div class="sidenav-body">
+        <div class="menu accordion">
+          <ul class="menu-list">
+            <li>
+              <a class="menu-item active" href="#">Home</a>
+            </li>
+            <li>
+              <a class="menu-item" href="#">Apps</a>
+            </li>
+            <li>
+              <div class="menu-item">
+                <button class="accordion-button p-0 bg-transparent text-reset" type="button" data-bs-toggle="collapse" aria-expanded="true" data-bs-target="#submenu-1">Storage</button>
+              </div>
+              <div class="accordion-collapse collapse show" id="submenu-1">
+                <ul class="menu-list">
+                  <li>
+                    <a class="menu-item" href="#">Document Cloud</a>
+                  </li>
+                  <li>
+                    <a class="menu-item" href="#">Creative Cloud</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="menu-item">
+                <button class="accordion-button collapsed p-0 bg-transparent text-reset" type="button" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#submenu-2">Shared</button>
+              </div>
+              <div class="accordion-collapse collapse" id="submenu-2">
+                <ul class="menu-list">
+                  <li>
+                    <a class="menu-item" href="#">Send & Track</a>
+                  </li>
+                  <li>
+                    <a class="menu-item" href="#">Reviews</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{</ example >}}
+
+## Footer 
+
+Add an optional footer within a sidenav by the`.sidenav-footer` class that the content will appear on the bottom of the sidenav.
+
+{{< example class="bd-example-sidenav bd-h-96 p-0">}}
+<div class="layout">
+  <div class="layout-sidebar">
+    <div class="sidenav show border-end">
+      <div class="sidenav-body">
+        <div class="menu accordion">
+          <ul class="menu-list">
+            <li>
+              <a class="menu-item" href="#">Home</a>
+            </li>
+            <li>
+              <a class="menu-item active" href="#">Apps</a>
+            </li>
+            <li>
+              <div class="menu-item">
+                <button class="accordion-button p-0 bg-transparent text-reset" type="button" data-bs-toggle="collapse" aria-expanded="true" data-bs-target="#submenu-1">Storage</button>
+              </div>
+              <div class="accordion-collapse collapse show" id="submenu-1">
+                <ul class="menu-list">
+                  <li>
+                    <a class="menu-item" href="#">Document Cloud</a>
+                  </li>
+                  <li>
+                    <a class="menu-item" href="#">Creative Cloud</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="menu-item">
+                <button class="accordion-button collapsed p-0 bg-transparent text-reset" type="button" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#submenu-2">Shared</button>
+              </div>
+              <div class="accordion-collapse collapse" id="submenu-2">
+                <ul class="menu-list">
+                  <li>
+                    <a class="menu-item" href="#">Send & Track</a>
+                  </li>
+                  <li>
+                    <a class="menu-item" href="#">Reviews</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>        
+        </div>
+      </div>
+      <div class="sidenav-footer text-center">       
+         <a class="btn btn-subtle" href="#">Logout <i class="fa-solid fa-right-from-bracket ms-3"></i></a>        
+      </div>
+    </div>
+  </div>
+</div>
+{{</ example >}}
+
+## Sidenav sizing
+
+The container width of the side navigation is `256px` by default. Modify the container width using the following helper classes.
+
+{{< bs-table >}}
+| Class | Width |
+| --- | --- |
+| `.sidenav-wide` | 296px |
+| `.sidenav-narrow` | 240px |
+{{< /bs-table >}}
+
+### Modify sidenav width
+
+Use `.sidenav-narrow` to change the container width of a Sidenav.
+
+```html
+<div class="sidenav sidenav-narrow">
+  ...
+</div>
+```
+
+## Related
+
+- [Offcanvas]({{< docsref "offcanvas" >}})
+- [Menu]({{< docsref "menu" >}})
+
+{{</ tab >}}
+{{< tab "API" >}}
+
+## Usage
+
+The sidenav plugin utilizes a few classes and attributes to handle the heavy lifting:
+
+- `.sidenav` hides the content
+- `.sidenav.show` shows the content
+
+### Via data attributes 
+
+#### Toggle 
+
+Add `data-fbs-toggle="sidenav"` and a `data-bs-target` or `href` to the element to automatically assign control of one sidenav element. The `data-bs-target` attribute accepts a CSS selector to apply the sidenav to. Be sure to add the class `.sidenav` to the sidenav element. If you’d like it to default open, add the additional class `show`.
+
+```html
+<a href="#exampleSidenav" data-fbs-toggle="sidenav">Open sidenav</a>
+<div class="sidenav" id="exampleSidenav">
+  ...
+</div>
+```
+
+### Via JavaScript 
+
+Enable manually with:
+
+```js
+const sidenavElementList = document.querySelectorAll('.sidenav');
+const sidenavList = [...sidenavElementList].map(El => new bootstrap.Sidenav(El));
+```
+
+## Options
+
+{{< markdown >}}
+{{< partial "js-data-attributes.md" >}}
+{{< /markdown >}}
+
+{{< bs-table "table" >}}
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| `backdrop` | boolean | `true` | Apply a backdrop on body while sidenav is open. |
+| `scroll` | boolean | `true` | Allow body scrolling while sidenav is open |
+{{< /bs-table >}}
+
+## Methods
+
+{{< callout danger >}}
+{{< partial "callout-danger-async-methods.md" >}}
+{{< /callout >}}
+
+Activates your content as an sidenav element. Accepts an optional options `object`.
+
+You can create an sidenav instance with the constructor, for example:
+
+```js
+const sidenav = new bootstrap.Sidenav('#mysidenav')
+```
+
+{{< bs-table "table" >}}
+| Method | Description |
+| --- | --- |
+| `getInstance` | *Static* method which allows you to get the sidenav instance associated with a DOM element |
+| `getOrCreateInstance` | *Static* method which allows you to get the sidenav instance associated with a DOM element, or create a new one in case it wasn't initialized |
+| `hide` | Hides an sidenav element. **Returns to the caller before the sidenav element has actually been hidden** (i.e. before the `hidden.fbs.sidenav` event occurs).|
+| `show` | Shows an sidenav element. **Returns to the caller before the sidenav element has actually been shown** (i.e. before the `shown.fbs.sidenav` event occurs).|
+| `toggle` | Toggles an sidenav element to shown or hidden. **Returns to the caller before the sidenav element has actually been shown or hidden** (i.e. before the `shown.fbs.sidenav` or `hidden.fbs.sidenav` event occurs). |
+{{< /bs-table >}}
+
+
+## Events
+
+FastBootstrap's sidenav class exposes a few events for hooking into sidenav functionality.
+
+{{< bs-table "table" >}}
+| Event type | Description |
+| --- | --- |
+| `hide.fbs.sidenav` | This event is fired immediately when the `hide` method has been called. |
+| `hidden.fbs.sidenav` | This event is fired when an sidenav element has been hidden from the user (will wait for CSS transitions to complete). |
+| `show.fbs.sidenav` | This event fires immediately when the `show` instance method is called. |
+| `shown.fbs.sidenav` | This event is fired when an sidenav element has been made visible to the user (will wait for CSS transitions to complete). |
+{{< /bs-table >}}
+
+```js
+const mySidenav = document.getElementById('mySidenav')
+mySidenav.addEventListener('hidden.bs.sidenav', event => {
+  // do something...
+})
+```
+
+{{</ tab >}}
+{{</ tabs >}}

@@ -13,6 +13,7 @@ import Tooltip from 'bootstrap/js/src/tooltip';
 import Tag from './components/tag';
 import ProgressTracker from './components/progress-tracker';
 import Carousel from './components/carousel';
+import Sidenav from './components/sidenav';
 
 export default {
   Alert,
@@ -29,4 +30,5 @@ export default {
   Tooltip,
   Tag,
   ProgressTracker,
+  Sidenav,
 };
