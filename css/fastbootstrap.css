@@ -45,6 +45,7 @@
 /* carousel */
 /* hr */
 /* Menu */
+/* Sidenav */
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -8167,6 +8168,86 @@ textarea.form-control-lg {
   color: #5e6c84;
   font-weight: 600;
   font-size: 0.75rem;
+}
+
+.sidenav {
+  --sidenav-width: 256px;
+  position: relative;
+  width: var(--sidenav-width);
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  background-color: #ffffff;
+  outline: 0;
+  overflow: auto;
+  z-index: 1105;
+}
+.sidenav.showing, .sidenav.hiding, .sidenav.show {
+  display: flex;
+  visibility: visible;
+}
+
+.sidenav-body {
+  padding: 0.875rem 0.5rem;
+}
+
+.sidenav-wide {
+  --sidenav-width: 296px;
+}
+
+.sidenav-narrow {
+  --sidenav-width: 240px;
+}
+
+.sidenav-footer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0.875rem 0.5rem;
+}
+
+.sidenav-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1100;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(9, 30, 66, 0.54);
+}
+.sidenav-backdrop.fade {
+  opacity: 0;
+}
+.sidenav-backdrop.show {
+  opacity: 1;
+}
+
+.layout {
+  display: grid;
+  grid-template-areas: "sidebar main";
+  grid-template-columns: -webkit-min-content 1fr;
+  grid-template-columns: min-content 1fr;
+}
+
+.layout-sidebar {
+  grid-area: sidebar;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+@media (max-width: 575.98px) {
+  .layout-sidebar {
+    position: absolute;
+  }
+}
+
+.layout-main {
+  grid-area: main;
+  position: relative;
+  min-width: 0;
+  overflow: auto;
 }
 
 .clearfix::after {
