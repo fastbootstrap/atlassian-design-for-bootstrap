@@ -1,7 +1,7 @@
 {
   "name": "fastbootstrap",
-  "version": "0.0.1",
-  "description": "Free Bootstrap components & plugins with Atlassian Design for your next project quickly start.",
+  "version": "1.0.0",
+  "description": "Free Bootstrap components & plugins with Atlassian Design for your next project quickly get start.",
   "homepage": "https://fastbootstrap.com/",
   "author": "FastBootstrap",
   "license": "MIT",
@@ -20,7 +20,9 @@
     "bootstrap",
     "atlassian-design"
   ],
-  "sass": "src/scss/fast-bootstrap.scss",
+  "main": "dist/js/fastbootstrap.js",
+  "sass": "src/scss/fastbootstrap.scss",
+  "style": "dist/css/fastbootstrap.css",
   "scripts": {
     "css": "npm-run-all css-compile css-prefix css-rtl css-minify",
     "css-compile": "sass --load-path=node_modules --style expanded --source-map --embed-sources --no-error-css src/scss/:dist/css/",

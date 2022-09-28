@@ -60,6 +60,7 @@ The extended components below are ready to your project, it's free forever.
 - [Avatar](https://fastbootstrap.com/components/avatar/)
 - [Avatar Group](https://fastbootstrap.com/components/avatar-group/)
 - [Blankslate](https://fastbootstrap.com/components/blankslate/)
+- [Layout](https://fastbootstrap.com/components/layout/)
 - [Lozenge](https://fastbootstrap.com/components/lozenge/)
 - [Menu](https://fastbootstrap.com/components/menu/)
 - [Progress Indicator](https://fastbootstrap.com/components/progress-indicator/)

@@ -1,5 +1,5 @@
 /*!
-  * FastBootstrap v0.0.1 (https://fastbootstrap.com/)
+  * FastBootstrap v1.0.0 (https://fastbootstrap.com/)
   * Copyright 2022-2022 FastBootstrap
   * Licensed under MIT (https://github.com/fastbootstrap/atlassian-design-for-bootstrap/blob/main/LICENSE)
   * 
