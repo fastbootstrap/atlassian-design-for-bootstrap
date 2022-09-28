@@ -9,10 +9,7 @@
   position: sticky;
   top: 0;
   height: 100vh;
-
-  @include media-breakpoint-down(sm) {
-    position: absolute;
-  }
+  overflow: auto;
 }
 
 .layout-main {
