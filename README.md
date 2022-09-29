@@ -1,6 +1,6 @@
 Atlassian Design for Bootstrap v5
 ===
-> The most popular Bootstrap UI Kits with Atlassian Design for your next project quickly get you started.
+The most popular Bootstrap UI Kits with Atlassian Design for your next project quickly get you started.
 
 [![npm version](https://img.shields.io/npm/v/fastbootstrap)](https://www.npmjs.com/package/fastbootstrap)
 [![MIT license](https://img.shields.io/github/license/fastbootstrap/atlassian-design-for-bootstrap)](https://github.com/fastbootstrap/atlassian-design-for-bootstrap/blob/master/LICENSE)
