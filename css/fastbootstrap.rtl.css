@@ -8205,11 +8205,7 @@ textarea.form-control-lg {
   position: sticky;
   top: 0;
   height: 100vh;
-}
-@media (max-width: 575.98px) {
-  .layout-sidebar {
-    position: absolute;
-  }
+  overflow: auto;
 }
 
 .layout-main {
