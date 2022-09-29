@@ -6,9 +6,9 @@
 
 {{ $vendor := resources.Match "js/vendor/*.js" }}
 {{ $js := resources.Match "js/*.js" }}
-{{ $bundleJS := append $vendor $js | resources.Concat "/assets/js/main.js" | fingerprint }}
+{{ $bundleJS := $vendor | append $js | resources.Concat "/assets/js/main.js" }}
 {{ if hugo.IsProduction }}
-  {{ $bundleJS = $bundleJS | minify | fingerprint }}
+  {{ $bundleJS = $bundleJS | minify }}
 {{ end }}
 <script src="{{ $bundleJS.RelPermalink }}"></script>
 

@@ -1,5 +1,29 @@
 (() => {
   'use strict';
+  const btnTitle = 'Copy to clipboard';
+
+  function snippetButtonTooltip(selector, title) {
+    document.querySelectorAll(selector).forEach((btn) => {
+      bootstrap.Tooltip.getOrCreateInstance(btn, { title });
+    });
+  }
+
+  snippetButtonTooltip('.btn-clipboard', btnTitle);
+
+  const clipboard = new ClipboardJS('.btn-clipboard');
+  clipboard.on('success', (event) => {
+    const tooltipBtn = bootstrap.Tooltip.getInstance(event.trigger);
+
+    tooltipBtn.setContent({ '.tooltip-inner': 'Copied!' });
+
+    event.trigger.addEventListener(
+      'hidden.bs.tooltip',
+      () => {
+        tooltipBtn.setContent({ '.tooltip-inner': btnTitle });
+      },
+      { once: true }
+    );
+  });
 
   // -------------------------------
   // Checks & Radios

@@ -1,6 +1,7 @@
 {{ define "main" }}
   <main>
     {{ template "home/hero" $ }}
+    {{ template "home/cdn" $ }}
     {{ template "home/features" $ }}
   </main>
 {{ end }}
@@ -8,15 +9,25 @@
 {{ define "home/hero" }}
   <section class="my-6 my-lg-7">
     <div class="container">
-      <h2 class="fs-6 fw-bolder text-center text-md-start text-secondary mb-4">Atlassian Design for Bootstrap v5</h2>
+      <h2 class="fs-5 fw-bolder text-center text-md-start text-secondary mb-4">Atlassian Design for Bootstrap v5.2</h2>
       <div class="row gx-lg-6">
-        <div class="col-md-6 text-center text-md-start">
+        <div class="col-md-6 text-center text-md-start pe-md-5">
           <h1 class="display-5 fw-bolder mb-5 lh-1">Build modern websites with beautiful UI components</h1>
           <p class="fs-4 mb-4 mb-md-5 pe-lg-5 text-neutral-500">
-            FastBootstrap is a free, open source frontend framework that provides beautifully crafted components and utility-first CSS, built on Bootstrap and Atlassian Design. The perfect starting point for your next project.
+            FastBootstrap is a free, open source frontend framework that provides beautifully crafted components and utility-first CSS, built on Bootstrap and Atlassian Design. The perfect starting point for your next
+            project.
           </p>
-          <div class="d-flex align-items-center mb-4 mb-md-5"><input class="form-check-input form-check-input-lg pe-none border-green-300 bg-green-300" type="checkbox" checked /> <span class="fw-bold fs-5 text-green-300 ms-2">100% compatibility with Bootstrap</span></div>
-          <a class="btn btn-primary btn-lg fs-sm" href="/docs" role="button">Get Started</a>
+          <div class="d-flex align-items-center mb-4 mb-md-5">
+            <input class="form-check-input form-check-input-lg pe-none border-green-300 bg-green-300" type="checkbox" checked /> <span class="fw-bold fs-5 text-green-300 ms-2">100% compatibility with Bootstrap</span>
+          </div>
+          <div class="d-flex justify-content-between align-items-center col-md-9 col-lg-8 p-4 rounded-3 bg-neutral-900 mb-4">
+            <span class="text-blue-100 font-monospace">npm install fastbootstrap</span>
+            <button class="btn btn-clipboard text-blue-50" data-clipboard-text="npm install fastbootstrap"><i class="fa-regular fa-copy fa-lg"></i></button>
+          </div>
+          <div class="d-flex flex-column flex-md-row gap-4 mb-4 ">
+            <a class="btn btn-primary btn-lg rounded-2" href="/docs/" role="button">Get Started</a>
+            <a class="btn btn-outline-secondary btn-lg rounded-2" href="{{ .Site.Params.download_url }}">Download v1.0.0</a>
+          </div>
         </div>
         <div class="col-md-6 d-none d-md-block">
           <div class="mb-5">
@@ -38,7 +49,7 @@
               <div class="col-5 d-flex flex-column justify-content-end pb-2">
                 <div class="my-3 d-flex align-items-center justify-content-end gap-3">
                   <span class="badge bg-red-50 text-red-500">-100</span>
-                  <span class="lozenge lozenge-success">Success</span>
+                  <span class="lozenge bg-green-50 text-green-500">Success</span>
                   <span class="badge text-bg-primary">5K</span>
                 </div>
                 <div class="my-4 d-flex align-items-center justify-content-end">
@@ -114,7 +125,28 @@
             </div>
           </div>
         </div>
-      </div>      
+      </div>
+    </div>
+  </section>
+{{ end }}
+
+{{ define "home/cdn" }}
+  <section class="mb-5 mb-lg-7">
+    <div class="container">
+      <div class="col-md-5 mx-auto">
+        <h3 class="fs-2 text-neutral-900 text-center">Compiled CSS & JS</h3>
+        <p class=" text-center">Quickly start use the compiled CSS & JS files on your project via <a href="https://www.jsdelivr.com/package/npm/fastbootstrap" rel="nofollow">jsDelivr</a>.</p>
+        <p class="mb-2">CSS</p>
+        <div class="d-flex justify-content-between align-items-center p-3 rounded-3 bg-neutral-900 mb-4">
+          <span class="text-blue-100 font-monospace text-truncate">{{ .Site.Params.cdn.css }}</span>
+          <button class="btn btn-clipboard text-blue-50" data-clipboard-text="{{ .Site.Params.cdn.css }}"><i class="fa-regular fa-copy fa-lg"></i></button>
+        </div>
+        <p class="mb-2">JS</p>
+        <div class="d-flex justify-content-between align-items-center p-3 rounded-3 bg-neutral-900 mb-4">
+          <span class="text-blue-100 font-monospace text-truncate">{{ .Site.Params.cdn.js }}</span>
+          <button class="btn btn-clipboard text-blue-50" data-clipboard-text="{{ .Site.Params.cdn.js }}"><i class="fa-regular fa-copy fa-lg"></i></button>
+        </div>
+      </div>
     </div>
   </section>
 {{ end }}
