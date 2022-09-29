@@ -27,11 +27,6 @@ npm run dist
 
 https://www.jsdelivr.com/package/npm/fastbootstrap
 
-| Description | URL |
-| ----------- | ----------- |
-| JS    | https://cdn.jsdelivr.net/npm/fastbootstrap@0.0.1/dist/js/fastbootstrap.min.js       |
-| CSS   | https://cdn.jsdelivr.net/npm/fastbootstrap@0.0.1/dist/css/fastbootstrap.min.css     |
-
 ## Documentation
 
 The documentation included in this repo in the root directory, and is built with [Hugo](https://gohugo.io/). 
