@@ -11,57 +11,53 @@ menu:
 
 ## Introduction
 
-[FastBootstrap](/) is a free, open source frontend framework for rapidly build responsive websites. It built on Bootstrap and Atlassian design, so you can easily migrate from Bootstrap to FastBootstrap without any change HTML, or migrate from FastBootstrap to Bootstrap at any time. 
+FastBootstrap is a free, open source frontend framework for rapidly build responsive websites. It built on Bootstrap and Atlassian design, so you can easily migrate from Bootstrap to FastBootstrap without any change HTML, or migrate from FastBootstrap to Bootstrap at any time. 
 
-## Why FastBootstrap
+## Dependencies
 
-### 1. Atlassian Design
+FastBootstrap are dependencies on Bootstrap.
 
-All Bootstrap's UI components are re-designed that implementes [Atlassian Design]({{< docsref "atlassian-design" >}}), which are beautiful and intuitiv for products.
+{{< bs-table >}}
+| FastBootstrap | Bootstrap | Popper
+| --- | --- | --- |
+1.x | 5.2.x | 2.11.x |
+{{</ bs-table >}}
 
-### 2. More components
+## Extended components
 
-FastBootstrap builds more UI components ready for your next project, save your time.
-
-Here are new components:
+In addition to Bootstrap's base component, FastBootstrap pre-builts more extended components ready for your next project. 
 
 - [Avatar]({{< docsref "avatar" >}})
 - [Avatar Group]({{< docsref "avatar-group" >}})
-- [Progress Indicator]({{< docsref "progress-indicator" >}})
-- [Progress Tracker]({{< docsref "progress-tracker" >}})(JS Plugin)
-- [Lozenge]({{< docsref "lozenge" >}})
-- [Tag]({{< docsref "tag" >}})(JS Plugin)
 - [Blankslate]({{< docsref "blankslate" >}})
-- coming soon more
+- [Lozenge]({{< docsref "lozenge" >}})
+- [Menu]({{< docsref "menu" >}})
+- [Progress Indicator]({{< docsref "progress-indicator" >}})
+- [Progress Tracker]({{< docsref "progress-tracker" >}})
+- [Sidenav]({{< docsref "side-navigation" >}})
+- [Tag]({{< docsref "tag" >}})
+- [Layout]({{< docsref "layout" >}})
 
-### 3. Utility-first CSS
+## Javascript Plugin
 
-Inspired by TailwindCSS, FastBootstrap provide more the utility CSS that helps developers and designers can easily development without leaveing HTML. 
+`fastbootstrap.js` includes [Popper JS](https://popper.js.org/), Bootstrap's basic JS plugin and our extended plugin. You can use our `fastbootstrap.js` instead of `bootstrap.js`.
 
-All new utility CSS declares in `/src/scss/_utilities.scss`.
+{{< bs-table >}}
+| JS | Basic Plugins | Popper | Extended Plugins | 
+| --- | --- | --- | --- |
+`bootstrap.js` | <i class="fa-solid fa-check fa-sm"></i> |  | |
+`bootstrap.bundle.js` | <i class="fa-solid fa-check fa-sm"></i> | <i class="fa-solid fa-check fa-sm"></i> | |
+`fastbootstrap.js` | <i class="fa-solid fa-check fa-sm"></i> | <i class="fa-solid fa-check fa-sm"></i> | <i class="fa-solid fa-check fa-sm"></i> |
+{{</ bs-table >}}
 
-Below is a list of the new utility CSS.
+### Extended plugins
 
-- [Animation]({{< docsref "animation">}})
-- [Letter spacing]({{< docsref "letter-spacing" >}})
-- [Background color]({{< docsref "background-color" >}})
-- [Text color]({{< docsref "text-color" >}})
-- [Border color]({{< docsref "border-color" >}})
-- [Clear]({{< docsref "clear" >}})
-- [Overflow]({{< docsref "overflow" >}})
-- [Z-index]({{< docsref "z-index" >}})
-- [User select]({{< docsref "user-select" >}})
+- [Progress Indicator]({{< docsref "progress-indicator" >}})
+- [Progress Tracker]({{< docsref "progress-tracker" >}})
+- [Sidenav]({{< docsref "side-navigation" >}})
+- [Tag]({{< docsref "tag" >}})
 
-Below is a list of the extension utilities CSS on Bootstrap, they have more options.
 
-- [Margin]({{< docsref "margin" >}})
-- [Padding]({{< docsref "padding" >}})
-- [Border radius]({{< docsref "border-radius" >}})
-- [Border style]({{< docsref "border-style" >}})
-- [Border width]({{< docsref "border-width" >}})
-- [Font size]({{< docsref "font-size" >}})
-- [vertical align]({{< docsref "vertical-align" >}})
-- [Text align]({{< docsref "text-align" >}})
-- [Text decoration]({{< docsref "text-decoration" >}})
-- [Gap]({{< docsref "gap" >}})
-- [Order]({{< docsref "order" >}})
+## Utility-first CSS
+
+Inspired by TailwindCSS, FastBootstrap provide more utility CSS that helps developers and designers can easily development without leaveing HTML. All help classes is declares in `/src/scss/_utilities.scss`.
