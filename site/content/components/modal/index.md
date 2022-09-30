@@ -252,8 +252,6 @@ By default, when modals become too long for the user’s viewport or device, the
     </div>
   </div>
 </div>
-{{</ example >}}
-
 <div class="modal fade" id="scrollViewportModal" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -272,6 +270,7 @@ By default, when modals become too long for the user’s viewport or device, the
     </div>
   </div>
 </div>
+{{</ example >}}
 
 ## Vertically centered
 
