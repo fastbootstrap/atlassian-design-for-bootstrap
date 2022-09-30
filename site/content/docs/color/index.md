@@ -142,7 +142,7 @@ Light neutrals are helpful for offsetting content in a primarily white layout wi
     {{< color-card "neutral" "50" />}}
   </div>
   <div class="col-md-4">
-    {{< color-card "neutral" "50" />}}
+    {{< color-card "neutral" "40" />}}
   </div>
   <div class="col-md-4">
     {{< color-card "neutral" "30" />}}
