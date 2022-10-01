@@ -4,6 +4,7 @@ title: Rotate
 description: "Utilities for rotating elements with transform."
 toc: true
 group: transforms
+status: new
 menu:
   docs:    
 ---

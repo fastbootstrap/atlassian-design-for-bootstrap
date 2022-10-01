@@ -3,6 +3,7 @@ layout: docs
 title: Z-Index
 description: "Use z-index utilities to set the z order layering of elements."
 toc: true
+status: new
 group: layout
 menu:
   docs:    

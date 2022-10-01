@@ -3,6 +3,7 @@ layout: docs
 title: Text Color
 description: "Utilities for controlling the text color of an element."
 toc: true
+status: new
 group: typography
 menu:
   docs:    

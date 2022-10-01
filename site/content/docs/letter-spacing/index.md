@@ -3,6 +3,7 @@ layout: docs
 title: Letter Spacing
 description: "Utilities for controlling the tracking (letter spacing) of an element."
 toc: true
+status: new
 group: typography
 menu:
   docs:    

@@ -3,6 +3,7 @@ layout: docs
 title: Background Color
 description: "Utilities for controlling the background color of an element."
 toc: true
+status: new
 group: backgrounds
 menu:
   docs:    

@@ -3,6 +3,7 @@ layout: docs
 title: Border Color
 description: "Utilities for controlling the border color of an element."
 toc: true
+status: new
 group: borders
 menu:
   docs:

@@ -3,6 +3,7 @@ layout: docs
 title: Animation
 description: "Utilities for animating elements with CSS animations."
 toc: true
+status: new
 group: animation
 menu:
   docs:    

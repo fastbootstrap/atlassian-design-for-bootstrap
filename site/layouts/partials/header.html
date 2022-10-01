@@ -9,7 +9,7 @@
       <h2 class="d-none d-md-block fw-semibold fs-5 ls-wide ms-2 mb-0">FastBootstrap</h2>
     </a>
     <div class="collapse navbar-collapse">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav ps-lg-5">
         {{ $page := . }}
         {{ range .Site.Menus.global }}
           {{ $active := or ($page.IsMenuCurrent "global" .) (eq $page.Section .Identifier) }}
