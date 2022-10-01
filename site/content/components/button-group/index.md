@@ -118,7 +118,7 @@ Combine [checkbox toggle button]({{< docsref "checkbox#checkbox-button-group" >}
 {{< example >}}
 <div class="btn-toolbar justify-content-between" role="toolbar">
   <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off" />
+    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off" checked />
     <label class="btn btn-default" for="btncheck1">Mon</label>
     <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off" />
     <label class="btn btn-default" for="btncheck2">Tue</label>
