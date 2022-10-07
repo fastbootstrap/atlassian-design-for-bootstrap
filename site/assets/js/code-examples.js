@@ -111,4 +111,27 @@
       }
     });
   });
+
+  document.querySelectorAll('.bd-example-rating-feedback .rating').forEach((element) => {
+    element.addEventListener('changeActive.fbs.rating', (e) => {
+      const feedbackContainer = document.getElementById('rating-feedback');
+      var feedbacks = ['Bad', 'Poor', 'OK', 'Good', 'Excellent'];
+      feedbackContainer.innerText = e.index >= 0 ? feedbacks[e.index] : '';
+    });
+    element.addEventListener('change.fbs.rating', (e) => {
+      const feedbackContainer = document.getElementById('rating-feedback');
+      var feedbacks = ['Bad', 'Poor', 'OK', 'Good', 'Excellent'];
+      feedbackContainer.innerText = feedbacks[e.index];
+    });
+  });
+
+  document.querySelectorAll('.bd-example-get-rating-value button').forEach((element) => {
+    element.addEventListener('click', (e) => {
+      e.preventDefault();
+      const selectedElement = document.querySelector('[name="exampleRatingScore"]:checked');
+      if (selectedElement) {
+        document.getElementById('scoreResult').innerText = selectedElement.value;
+      }
+    });
+  });
 })();

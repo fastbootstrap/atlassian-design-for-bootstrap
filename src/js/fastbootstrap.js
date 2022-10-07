@@ -14,7 +14,7 @@ import Tag from './components/tag';
 import ProgressTracker from './components/progress-tracker';
 import Carousel from './components/carousel';
 import Sidenav from './components/sidenav';
-
+import Rating from './components/rating';
 export default {
   Alert,
   Button,
@@ -31,4 +31,5 @@ export default {
   Tag,
   ProgressTracker,
   Sidenav,
+  Rating
 };
