@@ -1,6 +1,6 @@
 {{/*  */}}
 {{ if hugo.IsProduction }}
-  <link href="/css/fastbootstrap.min.css" rel="stylesheet" />
+  <link href="/css/fastbootstrap.min.css?build={{ now.Unix }}" rel="stylesheet" />
 {{ else }}
   <link href="/css/fastbootstrap.css" rel="stylesheet" />
 {{ end }}

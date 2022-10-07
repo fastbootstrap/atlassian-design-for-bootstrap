@@ -1,12 +1,12 @@
 {{ if hugo.IsProduction }}
-  <script src="/js/fastbootstrap.min.js"></script>
+  <script src="/js/fastbootstrap.min.js?build={{ now.Unix }}"></script>
 {{ else }}
   <script src="/js/fastbootstrap.js"></script>
 {{ end }}
 
 {{ $vendor := resources.Match "js/vendor/*.js" }}
 {{ $js := resources.Match "js/*.js" }}
-{{ $bundleJS := $vendor | append $js | resources.Concat "/assets/js/main.js" }}
+{{ $bundleJS := $vendor | append $js | resources.Concat "/assets/js/main.js" | fingerprint }}
 {{ if hugo.IsProduction }}
   {{ $bundleJS = $bundleJS | minify }}
 {{ end }}
