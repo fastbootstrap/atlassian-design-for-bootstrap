@@ -34,4 +34,11 @@
       }
     }
   }
+
+  const searchModal = document.querySelector('#searchModal');
+  if (searchModal) {
+    searchModal.addEventListener('shown.bs.modal', () => {
+      document.querySelector('#search-input').focus();
+    });
+  }
 })();

@@ -6,3 +6,19 @@
       0 0 1px rgba(9, 30, 66, 0.31);
   }
 }
+
+.btn-search {
+  &:hover {
+    border-color: #2684ff !important;
+  }
+}
+
+#searchModal {
+  mark {
+    padding: 0;
+    color: #0065ff;
+    font-weight: 500;
+    background-color: transparent;
+    border-bottom: 2px solid #b3d4ff;
+  }
+}

@@ -33,6 +33,8 @@ The documentation included in this repo in the root directory, and is built with
 
 Browse the online documentation, visit [fastbootstrap.com](https://fastbootstrap.com).
 
+Documentation search is powered by open source [Lunr](https://lunrjs.com/).
+
 ### Running documentation locally
 
 ```sh

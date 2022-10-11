@@ -17,7 +17,12 @@
             <a class="nav-link fw-semibold rounded fs-sm" href="{{ .URL }}">{{ .Name }}</a>
           </li>
         {{ end }}
-        <li class="nav-item ms-auto">
+        <li class="nav-item ms-auto me-lg-4">
+          <button class="bg-transparent fs-sm text-neutral-200 rounded-2 btn-search border border-2 border-neutral-40 bd-w-56 text-start py-1 ps-2" type="button"  data-bs-toggle="modal" data-bs-target="#searchModal">
+            <svg class="me-1" width="16" height="16" viewBox="0 0 24 24" role="presentation"><path d="M16.436 15.085l3.94 4.01a1 1 0 01-1.425 1.402l-3.938-4.006a7.5 7.5 0 111.423-1.406zM10.5 16a5.5 5.5 0 100-11 5.5 5.5 0 000 11z" fill="currentColor" fill-rule="evenodd"></path></svg> Search
+          </button>
+        </li>
+        <li class="nav-item">
           <a class="nav-link rounded-circle" href="{{ .Site.Params.repo }}">
             <i class="fa-brands fa-github fa-xl"></i>
           </a>
@@ -55,3 +60,5 @@
     </ul>
   </div>
 </div>
+
+{{ partial "sections/search" }}

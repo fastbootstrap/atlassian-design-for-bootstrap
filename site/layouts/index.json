@@ -1,0 +1,14 @@
+{{- $index := slice -}}
+{{- $pages := where .Site.RegularPages "Type" "in" (slice "docs" "components") -}}
+{{- range $i, $e := $pages -}}
+{{- $path := "" -}}
+{{- with .File -}}
+    {{ $path = .Path -}}
+{{- else -}}
+    {{ $path = .Path }}
+{{- end -}}
+{{- $objectID := printf "%s" $path | md5 -}}
+{{- $dict := (dict "objectID" $objectID "link" .RelPermalink "title" .Title "description" .Params.description ) -}}
+{{- $index = $index | append $dict -}}
+{{- end -}}
+{{- $index | jsonify (dict "indent" "  ")  -}}

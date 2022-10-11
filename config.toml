@@ -8,6 +8,9 @@ disableKinds = ["404", "taxonomy", "term", "RSS"]
 publishDir = "_site"
 enableInlineShortcodes = true
 
+[outputs]
+home = ["HTML", "JSON", "RSS"]
+
 [params]
 description = "Atlassian Design for Bootstrap 5. Powerful and free UI Kits for Bootstrap with Atlassian Design."
 page_title_suffix = "FastBootstrap"
