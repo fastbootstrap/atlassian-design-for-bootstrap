@@ -62,6 +62,7 @@ The extended components below are ready to your project, it's free forever.
 - [Menu](https://fastbootstrap.com/components/menu/)
 - [Progress Indicator](https://fastbootstrap.com/components/progress-indicator/)
 - [Progress Tracker](https://fastbootstrap.com/components/progress-tracker/)
+- [Rating](https://fastbootstrap.com/components/rating/)
 - [Side Navigation](https://fastbootstrap.com/components/side-navigation/)
 - [Tag](https://fastbootstrap.com/components/tag/)
 
