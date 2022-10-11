@@ -8215,6 +8215,44 @@ textarea.form-control-lg {
   overflow: auto;
 }
 
+.rating {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  color: #ffc400;
+  cursor: pointer;
+}
+.rating.disabled {
+  opacity: 0.38;
+  pointer-events: none;
+}
+.rating input {
+  display: none;
+}
+
+.rating-item {
+  position: relative;
+  color: inherit;
+  transition: transform 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+.rating-icon {
+  display: inline-block;
+  padding-right: 2px;
+  padding-left: 2px;
+  overflow: hidden;
+}
+.rating-icon ~ .rating-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  visibility: hidden;
+}
+.rating-item.active .rating-icon ~ .rating-icon {
+  visibility: visible;
+}
+
 .clearfix::after {
   display: block;
   clear: both;
