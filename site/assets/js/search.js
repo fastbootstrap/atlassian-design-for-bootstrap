@@ -3,12 +3,24 @@
 
   let idx = null;
   let documents = null;
+  let searchText = '';
+  let isIndexing = false;
 
+  function hideSearchingStatus(hidden) {
+    let loader = document.querySelector('#searchLoading');
+    if (hidden) {
+      loader.classList.add('visually-hidden');
+    } else {
+      loader.classList.remove('visually-hidden');
+    }
+  }
   function fetchDocuments(cb) {
     if (documents) {
       cb(documents);
       return;
     }
+    isIndexing = true;
+    hideSearchingStatus(false);
     fetch('/index.json')
       .then((response) => {
         return response.json();
@@ -18,7 +30,7 @@
       });
   }
 
-  function highlightTokens(element, input, tokens) {
+  function highlightTokens(element, tokens) {
     const nodeFilter = {
       acceptNode: function (node) {
         return NodeFilter.FILTER_ACCEPT;
@@ -77,7 +89,7 @@
       $item.classList.add('list-group-item', 'list-group-item-action');
       let $title = document.createElement('div');
       $title.innerText = doc['title'];
-      highlightTokens($title, doc['title'], lunr.tokenizer(input));
+      highlightTokens($title, lunr.tokenizer(input));
       $item.appendChild($title);
       $listGroup.appendChild($item);
     });
@@ -85,13 +97,18 @@
   }
 
   function search(input) {
-    if (input == '') {
+    searchText = input;
+    if (searchText == '') {
+      var $listContainer = document.querySelector('#searchModal .modal-body');
+      $listContainer.innerHTML = '';
+      return;
+    }
+    if (isIndexing) {
       return;
     }
     fetchDocuments((data) => {
       documents = data;
       var builder = new lunr.Builder();
-
       builder.ref('objectID');
       builder.field('title', { boost: 5 });
       builder.field('link', {
@@ -105,7 +122,12 @@
         builder.add(doc);
       });
       idx = builder.build();
-      searchQuery(input);
+      isIndexing = false;
+      hideSearchingStatus(true);
+      if (search == '') {
+        return;
+      }
+      searchQuery(searchText);
     });
   }
 
