@@ -16,10 +16,10 @@ description = "Atlassian Design for Bootstrap 5. Powerful and free UI Kits for B
 page_title_suffix = "FastBootstrap"
 github_org = "https://github.com/fastbootstrap"
 repo = "https://github.com/fastbootstrap/atlassian-design-for-bootstrap"
-download_url = "https://github.com/fastbootstrap/atlassian-design-for-bootstrap/archive/refs/tags/v1.0.0.zip"
+version_tag = "v1.1.1"
 
 [params.cdn]
-css = "https://cdn.jsdelivr.net/npm/fastbootstrap@1.0.0/dist/css/fastbootstrap.min.css"
-css_hash = "sha256-l/Z23rB0iuouhJeosXkeGLQ0nb/vAambyGHvRdkvhgY="
-js = "https://cdn.jsdelivr.net/npm/fastbootstrap@1.0.0/dist/js/fastbootstrap.min.js"
-js_hash = "sha256-zbV7fX6B18iSazTO6D/2M41vSfdOFeOwVE6mRLd49tg="
+css = "https://cdn.jsdelivr.net/npm/fastbootstrap@1.1.1/dist/css/fastbootstrap.min.css"
+css_hash = "sha256-Yzz+k0rjOAAPX4Nkr73zQvppd6buXomR9n4uQ5lrSYE="
+js = "https://cdn.jsdelivr.net/npm/fastbootstrap@1.1.1/dist/js/fastbootstrap.min.js"
+js_hash = "sha256-EA7CcsZVlKgu1Vdk1Nsl648ddvyavbdyjR/vnaTuomk="
