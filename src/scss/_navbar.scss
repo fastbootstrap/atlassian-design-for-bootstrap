@@ -1,3 +1,16 @@
 .navbar {
-  box-shadow: 0 2px 8px rgba($neutral-900, 25%);
+  &::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    top: 100%;
+    right: 0px;
+    left: 0px;
+    background: linear-gradient(
+      rgba($neutral-900, 13%) 0px,
+      rgba($neutral-900, 13%) 1px,
+      rgba($neutral-900, 8%) 1px,
+      rgba($neutral-900, 0) 4px
+    );
+  }
 }

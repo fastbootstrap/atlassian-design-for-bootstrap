@@ -1,0 +1,6 @@
+.content-none {
+  &::after,
+  &::before {
+    content: none !important;
+  }
+}

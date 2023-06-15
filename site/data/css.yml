@@ -669,3 +669,8 @@ rotate:
       - 45: rotate(45deg)
       - 90: rotate(90deg)
       - 180: rotate(180deg)
+content:
+  - property: content
+    class: content
+    values:
+      - none: none
