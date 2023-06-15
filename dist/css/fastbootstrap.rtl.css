@@ -4472,7 +4472,7 @@ textarea.form-control-lg {
   --bs-list-group-action-active-bg: #e9ecef;
   --bs-list-group-disabled-color: #6b778c;
   --bs-list-group-disabled-bg: #fff;
-  --bs-list-group-active-color: #172b4d;
+  --bs-list-group-active-color: #0052cc;
   --bs-list-group-active-bg: #f4f5f7;
   --bs-list-group-active-border-color: #f4f5f7;
   display: flex;
@@ -7822,8 +7822,14 @@ textarea.form-control-lg {
     transform: translateX(-100%);
   }
 }
-.navbar {
-  box-shadow: 0 2px 8px rgba(9, 30, 66, 0.25);
+.navbar::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: 100%;
+  left: 0px;
+  right: 0px;
+  background: linear-gradient(rgba(9, 30, 66, 0.13) 0px, rgba(9, 30, 66, 0.13) 1px, rgba(9, 30, 66, 0.08) 1px, rgba(9, 30, 66, 0) 4px);
 }
 
 .btn-close {
@@ -8212,7 +8218,6 @@ textarea.form-control-lg {
   grid-area: main;
   position: relative;
   min-width: 0;
-  overflow: auto;
 }
 
 .rating {
@@ -8616,6 +8621,10 @@ textarea.form-control-lg {
 
 .text-clip {
   text-overflow: clip;
+}
+
+.content-none::after, .content-none::before {
+  content: none !important;
 }
 
 .text-blue-50 {
