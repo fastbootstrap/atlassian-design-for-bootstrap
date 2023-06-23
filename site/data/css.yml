@@ -674,3 +674,36 @@ content:
     class: content
     values:
       - none: none
+min-width:
+  - property: min-width
+    class: min-w
+    values:
+      - 0: 0px
+      - full: 100%
+      - min: min-content
+      - max: max-content
+      - fit: fit-content
+max-width:
+  - property: max-width
+    class: max-w
+    values:
+      - 0: 0px
+      - none: none
+      - xs: 320px
+      - sm: 384px
+      - md: 448px
+      - lg: 512px
+      - xl: 576px
+      - 2xl: 672px
+      - 3xl: 768px
+      - 4xl: 896px
+      - 5xl: 1024px
+      - full: 100%
+      - min: min-content
+      - max: max-content
+      - fit: fit-content
+      - screen-sm: 540px
+      - screen-md: 720px
+      - screen-lg: 960px
+      - screen-xl: 1140px
+      - screen-xxl: 1320px
