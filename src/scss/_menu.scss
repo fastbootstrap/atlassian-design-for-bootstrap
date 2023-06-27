@@ -42,6 +42,13 @@
       text-decoration: none;
     }
   }
+
+  /* nested menu */
+  .menu-list {
+    .menu-item {
+      padding-left: $menu-item-padding-x * 2;
+    }
+  }
 }
 
 .menu-header {

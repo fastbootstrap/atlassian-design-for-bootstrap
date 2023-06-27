@@ -95,7 +95,7 @@ Wrapped the drop-down menus in the `.menu-list` adding to the parent menu. It ca
       </li>
       <li>
         <a class="menu-item" href="#"><i class="fa-solid fa-tag me-2"></i> Products</a>
-        <ul class="menu-list px-5">
+        <ul class="menu-list">
           <li>
             <a class="menu-item" href="#">All Products</a>
           </li>
@@ -145,7 +145,7 @@ Like the above example but allows the user to show or hide the submenus. [Accord
           </button>
         </div>
         <div class="accordion-collapse collapse show" id="submenu-1">
-          <ul class="menu-list px-5">
+          <ul class="menu-list">
             <li>
               <a class="menu-item" href="#">All Products</a>
             </li>
@@ -165,7 +165,7 @@ Like the above example but allows the user to show or hide the submenus. [Accord
           </button>
         </div>
         <div class="accordion-collapse collapse" id="submenu-2">
-          <ul class="menu-list px-5">
+          <ul class="menu-list">
             <li>
               <a class="menu-item" href="#">Insights</a>
             </li>
