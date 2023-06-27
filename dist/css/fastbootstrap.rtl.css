@@ -8129,9 +8129,13 @@ textarea.form-control-lg {
   padding: 0;
   margin: 0;
   list-style: none;
+  /* nested menu */
 }
 .menu-list a:hover {
   text-decoration: none;
+}
+.menu-list .menu-list .menu-item {
+  padding-right: 2.5rem;
 }
 
 .menu-header {
