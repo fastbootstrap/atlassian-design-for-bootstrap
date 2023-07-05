@@ -38,8 +38,6 @@
 .form-select,
 .form-control {
   @include form-validation-state-selector("valid") {
-    border-color: $input-border-color;
-
     &:focus {
       border-color: $input-focus-border-color;
     }

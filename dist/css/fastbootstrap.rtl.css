@@ -7481,6 +7481,14 @@ textarea.form-control-lg {
   background-color: #ffffff;
   border-color: #4c9aff;
 }
+.input-group-start > .form-control.is-invalid + .input-group-text,
+.input-group-end > .form-control.is-invalid + .input-group-text {
+  border-color: #de350b;
+}
+.input-group-start > .form-control.is-valid + .input-group-text,
+.input-group-end > .form-control.is-valid + .input-group-text {
+  border-color: #00875a;
+}
 
 .input-group-start {
   flex-direction: row-reverse;
@@ -7646,11 +7654,6 @@ textarea.form-control-lg {
   color: #172b4d;
 }
 
-.was-validated .form-select:valid, .form-select.is-valid,
-.was-validated .form-control:valid,
-.form-control.is-valid {
-  border-color: #dfe1e6;
-}
 .was-validated .form-select:valid:focus, .form-select.is-valid:focus,
 .was-validated .form-control:valid:focus,
 .form-control.is-valid:focus {

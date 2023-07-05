@@ -28,6 +28,18 @@
         border-color: $input-focus-border-color;
       }
     }
+
+    &.is-invalid {
+      + .input-group-text {
+        border-color: $form-feedback-invalid-color;
+      }
+    }
+
+    &.is-valid {
+      + .input-group-text {
+        border-color: $form-feedback-valid-color;
+      }
+    }
   }
 }
 
