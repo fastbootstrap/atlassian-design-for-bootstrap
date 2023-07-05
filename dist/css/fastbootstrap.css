@@ -7510,7 +7510,7 @@ textarea.form-control-lg {
 .input-group-end > .form-control:focus + .input-group-text,
 .input-group-end > .form-control:focus-visible + .input-group-text {
   background-color: #ffffff;
-  border-color: #4c9aff;
+  border-color: #4c9aff !important;
 }
 .input-group-start > .form-control.is-invalid + .input-group-text,
 .input-group-end > .form-control.is-invalid + .input-group-text {
