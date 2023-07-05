@@ -2134,7 +2134,7 @@ progress {
 .form-text {
   margin-top: 0.25rem;
   font-size: 0.875em;
-  color: #7a869a;
+  color: #6b778c;
 }
 
 .form-control {
@@ -7106,7 +7106,7 @@ textarea.form-control-lg {
 }
 
 .card-subtitle {
-  color: #7a869a;
+  color: #6b778c;
 }
 
 .card-header-tabs {
@@ -7487,6 +7487,60 @@ textarea.form-control-lg {
 
 .input-group .btn + .btn {
   border-left-color: transparent;
+}
+
+.input-group-text {
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .input-group-text {
+    transition: none;
+  }
+}
+
+.input-group-start > .input-group-text,
+.input-group-end > .input-group-text {
+  margin-left: 0 !important;
+}
+.input-group-start > .form-control:hover + .input-group-text,
+.input-group-end > .form-control:hover + .input-group-text {
+  background-color: #ebecf0;
+}
+.input-group-start > .form-control:focus + .input-group-text, .input-group-start > .form-control:focus-visible + .input-group-text,
+.input-group-end > .form-control:focus + .input-group-text,
+.input-group-end > .form-control:focus-visible + .input-group-text {
+  background-color: #ffffff;
+  border-color: #4c9aff;
+}
+
+.input-group-start {
+  flex-direction: row-reverse;
+}
+.input-group-start > .form-control {
+  border-left: none;
+  padding-left: 0;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-top-right-radius: 3px !important;
+  border-bottom-right-radius: 3px !important;
+}
+.input-group-start > .input-group-text {
+  border-right: none;
+  border-top-left-radius: 3px !important;
+  border-bottom-left-radius: 3px !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.input-group-end {
+  flex-direction: row;
+}
+.input-group-end > .form-control {
+  padding-right: 0;
+  border-right: none;
+}
+.input-group-end > .input-group-text {
+  border-left: none;
 }
 
 .pagination {
@@ -11082,7 +11136,7 @@ textarea.form-control-lg {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #7a869a !important;
+  color: #6b778c !important;
 }
 
 .text-black-50 {

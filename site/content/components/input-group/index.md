@@ -51,6 +51,28 @@ Place one add-on or button on either side of an input. You may also place one on
 </div>
 {{</ example >}}
 
+## With prefix or suffix <span class="lozenge new ms-1 fw-normal">new</span>
+
+Using new utility css `.input-group-start` and `.input-group-end` to make input group as one input that with a new effect.
+
+{{< example >}}
+<div class="input-group input-group-start mb-3">
+  <input type="text" class="form-control" placeholder="Username" />
+  <span class="input-group-text">@</span>
+</div>
+
+<div class="input-group input-group-start mb-3">
+  <input type="text" class="form-control" />
+  <span class="input-group-text">https://example.com/users/</span>
+</div>
+
+<div class="input-group input-group-end mb-3">
+  <input type="text" class="form-control" placeholder="Recipient's username" />
+  <span class="input-group-text">@gmail.com</span>
+</div>
+
+{{</ example >}}
+
 ## Sizing
 
 Add the relative form sizing classes to the `.input-group` itself and contents within will automatically resize—no need for repeating the form control size classes on each element.
