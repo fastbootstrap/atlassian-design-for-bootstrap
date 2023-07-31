@@ -1,10 +1,10 @@
 /*!
-  * FastBootstrap v1.1.0 (https://fastbootstrap.com/)
-  * Copyright 2022-2022 FastBootstrap
+  * FastBootstrap v1.1.2 (https://fastbootstrap.com/)
+  * Copyright 2022-2023 FastBootstrap
   * Licensed under MIT (https://github.com/fastbootstrap/atlassian-design-for-bootstrap/blob/main/LICENSE)
   * 
   * Bootstrap v5.2.1 (https://getbootstrap.com/)
-  * Copyright 2011-2022 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
+  * Copyright 2011-2023 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */
 (function (global, factory) {
