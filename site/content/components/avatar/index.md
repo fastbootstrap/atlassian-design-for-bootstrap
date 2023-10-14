@@ -13,11 +13,11 @@ menu:
 
 Responsive avatar built with the latest Bootstrap 5. Avatar component is a visual representation of an entity, such as a user or an organization.
 
-## Basic examples
+## Avatar examples
 
 Add `.avatar` to any `<img>` elements to make it an avatar.
 
-{{< example >}}
+{{< example class="d-flex gap-4" >}}
 <img class="avatar" src="/images/avatar/1.jpg" />
 <img class="avatar" src="/images/avatar/2.jpg" />
 <img class="avatar" src="/images/avatar/3.jpg" />
@@ -25,7 +25,9 @@ Add `.avatar` to any `<img>` elements to make it an avatar.
 
 ## Letter avatars
 
-{{< example >}}
+For letter avatar, You can use `text-bg-*` class to change the avatar background.
+
+{{< example class="d-flex gap-4" >}}
 <span class="avatar">H</span>
 <span class="avatar text-bg-primary">U</span>
 <span class="avatar text-bg-secondary">OP</span>
@@ -33,7 +35,7 @@ Add `.avatar` to any `<img>` elements to make it an avatar.
 
 ## Icon avatars
 
-{{< example >}}
+{{< example class="d-flex gap-4" >}}
 <span class="avatar"><i class="fas fa-user"></i></span>
 <span class="avatar text-bg-primary"><i class="fas fa-star"></i></span>
 <span class="avatar text-bg-secondary"><i class="fa-brands fa-apple"></i></span>
@@ -45,14 +47,14 @@ Use the `.rounded-*` utilities class to make squared or rounded avatars if you n
 
 ### Squared 
 
-{{< example >}}
+{{< example class="d-flex gap-4" >}}
 <span class="avatar rounded-0">N</span>
 <span class="avatar rounded-0 text-bg-primary">N</span>
 {{</ example >}}
 
 ### Rounded
 
-{{< example >}}
+{{< example class="d-flex gap-4 flex-wrap" >}}
 <span class="avatar rounded-1">N</span>
 <span class="avatar rounded-2 text-bg-primary">OP</span>
 <span class="avatar rounded-3 text-bg-secondary">W</span>
@@ -71,25 +73,6 @@ Avatars come in six different sizes: extra-small, small, medium, large, and extr
 <img class="avatar avatar-lg" src="/images/avatar/1.jpg" />
 <img class="avatar avatar-xl" src="/images/avatar/1.jpg" />
 <img class="avatar avatar-xxl" src="/images/avatar/1.jpg" />
-{{</ example >}}
-
-## Status
-
-Use the `.avatar-badge` to shows contextual information or the user's status, such as online, busy or away. 
-
-{{< example >}}
-<span class="avatar">
-  <img src="/images/avatar/1.jpg" />
-  <span class="avatar-badge border bg-green-300"></span>
-</span>
-<span class="avatar avatar-lg">
-  <img src="/images/avatar/1.jpg" />
-  <span class="avatar-badge border bg-red-300 p-1"></span>
-</span>
-<span class="avatar avatar-xl">
-  <img src="/images/avatar/1.jpg" />
-  <span class="avatar-badge border p-2 text-bg-success"><i class="fa-solid fa-check fa-2xs"></i></span>
-</span>
 {{</ example >}}
 
 ## Related

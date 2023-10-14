@@ -1,0 +1,1416 @@
+$ds-prefix: ds-;
+
+/* Colors system */
+// https://atlassian.design/foundations/color-new/color-palette-new
+$lime-100: #eefbda;
+$lime-200: #d3f1a7;
+$lime-300: #b3df72;
+$lime-400: #94c748;
+$lime-500: #82b536;
+$lime-600: #6a9a23;
+$lime-700: #5b7f24;
+$lime-800: #4c6b1f;
+$lime-900: #37471f;
+$lime-1000: #2a3818;
+
+$blue-100: #e9f2ff;
+$blue-200: #cce0ff;
+$blue-300: #85b8ff;
+$blue-400: #579dff;
+$blue-500: #388bff;
+$blue-600: #1d7afc;
+$blue-700: #0c66e4;
+$blue-800: #0055cc;
+$blue-900: #09326c;
+$blue-1000: #092957;
+
+$purple-100: #f3f0ff;
+$purple-200: #dfd8fd;
+$purple-300: #b8acf6;
+$purple-400: #9f8fef;
+$purple-500: #8f7ee7;
+$purple-600: #8270db;
+$purple-700: #6e5dc6;
+$purple-800: #5e4db2;
+$purple-900: #352c63;
+$purple-1000: #2b2451;
+
+$red-100: #ffedeb;
+$red-200: #ffd2cc;
+$red-300: #ff9c8f;
+$red-400: #f87462;
+$red-500: #ef5c48;
+$red-600: #e34935;
+$red-700: #ca3521;
+$red-800: #ae2a19;
+$red-900: #601e16;
+$red-1000: #4f1c16;
+
+$orange-100: #fff4e5;
+$orange-200: #ffe2bd;
+$orange-300: #fec57b;
+$orange-400: #faa53d;
+$orange-500: #f18d13;
+$orange-600: #d97008;
+$orange-700: #b65c02;
+$orange-800: #974f0c;
+$orange-900: #5f3811;
+$orange-1000: #4a2b0f;
+
+$yellow-100: #fff7d6;
+$yellow-200: #f8e6a0;
+$yellow-300: #f5cd47;
+$yellow-400: #e2b203;
+$yellow-500: #cf9f02;
+$yellow-600: #b38600;
+$yellow-700: #946f00;
+$yellow-800: #7f5f01;
+$yellow-900: #533f04;
+$yellow-1000: #3f3102;
+
+$green-100: #dffcf0;
+$green-200: #baf3db;
+$green-300: #7ee2b8;
+$green-400: #4bce97;
+$green-500: #2abb7f;
+$green-600: #22a06b;
+$green-700: #1f845a;
+$green-800: #216e4e;
+$green-900: #164b35;
+$green-1000: #143c2b;
+
+$teal-100: #e3fafc;
+$teal-200: #c1f0f5;
+$teal-300: #8bdbe5;
+$teal-400: #60c6d2;
+$teal-500: #37b4c3;
+$teal-600: #1d9aaa;
+$teal-700: #1d7f8c;
+$teal-800: #206b74;
+$teal-900: #1d474c;
+$teal-1000: #15373b;
+
+$magenta-100: #ffecf8;
+$magenta-200: #fdd0ec;
+$magenta-300: #f797d2;
+$magenta-400: #e774bb;
+$magenta-500: #da62ac;
+$magenta-600: #cd519d;
+$magenta-700: #ae4787;
+$magenta-800: #943d73;
+$magenta-900: #50253f;
+$magenta-1000: #421f34;
+
+$neutral-0: #ffffff;
+$neutral-100: #f7f8f9;
+$neutral-200: #f1f2f4;
+$neutral-300: #dcdfe4;
+$neutral-400: #b3b9c4;
+$neutral-500: #8590a2;
+$neutral-600: #758195;
+$neutral-700: #626f86;
+$neutral-800: #44546f;
+$neutral-900: #2c3e5d;
+$neutral-1000: #172b4d;
+$neutral-1100: #091e42;
+$neutral-100a: rgba(9, 30, 66, 0.03);
+$neutral-200a: rgba(9, 30, 66, 0.06);
+$neutral-300a: rgba(9, 30, 66, 0.14);
+$neutral-400a: rgba(9, 30, 66, 0.31);
+$neutral-500a: rgba(9, 30, 66, 0.49);
+
+$dark-neutral-n100: #101214;
+$dark-neutral-0: #161a1d;
+$dark-neutral-100: #1d2125;
+$dark-neutral-200: #22272b;
+$dark-neutral-250: #282e33;
+$dark-neutral-300: #2c333a;
+$dark-neutral-350: #38414a;
+$dark-neutral-400: #454f59;
+$dark-neutral-500: #596773;
+$dark-neutral-600: #738496;
+$dark-neutral-700: #8c9bab;
+$dark-neutral-800: #9fadbc;
+$dark-neutral-900: #b6c2cf;
+$dark-neutral-1000: #c7d1db;
+$dark-neutral-1100: #dee4ea;
+$dark-neutral-n100a: rgba(3, 4, 4, 0.26);
+$dark-neutral-100a: rgba(188, 214, 240, 0.04);
+$dark-neutral-200a: rgba(161, 189, 217, 0.08);
+$dark-neutral-250a: rgba(200, 225, 249, 0.1);
+$dark-neutral-300a: rgba(166, 197, 226, 0.16);
+$dark-neutral-350a: rgba(195, 222, 254, 0.2);
+$dark-neutral-400a: rgba(191, 219, 248, 0.28);
+$dark-neutral-500a: rgba(155, 180, 202, 0.5);
+
+// Spacing
+$ds-space-0: 0;
+$ds-space-025: 0.125rem;
+$ds-space-050: 0.25rem;
+$ds-space-075: 0.375rem;
+$ds-space-100: 0.5rem;
+$ds-space-150: 0.75rem;
+$ds-space-200: 1rem;
+$ds-space-250: 1.25rem;
+$ds-space-300: 1.5rem;
+$ds-space-400: 2rem;
+$ds-space-500: 2.5rem;
+$ds-space-600: 3rem;
+$ds-space-800: 4rem;
+$ds-space-1000: 5rem;
+
+$text-tokens: (
+  "text": (
+    $neutral-1000,
+    $dark-neutral-900,
+  ),
+  "text-accent-lime": (
+    $lime-800,
+    $lime-300,
+  ),
+  "text-accent-lime-bolder": (
+    $lime-900,
+    $lime-200,
+  ),
+  "text-accent-red": (
+    $red-800,
+    $red-300,
+  ),
+  "text-accent-red-bolder": (
+    $red-900,
+    $red-200,
+  ),
+  "text-accent-orange": (
+    $orange-800,
+    $orange-300,
+  ),
+  "text-accent-orange-bolder": (
+    $orange-900,
+    $orange-200,
+  ),
+  "text-accent-yellow": (
+    $yellow-800,
+    $yellow-300,
+  ),
+  "text-accent-yellow-bolder": (
+    $yellow-900,
+    $yellow-200,
+  ),
+  "text-accent-green": (
+    $green-800,
+    $green-300,
+  ),
+  "text-accent-green-bolder": (
+    $green-900,
+    $green-200,
+  ),
+  "text-accent-teal": (
+    $teal-800,
+    $teal-300,
+  ),
+  "text-accent-teal-bolder": (
+    $teal-900,
+    $teal-200,
+  ),
+  "text-accent-blue": (
+    $blue-800,
+    $blue-300,
+  ),
+  "text-accent-blue-bolder": (
+    $blue-900,
+    $blue-200,
+  ),
+  "text-accent-purple": (
+    $purple-800,
+    $purple-300,
+  ),
+  "text-accent-purple-bolder": (
+    $purple-900,
+    $purple-200,
+  ),
+  "text-accent-magenta": (
+    $magenta-800,
+    $magenta-300,
+  ),
+  "text-accent-magenta-bolder": (
+    $magenta-900,
+    $magenta-200,
+  ),
+  "text-accent-gray": (
+    $neutral-800,
+    $dark-neutral-800,
+  ),
+  "text-accent-gray-bolder": (
+    $neutral-1100,
+    $dark-neutral-1100,
+  ),
+  "text-disabled": (
+    $neutral-400a,
+    $dark-neutral-400a,
+  ),
+  "text-inverse": (
+    $neutral-0,
+    $dark-neutral-100,
+  ),
+  "text-selected": (
+    $blue-700,
+    $blue-400,
+  ),
+  "text-brand": (
+    $blue-700,
+    $blue-400,
+  ),
+  "text-danger": (
+    $red-800,
+    $red-300,
+  ),
+  "text-warning": (
+    $orange-800,
+    $yellow-300,
+  ),
+  "text-warning-inverse": (
+    $neutral-1000,
+    $dark-neutral-100,
+  ),
+  "text-success": (
+    $green-800,
+    $green-300,
+  ),
+  "text-discovery": (
+    $purple-800,
+    $purple-300,
+  ),
+  "text-information": (
+    $blue-800,
+    $blue-300,
+  ),
+  "text-subtlest": (
+    $neutral-700,
+    $dark-neutral-700,
+  ),
+  "text-subtle": (
+    $neutral-800,
+    $dark-neutral-800,
+  ),
+);
+
+$link-tokens: (
+  "link": (
+    $blue-700,
+    $blue-400,
+  ),
+  "link-pressed": (
+    $blue-800,
+    $blue-300,
+  ),
+  "link-visited": (
+    $purple-800,
+    $purple-300,
+  ),
+);
+
+$icon-tokens: (
+  "icon": (
+    $neutral-800,
+    $dark-neutral-800,
+  ),
+  "icon-accent-lime": (
+    $lime-600,
+    $lime-500,
+  ),
+  "icon-accent-red": (
+    $red-600,
+    $red-500,
+  ),
+  "icon-accent-orange": (
+    $orange-600,
+    $orange-500,
+  ),
+  "icon-accent-yellow": (
+    $yellow-600,
+    $yellow-500,
+  ),
+  "icon-accent-green": (
+    $green-600,
+    $green-500,
+  ),
+  "icon-accent-teal": (
+    $teal-600,
+    $teal-500,
+  ),
+  "icon-accent-blue": (
+    $blue-600,
+    $blue-500,
+  ),
+  "icon-accent-purple": (
+    $purple-600,
+    $purple-500,
+  ),
+  "icon-accent-magenta": (
+    $magenta-600,
+    $magenta-500,
+  ),
+  "icon-accent-gray": (
+    $neutral-600,
+    $dark-neutral-600,
+  ),
+  "icon-disabled": (
+    $neutral-400a,
+    $dark-neutral-400a,
+  ),
+  "icon-inverse": (
+    $neutral-0,
+    $dark-neutral-100,
+  ),
+  "icon-selected": (
+    $blue-700,
+    $blue-400,
+  ),
+  "icon-brand": (
+    $blue-700,
+    $blue-400,
+  ),
+  "icon-danger": (
+    $red-600,
+    $red-500,
+  ),
+  "icon-warning": (
+    $orange-600,
+    $yellow-500,
+  ),
+  "icon-warning-inverse": (
+    $neutral-1000,
+    $dark-neutral-100,
+  ),
+  "icon-success": (
+    $green-600,
+    $green-500,
+  ),
+  "icon-discovery": (
+    $purple-600,
+    $purple-500,
+  ),
+  "icon-information": (
+    $blue-600,
+    $blue-500,
+  ),
+  "icon-subtle": (
+    $neutral-700,
+    $dark-neutral-700,
+  ),
+);
+
+$border-tokens: (
+  "border": (
+    $neutral-300a,
+    $dark-neutral-300a,
+  ),
+  "border-accent-lime": (
+    $lime-600,
+    $lime-500,
+  ),
+  "border-accent-red": (
+    $red-600,
+    $red-500,
+  ),
+  "border-accent-orange": (
+    $orange-600,
+    $orange-500,
+  ),
+  "border-accent-yellow": (
+    $yellow-600,
+    $yellow-500,
+  ),
+  "border-accent-green": (
+    $green-600,
+    $green-500,
+  ),
+  "border-accent-teal": (
+    $teal-600,
+    $teal-500,
+  ),
+  "border-accent-blue": (
+    $blue-600,
+    $blue-500,
+  ),
+  "border-accent-purple": (
+    $purple-600,
+    $purple-500,
+  ),
+  "border-accent-magenta": (
+    $magenta-600,
+    $magenta-500,
+  ),
+  "border-accent-gray": (
+    $neutral-600,
+    $dark-neutral-600,
+  ),
+  "border-disabled": (
+    $neutral-200a,
+    $dark-neutral-200a,
+  ),
+  "border-focused": (
+    $blue-500,
+    $blue-300,
+  ),
+  "border-input": (
+    $neutral-300a,
+    $dark-neutral-300a,
+  ),
+  "border-inverse": (
+    $neutral-0,
+    $dark-neutral-0,
+  ),
+  "border-selected": (
+    $blue-700,
+    $blue-400,
+  ),
+  "border-brand": (
+    $blue-700,
+    $blue-400,
+  ),
+  "border-danger": (
+    $red-600,
+    $red-500,
+  ),
+  "border-warning": (
+    $orange-600,
+    $yellow-500,
+  ),
+  "border-success": (
+    $green-600,
+    $green-500,
+  ),
+  "border-discovery": (
+    $purple-600,
+    $purple-500,
+  ),
+  "border-information": (
+    $blue-600,
+    $blue-500,
+  ),
+  "border-bold": (
+    $neutral-600,
+    $dark-neutral-500,
+  ),
+);
+
+$background-tokens: (
+  "background-accent-lime-subtlest": (
+    $lime-100,
+    $lime-1000,
+  ),
+  "background-accent-lime-subtlest-hovered": (
+    $lime-200,
+    $lime-900,
+  ),
+  "background-accent-lime-subtlest-pressed": (
+    $lime-300,
+    $lime-800,
+  ),
+  "background-accent-lime-subtler": (
+    $lime-200,
+    $lime-900,
+  ),
+  "background-accent-lime-subtler-hovered": (
+    $lime-300,
+    $lime-800,
+  ),
+  "background-accent-lime-subtler-pressed": (
+    $lime-400,
+    $lime-700,
+  ),
+  "background-accent-lime-subtle": (
+    $lime-400,
+    $lime-800,
+  ),
+  "background-accent-lime-subtle-hovered": (
+    $lime-300,
+    $lime-900,
+  ),
+  "background-accent-lime-subtle-pressed": (
+    $lime-200,
+    $lime-1000,
+  ),
+  "background-accent-lime-bolder": (
+    $lime-700,
+    $lime-400,
+  ),
+  "background-accent-lime-bolder-hovered": (
+    $lime-800,
+    $lime-300,
+  ),
+  "background-accent-lime-bolder-pressed": (
+    $lime-900,
+    $lime-200,
+  ),
+  "ackground-accent-red-subtlest": (
+    $red-100,
+    $red-1000,
+  ),
+  "background-accent-red-subtlest-hovered": (
+    $red-200,
+    $red-900,
+  ),
+  "background-accent-red-subtlest-pressed": (
+    $red-300,
+    $red-800,
+  ),
+  "background-accent-red-subtler": (
+    $red-200,
+    $red-900,
+  ),
+  "background-accent-red-subtler-hovered": (
+    $red-300,
+    $red-800,
+  ),
+  "background-accent-red-subtler-pressed": (
+    $red-400,
+    $red-700,
+  ),
+  "background-accent-red-subtle": (
+    $red-400,
+    $red-800,
+  ),
+  "background-accent-red-subtle-hovered": (
+    $red-300,
+    $red-900,
+  ),
+  "background-accent-red-subtle-pressed": (
+    $red-200,
+    $red-1000,
+  ),
+  "background-accent-red-bolder": (
+    $red-700,
+    $red-400,
+  ),
+  "background-accent-red-bolder-hovered": (
+    $red-800,
+    $red-300,
+  ),
+  "background-accent-red-bolder-pressed": (
+    $red-900,
+    $red-200,
+  ),
+  "background-accent-orange-subtlest": (
+    $orange-100,
+    $orange-1000,
+  ),
+  "background-accent-orange-subtlest-hovered": (
+    $orange-200,
+    $orange-900,
+  ),
+  "background-accent-orange-subtlest-pressed": (
+    $orange-300,
+    $orange-800,
+  ),
+  "background-accent-orange-subtler": (
+    $orange-200,
+    $orange-900,
+  ),
+  "background-accent-orange-subtler-hovered": (
+    $orange-300,
+    $orange-800,
+  ),
+  "background-accent-orange-subtler-pressed": (
+    $orange-400,
+    $orange-700,
+  ),
+  "background-accent-orange-subtle": (
+    $orange-400,
+    $orange-800,
+  ),
+  "background-accent-orange-subtle-hovered": (
+    $orange-300,
+    $orange-900,
+  ),
+  "background-accent-orange-subtle-pressed": (
+    $orange-200,
+    $orange-1000,
+  ),
+  "background-accent-orange-bolder": (
+    $orange-700,
+    $orange-400,
+  ),
+  "background-accent-orange-bolder-hovered": (
+    $orange-800,
+    $orange-300,
+  ),
+  "background-accent-orange-bolder-pressed": (
+    $orange-900,
+    $orange-200,
+  ),
+  "background-accent-yellow-subtlest": (
+    $yellow-100,
+    $yellow-1000,
+  ),
+  "background-accent-yellow-subtlest-hovered": (
+    $yellow-200,
+    $yellow-900,
+  ),
+  "background-accent-yellow-subtlest-pressed": (
+    $yellow-300,
+    $yellow-800,
+  ),
+  "background-accent-yellow-subtler": (
+    $yellow-200,
+    $yellow-900,
+  ),
+  "background-accent-yellow-subtler-hovered": (
+    $yellow-300,
+    $yellow-800,
+  ),
+  "background-accent-yellow-subtler-pressed": (
+    $yellow-400,
+    $yellow-700,
+  ),
+  "background-accent-yellow-subtle": (
+    $yellow-400,
+    $yellow-800,
+  ),
+  "background-accent-yellow-subtle-hovered": (
+    $yellow-300,
+    $yellow-900,
+  ),
+  "background-accent-yellow-subtle-pressed": (
+    $yellow-200,
+    $yellow-1000,
+  ),
+  "background-accent-yellow-bolder": (
+    $yellow-700,
+    $yellow-400,
+  ),
+  "background-accent-yellow-bolder-hovered": (
+    $yellow-800,
+    $yellow-300,
+  ),
+  "background-accent-yellow-bolder-pressed": (
+    $yellow-900,
+    $yellow-200,
+  ),
+  "background-accent-green-subtlest": (
+    $green-100,
+    $green-1000,
+  ),
+  "background-accent-green-subtlest-hovered": (
+    $green-200,
+    $green-900,
+  ),
+  "background-accent-green-subtlest-pressed": (
+    $green-300,
+    $green-800,
+  ),
+  "background-accent-green-subtler": (
+    $green-200,
+    $green-900,
+  ),
+  "background-accent-green-subtler-hovered": (
+    $green-300,
+    $green-800,
+  ),
+  "background-accent-green-subtler-pressed": (
+    $green-400,
+    $green-700,
+  ),
+  "background-accent-green-subtle": (
+    $green-400,
+    $green-800,
+  ),
+  "background-accent-green-subtle-hovered": (
+    $green-300,
+    $green-900,
+  ),
+  "background-accent-green-subtle-pressed": (
+    $green-200,
+    $green-1000,
+  ),
+  "background-accent-green-bolder": (
+    $green-700,
+    $green-400,
+  ),
+  "background-accent-green-bolder-hovered": (
+    $green-800,
+    $green-300,
+  ),
+  "background-accent-green-bolder-pressed": (
+    $green-900,
+    $green-200,
+  ),
+  "background-accent-teal-subtlest": (
+    $teal-100,
+    $teal-1000,
+  ),
+  "background-accent-teal-subtlest-hovered": (
+    $teal-200,
+    $teal-900,
+  ),
+  "background-accent-teal-subtlest-pressed": (
+    $teal-300,
+    $teal-800,
+  ),
+  "background-accent-teal-subtler": (
+    $teal-200,
+    $teal-900,
+  ),
+  "background-accent-teal-subtler-hovered": (
+    $teal-300,
+    $teal-800,
+  ),
+  "background-accent-teal-subtler-pressed": (
+    $teal-400,
+    $teal-700,
+  ),
+  "background-accent-teal-subtle": (
+    $teal-400,
+    $teal-800,
+  ),
+  "background-accent-teal-subtle-hovered": (
+    $teal-300,
+    $teal-900,
+  ),
+  "background-accent-teal-subtle-pressed": (
+    $teal-200,
+    $teal-1000,
+  ),
+  "background-accent-teal-bolder": (
+    $teal-700,
+    $teal-400,
+  ),
+  "background-accent-teal-bolder-hovered": (
+    $teal-800,
+    $teal-300,
+  ),
+  "background-accent-teal-bolder-pressed": (
+    $teal-900,
+    $teal-200,
+  ),
+  "background-accent-blue-subtlest": (
+    $blue-100,
+    $blue-1000,
+  ),
+  "background-accent-blue-subtlest-hovered": (
+    $blue-200,
+    $blue-900,
+  ),
+  "background-accent-blue-subtlest-pressed": (
+    $blue-300,
+    $blue-800,
+  ),
+  "background-accent-blue-subtler": (
+    $blue-200,
+    $blue-900,
+  ),
+  "background-accent-blue-subtler-hovered": (
+    $blue-300,
+    $blue-800,
+  ),
+  "background-accent-blue-subtler-pressed": (
+    $blue-400,
+    $blue-700,
+  ),
+  "background-accent-blue-subtle": (
+    $blue-400,
+    $blue-800,
+  ),
+  "background-accent-blue-subtle-hovered": (
+    $blue-300,
+    $blue-900,
+  ),
+  "background-accent-blue-subtle-pressed": (
+    $blue-200,
+    $blue-1000,
+  ),
+  "background-accent-blue-bolder": (
+    $blue-700,
+    $blue-400,
+  ),
+  "background-accent-blue-bolder-hovered": (
+    $blue-800,
+    $blue-300,
+  ),
+  "background-accent-blue-bolder-pressed": (
+    $blue-900,
+    $blue-200,
+  ),
+  "background-accent-purple-subtlest": (
+    $purple-100,
+    $purple-1000,
+  ),
+  "background-accent-purple-subtlest-hovered": (
+    $purple-200,
+    $purple-900,
+  ),
+  "background-accent-purple-subtlest-pressed": (
+    $purple-300,
+    $purple-800,
+  ),
+  "background-accent-purple-subtler": (
+    $purple-200,
+    $purple-900,
+  ),
+  "background-accent-purple-subtler-hovered": (
+    $purple-300,
+    $purple-800,
+  ),
+  "background-accent-purple-subtler-pressed": (
+    $purple-400,
+    $purple-700,
+  ),
+  "background-accent-purple-subtle": (
+    $purple-400,
+    $purple-800,
+  ),
+  "background-accent-purple-subtle-hovered": (
+    $purple-300,
+    $purple-900,
+  ),
+  "background-accent-purple-subtle-pressed": (
+    $purple-200,
+    $purple-1000,
+  ),
+  "background-accent-purple-bolder": (
+    $purple-700,
+    $purple-400,
+  ),
+  "background-accent-purple-bolder-hovered": (
+    $purple-800,
+    $purple-300,
+  ),
+  "background-accent-purple-bolder-pressed": (
+    $purple-900,
+    $purple-200,
+  ),
+  "background-accent-magenta-subtlest": (
+    $magenta-100,
+    $magenta-1000,
+  ),
+  "background-accent-magenta-subtlest-hovered": (
+    $magenta-200,
+    $magenta-900,
+  ),
+  "background-accent-magenta-subtlest-pressed": (
+    $magenta-300,
+    $magenta-800,
+  ),
+  "background-accent-magenta-subtler": (
+    $magenta-200,
+    $magenta-900,
+  ),
+  "background-accent-magenta-subtler-hovered": (
+    $magenta-300,
+    $magenta-800,
+  ),
+  "background-accent-magenta-subtler-pressed": (
+    $magenta-400,
+    $magenta-700,
+  ),
+  "background-accent-magenta-subtle": (
+    $magenta-400,
+    $magenta-800,
+  ),
+  "background-accent-magenta-subtle-hovered": (
+    $magenta-300,
+    $magenta-900,
+  ),
+  "background-accent-magenta-subtle-pressed": (
+    $magenta-200,
+    $magenta-1000,
+  ),
+  "background-accent-magenta-bolder": (
+    $magenta-700,
+    $magenta-400,
+  ),
+  "background-accent-magenta-bolder-hovered": (
+    $magenta-800,
+    $magenta-300,
+  ),
+  "background-accent-magenta-bolder-pressed": (
+    $magenta-900,
+    $magenta-200,
+  ),
+  "background-accent-gray-subtlest": (
+    $neutral-200,
+    $dark-neutral-300,
+  ),
+  "background-accent-gray-subtlest-hovered": (
+    $neutral-300,
+    $dark-neutral-350,
+  ),
+  "background-accent-gray-subtlest-pressed": (
+    $neutral-400,
+    $dark-neutral-400,
+  ),
+  "background-accent-gray-subtler": (
+    $neutral-300,
+    $dark-neutral-400,
+  ),
+  "background-accent-gray-subtler-hovered": (
+    $neutral-400,
+    $dark-neutral-500,
+  ),
+  "background-accent-gray-subtler-pressed": (
+    $neutral-500,
+    $dark-neutral-600,
+  ),
+  "background-accent-gray-subtle": (
+    $neutral-500,
+    $dark-neutral-500,
+  ),
+  "background-accent-gray-subtle-hovered": (
+    $neutral-400,
+    $dark-neutral-400,
+  ),
+  "background-accent-gray-subtle-pressed": (
+    $neutral-300,
+    $dark-neutral-350,
+  ),
+  "background-accent-gray-bolder": (
+    $neutral-700,
+    $dark-neutral-700,
+  ),
+  "background-accent-gray-bolder-hovered": (
+    $neutral-800,
+    $dark-neutral-800,
+  ),
+  "background-accent-gray-bolder-pressed": (
+    $neutral-900,
+    $dark-neutral-900,
+  ),
+  "background-disabled": (
+    $neutral-100a,
+    $dark-neutral-100a,
+  ),
+  "background-input": (
+    $neutral-0,
+    $dark-neutral-200,
+  ),
+  "background-input-hovered": (
+    $neutral-100,
+    $dark-neutral-250,
+  ),
+  "background-input-pressed": (
+    $neutral-0,
+    $dark-neutral-200,
+  ),
+  "background-inverse-subtle": (
+    #00000029,
+    #ffffff29,
+  ),
+  "background-inverse-subtle-hovered": (
+    #0000003d,
+    #ffffff3d,
+  ),
+  "background-inverse-subtle-pressed": (
+    #00000052,
+    #ffffff52,
+  ),
+  "background-neutral": (
+    $neutral-200a,
+    $dark-neutral-200a,
+  ),
+  "background-neutral-hovered": (
+    $neutral-300a,
+    $dark-neutral-300a,
+  ),
+  "background-neutral-pressed": (
+    $neutral-400a,
+    $dark-neutral-400a,
+  ),
+  "background-neutral-subtle": (
+    transparent,
+    transparent,
+  ),
+  "background-neutral-subtle-hovered": (
+    $neutral-200a,
+    $dark-neutral-200a,
+  ),
+  "background-neutral-subtle-pressed": (
+    $neutral-300a,
+    $dark-neutral-300a,
+  ),
+  "background-neutral-bold": (
+    $neutral-800,
+    $dark-neutral-800,
+  ),
+  "background-neutral-bold-hovered": (
+    $neutral-900,
+    $dark-neutral-900,
+  ),
+  "background-neutral-bold-pressed": (
+    $neutral-1000,
+    $dark-neutral-1000,
+  ),
+  "background-selected": (
+    $blue-100,
+    $blue-1000,
+  ),
+  "background-selected-hovered": (
+    $blue-200,
+    $blue-900,
+  ),
+  "background-selected-pressed": (
+    $blue-300,
+    $blue-800,
+  ),
+  "background-selected-bold": (
+    $blue-700,
+    $blue-400,
+  ),
+  "background-selected-bold-hovered": (
+    $blue-800,
+    $blue-300,
+  ),
+  "background-selected-bold-pressed": (
+    $blue-900,
+    $blue-200,
+  ),
+  "background-brand-subtlest": (
+    $blue-100,
+    $blue-1000,
+  ),
+  "background-brand-subtlest-hovered": (
+    $blue-200,
+    $blue-900,
+  ),
+  "background-brand-subtlest-pressed": (
+    $blue-300,
+    $blue-800,
+  ),
+  "background-brand-bold": (
+    $blue-700,
+    $blue-400,
+  ),
+  "background-brand-bold-hovered": (
+    $blue-800,
+    $blue-300,
+  ),
+  "background-brand-bold-pressed": (
+    $blue-900,
+    $blue-200,
+  ),
+  "background-brand-boldest": (
+    $blue-1000,
+    $blue-100,
+  ),
+  "background-brand-boldest-hovered": (
+    $blue-900,
+    $blue-200,
+  ),
+  "background-brand-boldest-pressed": (
+    $blue-800,
+    $blue-300,
+  ),
+  "background-danger": (
+    $red-100,
+    $red-1000,
+  ),
+  "background-danger-hovered": (
+    $red-200,
+    $red-900,
+  ),
+  "background-danger-pressed": (
+    $red-300,
+    $red-800,
+  ),
+  "background-danger-bold": (
+    $red-700,
+    $red-400,
+  ),
+  "background-danger-bold-hovered": (
+    $red-800,
+    $red-300,
+  ),
+  "background-danger-bold-pressed": (
+    $red-900,
+    $red-200,
+  ),
+  "background-warning": (
+    $yellow-100,
+    $yellow-1000,
+  ),
+  "background-warning-hovered": (
+    $yellow-200,
+    $yellow-900,
+  ),
+  "background-warning-pressed": (
+    $yellow-300,
+    $yellow-800,
+  ),
+  "background-warning-bold": (
+    $yellow-400,
+    $yellow-400,
+  ),
+  "background-warning-bold-hovered": (
+    $yellow-500,
+    $yellow-300,
+  ),
+  "background-warning-bold-pressed": (
+    $yellow-600,
+    $yellow-200,
+  ),
+  "background-success": (
+    $green-100,
+    $green-1000,
+  ),
+  "background-success-hovered": (
+    $green-200,
+    $green-900,
+  ),
+  "background-success-pressed": (
+    $green-300,
+    $green-800,
+  ),
+  "background-success-bold": (
+    $green-700,
+    $green-400,
+  ),
+  "background-success-bold-hovered": (
+    $green-800,
+    $green-300,
+  ),
+  "background-success-bold-pressed": (
+    $green-900,
+    $green-200,
+  ),
+  "background-discovery": (
+    $purple-100,
+    $purple-1000,
+  ),
+  "background-discovery-hovered": (
+    $purple-200,
+    $purple-900,
+  ),
+  "background-discovery-pressed": (
+    $purple-300,
+    $purple-800,
+  ),
+  "background-discovery-bold": (
+    $purple-700,
+    $purple-400,
+  ),
+  "background-discovery-bold-hovered": (
+    $purple-800,
+    $purple-300,
+  ),
+  "background-discovery-bold-pressed": (
+    $purple-900,
+    $purple-200,
+  ),
+  "background-information": (
+    $blue-100,
+    $blue-1000,
+  ),
+  "background-information-hovered": (
+    $blue-200,
+    $blue-900,
+  ),
+  "background-information-pressed": (
+    $blue-300,
+    $blue-800,
+  ),
+  "background-information-bold": (
+    $blue-700,
+    $blue-400,
+  ),
+  "background-information-bold-hovered": (
+    $blue-800,
+    $blue-300,
+  ),
+  "background-information-bold-pressed": (
+    $blue-900,
+    $blue-200,
+  ),
+);
+
+$blanket-tokens: (
+  "blanket": (
+    $neutral-500a,
+    #10121499,
+  ),
+  "blanket-selected": (
+    #388bff14,
+    #1d7afc14,
+  ),
+  "blanket-danger": (
+    #ef5c4814,
+    #e3493514,
+  ),
+);
+
+$skeleton-tokens: (
+  "skeleton": (
+    $neutral-200a,
+    $dark-neutral-200a,
+  ),
+  "skeleton-subtle": (
+    $neutral-100a,
+    $dark-neutral-100a,
+  ),
+);
+
+$ds-surface-tokens: (
+  "surface": (
+    $neutral-0,
+    $dark-neutral-100,
+  ),
+  "surface-hovered": (
+    $neutral-200,
+    $dark-neutral-200,
+  ),
+  "surface-pressed": (
+    $neutral-300,
+    $dark-neutral-300,
+  ),
+  "surface-overlay": (
+    $neutral-0,
+    $dark-neutral-250,
+  ),
+  "surface-overlay-hovered": (
+    $neutral-200,
+    $dark-neutral-300,
+  ),
+  "surface-overlay-pressed": (
+    $neutral-300,
+    $dark-neutral-350,
+  ),
+  "surface-raised": (
+    $neutral-0,
+    $dark-neutral-200,
+  ),
+  "surface-raised-hovered": (
+    $neutral-200,
+    $dark-neutral-250,
+  ),
+  "surface-raised-pressed": (
+    $neutral-300,
+    $dark-neutral-300,
+  ),
+  "surface-sunken": (
+    $neutral-100,
+    $dark-neutral-0,
+  ),
+);
+
+$shadow-tokens: (
+  "shadow-overflow": (
+    "0px 0px 8px #091E4229, 0px 0px 1px #091E421F",
+    "0px 0px 12px #0304048F, 0px 0px 1px #03040480",
+  ),
+  "shadow-overlay": (
+    "0px 8px 12px #091E4226, 0px 0px 1px #091E424F",
+    "0px 0px 0px 1px #39424a, 0px 8px 12px #0304045C, 0px 0px 1px 1px #03040480",
+  ),
+  "shadow-raised": (
+    "0px 1px 1px #091E4240, 0px 0px 1px #091E424F",
+    "0px 0px 0px 1px #00000000, 0px 1px 1px #03040480, 0px 0px 1px #03040480",
+  ),
+);
+
+$all-tokens: map-merge-multiple(
+  $text-tokens,
+  $link-tokens,
+  $background-tokens,
+  $border-tokens,
+  $icon-tokens,
+  $blanket-tokens,
+  $skeleton-tokens,
+  $ds-surface-tokens,
+  $shadow-tokens
+);
+
+$ds-link: var(--#{$ds-prefix}link);
+$ds-link-pressed: var(--#{$ds-prefix}link-pressed);
+
+$ds-text: var(--#{$ds-prefix}text);
+$ds-text-inverse: var(--#{$ds-prefix}text-inverse);
+$ds-text-disabled: var(--#{$ds-prefix}text-disabled);
+$ds-text-selected: var(--#{$ds-prefix}text-selected);
+$ds-text-subtlest: var(--#{$ds-prefix}text-subtlest);
+$ds-text-subtle: var(--#{$ds-prefix}text-subtle);
+$ds-text-brand: var(--#{$ds-prefix}text-brand);
+$ds-text-danger: var(--#{$ds-prefix}text-danger);
+$ds-text-warning: var(--#{$ds-prefix}text-warning);
+$ds-text-warning-inverse: var(--#{$ds-prefix}text-warning-inverse);
+$ds-text-success: var(--#{$ds-prefix}text-success);
+$ds-text-discovery: var(--#{$ds-prefix}text-discovery);
+
+$ds-border: var(--#{$ds-prefix}border);
+$ds-border-focused: var(--#{$ds-prefix}border-focused);
+$ds-border-disabled: var(--#{$ds-prefix}border-disabled);
+$ds-border-selected: var(--#{$ds-prefix}border-selected);
+$ds-border-input: var(--#{$ds-prefix}border-input);
+$ds-border-danger: var(--#{$ds-prefix}border-danger);
+$ds-border-success: var(--#{$ds-prefix}border-success);
+
+$ds-background-disabled: var(--#{$ds-prefix}background-disabled);
+$ds-background-brand-subtlest: var(--#{$ds-prefix}background-brand-subtlest);
+$ds-background-brand-bold: var(--#{$ds-prefix}background-brand-bold);
+$ds-background-brand-bold-hovered: var(--#{$ds-prefix}background-brand-bold-hovered);
+$ds-background-brand-bold-pressed: var(--#{$ds-prefix}background-brand-bold-pressed);
+$ds-background-selected: var(--#{$ds-prefix}background-selected);
+$ds-background-selected-hovered: var(--#{$ds-prefix}background-selected-hovered);
+$ds-background-selected-pressed: var(--#{$ds-prefix}background-selected-pressed);
+$ds-background-selected-bold: var(--#{$ds-prefix}background-selected-bold);
+$ds-background-selected-bold-hovered: var(--#{$ds-prefix}background-selected-bold-hovered);
+$ds-background-selected-bold-pressed: var(--#{$ds-prefix}background-selected-bold-pressed);
+$ds-background-input: var(--#{$ds-prefix}background-input);
+$ds-background-input-hovered: var(--#{$ds-prefix}background-input-hovered);
+$ds-background-input-pressed: var(--#{$ds-prefix}background-input-pressed);
+$ds-background-neutral: var(--#{$ds-prefix}background-neutral);
+$ds-background-neutral-hovered: var(--#{$ds-prefix}background-neutral-hovered);
+$ds-background-neutral-pressed: var(--#{$ds-prefix}background-neutral-pressed);
+$ds-background-neutral-subtle: var(--#{$ds-prefix}background-neutral-subtle);
+$ds-background-neutral-subtle-hovered: var(--#{$ds-prefix}background-neutral-subtle-hovered);
+$ds-background-neutral-subtle-pressed: var(--#{$ds-prefix}background-neutral-subtle-pressed);
+$ds-background-neutral-bold: var(--#{$ds-prefix}background-neutral-bold);
+$ds-background-neutral-bold-hovered: var(--#{$ds-prefix}background-neutral-bold-hovered);
+$ds-background-neutral-bold-pressed: var(--#{$ds-prefix}background-neutral-bold-pressed);
+$ds-background-danger: var(--#{$ds-prefix}background-danger);
+$ds-background-danger-hovered: var(--#{$ds-prefix}background-danger-hovered);
+$ds-background-danger-pressed: var(--#{$ds-prefix}background-danger-pressed);
+$ds-background-danger-bold: var(--#{$ds-prefix}background-danger-bold);
+$ds-background-danger-bold-hovered: var(--#{$ds-prefix}background-danger-bold-hovered);
+$ds-background-danger-bold-pressed: var(--#{$ds-prefix}background-danger-bold-pressed);
+$ds-background-warning: var(--#{$ds-prefix}background-warning);
+$ds-background-warning-hovered: var(--#{$ds-prefix}background-warning-hovered);
+$ds-background-warning-pressed: var(--#{$ds-prefix}background-warning-pressed);
+$ds-background-warning-bold: var(--#{$ds-prefix}background-warning-bold);
+$ds-background-warning-bold-hovered: var(--#{$ds-prefix}background-warning-bold-hovered);
+$ds-background-warning-bold-pressed: var(--#{$ds-prefix}background-warning-bold-pressed);
+$ds-background-discovery: var(--#{$ds-prefix}background-discovery);
+$ds-background-discovery-hovered: var(--#{$ds-prefix}background-discovery-hovered);
+$ds-background-discovery-pressed: var(--#{$ds-prefix}background-discovery-pressed);
+$ds-background-discovery-bold: var(--#{$ds-prefix}background-discovery-bold);
+$ds-background-discovery-bold-hovered: var(--#{$ds-prefix}background-discovery-bold-hovered);
+$ds-background-discovery-bold-pressed: var(--#{$ds-prefix}background-discovery-bold-pressed);
+$ds-background-success: var(--#{$ds-prefix}background-success);
+$ds-background-success-hovered: var(--#{$ds-prefix}background-success-hovered);
+$ds-background-success-pressed: var(--#{$ds-prefix}background-success-pressed);
+$ds-background-success-bold: var(--#{$ds-prefix}background-success-bold);
+$ds-background-success-bold-hovered: var(--#{$ds-prefix}background-success-bold-hovered);
+$ds-background-success-bold-pressed: var(--#{$ds-prefix}background-success-bold-pressed);
+$ds-background-information: var(--#{$ds-prefix}background-information);
+$ds-background-information-hovered: var(--#{$ds-prefix}background-information-hovered);
+$ds-background-information-pressed: var(--#{$ds-prefix}background-information-pressed);
+$ds-background-information-bold: var(--#{$ds-prefix}background-information-bold);
+$ds-background-information-bold-hovered: var(--#{$ds-prefix}background-information-bold-hovered);
+$ds-background-information-bold-pressed: var(--#{$ds-prefix}background-information-bold-pressed);
+
+$ds-icon-disabled: var(--#{$ds-prefix}icon-disabled);
+$ds-icon-inverse: var(--#{$ds-prefix}icon-inverse);
+$ds-icon-brand: var(--#{$ds-prefix}icon-brand);
+$ds-icon-danger: var(--#{$ds-prefix}icon-danger);
+$ds-icon-warning: var(--#{$ds-prefix}icon-warning);
+$ds-icon-success: var(--#{$ds-prefix}icon-success);
+$ds-icon-discovery: var(--#{$ds-prefix}icon-discovery);
+$ds-icon-information: var(--#{$ds-prefix}icon-information);
+$ds-icon-subtle: var(--#{$ds-prefix}icon-subtle);
+
+$ds-blanket: var(--#{$ds-prefix}blanket);
+
+$ds-surface: var(--#{$ds-prefix}surface);
+$ds-surface-overlay: var(--#{$ds-prefix}surface-overlay);
+
+$ds-skeleton: var(--#{$ds-prefix}skeleton);
+
+$ds-shadow-overlay: var(--#{$ds-prefix}shadow-overlay);

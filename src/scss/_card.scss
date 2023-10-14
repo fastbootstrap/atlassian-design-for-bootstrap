@@ -1,14 +1,13 @@
-.card {
-  box-shadow: $card-box-shadow;
-}
+@import "bootstrap/scss/card";
 
-.card-subtitle {
-  color: $text-muted;
+.card-header {
+  border-width: 0; // Remove border
 }
 
 .card-header-tabs {
-  margin-left: -1 * $card-cap-padding-x;
-  margin-right: -1 * $card-cap-padding-x;
-  padding-left: 0.5 * $card-cap-padding-x;
-  padding-right: 0.5 * $card-cap-padding-x;
+  margin-right: calc(var(--#{$prefix}card-cap-padding-x) * -1);
+  margin-bottom: calc(var(--#{$prefix}card-cap-padding-y) * -1);
+  margin-left: calc(var(--#{$prefix}card-cap-padding-x) * -1);
+  padding-left: var(--#{$prefix}card-cap-padding-x);
+  padding-right: var(--#{$prefix}card-cap-padding-y);
 }

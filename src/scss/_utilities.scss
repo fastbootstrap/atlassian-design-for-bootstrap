@@ -1,27 +1,3 @@
-@each $name,
-  $value
-    in map-merge-multiple(
-      $color-blues,
-      $color-yellows,
-      $color-greens,
-      $color-purples,
-      $color-teals,
-      $color-reds,
-      $color-neutrals
-    )
-{
-  .text-#{$name} {
-    color: $value !important;
-  }
-  .bg-#{$name} {
-    background-color: $value !important;
-  }
-  .border-#{$name} {
-    --#{$prefix}border-color: #{$value};
-    border-color: $value !important;
-  }
-}
-
 $utilities: map-merge(
   $utilities,
   (
@@ -50,48 +26,23 @@ $utilities: map-merge(
           )
         ),
     ),
-    "rounded":
-      map-merge(
-        map-get($utilities, "rounded"),
-        (
-          values:
-            map-merge(
-              $border-radius-values,
-              (
-                circle: 50%,
-                pill: $border-radius-pill,
-              )
-            ),
-        )
+    "font-weight": (
+      property: font-weight,
+      class: fw,
+      values: (
+        thin: 100,
+        extralight: 200,
+        lighter: $font-weight-lighter,
+        light: $font-weight-light,
+        normal: $font-weight-normal,
+        medium: $font-weight-medium,
+        semibold: $font-weight-semibold,
+        bold: $font-weight-bold,
+        bolder: $font-weight-bolder,
+        extrabold: 700,
+        black: 900,
       ),
-    "rounded-top":
-      map-merge(
-        map-get($utilities, "rounded-top"),
-        (
-          values: $border-radius-values,
-        )
-      ),
-    "rounded-end":
-      map-merge(
-        map-get($utilities, "rounded-end"),
-        (
-          values: $border-radius-values,
-        )
-      ),
-    "rounded-bottom":
-      map-merge(
-        map-get($utilities, "rounded-bottom"),
-        (
-          values: $border-radius-values,
-        )
-      ),
-    "rounded-start":
-      map-merge(
-        map-get($utilities, "rounded-start"),
-        (
-          values: $border-radius-values,
-        )
-      ),
+    ),
     "text-align":
       map-merge(
         map-get($utilities, "text-align"),
@@ -211,8 +162,7 @@ $utilities: map-merge(
         fit: fit-content,
       ),
     ),
-    "max-width":
-    (
+    "max-width": (
       property: max-width,
       class: max-w,
       values: (
@@ -236,6 +186,29 @@ $utilities: map-merge(
         screen-lg: map-get($container-max-widths, "lg"),
         screen-xl: map-get($container-max-widths, "xl"),
         screen-xxl: map-get($container-max-widths, "xxl"),
+      ),
+    ),
+    "shadow": (
+      property: box-shadow,
+      class: shadow,
+      values: (
+        null: $box-shadow,
+        sm: $box-shadow-sm,
+        lg: $box-shadow-lg,
+        md: $box-shadow-md,
+        none: none,
+      ),
+    ),
+    "icon-text": (
+      property: color,
+      class: icon,
+      values: (
+        "primary": $ds-icon-brand,
+        "secondary": $ds-icon-discovery,
+        "danger": $ds-icon-danger,
+        "warning": $ds-icon-warning,
+        "success": $ds-icon-success,
+        "info": $ds-icon-information,
       ),
     ),
   )

@@ -2,17 +2,13 @@
   position: relative;
   padding: 1rem;
   margin-top: 1rem;
-  border: 1px solid #ebecf0;
+  border: 1px solid var(--ds-border);
   ///border-bottom: none;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 
   @include media-breakpoint-up(lg) {
     padding: 1.5rem;
-  }
-
-  & > :last-child {
-    //margin-bottom: 0;
   }
 }
 
@@ -42,16 +38,16 @@
 }
 
 .bd-example-grid [class^="col"] {
-  border: 1px solid #b3f5ff;
+  border: 1px solid var(--ds-border-accent-purple);
   padding: 0.75rem;
-  background-color: #e6fcff;
+  background-color: var(--ds-background-accent-purple-subtle);
 }
 
 .bd-example-row {
   [class^="col"] {
-    border: 1px solid #b3f5ff;
+    border: 1px solid var(--ds-border-accent-purple);
     padding: 0.75rem;
-    background-color: #e6fcff;
+    background-color: var(--ds-background-accent-purple-subtle);
   }
 
   .row + .row {
@@ -67,16 +63,16 @@
 
 .bd-example-cssgrid {
   .grid > * {
-    border: 1px solid #b3f5ff;
+    border: 1px solid var(--ds-border-accent-purple);
     padding: 0.75rem;
-    background-color: #e6fcff;
+    background-color: var(--ds-background-accent-purple-subtle);
   }
 }
 
 .bd-example-flex {
   div {
-    border: 1px solid #b3f5ff;
-    background-color: #e6fcff;
+    border: 1px solid var(--ds-border-accent-purple);
+    background-color: var(--ds-background-accent-purple-subtle);
   }
 }
 
@@ -86,7 +82,7 @@
 
   .position-relative {
     height: 200px;
-    background-color: #c1c7d0;
+    background-color: var(--ds-background-accent-purple-subtle);
   }
 
   .position-absolute {
@@ -112,7 +108,7 @@
 }
 
 .simple-list-example-scrollspy .active {
-  background-color: #eae6ff;
+  background-color: var(--ds-background-accent-purple-subtler);
 }
 
 .bd-example-carousel {
@@ -125,7 +121,6 @@
   .list-group {
     width: 100%;
     max-width: 360px;
-    background-color: #fff;
   }
 }
 
@@ -144,4 +139,26 @@
   .layout-sidebar {
     height: 100%;
   }
+}
+
+.bd-example-offcanvas .offcanvas {
+  position: static;
+  display: block;
+  height: 200px;
+  visibility: visible;
+  transform: translate(0);
+}
+
+.custom-popover {
+  --bs-popover-max-width: 200px;
+  --bs-popover-border-color: #6e5dc6;
+  --bs-popover-header-bg: #6e5dc6;
+  --bs-popover-header-color: var(--bs-white);
+  --bs-popover-body-padding-x: 1rem;
+  --bs-popover-body-padding-y: 0.5rem;
+}
+
+.bd-example-toast-container {
+  min-height: 240px;
+  background-color: #091e420f;
 }

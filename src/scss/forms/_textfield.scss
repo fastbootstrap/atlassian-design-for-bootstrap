@@ -1,0 +1,57 @@
+@import "bootstrap/scss/forms/form-control";
+
+.form-control {
+  --#{$prefix}input-color: #{$input-color};
+  --#{$prefix}input-bg: #{$input-bg};
+  --#{$prefix}input-border-color: #{$input-border-color};
+  --#{$prefix}input-hover-bg: #{$input-hover-bg};
+  --#{$prefix}input-focus-color: #{$input-focus-color};
+  --#{$prefix}input-focus-bg: #{$input-focus-bg};
+  --#{$prefix}input-focus-border-color: #{$input-focus-border-color};
+  --#{$prefix}input-disabled-color: #{$input-disabled-color};
+  --#{$prefix}input-disabled-bg: #{$input-disabled-bg};
+  --#{$prefix}input-disabled-border-color: #{$input-disabled-border-color};
+
+  color: var(--#{$prefix}input-color);
+  border-color: var(--#{$prefix}input-border-color);
+  background-color: var(--#{$prefix}input-bg);
+
+  &:hover:not(:focus) {
+    background-color: var(--#{$prefix}input-hover-bg);
+  }
+
+  &:focus {
+    color: var(--#{$prefix}input-focus-color);
+    border-color: var(--#{$prefix}input-focus-border-color);
+    background-color: var(--#{$prefix}input-focus-bg);
+  }
+
+  &:disabled {
+    color: var(--#{$prefix}input-disabled-color);
+    background-color: var(--#{$prefix}input-disabled-bg);
+    border-color: var(--#{$prefix}input-disabled-border-color);
+  }
+}
+
+.form-control-color {
+  --#{$prefix}input-hover-border-color: #{$ds-border-focused};
+
+  height: $input-height;
+  width: $input-height;
+  padding: 1px;
+  border: $input-border-width solid transparent;
+
+  &:hover {
+    border-color: var(--#{$prefix}input-hover-border-color);
+  }
+
+  &.form-control-sm {
+    width: $input-height-sm;
+    height: $input-height-sm;
+  }
+  
+  &.form-control-lg {
+    width: $input-height-lg;
+    height: $input-height-lg;
+  }
+}

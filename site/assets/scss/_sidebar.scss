@@ -30,18 +30,18 @@
     padding-top: 8px;
     padding-bottom: 8px;
     line-height: 1.2;
-    color: #344563;
+    color: var(--ds-text);
     background-color: transparent;
 
     &:hover {
-      color: #344563;
+      color: var(--ds-text);
       text-decoration: none;
-      background-color: #f4f5f7;
+      background-color: var(--ds-background-neutral-subtle-hovered);
     }
 
     &.active {
-      color: #0052cc;
-      background-color: rgba(222, 235, 255, 0.65);
+      color: var(--ds-text-selected);
+      background-color: var(--ds-background-selected);
 
       &::after {
         content: "";
@@ -51,7 +51,7 @@
         left: 0;
         width: 4px;
         height: 100%;
-        background-color: #0065ff;
+        background-color: var(--ds-border-selected);
         z-index: 2;
       }
     }

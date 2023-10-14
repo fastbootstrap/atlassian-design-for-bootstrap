@@ -1,16 +1,19 @@
 .avatar {
+  --#{$prefix}avatar-width: #{$avatar-width};
+  --#{$prefix}avatar-bg: #{$avatar-bg};
+
   position: relative;
-  width: $avatar-width;
-  height: $avatar-width;
+  width: var(--#{$prefix}avatar-width);
+  height: var(--#{$prefix}avatar-width);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: $avatar-bg;
   color: $avatar-color;
   line-height: 1;
   font-size: 14px;
   border-radius: 50%;
   object-fit: cover;
+  background-color: var(--#{$prefix}avatar-bg);
 
   & > img,
   & > svg {
@@ -22,77 +25,31 @@
   }
 }
 
+.avatar-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $ds-space-025;
+}
+
 .avatar-stack {
   display: flex;
-  flex-direction: row;
-}
-
-.avatar-stack-reverse {
   flex-direction: row-reverse;
-  margin-left: 0;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 
-  .avatar-item {
-    margin-left: 0;
-    margin-right: -8px;
+  .avatar {
+    overflow: hidden;
+    margin-left: -8px;
+    border: 2px solid white;
+
+    &:last-child > & {
+      margin-left: 0;
+    }
   }
 }
 
-.avatar-item {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: center;
-  border-radius: 50%;
-  outline: 0;
-  padding: 0;
-  box-sizing: content-box;
-  border: 2px solid $white;
-  overflow: hidden;
-  margin-left: -8px;
-
-  &:first-child {
-    margin-left: 0;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    inset: 0;
-    background-color: transparent;
-    border-radius: 50%;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.2s ease;
-  }
-
-  &:hover {
-    text-decoration: none;
-  }
-}
-
-.avatar-badge {
-  position: absolute;
-  height: 8px;
-  width: 8px;
-  bottom: 14%;
-  right: 14%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  line-height: 1;
-  background-color: $neutral-200;
-  color: $white;
-  transform: translate(50%, 50%);
-  overflow: hidden;
-  z-index: 1;
-}
-
-@each $name, $width in $avatar-widths {
+@each $name, $width in $avatar-values {
   .avatar-#{$name} {
-    width: $width;
-    height: $width;
+    --#{$prefix}avatar-width: #{$width};
   }
 }

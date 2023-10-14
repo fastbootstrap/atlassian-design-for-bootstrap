@@ -16,6 +16,20 @@ menu:
 
 Automatically update Bootstrap navigation or list group components based on scroll position to indicate which link is currently active in the viewport.
 
+
+## How it works
+
+Scrollspy toggles the `.active` class on anchor (`<a>`) elements when the element with the `id` referenced by the anchor's `href` is scrolled into view. Scrollspy is best used in conjunction with a Bootstrap [pill component]({{< docsref "pills" >}}) or [list group]({{< docsref "list-group" >}}), but it will also work with any anchor elements in the current page. Here's how it works.
+
+- To start, scrollspy requires two things: a navigation, list group, or a simple set of links, plus a scrollable container. The scrollable container can be the `<body>` or a custom element with a set `height` and `overflow-y: scroll`.
+
+- On the scrollable container, add `data-bs-spy="scroll"` and `data-bs-target="#navId"` where `navId` is the unique `id` of the associated navigation. Be sure to also include a `tabindex="0"` to ensure keyboard access.
+
+- As you scroll the "spied" container, an `.active` class is added and removed from anchor links within the associated navigation. Links must have resolvable `id` targets, otherwise they're ignored. For example, a `<a href="#home">home</a>` must correspond to something in the DOM like `<div id="home"></div>`
+
+- Target elements that are not visible will be ignored. See the [Non-visible elements](#non-visible-elements) section below.
+
+
 ## Basic examples
 
 ### Navbar 
@@ -327,18 +341,6 @@ Scrollspy is not limited to nav components and list groups, so it will work on a
   </div>
 </div>
 ```
-
-## How it works
-
-Scrollspy toggles the `.active` class on anchor (`<a>`) elements when the element with the `id` referenced by the anchor's `href` is scrolled into view. Scrollspy is best used in conjunction with a Bootstrap [pill component]({{< docsref "pills" >}}) or [list group]({{< docsref "list-group" >}}), but it will also work with any anchor elements in the current page. Here's how it works.
-
-- To start, scrollspy requires two things: a navigation, list group, or a simple set of links, plus a scrollable container. The scrollable container can be the `<body>` or a custom element with a set `height` and `overflow-y: scroll`.
-
-- On the scrollable container, add `data-bs-spy="scroll"` and `data-bs-target="#navId"` where `navId` is the unique `id` of the associated navigation. Be sure to also include a `tabindex="0"` to ensure keyboard access.
-
-- As you scroll the "spied" container, an `.active` class is added and removed from anchor links within the associated navigation. Links must have resolvable `id` targets, otherwise they're ignored. For example, a `<a href="#home">home</a>` must correspond to something in the DOM like `<div id="home"></div>`
-
-- Target elements that are not visible will be ignored. See the [Non-visible elements](#non-visible-elements) section below.
 
 ## Non-visible elements
 

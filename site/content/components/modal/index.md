@@ -18,7 +18,7 @@ Responsive modal dialog built with the latest Bootstrap 5. Modal is used for dis
 
 Use Bootstrap’s JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content.
 
-## Basic examples
+## Modal example
 
 Toggle a working modal demo by clicking the button below. It will slide down and fade in from the top of the page.
 
@@ -38,7 +38,7 @@ Toggle a working modal demo by clicking the button below. It will slide down and
         sit amet tincidunt ipsum faucibus vitae. Pellentesque eget odio tristique, mattis elit id.
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-subtle" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-subtle" data-bs-dismiss="modal">Secondary Action</button>
         <button type="button" class="btn btn-primary">Confirm</button>
       </div>
     </div>
@@ -79,7 +79,7 @@ Below is a static modal example (meaning its [position]({{< docsref "position" >
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p>Modal body text goes here.</p>
+        <p class="mb-0">Modal body text goes here.</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-subtle" data-bs-dismiss="modal">Close</button>

@@ -18,22 +18,43 @@ Responsive offcanvas/drawer built with the latest Bootstrap 5. Offcanvas compone
 
 Examples for build hidden sidebars into your project for navigation, shopping carts, and more with a few classes and our JavaScript plugin.
 
-## Basic offcanvas example
+## Offcanvas components
 
 Offcanvas includes support for a header with a close button and an optional body class for some initial `padding`. We suggest that you include offcanvas headers with dismiss actions whenever possible, or provide an explicit dismiss action.
+
+{{< example class="bd-example-offcanvas overflow-hidden" >}}
+<div class="offcanvas offcanvas-start show shadow" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+  <div class="offcanvas-header">
+    <h4 class="offcanvas-title" id="offcanvasLabel">Offcanvas</h4>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    Content for the offcanvas goes here. You can place just about any Bootstrap component or custom elements here.
+  </div>
+</div>
+{{</ example >}}
+
+## Offcanvas example
+
+Use the buttons below to show and hide an offcanvas element via JavaScript that toggles the `.show` class on an element with the `.offcanvas` class.
+
+- `.offcanvas` hides content (default)
+- `.offcanvas.show` shows content
 
 You can use a link with the `href` attribute, or a button with the `data-bs-target` attribute. In both cases, the `data-bs-toggle="offcanvas"` is required.
 
 {{< example >}}
+<!-- With Href-->
 <a class="btn btn-link" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-  Show offcanvas
+  Link with href
 </a>
+<!-- with data-bs-toggle="offcanvas" -->
 <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-  Show offcanvas
+  Button with data-bs-target
 </button>
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+    <h4 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h4>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
@@ -43,31 +64,28 @@ You can use a link with the `href` attribute, or a button with the `data-bs-targ
 </div>
 {{</ example >}}
 
-## Dark offcanvas
+## Static backdrop
 
-Change the appearance of offcanvases with utilities to better match them to different contexts like dark navbars. 
-
-In this example below we add `.text-bg-dark` to the `.offcanvas` and `.btn-close-white` to `.btn-close` for proper styling with a dark offcanvas. If you have dropdowns within, consider also adding `.dropdown-menu-dark` to `.dropdown-menu`.
+When backdrop is set to static, the offcanvas will not close when clicking outside of it.
 
 {{< example >}}
-<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDark" aria-controls="offcanvasDark">
-  Dark offcanvas
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+  Static offcanvas
 </button>
-<div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDark" aria-labelledby="offcanvasDarkLabel">
+<div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasDarkLabel">Offcanvas</h5>
-    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <h4 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h4>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
-    Some text as placeholder. In real life you can have the elements you have chosen. 
-    Like, text, images, lists, etc.
+    <div>
+      I will not close if you click outside of me.
+    </div>
   </div>
 </div>
-{{</ example >}}
+{{< /example >}}
 
-## Scrolling 
-
-### Body scrolling
+## Body scrolling
 
 Scrolling the `<body>` element is disabled when an offcanvas and its backdrop are visible. Use the `data-bs-scroll="true"` attribute to enable `<body>` scrolling.
 
@@ -75,7 +93,7 @@ Scrolling the `<body>` element is disabled when an offcanvas and its backdrop ar
 <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Enable body scrolling</button>
 <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+    <h4 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h4>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
@@ -94,7 +112,7 @@ You can also enable <body> scrolling with a visible backdrop by disabled the `da
 </button>
 <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+    <h4 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h4>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
@@ -102,27 +120,6 @@ You can also enable <body> scrolling with a visible backdrop by disabled the `da
   </div>
 </div>
 {{</ example >}}
-
-## Static backdrop
-
-When backdrop is set to static, the offcanvas will not close when clicking outside of it.
-
-{{< example >}}
-<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
-  Static offcanvas
-</button>
-<div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <div>
-      I will not close if you click outside of me.
-    </div>
-  </div>
-</div>
-{{< /example >}}
 
 ## Placement
 
@@ -143,7 +140,7 @@ Try the top, right, and bottom examples out below.
 <!-- offcanvas -->
 <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5>
+    <h4 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h4>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
@@ -152,7 +149,7 @@ Try the top, right, and bottom examples out below.
 </div>
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasLeftLabel">Offcanvas bottom</h5>
+    <h4 class="offcanvas-title" id="offcanvasLeftLabel">Offcanvas bottom</h4>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body small">
@@ -161,7 +158,7 @@ Try the top, right, and bottom examples out below.
 </div>
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+    <h4 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h4>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
@@ -170,7 +167,7 @@ Try the top, right, and bottom examples out below.
 </div>
 <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+    <h4 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h4>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body small">
@@ -194,7 +191,7 @@ For example, `.offcanvas-lg` hides content in an offcanvas below the `lg` breakp
 </div>
 <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">Responsive offcanvas</h5>
+    <h4 class="offcanvas-title" id="offcanvasResponsiveLabel">Responsive offcanvas</h4>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">

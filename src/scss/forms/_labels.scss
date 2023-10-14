@@ -1,0 +1,9 @@
+@import "bootstrap/scss/forms/labels";
+
+.form-check-label {
+  --#{$prefix}form-check-disabled-color: #{$form-check-input-disabled-color};
+  --#{$prefix}form-check-color: #{$form-check-label-color};
+
+  font-size: $form-label-font-size;
+  line-height: $line-height-base;
+}

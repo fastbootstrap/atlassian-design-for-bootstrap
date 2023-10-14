@@ -16,7 +16,7 @@ menu:
 
 Responsive carousel built with the latest Bootstrap 5. Carousel is a slideshow cycling through different elements such as photos, videos, or text. Many examples and easy tutorials.
 
-## Basic example
+## Carousel example
 
 Carousel allows navigate the multiple images and displaing in sequence in the same place.
 
@@ -277,62 +277,13 @@ Carousels support swiping left/right on touchscreen devices to move between slid
 </div>
 {{< /example >}}
 
-
-## Dark variant
-
-Add `.carousel-dark` to the `.carousel` for darker controls, indicators, and captions. Controls have been inverted from their default white fill with the `filter` CSS property. Captions and controls have additional Sass variables that customize the `color` and `background-color`.
-
-{{< example class="bd-example-carousel" >}}
-<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="10000">
-      <img class="d-block w-100" src="/images/carousel/1.jpg" alt="frog" />
-      <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item" data-bs-interval="2000">
-      <img class="d-block w-100" src="/images/carousel/2.jpg" alt="frog" />
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="/images/carousel/3.jpg" alt="frog" />
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-{{< /example >}}
-
 ## Custom transition 
 
 The transition duration of `.carousel-item` can be changed with the `$carousel-transition-duration` Sass variable before compiling or custom styles if you’re using the compiled CSS. If multiple transitions are applied, make sure the transform transition is defined first (eg. `transition: transform 2s ease, opacity .5s ease-out`).
 
-## Related
-
-- [Progress indicator]({{< docsref "progress-indicator" >}})
-
 {{</ tab >}}
 {{< tab "API" >}}
+
 ## Usage
 
 ### Via data attributes

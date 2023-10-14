@@ -1,5 +1,6 @@
 .btn-group,
-.btn-group-vertical {
+.btn-group-vertical,
+.btn-group-segmented {
   position: relative;
   display: inline-flex;
   vertical-align: middle;
@@ -8,7 +9,32 @@
     position: relative;
     flex: 1 1 auto;
   }
+}
 
+.btn-group {
+  --#{$prefix}btn-group-spacing: #{$ds-space-100};
+
+  gap: var(--#{$prefix}btn-group-spacing);
+}
+
+.btn-group-vertical {
+  --#{$prefix}btn-group-spacing: #{$ds-space-100};
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--#{$prefix}btn-group-spacing);
+
+  > .btn,
+  > .btn-group {
+    width: 100%;
+  }
+}
+
+.btn-group-segmented {
+  @include border-radius($btn-border-radius);
+
+  // Bring the hover, focused, and "active" buttons to the front to overlay
+  // the borders properly
   > .btn-check:checked + .btn,
   > .btn-check:focus + .btn,
   > .btn:hover,
@@ -17,43 +43,45 @@
   > .btn.active {
     z-index: 1;
   }
-}
 
-.btn-group {
-  & > .btn ~ .btn {
-    margin-left: $button-group-spacing;
+  // Prevent double borders when buttons are next to each other
+  > :not(.btn-check:first-child) + .btn,
+  > .btn-group:not(:first-child) {
+    margin-left: calc(
+      #{$btn-border-width} * -1
+    ); // stylelint-disable-line function-disallowed-list
   }
 
-  &.btn-group-lg {
-    & > .btn {
-      @extend .btn-lg;
-    }
+  // Reset rounded corners
+  > .btn:not(:last-child):not(.dropdown-toggle):not(.dropdown-toggle-split),
+  > .btn.dropdown-toggle-split:first-child,
+  > .btn-group:not(:last-child) > .btn {
+    @include border-end-radius(0);
   }
 
-  &.btn-group-sm {
-    & > .btn {
-      @extend .btn-sm;
-    }
-  }
-}
-
-.btn-group-vertical {
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-
-  > .btn,
-  > .btn-group {
-    width: 100%;
-  }
-
-  > .btn-group:not(:first-child),
-  > .btn + .btn,
-  > .btn-group + .btn {
-    margin-top: $button-group-spacing;
+  // The left radius should be 0 if the button is:
+  // - the "third or more" child
+  // - the second child and the previous element isn't `.btn-check` (making it the first child visually)
+  // - part of a btn-group which isn't the first child
+  > .btn:nth-child(n + 3),
+  > :not(.btn-check) + .btn,
+  > .btn-group:not(:first-child) > .btn {
+    @include border-start-radius(0);
   }
 }
 
+// Sizing
+//
+// Remix the default button sizing classes into new ones for easier manipulation.
+
+.btn-group-sm > .btn {
+  @extend .btn-sm;
+}
+.btn-group-lg > .btn {
+  @extend .btn-lg;
+}
+
+// Optional: Group multiple button groups together for a toolbar
 .btn-toolbar {
   display: flex;
   flex-wrap: wrap;
@@ -61,25 +89,5 @@
 
   .input-group {
     width: auto;
-  }
-
-  .btn-group {
-    
-    & > .btn ~ .btn {
-      margin-left: -$btn-border-width;
-      z-index: 1;
-    }
-
-    > .btn:not(:last-child):not(.dropdown-toggle),
-    > .btn.dropdown-toggle-split:first-child,
-    > .btn-group:not(:last-child) > .btn {
-      @include border-end-radius(0);
-    }
-
-    > .btn:nth-child(n + 3),
-    > :not(.btn-check) + .btn,
-    > .btn-group:not(:first-child) > .btn {
-      @include border-start-radius(0);
-    }
   }
 }

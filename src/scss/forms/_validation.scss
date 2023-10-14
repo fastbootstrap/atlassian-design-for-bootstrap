@@ -1,0 +1,27 @@
+@import "bootstrap/scss/forms/validation";
+
+@each $state in map-keys($form-validation-states) {
+  .form-control {
+    @include form-validation-state-selector($state) {
+      &:focus {
+        border-color: var(--#{$prefix}input-focus-border-color);
+      }
+    }
+  }
+
+  .form-check-input {
+    @include form-validation-state-selector($state) {
+      @if $state== "valid" {
+        border-color: var(--#{$prefix}form-check-checked-border-color);
+
+        &:checked {
+          background-color: var(--#{$prefix}form-check-checked-bg);
+        }
+      }
+
+      ~ .form-check-label {
+        color: var(--#{$prefix}form-check-color);
+      }
+    }
+  }
+}

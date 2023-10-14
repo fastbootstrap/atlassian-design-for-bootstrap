@@ -12,22 +12,12 @@ menu:
 
 Give textual form controls like `<input>`s and `<textarea>`s an upgrade with custom styles, sizing, focus states, and more.
 
-## Basic text field
+## Basic TextField
 
 Using the `.form-control` class on the `<input>` element.
 
 {{< example >}}
-<input type="text" class="form-control" placeholder="Default input" />
-{{</ example >}}
-
-## Sizes
-
-Set heights using classes like `.form-control-lg` and `.form-control-sm`.
-
-{{< example class="d-grid gap-3">}}
-<input class="form-control form-control-sm" type="text" placeholder="Small" />
-<input class="form-control" type="text" placeholder="Normal" />
-<input class="form-control form-control-lg" type="text" placeholder="Large" />
+<input type="text" class="form-control" placeholder="Click here to input..." />
 {{</ example >}}
 
 ## Disabled
@@ -35,7 +25,7 @@ Set heights using classes like `.form-control-lg` and `.form-control-sm`.
 Add the `disabled` boolean attribute on an `input` to give it a grayed out appearance, remove pointer events, and prevent focusing.
 
 {{< example >}}
-<input class="form-control" type="text" placeholder="Disabled input"
+<input class="form-control" type="text" placeholder="can't touch this..."
  aria-label="disabled input example" disabled />
 {{</ example >}}
 
@@ -44,51 +34,47 @@ Add the `disabled` boolean attribute on an `input` to give it a grayed out appea
 Add the `readonly` boolean attribute on an `input` to prevent modification of the input’s value. `readonly` inputs can still be focused and selected, while `disabled` inputs cannot.
 
 {{< example >}}
-<input class="form-control" type="text" value="Readonly input here..."
+<input class="form-control" type="text" value="Is read only..."
  aria-label="readonly input example" readonly />
 {{</ example >}}
 
-### Readonly plain text
+## Readonly plain text
 
 If you want to have `<input readonly>` elements in your form styled as plain text, replace `.form-control` with .`form-control-plaintext` to remove the default form field styling and preserve the correct `margin` and `padding`.
 
-{{< example >}}
-<div class="d-flex align-items-center">
-  <label class="me-3 fw-semibold">Email:</label>
-  <input type="text" readonly class="form-control-plaintext" value="email@example.com" />
+{{< example class="d-flex flex-column" >}}
+<div class="mb-3 row">
+  <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+  <div class="col-sm-10">
+    <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+  </div>
 </div>
+<div class="mb-3 row">
+  <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+  <div class="col-sm-10">
+    <input type="password" class="form-control" id="inputPassword">
+  </div>
+ </div>
 {{</ example >}}
 
-## With icons
+## Sizes
 
-Text fields can include elements before and after the input. This is useful for adding elements like icons or buttons into the text field.
+Set heights using classes like `.form-control-lg` and `.form-control-sm`.
 
-### Before input
-
-Add an icon element with the `.input-field-leading` class inside the `.input-field` element.
-
-{{< example >}}
-<div class="input-field">
-  <span class="input-field-leading"><i class="fas fa-user-circle"></i></span>
-  <input type="text" class="form-control" />
-</div>
+{{< example class="d-grid gap-3">}}
+<input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" />
+<input class="form-control" type="text" placeholder=".form-control" />
+<input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" />
 {{</ example >}}
 
-### After input
-
-Add an icon element with the `.input-field-trailing` class inside the `.input-field` element.
-
-{{< example >}}
-<div class="input-field">
-  <span class="input-field-trailing"><i class="fas fa-exclamation-triangle"></i></span>
-  <input type="text" class="form-control" />
-</div>
-{{</ example >}}
 
 ## Validation
 
+Use the `.is-invalid` and `is-valid` shows the error and success state for the text input.
+
 {{< example >}}
-<form>
+
+<form class="was-validated">
   <div class="mb-3">
     <label for="validationDefault01" class="form-label">First name</label>
     <input type="text" class="form-control is-invalid" id="validationDefault01" required />
@@ -102,9 +88,10 @@ Add an icon element with the `.input-field-trailing` class inside the `.input-fi
 </form>
 {{</ example >}}
 
+
 See more information about how to validation at the [Validation section]({{< ref "validation" >}}).
 
-## Types
+## Input types
 
 The `<input>` element support for all HTML5 types: `text`, `password`, `datetime`, `datetime-local`, `date`, `month`, `time`, `week`, `number`, `email`, `url`, `search`, `tel`, and `color`.
 
@@ -118,13 +105,15 @@ Set the `type="file"` to the `<input>`.
 
 ### Color input
 
-Set the `type="color"` and add `.form-control-color` to the `<input>`. We use the modifier class to set fixed heights and override some inconsistencies between browsers.
+Set the `type="color"` and add `.form-control-color` to the `<input>`. We use the modifier class to set fixed heights and override some inconsistencies between browsers. 
 
 {{< example >}}
 <label for="exampleColorInput" class="form-label">Color picker</label>
-<input type="color" class="form-control form-control-color"
- id="exampleColorInput" value="#563d7c" title="Choose your color">
+<input type="color" class="form-control form-control-sm form-control-color"
+ id="exampleColorInput" value="#8777d9" title="Choose your color">
 {{</ example >}}
+
+You can use ` form-control-sm` or `.form-control-lg` to change its sizes.
 
 ### Email input
 
@@ -184,6 +173,7 @@ While most browsers and operating systems include some support for `<datalist>` 
 <label for="exampleDataList" class="form-label">Datalist example</label>
 <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
 <datalist id="datalistOptions">
+
   <option value="San Francisco">
   <option value="New York">
   <option value="Seattle">

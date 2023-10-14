@@ -18,17 +18,60 @@ Responsive toast built with the latest Bootstrap 5. Toasts are lightweight notif
 
 Push notifications to your visitors with a toast, a lightweight and easily customizable alert message.
 
-## Basic example
+## Basic toast
+
+To encourage extensible and predictable toasts, we recommend a header and body. Toast headers use `display: flex`, allowing easy alignment of content thanks to our margin and flexbox utilities.
+
+Toasts are as flexible as you need and have very little required markup. At a minimum, we require a single element to contain your “toasted” content and strongly encourage a dismiss button.
+
+<div class="bd-example">
+<div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast-header">
+    <svg class="bd-placeholder-img rounded me-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#007aff"></rect></svg>
+    <strong class="me-auto">Bootstrap</strong>
+    <small>11 mins ago</small>
+    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+  <div class="toast-body">
+    Hello, world! This is a toast message.
+  </div>
+</div>
+</div>
+
+```html
+<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast-header">
+    <img src="..." class="rounded me-2" alt="...">
+    <strong class="me-auto">Bootstrap</strong>
+    <small>11 mins ago</small>
+    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+  <div class="toast-body">
+    Hello, world! This is a toast message.
+  </div>
+</div>
+```
+## Live example
 
 Clicking the button below. The toast will be displayed in the bottom-left of the page.
 
 {{< example class="bd-example-toast" >}}
 <button type="button" class="btn btn-primary" id="liveToastBtn">Show toast</button>
-<div class="toast-container position-fixed bottom-0 start-0 p-3">
+<div class="toast-container position-fixed bottom-0 start-0 p-6">
   <div class="toast" id="liveToast" role="alert" aria-live="assertive" aria-atomic="true">
-    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-    <div class="toast-header">Good news, everyone</div>
-    <div class="toast-body">I will auto dismiss after 5 seconds.</div>
+    <div class="toast-body">
+      <div class="d-flex gap-4">
+        <span class="text-success"><i class="fa-solid fa-circle-check fa-lg"></i></span>
+        <div class="d-flex flex-column flex-grow-1 gap-2">
+          <div class="d-flex align-items-center">
+            <span class="fw-semibold">#1 Your changes were saved</span>
+            <button type="button" class="btn-close btn-close-sm ms-auto" data-bs-dismiss="toast"
+              aria-label="Close"></button>
+          </div>
+          <span>I will auto dismiss after 8 seconds.</span>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 {{</ example >}}
@@ -46,96 +89,75 @@ Toasts are opt-in for performance reasons, so you must initialize toast yourself
   });
 ```
 
-### Information
-
-Add the `.toast-info` to `.toast` will display an additional icon for information states.
-
-{{< example class="bd-example-toast" >}}
-<button type="button" class="btn btn-primary">Show information toast</button>
-<div class="toast-container position-fixed bottom-0 start-0 p-3">
-  <div class="toast toast-info" role="alert" aria-live="assertive" aria-atomic="true">
-    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-    <div class="toast-header">Information</div>
-    <div class="toast-body">I will auto dismiss after 5 seconds.</div>
-  </div>
-</div>
-{{</ example >}}
-
-### Warning
-
-Add the `.toast-warning` to `.toast` will display an additional icon for warning states.
-
-{{< example class="bd-example-toast" >}}
-<button type="button" class="btn btn-primary">Show warning toast</button>
-<div class="toast-container position-fixed bottom-0 start-0 p-3">
-  <div class="toast toast-warning" role="alert" aria-live="assertive" aria-atomic="true">
-    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-    <div class="toast-header">Success!</div>
-    <div class="toast-body">I will auto dismiss after 5 seconds.</div>
-  </div>
-</div>
-{{</ example >}}
-
-### Error
-
-Add the `.toast-danger` to `.toast` will display an additional icon for error states.
-
-{{< example class="bd-example-toast" >}}
-<button type="button" class="btn btn-primary">Show error toast</button>
-<div class="toast-container position-fixed bottom-0 start-0 p-3">
-  <div class="toast toast-danger" role="alert" aria-live="assertive" aria-atomic="true">
-    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-    <div class="toast-header">Error!</div>
-    <div class="toast-body">I will auto dismiss after 5 seconds.</div>
-  </div>
-</div>
-{{</ example >}}
-
-
-### Success
-
-Add the `.toast-success` to `.toast` will display an additional icon for success states.
-
-{{< example class="bd-example-toast" >}}
-<button type="button" class="btn btn-primary">Show success toast</button>
-<div class="toast-container position-fixed bottom-0 start-0 p-3">
-  <div class="toast toast-success" role="alert" aria-live="assertive" aria-atomic="true">
-    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-    <div class="toast-header">Success!</div>
-    <div class="toast-body">I will auto dismiss after 5 seconds.</div>
-  </div>
-</div>
-{{</ example >}}
-
 ## Color schemes
 
-For fancy style? you can create different toast color schemes with our color and background utilities. Here we’ve added `.text-bg-primary` to the `.toast`, and then added `.btn-close-white` to our close button.
+For fancy style? you can create different toast color schemes with our color and background utilities, likes `.text-bg-{color}` to the `.toast`, and then added `.btn-close-white` to our close button.
 
-{{< example class="bd-example-toast" >}}
-<button type="button" class="btn btn-primary">Primary toast</button>
-<div class="toast-container position-fixed bottom-0 start-0 p-3">
-  <div class="toast text-bg-primary" role="alert" aria-live="assertive" aria-atomic="true">
-    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
-    <div class="toast-body">Hello, world! This is a toast message.</div>
-  </div>
-</div>
-<button type="button" class="btn btn-secondary">Sedondary toast</button>
-<div class="toast-container position-fixed bottom-0 start-50 translate-middle-x p-3">
-  <div class="toast text-bg-secondary" role="alert" aria-live="assertive" aria-atomic="true">
-    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
-    <div class="toast-body">Hello, world! This is a toast message.</div>
-  </div>
-</div>
-<button type="button" class="btn btn-warning">Warning toast</button>
-<div class="toast-container position-fixed bottom-0 end-0 p-3">
-  <div class="toast text-bg-warning" role="alert" aria-live="assertive" aria-atomic="true">
-    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
-    <div class="toast-body">Hello, world! This is a toast message.</div>
+### Success example
+
+Adding `.text-bg-success` to the `.toast`, and then added `.btn-close-white` to our close button. For a crisp edge, we remove the default border with .border-0.
+
+{{< example >}}
+<div class="toast fade show text-bg-success" role="alert">
+  <div class="toast-body">
+    <div class="d-flex gap-4">
+      <span><i class="fa-solid fa-circle-check fa-lg"></i></span>
+      <div class="d-flex flex-grow-1 align-items-center">
+        <span class="fw-semibold">Welcome to the room</span>
+        <button type="button" 
+        class="btn-close btn-close-white btn-close-sm ms-auto" 
+        data-bs-dismiss="toast" 
+        aria-label="Close"></button>
+      </div>
+    </div>
   </div>
 </div>
 {{</ example >}}
 
-## Toast position
+### Danger example
+
+Adding `.text-bg-danger` to the `.toast`, and then added `.btn-close-white` to our close button.
+
+{{< example >}}
+<div class="toast fade show text-bg-danger" role="alert">
+  <div class="toast-body">
+    <div class="d-flex gap-4">
+      <span><i class="fa-solid fa-circle-exclamation fa-lg"></i></span>
+      <div class="d-flex flex-grow-1 align-items-center">
+        <span class="fw-semibold">We are having issues</span>
+        <button type="button" 
+        class="btn-close btn-close-white btn-close-sm ms-auto" 
+        data-bs-dismiss="toast" 
+        aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+</div>
+{{</ example >}}
+
+### Warning example
+
+Adding `.text-bg-warning` to the `.toast`, and then added `.btn-close-black` to our close button.
+
+{{< example >}}
+<div class="toast fade show text-bg-warning" role="alert">
+  <div class="toast-body">
+    <div class="d-flex gap-4">
+      <span><i class="fa-solid fa-triangle-exclamation fa-lg"></i></span>
+      <div class="d-flex flex-grow-1 align-items-center">
+        <span class="fw-semibold">Trying again...</span>
+        <button type="button" 
+        class="btn-close btn-close-sm btn-close-black ms-auto" 
+        data-bs-dismiss="toast" 
+        aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+</div>
+{{</ example >}}
+
+
+## Placement 
 
 Place toasts with custom CSS as you need them. The top right is often used for notifications, as is the top middle. If you’re only ever going to show one toast at a time, put the positioning styles right on the `.toast`. Check out our [position utilities]({{< docsref "position" >}}) for more information.
 
@@ -143,13 +165,19 @@ Place toasts with custom CSS as you need them. The top right is often used for n
 
 use the `position-fixed`, `top-0` and `start-0` utility classes on a `.toast-container` element to position Toasts at the top left of the viewport.
 
-{{< example class="bd-example-toast" >}}
-<button type="button" class="btn btn-primary">Top Left</button>
-<div class="toast-container position-fixed top-0 start-0 p-3">
-  <div class="toast toast-success" role="alert" aria-live="assertive" aria-atomic="true">
-    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-    <div class="toast-header">Toast!</div>
-    <div class="toast-body">Hello, world! This is a toast message.</div>
+{{< example  class="bd-example-toast-container">}}
+<div class="toast-container top-0 start-0 p-3">
+  <div class="toast show fade" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-body">
+      <div class="d-flex gap-4">
+        <span class="text-primary"><i class="fa-solid fa-circle-info fa-lg"></i></span>
+        <div class="d-flex flex-grow-1 align-items-center">
+          <span class="fw-semibold">Hello, world! This is a toast message.</span>
+          <button type="button" class="btn-close btn-close-sm btn-close-black ms-auto" data-bs-dismiss="toast"
+            aria-label="Close"></button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 {{</ example >}}
@@ -158,13 +186,19 @@ use the `position-fixed`, `top-0` and `start-0` utility classes on a `.toast-con
 
 use the `position-fixed`, `top-0`, `start-50` and `translate-middle-x` utility classes on a `.toast-container` element to position Toasts at the top center of the viewport.
 
-{{< example class="bd-example-toast" >}}
-<button type="button" class="btn btn-primary">Top Center</button>
-<div class="toast-container position-fixed top-0 start-50 translate-middle-x p-3">
-  <div class="toast toast-info" role="alert" aria-live="assertive" aria-atomic="true">
-    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-    <div class="toast-header">Toast!</div>
-    <div class="toast-body">Hello, world! This is a toast message.</div>
+{{< example  class="bd-example-toast-container">}}
+<div class="toast-container top-0 start-50 translate-middle-x p-3">
+  <div class="toast show fade" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-body">
+      <div class="d-flex gap-4">
+        <span class="text-primary"><i class="fa-solid fa-circle-info fa-lg"></i></span>
+        <div class="d-flex flex-grow-1 align-items-center">
+          <span class="fw-semibold">Hello, world! This is a toast message.</span>
+          <button type="button" class="btn-close btn-close-sm btn-close-black ms-auto" data-bs-dismiss="toast"
+            aria-label="Close"></button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 {{</ example >}}
@@ -173,13 +207,19 @@ use the `position-fixed`, `top-0`, `start-50` and `translate-middle-x` utility c
 
 use the `position-fixed`, `top-0`, `end-0` utility classes on a `.toast-container` element to position Toasts at the top right of the viewport.
 
-{{< example class="bd-example-toast" >}}
-<button type="button" class="btn btn-primary">Top Right</button>
-<div class="toast-container position-fixed top-0 end-0 p-3">
-  <div class="toast toast-warning" role="alert" aria-live="assertive" aria-atomic="true">
-    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-    <div class="toast-header">Toast!</div>
-    <div class="toast-body">Hello, world! This is a toast message.</div>
+{{< example  class="bd-example-toast-container">}}
+<div class="toast-container top-0 end-0 p-3">
+  <div class="toast show fade" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-body">
+      <div class="d-flex gap-4">
+        <span class="text-primary"><i class="fa-solid fa-circle-info fa-lg"></i></span>
+        <div class="d-flex flex-grow-1 align-items-center">
+          <span class="fw-semibold">Hello, world! This is a toast message.</span>
+          <button type="button" class="btn-close btn-close-sm btn-close-black ms-auto" data-bs-dismiss="toast"
+            aria-label="Close"></button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 {{</ example >}}
@@ -188,13 +228,19 @@ use the `position-fixed`, `top-0`, `end-0` utility classes on a `.toast-containe
 
 use the `position-fixed`, `bottom-0`, and `start-0` utility classes on a `.toast-container` element to position Toasts at the bottom left of the viewport.
 
-{{< example class="bd-example-toast" >}}
-<button type="button" class="btn btn-primary">Bottom Left</button>
-<div class="toast-container position-fixed bottom-0 start-0 p-3">
-  <div class="toast toast-info" role="alert" aria-live="assertive" aria-atomic="true">
-    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-    <div class="toast-header">Toast!</div>
-    <div class="toast-body">Hello, world! This is a toast message.</div>
+{{< example  class="bd-example-toast-container">}}
+<div class="toast-container bottom-0 start-0 p-3">
+  <div class="toast show fade" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-body">
+      <div class="d-flex gap-4">
+        <span class="text-primary"><i class="fa-solid fa-circle-info fa-lg"></i></span>
+        <div class="d-flex flex-grow-1 align-items-center">
+          <span class="fw-semibold">Hello, world! This is a toast message.</span>
+          <button type="button" class="btn-close btn-close-sm btn-close-black ms-auto" data-bs-dismiss="toast"
+            aria-label="Close"></button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 {{</ example >}}
@@ -203,13 +249,19 @@ use the `position-fixed`, `bottom-0`, and `start-0` utility classes on a `.toast
 
 use the `position-fixed`, `bottom-0`, `start-50` and `translate-middle-x` utility classes on a `.toast-container` element to position Toasts at the bottom left of the viewport.
 
-{{< example class="bd-example-toast" >}}
-<button type="button" class="btn btn-primary">Bottom Center</button>
-<div class="toast-container position-fixed bottom-0 start-50 translate-middle-x p-3">
-  <div class="toast toast-danger" role="alert" aria-live="assertive" aria-atomic="true">
-    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-    <div class="toast-header">Toast!</div>
-    <div class="toast-body">Hello, world! This is a toast message.</div>
+{{< example  class="bd-example-toast-container">}}
+<div class="toast-container bottom-0 start-50 translate-middle-x p-3">
+  <div class="toast show fade" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-body">
+      <div class="d-flex gap-4">
+        <span class="text-primary"><i class="fa-solid fa-circle-info fa-lg"></i></span>
+        <div class="d-flex flex-grow-1 align-items-center">
+          <span class="fw-semibold">Hello, world! This is a toast message.</span>
+          <button type="button" class="btn-close btn-close-sm btn-close-black ms-auto" data-bs-dismiss="toast"
+            aria-label="Close"></button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 {{</ example >}}
@@ -218,13 +270,19 @@ use the `position-fixed`, `bottom-0`, `start-50` and `translate-middle-x` utilit
 
 use the `position-fixed`, `bottom-0`, and `end-0` utility classes on a `.toast-container` element to position Toasts at the bottom left of the viewport.
 
-{{< example class="bd-example-toast" >}}
-<button type="button" class="btn btn-primary">Bottom Right</button>
-<div class="toast-container position-fixed bottom-0 end-0 p-3">
-  <div class="toast toast-success" role="alert" aria-live="assertive" aria-atomic="true">
-    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-    <div class="toast-header">Toast!</div>
-    <div class="toast-body">Hello, world! This is a toast message.</div>
+{{< example  class="bd-example-toast-container">}}
+<div class="toast-container bottom-0 end-0 p-3">
+  <div class="toast show fade" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-body">
+      <div class="d-flex gap-4">
+        <span class="text-primary"><i class="fa-solid fa-circle-info fa-lg"></i></span>
+        <div class="d-flex flex-grow-1 align-items-center">
+          <span class="fw-semibold">Hello, world! This is a toast message.</span>
+          <button type="button" class="btn-close btn-close-sm btn-close-black ms-auto" data-bs-dismiss="toast"
+            aria-label="Close"></button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 {{</ example >}}
@@ -233,13 +291,19 @@ use the `position-fixed`, `bottom-0`, and `end-0` utility classes on a `.toast-c
 
 use the `position-fixed`, `top-50`, `start-0` and `translate-middle-y` utility classes on a `.toast-container` element to position Toasts at the middle left of the viewport.
 
-{{< example class="bd-example-toast" >}}
-<button type="button" class="btn btn-primary">Middle Left</button>
-<div class="toast-container position-fixed top-50 start-0 translate-middle-y p-3">
-  <div class="toast toast-info" role="alert" aria-live="assertive" aria-atomic="true">
-    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-    <div class="toast-header">Toast!</div>
-    <div class="toast-body">Hello, world! This is a toast message.</div>
+{{< example  class="bd-example-toast-container">}}
+<div class="toast-container top-50 start-0 translate-middle-y p-3">
+  <div class="toast show fade" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-body">
+      <div class="d-flex gap-4">
+        <span class="text-primary"><i class="fa-solid fa-circle-info fa-lg"></i></span>
+        <div class="d-flex flex-grow-1 align-items-center">
+          <span class="fw-semibold">Hello, world! This is a toast message.</span>
+          <button type="button" class="btn-close btn-close-sm btn-close-black ms-auto" data-bs-dismiss="toast"
+            aria-label="Close"></button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 {{</ example >}}
@@ -248,13 +312,20 @@ use the `position-fixed`, `top-50`, `start-0` and `translate-middle-y` utility c
 
 use the `position-fixed`, `top-50`, `end-0` and `translate-middle-y` utility classes on a `.toast-container` element to position Toasts at the middle right of the viewport.
 
-{{< example class="bd-example-toast" >}}
-<button type="button" class="btn btn-primary">Middle Right</button>
-<div class="toast-container position-fixed top-50 end-0 translate-middle-y p-3">
-  <div class="toast toast-success" role="alert" aria-live="assertive" aria-atomic="true">
-    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-    <div class="toast-header">Toast!</div>
-    <div class="toast-body">Hello, world! This is a toast message.</div>
+
+{{< example  class="bd-example-toast-container">}}
+<div class="toast-container top-50 end-0 translate-middle-y p-3">
+  <div class="toast show fade" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-body">
+      <div class="d-flex gap-4">
+        <span class="text-primary"><i class="fa-solid fa-circle-info fa-lg"></i></span>
+        <div class="d-flex flex-grow-1 align-items-center">
+          <span class="fw-semibold">Hello, world! This is a toast message.</span>
+          <button type="button" class="btn-close btn-close-sm btn-close-black ms-auto" data-bs-dismiss="toast"
+            aria-label="Close"></button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 {{</ example >}}
@@ -263,51 +334,84 @@ use the `position-fixed`, `top-50`, `end-0` and `translate-middle-y` utility cla
 
 You can stack toasts by wrapping them in a toast container with `toast-container`, which will vertically add some spacing.
 
-{{< example class="bd-example-toast" >}}
-<button type="button" class="btn btn-primary">Show next toast</button>
-<div class="toast-container position-fixed bottom-0 end-0 p-3">
-  <div class="toast toast-info" role="alert" aria-live="assertive" aria-atomic="true">
-    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-    <div class="toast-header">#1 Backup stale</div>
-    <div class="toast-body">Toast message goes here.</div>
+{{< example >}}
+<div class="toast-container position-static">
+  <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <i class="fa-solid fa-circle-info fa-lg text-primary me-2"></i>
+      <strong class="me-auto">Bootstrap</strong>
+      <small class="text-body-secondary">just now</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      See? Just like this.
+    </div>
   </div>
-  <div class="toast toast-success" role="alert" aria-live="assertive" aria-atomic="true">
-    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-    <div class="toast-header">#2 Success!</div>
-    <div class="toast-body">Heads up, toasts will stack automatically.</div>
-  </div>
-  <div class="toast toast-danger" role="alert" aria-live="assertive" aria-atomic="true">
-    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-    <div class="toast-header">#3 Destructive operation!</div>
-    <div class="toast-body">See? Just like this.</div>
-  </div>
-  <div class="toast toast-warning" role="alert" aria-live="assertive" aria-atomic="true">
-    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-    <div class="toast-header">#4 Warning!</div>
-    <div class="toast-body">Warning message goes here.</div>
+  <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <i class="fa-solid fa-circle-info fa-lg text-primary me-2"></i>
+      <strong class="me-auto">Bootstrap</strong>
+      <small class="text-body-secondary">2 seconds ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Heads up, toasts will stack automatically
+    </div>
   </div>
 </div>
 {{</ example >}}
 
 ## Custom toast
 
-Customize your toasts by removing sub-components, tweaking them with [utilities](https://getbootstrap.com/docs/5.2/utilities/api/), or by adding your own markup.  Here we’ve created a simpler toast by removing the default `.toast-header`, adding a link to allow users to take actions.
+Customize your toasts by removing sub-components, tweaking them with [utilities](https://getbootstrap.com/docs/5.2/utilities/api/), or by adding your own markup.  Here we’ve created a simpler toast by removing the default `.toast-header`, adding a custom hide icon from Bootstrap Icons, and using some [flexbox utilities]({{< docsref "css-grid" >}}) to adjust the layout.
 
-{{< example class="bd-example-toast" >}}
-<button type="button" class="btn btn-primary">Show toast</button>
-<div class="toast-container position-static mt-3">
-  <div class="toast toast-success" role="alert" aria-live="assertive" aria-atomic="true">
-    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+<div class="bd-example">
+<div class="toast align-items-center fade show" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="d-flex">
     <div class="toast-body">
-      Issue START-42 was created successfully
-      <div class="mt-2">
-        <a href="#">View issue</a>
-        <a class="ms-2" href="#">Add to next sprint</a>
-      </div>
+      Hello, world! This is a toast message.
+    </div>
+    <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+</div>
+</div>
+
+```html
+<div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="d-flex">
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+    <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+</div>
+```
+
+Alternatively, you can also add additional controls and components to toasts.
+
+<div class="bd-example">
+<div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast-body">
+    Hello, world! This is a toast message.
+    <div class="mt-2 pt-2 border-top">
+      <button type="button" class="btn btn-primary btn-sm">Take action</button>
+      <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="toast">Close</button>
     </div>
   </div>
 </div>
-{{</ example >}}
+</div>
+
+```html
+<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast-body">
+    Hello, world! This is a toast message.
+    <div class="mt-2 pt-2 border-top">
+      <button type="button" class="btn btn-primary btn-sm">Take action</button>
+      <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="toast">Close</button>
+    </div>
+  </div>
+</div>
+```
 
 ## Accessibility
 

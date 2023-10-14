@@ -1,0 +1,26 @@
+@import "bootstrap/scss/nav";
+
+.nav-pills {
+  --#{$prefix}nav-pills-link-gap: #{$nav-pills-link-gap};
+  --#{$prefix}nav-pills-link-bg: #{$nav-pills-link-bg};
+  --#{$prefix}nav-pills-link-hover-bg: #{$nav-pills-link-hover-bg};
+  --#{$prefix}nav-pills-link-active-border-color: #{$nav-pills-link-active-border-color};
+
+  gap: var(--#{$prefix}nav-pills-link-gap);
+
+  .nav-link {
+    background-color: var(--#{$prefix}nav-pills-link-bg);
+
+    &:hover:not(.active) {
+      background-color: var(--#{$prefix}nav-pills-link-hover-bg);
+    }
+
+    .nav-item:first-child > & {
+      margin-left: 0;
+    }
+
+    .nav-item:last-child > & {
+      margin-right: 0;
+    }
+  }
+}

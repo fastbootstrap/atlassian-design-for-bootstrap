@@ -1,8 +1,9 @@
 code {
-  background-color: #deebff;
-  color: #172b4d;
+  background-color: var(--ds-background-neutral);
+  color: var(--ds-text);
   padding: 2px 4px;
   border-radius: 3px;
+  overflow-wrap: break-word;
 }
 
 .doc-intro {
@@ -12,9 +13,6 @@ code {
 .doc-content {
   @include media-breakpoint-up(lg) {
     max-width: 760px;
-  }
-  @include media-breakpoint-up(xl) {
-    max-width: 960px;
   }
 
   & > h2,
@@ -94,7 +92,7 @@ code {
     left: 0;
     width: 1px;
     height: 100%;
-    background-color: #ebecf0;
+    background-color: var(--ds-border);
     z-index: 1;
   }
 
@@ -125,7 +123,7 @@ code {
       display: flex;
       align-items: center;
       min-height: 24px;
-      color: #6b778c;
+      color: var(--ds-text-subtlest);
       text-decoration: none;
       padding-left: 12px;
 
@@ -137,19 +135,19 @@ code {
         width: 1px;
         height: 100%;
         display: block;
-        background-color: #0065ff;
+        background-color: var(--ds-background-selected-bold);
         opacity: 0;
         transition: all 0.3s linear;
         z-index: 2;
       }
 
       &:hover {
-        color: #0052cc;
+        color: var(--ds-text-subtle);
         text-decoration: none;
       }
 
       &.active {
-        color: #0052cc;
+        color: var(--ds-text-selected);
 
         &::after {
           opacity: 1;
@@ -159,65 +157,19 @@ code {
   }
 }
 
-.callout {
-  padding: 20px;
+.bd-callout {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
-
-  code {
-    color: #de350b;
-    background-color: transparent;
-  }
-
-  &.info {
-    background-color: #deebff;
-  }
-
-  &.danger {
-    background-color: #ffebe6;
-  }
-
-  &.warning {
-    background-color: #fffae6;
-  }
-
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin-bottom: 8px;
-    line-height: 1.2;
-    font-size: 16px;
-    font-weight: 500;
-  }
-
-  p {
-    margin: 8px 0;
-    font-size: 14px;
-
-    &:first-child {
-      margin-top: 0;
-    }
-  }
-
-  ul > li:first-child > p {
-    margin-top: 0;
-  }
-
-  ul > li:last-child > p {
-    margin-bottom: 0;
-  }
 }
 
 .lozenge {
-  &.new {
-    background-color: #eae6ff;
-    color: #403294;
-  }
+  display: inline-block;
+  padding: 0 4px;
+  border-radius: var(--bs-border-radius);
+  font-size: 14px;
 
-  &.beta {
-    background-color: #deebff ;
-    color: #0747a6;
+  &.new {
+    background-color: var(--ds-background-discovery);
+    color: var(--ds-text-discovery);
   }
 }

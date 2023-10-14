@@ -1,8 +1,10 @@
+@import "bootstrap/scss/dropdown";
+
 .dropdown {
   display: inline-flex;
   vertical-align: top;
 
-  &.is-hoverable {
+  &.dropdown-hover {
     &:hover {
       .dropdown-menu {
         display: block;
@@ -28,4 +30,8 @@
 
 .dropdown-header {
   font-weight: 500;
+}
+
+.dropdown-divider {
+  border-width: 2px;
 }

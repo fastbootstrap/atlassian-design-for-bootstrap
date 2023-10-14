@@ -20,7 +20,7 @@
     {{ range index $menus .name }}
       <li>
         {{ $is_active := $page.IsMenuCurrent $active_menu . }}
-        <a href="{{ .URL }}" class="sidebar__link d-block {{ if $is_active }}active{{ end }}">{{ .Name }}{{ with .Page.Params.status }}<span class="lozenge {{.}} ms-1 fw-normal">{{ . }}</span>{{ end }}</a>
+        <a href="{{ .URL }}" class="sidebar__link d-flex justify-content-between {{ if $is_active }}active{{ end }}">{{ .Name }}{{ with .Page.Params.status }}<span class="lozenge me-2 me-lg-4 text-uppercase fw-medium fs-xs {{.}}">{{ . }}</span>{{ end }}</a>
       </li>
     {{ end }}
   </ul>

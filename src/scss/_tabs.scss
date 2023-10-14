@@ -1,4 +1,6 @@
 .nav-tabs {
+  --#{$prefix}nav-tabs-link-hover-border-color: #{$nav-tabs-border-hover-color};
+  
   position: relative;
 
   &::before {
@@ -9,13 +11,25 @@
     height: 2px;
     width: 100%;
     border-radius: 2px;
-    background-color: $neutral-30;
+    background-color: $nav-tabs-border-color;
+  }
+
+  & > .nav-item {
+    padding-left: var(--#{$prefix}nav-link-padding-x);
+    padding-right: var(--#{$prefix}nav-link-padding-x);
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
   }
 
   .nav-link {
+    --#{$prefix}nav-link-padding-x: 0;
     position: relative;
-    font-size: 0.875rem;
-    font-weight: 500;
 
     &::after {
       content: "";
@@ -29,33 +43,60 @@
       @include transition($nav-link-transition);
     }
 
+    &:hover::after {
+      background-color: var(--#{$prefix}nav-tabs-link-hover-border-color);
+    }
+
     &.active,
     .nav-item.show & {
       &::after {
-        background-color: $nav-tabs-link-active-color;
+        background-color: var(--#{$prefix}nav-tabs-link-active-color);
       }
     }
   }
 }
 
+///
+/// Vertical tabs
+/// 
 .nav-tabs-vertical {
+  --#{$prefix}nav-link-padding-x: #{$nav-link-padding-y}; 
+  --#{$prefix}nav-link-padding-y: #{$nav-link-padding-x};
+
   flex-direction: column;
 
   &::before {
     width: 2px;
     height: 100%;
-    right: 0;
-    left: auto;
+    left: 0;
+    right: auto;
+  }
+
+  & > .nav-item {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: var(--#{$prefix}nav-link-padding-y);
+    padding-bottom: var(--#{$prefix}nav-link-padding-y);
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+    }
   }
 
   .nav-link {
-    padding: $nav-link-padding-x $nav-link-padding-y;
+    --#{$prefix}nav-link-padding-y: 0;
+
     text-align: center;
+
     &::after {
       width: 2px;
       height: 100%;
-      right: 0;
-      left: auto;
+      left: 0;
+      right: auto;
     }
   }
 }

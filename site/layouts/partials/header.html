@@ -1,4 +1,4 @@
-<header class="navbar navbar-expand-lg header-navbar py-0 sticky-top bg-white">
+<header class="navbar navbar-expand-lg py-0 sticky-top bd-navbar">
   <nav class="container-fluid px-md-3 px-lg-4">
     <a class="navbar-brand d-inline-flex align-items-center m-0 p-0 me-lg-6 me-xl-9 p-1 rounded text-reset" href="/">
       <svg class="brand-img" width="24" height="24" viewBox="0 0 32 32">
@@ -9,17 +9,33 @@
       <h2 class="d-none d-md-block fw-semibold fs-5 ls-wide ms-2 mb-0">FastBootstrap</h2>
     </a>
     <div class="collapse navbar-collapse">
-      <ul class="navbar-nav ps-lg-5">
+      <ul class="navbar-nav navbar-nav-pills navbar-nav-underline ps-lg-5 flex-grow-1">
         {{ $page := . }}
         {{ range .Site.Menus.global }}
           {{ $active := or ($page.IsMenuCurrent "global" .) (eq $page.Section .Identifier) }}
-          <li class="nav-item mx-2 mx-lg-3 {{ if $active }}active{{ end }}">
-            <a class="nav-link fw-semibold rounded fs-sm" href="{{ .URL }}">{{ .Name }}</a>
+          <li class="nav-item">
+            <a class="nav-link {{ if $active }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
           </li>
         {{ end }}
-        <li class="nav-item ms-auto me-lg-4">
-          <button class="bg-transparent fs-sm text-neutral-200 rounded-2 btn-search border border-2 border-neutral-40 bd-w-56 text-start py-1 ps-2" type="button"  data-bs-toggle="modal" data-bs-target="#searchModal">
-            <svg class="me-1" width="16" height="16" viewBox="0 0 24 24" role="presentation"><path d="M16.436 15.085l3.94 4.01a1 1 0 01-1.425 1.402l-3.938-4.006a7.5 7.5 0 111.423-1.406zM10.5 16a5.5 5.5 0 100-11 5.5 5.5 0 000 11z" fill="currentColor" fill-rule="evenodd"></path></svg> Search
+        <li class="nav-item ms-auto me-3">
+          <div class="position-relative">
+            <button class="btn border-0" id="bd-theme" type="button" data-bs-toggle="dropdown" data-reference="parent" aria-expanded="false"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></button>
+            <ul class="dropdown-menu dropdown-menu-end" role="menu">
+              <li>
+                <button class="dropdown-item" type="button" id="light-theme-button" data-bs-theme-value="light"><i class="fa-solid fa-sun fa-lg"></i><span class="ms-2">Light</span></button>
+              </li>
+              <li>
+                <button class="dropdown-item" type="button" id="dark-theme-button" data-bs-theme-value="dark"><i class="fa-solid fa-moon fa-lg"></i><span class="ms-2">Dark</span></button>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item me-lg-4">
+          <button class="bg-transparent fs-sm text-muted rounded-2 btn-search border border-2 border-neutral-40 bd-w-56 text-start py-1 ps-2" type="button" data-bs-toggle="modal" data-bs-target="#searchModal">
+            <svg class="me-1" width="16" height="16" viewBox="0 0 24 24" role="presentation">
+              <path d="M16.436 15.085l3.94 4.01a1 1 0 01-1.425 1.402l-3.938-4.006a7.5 7.5 0 111.423-1.406zM10.5 16a5.5 5.5 0 100-11 5.5 5.5 0 000 11z" fill="currentColor" fill-rule="evenodd"></path>
+            </svg>
+            Search
           </button>
         </li>
         <li class="nav-item">

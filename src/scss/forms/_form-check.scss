@@ -1,0 +1,126 @@
+@import "bootstrap/scss/forms/form-check";
+
+.form-check {
+  line-height: 1;
+}
+
+.form-check-input {
+  --#{$prefix}form-check-width: #{$form-check-input-width};
+  --#{$prefix}form-check-height: #{$form-check-input-width};
+  --#{$prefix}form-check-bg: #{$form-check-input-bg};
+  --#{$prefix}form-check-border-width: #{$input-border-width};
+  --#{$prefix}form-check-border-color: #{$ds-border-input};
+  --#{$prefix}form-check-hover-bg: #{$form-check-input-hover-bg};
+  --#{$prefix}form-check-checked-bg-image: #{escape-svg($form-check-input-checked-bg-image)};
+  --#{$prefix}form-check-checked-bg: #{$form-check-input-checked-bg-color};
+  --#{$prefix}form-check-checked-border-color: #{$form-check-input-checked-border-color};
+  --#{$prefix}form-check-checked-hover-bg: #{$form-check-input-checked-hover-bg};
+  --#{$prefix}form-check-checked-hover-border-color: #{$form-check-input-checked-hover-border-color};
+  --#{$prefix}form-check-focus-border-color: #{$ds-border-focused};
+  --#{$prefix}form-check-disabled-bg: #{$form-check-input-disabled-bg};
+  --#{$prefix}form-check-disabled-bg-image: #{escape-svg($form-check-input-disabled-bg-image)};
+  --#{$prefix}form-check-disabled-border-color: #{$form-check-input-disabled-border-color};
+  --#{$prefix}form-check-indeterminate-bg: #{$form-check-input-checked-bg-color};
+  --#{$prefix}form-check-indeterminate-bg-image: #{escape-svg($form-check-input-indeterminate-bg-image)};
+  --#{$prefix}form-check-indeterminate-border-color: #{$form-check-input-checked-border-color};
+  --#{$prefix}form-check-indeterminate-disabled-bg-image: #{escape-svg(
+      $form-check-input-indeterminate-disabled-bg-image
+    )};
+  --#{$prefix}form-check-indeterminate-disabled-bg: #{$form-check-input-disabled-bg};
+  --#{$prefix}form-check-indeterminate-disabled-border-color: #{$form-check-input-disabled-border-color};
+  --#{$prefix}form-radio-checked-bg-image: #{escape-svg($form-check-radio-checked-bg-image)};
+  --#{$prefix}form-radio-disabled-bg-image: #{escape-svg($form-check-radio-disabled-bg-image)};
+
+  width: var(--#{$prefix}form-check-width);
+  height: var(--#{$prefix}form-check-height);
+  border: var(--#{$prefix}form-check-border-width) solid var(--#{$prefix}form-check-border-color);
+
+  &:hover {
+    background-color: var(--#{$prefix}form-check-hover-bg);
+  }
+
+  &:checked {
+    background-color: var(--#{$prefix}form-check-checked-bg);
+    border-color: var(--#{$prefix}form-check-checked-border-color);
+
+    &:hover:not(:disabled) {
+      border-color: var(--#{$prefix}form-check-checked-hover-border-color);
+      background-color: var(--#{$prefix}form-check-checked-hover-bg);
+    }
+
+    &[type="checkbox"] {
+      --#{$prefix}form-check-bg-image: var(--#{$prefix}form-check-checked-bg-image);
+
+      &[disabled],
+      &:disabled {
+        --#{$prefix}form-check-bg-image: var(--#{$prefix}form-check-disabled-bg-image);
+      }
+    }
+
+    &[type="radio"] {
+      --#{$prefix}form-check-bg-image: var(--#{$prefix}form-radio-checked-bg-image);
+
+      &[disabled],
+      &:disabled {
+        --#{$prefix}form-check-bg-image: var(--#{$prefix}form-radio-disabled-bg-image);
+      }
+    }
+  }
+
+  &:checked:focus,
+  &:focus {
+    border-color: var(--#{$prefix}form-check-focus-border-color);
+  }
+
+  &[type="checkbox"]:indeterminate {
+    --#{$prefix}form-check-bg-image: var(--#{$prefix}form-check-indeterminate-bg-image);
+
+    background-color: var(--#{$prefix}form-check-indeterminate-bg);
+    border-color: var(--#{$prefix}form-check-indeterminate-border-color);
+
+    &[disabled],
+    &:disabled {
+      --#{$prefix}form-check-bg-image: var(--#{$prefix}form-check-indeterminate-disabled-bg-image);
+
+      background-color: var(--#{$prefix}form-check-indeterminate-disabled-bg);
+      border-color: var(--#{$prefix}form-check-indeterminate-disabled-border-color);
+    }
+  }
+
+  &[disabled],
+  &:disabled {
+    background-color: var(--#{$prefix}form-check-disabled-bg);
+    border-color: var(--#{$prefix}form-check-disabled-border-color);
+    pointer-events: none;
+
+    ~ .form-check-label {
+      color: var(--#{$prefix}form-check-disabled-color);
+    }
+  }
+}
+
+.btn-check {
+  &[disabled],
+  &:disabled {
+    + .btn {
+      --#{$prefix}btn-bg: #{$ds-background-disabled};
+      --#{$prefix}btn-color: #{$ds-text-disabled};
+      --#{$prefix}btn-border-color: transparent;
+    }
+  }
+}
+
+@if $enable-dark-mode {
+  @include color-mode(dark) {
+    .form-check-input {
+      --#{$prefix}form-check-indeterminate-bg-image: #{escape-svg($form-check-input-indeterminate-bg-image-dark)};
+      --#{$prefix}form-check-indeterminate-disabled-bg-image: #{escape-svg(
+          $form-check-input-indeterminate-disabled-bg-image-dark
+        )};
+      --#{$prefix}form-check-disabled-bg-image: #{escape-svg($form-check-input-disabled-bg-image-dark)};
+      --#{$prefix}form-check-checked-bg-image: #{escape-svg($form-check-input-checked-bg-image-dark)};
+      --#{$prefix}form-radio-checked-bg-image: #{escape-svg($form-check-radio-checked-bg-image-dark)};
+      --#{$prefix}form-radio-disabled-bg-image: #{escape-svg($form-check-radio-disabled-bg-image-dark)};
+    }
+  }
+}

@@ -14,7 +14,7 @@ Responsive breadcrumb built with the latest Bootstrap 5.
 
 Breadcrumbs are used as a high-level representation of where users have navigated. Users can click the links to go back to previous pages.
 
-## Basic example
+## Basic breadcrumb
 
 All items must contain links, and the last item must be selected.
 

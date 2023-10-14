@@ -16,26 +16,17 @@ Use spinner while loading content or performing another process that the user ne
 
 Indicate the loading state of a component or page with Bootstrap spinners, built entirely with HTML, CSS, and no JavaScript.
 
-## Basic examples
+## Spinner
 
-{{< example class="d-grid gap-3" >}}
-<div class="spinner-spin">
-  <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="8" cy="8" r="7"></circle>
-  </svg>
-  <span class="visually-hidden">Loading...</span>
-</div>
-<div class="spinner-border" role="status">
-  <span class="visually-hidden">Loading...</span>
-</div>
-<div class="spinner-grow" role="status">
-  <span class="visually-hidden">Loading...</span>
-</div>
-{{</ example >}}
+Bootstrap “spinners” can be used to show the loading state in your projects. They’re built only with HTML and CSS, meaning you don’t need any JavaScript to create them. You will, however, need some custom JavaScript to toggle their visibility. Their appearance, alignment, and sizing can be easily customized with our amazing utility classes.
+
+For accessibility purposes, each loader here includes `role="status"` and a nested `<span class="visually-hidden">Loading...</span>`.
 
 ## Spin spinner
 
-This ia a most common spinner. Just add the `.spinner-spin` class to create a spinner to wrap the SVG circle element.
+<span class="lozenge new fs-sm">New Feature</span>
+
+This ia a most common spinner. Just add the `.spinner-spin` class to the element to create a spinner that wrap the SVG circle element.
 
 {{< example >}}
 <div class="spinner-spin">
@@ -315,42 +306,9 @@ Use [flexbox utilities]({{< docsref "flex" >}}), [float utilities]({{< docsref "
 </div>
 {{</ example >}}
 
-## With buttons
+## Buttons
 
 Use spinners within buttons to indicate an action is currently processing or taking place. You may also swap the text out of the spinner element and utilize button text as needed.
-
-### Circular spinner
-
-Add spinners to the button, with or without text:
-
-{{< example >}}
-<button class="btn btn-primary" type="button">
-  <span class="spinner">
-    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="8" cy="8" r="7"></circle>
-    </svg>
-    <span class="visually-hidden">Loading...</span>
-  </span>
-</button>
-<button class="btn btn-primary" type="button">
-  <span class="spinner">
-    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="8" cy="8" r="7"></circle>
-    </svg>
-    <span class="visually-hidden">Loading...</span>
-  </span>
-  Loading
-</button>
-<button class="btn btn-primary" type="button" disabled>
-  <span class="spinner">
-    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="8" cy="8" r="7"></circle>
-    </svg>
-    <span class="visually-hidden">Loading...</span>
-  </span>
-  Disabled
-</button>
-{{</ example >}}
 
 ### Border spinner
 

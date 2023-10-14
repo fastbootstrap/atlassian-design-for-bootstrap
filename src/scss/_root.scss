@@ -1,0 +1,21 @@
+:root,
+[data-bs-theme="light"] {
+  @each $color, $values in $all-tokens {
+    $value: nth($values, 1);
+    --#{$ds-prefix}#{$color}: #{$value};
+  }
+}
+
+@if $enable-dark-mode {
+  @include color-mode(dark, true) {
+    @each $color, $values in $all-tokens {
+      $value: nth($values, 2);
+      --#{$ds-prefix}#{$color}: #{$value};
+    }
+
+    .bg-light {
+      --#{$prefix}bg-opacity: 0.08;
+      --#{$prefix}light-rgb: #{to-rgb(dark("background-neutral"))};
+    }
+  }
+}

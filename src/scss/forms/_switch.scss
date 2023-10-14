@@ -1,0 +1,44 @@
+.form-switch {
+  --#{$prefix}form-switch-width: #{$form-switch-width};
+  --#{$prefix}form-switch-height: #{$form-switch-height};
+
+  .form-check-input {
+    --#{$prefix}form-check-bg: #{$form-switch-bg};
+    --#{$prefix}form-check-border-color: transparent;
+    --#{$prefix}form-check-hover-bg: #{$form-switch-hover-bg};
+    --#{$prefix}form-check-focus-border-color: transparent;
+    --#{$prefix}form-check-checked-hover-bg: #{$form-switch-checked-hover-bg};
+    --#{$prefix}form-check-checked-border-color: transparent;
+    --#{$prefix}form-check-checked-bg: #{$form-switch-checked-bg};
+    --#{$prefix}form-switch-checked-bg-image: #{escape-svg($form-switch-checked-bg-image)};
+    --#{$prefix}form-check-disabled-bg: #{$form-switch-disabled-bg};
+    --#{$prefix}form-switch-disabled-bg-image: #{escape-svg($form-switch-disabled-bg-image)};
+    --#{$prefix}form-check-disabled-border-color: transparent;
+    --#{$prefix}form-switch-focus-bg-image: #{escape-svg($form-switch-focus-bg-image)};
+
+    width: var(--#{$prefix}form-switch-width);
+    height: var(--#{$prefix}form-switch-height);
+
+    &:focus {
+      --#{$prefix}form-switch-bg: var(--#{$prefix}form-switch-focus-bg-image);
+    }
+
+    &:checked {
+      --#{$prefix}form-switch-bg: var(--#{$prefix}form-switch-checked-bg-image);
+    }
+
+    &[disabled],
+    &:disabled {
+      --#{$prefix}form-switch-bg: var(--#{$prefix}form-switch-disabled-bg-image);
+    }
+  }
+}
+
+@if $enable-dark-mode {
+  @include color-mode(dark) {
+    .form-switch .form-check-input {
+      --#{$prefix}form-switch-focus-bg-image: #{escape-svg($form-switch-focus-bg-image-dark)};
+      --#{$prefix}form-switch-checked-bg-image: #{escape-svg($form-switch-bg-image-dark)};
+    }
+  }
+}

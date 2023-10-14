@@ -14,7 +14,7 @@ Checkbox component built with the latest Bootstrap 5. Checkboxe is used to selec
 
 Checkbox also can be used to turn an option on or off. If you have a single option, avoid using a checkbox and use an on/off switch instead.
 
-## Basic examples
+## Basic checkboxes
 
 Browser default checkboxes and radios are replaced with the help of `.form-check`, a series of classes for both input types that improves the layout and behavior of their HTML elements, that provide greater customization and cross browser consistency.
 
@@ -54,13 +54,19 @@ Add the `disabled` attribute and the associated `<label>`s are automatically sty
 
 ## Indeterminate
 
-Checkboxes can utilize the [`:indeterminate`](https://developer.mozilla.org/en-US/docs/Web/CSS/:indeterminate) pseudo class when manually set via JavaScript.
+Checkboxes can utilize the [`:indeterminate`](https://developer.mozilla.org/en-US/docs/Web/CSS/:indeterminate) pseudo class when manually set via JavaScript.  There is no available HTML attribute for specifying it.
 
-{{< example class="bd-example-indeterminate" >}}
+{{< example class="d-flex flex-column gap-3 bd-example-indeterminate" >}}
 <div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" />
   <label class="form-check-label" for="flexCheckIndeterminate">
     Indeterminate checkbox
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" disabled>
+  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+    Disabled indeterminate checkbox
   </label>
 </div>
 {{</ example >}}
@@ -81,20 +87,35 @@ Create button-like checkboxes by using `.btn` styles rather than `.form-check-la
 These toggle buttons can further be grouped in a [button group]({{< ref "button-group" >}}) if needed. See an example of [Checkbox button group]({{< ref "button-group#checkbox-button-groups" >}}).
 
 {{< example >}}
-<input type="checkbox" class="btn-check" id="btn-check" autocomplete="off" />
-<label class="btn btn-default" for="btn-check">Mon</label>
+<div class="btn-group">
+  <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off" />
+  <label class="btn btn-default" for="btn-check">Day</label>
 
-<input type="checkbox" class="btn-check" id="btn-check2" checked autocomplete="off" />
-<label class="btn btn-default" for="btn-check2">Tue</label>
+  <input type="checkbox" class="btn-check" id="btn-check2" checked autocomplete="off" />
+  <label class="btn btn-default" for="btn-check2">Week</label>
 
-<input type="checkbox" class="btn-check" id="btn-check3" autocomplete="off" />
-<label class="btn btn-default" for="btn-check3">Wed</label>
+  <input type="checkbox" class="btn-check" id="btn-check3" autocomplete="off" />
+  <label class="btn btn-default" for="btn-check3">Month</label>
 
-<input type="checkbox" class="btn-check" id="btn-check4" autocomplete="off" />
-<label class="btn btn-default" for="btn-check4">Thu</label>
+  <input type="checkbox" class="btn-check" id="btn-check4" autocomplete="off" />
+  <label class="btn btn-default" for="btn-check4">Year</label>
 
-<input type="checkbox" class="btn-check" id="btn-check5" autocomplete="off" disabled />
-<label class="btn btn-default" for="btn-check5">Fri</label>
+  <input type="checkbox" class="btn-check" id="btn-check5" autocomplete="off" disabled />
+  <label class="btn btn-default" for="btn-check5">Disabled</label>
+</div>
+{{</ example >}}
+
+The following example use an `.btn` style rather than the pre-defined button style.
+
+{{< example >}}
+<input type="checkbox" class="btn-check" id="btn-check-4" autocomplete="off">
+<label class="btn" for="btn-check-4">Single toggle</label>
+
+<input type="checkbox" class="btn-check" id="btn-check-5" checked autocomplete="off">
+<label class="btn" for="btn-check-5">Checked</label>
+
+<input type="checkbox" class="btn-check" id="btn-check-6" autocomplete="off" disabled>
+<label class="btn" for="btn-check-6">Disabled</label>
 {{</ example >}}
 
 {{< callout >}}
@@ -107,10 +128,12 @@ Visually, these checkbox toggle buttons are identical to the [button plugin togg
 
 Omit the wrapping `.form-check` for checkboxes and radios that have no label text. Remember to still provide some form of accessible name for assistive technologies (for instance, using aria-label). See the [forms overview accessibility]({{< docsref "form#accessibility" >}}) section for details.
 
-{{< example class="d-grid gap-2" >}}
-<input class="form-check-input" type="checkbox" id="checkboxNoLabe3" value="" aria-label="..." disabled />
-<input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." />
+{{< example class="d-flex flex-wrap gap-4" >}}
 <input class="form-check-input" type="checkbox" id="checkboxNoLabe2" value="" aria-label="..." checked />
+<input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." />
+<input class="form-check-input" type="checkbox" id="checkboxNoLabe3" value="" aria-label="..." disabled />
+<input class="form-check-input" type="checkbox" id="checkboxNoLabe4" value="" aria-label="..." checked disabled />
+
 {{</ example >}}
 
 ## Inline
@@ -120,17 +143,17 @@ Group checkboxes or radios on the same horizontal row by adding `.form-check-inl
 {{< example >}}
 <div class="form-check form-check-inline">
   <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
-  <label class="form-check-label" for="inlineCheckbox1">1</label>
+  <label class="form-check-label" for="inlineCheckbox1">One</label>
 </div>
 
 <div class="form-check form-check-inline">
   <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
-  <label class="form-check-label" for="inlineCheckbox2">2</label>
+  <label class="form-check-label" for="inlineCheckbox2">Two</label>
 </div>
 
 <div class="form-check form-check-inline">
   <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled />
-  <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+  <label class="form-check-label" for="inlineCheckbox3">Three (disabled)</label>
 </div>
 {{</ example >}}
 
@@ -150,40 +173,6 @@ Put your checkboxes on the opposite side with the `.form-check-reverse` modifier
   <input class="form-check-input" type="checkbox" value="" id="reverseCheck2" disabled />
   <label class="form-check-label" for="reverseCheck2">
     Disabled reverse checkbox
-  </label>
-</div>
-{{</ example >}}
-
-## Size
-
-Checkboxes allows you to change the size in four different sizes: `small`, `medium`, `large`, and `extra-large`.
-
-{{< example class="d-grid gap-2" >}}
-<div class="form-check">
-  <input class="form-check-input form-check-input-sm" type="checkbox" value="" id="flexCheckSizeSmall" />
-  <label class="form-check-label small" for="flexCheckSizeSmall">
-    Small checkbox
-  </label>
-</div>
-
-<div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckSizeMedium" checked />
-  <label class="form-check-label" for="flexCheckSizeMedium">
-    Medium checkbox(Default)
-  </label>
-</div>
-
-<div class="form-check">
-  <input class="form-check-input form-check-input-lg" type="checkbox" value="" id="flexCheckSizeLarge" />
-  <label class="form-check-label" for="flexCheckSizeLarge">
-    Large checkbox
-  </label>
-</div>
-
-<div class="form-check">
-  <input class="form-check-input form-check-input-xl" type="checkbox" value="" id="flexCheckSizeExtraLarge" />
-  <label class="form-check-label" for="flexCheckSizeExtraLarge">
-    Extra large checkbox
   </label>
 </div>
 {{</ example >}}

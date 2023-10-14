@@ -1,21 +1,47 @@
+@import "bootstrap/scss/close";
+
+@function close-button-icon-url($color) {
+  @return url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='#{$color}' viewBox='0 0 24 24'><path d='M12 10.586L6.707 5.293a1 1 0 00-1.414 1.414L10.586 12l-5.293 5.293a1 1 0 001.414 1.414L12 13.414l5.293 5.293a1 1 0 001.414-1.414L13.414 12l5.293-5.293a1 1 0 10-1.414-1.414L12 10.586z'></path></svg>");
+}
+
 .btn-close {
-  background: transparent escape-svg($btn-close-bg) center no-repeat;
+  --#{$prefix}btn-close-width: #{$btn-close-width};
+  --#{$prefix}btn-close-height: #{$btn-close-height};
+  width: var(--#{$prefix}btn-close-width);
+  height: var(--#{$prefix}btn-close-height);
+  background-size: cover;
+  box-sizing: border-box;
+
+  &:disabled,
+  &.disabled {
+    --#{$prefix}btn-close-bg: #{escape-svg(close-button-icon-url($btn-close-disabled-color))};
+  }
 
   .offcanvas-header &,
   .modal-header & {
-    width: 1.5rem;
-    height: 1.5rem;
     padding: 0;
     margin: 0;
   }
 }
 
-.btn-close-lg {
-  height: 1.5rem !important;
-  width: 1.5rem !important;
+.btn-close-sm {
+  --#{$prefix}btn-close-width: #{$btn-close-width-sm};
+  --#{$prefix}btn-close-height: #{$btn-close-height-sm};
 }
 
-.btn-close-sm {
-  height: 0.75rem !important;
-  width: 0.75rem !important;
+.btn-close-black {
+  filter: brightness(0%);
+}
+
+@if $enable-dark-mode {
+  @include color-mode(dark) {
+    .btn-close {
+      --#{$prefix}btn-close-bg: #{escape-svg(close-button-icon-url($btn-close-color-dark))};
+
+      &:disabled,
+      &.disabled {
+        --#{$prefix}btn-close-bg: #{escape-svg(close-button-icon-url($btn-close-disabled-color))};
+      }
+    }
+  }
 }

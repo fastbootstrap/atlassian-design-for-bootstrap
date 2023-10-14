@@ -1,16 +1,105 @@
+@import "bootstrap/scss/navbar";
+
 .navbar {
-  &::after {
-    content: "";
-    position: absolute;
-    height: 4px;
-    top: 100%;
-    right: 0px;
-    left: 0px;
-    background: linear-gradient(
-      rgba($neutral-900, 13%) 0px,
-      rgba($neutral-900, 13%) 1px,
-      rgba($neutral-900, 8%) 1px,
-      rgba($neutral-900, 0) 4px
-    );
+  --#{$prefix}navbar-bg: #{$ds-surface};
+  --#{$prefix}navbar-height: #{$navbar-height};
+  --#{$prefix}navbar-border-color: #{$border-color};
+
+  min-height: var(--#{$prefix}navbar-height);
+  border-bottom: 1px solid var(--#{$prefix}navbar-border-color);
+  background-color: var(--#{$prefix}navbar-bg);
+}
+
+.navbar-nav {
+  --#{$prefix}nav-link-padding-y: #{$navbar-nav-link-padding-y};
+  --#{$prefix}nav-link-hover-color: #{$navbar-nav-link-hover-color};
+  --#{$prefix}nav-link-active-color: #{$navbar-nav-link-active-color};
+}
+
+.navbar-nav-pills {
+  --#{$prefix}navbar-active-color: #{$navbar-nav-pills-link-active-color};
+  --#{$prefix}nav-link-hover-color: #{$nav-link-color};
+  --#{$prefix}nav-link-hover-bg: #{$navbar-nav-pills-link-hover-bg};
+  --#{$prefix}nav-link-border-radius: #{$navbar-nav-pills-link-border-radius};
+  --#{$prefix}nav-link-active-bg: #{$navbar-nav-pills-link-active-bg};
+}
+
+.navbar-nav-underline {
+  --#{$prefix}nav-underline-height: 3px;
+  --#{$prefix}nav-underline-color: transparent;
+  --#{$prefix}nav-underline-link-hover-color: #{$ds-link};
+  --#{$prefix}nav-underline-link-active-color: #{$ds-text-selected};
+
+  .nav-item {
+    position: relative;
+  }
+
+  .nav-link {
+    &::before {
+      content: "";
+      position: absolute;
+      left: $navbar-nav-link-padding-x;
+      right: $navbar-nav-link-padding-x;
+      bottom: 0;
+      height: var(--#{$prefix}nav-underline-height);
+      background-color: var(--#{$prefix}nav-underline-color);
+    }
+  }
+}
+
+.navbar-expand {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    $next: breakpoint-next($breakpoint, $grid-breakpoints);
+    $infix: breakpoint-infix($next, $grid-breakpoints);
+
+    // stylelint-disable-next-line scss/selector-no-union-class-name
+    &#{$infix} {
+      @include media-breakpoint-up($next) {
+        .navbar-nav {
+          .nav-item {
+            min-height: var(--#{$prefix}navbar-height);
+            display: flex;
+            margin: 0 $ds-space-050;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .nav-link {
+            padding-top: var(--#{$prefix}nav-link-padding-y);
+            padding-bottom: var(--#{$prefix}nav-link-padding-y);
+          }
+        }
+      }
+
+      .navbar-nav-pills {
+        .nav-link {
+          border-radius: var(--#{$prefix}nav-link-border-radius);
+
+          &.active {
+            background-color: var(--#{$prefix}nav-link-active-bg);
+          }
+
+          &:hover:not(.active) {
+            background-color: var(--#{$prefix}nav-link-hover-bg);
+          }
+        }
+      }
+
+      .navbar-nav-underline {
+        .nav-link,
+        .nav-link {
+          &:hover {
+            --#{$prefix}nav-underline-color: var(--#{$prefix}nav-underline-link-hover-color);
+          }
+
+          &.active {
+            --#{$prefix}nav-underline-color: var(--#{$prefix}nav-underline-link-active-color);
+
+            color: var(--#{$prefix}nav-link-active-color);
+          }
+        }
+      }
+    }
   }
 }

@@ -12,24 +12,27 @@ menu:
 {{< tabs "dropdown" >}}
 {{< tab "Overview" >}}
 
-**Bootstrap 5 Dropdown component**
+**Bootstrap 5 Dropdown menu component**
 
-Responsive dropdown menu component built with the latest Bootstrap 5. Dropdown component displays a list of actions or options that the user can select one.
+Responsive dropdown menu component built with the latest Bootstrap 5. Dropdown menu component displays a list of actions or options that the user can select one.
 
 Toggle contextual overlays for displaying lists of links and more with the Bootstrap dropdown plugin.
 
-## Basic examples
 
-Dropdowns can be triggered from `<a>` or `<button>` elements to better fit your potential needs. Wrap the dropdown’s toggle (your button or link) and the dropdown menu within `.dropdown`, or another element that declares `position: relative;`. 
+## Basic dropdowns
 
-### Regular button
+Dropdowns can be triggered from `<a>` or `<button>` elements to better fit your potential needs. 
+
+Wrap the dropdown’s toggle (your button or link) and the dropdown menu within `.dropdown`, or another element that declares `position: relative;`. Ideally, you should use a `<button>` element as the dropdown trigger, but the plugin will work with `<a>` elements as well. The examples shown here use semantic `<ul>` elements where appropriate, but custom markup is supported.
+
+### Single buttons
 
 Any single `.btn` can be turned into a dropdown toggle with some markup changes. Here’s how you can put them to work with either `<button>` elements:
 
 {{< example >}}
 <div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Dropdown button
+  <button class="btn btn-default dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Page actions
   </button>
   <ul class="dropdown-menu" role="menu">
     <li>
@@ -41,13 +44,11 @@ Any single `.btn` can be turned into a dropdown toggle with some markup changes.
 </div>
 {{</ example >}}
 
-### Link button
-
-For any `<a>` elements:
+While `<button>` is the recommended control for a dropdown toggle, there might be situations where you have to use an `<a>` element. If you do, we recommend adding a `role="button"` attribute to appropriately convey control’s purpose to assistive technologies such as screen readers.
 
 {{< example >}}
 <div class="dropdown">
-  <a class="btn btn-primary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <a class="btn btn-default dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Dropdown link
   </a>
   <ul class="dropdown-menu">
@@ -58,129 +59,19 @@ For any `<a>` elements:
 </div>
 {{</ example >}}
 
-## Hoverable dropdown
 
-The dropdown menu will show up when hovering the button. 
-
-Add a `is-hoverable` class to `dropdown` element then put the button and the dropdown menu in the `dropdown` container. This is implemented by the pure CSS not plugin API, you don't need to add `data-bs-toggle="dropdown"` to the button.
-
-{{< example >}}
-<div class="dropdown is-hoverable">
-  <a class="btn btn-primary dropdown-toggle" href="#" role="button">
-    Hover dropdown
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-  </ul>
-</div>
-{{</ example >}}
-
-## Colors
-
-You can do this with any button variant in `.btn-{color}`.
-
-{{< example >}}
-<div class="btn-group">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-    Actions
-  </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-    <li><hr class="dropdown-divider" /></li>
-    <li><a class="dropdown-item" href="#">Separated link</a></li>
-  </ul>
-</div>
-<div class="btn-group">
-  <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-    Actions
-  </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-    <li><hr class="dropdown-divider" /></li>
-    <li><a class="dropdown-item" href="#">Separated link</a></li>
-  </ul>
-</div>
-<div class="btn-group">
-  <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-    Actions
-  </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-    <li><hr class="dropdown-divider" /></li>
-    <li><a class="dropdown-item" href="#">Separated link</a></li>
-  </ul>
-</div>
-<div class="btn-group">
-  <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-    Actions
-  </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-    <li><hr class="dropdown-divider" /></li>
-    <li><a class="dropdown-item" href="#">Separated link</a></li>
-  </ul>
-</div>
-<div class="btn-group">
-  <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-    Actions
-  </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-    <li><hr class="dropdown-divider" /></li>
-    <li><a class="dropdown-item" href="#">Separated link</a></li>
-  </ul>
-</div>
-<div class="btn-group">
-  <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-    Actions
-  </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-    <li><hr class="dropdown-divider" /></li>
-    <li><a class="dropdown-item" href="#">Separated link</a></li>
-  </ul>
-</div>
-<div class="btn-group shadow-0">
-  <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-    Actions
-  </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-    <li><hr class="dropdown-divider" /></li>
-    <li><a class="dropdown-item" href="#">Separated link</a></li>
-  </ul>
-</div>
-{{</ example >}}
-
-## Split button
+### Split buttons
 
 Similarly, create split button dropdowns with virtually the same markup as single button dropdowns, but with the addition of `.dropdown-toggle-split` for proper spacing around the dropdown caret.
 
 We use this extra class to reduce the horizontal `padding` on either side of the caret by 25% and remove the `margin-left` that’s added for regular button dropdowns. Those extra changes keep the caret centered in the split button and provide a more appropriately sized hit area next to the main button.
 
 {{< example >}}
-<div class="btn-toolbar">
-  <div class="btn-group">
-    <button type="button" class="btn btn-primary">Page actions</button>
+<div class="btn-group-segmented">
+    <button type="button" class="btn btn-default">Page actions</button>
     <button 
       type="button" 
-      class="btn btn-primary dropdown-toggle dropdown-toggle-split" 
+      class="btn btn-default dropdown-toggle dropdown-toggle-split" 
       data-bs-toggle="dropdown" 
       aria-expanded="false"
     >
@@ -193,85 +84,185 @@ We use this extra class to reduce the horizontal `padding` on either side of the
       <li><hr class="dropdown-divider"></li>
       <li><a class="dropdown-item" href="#">Separated link</a></li>
     </ul>
-  </div>
 </div>
 {{</ example >}}
 
-## Custom toggle icons
+
+## Dropdown hover trigger
+
+<span class="lozenge new fs-sm">New Feature</span>
+
+The dropdown default trigger mode is click, you can auto-open dropdown menu when mouse hover it via adding `.dropdown-hover` to the dropdown. 
+
+{{< callout info >}}
+This is implemented by the pure CSS not plugin API, you don't need to add the `data-bs-toggle="dropdown"` attribute to the button.
+{{</ callout >}}
+
+{{< example >}}
+<div class="dropdown dropdown-hover">
+  <a class="btn btn-default dropdown-toggle" href="#" role="button">
+    Hover me 
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div>
+{{</ example >}}
+
+The dropdown will show up when hovering the button. 
+
+## Colors
+
+You can do this with any button variant in `.btn-{color}`.
+
+{{< example class="d-flex gap-2 flex-wrap align-items-start" >}}
+<div class="btn-group">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Primary
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><hr class="dropdown-divider" /></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+  </ul>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Success
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><hr class="dropdown-divider" /></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+  </ul>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Info
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><hr class="dropdown-divider" /></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+  </ul>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Waring
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><hr class="dropdown-divider" /></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+  </ul>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Danger
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><hr class="dropdown-divider" /></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+  </ul>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Dark
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><hr class="dropdown-divider" /></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+  </ul>
+</div>
+<div class="btn-group shadow-0">
+  <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Light
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><hr class="dropdown-divider" /></li>
+    <li><a class="ropdown-divider" /></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+  </ul>
+</div>
+{{</ example >}}
+
+
+## Custom arrow icons
 
 Replace the default arrow icon with a custom icon. Just remove the `.dropdown-toggle` class and adds an icons onto the button. You also can use the `margin` or `flex` help classes for alignment if you need.
 
 {{< example >}}
-<button type="button" class="btn btn-primary" data-bs-toggle="dropdown" aria-expanded="false">
-  Centered dropup <i class="fas fa-angle-down ms-2"></i>
+<button type="button" class="btn btn-default" data-bs-toggle="dropdown" aria-expanded="false">
+  Page actions <i class="fas fa-angle-down ms-2"></i>
 </button>
 <ul class="dropdown-menu">
   <li><a class="dropdown-item" href="#">Action</a></li>
   <li><a class="dropdown-item" href="#">Action two</a></li>
   <li><a class="dropdown-item" href="#">Action three</a></li>
 </ul>
+<div class="btn-group-segmented">
+    <button type="button" class="btn btn-default">Page actions</button>
+    <button 
+      type="button" 
+      class="btn btn-default dropdown-toggle-split" 
+      data-bs-toggle="dropdown" 
+      aria-expanded="false"
+    ><i class="fa-solid fa-ellipsis"></i></button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+    </ul>
+</div>
 {{</ example >}}
+
 
 ## Sizes
 
 Button dropdowns work with buttons of all sizes(`.btn-sm`,`.btn-lg`), including default and split dropdown buttons. Check out our [button component]({{< docsref "button" >}}) for how to usage.
 
-{{< example class="d-grid gap-2" >}}
+{{< example class="d-flex flex-wrap align-items-start gap-2" >}}
 <div class="dropdown">
-  <button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
     Small button
   </button>
   <ul class="dropdown-menu">
     <li><a class="dropdown-item" href="#">Action</a></li>
     <li><a class="dropdown-item" href="#">Another action</a></li>
     <li><a class="dropdown-item" href="#">Something else here</a></li>
-    <li><hr class="dropdown-divider" /></li>
-    <li><a class="dropdown-item" href="#">Separated link</a></li>
   </ul>
 </div>
-<div class="btn-toolbar">
-  <div class="btn-group">
-    <button class="btn btn-primary btn-sm" type="button">Small split button</button>
-    <button type="button" class="btn btn-sm btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-      <span class="visually-hidden">Toggle Dropdown</span>
-    </button>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
-      <li><hr class="dropdown-divider" /></li>
-      <li><a class="dropdown-item" href="#">Separated link</a></li>
-    </ul>
-  </div>
-</div>
 <div class="dropdown">
-  <button class="btn btn-primary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
     Large button
   </button>
   <ul class="dropdown-menu">
     <li><a class="dropdown-item" href="#">Action</a></li>
     <li><a class="dropdown-item" href="#">Another action</a></li>
     <li><a class="dropdown-item" href="#">Something else here</a></li>
-    <li><hr class="dropdown-divider" /></li>
-    <li><a class="dropdown-item" href="#">Separated link</a></li>
   </ul>
 </div>
-<div class="btn-toolbar">
-  <div class="btn-group">
-    <button class="btn btn-primary btn-lg" type="button">Large split button</button>
-    <button type="button" class="btn btn-lg btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-      <span class="visually-hidden">Toggle Dropdown</span>
-    </button>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
-      <li><hr class="dropdown-divider" /></li>
-      <li><a class="dropdown-item" href="#">Separated link</a></li>
-    </ul>
-  </div>
-</div>
 {{</ example >}}
+
 
 ## Position
 
@@ -281,7 +272,7 @@ Make the dropdown menu centered below the toggle with `.dropdown-center` on the 
 
 {{< example >}}
 <div class="dropdown-center">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <button class="btn btn-default dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
     Centered
   </button>
   <ul class="dropdown-menu">
@@ -298,7 +289,7 @@ Trigger dropdown menus above elements by adding `.dropup` to the parent element.
 
 {{< example >}}
 <div class="dropup">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+  <button type="button" class="btn btn-default dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
     Dropup
   </button>
   <ul class="dropdown-menu">
@@ -315,7 +306,7 @@ Trigger dropdown menus at the right of the elements by adding `.dropend` to the 
 
 {{< example >}}
 <div class="dropend">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+  <button type="button" class="btn btn-default dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
     Dropend
   </button>
   <ul class="dropdown-menu">
@@ -332,7 +323,7 @@ Trigger dropdown menus at the left of the elements by adding `.dropstart` to the
 
 {{< example >}}
 <div class="dropstart">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+  <button type="button" class="btn btn-default dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
     Dropstart
   </button>
   <ul class="dropdown-menu">
@@ -349,7 +340,7 @@ You also can use the `.dropup` with `.dropup-center` toghter on the parent eleme
 
 {{< example >}}
 <div class="dropup-center dropup">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <button class="btn btn-default dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
     Centered dropup
   </button>
   <ul class="dropdown-menu">
@@ -363,12 +354,13 @@ You also can use the `.dropup` with `.dropup-center` toghter on the parent eleme
 
 ## Custom position
 
-Use `data-bs-offset` or `data-bs-reference` attribute to change the location of the dropdown.
+Use `[data-bs-offset]` or `[data-bs-reference]` attribute to change the location of the dropdown.
 
 {{< example class="d-flex">}}
 <div class="dropdown me-3">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
-    Offset
+  <button type="button" class="btn btn-default dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+   data-bs-offset="10,20">
+    Offset (10,20)
   </button>
   <ul class="dropdown-menu">
     <li><a class="dropdown-item" href="#">Action</a></li>
@@ -377,27 +369,27 @@ Use `data-bs-offset` or `data-bs-reference` attribute to change the location of 
   </ul>
 </div>
 <div class="btn-group">
-  <button type="button" class="btn btn-primary">Reference</button>
-  <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
+  <button type="button" class="btn btn-default">Parent reference</button>
+  <button type="button" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"
+   data-bs-reference="parent">
     <span class="visually-hidden">Toggle Dropdown</span>
   </button>
   <ul class="dropdown-menu">
     <li><a class="dropdown-item" href="#">Action</a></li>
     <li><a class="dropdown-item" href="#">Another action</a></li>
     <li><a class="dropdown-item" href="#">Something else here</a></li>
-    <li><hr class="dropdown-divider" /></li>
-    <li><a class="dropdown-item" href="#">Separated link</a></li>
   </ul>
 </div>
 {{</ example >}}
 
-## Menu items
+
+## Dropdown items
 
 You can use `<a>` or `<button>` elements as dropdown items.
 
 {{< example >}}
 <div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <button class="btn btn-default dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
     Dropdown
   </button>
   <ul class="dropdown-menu">
@@ -412,7 +404,7 @@ You can also create non-interactive dropdown items with `.dropdown-item-text`. F
 
 {{< example >}}
 <div class="dropdown">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+  <button type="button" class="btn btn-default dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
     Dropdown
   </button>
   <ul class="dropdown-menu">
@@ -424,13 +416,14 @@ You can also create non-interactive dropdown items with `.dropdown-item-text`. F
 </div>
 {{</ example >}}
 
-### Selectd menu
+
+### Selectd item
 
 Add `.active` to items in the dropdown to style them as active. To convey the active state to assistive technologies, use the `aria-current` attribute — using the `page` value for the current page, or `true` for the current item in a set.
 
 {{< example >}}
 <div class="dropdown">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+  <button type="button" class="btn btn-default dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
     Dropdown
   </button>
   <ul class="dropdown-menu">
@@ -441,13 +434,14 @@ Add `.active` to items in the dropdown to style them as active. To convey the ac
 </div>
 {{</ example>}}
 
-### Disabled menu
+
+### Disabled item
 
 Add `.disabled` to items in the dropdown to style them as disabled.
 
 {{< example >}}
 <div class="dropdown">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+  <button type="button" class="btn btn-default dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
   <ul class="dropdown-menu">
     <li><a class="dropdown-item" href="#">Regular link</a></li>
     <li><a class="dropdown-item disabled">Disabled link</a></li>
@@ -455,6 +449,7 @@ Add `.disabled` to items in the dropdown to style them as disabled.
   </ul>
 </div>
 {{</ example >}}
+
 
 ## Menu alignment
 
@@ -464,7 +459,7 @@ Add `.dropdown-menu-end` to a `.dropdown-menu` to right align the dropdown menu.
 
 {{< example >}}
 <div class="btn-group">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+  <button type="button" class="btn btn-default dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
     Right-aligned menu example
   </button>
   <ul class="dropdown-menu dropdown-menu-end">
@@ -483,7 +478,7 @@ To align **right** the dropdown menu with the given breakpoint or larger, add `.
 
 {{< example >}}
 <div class="btn-group">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+  <button type="button" class="btn btn-default dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
     Left-aligned but right aligned when large screen
   </button>
   <ul class="dropdown-menu dropdown-menu-lg-end">
@@ -498,7 +493,7 @@ To align **left** the dropdown menu with the given breakpoint or larger, add .dr
 
 {{< example >}}
 <div class="btn-group">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+  <button type="button" class="btn btn-default dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
     Right-aligned but left aligned when large screen
   </button>
   <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
@@ -515,7 +510,7 @@ Taking most of the options shown above, here’s a small kitchen sink demo of va
 
 {{< example>}}
 <div class="dropdown mb-2">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <button class="btn btn-default dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
     Dropdown
   </button>
   <ul class="dropdown-menu">
@@ -525,7 +520,7 @@ Taking most of the options shown above, here’s a small kitchen sink demo of va
   </ul>
 </div>
 <div class="dropdown mb-2">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+  <button type="button" class="btn btn-default dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
     Right-aligned menu
   </button>
   <ul class="dropdown-menu dropdown-menu-end">
@@ -535,7 +530,7 @@ Taking most of the options shown above, here’s a small kitchen sink demo of va
   </ul>
 </div>
 <div class="dropdown mb-2">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+  <button type="button" class="btn btn-default dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
     Left-aligned, right-aligned lg
   </button>
   <ul class="dropdown-menu dropdown-menu-lg-end">
@@ -545,7 +540,7 @@ Taking most of the options shown above, here’s a small kitchen sink demo of va
   </ul>
 </div>
 <div class="dropdown mb-2">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+  <button type="button" class="btn btn-default dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
     Right-aligned, left-aligned lg
   </button>
   <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
@@ -555,7 +550,7 @@ Taking most of the options shown above, here’s a small kitchen sink demo of va
   </ul>
 </div>
 <div class="dropstart mb-2">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+  <button type="button" class="btn btn-default dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
     Dropstart
   </button>
   <ul class="dropdown-menu">
@@ -565,7 +560,7 @@ Taking most of the options shown above, here’s a small kitchen sink demo of va
   </ul>
 </div>
 <div class="dropend mb-2">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+  <button type="button" class="btn btn-default dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
     Dropend
   </button>
   <ul class="dropdown-menu">
@@ -575,7 +570,7 @@ Taking most of the options shown above, here’s a small kitchen sink demo of va
   </ul>
 </div>
 <div class="dropup">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+  <button type="button" class="btn btn-default dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
     Dropup
   </button>
   <ul class="dropdown-menu">
@@ -586,6 +581,7 @@ Taking most of the options shown above, here’s a small kitchen sink demo of va
 </div>
 {{</ example >}}
 
+
 ## Menu content
 
 ### Headers
@@ -594,7 +590,7 @@ Add a header to label sections of actions in any dropdown menu.
 
 {{< example >}}
 <div class="dropdown">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+  <button type="button" class="btn btn-default dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
     Dropdown
   </button>
   <ul class="dropdown-menu">
@@ -611,7 +607,7 @@ Separate groups of related menu items with a divider `.dropdown-divider`.
 
 {{< example >}}
 <div class="dropdown">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+  <button type="button" class="btn btn-default dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
   <ul class="dropdown-menu">
     <li><a class="dropdown-item" href="#">Action</a></li>
     <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -629,7 +625,7 @@ Place any freeform text within a dropdown menu with text and use spacing utiliti
 {{< example >}}
 
 <div class="dropdown">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+  <button type="button" class="btn btn-default dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
   <div class="dropdown-menu p-4 text-muted" style="max-width: 200px;">
     <p>Some example text that's free-flowing within the dropdown menu.</p>
     <p class="mb-0">And this is more example text.</p>
@@ -639,14 +635,14 @@ Place any freeform text within a dropdown menu with text and use spacing utiliti
 
 ### Forms
 
-Put a form within a dropdown menu, or make it into a dropdown menu, and use [margin]({{< docsref "margin" >}}) or [padding]({{< docsref "padding" >}}) utilities to give it the negative space you require.
+Put a form within a dropdown menu, or make it into a dropdown menu, and use [margin]({{< docsref "margin" >}}) or [padding]({{< docsref "padding" >}}) utilities to give it the negative space you require. You also can use CSS variable `--bs-dropdown-min-width` to change the form min width.
 
 {{< example >}}
 <div class="dropdown">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+  <button type="button" class="btn btn-default dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
     Log in
   </button>
-  <form class="dropdown-menu p-4">
+  <form class="dropdown-menu p-4" style="--bs-dropdown-min-width:320px;">
     <div class="mb-3">
       <label for="exampleDropdownFormEmail2" class="form-label">Email address</label>
       <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com" />
@@ -666,60 +662,14 @@ Put a form within a dropdown menu, or make it into a dropdown menu, and use [mar
 </div>
 {{</ example >}}
 
-## Dark dropdowns 
-
-Opt into darker dropdowns to match a dark navbar or custom style by adding `.dropdown-menu-dark` onto an existing `.dropdown-menu`. No changes are required to the dropdown items.
-
-{{< example >}}
-<div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Dropdown button
-  </button>
-  <ul class="dropdown-menu dropdown-menu-dark">
-    <li><a class="dropdown-item active" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-    <li><hr class="dropdown-divider"></li>
-    <li><a class="dropdown-item" href="#">Separated link</a></li>
-  </ul>
-</div>
-{{</ example >}}
-
-And putting it to use in a navbar:
-
-{{< example >}}
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-{{</ example >}}
-
 
 ## Auto close
 
 By default, the dropdown menu is closed when clicking inside or outside the dropdown menu. You can use the `autoClose` option by `data-bs-auto-close` to change this behavior of the dropdown.
 
-{{< example class="d-grid gap-2">}}
+{{< example class="d-flex flex-wrap gap-2">}}
 <div class="dropdown">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+  <button type="button" class="btn btn-default dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
     Default dropdown
   </button>
   <ul class="dropdown-menu">
@@ -729,7 +679,7 @@ By default, the dropdown menu is closed when clicking inside or outside the drop
   </ul>
 </div>
 <div class="dropdown">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
+  <button type="button" class="btn btn-default dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
     Clickable outside
   </button>
   <ul class="dropdown-menu">
@@ -739,7 +689,7 @@ By default, the dropdown menu is closed when clicking inside or outside the drop
   </ul>
 </div>
 <div class="dropdown">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+  <button type="button" class="btn btn-default dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
     Clickable inside
   </button>
   <ul class="dropdown-menu">
@@ -749,7 +699,7 @@ By default, the dropdown menu is closed when clicking inside or outside the drop
   </ul>
 </div>
 <div class="dropdown">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+  <button type="button" class="btn btn-default dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
     Manual close
   </button>
   <ul class="dropdown-menu">
@@ -770,7 +720,6 @@ Below is the `autoClose` options:
 {{< callout >}}
 Note: the dropdown can always be closed with the <kbd>ESC</kbd> key.
 {{</ callout >}}
-
 
 {{</ tab >}}
 

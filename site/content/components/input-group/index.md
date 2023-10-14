@@ -51,14 +51,16 @@ Place one add-on or button on either side of an input. You may also place one on
 </div>
 {{</ example >}}
 
-## With prefix or suffix <span class="lozenge new ms-1 fw-normal">new</span>
+## With prefix or suffix
+
+<span class="lozenge new fs-sm">New Feature</span>
 
 Using new utility css `.input-group-start` and `.input-group-end` to make input group as one input that with a new effect.
 
-{{< example >}}
+{{< example class="d-flex flex-column gap-2" >}}
 <div class="input-group input-group-start mb-3">
-  <input type="text" class="form-control" placeholder="Username" />
-  <span class="input-group-text">@</span>
+  <input type="text" class="form-control" value="2.00"/>
+  <span class="input-group-text">$</span>
 </div>
 
 <div class="input-group input-group-start mb-3">
@@ -72,6 +74,19 @@ Using new utility css `.input-group-start` and `.input-group-end` to make input 
 </div>
 
 {{</ example >}}
+
+
+## Wrapping 
+
+Input groups wrap by default via `flex-wrap: wrap` in order to accommodate custom form field validation within an input group. You may disable this with `.flex-nowrap`.
+
+{{< example >}}
+<div class="input-group flex-nowrap">
+  <span class="input-group-text" id="addon-wrapping">@</span>
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping" />
+</div>
+{{</ example >}}
+
 
 ## Sizing
 
@@ -279,17 +294,6 @@ Input groups include support for custom file inputs. Browser default versions of
 <div class="input-group">
   <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
   <button class="btn btn-primary" type="button" id="inputGroupFileAddon04">Button</button>
-</div>
-{{</ example >}}
-
-## Wrapping 
-
-Input groups wrap by default via `flex-wrap: wrap` in order to accommodate custom form field validation within an input group. You may disable this with `.flex-nowrap`.
-
-{{< example >}}
-<div class="input-group flex-nowrap">
-  <span class="input-group-text" id="addon-wrapping">@</span>
-  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping" />
 </div>
 {{</ example >}}
 

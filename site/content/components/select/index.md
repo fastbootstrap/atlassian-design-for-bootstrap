@@ -12,12 +12,13 @@ menu:
 
 Select input component allows you to select a single item from a list of options.
 
-## Basic example
+## Basic select
 
 Custom `<select>` menus need only a custom class, `.form-select` to trigger the custom styles. Custom styles are limited to the `<select>`’s initial appearance and cannot modify the `<option>`s due to browser limitations.
 
 {{< example >}}
 <select class="form-select" aria-label="Default select example">
+
   <option selected>Open this select menu</option>
   <option value="1">One</option>
   <option value="2">Two</option>
@@ -25,7 +26,21 @@ Custom `<select>` menus need only a custom class, `.form-select` to trigger the 
 </select>
 {{</ example >}}
 
-## Sizing 
+## Disabled
+
+Add the `disabled` boolean attribute on a select to give it a grayed out appearance and remove pointer events.
+
+{{< example >}}
+<select class="form-select" aria-label="Disabled select example" disabled>
+
+  <option selected>Open this select menu</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+{{</ example >}}
+
+## Sizes
 
 You may also choose from small and large custom selects to match our similarly sized text inputs.
 
@@ -44,6 +59,7 @@ You may also choose from small and large custom selects to match our similarly s
   <option value="3">Three</option>
 </select>
 {{</ example >}}
+
 
 ## Multiple select
 
@@ -68,16 +84,3 @@ with the `size` attribute:
   <option value="3">Three</option>
 </select>
 {{</ example>}}
-
-## Disabled
-
-Add the `disabled` boolean attribute on a select to give it a grayed out appearance and remove pointer events.
-
-{{< example >}}
-<select class="form-select" aria-label="Disabled select example" disabled>
-  <option selected>Open this select menu</option>
-  <option value="1">One</option>
-  <option value="2">Two</option>
-  <option value="3">Three</option>
-</select>
-{{</ example >}}

@@ -18,128 +18,139 @@ Responsive button built with the latest Bootstrap 5.
 
 Use Bootstrap’s custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.
 
-## Basic examples
+## Basic class
+
+Bootstrap has a base `.btn` class that sets up basic styles such as padding and content alignment. By default, `.btn` controls have a transparent border and background color, and lack any explicit focus and hover styles.
+
+{{< example >}}
+<button type="button" class="btn">Base Button</button>
+{{</ example >}}
+
+The `.btn` class is intended to be used in conjunction with our button variants, or to serve as a basis for your own custom styles.
+
+{{< callout >}}
+If you are using the `.btn` class on its own, remember to at least define some explicit `:focus` and/or `:focus-visible` styles.
+{{</ callout >}}
+
+## Button types
 
 Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control.
 
-{{< example class="d-flex align-items-start gap-2 flex-wrap" >}}
-<button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-secondary">Secondary</button>
-<button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-warning">Warning</button>
-<button type="button" class="btn btn-info">Info</button>
-<button type="button" class="btn btn-light">Light</button>
-<button type="button" class="btn btn-dark">Dark</button>
-<a role="button" class="btn btn-link" href="#">Link</a>
-{{</ example >}}
+### Default button
 
-*The new button styles are available on FastBootstrap.* 
+<span class="lozenge new fs-sm">New Feature</span>
 
-{{< bs-table >}}
-| Style | Description |
-| --- | --- |
-| `.btn-subtle` | For secondary actions, such as “Cancel" on the modal dialog. |
-| `.btn-default` | For form actions and general page actions by default in Atlassian design |
-{{< /bs-table >}}
+The default form of a button, used for most cases. They are not impactful enough to represent the primary action in a container.
+
+Use `.btn-default` to a standard button for form actions and general page actions.
 
 {{< example class="d-flex align-items-start gap-2 flex-wrap" >}}
-<button type="button" class="btn btn-default">Default</button>
-<button type="button" class="btn btn-subtle">Subtle</button>
+<button type="button" class="btn btn-default">Default button</button>
+<button type="button" class="btn btn-default" disabled>Disabled</button>
+<button type="button" class="btn btn-default active">Selected</button>
 {{</ example >}}
+
+### Primary button
+
+Use a primary button to call attention to an action on a form or to highlight the strongest call to action on a page. Primary buttons should only appear once per container (not including the application header or in a modal dialog). Not every screen requires a primary button. Add `.btn-primary`.
+
+{{< example class="d-flex align-items-start gap-2 flex-wrap" >}}
+<button type="button" class="btn btn-primary">Primary button</button>
+<button type="button" class="btn btn-primary" disabled>Disabled</button>
+<button type="button" class="btn btn-primary active">Selected</button>
+{{</ example >}}
+
+### Subtle button
+
+<span class="lozenge new fs-sm">New Feature</span>
+
+Subtle button usually for the secondary actions, such as “Cancel". Use `.btn-subtle`. 
+
+{{< example class="d-flex align-items-start gap-2 flex-wrap" >}}
+<button type="button" class="btn btn-subtle">Subtle button</button>
+<button type="button" class="btn btn-subtle" disabled>Disabled</button>
+<button type="button" class="btn btn-subtle active">Selected</button>
+{{</ example >}}
+
+
+### Link button
+
+Use a link button to navigate to another page. These should open in the same window unless information may be lost (for example, when someone is filling out a form), or when the destination is an external site (for example, a knowledge base article). Just add `.btn-link` class to any `<a>` elements, and with `role="button"`.
+
+{{< example class="d-flex align-items-start gap-2 flex-wrap" >}}
+<a role="button" class="btn btn-link" href="#">Link button</a>
+<a role="button" class="btn btn-link disabled" href="#">Disabled</a>
+<a role="button" class="btn btn-link active" href="#">Selected</a>
+{{</ example >}}
+
+### Warning button
+
+A warning button appears before we request the user to take action, usually in anticipation of a significant change. These are found mostly in confirmation modals—just add  `btn-warning`.
+
+{{< example class="d-flex align-items-start gap-2 flex-wrap" >}}
+<button type="button" class="btn btn-warning">Warning button</button>
+<button class="btn btn-warning" disabled>Disabled</button>
+<button type="button" class="btn btn-warning active">Selected</button>
+{{</ example >}}
+
+### Danager button
+
+The danger button appears as a final confirmation for a destructive action such as deleting. These are found mostly in confirmation modals. Just add `.btn-danger`.
+
+{{< example class="d-flex align-items-start gap-2 flex-wrap" >}}
+<button type="button" class="btn btn-danger">Danager button</button>
+<button type="button" class="btn btn-danger" disabled>Disabled</button>
+<button type="button" class="btn btn-danger active">Selected</button>
+{{</ example >}}
+
+### Secondary button
+
+Called `Discovery` button also.
+
+{{< example class="d-flex align-items-start gap-2 flex-wrap" >}}
+<button type="button" class="btn btn-secondary">Secondary button</button>
+<button type="button" class="btn btn-secondary" disabled>Disabled</button>
+<button type="button" class="btn btn-secondary active">Selected</button>
+{{</ example >}}
+
+### More variants
+
+For compatibility with Bootstrap, the following buttons may be not supported by Dark mode.
+
+{{< example class="d-flex align-items-start gap-2 flex-wrap" >}}
+<button type="button" class="btn btn-success">Success button</button>
+<button type="button" class="btn btn-info">Info button</button>
+<button type="button" class="btn btn-light">Light button</button>
+<button type="button" class="btn btn-dark">Dark button</button>
+{{</ example >}}
+
 
 {{< callout >}}
-
 ##### Conveying meaning to assistive technologies 
 
 Using color to add meaning only provides a visual indication, which will not be conveyed to users of assistive technologies – such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (e.g. the visible text), or is included through alternative means, such as additional text hidden with the `.visually-hidden` class.
 {{</ callout >}}
 
-## Disable text wrapping
 
-If you don’t want the button text to wrap, you can add the [`.text-nowrap`]({{< docsref "whitespace" >}}) class to the button. In Sass, you can set `$btn-white-space: nowrap` to disable text wrapping for each button.
-
-## Button tags
-
-The `.btn` classes are designed to be used with the `<button>` element. However, you can also use these classes on `<a>` or `<input>` elements (though some browsers may apply a slightly different rendering).
-
-When using button classes on `<a>` elements that are used to trigger in-page functionality (like collapsing content), rather than linking to new pages or sections within the current page, these links should be given a `role="button"` to appropriately convey their purpose to assistive technologies such as screen readers.
-
-{{< example class="d-flex align-items-start gap-2 flex-wrap" >}}
-<a class="btn btn-primary" href="#" role="button">Link</a>
-<button class="btn btn-primary" type="submit">Button</button>
-<input class="btn btn-primary" type="button" value="Input">
-<input class="btn btn-primary" type="submit" value="Submit">
-<input class="btn btn-primary" type="reset" value="Reset">
-{{</ example >}}
-
-## Button variations
-
-FastBootstrap have six button variants with a unique styling for contextual. Use `.active` to indicate the button is selected if you need.
-
-### Default
-
-Use `.btn-default` to a standard button for form actions and general page actions.
-
-{{< example class="d-flex align-items-start gap-2 flex-wrap" >}}
-<button type="button" class="btn btn-default">Default</button>
-<button type="button" class="btn btn-default" disabled>Disabled</button>
-<button type="button" class="btn btn-default active">Selected</button>
-{{</ example >}}
-
-### Primary
-
-Use a `.btn-primary` button to call attention to an action on a form or to highlight the strongest call to action on a page.
-
-{{< example class="d-flex align-items-start gap-2 flex-wrap" >}}
-<button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-primary" disabled>Disabled</button>
-<button type="button" class="btn btn-primary active">Selected</button>
-{{</ example >}}
-
-### Warning
-
-Use a `btn-warning` button for a significant change.
-
-{{< example class="d-flex align-items-start gap-2 flex-wrap" >}}
-<button type="button" class="btn btn-warning">Warning</button>
-<button class="btn btn-warning" disabled>Disabled</button>
-<button type="button" class="btn btn-warning active">Selected</button>
-{{</ example >}}
-
-### Danager
-
-Use a `.btn-danger` button for a destructive action such as deleting.
-
-{{< example class="d-flex align-items-start gap-2 flex-wrap" >}}
-<button type="button" class="btn btn-danger">Danager</button>
-<button type="button" class="btn btn-danger" disabled>Disabled</button>
-<button type="button" class="btn btn-danger active">Selected</button>
-{{</ example >}}
-
-### Link
-
-Use a `.btn-link` class to any `<a>` elements, and with `role="button"`.
-
-{{< example class="d-flex align-items-start gap-2 flex-wrap" >}}
-<a role="button" class="btn btn-link" href="#">Link</a>
-<a role="button" class="btn btn-link disabled" href="#">Disabled</a>
-<a role="button" class="btn btn-link active" href="#">Selected</a>
-{{</ example >}}
-
-### Subtle 
-
-Use a `.btn-subtle` button for secondary actions, such as “Cancel".
-
-{{< example class="d-flex align-items-start gap-2 flex-wrap" >}}
-<button class="btn btn-subtle">Subtle</button>
-<button class="btn btn-subtle" disabled>Disabled</button>
-<button class="btn btn-subtle active">Selected</button>
-{{</ example >}}
-
-## Outlined button
+## Outlined buttons
 
 In need of a button, but not the hefty background colors they bring? Replace the default modifier classes with the `.btn-outline-*` ones to remove all background images and colors on any button.
+
+### Standard outline
+
+<span class="lozenge new fs-sm">New Feature</span>
+
+Use `.btn-outline-default` for the standard button.
+
+{{< example class="d-flex align-items-start gap-2 flex-wrap" >}}
+<button type="button" class="btn btn-outline-default">Default</button>
+<button type="button" class="btn btn-outline-default" disabled>Disabled</button>
+<button type="button" class="btn btn-outline-default active">Selected </button>
+{{</ example >}}
+
+### More outline buttons
+
+The below outline buttons that used by Bootstrap by add `.btn-outline-*`.
 
 {{< example class="d-flex align-items-start gap-2 flex-wrap" >}}
 <button type="button" class="btn btn-outline-primary">Primary</button>
@@ -152,11 +163,47 @@ In need of a button, but not the hefty background colors they bring? Replace the
 <button type="button" class="btn btn-outline-dark">Dark</button>
 {{</ example >}}
 
-{{< callout >}}
-Some of the button styles use a relatively light foreground color, and should only be used on a dark background in order to have sufficient contrast.
-{{</ callout >}}
+## Button states
 
-## Rounded button
+### Disabled state
+
+Make buttons look inactive by adding the `disabled` boolean attribute to any `<button>` element. Disabled buttons have `pointer-events: none` applied to, preventing hover and active states from triggering.
+
+{{< example class="d-flex align-items-start gap-2 flex-wrap" >}}
+<button type="button" class="btn btn-primary" disabled>Disabled button</button>
+<button type="button" class="btn btn-outline-primary" disabled>Disabled outline</button>
+{{</ example >}}
+
+Disabled buttons using the `<a>` element behave a bit different:
+
+- `<a>`s don’t support the disabled attribute, so you must add the `.disabled` class to make it visually appear disabled.
+- Some future-friendly styles are included to disable all `pointer-events` on anchor buttons.
+- Disabled buttons using `<a>` should include the `aria-disabled="true"` attribute to indicate the state of the element to assistive technologies.
+- Disabled buttons using `<a>` should not include the `href` attribute.
+
+{{< example >}}
+<a class="btn btn-link disabled" role="button" aria-disabled="true">Disabled link</a>
+{{</ example >}}
+
+
+#### Link functionality caveat
+
+To cover cases where you have to keep the `href` attribute on a disabled link, the `.disabled` class uses `pointer-events: none` to try to disable the link functionality of `<a>`s. Note that this CSS property is not yet standardized for HTML, but all modern browsers support it. In addition, even in browsers that do support `pointer-events: none`, keyboard navigation remains unaffected, meaning that sighted keyboard users and users of assistive technologies will still be able to activate these links. So to be safe, in addition to `aria-disabled="true"`, also include a `tabindex="-1"` attribute on these links to prevent them from receiving keyboard focus, and use custom JavaScript to disable their functionality altogether.
+
+{{< example >}}
+<a href="#" class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
+{{< /example >}}
+
+### Selected state
+
+Adding an `.active` to indicate the button is selected. Selected button should include the `aria-selected="true"` attribute to indicate the state of the element to assistive technologies.
+
+{{< example >}}
+<button class="btn btn-primary active" type="button" aria-selected="true">Selected button</button>
+<a class="btn btn-link active" role="button" aria-selected="true">Selected link</a>
+{{</ example >}}
+
+## Rounded buttons
 
 Add `.rounded-*` class to make the button rounded and squared. Check out our [border radius utilities]({{< docsref "border-radius" >}}) for more supported border radius.
 
@@ -179,72 +226,42 @@ This component already includes several predefined button styles, each serving i
 <button type="button" class="btn btn-info">Info</button>
 <button type="button" class="btn btn-light">Light</button>
 <button type="button" class="btn btn-dark">Dark</button>
-<button type="button" class="btn bg-blue-50">blue-50</button>
-<button type="button" class="btn bg-purple-200 text-white">purple-200</button>
 {{</ example >}}
+
+See example of [Social buttons](#social-buttons).
 
 ## Sizes 
 
 Fancy larger or smaller buttons? Add `.btn-lg` or `.btn-sm` for additional sizes.
 
-{{< example class="d-flex flex-column gap-2" >}}
-<span class="fs-sm">Small</span>
+{{< example class="d-flex flex-column gap-4" >}}
 <div>
-  <button type="button" class="btn btn-primary btn-sm">Primary</button>
-  <button type="button" class="btn btn-secondary btn-sm">Secondary</button>
+  <button type="button" class="btn btn-default btn-sm">Small</button>
+  <button type="button" class="btn btn-default">Medium</button>
+  <button type="button" class="btn btn-default btn-lg">Large</button>
 </div>
-<span class="fs-sm">Normal</span>
 <div>
-  <button type="button" class="btn btn-primary">Primary</button>
-  <button type="button" class="btn btn-secondary">Secondary</button>
+  <button type="button" class="btn btn-outline-default btn-sm">Small</button>
+  <button type="button" class="btn btn-outline-default">Medium</button>
+  <button type="button" class="btn btn-outline-default btn-lg">Large</button>
 </div>
-<span class="fs-sm">Large</span>
 <div>
-  <button type="button" class="btn btn-primary btn-lg">Primary</button>
-  <button type="button" class="btn btn-secondary btn-lg">Secondary</button>
+  <button type="button" class="btn btn-primary btn-sm">Small</button>
+  <button type="button" class="btn btn-primary">Medium</button>
+  <button type="button" class="btn btn-primary btn-lg">Large</button>
 </div>
 {{</ example >}}
 
-You can even roll your own custom sizing with CSS variables:
+You can even roll your own custom sizing with CSS variables: `--bs-btn-padding-y`, `--bs-btn-padding-x` and `--bs-btn-font-size`.
 
 {{< example >}}
-<button type="button" class="btn btn-primary"
-        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-  Custom button
+<button type="button" class="btn btn-primary" style="
+        --bs-btn-padding-y: 0.75rem; 
+        --bs-btn-padding-x: 1.25rem; 
+        --bs-btn-font-size: 1rem;">
+  Custom Size
 </button>
 {{</ example >}}
-
-## Disabled state
-
-Make buttons look inactive by adding the `disabled` boolean attribute to any `<button>` element. Disabled buttons have `pointer-events: none` applied to, preventing hover and active states from triggering.
-
-{{< example class="d-flex align-items-start gap-2 flex-wrap" >}}
-<button type="button" class="btn btn-primary" disabled>Primary button</button>
-<button type="button" class="btn btn-secondary" disabled>Button</button>
-<button type="button" class="btn btn-outline-primary" disabled>Primary button</button>
-<button type="button" class="btn btn-outline-secondary" disabled>Button</button>
-{{</ example >}}
-
-Disabled buttons using the `<a>` element behave a bit different:
-
-- `<a>`s don’t support the disabled attribute, so you must add the `.disabled` class to make it visually appear disabled.
-- Some future-friendly styles are included to disable all `pointer-events` on anchor buttons.
-- Disabled buttons using `<a>` should include the `aria-disabled="true"` attribute to indicate the state of the element to assistive technologies.
-- Disabled buttons using `<a>` should not include the `href` attribute.
-
-{{< example >}}
-<a class="btn btn-primary disabled" role="button" aria-disabled="true">Primary link</a>
-<a class="btn btn-secondary disabled" role="button" aria-disabled="true">Link</a>
-{{</ example >}}
-
-### Link functionality caveat
-
-To cover cases where you have to keep the `href` attribute on a disabled link, the `.disabled` class uses `pointer-events: none` to try to disable the link functionality of `<a>`s. Note that this CSS property is not yet standardized for HTML, but all modern browsers support it. In addition, even in browsers that do support `pointer-events: none`, keyboard navigation remains unaffected, meaning that sighted keyboard users and users of assistive technologies will still be able to activate these links. So to be safe, in addition to `aria-disabled="true"`, also include a `tabindex="-1"` attribute on these links to prevent them from receiving keyboard focus, and use custom JavaScript to disable their functionality altogether.
-
-{{< example >}}
-<a href="#" class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
-<a href="#" class="btn btn-secondary disabled" tabindex="-1" role="button" aria-disabled="true">Link</a>
-{{< /example >}}
 
 ## Block buttons
 
@@ -294,11 +311,29 @@ Buttons may include an icon before or after the text.
 {{< example >}}
 <button class="btn btn-default"><i class="fas fa-bars"></i></button>
 <button class="btn btn-default"><i class="fas fa-search"></i></button>
-<button class="btn btn-primary"><i class="fas fa-star"></i> Icon before</button>
-<button class="btn btn-primary">Icon after <i class="fas fa-star"></i> </button>
+<button class="btn btn-default"><i class="fas fa-star"></i> Icon before</button>
+<button class="btn btn-default">Icon after <i class="fas fa-star"></i> </button>
 {{</ example >}}
 
-## Social button
+## Button elements
+
+The `.btn` classes are designed to be used with the `<button>` element. However, you can also use these classes on `<a>` or `<input>` elements (though some browsers may apply a slightly different rendering).
+
+When using button classes on `<a>` elements that are used to trigger in-page functionality (like collapsing content), rather than linking to new pages or sections within the current page, these links should be given a `role="button"` to appropriately convey their purpose to assistive technologies such as screen readers.
+
+{{< example class="d-flex align-items-start gap-2 flex-wrap" >}}
+<a class="btn btn-primary" href="#" role="button">Link</a>
+<button class="btn btn-primary" type="submit">Button</button>
+<input class="btn btn-primary" type="button" value="Input">
+<input class="btn btn-primary" type="submit" value="Submit">
+<input class="btn btn-primary" type="reset" value="Reset">
+{{</ example >}}
+
+## Disable text wrapping
+
+If you don’t want the button text to wrap, you can add the [`.text-nowrap`]({{< docsref "whitespace" >}}) class to the button. In Sass, you can set `$btn-white-space: nowrap` to disable text wrapping for each button.
+
+## Social buttons
 
 Combining our icons and custom colors you can create social buttons. Combining our icons and custom colors you can create social buttons. 
 

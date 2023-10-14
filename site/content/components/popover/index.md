@@ -18,15 +18,18 @@ Responsive Popover built with the latest Bootstrap 5. Popovers containers used t
 
 Documentation and examples for adding Bootstrap popovers, like those found in iOS, to any element on your site.
 
-## Basic example
+## Live example
 
-Popovers are opt-in for performance reasons, you must initialize popover yourself via js `new bootstrap.Popover()`.
+Titles are set via `data-bs-title` and body content is set via `data-bs-content`.
 
 {{< example >}}
-<button type="button" class="btn btn-primary" data-bs-toggle="popover" data-bs-content="Content">
+<button type="button" class="btn btn-primary" data-bs-toggle="popover"
+ data-bs-content="And here's some amazing content. It's very engaging. Right?">
   Open popover
 </button>
 {{</ example >}}
+
+Popovers are opt-in for performance reasons, you must initialize popover yourself via js `new bootstrap.Popover()`.
 
 **Javascript**
 
@@ -127,6 +130,39 @@ const popover = new bootstrap.Popover(".example-popover", {
   container: "body",
 });
 ```
+
+Another situation where you’ll want to set an explicit custom `container` are popovers inside a [modal dialog]({{< docsref "modal" >}}), to make sure that the popover itself is appended to the modal. This is particularly important for popovers that contain interactive elements – modal dialogs will trap focus, so unless the popover is a child element of the modal, users won’t be able to focus or activate these interactive elements.
+
+```js
+const popover = new bootstrap.Popover('.example-popover', {
+  container: '.modal-body'
+})
+```
+
+## Custom popovers
+
+You can customize the appearance of popovers using CSS variables. We set a custom class with `data-bs-custom-class="custom-popover"` to scope our custom appearance and use it to override some of the local CSS variables.
+
+```css
+.custom-popover {
+  --bs-popover-max-width: 200px;
+  --bs-popover-border-color: #6e5dc6;
+  --bs-popover-header-bg: #6e5dc6;
+  --bs-popover-header-color: var(--bs-white);
+  --bs-popover-body-padding-x: 1rem;
+  --bs-popover-body-padding-y: 0.5rem;
+}
+```
+
+{{< example >}}
+<button type="button" class="btn btn-secondary"
+        data-bs-toggle="popover" data-bs-placement="right"
+        data-bs-custom-class="custom-popover"
+        data-bs-title="Custom popover"
+        data-bs-content="This popover is themed via CSS variables.">
+  Custom popover
+</button>
+{{</ example >}}
 
 ## Disabled elements
 

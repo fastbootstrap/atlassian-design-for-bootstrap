@@ -14,51 +14,36 @@ menu:
 
 **Bootstrap 5 Pills component**
 
-Responsive pills built with the latest Bootstrap 5. Pills are button-like navigation components which can allows users navigate to another pages or switch to another content on the same page.
+Responsive pills built with the latest Bootstrap 5. Pills or called chips are button-like navigation components which can allows users navigate to another pages or switch to another content on the same page.
 
 Documentation and examples for pills how to usage and JavaScript plugin.
 
-## Basic example
+## Basic pills
 
-Use the `nav-pills` to `nav` element make its pills.
+Use the `nav-pills` to `nav` element make its pills. 
 
-<div class="bd-example">
+{{< example >}}
 <ul class="nav nav-pills">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" data-bs-toggle="pill" href="#">Link 1</a>
+    <a class="nav-link active" aria-current="page" data-bs-toggle="pill" href="#">My templates</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#" data-bs-toggle="pill">Link 2</a>
+    <a class="nav-link" href="#" data-bs-toggle="pill">Featured</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#" data-bs-toggle="pill">Link 3</a>
+    <a class="nav-link" href="#" data-bs-toggle="pill">Popular</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link disabled" data-bs-toggle="pill">Disabled link</a>
+    <a class="nav-link" href="#" data-bs-toggle="pill">Design</a>
   </li>
 </ul>
-</div>
+{{</ example >}}
 
-```html
-<ul class="nav nav-pills">
-  <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Link 1</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link 2</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link 3</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled">Disabled link</a>
-  </li>
-</ul>
-```
+See [Radio toggle buttons]({{< docsref "Radio" >}}) section.
 
-## Tabbed pills
+## Tabs
 
-Make the basic pills to generate a tabbed interface like [tabs]({{< ref "tabs" >}}) using `data-bs-toggle="pill"`.
+Make the basic pills to generate a tabbed interface like [Tabs]({{< ref "tabs" >}}) using `data-bs-toggle="pill"`.
 
 {{< example >}}
 <ul class="nav nav-pills" role="tablist">
@@ -80,7 +65,7 @@ Make the basic pills to generate a tabbed interface like [tabs]({{< ref "tabs" >
 {{</ example >}}
 
 
-## Vertical pills
+## Vertical
 
 Stack your navigation by changing the flex item direction with the `.flex-column` utility. Need to stack them on some viewports but not others? Use the responsive versions (e.g., `.flex-sm-column`).
 
@@ -103,7 +88,7 @@ Stack your navigation by changing the flex item direction with the `.flex-column
 
 Force your `.nav`’s contents to extend the full available width one of two modifier classes.
 
-### Fill width
+### Filling width
 
 To proportionately fill all available space with your `.nav-item`s, use `.nav-fill`. **Notice that all horizontal space is occupied, but not every nav item has the same width.**
 
@@ -226,7 +211,6 @@ Note that navigation bars, even if visually styled as pills with the `.nav-pills
 ## Related
 
 - [Tabs]({{< docsref "tabs" >}})
-- [Progress indicator]({{< docsref "progress-indicator" >}})
 
 {{</ tab >}}
 

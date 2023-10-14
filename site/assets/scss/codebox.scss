@@ -27,12 +27,12 @@
       padding: 4px 6px;
       border-radius: 3px;
       box-shadow: none;
-      color: #fff;
+      color: var(--ds-text);
+      font-weight: 500;
       transition: color 0.25s, background-color 0.25s;
 
       &:hover {
-        color: #fff;
-        background-color: rgba(116, 118, 121, 0.6);
+        background-color:var(--ds-background-neutral-subtle-hovered);
       }
 
       &:focus,

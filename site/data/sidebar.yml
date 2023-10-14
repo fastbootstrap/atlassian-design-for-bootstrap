@@ -40,8 +40,8 @@ components:
     title: Data Display
   - name: surfaces
     title: surfaces
-  - name: misc
-    title: Misc
+  - name: utilities
+    title: Utilities
 design:
   - name: foundations
     title: Foundations

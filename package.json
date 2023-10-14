@@ -38,7 +38,7 @@
     "dist": "npm-run-all --aggregate-output --parallel css js"
   },
   "dependencies": {
-    "bootstrap": "5.2.1"
+    "bootstrap": "^5.3.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.18.10",

@@ -1,0 +1,62 @@
+$body-color-dark: dark("text");
+$body-bg-dark: dark("surface");
+$border-color-dark: $ds-border;
+$link-color-dark: dark("link");
+$link-hover-color-dark: $link-color-dark;
+
+$primary-text-emphasis-dark: $ds-text;
+$secondary-text-emphasis-dark: $ds-text;
+$success-text-emphasis-dark: $ds-text;
+$info-text-emphasis-dark: $ds-text;
+$warning-text-emphasis-dark: $ds-text;
+$danger-text-emphasis-dark: $ds-text;
+$light-text-emphasis-dark: $ds-text;
+$dark-text-emphasis-dark: $ds-text;
+
+$primary-bg-subtle-dark: $ds-background-brand-subtlest;
+$secondary-bg-subtle-dark: $ds-background-discovery;
+$success-bg-subtle-dark: $ds-background-success;
+$info-bg-subtle-dark: $ds-background-information;
+$warning-bg-subtle-dark: $ds-background-warning;
+$danger-bg-subtle-dark: $ds-background-danger;
+$light-bg-subtle-dark: $ds-background-neutral-bold;
+$dark-bg-subtle-dark: $ds-background-neutral;
+
+$primary-border-subtle-dark: transparent;
+$secondary-border-subtle-dark: transparent;
+$success-border-subtle-dark: transparent;
+$info-border-subtle-dark: transparent;
+$warning-border-subtle-dark: transparent;
+$danger-border-subtle-dark: transparent;
+$light-border-subtle-dark: transparent;
+$dark-border-subtle-dark: transparent;
+
+$btn-close-color-dark: dark("icon-subtle");
+$btn-close-disabled-color: dark("icon-disabled");
+
+// Checkboxes
+$form-check-input-checked-bg-image-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{dark('icon-inverse')}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/></svg>");
+$form-check-input-disabled-bg-image-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{dark('icon-disabled')}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/></svg>");
+$form-check-input-indeterminate-disabled-bg-image-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{dark('icon-disabled')}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/></svg>");
+$form-check-input-indeterminate-bg-image-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{dark('icon-inverse')}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/></svg>");
+$form-check-radio-checked-bg-image-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{dark('icon-inverse')}'/></svg>");
+$form-check-radio-disabled-bg-image-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{dark('icon-disabled')}'/></svg>");
+
+$form-select-indicator-color-dark: dark("text-subtle");
+$form-select-indicator-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$form-select-indicator-color-dark}' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/></svg>");
+$form-select-disabled-indicator-color-dark: dark("text-disabled");
+$form-select-disabled-indicator-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$form-select-disabled-indicator-color-dark}' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/></svg>");
+
+$form-switch-color-dark: dark("icon-inverse");
+$form-switch-focus-bg-image-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{dark('icon-inverse')}'/></svg>") !default;
+
+$form-valid-color-dark: $ds-text-success;
+$form-valid-border-color-dark: $ds-border-success;
+$form-invalid-color-dark: $ds-text-danger;
+$form-invalid-border-color-dark: $ds-border-danger;
+
+$accordion-icon-color-dark: dark("text");
+$accordion-icon-active-color-dark: dark("text");
+$accordion-button-icon-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='#{$accordion-icon-color-dark}'><path fill-rule='evenodd' d='M6.744 8.744a1.053 1.053 0 000 1.49l4.547 4.557a1 1 0 001.416 0l4.55-4.558a1.051 1.051 0 10-1.488-1.488l-3.77 3.776-3.768-3.776a1.051 1.051 0 00-1.487 0z'></path></svg>");
+$accordion-button-active-icon-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='#{$accordion-icon-active-color-dark}'><path fill-rule='evenodd' d='M6.744 8.744a1.053 1.053 0 000 1.49l4.547 4.557a1 1 0 001.416 0l4.55-4.558a1.051 1.051 0 10-1.488-1.488l-3.77 3.776-3.768-3.776a1.051 1.051 0 00-1.487 0z'></path></svg>");
+

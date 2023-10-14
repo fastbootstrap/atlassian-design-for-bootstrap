@@ -22,7 +22,7 @@ List groups are a flexible and powerful component for displaying a series of con
 
 The most basic list group is an unordered list with list items and the proper classes. Build upon it with the options that follow, or with your own CSS as needed.
 
-{{< example class="bd-example-list-group d-flex justify-content-center bg-light" >}}
+{{< example class="bd-example-list-group d-flex justify-content-center" >}}
 <ul class="list-group">
   <li class="list-group-item list-group-item-action">
     <i class="fa-solid fa-inbox fa-lg me-3"></i> Inbox
@@ -40,7 +40,7 @@ The most basic list group is an unordered list with list items and the proper cl
 
 Add `.active` to `.list-group-item` to indicate the current active selection.
 
-{{< example class="bd-example-list-group d-flex justify-content-center bg-light" >}}
+{{< example class="bd-example-list-group d-flex justify-content-center" >}}
 <ul class="list-group">
   <li class="list-group-item list-group-item-action"><i class="fa-solid fa-inbox fa-lg me-3"></i> Inbox</li>
   <li class="list-group-item list-group-item-action active"><i class="fa-solid fa-envelope-open fa-lg me-3"></i> Draft</li>
@@ -52,9 +52,9 @@ Add `.active` to `.list-group-item` to indicate the current active selection.
 
 ## Disabled items 
 
-Add `.disabled` to `.list-group-item` to make it appear disabled. S
+Add `.disabled` to a `.list-group-item` to make it appear disabled. Note that some elements with `.disabled` will also require custom JavaScript to fully disable their click events (e.g., links).
 
-{{< example class="bd-example-list-group d-flex justify-content-center bg-light" >}}
+{{< example class="bd-example-list-group d-flex justify-content-center" >}}
 <ul class="list-group">
   <li class="list-group-item list-group-item-action"><i class="fa-solid fa-inbox fa-lg me-3"></i> Inbox</li>
   <li class="list-group-item list-group-item-action disabled"><i class="fa-solid fa-envelope-open fa-lg me-3"></i> Draft</li>
@@ -72,9 +72,11 @@ Some elements with `.disabled` will also require custom JavaScript to fully disa
 
 Use `<a>`s or `<button>`s to create actionable list group items with hover, disabled, and active states by adding `.list-group-item-action`. We separate these pseudo-classes to ensure list groups made of non-interactive elements (like `<li>`s or `<div>`s) don’t provide a click or tap affordance.
 
+Be sure to **not use the standard `.btn` classes here**.
+
 ### Links 
 
-{{< example class="bd-example-list-group d-flex justify-content-center bg-light" >}}
+{{< example class="bd-example-list-group d-flex justify-content-center" >}}
 <div class="list-group">
   <a class="list-group-item list-group-item-action" href="#">
     <i class="fa-solid fa-inbox fa-lg me-3"></i> Inbox
@@ -83,7 +85,7 @@ Use `<a>`s or `<button>`s to create actionable list group items with hover, disa
     <i class="fa-solid fa-envelope-open fa-lg me-3"></i> Draft
   </a>
   <a class="list-group-item list-group-item-action" href="#">Trash</a>
-  <a class="list-group-item list-group-item-action disabled" href="#">Spam</a>
+  <a class="list-group-item list-group-item-action disabled" href="#">Disabled Spam</a>
 </div>
 {{</ example >}}
 
@@ -91,7 +93,7 @@ Use `<a>`s or `<button>`s to create actionable list group items with hover, disa
 
 With `<button>`s, you can also make use of the disabled attribute instead of the `.disabled` class. Sadly, `<a>`s don’t support the disabled attribute.
 
-{{< example class="bd-example-list-group d-flex justify-content-center bg-light" >}}
+{{< example class="bd-example-list-group d-flex justify-content-center" >}}
 <div class="list-group">
   <button class="list-group-item list-group-item-action" type="button">
     <i class="fa-solid fa-inbox fa-lg me-3"></i> Inbox
@@ -100,7 +102,7 @@ With `<button>`s, you can also make use of the disabled attribute instead of the
     <i class="fa-solid fa-envelope-open fa-lg me-3"></i> Draft
   </button>
   <button class="list-group-item list-group-item-action" type="button">Trash</button>
-  <button class="list-group-item list-group-item-action" type="button" disabled>Spam</button>
+  <button class="list-group-item list-group-item-action" type="button" disabled>Disabled Spam</button>
 </div>
 {{</ example >}}
 
@@ -108,8 +110,8 @@ With `<button>`s, you can also make use of the disabled attribute instead of the
 
 Add `.list-group-flush` to add a border to render list group items edge-to-edge in a parent container (e.g., cards).
 
-{{< example class="bd-example-list-group d-flex justify-content-center bg-light" >}}
-<ul class="list-group list-group-flush">
+{{< example class="bd-example-list-group d-flex justify-content-center" >}}
+<ul class="list-group list-group-flush border">
   <li class="list-group-item">An item</li>
   <li class="list-group-item">A second item</li>
   <li class="list-group-item">A third item</li>
@@ -124,7 +126,7 @@ Add the `.list-group-numbered` modifier class (and optionally use an `<ol>` elem
 
 Numbers are generated by `counter-reset` on the `<ol>`, and then styled and placed with a `::before` pseudo-element on the `<li>` with counter-increment and content.
 
-{{< example class="bd-example-list-group d-flex justify-content-center bg-light" >}}
+{{< example class="bd-example-list-group d-flex justify-content-center" >}}
 <ol class="list-group list-group-numbered">
   <li class="list-group-item ">Single-line item</li>
   <li class="list-group-item">Single-line item</li>
@@ -134,7 +136,7 @@ Numbers are generated by `counter-reset` on the `<ol>`, and then styled and plac
 
 These work great with custom content as well.
 
-{{< example class="bd-example-list-group d-flex justify-content-center bg-light" >}}
+{{< example class="bd-example-list-group d-flex justify-content-center" >}}
 <ol class="list-group list-group-numbered">
   <li class="list-group-item d-flex justify-content-between align-items-start">
     <div class="ms-2 me-auto">
@@ -162,10 +164,10 @@ These work great with custom content as well.
 
 ## Horizontal 
 
-Add `.list-group-horizontal` to change the layout of list group items from vertical to horizontal across all breakpoints. Alternatively, choose a responsive variant `.list-group-horizontal-{sm|md|lg|xl|xxl}` to make a list group horizontal starting at that breakpoint’s min-width. 
+Add `.list-group-horizontal` to change the layout of list group items from vertical to horizontal across all breakpoints. Alternatively, choose a responsive variant `.list-group-horizontal-{sm|md|lg|xl|xxl}` to make a list group horizontal starting at that breakpoint’s `min-width`. **Currently horizontal list groups cannot be combined with flush list groups.**
 
 {{< callout >}}
-Want equal-width list group items when horizontal? Add `.flex-fill` to each list group item.
+ProTip: Want equal-width list group items when horizontal? Add `.flex-fill` to each list group item.
 {{</ callout >}}
 
 {{< example >}}
@@ -190,7 +192,7 @@ Want equal-width list group items when horizontal? Add `.flex-fill` to each list
 
 Use contextual classes to style list items with a stateful background and color. Or you can use our background color utilities to change .Check out [background color]({{< docsref "background-color" >}})
 
-{{< example class="bd-example-list-group d-flex justify-content-center bg-light" >}}
+{{< example class="bd-example-list-group d-flex justify-content-center" >}}
 <ul class="list-group gap-2">
   <li class="list-group-item">A simple default list group item</li>
   <li class="list-group-item list-group-item-primary">A simple primary list group item</li>
@@ -208,28 +210,28 @@ Use contextual classes to style list items with a stateful background and color.
 
 Add [badge]({{< ref "badge" >}}) to any list group item to show unread counts, activity, and more with the help of some utilities.
 
-{{< example class="bd-example-list-group d-flex justify-content-center bg-light" >}}
+{{< example class="bd-example-list-group d-flex justify-content-center" >}}
 <ul class="list-group">
-  <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-    List item
-    <span class="badge text-bg-primary">14</span>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    A list item
+    <span class="badge bg-primary rounded-pill">14</span>
   </li>
-  <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-    List item
-    <span class="badge text-bg-primary">+2</span>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    A second list item
+    <span class="badge bg-primary rounded-pill">2</span>
   </li>
-  <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-    List item
-    <span class="badge text-bg-secondary">1</span>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    A third list item
+    <span class="badge bg-primary rounded-pill">1</span>
   </li>
 </ul>
 {{</ example >}}
 
 ## Custom content 
 
-In this example, we use [lozenge]({{< ref "lozenge" >}}) and any HTML element to any list group item to show the user status.
+Add nearly any HTML within, even for linked list groups like the one below, with the help of flexbox utilities.
 
-{{< example class="bd-example-list-group d-flex justify-content-center bg-light" >}}
+{{< example class="bd-example-list-group d-flex justify-content-center" >}}
 <ul class="list-group">
   <li class="list-group-item d-flex justify-content-between align-items-center">
     <div class="d-flex align-items-center">
@@ -239,7 +241,7 @@ In this example, we use [lozenge]({{< ref "lozenge" >}}) and any HTML element to
         <p class="text-muted mb-0 fs-sm">john.doe@gmail.com</p>
       </div>
     </div>
-    <span class="lozenge bg-green-50 text-green-500">Active</span>
+    <span class="badge text-bg-success">Active</span>
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-center">
     <div class="d-flex align-items-center">
@@ -249,7 +251,7 @@ In this example, we use [lozenge]({{< ref "lozenge" >}}) and any HTML element to
         <p class="text-muted mb-0 fs-sm">alex.ray@gmail.com</p>
       </div>
     </div>
-    <span class="lozenge bg-red-50 text-red-500">Removed</span>
+    <span class="badge text-bg-danger">Removed</span>
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-center">
     <div class="d-flex align-items-center">
@@ -259,7 +261,7 @@ In this example, we use [lozenge]({{< ref "lozenge" >}}) and any HTML element to
         <p class="text-muted mb-0 fs-sm">kate.hunington@gmail.com</p>
       </div>
     </div>
-    <span class="lozenge bg-blue-50 text-blue-500">Awaiting</span>
+    <span class="badge text-bg-warning">Awaiting</span>
   </li>
 </ul>
 {{</ example >}}
@@ -268,7 +270,7 @@ In this example, we use [lozenge]({{< ref "lozenge" >}}) and any HTML element to
 
 Place [checkboxes]({{< ref "checkbox" >}}) and [radios]({{< ref "radio" >}}) within list group items and customize as needed. You can use them without `<label>`s, but please remember to include an `aria-label` attribute and value for accessibility.
 
-{{< example class="bd-example-list-group d-flex justify-content-center bg-light" >}}
+{{< example class="bd-example-list-group d-flex justify-content-center" >}}
 <ul class="list-group">
   <li class="list-group-item list-group-item-action">
     <div class="d-flex flex-row-reverse justify-content-between">
@@ -291,7 +293,7 @@ Place [checkboxes]({{< ref "checkbox" >}}) and [radios]({{< ref "radio" >}}) wit
 </ul>
 {{</ example >}}
 
-{{< example class="bd-example-list-group d-flex justify-content-center bg-light" >}}
+{{< example class="bd-example-list-group d-flex justify-content-center" >}}
 <ul class="list-group">
   <li class="list-group-item list-group-item-action">
     <div class="d-flex flex-row-reverse justify-content-between">
@@ -316,6 +318,7 @@ Place [checkboxes]({{< ref "checkbox" >}}) and [radios]({{< ref "radio" >}}) wit
 
 {{</ tab >}}
 {{< tab "API" >}}
+
 ## Usage
 
 
@@ -324,7 +327,7 @@ Use the [tab plugin]({{< ref "tabs" >}}) to extend our list group to create tabb
 <div class="bd-example" role="tabpanel">
   <div class="row">
     <div class="col-4">
-      <div class="list-group" id="list-tab" role="tablist">
+      <div class="list-group border-0" id="list-tab" role="tablist">
         <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="tab" href="#list-home" role="tab" aria-controls="list-home">Home</a>
         <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="tab" href="#list-profile" role="tab" aria-controls="list-profile">Profile</a>
         <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="tab" href="#list-messages" role="tab" aria-controls="list-messages">Messages</a>

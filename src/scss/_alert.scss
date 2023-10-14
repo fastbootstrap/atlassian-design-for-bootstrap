@@ -1,37 +1,15 @@
-@mixin alert-state($state, $bg-color, $icon) {
-  .alert-#{$state} {
-    --#{$prefix}alert-bg: #{$bg-color};
-    padding-left: ($alert-padding-x + 2.5rem);
+@import "bootstrap/scss/alert";
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: $alert-padding-y;
-      left: $alert-padding-x;
-      display: block;
-      width: 24px;
-      height: 24px;
-      background-image: escape-svg($icon);
-      background-repeat: no-repeat;
-    }
-  }
-}
+.alert {
+  --#{$prefix}alert-font-size: #{$alert-font-size};
 
-.alert-heading {
-  margin-bottom: 0.5rem;
-  font-weight: $font-weight-bold;
-  font-size: 1rem;
+  font-size: var(--#{$prefix}alert-font-size);
 }
 
 .alert-dismissible {
   .btn-close {
     top: $alert-padding-y;
     right: $alert-padding-x;
-    padding: $btn-close-padding-y $btn-close-padding-x;
-    margin-top: 0.25rem;
+    padding: 0;
   }
-}
-
-@each $state, $data in $alert-states {
-  @include alert-state($state, $data...);
 }

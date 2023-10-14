@@ -14,6 +14,8 @@ A form consists of a group of related fields. You can customize the fields with 
 
 Form is a wrapper that does not render anything itself. Instead, it passes props and information down into the `<form>` element and its children. This includes information about whether the form is dirty, disabled, reset or submitting.
 
+## Basic example
+
 {{< example >}}
 <form>
   <div class="mb-3">

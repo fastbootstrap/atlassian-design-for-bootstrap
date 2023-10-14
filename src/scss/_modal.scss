@@ -1,3 +1,5 @@
+@import "bootstrap/scss/modal";
+
 .modal-header + .modal-body {
   padding-top: 0;
   padding-bottom: 0;
@@ -5,7 +7,6 @@
 
 .modal-dialog-scrollable {
   .modal-body {
-    border-bottom: 2px solid $neutral-30;
+    border-bottom: 2px solid $border-color;
   }
 }
-

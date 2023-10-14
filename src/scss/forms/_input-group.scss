@@ -1,0 +1,79 @@
+@import "bootstrap/scss/forms/input-group";
+
+.input-group {
+  .btn + .btn {
+    border-left-color: transparent;
+  }
+}
+
+.input-group-text {
+  @include transition($input-transition);
+}
+
+.input-group-start,
+.input-group-end {
+  .input-group-text {
+    background-color: $input-bg;
+    margin-left: 0;
+  }
+
+  > .form-control {
+    &:hover {
+      + .input-group-text,
+      + .input-group-text + .input-group-text {
+        background-color: $input-hover-bg;
+      }
+    }
+
+    &:focus,
+    &:focus-visible {
+      + .input-group-text,
+      + .input-group-text + .input-group-text {
+        background-color: $input-focus-bg;
+        border-color: $input-focus-border-color;
+      }
+    }
+
+    &.is-invalid {
+      + .input-group-text {
+        border-color: $form-feedback-invalid-color;
+      }
+    }
+
+    &.is-valid {
+      + .input-group-text {
+        border-color: $form-feedback-valid-color;
+      }
+    }
+  }
+}
+
+.input-group-start {
+  flex-direction: row-reverse;
+
+  > .form-control {
+    border-left: none;
+    padding-left: 0;
+    @include border-start-radius(0 !important);
+    @include border-end-radius($input-border-radius !important);
+  }
+
+  > .input-group-text {
+    border-right: none;
+    @include border-start-radius($input-border-radius !important);
+    @include border-end-radius(0 !important);
+  }
+}
+
+.input-group-end {
+  flex-direction: row;
+
+  > .form-control {
+    padding-right: 0;
+    border-right: none;
+  }
+
+  > .input-group-text {
+    border-left: none;
+  }
+}

@@ -48,6 +48,8 @@
     if (range.hasAttribute('max')) {
       max = parseInt(range.getAttribute('max'));
     }
+    var value = (range.value / max) * 100;
+    range.style.setProperty('--track-fg-width', value + '%');
     range.addEventListener('input', (e) => {
       var value = (range.value / max) * 100;
       range.style.setProperty('--track-fg-width', value + '%');
@@ -134,4 +136,13 @@
       }
     });
   });
+
+  const myOffcanvas = document.querySelectorAll('.bd-example-offcanvas .offcanvas')
+  if (myOffcanvas) {
+    myOffcanvas.forEach(offcanvas => {
+      offcanvas.addEventListener('show.bs.offcanvas', event => {
+        event.preventDefault()
+      }, false)
+    })
+  }
 })();

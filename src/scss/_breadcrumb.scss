@@ -1,4 +1,20 @@
+@import "bootstrap/scss/breadcrumb";
+
 .breadcrumb {
-  --#{$prefix}link-color: #{$breadcrumb-link-color};
-  --#{$prefix}link-hover-color: #{$breadcrumb-link-hover-color};
+  --#{$prefix}breadcrumb-link-color: #{$breadcrumb-link-color};
+  --#{$prefix}breadcrumb-link-hover-color: #{$breadcrumb-link-color};
+
+  a {
+    --#{$prefix}link-color-rgb: var(--#{$prefix}breadcrumb-link-color);
+    
+    &:hover {
+      --#{$prefix}link-color-rgb: var(--#{$prefix}breadcrumb-link-hover-color);
+    }
+  }
+
+  .breadcrumb-item + .breadcrumb-item::before {
+    float: none;
+    min-width: $ds-space-100;
+    text-align: center;
+  }
 }

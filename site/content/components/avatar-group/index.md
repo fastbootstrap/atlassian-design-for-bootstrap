@@ -13,51 +13,45 @@ menu:
 
 Responsive Avatar group built with the latest Bootstrap 5. Avatar group component displays a number of avatars grouped together in a stack.
 
-## Basic example
+## Stacked avatar
 
-Use a `.avatar-stack` wrap the list of `.avatar` element in the `.avatar-item`.
+Include multiple avatars in stacked.
 
-{{< example class="d-flex" >}}
+{{< example >}}
 <div class="avatar-stack">
-  <div class="avatar-item">
-    <img class="avatar" src="/images/avatar/1.jpg" />
-  </div>
-  <div class="avatar-item">
-    <img class="avatar" src="/images/avatar/2.jpg" />
-  </div>
-  <div class="avatar-item">
-    <img class="avatar" src="/images/avatar/4.jpg" />
-  </div>
-  <div class="avatar-item">
-    <img class="avatar" src="/images/avatar/5.jpg" />
-  </div>
-  <div class="avatar-item">
     <span class="avatar">+6</span>
-  </div>
+    <img class="avatar" src="/images/avatar/1.jpg" />
+    <img class="avatar" src="/images/avatar/2.jpg" />
+    <img class="avatar" src="/images/avatar/4.jpg" />
+    <img class="avatar" src="/images/avatar/5.jpg" />
 </div>
 {{</ example >}}
 
-## Change direction
 
-Add a `.avatar-stack-reverse` class to the `.avatar-stack` element to change an avatar stack direction.
+## Border color
 
-{{< example class="d-flex" >}}
+The color of the border around the avatar. Any color that the CSS border-color property accepts can be used.
+
+{{< example >}}
+
 <div class="avatar-stack avatar-stack-reverse">
-  <div class="avatar-item">
-    <span class="avatar">+6</span>
-  </div>
-  <div class="avatar-item">
+    <span class="avatar border-danger">+6</span>
+    <img class="avatar border-danger" src="/images/avatar/1.jpg" />
+    <img class="avatar border-danger" src="/images/avatar/2.jpg" />
+    <img class="avatar border-danger" src="/images/avatar/4.jpg" />
+    <img class="avatar border-danger" src="/images/avatar/5.jpg" />
+</div>
+{{</ example >}}
+
+## Grouped avatar
+
+{{< example>}}
+<div class="avatar-group">
     <img class="avatar" src="/images/avatar/1.jpg" />
-  </div>
-  <div class="avatar-item">
     <img class="avatar" src="/images/avatar/2.jpg" />
-  </div>
-  <div class="avatar-item">
     <img class="avatar" src="/images/avatar/4.jpg" />
-  </div>
-  <div class="avatar-item">
     <img class="avatar" src="/images/avatar/5.jpg" />
-  </div>
+    <span class="avatar">+6</span>
 </div>
 {{</ example >}}
 

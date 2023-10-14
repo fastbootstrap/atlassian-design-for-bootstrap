@@ -12,27 +12,10 @@ menu:
 
 Responsive card built with the latest Bootstrap 5. The card component is a flexible and extensible content container includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. 
 
-## Basic example
+## Basic card
 
-{{< example class="bd-example-card d-flex justify-content-center bg-light" >}}
+{{< example class="bd-example-card d-flex justify-content-center" >}}
 <div class="card">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">
-      Some quick example text to build on the card title 
-      and make up the bulk of the card's content.
-    </p>
-    <button type="button" class="btn btn-primary">Learn More</button>
-  </div>
-</div>
-{{</ example >}}
-
-### Outlined Card
-
-Use the `shadow-none` to disable shadow of card.
-
-{{< example class="bd-example-card d-flex justify-content-center bg-light" >}}
-<div class="card shadow-none border">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">
@@ -170,79 +153,65 @@ Add an optional footer `.card-footer` within a card.
 </div>
 {{</ example >}}
 
-## Content 
 
-Cards support a wide variety of content, including images, text, list groups, links, and more. Below are examples of what’s supported.
+## Navigation
 
-### Titles, text and links
+Add some navigation to a card’s header (or block) with pills or [tabs]({{< ref "tabs" >}}) components.
 
-Card titles are used by adding `.card-title` to a `<h*>` tag. In the same way, links are added and placed next to each other by adding `.card-link` to an `<a>` tag.
+### Tabs nav
 
-Subtitles are used by adding a `.card-subtitle` to a `<h*>` tag. If the `.card-title` and the `.card-subtitle` items are placed in a `.card-body` item, the card title and subtitle are aligned nicely.
+Add the `.card-header-tabs` class to the `.nav-tabs`.
 
-{{< example class="bd-example-card d-flex justify-content-center bg-light" >}}
+{{< example class="bg-light" >}}
 <div class="card">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="true" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled">Disabled</a>
+      </li>
+    </ul>
   </div>
-</div>
-{{</ example >}}
-
-### Images 
-
-`.card-img-top` places an image to the top of the card. With `.card-text`, text can be added to the card. Text within `.card-text` can also be styled with the standard HTML tags.
-
-{{< example class="bd-example-card d-flex justify-content-center bg-light" >}}
-<div class="card">
-  <img src="/images/cards/1.jpg" class="card-img-top" alt="green iguana" />
-  <div class="card-body">
+  <div class="card-body text-center">
+    <h5 class="card-title">Special title treatment</h5>
     <p class="card-text">
-      Lizards are a widespread group of squamate reptiles, with over 
-      6,000 species, ranging across all continents except Antarctica.
+      With supporting text below as a natural lead-in to additional content.
     </p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
 {{</ example >}}
 
-### List groups
+### Pills nav
 
-Create lists of content in a card with a flush list group.
+Add the `.card-header-pills` class to the `.nav-pills`.
 
-{{< example class="bd-example-card d-flex justify-content-center bg-light" >}}
+{{< example class="bg-light" >}}
 <div class="card">
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item px-3">Cras justo odio</li>
-    <li class="list-group-item px-3">Dapibus ac facilisis in</li>
-    <li class="list-group-item px-3">Vestibulum at eros</li>
-  </ul>
-</div>
-{{</ example >}}
-
-### Kitchen sink 
-
-Mix and match multiple content types to create the card you need, or throw everything in there. Shown below are image styles, blocks, text styles, and a list group—all wrapped in a fixed-width card.
-
-{{< example class="bd-example-card d-flex justify-content-center bg-light" >}}
-<div class="card">
-  <img src="/images/cards/1.jpg" class="card-img-top" alt="green iguana" />
-  <div class="card-body">
+  <div class="card-header">
+    <ul class="nav nav-pills card-header-pills">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled">Disabled</a>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body text-center">
+    <h5 class="card-title">Special title treatment</h5>
     <p class="card-text">
-      Lizards are a widespread group of squamate reptiles, with over 
-      6,000 species, ranging across all continents except Antarctica.
+      With supporting text below as a natural lead-in to additional content.
     </p>
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item px-3">Cras justo odio</li>
-    <li class="list-group-item px-3">Dapibus ac facilisis in</li>
-    <li class="list-group-item px-3">Vestibulum at eros</li>
-  </ul>
-  <div class="card-body">
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
 {{</ example >}}
@@ -374,68 +343,6 @@ Using a combination of grid and utility classes, cards can be made horizontal in
         </p>
       </div>
     </div>
-  </div>
-</div>
-{{</ example >}}
-
-## Navigation
-
-Add some navigation to a card’s header (or block) with pills or [tabs]({{< ref "tabs" >}}) components.
-
-### With tabs
-
-Add the `.card-header-tabs` class to the `.nav`.
-
-{{< example class="bg-light" >}}
-<div class="card">
-  <div class="card-header">
-    <ul class="nav nav-tabs card-header-tabs">
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="true" href="#">Active</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled">Disabled</a>
-      </li>
-    </ul>
-  </div>
-  <div class="card-body text-center">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">
-      With supporting text below as a natural lead-in to additional content.
-    </p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-{{</ example >}}
-
-### With pills
-
-Add the `.card-header-pills` class to the `.nav`.
-
-{{< example class="bg-light" >}}
-<div class="card">
-  <div class="card-header">
-    <ul class="nav nav-pills card-header-pills">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Active</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled">Disabled</a>
-      </li>
-    </ul>
-  </div>
-  <div class="card-body text-center">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">
-      With supporting text below as a natural lead-in to additional content.
-    </p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
 {{</ example >}}
@@ -717,6 +624,84 @@ When you need equal height, add `.h-100` to the cards. If you want equal heights
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
     </div>
+  </div>
+</div>
+{{</ example >}}
+
+
+## Content 
+
+Cards support a wide variety of content, including images, text, list groups, links, and more. Below are examples of what’s supported.
+
+### Titles, text and links
+
+Card titles are used by adding `.card-title` to a `<h*>` tag. In the same way, links are added and placed next to each other by adding `.card-link` to an `<a>` tag.
+
+Subtitles are used by adding a `.card-subtitle` to a `<h*>` tag. If the `.card-title` and the `.card-subtitle` items are placed in a `.card-body` item, the card title and subtitle are aligned nicely.
+
+{{< example class="bd-example-card d-flex justify-content-center bg-light" >}}
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+{{</ example >}}
+
+### Images 
+
+`.card-img-top` places an image to the top of the card. With `.card-text`, text can be added to the card. Text within `.card-text` can also be styled with the standard HTML tags.
+
+{{< example class="bd-example-card d-flex justify-content-center bg-light" >}}
+<div class="card">
+  <img src="/images/cards/1.jpg" class="card-img-top" alt="green iguana" />
+  <div class="card-body">
+    <p class="card-text">
+      Lizards are a widespread group of squamate reptiles, with over 
+      6,000 species, ranging across all continents except Antarctica.
+    </p>
+  </div>
+</div>
+{{</ example >}}
+
+### List groups
+
+Create lists of content in a card with a flush list group.
+
+{{< example class="bd-example-card d-flex justify-content-center bg-light" >}}
+<div class="card">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item px-3">Cras justo odio</li>
+    <li class="list-group-item px-3">Dapibus ac facilisis in</li>
+    <li class="list-group-item px-3">Vestibulum at eros</li>
+  </ul>
+</div>
+{{</ example >}}
+
+### Kitchen sink 
+
+Mix and match multiple content types to create the card you need, or throw everything in there. Shown below are image styles, blocks, text styles, and a list group—all wrapped in a fixed-width card.
+
+{{< example class="bd-example-card d-flex justify-content-center bg-light" >}}
+<div class="card">
+  <img src="/images/cards/1.jpg" class="card-img-top" alt="green iguana" />
+  <div class="card-body">
+    <p class="card-text">
+      Lizards are a widespread group of squamate reptiles, with over 
+      6,000 species, ranging across all continents except Antarctica.
+    </p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item px-3">Cras justo odio</li>
+    <li class="list-group-item px-3">Dapibus ac facilisis in</li>
+    <li class="list-group-item px-3">Vestibulum at eros</li>
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
   </div>
 </div>
 {{</ example >}}

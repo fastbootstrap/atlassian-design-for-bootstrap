@@ -1,8 +1,11 @@
+@import "bootstrap/scss/progress";
+
 .progress {
   position: relative;
 }
 
-.progress-indeterminate {
+.progress-indeterminate,
+.progress-linear  {
   .progress-bar {
     &:before {
       content: "";

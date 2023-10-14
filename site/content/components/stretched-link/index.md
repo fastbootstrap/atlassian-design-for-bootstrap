@@ -3,7 +3,7 @@ layout: docs
 title: Stretched Link
 description: "Stretched link allow users to navigate to a different location on overlay elements."
 toc: true
-group: navigation
+group: utilities
 menu:
   components:
 ---

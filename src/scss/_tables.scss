@@ -1,16 +1,18 @@
 .table {
-  font-size: 0.875rem;
+  --#{$prefix}table-font-size: 0.875rem;
+
   border-spacing: 0;
+  font-size: var(--#{$prefix}table-font-size);
 
   & > thead {
     &:not(.table-dark) {
       color: $neutral-300;
-      background-color: $neutral-0;
+      background-color: $ds-surface;
     }
   }
 
   th {
-    font-weight: $font-weight-bold;
+    font-weight: $font-weight-medium; // 500
   }
 
   td {
@@ -19,7 +21,7 @@
 }
 
 .table-active {
-  --#{$prefix}table-hover-bg: #{$blue-75};
+  --#{$prefix}table-hover-bg: #{$ds-background-selected-hovered};
 }
 
 .table-borderless {

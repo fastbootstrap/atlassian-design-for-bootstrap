@@ -23,21 +23,6 @@ FastBootstrap are dependencies on Bootstrap.
 1.x | 5.2.x | 2.11.x |
 {{</ bs-table >}}
 
-## Extended components
-
-In addition to Bootstrap's base component, FastBootstrap pre-builts more extended components ready for your next project. 
-
-- [Avatar]({{< docsref "avatar" >}})
-- [Avatar Group]({{< docsref "avatar-group" >}})
-- [Blankslate]({{< docsref "blankslate" >}})
-- [Lozenge]({{< docsref "lozenge" >}})
-- [Menu]({{< docsref "menu" >}})
-- [Progress Indicator]({{< docsref "progress-indicator" >}})
-- [Progress Tracker]({{< docsref "progress-tracker" >}})
-- [Sidenav]({{< docsref "side-navigation" >}})
-- [Tag]({{< docsref "tag" >}})
-- [Layout]({{< docsref "layout" >}})
-
 ## Javascript Plugin
 
 `fastbootstrap.js` includes [Popper JS](https://popper.js.org/), Bootstrap's basic JS plugin and our extended plugin. You can use our `fastbootstrap.js` instead of `bootstrap.js`.
@@ -49,14 +34,6 @@ In addition to Bootstrap's base component, FastBootstrap pre-builts more extende
 `bootstrap.bundle.js` | <i class="fa-solid fa-check fa-sm"></i> | <i class="fa-solid fa-check fa-sm"></i> | |
 `fastbootstrap.js` | <i class="fa-solid fa-check fa-sm"></i> | <i class="fa-solid fa-check fa-sm"></i> | <i class="fa-solid fa-check fa-sm"></i> |
 {{</ bs-table >}}
-
-### Extended plugins
-
-- [Progress Indicator]({{< docsref "progress-indicator" >}})
-- [Progress Tracker]({{< docsref "progress-tracker" >}})
-- [Sidenav]({{< docsref "side-navigation" >}})
-- [Tag]({{< docsref "tag" >}})
-
 
 ## Utility-first CSS
 

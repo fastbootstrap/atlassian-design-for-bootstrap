@@ -1,0 +1,275 @@
+@import "bootstrap/scss/buttons";
+
+$btn-colors: ("primary", "secondary", "danger", "warning", "subtle", "default");
+
+$btn-colors-bs: ("success","dark", "light", "info");
+
+@mixin button-variant2(
+  $background,
+  $border,
+  $color,
+  $hover-background,
+  $hover-border,
+  $hover-color,
+  $active-background ,
+  $active-border,
+  $active-color,
+) {
+  --#{$prefix}btn-color: #{$color};
+  --#{$prefix}btn-bg: #{$background};
+  --#{$prefix}btn-border-color: #{$border};
+  --#{$prefix}btn-hover-color: #{$hover-color};
+  --#{$prefix}btn-hover-bg: #{$hover-background};
+  --#{$prefix}btn-hover-border-color: #{$hover-border};
+  --#{$prefix}btn-focus-shadow-rgb: transparent;
+  --#{$prefix}btn-active-color: #{$active-color};
+  --#{$prefix}btn-active-bg: #{$active-background};
+  --#{$prefix}btn-active-border-color: #{$active-border};
+  --#{$prefix}btn-active-shadow: #{$btn-active-box-shadow};
+  --#{$prefix}btn-disabled-color: #{$ds-text-disabled};
+  --#{$prefix}btn-disabled-bg: #{$ds-background-disabled};
+  --#{$prefix}btn-disabled-border-color: transparent;
+}
+
+@each $color in $btn-colors {
+  .btn-#{$color} {
+    @if $color== "primary" {
+      @include button-variant2(
+        $ds-background-brand-bold,
+        $border: transparent,
+        $color: $ds-text-inverse,
+        $hover-background: $ds-background-brand-bold-hovered,
+        $hover-border: transparent,
+        $hover-color: $ds-text-inverse,
+        $active-background: $ds-background-selected,
+        $active-border: transparent,
+        $active-color: $ds-text-selected,
+      );
+
+      // Reset a pressed style
+      &:not(.active):active {
+        --#{$prefix}btn-active-color: #{$ds-text-inverse};
+        --#{$prefix}btn-active-bg: #{$ds-background-selected-bold-pressed};
+      }
+    } @else if $color== "subtle" {
+      @include button-variant2(
+        $ds-background-neutral-subtle,
+        $border: transparent,
+        $color: $ds-text,
+        $hover-background: $ds-background-neutral-subtle-hovered,
+        $hover-border: transparent,
+        $hover-color: $ds-text,
+        $active-background: $ds-background-selected,
+        $active-border: transparent,
+        $active-color: $ds-text-selected,
+      );
+
+      // Reset a pressed style
+      &:not(.active):active {
+        --#{$prefix}btn-active-color: #{$ds-text};
+        --#{$prefix}btn-active-bg: #{$ds-background-neutral-subtle-pressed};
+      }
+    } @else if $color== "default" {
+      @include button-variant2(
+        $ds-background-neutral,
+        $border: transparent,
+        $color: $ds-text,
+        $hover-background: $ds-background-neutral-hovered,
+        $hover-border: transparent,
+        $hover-color: $ds-text,
+        $active-background: $ds-background-selected,
+        $active-border: transparent,
+        $active-color: $ds-text-selected,
+      );
+
+      &:not(.active):active {
+        --#{$prefix}btn-active-color: #{$ds-text};
+        --#{$prefix}btn-active-bg: #{$ds-background-neutral-pressed};
+      }
+    } @else if $color== "danger" {
+      @include button-variant2(
+        $ds-background-danger-bold,
+        $border: transparent,
+        $color: $ds-text-inverse,
+        $hover-background: $ds-background-danger-bold-hovered,
+        $hover-border: transparent,
+        $hover-color: $ds-text-inverse,
+        $active-background: $ds-background-selected,
+        $active-border: transparent,
+        $active-color: $ds-text-selected,
+      );
+
+      &:not(.active):active {
+        --#{$prefix}btn-active-color: #{$ds-text-inverse};
+        --#{$prefix}btn-active-bg: #{$ds-background-danger-bold-pressed};
+      }
+    } @else if $color== "warning" {
+      @include button-variant2(
+        $ds-background-warning-bold,
+        $border: transparent,
+        $color: $ds-text-warning-inverse,
+        $hover-background: $ds-background-warning-bold-hovered,
+        $hover-border: transparent,
+        $hover-color: $ds-text-warning-inverse,
+        $active-background: $ds-background-selected,
+        $active-border: transparent,
+        $active-color: $ds-text-selected,
+      );
+
+      &:not(.active):active {
+        --#{$prefix}btn-active-color: #{$ds-text-warning-inverse};
+        --#{$prefix}btn-active-bg: #{$ds-background-warning-bold-pressed};
+      }
+    } @else if $color== "secondary" {
+      @include button-variant2(
+        $ds-background-discovery-bold,
+        $border: transparent,
+        $color: $ds-text-inverse,
+        $hover-background: $ds-background-discovery-bold-hovered,
+        $hover-border: transparent,
+        $hover-color: $ds-text-inverse,
+        $active-background: $ds-background-selected,
+        $active-border: transparent,
+        $active-color: $ds-text-selected,
+      );
+
+      &:not(.active):active {
+        --#{$prefix}btn-active-color: #{$ds-text-inverse};
+        --#{$prefix}btn-active-bg: #{$ds-background-discovery-bold-pressed};
+      }
+    }
+  }
+}
+
+@each $color in $btn-colors {
+  .btn-outline-#{$color} {
+    @if $color== "primary" {
+      @include button-variant2(
+        transparent,
+        $border: $ds-background-brand-bold,
+        $color: $ds-background-brand-bold,
+        $hover-background: $ds-background-brand-bold-hovered,
+        $hover-border: transparent,
+        $hover-color: $ds-text-inverse,
+        $active-background: $ds-background-selected,
+        $active-border: transparent,
+        $active-color: $ds-text-selected,
+      );
+
+      &:not(.active):active {
+        --#{$prefix}btn-active-color: #{$ds-text-inverse};
+        --#{$prefix}btn-active-bg: #{$ds-background-selected-bold-pressed};
+      }
+    } @else if $color== "default" {
+      @include button-variant2(
+        transparent,
+        $border: $ds-background-neutral-hovered,
+        $color: $ds-text,
+        $hover-background: $ds-background-neutral-hovered,
+        $hover-border: transparent,
+        $hover-color: $ds-text,
+        $active-background: $ds-background-selected,
+        $active-border: transparent,
+        $active-color: $ds-text-selected,
+      );
+
+      &:not(.active):active {
+        --#{$prefix}btn-active-color: #{$ds-text};
+        --#{$prefix}btn-active-bg: #{$ds-background-neutral-pressed};
+      }
+    } @else if $color== "secondary" {
+      @include button-variant2(
+        transparent,
+        $border: $ds-background-discovery-bold,
+        $color: $ds-background-discovery-bold,
+        $hover-background: $ds-background-discovery-bold-hovered,
+        $hover-border: transparent,
+        $hover-color: $ds-text-inverse,
+        $active-background: $ds-background-selected,
+        $active-border: transparent,
+        $active-color: $ds-text-selected,
+      );
+
+      &:not(.active):active {
+        --#{$prefix}btn-active-color: #{$ds-text-inverse};
+        --#{$prefix}btn-active-bg: #{$ds-background-discovery-bold-pressed};
+      }
+    } @else if $color== "danger" {
+      @include button-variant2(
+        transparent,
+        $border: $ds-background-danger-bold,
+        $color: $ds-background-danger-bold,
+        $hover-background: $ds-background-danger-bold-hovered,
+        $hover-border: transparent,
+        $hover-color: $ds-text-inverse,
+        $active-background: $ds-background-selected,
+        $active-border: transparent,
+        $active-color: $ds-text-selected,
+      );
+
+      &:not(.active):active {
+        --#{$prefix}btn-active-color: #{$ds-text-inverse};
+        --#{$prefix}btn-active-bg: #{$ds-background-danger-bold-pressed};
+      }
+    } @else if $color== "warning" {
+      @include button-variant2(
+        transparent,
+        $border: $ds-background-warning-bold,
+        $color: $ds-background-warning-bold,
+        $hover-background: $ds-background-warning-bold-hovered,
+        $hover-border: transparent,
+        $hover-color: $ds-text-warning-inverse,
+        $active-background: $ds-background-selected,
+        $active-border: transparent,
+        $active-color: $ds-text-selected,
+      );
+
+      &:not(.active):active {
+        --#{$prefix}btn-active-color: #{$ds-text-warning-inverse};
+        --#{$prefix}btn-active-bg: #{$ds-background-warning-bold-pressed};
+      }
+    }
+  }
+}
+
+.btn-link {
+  --#{$prefix}btn-font-weight: 500;
+  --#{$prefix}btn-active-bg: #{$ds-background-selected};
+  --#{$prefix}btn-active-color: #{$ds-text-selected};
+  --#{$prefix}btn-active-border-color: transparent;
+
+  &:active {
+    --#{$prefix}btn-active-bg: transparent;
+    --#{$prefix}btn-active-color: #{$ds-link-pressed};
+  }
+}
+
+@each $color in $btn-colors-bs {
+  .btn-#{$color} {
+    --#{$prefix}btn-disabled-color: #{$ds-text-disabled};
+    --#{$prefix}btn-disabled-bg: #{$ds-background-disabled};
+    --#{$prefix}btn-disabled-border-color: transparent;
+
+    .btn-check:checked + &,
+    &.active,
+    &.show {
+      --#{$prefix}btn-active-color: #{$ds-text-selected};
+      --#{$prefix}btn-active-bg: #{$ds-background-selected};
+      --#{$prefix}btn-active-border-color: transparent;
+    }
+  }
+
+  .btn-outline-#{$color}{
+    --#{$prefix}btn-disabled-color: #{$ds-text-disabled};
+    --#{$prefix}btn-disabled-bg: transparent;
+    --#{$prefix}btn-disabled-border-color: #{$ds-border-disabled};
+
+    .btn-check:checked + &,
+    &.active,
+    &.show {
+      --#{$prefix}btn-active-color: #{$ds-text-selected};
+      --#{$prefix}btn-active-bg: #{$ds-background-selected};
+      --#{$prefix}btn-active-border-color: transparent;
+    }
+  }
+}

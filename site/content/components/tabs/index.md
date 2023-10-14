@@ -18,49 +18,49 @@ Responsive tabs build with the latest Bootstrap 5.
 
 Tabs used to alternate among related views within the same context on the same page and without leaving the page.
 
-## Basic example
+## Basic tabs
 
 Basic tabs includes two sections - The list of nav button and the content on tab panels.
 
 {{< example >}}
-<ul class="nav nav-tabs mb-3" role="tablist">
+<ul class="nav nav-tabs" role="tablist">
   <li class="nav-item" role="presentation">
-    <a class="nav-link active" id="simple-tab-0" data-bs-toggle="tab" href="#simple-tabpanel-0" role="tab" aria-controls="simple-tabpanel-0" aria-selected="true"> Tab 1 </a>
+    <a class="nav-link active" id="simple-tab-0" data-bs-toggle="tab" href="#simple-tabpanel-0" role="tab" aria-controls="simple-tabpanel-0" aria-selected="true">Tab 1</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="simple-tab-1" data-bs-toggle="tab" href="#simple-tabpanel-1" role="tab" aria-controls="simple-tabpanel-1" aria-selected="false"> Tab 2 </a>
+    <a class="nav-link" id="simple-tab-1" data-bs-toggle="tab" href="#simple-tabpanel-1" role="tab" aria-controls="simple-tabpanel-1" aria-selected="false">Tab 2</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="simple-tab-2" data-bs-toggle="tab" href="#simple-tabpanel-2" role="tab" aria-controls="simple-tabpanel-2" aria-selected="false"> Tab 3 </a>
+    <a class="nav-link" id="simple-tab-2" data-bs-toggle="tab" href="#simple-tabpanel-2" role="tab" aria-controls="simple-tabpanel-2" aria-selected="false">Tab 3</a>
   </li>
 </ul>
-<div class="tab-content" id="tab-content">
-  <div class="tab-pane active" id="simple-tabpanel-0" role="tabpanel" aria-labelledby="simple-tab-0">One</div>
-  <div class="tab-pane" id="simple-tabpanel-1" role="tabpanel" aria-labelledby="simple-tab-1">Two</div>
-  <div class="tab-pane" id="simple-tabpanel-2" role="tabpanel" aria-labelledby="simple-tab-2">Three</div>
+<div class="tab-content pt-5" id="tab-content">
+  <div class="tab-pane active" id="simple-tabpanel-0" role="tabpanel" aria-labelledby="simple-tab-0">Tab 1 selected</div>
+  <div class="tab-pane" id="simple-tabpanel-1" role="tabpanel" aria-labelledby="simple-tab-1">Tab 2 selected</div>
+  <div class="tab-pane" id="simple-tabpanel-2" role="tabpanel" aria-labelledby="simple-tab-2">Tab 3 selected</div>
 </div>
 {{</ example >}}
 
 ## Disabled tab
 
-Add `.disabled` to the `.nav-link` to disabled a table.
+Add an `.disabled` to the `.nav-link` to disabled a table. Disabled tab have `pointer-events: none` applied to, preventing hover and active states from triggering.
 
 {{< example >}}
-<ul class="nav nav-tabs mb-3" role="tablist">
+<ul class="nav nav-tabs" role="tablist">
   <li class="nav-item" role="presentation">
-    <a class="nav-link active" id="disabled-tab-0" data-bs-toggle="tab" href="#disabled-tabpanel-0" role="tab" aria-controls="disabled-tabpanel-0" aria-selected="true"> Tab 1 </a>
+    <a class="nav-link active" id="disabled-tab-0" data-bs-toggle="tab" href="#disabled-tabpanel-0" role="tab" aria-controls="disabled-tabpanel-0" aria-selected="true">Tab 1</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="disabled-tab-1" data-bs-toggle="tab" href="#disabled-tabpanel-1" role="tab" aria-controls="disabled-tabpanel-1" aria-selected="false"> Tab 2 </a>
+    <a class="nav-link" id="disabled-tab-1" data-bs-toggle="tab" href="#disabled-tabpanel-1" role="tab" aria-controls="disabled-tabpanel-1" aria-selected="false">Tab 2</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link disabled" id="disabled-tab-2" data-bs-toggle="tab" href="#disabled-tabpanel-2" role="tab" aria-controls="disabled-tabpanel-2" aria-selected="false"> Tab 3 </a>
+    <a class="nav-link disabled" id="disabled-tab-2" data-bs-toggle="tab" href="#disabled-tabpanel-2" role="tab" aria-controls="disabled-tabpanel-2" aria-selected="false">Tab 3</a>
   </li>
 </ul>
-<div class="tab-content" id="tab-content">
-  <div class="tab-pane active" id="disabled-tabpanel-0" role="tabpanel" aria-labelledby="disabled-tab-0">One</div>
-  <div class="tab-pane" id="disabled-tabpanel-1" role="tabpanel" aria-labelledby="disabled-tab-1">Two</div>
-  <div class="tab-pane" id="disabled-tabpanel-2" role="tabpanel" aria-labelledby="disabled-tab-2">Three</div>
+<div class="tab-content pt-5" id="tab-content">
+  <div class="tab-pane active" id="disabled-tabpanel-0" role="tabpanel" aria-labelledby="disabled-tab-0">Tab 1 selected</div>
+  <div class="tab-pane" id="disabled-tabpanel-1" role="tabpanel" aria-labelledby="disabled-tab-1">Tab 2 selected</div>
+  <div class="tab-pane" id="disabled-tabpanel-2" role="tabpanel" aria-labelledby="disabled-tab-2">Tab 3 selected</div>
 </div>
 {{</ example >}}
 
@@ -71,7 +71,7 @@ Add `.disabled` to the `.nav-link` to disabled a table.
 To proportionately fill all available space with your `.nav-items`, use `.nav-fill`. Notice that all horizontal space is occupied, but not every nav item has the same width.
 
 {{< example >}}
-<ul class="nav nav-fill nav-tabs mb-3" role="tablist">
+<ul class="nav nav-fill nav-tabs" role="tablist">
   <li class="nav-item" role="presentation">
     <a class="nav-link active" id="fill-tab-0" data-bs-toggle="tab" href="#fill-tabpanel-0" role="tab" aria-controls="fill-tabpanel-0" aria-selected="true"> Tab 1 </a>
   </li>
@@ -82,17 +82,17 @@ To proportionately fill all available space with your `.nav-items`, use `.nav-fi
     <a class="nav-link" id="fill-tab-2" data-bs-toggle="tab" href="#fill-tabpanel-2" role="tab" aria-controls="fill-tabpanel-2" aria-selected="false"> Tab 3 </a>
   </li>
 </ul>
-<div class="tab-content" id="tab-content">
-  <div class="tab-pane active" id="fill-tabpanel-0" role="tabpanel" aria-labelledby="fill-tab-0">One</div>
-  <div class="tab-pane" id="fill-tabpanel-1" role="tabpanel" aria-labelledby="fill-tab-1">Two</div>
-  <div class="tab-pane" id="fill-tabpanel-2" role="tabpanel" aria-labelledby="fill-tab-2">Three</div>
+<div class="tab-content pt-5" id="tab-content">
+  <div class="tab-pane active" id="fill-tabpanel-0" role="tabpanel" aria-labelledby="fill-tab-0">Tab 1 selected</div>
+  <div class="tab-pane" id="fill-tabpanel-1" role="tabpanel" aria-labelledby="fill-tab-1">Tab Tab 2 selected</div>
+  <div class="tab-pane" id="fill-tabpanel-2" role="tabpanel" aria-labelledby="fill-tab-2">Tab Tab 3 selected</div>
 </div>
 {{</ example >}}
 
 For equal-width elements, use `.nav-justified`. All horizontal space will be occupied by nav links, but unlike the `.nav-fill` above, every nav item will be the same width.
 
 {{< example >}}
-<ul class="nav nav-tabs nav-justified mb-3" role="tablist">
+<ul class="nav nav-tabs nav-justified" role="tablist">
   <li class="nav-item" role="presentation">
     <a class="nav-link active" id="justified-tab-0" data-bs-toggle="tab" href="#justified-tabpanel-0" role="tab" aria-controls="justified-tabpanel-0" aria-selected="true"> Tab 1 </a>
   </li>
@@ -103,10 +103,10 @@ For equal-width elements, use `.nav-justified`. All horizontal space will be occ
     <a class="nav-link" id="justified-tab-2" data-bs-toggle="tab" href="#justified-tabpanel-2" role="tab" aria-controls="justified-tabpanel-2" aria-selected="false"> Tab 3 </a>
   </li>
 </ul>
-<div class="tab-content" id="tab-content">
-  <div class="tab-pane active" id="justified-tabpanel-0" role="tabpanel" aria-labelledby="justified-tab-0">One</div>
-  <div class="tab-pane" id="justified-tabpanel-1" role="tabpanel" aria-labelledby="justified-tab-1">Two</div>
-  <div class="tab-pane" id="justified-tabpanel-2" role="tabpanel" aria-labelledby="justified-tab-2">Three</div>
+<div class="tab-content pt-5" id="tab-content">
+  <div class="tab-pane active" id="justified-tabpanel-0" role="tabpanel" aria-labelledby="justified-tab-0">Tab 1 selected</div>
+  <div class="tab-pane" id="justified-tabpanel-1" role="tabpanel" aria-labelledby="justified-tab-1">Tab 'Much longer nav link' selected</div>
+  <div class="tab-pane" id="justified-tabpanel-2" role="tabpanel" aria-labelledby="justified-tab-2">Tab 3 selected</div>
 </div>
 {{</ example >}}
 
@@ -130,50 +130,55 @@ To make centered tabs use the `.justify-content-center` utility.
 
 ## Vertical tabs
 
-To make vertical tabs instead of default horizontal ones, add `.nav-tabs-vertical` to the `.nav-tabs`. For vertical tabs, you should also add `aria-orientation="vertical"` to the tab list container.
+<span class="lozenge new fs-sm">New Feature</span>
+
+To make vertical tabs instead of default horizontal ones, use `.nav-tabs-vertical`. For vertical tabs, you should also add `aria-orientation="vertical"` to the tab list container.
 
 {{< example >}}
 <div class="row gx-3 gx-lg-5">
   <div class="col-3">
     <ul class="nav nav-tabs nav-tabs-vertical" role="tablist">
       <li class="nav-item" role="presentation">
-        <a class="nav-link active" id="vertical-tab-0" data-bs-toggle="tab" href="#vertical-tabpanel-0" role="tab" aria-controls="vertical-tabpanel-0" aria-selected="true"> Tab 1 </a>
+        <a class="nav-link active" id="vertical-tab-0" data-bs-toggle="tab" href="#vertical-tabpanel-0" role="tab" aria-controls="vertical-tabpanel-0" aria-selected="true">Tab 1</a>
       </li>
       <li class="nav-item" role="presentation">
-        <a class="nav-link" id="vertical-tab-1" data-bs-toggle="tab" href="#vertical-tabpanel-1" role="tab" aria-controls="vertical-tabpanel-1" aria-selected="false"> Tab 2 </a>
+        <a class="nav-link" id="vertical-tab-1" data-bs-toggle="tab" href="#vertical-tabpanel-1" role="tab" aria-controls="vertical-tabpanel-1" aria-selected="false">Tab 2</a>
       </li>
       <li class="nav-item" role="presentation">
-        <a class="nav-link" id="vertical-tab-2" data-bs-toggle="tab" href="#vertical-tabpanel-2" role="tab" aria-controls="vertical-tabpanel-2" aria-selected="false"> Tab 3 </a>
+        <a class="nav-link" id="vertical-tab-2" data-bs-toggle="tab" href="#vertical-tabpanel-2" role="tab" aria-controls="vertical-tabpanel-2" aria-selected="false">Tab 3</a>
       </li>
     </ul>
   </div>
   <div class="col-9">
     <div class="tab-content" id="tab-content" aria-orientation="vertical">
-      <div class="tab-pane active" id="vertical-tabpanel-0" role="tabpanel" aria-labelledby="vertical-tab-0">One</div>
-      <div class="tab-pane" id="vertical-tabpanel-1" role="tabpanel" aria-labelledby="vertical-tab-1">Two</div>
-      <div class="tab-pane" id="vertical-tabpanel-2" role="tabpanel" aria-labelledby="vertical-tab-2">Three</div>
+      <div class="tab-pane active" id="vertical-tabpanel-0" role="tabpanel" aria-labelledby="vertical-tab-0">Content of Tab 1</div>
+      <div class="tab-pane" id="vertical-tabpanel-1" role="tabpanel" aria-labelledby="vertical-tab-1">Content of Tab 2</div>
+      <div class="tab-pane" id="vertical-tabpanel-2" role="tabpanel" aria-labelledby="vertical-tab-2">Content of Tab 3</div>
     </div>
   </div>
 </div>
 {{</ example >}}
 
-## With icon tabs
+## Icon tabs
+
+Tab labels may be either all icons or all text.
+
 {{< example >}}
-<ul class="nav nav-tabs mb-3" role="tablist">
+<ul class="nav nav-tabs" role="tablist">
   <li class="nav-item" role="presentation">
-    <a class="nav-link active" id="icon-tab-0" data-bs-toggle="tab" href="#icon-tabpanel-0" role="tab" aria-controls="icon-tabpanel-0" aria-selected="true"><i class="fas fa-chart-pie fa-lg"></i> </a>
+    <a class="nav-link active" id="icon-tab-0" data-bs-toggle="tab" href="#icon-tabpanel-0" role="tab" aria-controls="icon-tabpanel-0" aria-selected="true"><i class="fa-solid fa-plane-up"></i> Flights</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="icon-tab-1" data-bs-toggle="tab" href="#icon-tabpanel-1" role="tab" aria-controls="icon-tabpanel-1" aria-selected="false"><i class="fas fa-chart-line"></i> Tab 2 </a>
+    <a class="nav-link" id="icon-tab-1" data-bs-toggle="tab" href="#icon-tabpanel-1" role="tab" aria-controls="icon-tabpanel-1" aria-selected="false"><i class="fa-solid fa-suitcase"></i> Trips</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="icon-tab-2" data-bs-toggle="tab" href="#icon-tabpanel-2" role="tab" aria-controls="icon-tabpanel-2" aria-selected="false"><i class="fas fa-chart-bar"></i> Tab 3 </a>
+    <a class="nav-link" id="icon-tab-2" data-bs-toggle="tab" href="#icon-tabpanel-2" role="tab" aria-controls="icon-tabpanel-2" aria-selected="false"><i class="fa-solid fa-star"></i> Favorites</a>
   </li>
 </ul>
-<div class="tab-content" id="tab-content">
-  <div class="tab-pane active" id="icon-tabpanel-0" role="tabpanel" aria-labelledby="icon-tab-0">One</div>
-  <div class="tab-pane" id="icon-tabpanel-1" role="tabpanel" aria-labelledby="icon-tab-1">Two</div>
-  <div class="tab-pane" id="icon-tabpanel-2" role="tabpanel" aria-labelledby="icon-tab-2">Three</div>
+<div class="tab-content pt-5" id="tab-content">
+  <div class="tab-pane active" id="icon-tabpanel-0" role="tabpanel" aria-labelledby="icon-tab-0">Content of Tab 1</div>
+  <div class="tab-pane" id="icon-tabpanel-1" role="tabpanel" aria-labelledby="icon-tab-1">Content of Tab 2</div>
+  <div class="tab-pane" id="icon-tabpanel-2" role="tabpanel" aria-labelledby="icon-tab-2">Content of Tab 3</div>
 </div>
 {{</ example >}}
 

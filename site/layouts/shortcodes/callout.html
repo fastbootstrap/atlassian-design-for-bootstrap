@@ -1,17 +1,19 @@
 {{- $css_class := .Get 0 | default "info" -}}
 
 
-<section class="callout {{ $css_class }} d-flex">
-  <div>
+<section class="alert alert-{{ $css_class }} bd-callout" role="alert">
+  <div class="d-flex gap-4">
     {{- if eq $css_class "warning" -}}
-      <span><i class="fa-solid fa-circle-exclamation fa-lg text-yellow-500"></i></span>
+      <span><i class="fa-solid fa-circle-exclamation icon-warning fa-lg"></i></span>
     {{- else if eq $css_class "danger" -}}
-      <span><i class="fa-solid fa-triangle-exclamation fa-lg text-red-500"></i></span>
+      <span><i class="fa-solid fa-triangle-exclamation icon-danger fa-lg"></i></span>
+    {{- else if eq $css_class "secondary" -}}
+      <span><i class="fa-solid fa-circle-question icon-secondary fa-lg"></i></span>
     {{- else -}}
-      <span><i class="fa-solid fa-circle-info fa-lg text-blue-500"></i></span>
+      <span><i class="fa-solid fa-circle-info icon-info fa-lg"></i></span>
     {{- end -}}
-  </div>
-  <div class="ms-3">
-    {{ .Inner | markdownify }}
+    <div>
+      {{ .Inner | markdownify }}
+    </div>
   </div>
 </section>
