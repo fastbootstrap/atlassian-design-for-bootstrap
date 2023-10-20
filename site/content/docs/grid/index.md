@@ -29,7 +29,7 @@ Breaking it down, here's how the grid system comes together:
 
 Be aware of the limitations and [bugs around flexbox](https://github.com/philipwalton/flexbugs), like the [inability to use some HTML elements as flex containers](https://github.com/philipwalton/flexbugs#flexbug-9).
 
-## Basic grid
+## Grid system
 
 Bootstrap's grid system uses a series of containers, rows, and columns to layout and align content. It's built with [flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) and is fully responsive. Below is an example and an in-depth explanation for how the grid system comes together.
 
@@ -37,18 +37,39 @@ Bootstrap's grid system uses a series of containers, rows, and columns to layout
 **New to or unfamiliar with flexbox?** [Read this CSS Tricks flexbox guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background) for background, terminology, guidelines, and code snippets.
 {{< /callout >}}
 
-{{< example class="bd-example-row" >}}
-<div class="container text-center">
+{{< example class="bg-grid-slate-100 text-center" show_source="false" >}}
+<div class="container bg-striped-purple">
   <div class="row">
-    <div class="col-8">col-8</div>
-    <div class="col-4">col-4</div>
+    <div class="col-8">
+      <div class="text-bg-secondary p-4 rounded">01</div>
+    </div>
+    <div class="col-4">
+      <div class="text-bg-secondary p-4 rounded">02</div>
+    </div>
   </div>
-  <div class="row">
-    <div class="col-4">col-4</div>
-    <div class="col-8">col-8</div>
+  <div class="row mt-4">
+    <div class="col-4">
+      <div class="text-bg-secondary p-4 rounded">03</div>
+    </div>
+    <div class="col-8">
+      <div class="text-bg-secondary p-4 rounded">04</div>
+    </div>
   </div>
 </div>
-{{< /example >}}
+{{</ example >}}
+
+```html
+<div class="container">
+  <div class="row">
+    <div class="col-8">01</div>
+    <div class="col-4">02</div>
+  </div>
+  <div class="row">
+    <div class="col-4">03</div>
+    <div class="col-8">04</div>
+  </div>
+</div>
+```
 
 The above example creates two columns in each of row that across all devices and viewports using our predefined grid classes. Those columns are centered in the page with the parent `.container`.
 
@@ -147,91 +168,100 @@ Utilize breakpoint-specific column classes for easy column sizing without an exp
 
 For example, here are two grid layouts that apply to every device and viewport, from `xs` to `xxl`. Add any number of unit-less classes for each breakpoint you need and every column will be the same width.
 
-{{< example class="bd-example-row" >}}
-<div class="container text-center">
+{{< example show_source="false" >}}
+<div class="container text-center text-center bg-striped-purple">
   <div class="row">
-    <div class="col">
-      1 of 2
-    </div>
-    <div class="col">
-      2 of 2
-    </div>
+    <div class="col"><div class="text-bg-secondary p-4 rounded">1 of 2</div></div>
+    <div class="col"><div class="text-bg-secondary p-4 rounded">2 of 2</div></div>
   </div>
-  <div class="row">
-    <div class="col">
-      1 of 3
-    </div>
-    <div class="col">
-      2 of 3
-    </div>
-    <div class="col">
-      3 of 3
-    </div>
+  <div class="row mt-4">
+    <div class="col"><div class="text-bg-secondary p-4 rounded">1 of 3</div></div>
+    <div class="col"><div class="text-bg-secondary p-4 rounded">2 of 3</div></div>
+    <div class="col"><div class="text-bg-secondary p-4 rounded">3 of 3</div></div>
   </div>
 </div>
 {{< /example >}}
 
+```html
+<div class="container">
+  <div class="row">
+    <div class="col">1 of 2</div>
+    <div class="col">2 of 2</div>
+  </div>
+  <div class="row">
+    <div class="col">1 of 3</div>
+    <div class="col">2 of 3</div>
+    <div class="col">3 of 3</div>
+  </div>
+</div>
+```
 ### Setting one column width
 
 Auto-layout for flexbox grid columns also means you can set the width of one column and have the sibling columns automatically resize around it. You may use predefined grid classes (as shown below), grid mixins, or inline widths. Note that the other columns will resize no matter the width of the center column.
 
-{{< example class="bd-example-row" >}}
-<div class="container text-center">
+{{< example show_source="false" >}}
+<div class="container text-center text-center bg-striped-purple">
   <div class="row">
-    <div class="col">
-      1 of 3
-    </div>
-    <div class="col-6">
-      2 of 3 (wider)
-    </div>
-    <div class="col">
-      3 of 3
-    </div>
+    <div class="col"><div class="text-bg-secondary p-4 rounded">1 of 3</div></div>
+    <div class="col-6"><div class="text-bg-secondary p-4 rounded">2 of 3 (wider)</div></div>
+    <div class="col"><div class="text-bg-secondary p-4 rounded">2 of 3</div></div>
   </div>
-  <div class="row">
-    <div class="col">
-      1 of 3
-    </div>
-    <div class="col-5">
-      2 of 3 (wider)
-    </div>
-    <div class="col">
-      3 of 3
-    </div>
+  <div class="row mt-4">
+    <div class="col"><div class="text-bg-secondary p-4 rounded">1 of 3</div></div>
+    <div class="col-5"><div class="text-bg-secondary p-4 rounded">2 of 3 (wider)</div></div>
+    <div class="col"><div class="text-bg-secondary p-4 rounded">3 of 3</div></div>
   </div>
 </div>
 {{< /example >}}
+
+```html
+<div class="container text-center">
+  <div class="row">
+    <div class="col">1 of 3</div>
+    <div class="col-6">2 of 3 (wider)</div>
+    <div class="col">3 of 3</div>
+  </div>
+  <div class="row">
+    <div class="col">1 of 3</div>
+    <div class="col-5">2 of 3 (wider)</div>
+    <div class="col">3 of 3</div>
+  </div>
+</div>
+```
 
 ### Variable width content
 
 Use `col-{breakpoint}-auto` classes to size columns based on the natural width of their content.
 
-{{< example class="bd-example-row" >}}
-<div class="container text-center">
+{{< example show_source="false" >}}
+<div class="container text-center bg-striped-purple">
   <div class="row justify-content-md-center">
-    <div class="col col-lg-2">
-      1 of 3
-    </div>
-    <div class="col-md-auto">
-      Variable width content
-    </div>
-    <div class="col col-lg-2">
-      3 of 3
-    </div>
+    <div class="col col-lg-2"><div class="text-bg-secondary p-4 rounded">1 of 3</div></div>
+    <div class="col-md-auto"><div class="text-bg-secondary p-4 rounded">Variable width content</div></div>
+    <div class="col col-lg-2"><div class="text-bg-secondary p-4 rounded">2 of 3</div></div>
   </div>
-  <div class="row">
-    <div class="col">
-      1 of 3
-    </div>
-    <div class="col-md-auto">
-      Variable width content
-    </div>
-    <div class="col col-lg-2">
-      3 of 3
-    </div>
+  <div class="row mt-4">
+    <div class="col"><div class="text-bg-secondary p-4 rounded">1 of 3</div></div>
+    <div class="col-md-auto"><div class="text-bg-secondary p-4 rounded">Variable width content</div></div>
+    <div class="col col-lg-2"><div class="text-bg-secondary p-4 rounded">3 of 3</div></div>
   </div>
 </div>
 {{< /example >}}
+
+```html
+<div class="container">
+  <div class="row justify-content-md-center">
+    <div class="col col-lg-2">1 of 3</div>
+    <div class="col-md-auto">Variable width content</div>
+    <div class="col col-lg-2">3 of 3</div>
+  </div>
+  <div class="row">
+    <div class="col">1 of 3</div>
+    <div class="col-md-auto">Variable width content</div>
+    <div class="col col-lg-2">3 of 3</div>
+  </div>
+</div>
+```
 
 ## Responsive classes
 
@@ -241,27 +271,80 @@ Bootstrap's grid includes six tiers of predefined classes for building complex r
 
 For grids that are the same from the smallest of devices to the largest, use the `.col` and `.col-*` classes. Specify a numbered class when you need a particularly sized column; otherwise, feel free to stick to `.col`.
 
-{{< example class="bd-example-row" >}}
-<div class="container text-center">
+
+{{< example class="bg-grid-slate-100 text-center" show_source="false" >}}
+<div class="container bg-striped-purple">
   <div class="row">
-    <div class="col">col</div>
-    <div class="col">col</div>
-    <div class="col">col</div>
-    <div class="col">col</div>
+    <div class="col">
+      <div class="text-bg-secondary p-4 rounded">01</div>
+    </div>
+    <div class="col">
+      <div class="text-bg-secondary p-4 rounded">02</div>
+    </div>
+    <div class="col">
+      <div class="text-bg-secondary p-4 rounded">03</div>
+    </div>
+    <div class="col">
+      <div class="text-bg-secondary p-4 rounded">04</div>
+    </div>
   </div>
-  <div class="row">
-    <div class="col-8">col-8</div>
-    <div class="col-4">col-4</div>
+  <div class="row mt-4">
+    <div class="col-8">
+      <div class="text-bg-secondary p-4 rounded">05</div>
+    </div>
+    <div class="col-4">
+      <div class="text-bg-secondary p-4 rounded">06</div>
+    </div>
   </div>
 </div>
-{{< /example >}}
+{{</ example >}}
+
+```html
+<div class="container">
+  <div class="row">
+    <div class="col">01</div>
+    <div class="col">02</div>
+    <div class="col">03</div>
+    <div class="col">04</div>
+  </div>
+  <div class="row">
+    <div class="col-8">05</div>
+    <div class="col-4">06</div>
+  </div>
+</div>
+```
 
 ### Stacked to horizontal
 
 Using a single set of `.col-sm-*` classes, you can create a basic grid system that starts out stacked and becomes horizontal at the small breakpoint (`sm`).
 
-{{< example class="bd-example-row" >}}
-<div class="container text-center">
+
+{{< example class="bg-grid-slate-100 text-center" show_source="false" >}}
+<div class="container bg-striped-purple">
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="text-bg-secondary p-4 rounded">col-sm-8</div>
+    </div>
+    <div class="col-sm-4">
+      <div class="text-bg-secondary p-4 rounded">col-sm-4</div>
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-sm">
+      <div class="text-bg-secondary p-4 rounded">col-sm</div>
+    </div>
+    <div class="col-sm">
+      <div class="text-bg-secondary p-4 rounded">col-sm</div>
+    </div>
+    <div class="col-sm">
+      <div class="text-bg-secondary p-4 rounded">col-sm</div>
+    </div>
+  </div>
+</div>
+{{</ example >}}
+
+```html
+<div class="container">
   <div class="row">
     <div class="col-sm-8">col-sm-8</div>
     <div class="col-sm-4">col-sm-4</div>
@@ -272,14 +355,46 @@ Using a single set of `.col-sm-*` classes, you can create a basic grid system th
     <div class="col-sm">col-sm</div>
   </div>
 </div>
-{{< /example >}}
+```
 
 ### Mix and match
 
 Don't want your columns to simply stack in some grid tiers? Use a combination of different classes for each tier as needed. See the example below for a better idea of how it all works.
 
-{{< example class="bd-example-row" >}}
-<div class="container text-center">
+{{< example class="bg-grid-slate-100 text-center" show_source="false" >}}
+<div class="container bg-striped-purple">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="text-bg-secondary p-4 rounded">.col-md-8</div>
+    </div>
+    <div class="col-6 col-md-4">
+      <div class="text-bg-secondary p-4 rounded">.col-6 .col-md-4</div>
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-6 col-md-4">
+      <div class="text-bg-secondary p-4 rounded">.col-6 .col-md-4</div>
+    </div>
+    <div class="col-6 col-md-4">
+      <div class="text-bg-secondary p-4 rounded">.col-6 .col-md-4</div>
+    </div>
+    <div class="col-6 col-md-4">
+      <div class="text-bg-secondary p-4 rounded">.col-6 .col-md-4</div>
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-6">
+      <div class="text-bg-secondary p-4 rounded">.col-6</div>
+    </div>
+    <div class="col-6">
+      <div class="text-bg-secondary p-4 rounded">.col-6</div>
+    </div>
+  </div>
+</div>
+{{</ example >}}
+
+```html
+<div class="container">
   <!-- Stack the columns on mobile by making one full-width and the other half-width -->
   <div class="row">
     <div class="col-md-8">.col-md-8</div>
@@ -299,7 +414,7 @@ Don't want your columns to simply stack in some grid tiers? Use a combination of
     <div class="col-6">.col-6</div>
   </div>
 </div>
-{{< /example >}}
+```
 
 ### Row columns
 
@@ -307,71 +422,201 @@ Use the responsive `.row-cols-*` classes to quickly set the number of columns th
 
 Use these row columns classes to quickly create basic grid layouts or to control your card layouts.
 
-{{< example class="bd-example-row" >}}
-<div class="container text-center">
-  <div class="row row-cols-2">
-    <div class="col">Column</div>
-    <div class="col">Column</div>
-    <div class="col">Column</div>
-    <div class="col">Column</div>
+{{< example class="bg-grid-slate-100 text-center" show_source="false" >}}
+<div class="container bg-striped-purple">
+  <div class="d-flex flex-column">
+    <div class="row row-cols-2 g-3">
+      <div class="col">
+        <div class="text-bg-secondary p-4 rounded">01</div>
+      </div>
+      <div class="col">
+        <div class="text-bg-secondary p-4 rounded">02</div>
+      </div>
+      <div class="col">
+        <div class="text-bg-secondary p-4 rounded">03</div>
+      </div>
+      <div class="col">
+        <div class="text-bg-secondary p-4 rounded">04</div>
+      </div>
+    </div>
   </div>
 </div>
-{{< /example >}}
+{{</ example >}}
 
-{{< example class="bd-example-row" >}}
-<div class="container text-center">
-  <div class="row row-cols-3">
-    <div class="col">Column</div>
-    <div class="col">Column</div>
-    <div class="col">Column</div>
-    <div class="col">Column</div>
+```html
+<div class="container">
+  <div class="row row-cols-2 ...">
+    <div class="col">01</div>
+    <div class="col">02</div>
+    <div class="col">03</div>
+    <div class="col">04</div>
   </div>
 </div>
-{{< /example >}}
+```
 
-{{< example class="bd-example-row" >}}
-<div class="container text-center">
+
+{{< example class="bg-grid-slate-100 text-center" show_source="false" >}}
+<div class="container bg-striped-purple">
+  <div class="d-flex flex-column">
+    <div class="row row-cols-3 g-3">
+      <div class="col">
+        <div class="text-bg-secondary p-4 rounded">01</div>
+      </div>
+      <div class="col">
+        <div class="text-bg-secondary p-4 rounded">02</div>
+      </div>
+      <div class="col">
+        <div class="text-bg-secondary p-4 rounded">03</div>
+      </div>
+      <div class="col">
+        <div class="text-bg-secondary p-4 rounded">04</div>
+      </div>
+    </div>
+  </div>
+</div>
+{{</ example >}}
+
+```html
+<div class="container">
+  <div class="row row-cols-3 ...">
+    <div class="col">01</div>
+    <div class="col">02</div>
+    <div class="col">03</div>
+    <div class="col">04</div>
+  </div>
+</div>
+```
+
+
+{{< example class="bg-grid-slate-100 text-center" show_source="false" >}}
+<div class="container bg-striped-purple">
+  <div class="d-flex flex-column">
+    <div class="row row-cols-auto g-3">
+      <div class="col">
+        <div class="text-bg-secondary p-4 rounded">01</div>
+      </div>
+      <div class="col">
+        <div class="text-bg-secondary p-4 rounded">02</div>
+      </div>
+      <div class="col">
+        <div class="text-bg-secondary p-4 rounded">03</div>
+      </div>
+      <div class="col">
+        <div class="text-bg-secondary p-4 rounded">04</div>
+      </div>
+    </div>
+  </div>
+</div>
+{{</ example >}}
+
+```html
+<div class="container">
   <div class="row row-cols-auto">
-    <div class="col">Column</div>
-    <div class="col">Column</div>
-    <div class="col">Column</div>
-    <div class="col">Column</div>
+    <div class="col">01</div>
+    <div class="col">02</div>
+    <div class="col">03</div>
+    <div class="col">04</div>
   </div>
 </div>
-{{< /example >}}
+```
 
-{{< example class="bd-example-row" >}}
-<div class="container text-center">
+
+{{< example class="bg-grid-slate-100 text-center" show_source="false" >}}
+<div class="container bg-striped-purple">
+  <div class="d-flex flex-column">
+    <div class="row row-cols-4 g-3">
+      <div class="col">
+        <div class="text-bg-secondary p-4 rounded">01</div>
+      </div>
+      <div class="col">
+        <div class="text-bg-secondary p-4 rounded">02</div>
+      </div>
+      <div class="col">
+        <div class="text-bg-secondary p-4 rounded">03</div>
+      </div>
+      <div class="col">
+        <div class="text-bg-secondary p-4 rounded">04</div>
+      </div>
+    </div>
+  </div>
+</div>
+{{</ example >}}
+
+```html
+<div class="container">
   <div class="row row-cols-4">
-    <div class="col">Column</div>
-    <div class="col">Column</div>
-    <div class="col">Column</div>
-    <div class="col">Column</div>
+    <div class="col">01</div>
+    <div class="col">02</div>
+    <div class="col">03</div>
+    <div class="col">04</div>
   </div>
 </div>
-{{< /example >}}
+```
 
-{{< example class="bd-example-row" >}}
-<div class="container text-center">
+{{< example class="bg-grid-slate-100 text-center" show_source="false" >}}
+<div class="container bg-striped-purple">
+  <div class="d-flex flex-column">
+    <div class="row row-cols-4 g-3">
+      <div class="col">
+        <div class="text-bg-secondary p-4 rounded">01</div>
+      </div>
+      <div class="col">
+        <div class="text-bg-secondary p-4 rounded">02</div>
+      </div>
+      <div class="col-6">
+        <div class="text-bg-secondary p-4 rounded">03</div>
+      </div>
+      <div class="col">
+        <div class="text-bg-secondary p-4 rounded">04</div>
+      </div>
+    </div>
+  </div>
+</div>
+{{</ example >}}
+
+```html
+<div class="container">
   <div class="row row-cols-4">
-    <div class="col">Column</div>
-    <div class="col">Column</div>
-    <div class="col-6">Column</div>
-    <div class="col">Column</div>
+    <div class="col">01</div>
+    <div class="col">02</div>
+    <div class="col-6">03</div>
+    <div class="col">04</div>
   </div>
 </div>
-{{< /example >}}
+```
 
-{{< example class="bd-example-row" >}}
-<div class="container text-center">
+
+{{< example class="bg-grid-slate-100 text-center" show_source="false" >}}
+<div class="container bg-striped-purple">
+  <div class="d-flex flex-column">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+      <div class="col">
+        <div class="text-bg-secondary p-4 rounded">01</div>
+      </div>
+      <div class="col">
+        <div class="text-bg-secondary p-4 rounded">02</div>
+      </div>
+      <div class="col">
+        <div class="text-bg-secondary p-4 rounded">03</div>
+      </div>
+      <div class="col">
+        <div class="text-bg-secondary p-4 rounded">04</div>
+      </div>
+    </div>
+  </div>
+</div>
+{{</ example >}}
+
+```html
+<div class="container">
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-    <div class="col">Column</div>
-    <div class="col">Column</div>
-    <div class="col">Column</div>
-    <div class="col">Column</div>
+    <div class="col">01</div>
+    <div class="col">02</div>
+    <div class="col">03</div>
+    <div class="col">04</div>
   </div>
 </div>
-{{< /example >}}
+```
 
 You can also use the accompanying Sass mixin, `row-cols()`:
 
@@ -391,8 +636,29 @@ You can also use the accompanying Sass mixin, `row-cols()`:
 
 To nest your content with the default grid, add a new `.row` and set of `.col-sm-*` columns within an existing `.col-sm-*` column. Nested rows should include a set of columns that add up to 12 or fewer (it is not required that you use all 12 available columns).
 
-{{< example class="bd-example-row" >}}
-<div class="container text-center">
+
+{{< example class="bg-grid-slate-100 text-center" show_source="false" >}}
+<div class="container bg-purple-subtle bg-striped-purple">
+    <div class="row bg-striped-white align-items-center">
+    <div class="col-sm-3">
+      <div class="text-bg-secondary p-4">Level 1: .col-sm-3</div>
+    </div>
+    <div class="col-sm-9">
+      <div class="row">
+        <div class="col-8 col-sm-6">
+          <div class="text-bg-secondary p-4">Level 2: .col-8 .col-sm-6</div>
+        </div>
+        <div class="col-4 col-sm-6">
+          <div class="text-bg-secondary p-4">Level 2: .col-4 .col-sm-6</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{</ example >}}
+
+```html
+<div class="container">
   <div class="row">
     <div class="col-sm-3">
       Level 1: .col-sm-3
@@ -409,7 +675,7 @@ To nest your content with the default grid, add a new `.row` and set of `.col-sm
     </div>
   </div>
 </div>
-{{< /example >}}
+```
 
 ## Sass
 

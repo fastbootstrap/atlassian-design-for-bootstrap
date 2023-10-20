@@ -19,14 +19,22 @@ menu:
 
 Control the letter spacing of an element using the `ls-{size}` utilities.
 
-<div class="bd-example flex-column d-flex gap-2">
-  <span>ls-tight</span>
-  <p class="ls-tight fw-semibold fs-5">The quick brown fox jumps over the lazy dog.</p>
-  <span>ls-normal</span>
-  <p class="ls-normal fw-semibold fs-5">The quick brown fox jumps over the lazy dog.</p>
-  <span>ls-wide</span>
-  <p class="ls-wide fw-semibold fs-5">The quick brown fox jumps over the lazy dog.</p>
+{{< example class="bg-grid-slate-100" show_source="false" >}}
+<div class="d-flex gap-4 flex-column">
+  <div>
+    <span class="text-muted mb-3 fa-sm fw-semibold">ls-tight</span>
+    <p class="ls-tight fw-semibold fs-5">The quick brown fox jumps over the lazy dog.</p>
+  </div>
+  <div>
+    <span class="text-muted mb-3 fa-sm fw-semibold">ls-normal</span>
+    <p class="ls-normal fw-semibold fs-5">The quick brown fox jumps over the lazy dog.</p>
+  </div>
+  <div>
+    <span class="text-muted mb-3 fa-sm fw-semibold">ls-wide</span>
+    <p class="ls-wide fw-semibold fs-5">The quick brown fox jumps over the lazy dog.</p>
+  </div>
 </div>
+{{</ example >}}
 
 ```html
 <p class="ls-tight ...">The quick brown fox ...</p>

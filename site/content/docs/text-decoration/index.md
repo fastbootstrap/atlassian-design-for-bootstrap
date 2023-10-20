@@ -8,7 +8,7 @@ menu:
   docs:    
 ---
 
-Decorate text in components with text decoration classes.
+## Quick reference
 
 {{< class-api "text-decoration" >}}
 
@@ -18,16 +18,26 @@ Decorate text in components with text decoration classes.
 
 Control how text is decorated with the `text-decoration-underline`, `text-decoration-none`, and `text-decoration-line-through` utilities.
 
-<div class="bd-example">
-  <span class="text-muted">text-decoration-underline</span>
-  <p class="text-decoration-underline fw-semibold">The quick brown fox jumps over the lazy dog.</p>
-  <span class="text-muted">text-decoration-line-through</span>
-  <p class="text-decoration-line-through fw-semibold">The quick brown fox jumps over the lazy dog.</p>
-  <span class="text-muted">text-decoration-overline</span>
-  <p class="text-decoration-overline fw-semibold">The quick brown fox jumps over the lazy dog.</p>
-  <span class="text-muted">text-decoration-none</span>
-  <p class="text-decoration-none fw-semibold">The quick brown fox jumps over the lazy dog.</p>
+{{< example class="bg-grid-slate-100" show_source="false" >}}
+<div class="d-flex flex-column gap-4">
+  <div>
+    <span class="text-body-tertiary fa-sm fw-semibold mb-3 font-spacemono">underline</span>
+    <p class="text-decoration-underline fs-5 fw-semibold">The quick brown fox jumps over the lazy dog.</p>
+  </div>
+  <div>
+    <span class="text-body-tertiary fa-sm fw-semibold mb-3 font-spacemono">line-through</span>
+    <p class="text-decoration-line-through fs-5 fw-semibold">The quick brown fox jumps over the lazy dog.</p>
+  </div>
+  <div>
+    <span class="text-body-tertiary fa-sm fw-semibold mb-3 font-spacemono">overline</span>
+    <p class="text-decoration-overline fs-5 fw-semibold">The quick brown fox jumps over the lazy dog.</p>
+  </div>
+  <div>
+    <span class="text-body-tertiary fa-sm fw-semibold mb-3 font-spacemono">no-decoration</span>
+    <p class="text-decoration-none fs-5 fw-semibold">The quick brown fox jumps over the lazy dog.</p>
+  </div>
 </div>
+{{</ example >}}
 
 ```html
 <p class="text-decoration-underline ...">The quick brown fox ...</p>

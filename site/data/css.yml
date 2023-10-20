@@ -22,8 +22,9 @@ font-weight:
       - lighter: lighter
       - light: 300
       - normal: 400
-      - semibold: 500
-      - bold: 600
+      - medium: 500
+      - semibold: 600
+      - bold: 700
       - bolder: bolder
 font-size:
   - property: font-size
@@ -198,6 +199,7 @@ line-height:
       - 1: 1
       - sm: 1.25
       - base: 1.5
+      - md: 1.75
       - lg: 2
 margin:
   - property: margin
@@ -755,3 +757,19 @@ aspect-ratio:
       - 4x3: 3 / 4
       - 16x9: 9 / 16
       - 21x9: 9 / 21
+text-color:
+  - property: color
+    class: text
+    values:
+      - primary: text-primary
+      - secondary: text-secondary
+      - success: text-success
+      - danger: text-danger
+      - warning: text-warning
+      - info: text-info
+      - light: text-light
+      - dark: text-dark
+      - white: text-white
+      - blank: text-blank
+      - body-secondary: text-body-secondary
+      - body-tertiary: text-body-tertiary

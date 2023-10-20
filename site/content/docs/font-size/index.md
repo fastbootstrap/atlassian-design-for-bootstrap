@@ -20,18 +20,30 @@ Quickly change the `font-size` of text. While our heading classes (e.g., `.h1`â€
 
 Control the font size of an element using the `fs-{size}` utilities.
 
-<div class="bd-example">
-  <span class="text-muted">fs-sm</span>
-  <p class="fs-sm fw-semibold">The quick brown fox jumps over the lazy dog.</p>
-  <span class="text-muted">fs-6</span>
-  <p class="fs-6 fw-semibold">The quick brown fox jumps over the lazy dog.</p>
-  <span class="text-muted">fs-5</span>
-  <p class="fs-5 fw-semibold">The quick brown fox jumps over the lazy dog.</p>
-  <span class="text-muted">fs-4</span>
-  <p class="fs-4 fw-semibold">The quick brown fox jumps over the lazy dog.</p>
-  <span class="text-muted">fs-3</span>
-  <p class="fs-3 fw-semibold">The quick brown fox jumps over the lazy dog.</p>
+{{< example class="bg-grid-slate-100" show_source="false" >}}
+<div class="d-flex flex-column gap-5">
+  <div>
+    <span class="text-muted fa-sm fw-medium mb-3">fs-sm</span>
+    <p class="fs-sm fw-semibold">The quick brown fox jumps over the lazy dog.</p>
+  </div>
+  <div>
+    <span class="text-muted fa-sm fw-medium mb-3">fs-6</span>
+    <p class="fs-6 fw-semibold">The quick brown fox jumps over the lazy dog.</p>
+  </div>
+  <div>
+    <span class="text-muted fa-sm fw-medium mb-3">fs-5</span>
+    <p class="fs-5 fw-semibold">The quick brown fox jumps over the lazy dog.</p>
+  </div>
+  <div>
+    <span class="text-muted fa-sm fw-medium mb-3">fs-4</span>
+    <p class="fs-4 fw-semibold">The quick brown fox jumps over the lazy dog.</p>
+  </div>
+  <div>
+    <span class="text-muted fa-sm fw-medium mb-3">fs-3</span>
+    <p class="fs-3 fw-semibold">The quick brown fox jumps over the lazy dog.</p>
+  </div>
 </div>
+{{</ example >}}
 
 ```html
 <p class="fs-sm ...">The quick brown fox ...</p>
@@ -41,11 +53,22 @@ Control the font size of an element using the `fs-{size}` utilities.
 <p class="fs-3 ...">The quick brown fox ...</p>
 ```
 
-### Headings
+
+### Lead
+
+Make a paragraph stand out by adding `.lead`.
+
+{{< example class="bg-grid-slate-100" >}}
+<p class="lead">
+  This is a lead paragraph. It stands out from regular paragraphs.
+</p>
+{{</ example >}}
+
+## Headings
 
 Use the `<h1> ~ <h6>`HTML tag or the `.h1 ~ .h6` utilities to scale the font size, weight and line height of an element.
 
-{{< example >}}
+{{< example class="bg-grid-slate-100">}}
   <h1>h1. Bootstrap heading</h1>
   <h2>h2. Bootstrap heading</h2>
   <h3>h3. Bootstrap heading</h3>
@@ -56,7 +79,7 @@ Use the `<h1> ~ <h6>`HTML tag or the `.h1 ~ .h6` utilities to scale the font siz
 
 Use the `.h1 ~ .h6` classes for when you want to match the font styling of a heading but cannot use the associated HTML element.
 
-{{< example >}}
+{{< example class="bg-grid-slate-100" >}}
 <p class="h1">h1. Bootstrap heading</p>
 <p class="h2">h2. Bootstrap heading</p>
 <p class="h3">h3. Bootstrap heading</p>
@@ -78,16 +101,6 @@ When you need a heading to stand out, consider using a display heading â€” a lar
 <h1 class="display-4">Display 4</h1>
 <h1 class="display-5">Display 5</h1>
 <h1 class="display-6">Display 6</h1>
-{{</ example >}}
-
-### Lead
-
-Make a paragraph stand out by adding `.lead`.
-
-{{< example >}}
-<p class="lead">
-  This is a lead paragraph. It stands out from regular paragraphs.
-</p>
 {{</ example >}}
 
 ## Responsive font sizes 

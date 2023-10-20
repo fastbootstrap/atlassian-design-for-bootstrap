@@ -13,12 +13,12 @@ menu:
 
 {{< class-api "content" >}}
 
-## Basic examples
+## Basic usage
 
 ### Remove the `::before` and `::after` Pseudo-element
 
 Use `content-none` to disable the `::before` and `::after` pseudo-elements appear on the child of current element.
 
-{{< example >}}
+{{< example class="bg-grid-slate-100" >}}
 <div class="content-none">The quick brown fox jumps over the lazy dog.</div>
 {{</ example >}}
