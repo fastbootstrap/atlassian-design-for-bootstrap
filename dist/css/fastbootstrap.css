@@ -289,6 +289,20 @@
   --ds-shadow-overflow: 0px 0px 8px #091E4229, 0px 0px 1px #091E421F;
   --ds-shadow-overlay: 0px 8px 12px #091E4226, 0px 0px 1px #091E424F;
   --ds-shadow-raised: 0px 1px 1px #091E4240, 0px 0px 1px #091E424F;
+  --ds-space-0: 0;
+  --ds-space-025: 0.125rem;
+  --ds-space-050: 0.25rem;
+  --ds-space-075: 0.375rem;
+  --ds-space-100: 0.5rem;
+  --ds-space-150: 0.75rem;
+  --ds-space-200: 1rem;
+  --ds-space-250: 1.25rem;
+  --ds-space-300: 1.5rem;
+  --ds-space-400: 2rem;
+  --ds-space-500: 2.5rem;
+  --ds-space-600: 3rem;
+  --ds-space-800: 4rem;
+  --ds-space-1000: 5rem;
 }
 
 [data-bs-theme=dark] {
@@ -4826,15 +4840,13 @@ textarea.form-control-lg {
 }
 
 .btn-group,
-.btn-group-vertical,
-.btn-group-segmented {
+.btn-group-vertical {
   position: relative;
   display: inline-flex;
   vertical-align: middle;
 }
 .btn-group > .btn,
-.btn-group-vertical > .btn,
-.btn-group-segmented > .btn {
+.btn-group-vertical > .btn {
   position: relative;
   flex: 1 1 auto;
 }
@@ -4856,32 +4868,42 @@ textarea.form-control-lg {
   width: 100%;
 }
 
-.btn-group-segmented {
-  border-radius: var(--bs-border-radius);
+.btn-group-narrow {
+  --bs-btn-group-spacing: 0;
 }
-.btn-group-segmented > .btn-check:checked + .btn,
-.btn-group-segmented > .btn-check:focus + .btn,
-.btn-group-segmented > .btn:hover,
-.btn-group-segmented > .btn:focus,
-.btn-group-segmented > .btn:active,
-.btn-group-segmented > .btn.active {
-  z-index: 1;
+.btn-group-narrow > .btn-outline-primary:not(.btn-check:first-child) + .btn-outline-primary {
+  margin-left: calc(var(--bs-border-width) * -1);
 }
-.btn-group-segmented > :not(.btn-check:first-child) + .btn,
-.btn-group-segmented > .btn-group:not(:first-child) {
-  margin-left: calc(
-      var(--bs-border-width) * -1
-    );
+.btn-group-narrow > .btn-outline-secondary:not(.btn-check:first-child) + .btn-outline-secondary {
+  margin-left: calc(var(--bs-border-width) * -1);
 }
-.btn-group-segmented > .btn:not(:last-child):not(.dropdown-toggle):not(.dropdown-toggle-split),
-.btn-group-segmented > .btn.dropdown-toggle-split:first-child,
-.btn-group-segmented > .btn-group:not(:last-child) > .btn {
+.btn-group-narrow > .btn-outline-success:not(.btn-check:first-child) + .btn-outline-success {
+  margin-left: calc(var(--bs-border-width) * -1);
+}
+.btn-group-narrow > .btn-outline-info:not(.btn-check:first-child) + .btn-outline-info {
+  margin-left: calc(var(--bs-border-width) * -1);
+}
+.btn-group-narrow > .btn-outline-warning:not(.btn-check:first-child) + .btn-outline-warning {
+  margin-left: calc(var(--bs-border-width) * -1);
+}
+.btn-group-narrow > .btn-outline-danger:not(.btn-check:first-child) + .btn-outline-danger {
+  margin-left: calc(var(--bs-border-width) * -1);
+}
+.btn-group-narrow > .btn-outline-light:not(.btn-check:first-child) + .btn-outline-light {
+  margin-left: calc(var(--bs-border-width) * -1);
+}
+.btn-group-narrow > .btn-outline-dark:not(.btn-check:first-child) + .btn-outline-dark {
+  margin-left: calc(var(--bs-border-width) * -1);
+}
+.btn-group-narrow > .btn:not(:last-child):not(.dropdown-toggle):not(.dropdown-toggle-split),
+.btn-group-narrow > .btn.dropdown-toggle-split:first-child,
+.btn-group-narrow > .btn-group:not(:last-child) > .btn {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-.btn-group-segmented > .btn:nth-child(n+3),
-.btn-group-segmented > :not(.btn-check) + .btn,
-.btn-group-segmented > .btn-group:not(:first-child) > .btn {
+.btn-group-narrow > .btn:nth-child(n+3),
+.btn-group-narrow > :not(.btn-check) + .btn,
+.btn-group-narrow > .btn-group:not(:first-child) > .btn {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -5216,7 +5238,7 @@ textarea.form-control-lg {
   display: inline-flex;
   vertical-align: top;
 }
-.dropdown.dropdown-hover:hover .dropdown-menu {
+.dropdown.is-hoverable:hover .dropdown-menu, .dropdown.dropdown-hover:hover .dropdown-menu {
   display: block;
   top: 100%;
 }
@@ -12122,11 +12144,11 @@ textarea.form-control-lg {
   transform: rotate(180deg) !important;
 }
 
-.rotate-n45 {
+.-rotate-45 {
   transform: rotate(-45deg) !important;
 }
 
-.rotate-n90 {
+.-rotate-90 {
   transform: rotate(-90deg) !important;
 }
 

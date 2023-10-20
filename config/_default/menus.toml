@@ -4,10 +4,16 @@
 name = "Components"
 identifier = "components"
 url = "/components"
-weight = 25
+weight = 45
 
 [[global]]
 name = "Docs"
 identifier = "docs"
 url = "/docs"
-weight = 15
+weight = 25
+
+[[global]]
+name = "Tokens"
+identifier = "tokens"
+url ="/tokens"
+weight=15

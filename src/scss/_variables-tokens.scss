@@ -159,6 +159,7 @@ $ds-space-600: 3rem;
 $ds-space-800: 4rem;
 $ds-space-1000: 5rem;
 
+
 $text-tokens: (
   "text": (
     $neutral-1000,
@@ -1306,18 +1307,6 @@ $shadow-tokens: (
   ),
 );
 
-$all-tokens: map-merge-multiple(
-  $text-tokens,
-  $link-tokens,
-  $background-tokens,
-  $border-tokens,
-  $icon-tokens,
-  $blanket-tokens,
-  $skeleton-tokens,
-  $ds-surface-tokens,
-  $shadow-tokens
-);
-
 $ds-link: var(--#{$ds-prefix}link);
 $ds-link-pressed: var(--#{$ds-prefix}link-pressed);
 
@@ -1414,3 +1403,17 @@ $ds-surface-overlay: var(--#{$ds-prefix}surface-overlay);
 $ds-skeleton: var(--#{$ds-prefix}skeleton);
 
 $ds-shadow-overlay: var(--#{$ds-prefix}shadow-overlay);
+$ds-shadow-overflow: var(--#{$ds-prefix}shadow-overflow);
+$ds-shadow-raised: var(--#{$ds-prefix}shadow-raised);
+
+$color-tokens: map-merge-multiple(
+  $text-tokens,
+  $link-tokens,
+  $background-tokens,
+  $border-tokens,
+  $icon-tokens,
+  $blanket-tokens,
+  $skeleton-tokens,
+  $ds-surface-tokens,
+  $shadow-tokens
+);

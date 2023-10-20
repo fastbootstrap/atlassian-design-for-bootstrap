@@ -4,6 +4,7 @@
   display: inline-flex;
   vertical-align: top;
 
+  &.is-hoverable,
   &.dropdown-hover {
     &:hover {
       .dropdown-menu {

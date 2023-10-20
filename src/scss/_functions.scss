@@ -1,7 +1,7 @@
 @function light($token) {
-  @return nth(map-get($all-tokens, $token), 1);
+  @return nth(map-get($color-tokens, $token), 1);
 }
 
 @function dark($token) {
-  @return nth(map-get($all-tokens, $token), 2);
+  @return nth(map-get($color-tokens, $token), 2);
 }

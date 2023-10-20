@@ -145,10 +145,10 @@ $utilities: map-merge(
     ),
     "nagative-rotate": (
       property: transform,
-      class: rotate,
+      class: -rotate,
       values: (
-        n45: rotate(-45deg),
-        n90: rotate(-90deg),
+        45: rotate(-45deg),
+        90: rotate(-90deg),
       ),
     ),
     "min-width": (
