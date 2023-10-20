@@ -22,13 +22,13 @@ The order utilities to change the visual order of specific flex items. We only p
 
 Use `order-{order}` to render flex and grid items in a different order than they appear in the DOM.
 
-<div class="bd-example">
-  <div class="d-flex justify-content-between fw-semibold fs-sm">
-    <div class="d-flex align-items-center justify-content-center bg-blue-200 text-white rounded shadow order-3" style="width:56px;height:56px;">01</div>
-    <div class="d-flex align-items-center justify-content-center bg-blue-200 text-white rounded shadow order-2" style="width:56px;height:56px;">02</div>
-    <div class="d-flex align-items-center justify-content-center bg-blue-200 text-white rounded shadow order-1" style="width:56px;height:56px;">03</div>
-  </div>
+{{< example class="bg-grid-slate-100" show_source="false" >}}
+<div class="d-flex justify-content-between rounded">
+  <div class="d-flex align-items-center justify-content-center text-bg-primary rounded order-3 bd-w-14 bd-h-14">01</div>
+  <div class="d-flex align-items-center justify-content-center text-bg-primary rounded order-2  bd-w-14 bd-h-14">02</div>
+  <div class="d-flex align-items-center justify-content-center text-bg-primary rounded order-1 bd-w-14 bd-h-14">03</div>
 </div>
+{{</ example >}}
 
 ```html
 <div class="d-flex justify-content-between">
@@ -42,13 +42,13 @@ Use `order-{order}` to render flex and grid items in a different order than they
 
 Use `order-last` to render flex and grid items in the last than they appear in the DOM.
 
-<div class="bd-example">
-  <div class="d-flex justify-content-between fw-semibold fs-sm">
-    <div class="d-flex align-items-center justify-content-center bg-blue-200 text-white rounded shadow order-last" style="width:56px;height:56px;">01</div>
-    <div class="d-flex align-items-center justify-content-center bg-blue-200 text-white rounded shadow" style="width:56px;height:56px;">02</div>
-    <div class="d-flex align-items-center justify-content-center bg-blue-200 text-white rounded shadow" style="width:56px;height:56px;">03</div>
-  </div>
+{{< example class="bg-grid-slate-100" show_source="false" >}}
+<div class="d-flex justify-content-between rounded">
+  <div class="d-flex align-items-center justify-content-center text-bg-primary rounded  order-last bd-w-14 bd-h-14">01</div>
+  <div class="d-flex align-items-center justify-content-center text-bg-primary rounded  bd-w-14 bd-h-14 ">02</div>
+  <div class="d-flex align-items-center justify-content-center text-bg-primary rounded  bd-w-14 bd-h-14">03</div>
 </div>
+{{</ example >}}
 
 ```html
 <div class="d-flex justify-content-between">

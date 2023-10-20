@@ -19,39 +19,45 @@ menu:
 
 Use `w-{number}` to set an element to a fixed width.
 
-{{< example class="d-grid gap-3 text-center" >}}
-<div class="w-100 text-bg-primary p-1 rounded">w-100</div>
-<div class="w-75 text-bg-primary p-1 rounded">w-75</div>
-<div class="w-50 text-bg-primary p-1 rounded">w-50</div>
-<div class="w-25 text-bg-primary p-1 rounded">w-25</div>
+{{< example class="d-flex flex-column gap-4 bg-grid-slate-100 text-center fa-sm fw-semibold" show_source="false" >}}
+<div class="w-100 px-4 py-2 lh-sm rounded text-bg-secondary ">w-100</div>
+<div class="w-75 px-4 py-2 lh-sm rounded text-bg-secondary ">w-75</div>
+<div class="w-50 px-4 py-2 lh-sm rounded text-bg-secondary ">w-50</div>
+<div class="w-25 px-4 py-2 lh-sm rounded text-bg-secondary ">w-25</div>
 {{</ example >}}
+
+```html
+<div class="w-100">w-100</div>
+<div class="w-75">w-75</div>
+<div class="w-50">w-50</div>
+<div class="w-25">w-25</div>
+```
 
 ### Auto width
 
 Use `w-auto` to set width of an element to an auto.
 
-{{< example >}}
-<span class="w-auto text-bg-primary p-1 rounded">w-auto</span><br/>
-<div class="w-auto text-bg-primary p-1 rounded mt-3">w-auto</div>
+{{< example class="d-flex flex-column justify-content-start gap-4 bg-grid-slate-100 text-center fa-sm fw-semibold" show_source="false" >}}
+<span class="w-auto align-self-start text-bg-secondary px-4 py-2 lh-sm  rounded">w-auto</span>
+<div class="w-auto text-bg-secondary px-4 py-2 lh-sm rounded">w-auto</div>
 {{</ example >}}
 
-
+```html
+<span class="w-auto ...">w-auto</span>
+<div class="w-auto ...">w-auto</div>
+```
 ### Full viewport width
 
 Use `vw-100` to make an element span the entire width of the viewport.
 
 ```html
-<div class="vw-100"></div>
+<div class="vw-100 ..."></div>
 ```
 
-### Max width
+### Set mx width
 
 Use `mh-100` to set the maximum height of an element that is full, depending on the parent element.
 
-{{< example >}}
-<div class="bg-purple-50 p-3 col-8">
-  <div class="bg-purple-300 text-white p-1 col-12 mw-100 h-100">
-    max-width 100%
-  </div>
-</div>
-{{</ example >}}
+```html
+<div class="mh-100 ..."></div>
+```

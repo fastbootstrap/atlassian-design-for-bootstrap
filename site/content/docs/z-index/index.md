@@ -11,33 +11,48 @@ menu:
 
 Utilities for controlling the stack order of an element.
 
+## Quick reference
+
 {{< class-api "z-index" >}}
 
-## Basic example 
+## Basic usage 
 
-<div class="bd-example">
+### Setting the z-index
+
+{{< example class="bg-neutral-subtler bg-grid-slate-100" show_source="false" >}}
 <div class="d-flex justify-content-center">
-  <div class="d-flex align-items-center justify-content-center border border-2 shadow rounded-circle z-40 text-bg-secondary" style="width:64px;height:64px;">05</div>
-  <div class="d-flex align-items-center justify-content-center border border-2 shadow rounded-circle z-30 text-bg-secondary" style="width:64px;height:64px;margin-left:-10px">04</div>
-  <div class="d-flex align-items-center justify-content-center border border-2 shadow rounded-circle z-20 text-bg-secondary" style="width:64px;height:64px;margin-left:-10px">03</div>
-  <div class="d-flex align-items-center justify-content-center border border-2 shadow rounded-circle z-10 text-bg-secondary" style="width:64px;height:64px;margin-left:-10px">02</div>
-  <div class="d-flex align-items-center justify-content-center border border-2 shadow rounded-circle z-0 text-bg-secondary" style="width:64px;height:64px;margin-left:-10px">01</div>
+  <div class="d-flex align-items-center justify-content-center border border-2 rounded-circle z-40 border-white text-bg-secondary bd-w-16 bd-h-16">05</div>
+  <div class="d-flex align-items-center justify-content-center border border-2 rounded-circle z-30 border-white text-bg-secondary bd-w-16 bd-h-16 ms-n3">04</div>
+  <div class="d-flex align-items-center justify-content-center border border-2 rounded-circle z-20 border-white text-bg-secondary bd-w-16 bd-h-16 ms-n3">03</div>
+  <div class="d-flex align-items-center justify-content-center border border-2 rounded-circle z-10 border-white text-bg-secondary bd-w-16 bd-h-16 ms-n3">02</div>
+  <div class="d-flex align-items-center justify-content-center border border-2 rounded-circle z-0 border-white text-bg-secondary bd-w-16 bd-h-16 ms-n3">01</div>
 </div>
-</div>
+{{</ example >}}
 
-{{< example show_preview="false" >}}
+```html
 <div class="z-40 ...">05</div>
 <div class="z-30 ...">04</div>
 <div class="z-20 ...">03</div>
 <div class="z-10 ...">02</div>
 <div class="z-0 ...">01</div>
-{{</ example >}}
+```
 
-## How it works
+## The `z-index` table of components
 
 While not a part of Bootstrap's grid system, z-indexes play an important part in how our components overlay and interact with one another.
 
-Several Bootstrap components utilize `z-index`, the CSS property that helps control layout by providing a third axis to arrange content. We utilize a default z-index scale in Bootstrap that's been designed to properly layer navigation, tooltips and popovers, modals, and more.
+Several Bootstrap components utilize `z-index`, the CSS property that helps control layout by providing a third axis to arrange content. We utilize a default z-index scale in Bootstrap that's been designed to properly layer `navigation`, `tooltips` and `popovers`, `modals`, and more.
+
+{{< bs-table "table" >}}
+| Component | z-index |
+| --- | --- |
+| [Dropdown](/components/dropdown) | 1000 |
+| [Offcanvas](/components/offcanvas) | 1045 |
+| [Modal](/components/modal) | 1055 |
+| [Popover](/components/modal) | 1070 |
+| [Tooltip](/components/tooltip) | 1080 |
+| [Toast](/components/toast) | 1090 |
+{{</ bs-table >}}
 
 These higher values start at an arbitrary number, high and specific enough to ideally avoid conflicts. We need a standard set of these across our layered components—tooltips, popovers, navbars, dropdowns, modals—so we can be reasonably consistent in the behaviors. There's no reason we couldn't have used `100`+ or `500`+.
 

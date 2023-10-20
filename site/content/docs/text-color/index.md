@@ -9,7 +9,7 @@ menu:
   docs:    
 ---
 
-Use text color utilities to set text to a specific color. See our the [Color System Design]({{< ref "color" >}})
+Use text color utilities to set text to a specific color. 
 
 ## Quick reference
 

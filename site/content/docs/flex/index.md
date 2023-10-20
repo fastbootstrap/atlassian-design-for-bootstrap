@@ -17,29 +17,23 @@ Use the `.flex-fill` class on a series of sibling elements to force them into wi
 
 ## Basic usage
 
-### Fill
+### Auto
 
-Use `flex-fill` to allow a flex item to grow and shrink if needs:
+Use `.flex-fill` to allow a flex item to grow and shrink, taking into account its initial size:
 
-<div class="bd-example">
-  <div class="d-flex gap-3 fw-semibold fs-sm ">
-    <div class="d-flex align-items-center bd-w-14 bd-h-14 justify-content-center rounded bg-purple-100 text-white">01</div>
-    <div class="d-flex flex-fill align-items-center bd-w-64 justify-content-center rounded bg-purple-300 text-white">02</div>
-    <div class="d-flex flex-fill align-items-center bd-w-32 justify-content-center rounded bg-purple-300 text-white">03</div>
-  </div>
+{{< example show_source="false" >}}
+<div class="d-flex gap-4 bg-striped-purple">
+  <div class="d-flex align-items-center bd-w-14 bd-h-14 justify-content-center rounded text-bg-dark col-2">01</div>
+  <div class="d-flex flex-fill align-items-center justify-content-center rounded text-bg-secondary col-8">02</div>
+  <div class="d-flex flex-fill align-items-center justify-content-center rounded text-bg-secondary col-4">03</div>
 </div>
+{{</ example >}}
 
 ```html
-<div class="d-flex ...">
-  <div>
-    01
-  </div>
-  <div class="flex-auto bd-w-64 ...">
-    02
-  </div>
-  <div class="flex-auto bd-w-32 ...">
-    03
-  </div>
+<div class="d-flex">
+  <div class="col-2">01</div>
+  <div class="flex-fill col-8">02</div>
+  <div class="flex-fill col-4">03</div>
 </div>
 ```
 

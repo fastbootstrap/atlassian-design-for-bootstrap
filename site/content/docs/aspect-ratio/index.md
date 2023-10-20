@@ -16,14 +16,7 @@ Use the ratio helper to manage the aspect ratios of external content like `<ifra
 
 ## Quick reference
 
-{{< bs-table "table" >}}
-| Class | Description |
-| --- | --- |
-| `.ratio-1x1` | Square, 1:1  |
-| `.ratio-4x3` | Rectangle, 4:3 |
-| `.ratio-16x9` | video, 16:9 |
-| `.ratio-21x9` | 21:9 |
-{{< /bs-table >}}
+{{< class-api "aspect-ratio" >}}
       
 ## Basic usage
 
@@ -31,7 +24,7 @@ Use the ratio helper to manage the aspect ratios of external content like `<ifra
 
 Wrap any embed, like an `<iframe>`, in a parent element with `.ratio` and an aspect ratio class. The immediate child element is automatically sized thanks to our universal selector `.ratio > *`.
 
-{{< example >}}
+{{< example class="bg-light">}}
 <div class="ratio ratio-16x9">
   <iframe 
     src="https://www.youtube.com/embed/vlDzYIIOYmM"
@@ -45,13 +38,20 @@ Wrap any embed, like an `<iframe>`, in a parent element with `.ratio` and an asp
 
 Use the `radio-*` as a media container and put an image with `.img-fluid` as a child element.
 
-<div class="bd-example">
-  <div class="mx-auto" style="max-width:320px;">
-    <div class="ratio ratio-4x3">
-      <img class="img-fluid" src="https://images.unsplash.com/photo-1502657877623-f66bf489d236?auto=format&fit=crop&w=800" />
-    </div>
+{{< example class="d-flex flex-column gap-4 text-center" show_source="false" >}}
+<div class="mx-auto bd-max-w-80">
+  <div class="ratio ratio-4x3">
+    <img class="img-fluid" src="https://images.unsplash.com/photo-1502657877623-f66bf489d236?auto=format&fit=crop&w=800" />
   </div>
+  <span class="fs-sm fw-medium">4 : 3<span>
 </div>
+<div class="mx-auto bd-max-w-80">
+  <div class="ratio ratio-16x9">
+    <img class="img-fluid" src="https://images.unsplash.com/photo-1502657877623-f66bf489d236?auto=format&fit=crop&w=800" />
+  </div>
+  <span class="fs-sm fw-medium">16 : 9<span>
+</div>
+{{</ example >}}
 
 ```html
 <div class="ratio ratio-4x3">
@@ -63,17 +63,17 @@ Use the `radio-*` as a media container and put an image with `.img-fluid` as a c
 
 Each `.ratio-*` class includes a CSS custom property (or CSS variable) in the selector. You can override this CSS variable to create custom aspect ratios on the fly with some quick math on your part.
 
-For example, to create a 2x1 aspect ratio, set `--bs-aspect-ratio: 50%` on the `.ratio`.
+For example, to create a `2x1` aspect ratio, set `--bs-aspect-ratio: 50%` on the `.ratio`.
 
-<div class="bd-example">
-  <div class="ratio bg-blue-50 mx-auto" style="width:10rem;--bs-aspect-ratio: 50%;">
-    <div class="d-flex align-items-center justify-content-center fw-semibold">2x1</div>
-  </div>
+{{< example show_source="false" >}}
+<div class="ratio mx-auto text-bg-secondary bd-max-w-40 text-center" style="--bs-aspect-ratio: 50%;">
+  <div class="d-flex align-items-center justify-content-center fw-semibold">2x1</div>
 </div>
+{{</ example >}}
 
 ```html
 <div class="ratio" style="--bs-aspect-ratio: 50%;">
-  <div>2x1</div>
+  2x1
 </div>
 ```
 

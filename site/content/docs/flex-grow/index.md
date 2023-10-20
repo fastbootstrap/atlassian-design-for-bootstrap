@@ -21,19 +21,19 @@ Use `.flex-grow-*` utilities to toggle a flex item’s ability to grow to fill a
 
 Use `flex-grow` to allow a flex item to grow to fill any available space:
 
-<div class="bd-example">
-  <div class="d-flex fw-semibold gap-3 fs-sm">
-    <div class="d-flex align-items-center justify-content-center rounded bg-purple-200 text-white p-4 lh-1">01</div>
-    <div class="d-flex flex-grow-1 align-items-center justify-content-center rounded text-bg-secondary p-4 lh-1">02</div>
-    <div class="d-flex align-items-center justify-content-center rounded bg-purple-200 text-white p-4 lh-1">03</div>
+{{< example show_source="false" >}}
+  <div class="d-flex bg-striped-purple gap-4 rounded">
+    <div class="d-flex align-items-center justify-content-center text-bg-secondary rounded bd-w-14 bd-h-14">01</div>
+    <div class="d-flex flex-grow-1 align-items-center justify-content-center text-bg-secondary rounded bd-w-14 bd-h-14">02</div>
+    <div class="d-flex align-items-center justify-content-center text-bg-secondary rounded bd-w-14 bd-h-14">03</div>
   </div>
-</div>
+{{</ example >}}
 
 ```html
 <div class="d-flex">
-  <div class="p-4 ...">01</div>
-  <div class="flex-grow-1 p-4 ...">02</div>
-  <div class="p-4 ...">03</div>
+  <div>01</div>
+  <div class="flex-grow-1">02</div>
+  <div>03</div>
 </div>
 ```
 
@@ -41,19 +41,19 @@ Use `flex-grow` to allow a flex item to grow to fill any available space:
 
 Use `flex-grow-0` to prevent a flex item from growing:
 
-<div class="bd-example">
-  <div class="d-flex fw-semibold gap-3 fs-sm">
-    <div class="d-flex flex-grow-1 align-items-center justify-content-center rounded bg-blue-200 text-white p-4 lh-1">01</div>
-    <div class="d-flex flex-grow-0 align-items-center justify-content-center rounded bg-blue-400 text-white p-4 lh-1">02</div>
-    <div class="d-flex flex-grow-1 align-items-center justify-content-center rounded bg-blue-200 text-white p-4 lh-1">03</div>
+{{< example show_source="false" >}}
+  <div class="d-flex gap-4 bg-striped-purple">
+  <div class="flex-grow-1 d-flex align-items-center justify-content-center text-bg-secondary rounded bd-w-14 bd-h-14">01</div>
+  <div class="flex-grow-0 d-flex align-items-center justify-content-center text-bg-secondary rounded bd-w-14 bd-h-14">02</div>
+  <div class="flex-grow-1 d-flex align-items-center justify-content-center text-bg-secondary rounded bd-w-14 bd-h-14">03</div>
   </div>
-</div>
+{{</ example >}}
 
 ```html
 <div class="d-flex">
-  <div class="flex-grow-1 p-4 ...">01</div>
-  <div class="flex-grow-0 p-4 ...">02</div>
-  <div class="flex-grow-1 p-4 ...">03</div>
+  <div class="flex-grow-1">01</div>
+  <div class="flex-grow-0">02</div>
+  <div class="flex-grow-1">03</div>
 </div>
 ```
 

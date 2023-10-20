@@ -21,21 +21,21 @@ When using display: grid, you can make use of gap utilities on the parent grid c
 
 Use `gap-{size}` to change the gap between both rows and columns in grid and flexbox layouts.
 
-<div class="bd-example">
-  <div class="grid gap-5">
-    <div class="g-col-6 p-3 text-bg-secondary text-center rounded-3">01</div>
-    <div class="g-col-6 p-3 text-bg-secondary text-center rounded-3">02</div>
-    <div class="g-col-6 p-3 text-bg-secondary text-center rounded-3">03</div>
-    <div class="g-col-6 p-3 text-bg-secondary text-center rounded-3">04</div>
+{{< example show_source="false" >}}
+  <div class="grid gap-5 text-center bg-striped-purple rounded">
+    <div class="g-col-6 p-4 text-bg-secondary rounded">01</div>
+    <div class="g-col-6 p-4 text-bg-secondary rounded">02</div>
+    <div class="g-col-6 p-4 text-bg-secondary rounded">03</div>
+    <div class="g-col-6 p-4 text-bg-secondary rounded">04</div>
   </div>
-</div>
+{{</ example >}}
 
 ```html
 <div class="grid gap-5">
-  <div class="g-col-6 ...">01</div>
-  <div class="g-col-6 ...">02</div>
-  <div class="g-col-6 ...">03</div>
-  <div class="g-col-6 ...">04</div>
+  <div class="g-col-6">01</div>
+  <div class="g-col-6">02</div>
+  <div class="g-col-6">03</div>
+  <div class="g-col-6">04</div>
 </div>
 ```
 
@@ -43,28 +43,28 @@ Use `gap-{size}` to change the gap between both rows and columns in grid and fle
 
 Use the nested flex layout with `gap-{size}` to changing the row and column gaps.
 
-<div class="bd-example">
-  <div class="d-flex flex-column gap-5">
-    <div class="d-flex gap-3">
-      <div class="p-3 text-bg-secondary text-center rounded-3 w-100">01</div>
-      <div class="p-3 text-bg-secondary text-center rounded-3 w-100">02</div>
+{{< example show_source="false" >}}
+  <div class="d-flex flex-column gap-5 text-center bg-striped-purple">
+    <div class="d-flex gap-3 bg-striped-teal">
+      <div class="p-4 text-bg-secondary rounded flex-fill">01</div>
+      <div class="p-4 text-bg-secondary rounded flex-fill">02</div>
     </div>
-    <div class="d-flex gap-3">
-      <div class="p-3 text-bg-secondary text-center rounded-3 w-100">03</div>
-      <div class="p-3 text-bg-secondary text-center rounded-3 w-100">04</div>
+    <div class="d-flex gap-3 bg-striped-teal">
+      <div class="p-4 text-bg-secondary rounded flex-fill ">03</div>
+      <div class="p-4 text-bg-secondary rounded flex-fill">04</div>
     </div>
   </div>
-</div>
+{{</ example >}}
 
 ```html
 <div class="d-flex flex-column gap-5">
   <div class="d-flex gap-3">
-    <div>01</div>
-    <div>02</div>
+    <div class="flex-fill">01</div>
+    <div class="flex-fill">02</div>
   </div>
   <div class="d-flex gap-3">
-    <div>03</div>
-    <div>04</div>
+    <div class="flex-fill">03</div>
+    <div class="flex-fill">04</div>
   </div>
 </div>
 ```

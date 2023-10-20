@@ -14,14 +14,31 @@
   {{ $menus = merge $menus (dict $name $list) }}
 {{ end }}
 
-{{ range (index .page.Site.Data.sidebar $active_menu) }}
-  <div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">{{ .title }}</div>
-  <ul class="list-unstyled">
-    {{ range index $menus .name }}
-      <li>
-        {{ $is_active := $page.IsMenuCurrent $active_menu . }}
-        <a href="{{ .URL }}" class="sidebar__link d-flex justify-content-between {{ if $is_active }}active{{ end }}">{{ .Name }}{{ with .Page.Params.status }}<span class="lozenge me-2 me-lg-4 text-uppercase fw-medium fs-xs {{.}}">{{ . }}</span>{{ end }}</a>
-      </li>
-    {{ end }}
-  </ul>
+{{ if isset .page.Site.Data.sidebar $active_menu }}
+  {{ range (index .page.Site.Data.sidebar $active_menu) }}
+    <div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">{{ .title }}</div>
+    <ul class="list-unstyled">
+      {{ range index $menus .name }}
+        <li>
+          {{ $is_active := $page.IsMenuCurrent $active_menu . }}
+          <a href="{{ .URL }}" class="sidebar__link d-flex justify-content-between {{ if $is_active }}active{{ end }}"
+            >{{ .Name }}{{ with .Page.Params.status }}<span class="lozenge me-2 me-lg-4 text-uppercase fw-medium fs-xs {{ . }}">{{ . }}</span>{{ end }}</a
+          >
+        </li>
+      {{ end }}
+    </ul>
+  {{ end }}
+{{ else }}
+  {{ range $menus }}
+    <ul class="list-unstyled">
+      {{ range . }}
+        <li>
+          {{ $is_active := $page.IsMenuCurrent $active_menu . }}
+          <a href="{{ .URL }}" class="sidebar__link d-flex justify-content-between ps-5 {{ if $is_active }}active{{ end }}"
+            >{{ .Name }}{{ with .Page.Params.status }}<span class="lozenge me-2 me-lg-4 text-uppercase fw-medium fs-xs {{ . }}">{{ . }}</span>{{ end }}</a
+          >
+        </li>
+      {{ end }}
+    </ul>
+  {{ end }}
 {{ end }}

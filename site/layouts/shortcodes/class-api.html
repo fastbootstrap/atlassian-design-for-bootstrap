@@ -8,37 +8,41 @@
 {{- $module := .Get 0 -}}
 {{- $scroll := .Get 1 | default false -}}
 
-<div {{ if $scroll }}class="overflow-y-auto w-100" style="max-height:24rem"{{ end }}>
-  <table class="table align-middle fs-sm">
+
+<div {{ if $scroll }}class="overflow-y-auto w-100 mb-3" style="max-height:24rem"{{ else }}class="mb-3"{{ end }}>
+  <table class="api-class-table table align-middle fs-sm">
     <thead>
       <tr class="text-dark">
         <th>Class</th>
-        <th>Properties</th>       
+        <th>Properties</th>
       </tr>
     </thead>
     <tbody>
-      {{ range index .Site.Data.css $module }}
-        {{ $properties := .property }}
-        {{ $values := .values }}
-        {{ $prefix := .class | default .property }}
-        {{ $format := .format | default "%s-%s" }}
-        {{ range $values }}
-          {{ $key := . }}
-          {{ $value := . }}
-          {{ if reflect.IsMap . }}
-            {{ range $key, $value = . }}
+      {{ range (split $module ",") }}
+        {{ $m := trim . " " }}
+        {{ range index $.Site.Data.css $m }}
+          {{ $properties := .property }}
+          {{ $values := .values }}
+          {{ $prefix := .class | default .property }}
+          {{ $format := .format | default "%s-%s" }}
+          {{ range $values }}
+            {{ $key := . }}
+            {{ $value := . }}
+            {{ if reflect.IsMap . }}
+              {{ range $key, $value = . }}
+              {{ end }}
             {{ end }}
+            {{ $class :=trim (printf $format $prefix (string $key)) "-" }}
+            {{ $styles := slice }}
+            {{ range split $properties " " }}
+              {{ $property := trim . "" }}
+              {{ $styles = $styles | append ( printf "%s: %s;" $property (string $value)) }}
+            {{ end }}
+            <tr>
+              <td class="text-nowrap"><code>{{ printf ".%s" $class }}</code></td>
+              <td class="desc">{{ delimit $styles "<br/>" }}</td>           
+            </tr>
           {{ end }}
-          {{ $class :=trim (printf $format $prefix (string $key)) "-" }}
-          {{ $styles := slice }}
-          {{ range split $properties " " }}
-            {{ $property := trim . "" }}
-            {{ $styles = $styles | append ( printf "%s: %s;" $property (string $value)) }}
-          {{ end }}
-          <tr>
-            <td class="text-blue-400 text-nowrap"><code>{{ printf ".%s" $class }}</code></td>
-            <td class="text-purple-300">{{ delimit $styles "<br/>" }}</td>           
-          </tr>
         {{ end }}
       {{ end }}
     </tbody>

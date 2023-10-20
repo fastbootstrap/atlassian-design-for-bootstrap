@@ -3,9 +3,11 @@ layout: docs
 title: Images
 description: "Utilities for controlling images."
 toc: true
-group: base-styles
+group: utilities
 menu:
-  docs:    
+  components:    
+aliases:
+  - /docs/images
 ---
 
 Documentation and examples for opting images into responsive behavior (so they never become wider than their parent) and add lightweight styles to them—all via classes

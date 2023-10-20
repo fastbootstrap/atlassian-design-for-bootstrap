@@ -18,15 +18,15 @@ Assign responsive-friendly `padding` values to an element or a subset of its sid
 
 {{< class-api "padding" "true" >}}
 
-## Overview 
+## Overview
 
 The padding utilities that apply to all breakpoints, from `xs` to `xxl`, have no breakpoint abbreviation in them. This is because those classes are applied from `min-width: 0` and up, and thus are not bound by a media query. The remaining breakpoints, however, do include a breakpoint abbreviation.
 
 The classes are named using the format `{property}{sides}-{size}` for `xs` and `{property}{sides}-{breakpoint}-{size}` for `sm`, `md`, `lg`, `xl`, and `xxl`.
 
-Where *property* is `p` - for classes that set `padding`:
+Where _property_ is `p` - for classes that set `padding`:
 
-Where *sides* is one of:
+Where _sides_ is one of:
 
 - `t` - for classes that set `padding-top`
 - `b` - for classes that set `padding-bottom`
@@ -36,7 +36,7 @@ Where *sides* is one of:
 - `y` - for classes that set both `*-top` and `*-bottom`
 - blank - for classes that set a `padding` on all 4 sides of the element
 
-Where *size* is one of:
+Where _size_ is one of:
 
 - `0` - for classes that eliminate the `padding` by setting it to `0`
 - `1` - (by default) for classes that set the `padding` to `$spacer * .25`
@@ -52,81 +52,83 @@ Where *size* is one of:
 
 (You can add more sizes by adding entries to the `$spacers` Sass map variable.)
 
-## Basic examples
+## Basic usage
 
 ### Add padding to a single side
 
-Use the `p{t|s|b|e}-{size}` utilities to apply padding to an individual side, or the X and Y axis of an element. 
+Use the `p{t|s|b|e}-{size}` utilities to apply padding to an individual side, or the X and Y axis of an element.
 
 For example, `pt-4` would add `1.5rem` of padding to the top of an element, `pe-3` would add `1rem` of padding to the right of an element, `pb-5` would add `3rem` of padding to the bottom of an element, and `ps-2` would add `0.5rem` of padding to the left of an element.
 
-<div class="bd-example">
-  <div class="col-md-8 mx-auto text-center fw-semibold">
-    <div class="bg-purple-50 d-inline-block pt-4 mx-3 rounded">
-      <div class="bg-purple-400 p-3 px-4 text-white text-center rounded-bottom">pt-4</div>
-    </div>
-    <div class="bg-purple-50 d-inline-block pe-3 m-3 rounded">
-      <div class="bg-purple-400 p-3 px-4 text-white text-center rounded-start">pe-3</div>
-    </div>
-    <div class="bg-purple-50 d-inline-block ps-2 m-3 rounded">
-      <div class="bg-purple-400 p-3 px-4 text-white text-center rounded-end">ps-2</div>
-    </div>
-    <div class="bg-purple-50 d-inline-block pb-5 m-3 rounded">
-      <div class="bg-purple-400 p-3 px-4 text-white text-center rounded-top">pb-5</div>
-    </div>
-  </div>
+{{< example class="d-flex flex-wrap align-items-center fs-sm fw-semibold justify-content-center gap-5 bg-grid-slate-100" show_source="false" >}}
+<div class="d-flex flex-column text-bg-secondary rounded">
+  <div class="bg-striped-white lh-base pt-4"></div>
+  <div class="text-bg-secondary p-4 rounded">pt-4</div>
 </div>
+<div class="d-flex flex-row-reverse text-bg-secondary rounded">
+  <div class="bg-striped-white lh-1 pe-3"></div>
+  <div class="text-bg-secondary p-4 rounded">pe-3</div>
+</div>
+<div class="d-flex flex-column-reverse text-bg-secondary rounded">
+  <div class="bg-striped-white lh-base pb-5"></div>
+  <div class="text-bg-secondary p-4 rounded">pb-5</div>
+</div>
+<div class="d-flex flex-row text-bg-secondary rounded">
+  <div class="bg-striped-white lh-1 ps-2"></div>
+  <div class="text-bg-secondary p-4 rounded">ps-2</div>
+</div>
+{{</ example >}}
 
 ```html
 <div class="pt-4 ...">pt-4</div>
 <div class="pe-3 ...">pe-3</div>
-<div class="ps-2 ...">ps-2</div>
 <div class="pb-5 ...">pb-5</div>
+<div class="ps-2 ...">ps-2</div>
 ```
 
 ### Add horizontal padding
 
 Control the horizontal padding of an element using the `px-{size}` utilities.
 
-<div class="bd-example">
-  <div class="col-md-8 mx-auto text-center fw-semibold">
-    <div class="bg-purple-100 d-inline-block px-5 rounded">
-      <div class="bg-purple-400 p-3 px-4 text-white text-center">px-5</div>
-    </div>
-  </div>
+{{< example class="d-flex flex-wrap align-items-center fs-sm fw-semibold justify-content-center gap-5 bg-grid-slate-100" show_source="false" >}}
+<div class="d-flex text-bg-secondary rounded">
+  <div class="bg-striped-white bd-w-12"></div>
+  <div class="text-bg-secondary p-4 text-center">px-6</div>
+  <div class="bg-striped-white bd-w-12"></div>
 </div>
+{{</ example >}}
 
 ```html
-<div class="px-5 ...">px-5</div>
+<div class="px-6 ...">px-6</div>
 ```
 
 ### Add vertical padding
 
 Control the vertical padding of an element using the `py-{size}` utilities.
 
-<div class="bd-example">
-  <div class="col-md-8 mx-auto text-center fw-semibold">
-    <div class="bg-purple-100 d-inline-block py-5 rounded">
-      <div class="bg-purple-400 p-3 px-4 text-white text-center">py-5</div>
-    </div>
-  </div>
+{{< example class="d-flex justify-content-center s-sm fw-semibold bg-grid-slate-100" show_source="false" >}}
+<div class="d-flex flex-column text-bg-secondary rounded">
+  <div class="bg-striped-white bd-h-12"></div>
+  <div class="text-bg-secondary p-4 text-center">py-6</div>
+  <div class="bg-striped-white bd-h-12"></div>
 </div>
+{{</ example >}}
 
 ```html
-<div class="py-5 ...">py-5</div>
+<div class="py-6 ...">py-6</div>
 ```
 
 ### Add padding to all sides
 
 Control the padding on all sides of an element using the `p-{size}` utilities.
 
-<div class="bd-example">
-  <div class="col-md-8 mx-auto text-center fw-semibold">
-    <div class="bg-purple-100 d-inline-block p-5 rounded">
-      <div class="bg-purple-400 p-4 text-white text-center">p-5</div>
-    </div>
-  </div>
+{{< example class="d-flex justify-content-center fs-sm fw-semibold bg-grid-slate-100" show_source="false" >}}
+<div class="text-bg-secondary rounded">
+<div class="p-5 bg-striped-white">
+  <div class="text-bg-secondary p-4 rounded">p-5</div>
 </div>
+</div>
+{{</ example >}}
 
 ```html
 <div class="p-5 ...">p-5</div>
@@ -138,13 +140,13 @@ All padding utilities that supports responsive at specific [breakpoints]({{< doc
 
 For example, use `py-md-5` to apply the `py-5` utility at only `medium screen` sizes and above.
 
-<div class="bd-example">
-  <div class="col-md-8 mx-auto text-center fw-semibold">
-    <div class="bg-purple-100 d-inline-block py-3 py-md-5 rounded">
-      <div class="bg-purple-400 p-3 text-white text-center">py-sm-3 py-md-5</div>
-    </div>
-  </div>
+{{< example class="d-flex justify-content-center fs-sm fw-semibold bg-grid-slate-100" show_source="false" >}}
+<div class="text-bg-secondary rounded">
+<div class="bg-striped-white py-sm-3 py-md-5">
+  <div class="text-bg-secondary p-4 rounded">py-sm-3 py-md-5</div>
 </div>
+</div>
+{{</ example >}}
 
 ```html
 <div class="py-sm-3 py-md-5 ...">py-sm-3 py-md-5</div>

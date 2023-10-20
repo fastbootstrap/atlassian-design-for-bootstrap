@@ -19,23 +19,25 @@ Set the `visibility` of elements with our visibility utilities. These utility cl
 Elements with the `.invisible` class will be hidden *both* visually and for assistive technology/screen reader users.
 {{< /callout >}}
 
-## Basic example 
+## Basic usage 
 
-### Invisible 
+### Hidden
 
 Use `invisible` to hide an element, but still maintain its place in the DOM, affecting the layout of other elements(compare with `.none` from the [display]({{< docsref "display" >}}) documentation).
 
-<div class="bd-example d-grid text-center fw-semibold">
-  <div class="g-col-4 text-bg-secondary p-3 rounded mx-3 flex-fill">01</div>
-  <div class="invisible g-col-4 text-bg-secondary p-3 rounded mx-3 flex-fill">02</div>
-  <div class="g-col-4 text-bg-secondary p-3 rounded mx-3 flex-fill">03</div>
+{{< example show_source="false" >}}
+<div class="vstack gap-3 text-center bg-striped-purple">
+  <div class="text-bg-secondary p-3">01</div>
+  <div class="invisible text-bg-secondary p-3">02</div>
+  <div class="text-bg-secondary p-3">03</div>
 </div>
+{{</ example >}}
 
 ```html
-<div class="d-grid gap-3">
-  <div class="g-col-4">01</div>
-  <div class="g-col-4 invisible">02</div>
-  <div class="g-col-4">04</div>
+<div class="vstack gap-3">
+  <div>01</div>
+  <div class="invisible">02</div>
+  <div>03</div>
 </div>
 ```
 
@@ -43,16 +45,18 @@ Use `invisible` to hide an element, but still maintain its place in the DOM, aff
 
 Use `visible` to make an element visible. This is mostly useful for undoing the `invisible` utility at different screen sizes.
 
-<div class="bd-example d-grid gap-3 text-center fw-semibold">
-  <div class="g-col-4 text-bg-primary p-3 rounded mx-3 flex-fill">01</div>
-  <div class="visible g-col-4 text-bg-primary p-3 rounded mx-3 flex-fill">02</div>
-  <div class="g-col-4 text-bg-primary p-3 rounded mx-3 flex-fill">03</div>
+{{< example show_source="false" >}}
+<div class="vstack gap-3 text-center bg-striped-purple">
+  <div class="text-bg-secondary p-3">01</div>
+  <div class="visible text-bg-secondary p-3">02</div>
+  <div class="text-bg-secondary p-3">03</div>
 </div>
+{{</ example >}}
 
 ```html
-<div class="d-grid">
-  <div class="g-col-4">01</div>
-  <div class="g-col-4 visible">02</div>
-  <div class="g-col-4">04</div>
+<div class="vstack gap-3">
+  <div>01</div>
+  <div class="visible">02</div>
+  <div>03</div>
 </div>
 ```

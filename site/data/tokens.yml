@@ -1,0 +1,1428 @@
+link:
+  - link:
+      desc: Use for links in a default or hovered state. Add an underline for hovered states.
+      colors:
+        - blue-700
+        - blue-400
+  - link.pressed:
+      desc: 
+      colors:
+        - blue-800
+        - blue-300
+  - link.visited:
+      desc: Use for links in a visited state.
+      colors:
+        - purple-800
+        - purple-300
+text:
+  - text:
+      desc: Use for primary text, such as body copy, sentence case headers, and buttons.
+      colors:
+        - neutral-1000
+        - dark-neutral-900
+  - text.accent.lime:
+      desc: Use for lime text on subtlest and subtler lime accent backgrounds when there is no meaning tied to the 
+      colors:
+        - lime-800
+        - lime-300
+  - text.accent.lime.bolder:
+      desc: Use for lime text on subtle lime accent backgrounds when there is no meaning tied to the 
+      colors:
+        - lime-900
+        - lime-200
+  - text.accent.red:
+      desc: Use for red text on subtlest and subtler red accent backgrounds when there is no meaning tied to the 
+      colors:
+        - red-800
+        - red-300
+  - text.accent.red.bolder:
+      desc: Use for red text on subtle red accent backgrounds when there is no meaning tied to the 
+      colors:
+        - red-900
+        - red-200
+  - text.accent.orange:
+      desc: Use for orange text on subtlest and subtler orange accent backgrounds when there is no meaning tied to the 
+      colors:
+        - orange-800
+        - orange-300
+  - text.accent.orange.bolder:
+      desc: Use for orange text on subtle orange accent backgrounds when there is no meaning tied to the 
+      colors:
+        - orange-900
+        - orange-200
+  - text.accent.yellow:
+      desc: Use for yellow text on subtlest and subtler yellow accent backgrounds when there is no meaning tied to the 
+      colors:
+        - yellow-800
+        - yellow-300
+  - text.accent.yellow.bolder:
+      desc: Use for yellow text on subtle yellow accent backgrounds when there is no meaning tied to the 
+      colors:
+        - yellow-900
+        - yellow-200
+  - text.accent.green:
+      desc: Use for green text on subtlest and subtler green accent backgrounds when there is no meaning tied to the 
+      colors:
+        - green-800
+        - green-300
+  - text.accent.green.bolder:
+      desc: Use for green text on subtle green accent backgrounds when there is no meaning tied to the 
+      colors:
+        - green-900
+        - green-200
+  - text.accent.teal:
+      desc: Use for teal text on subtlest and subtler teal accent backgrounds when there is no meaning tied to the 
+      colors:
+        - teal-800
+        - teal-300
+  - text.accent.teal.bolder:
+      desc: Use for teal text on subtle teal accent backgrounds when there is no meaning tied to the 
+      colors:
+        - teal-900
+        - teal-200
+  - text.accent.blue:
+      desc: Use for blue text on subtlest and subtler blue accent backgrounds when there is no meaning tied to the 
+      colors:
+        - blue-800
+        - blue-300
+  - text.accent.blue.bolder:
+      desc: Use for blue text on subtle blue accent backgrounds when there is no meaning tied to the 
+      colors:
+        - blue-900
+        - blue-200
+  - text.accent.purple:
+      desc: Use for purple text on subtlest and subtler purple accent backgrounds when there is no meaning tied to the 
+      colors:
+        - purple-800
+        - purple-300
+  - text.accent.purple.bolder:
+      desc: Use for purple text on subtle purple accent backgrounds when there is no meaning tied to the 
+      colors:
+        - purple-900
+        - purple-200
+  - text.accent.magenta:
+      desc: Use for magenta text on subtlest and subtler magenta accent backgrounds when there is no meaning tied to the 
+      colors:
+        - magenta-800
+        - magenta-300
+  - text.accent.magenta.bolder:
+      desc: Use for magenta text on subtle magenta accent backgrounds when there is no meaning tied to the 
+      colors:
+        - magenta-900
+        - magenta-200
+  - text.accent.gray:
+      desc: Use for text on non-bold gray accent backgrounds, such as colored tags.
+      colors:
+        - neutral-800
+        - dark-neutral-800
+  - text.accent.gray.bolder:
+      desc: Use for text and icons on gray subtle accent backgrounds.
+      colors:
+        - neutral-1100
+        - dark-neutral-1100
+  - text.disabled:
+      desc: Use for text in a disabled state.
+      colors:
+        - neutral-400a
+        - dark-neutral-400a
+  - text.inverse:
+      desc: Use for text on bold backgrounds.
+      colors:
+        - neutral-0
+        - dark-neutral-100
+  - text.selected:
+      desc: Use for text in selected or opened states, such as tabs and dropdown buttons.
+      colors:
+        - blue-700
+        - blue-400
+  - text.brand:
+      desc: Use for text that reinforces our brand.
+      colors:
+        - blue-700
+        - blue-400
+  - text.danger:
+      desc: Use for critical text, such as input field error messaging.
+      colors:
+        - red-800
+        - red-300
+  - text.warning:
+      desc: Use for text to emphasize caution, such as in moved lozenges.
+      colors:
+        - orange-800
+        - yellow-300
+  - text.warning.inverse:
+      desc: Use for text when on bold warning backgrounds.
+      colors:
+        - neutral-1000
+        - dark-neutral-100
+  - text.success:
+      desc: Use for text to communicate a favorable outcome, such as input field success messaging.
+      colors:
+        - green-800
+        - green-300
+  - text.discovery:
+      desc: Use for text to emphasize change or something new, such as in new lozenges.
+      colors:
+        - purple-800
+        - purple-300
+  - text.information:
+      desc: Use for informative text or to communicate something is in progress, such as in-progress lozenges.
+      colors:
+        - blue-800
+        - blue-300
+  - text.subtlest:
+      desc: Use for tertiary text, such as meta-data, breadcrumbs, input field placeholder and helper text.
+      colors:
+        - neutral-700
+        - dark-neutral-700
+  - text.subtle:
+      desc: Use for secondary text, such as navigation, subtle button links, input field labels, and all caps subheadings.
+      colors:
+        - neutral-800
+        - dark-neutral-800
+background:
+  - background.accent.lime.subtlest:
+      desc: Use for for backgrounds when there is no meaning tied to the  Reserved for when you only want a hint of 
+      colors:
+        - lime-100
+        - lime-1000
+  - background.accent.lime.subtlest.hovered:
+      desc: 
+      colors:
+        - lime-200
+        - lime-900
+  - background.accent.lime.subtlest.pressed:
+      desc: 
+      colors:
+        - lime-300
+        - lime-800
+  - background.accent.lime.subtler:
+      desc: Use for for backgrounds when there is no meaning tied to the color, such as colored tags.
+      colors:
+        - lime-200
+        - lime-900
+  - background.accent.lime.subtler.hovered:
+      desc: 
+      colors:
+        - lime-300
+        - lime-800
+  - background.accent.lime.subtler.pressed:
+      desc: 
+      colors:
+        - lime-400
+        - lime-700
+  - background.accent.lime.subtle:
+      desc: Use for vibrant for backgrounds when there is no meaning tied to the color, such as colored tags.
+      colors:
+        - lime-400
+        - lime-800
+  - background.accent.lime.subtle.hovered:
+      desc: 
+      colors:
+        - lime-300
+        - lime-900
+  - background.accent.lime.subtle.pressed:
+      desc: 
+      colors:
+        - lime-200
+        - lime-1000
+  - background.accent.lime.bolder:
+      desc: Use for for backgrounds when there is no meaning tied to the color, and the background needs to pass min 3:1 contrast requirements.
+      colors:
+        - lime-700
+        - lime-400
+  - background.accent.lime.bolder.hovered:
+      desc: 
+      colors:
+        - lime-800
+        - lime-300
+  - background.accent.lime.bolder.pressed:
+      desc: 
+      colors:
+        - lime-900
+        - lime-200
+  - background.accent.red.subtlest:
+      desc: Use for red backgrounds when there is no meaning tied to the  Reserved for when you only want a hint of 
+      colors:
+        - red-100
+        - red-1000
+  - background.accent.red.subtlest.hovered:
+      desc: 
+      colors:
+        - red-200
+        - red-900
+  - background.accent.red.subtlest.pressed:
+      desc: 
+      colors:
+        - red-300
+        - red-800
+  - background.accent.red.subtler:
+      desc: Use for red backgrounds when there is no meaning tied to the color, such as colored tags.
+      colors:
+        - red-200
+        - red-900
+  - background.accent.red.subtler.hovered:
+      desc: 
+      colors:
+        - red-300
+        - red-800
+  - background.accent.red.subtler.pressed:
+      desc: 
+      colors:
+        - red-400
+        - red-700
+  - background.accent.red.subtle:
+      desc: Use for vibrant red backgrounds when there is no meaning tied to the color, such as colored tags.
+      colors:
+        - red-400
+        - red-800
+  - background.accent.red.subtle.hovered:
+      desc: 
+      colors:
+        - red-300
+        - red-900
+  - background.accent.red.subtle.pressed:
+      desc: 
+      colors:
+        - red-200
+        - red-1000
+  - background.accent.red.bolder:
+      desc: Use for red backgrounds when there is no meaning tied to the color, and the background needs to pass min 3:1 contrast requirements.
+      colors:
+        - red-700
+        - red-400
+  - background.accent.red.bolder.hovered:
+      desc: 
+      colors:
+        - red-800
+        - red-300
+  - background.accent.red.bolder.pressed:
+      desc: 
+      colors:
+        - red-900
+        - red-200
+  - background.accent.orange.subtlest:
+      desc: Use for orange backgrounds when there is no meaning tied to the  Reserved for when you only want a hint of 
+      colors:
+        - orange-100
+        - orange-1000
+  - background.accent.orange.subtlest.hovered:
+      desc: 
+      colors:
+        - orange-200
+        - orange-900
+  - background.accent.orange.subtlest.pressed:
+      desc: 
+      colors:
+        - orange-300
+        - orange-800
+  - background.accent.orange.subtler:
+      desc: Use for orange backgrounds when there is no meaning tied to the color, such as colored tags.
+      colors:
+        - orange-200
+        - orange-900
+  - background.accent.orange.subtler.hovered:
+      desc: 
+      colors:
+        - orange-300
+        - orange-800
+  - background.accent.orange.subtler.pressed:
+      desc: 
+      colors:
+        - orange-400
+        - orange-700
+  - background.accent.orange.subtle:
+      desc: Use for vibrant orange backgrounds when there is no meaning tied to the color, such as colored tags.
+      colors:
+        - orange-400
+        - orange-800
+  - background.accent.orange.subtle.hovered:
+      desc: 
+      colors:
+        - orange-300
+        - orange-900
+  - background.accent.orange.subtle.pressed:
+      desc: 
+      colors:
+        - orange-200
+        - orange-1000
+  - background.accent.orange.bolder:
+      desc: Use for orange backgrounds when there is no meaning tied to the color, and the background needs to pass min 3:1 contrast requirements.
+      colors:
+        - orange-700
+        - orange-400
+  - background.accent.orange.bolder.hovered:
+      desc: 
+      colors:
+        - orange-800
+        - orange-300
+  - background.accent.orange.bolder.pressed:
+      desc: 
+      colors:
+        - orange-900
+        - orange-200
+  - background.accent.yellow.subtlest:
+      desc: 
+      colors:
+        - yellow-100
+        - yellow-1000
+  - background.accent.yellow.subtlest.hovered:
+      desc: Use for yellow backgrounds when there is no meaning tied to the  Reserved for when you only want a hint of 
+      colors:
+        - yellow-200
+        - yellow-900
+  - background.accent.yellow.subtlest.pressed:
+      desc: 
+      colors:
+        - yellow-300
+        - yellow-800
+  - background.accent.yellow.subtler:
+      desc: Use for yellow backgrounds when there is no meaning tied to the color, such as colored tags.
+      colors:
+        - yellow-200
+        - yellow-900
+  - background.accent.yellow.subtler.hovered:
+      desc: 
+      colors:
+        - yellow-300
+        - yellow-800
+  - background.accent.yellow.subtler.pressed:
+      desc: 
+      colors:
+        - yellow-400
+        - yellow-700
+  - background.accent.yellow.subtle:
+      desc: Use for vibrant yellow backgrounds when there is no meaning tied to the color, such as colored tags.
+      colors:
+        - yellow-400
+        - yellow-800
+  - background.accent.yellow.subtle.hovered:
+      desc: 
+      colors:
+        - yellow-300
+        - yellow-900
+  - background.accent.yellow.subtle.pressed:
+      desc: 
+      colors:
+        - yellow-200
+        - yellow-1000
+  - background.accent.yellow.bolder:
+      desc: Use for yellow backgrounds when there is no meaning tied to the color, and the background needs to pass min 3:1 contrast requirements.
+      colors:
+        - yellow-700
+        - yellow-400
+  - background.accent.yellow.bolder.hovered:
+      desc: 
+      colors:
+        - yellow-800
+        - yellow-300
+  - background.accent.yellow.bolder.pressed:
+      desc: 
+      colors:
+        - yellow-900
+        - yellow-200
+  - background.accent.green.subtlest:
+      desc: Use for green backgrounds when there is no meaning tied to the  Reserved for when you only want a hint of 
+      colors:
+        - green-100
+        - green-1000
+  - background.accent.green.subtlest.hovered:
+      desc: 
+      colors:
+        - green-200
+        - green-900
+  - background.accent.green.subtlest.pressed:
+      desc: 
+      colors:
+        - green-300
+        - green-800
+  - background.accent.green.subtler:
+      desc: Use for green backgrounds when there is no meaning tied to the color, such as colored tags.
+      colors:
+        - green-200
+        - green-900
+  - background.accent.green.subtler.hovered:
+      desc: 
+      colors:
+        - green-300
+        - green-800
+  - background.accent.green.subtler.pressed:
+      desc: 
+      colors:
+        - green-400
+        - green-700
+  - background.accent.green.subtle:
+      desc: Use for vibrant green backgrounds when there is no meaning tied to the color, such as colored tags.
+      colors:
+        - green-400
+        - green-800
+  - background.accent.green.subtle.hovered:
+      desc: 
+      colors:
+        - green-300
+        - green-900
+  - background.accent.green.subtle.pressed:
+      desc: 
+      colors:
+        - green-200
+        - green-1000
+  - background.accent.green.bolder:
+      desc: Use for green backgrounds when there is no meaning tied to the color, and the background needs to pass min 3:1 contrast requirements.
+      colors:
+        - green-700
+        - green-400
+  - background.accent.green.bolder.hovered:
+      desc: 
+      colors:
+        - green-800
+        - green-300
+  - background.accent.green.bolder.pressed:
+      desc: 
+      colors:
+        - green-900
+        - green-200
+  - background.accent.teal.subtlest:
+      desc: Use for teal backgrounds when there is no meaning tied to the  Reserved for when you only want a hint of 
+      colors:
+        - teal-100
+        - teal-1000
+  - background.accent.teal.subtlest.hovered:
+      desc: 
+      colors:
+        - teal-200
+        - teal-900
+  - background.accent.teal.subtlest.pressed:
+      desc: 
+      colors:
+        - teal-300
+        - teal-800
+  - background.accent.teal.subtler:
+      desc: Use for teal backgrounds when there is no meaning tied to the color, such as colored tags.
+      colors:
+        - teal-200
+        - teal-900
+  - background.accent.teal.subtler.hovered:
+      desc: 
+      colors:
+        - teal-300
+        - teal-800
+  - background.accent.teal.subtler.pressed:
+      desc: 
+      colors:
+        - teal-400
+        - teal-700
+  - background.accent.teal.subtle:
+      desc: Use for vibrant teal backgrounds when there is no meaning tied to the color, such as colored tags.
+      colors:
+        - teal-400
+        - teal-800
+  - background.accent.teal.subtle.hovered:
+      desc: 
+      colors:
+        - teal-300
+        - teal-900
+  - background.accent.teal.subtle.pressed:
+      desc: 
+      colors:
+        - teal-200
+        - teal-1000
+  - background.accent.teal.bolder:
+      desc: Use for teal backgrounds when there is no meaning tied to the color, and the background needs to pass min 3:1 contrast requirements.
+      colors:
+        - teal-700
+        - teal-400
+  - background.accent.teal.bolder.hovered:
+      desc: 
+      colors:
+        - teal-800
+        - teal-300
+  - background.accent.teal.bolder.pressed:
+      desc: 
+      colors:
+        - teal-900
+        - teal-200
+  - background.accent.blue.subtlest:
+      desc: Use for blue backgrounds when there is no meaning tied to the  Reserved for when you only want a hint of 
+      colors:
+        - blue-100
+        - blue-1000
+  - background.accent.blue.subtlest.hovered:
+      desc: 
+      colors:
+        - blue-200
+        - blue-900
+  - background.accent.blue.subtlest.pressed:
+      desc: 
+      colors:
+        - blue-300
+        - blue-800
+  - background.accent.blue.subtler:
+      desc: Use for blue backgrounds when there is no meaning tied to the color, such as colored tags.
+      colors:
+        - blue-200
+        - blue-900
+  - background.accent.blue.subtler.hovered:
+      desc: 
+      colors:
+        - blue-300
+        - blue-800
+  - background.accent.blue.subtler.pressed:
+      desc: 
+      colors:
+        - blue-400
+        - blue-700
+  - background.accent.blue.subtle:
+      desc: Use for vibrant blue backgrounds when there is no meaning tied to the color, such as colored tags.
+      colors:
+        - blue-400
+        - blue-800
+  - background.accent.blue.subtle.hovered:
+      desc: 
+      colors:
+        - blue-300
+        - blue-900
+  - background.accent.blue.subtle.pressed:
+      desc: 
+      colors:
+        - blue-200
+        - blue-1000
+  - background.accent.blue.bolder:
+      desc: Use for blue backgrounds when there is no meaning tied to the color, and the background needs to pass min 3:1 contrast requirements.
+      colors:
+        - blue-700
+        - blue-400
+  - background.accent.blue.bolder.hovered:
+      desc: 
+      colors:
+        - blue-800
+        - blue-300
+  - background.accent.blue.bolder.pressed:
+      desc: 
+      colors:
+        - blue-900
+        - blue-200
+  - background.accent.purple.subtlest:
+      desc: Use for purple backgrounds when there is no meaning tied to the  Reserved for when you only want a hint of 
+      colors:
+        - purple-100
+        - purple-1000
+  - background.accent.purple.subtlest.hovered:
+      desc: 
+      colors:
+        - purple-200
+        - purple-900
+  - background.accent.purple.subtlest.pressed:
+      desc: 
+      colors:
+        - purple-300
+        - purple-800
+  - background.accent.purple.subtler:
+      desc: Use for purple backgrounds when there is no meaning tied to the color, such as colored tags.
+      colors:
+        - purple-200
+        - purple-900
+  - background.accent.purple.subtler.hovered:
+      desc: 
+      colors:
+        - purple-300
+        - purple-800
+  - background.accent.purple.subtler.pressed:
+      desc: 
+      colors:
+        - purple-400
+        - purple-700
+  - background.accent.purple.subtle:
+      desc: Use for vibrant purple backgrounds when there is no meaning tied to the color, such as colored tags.
+      colors:
+        - purple-400
+        - purple-800
+  - background.accent.purple.subtle.hovered:
+      desc: 
+      colors:
+        - purple-300
+        - purple-900
+  - background.accent.purple.subtle.pressed:
+      desc: 
+      colors:
+        - purple-200
+        - purple-1000
+  - background.accent.purple.bolder:
+      desc: Use for purple backgrounds when there is no meaning tied to the color, and the background needs to pass min 3:1 contrast requirements.
+      colors:
+        - purple-700
+        - purple-400
+  - background.accent.purple.bolder.hovered:
+      desc: 
+      colors:
+        - purple-800
+        - purple-300
+  - background.accent.purple.bolder.pressed:
+      desc: 
+      colors:
+        - purple-900
+        - purple-200
+  - background.accent.magenta.subtlest:
+      desc: Use for magenta backgrounds when there is no meaning tied to the  Reserved for when you only want a hint of 
+      colors:
+        - magenta-100
+        - magenta-1000
+  - background.accent.magenta.subtlest.hovered:
+      desc: 
+      colors:
+        - magenta-200
+        - magenta-900
+  - background.accent.magenta.subtlest.pressed:
+      desc: 
+      colors:
+        - magenta-300
+        - magenta-800
+  - background.accent.magenta.subtler:
+      desc: Use for magenta backgrounds when there is no meaning tied to the color, such as colored tags.
+      colors:
+        - magenta-200
+        - magenta-900
+  - background.accent.magenta.subtler.hovered:
+      desc: 
+      colors:
+        - magenta-300
+        - magenta-800
+  - background.accent.magenta.subtler.pressed:
+      desc: 
+      colors:
+        - magenta-400
+        - magenta-700
+  - background.accent.magenta.subtle:
+      desc: Use for vibrant magenta backgrounds when there is no meaning tied to the color, such as colored tags.
+      colors:
+        - magenta-400
+        - magenta-800
+  - background.accent.magenta.subtle.hovered:
+      desc: 
+      colors:
+        - magenta-300
+        - magenta-900
+  - background.accent.magenta.subtle.pressed:
+      desc: 
+      colors:
+        - magenta-200
+        - magenta-1000
+  - background.accent.magenta.bolder:
+      desc: Use for magenta backgrounds when there is no meaning tied to the color, and the background needs to pass min 3:1 contrast requirements.
+      colors:
+        - magenta-700
+        - magenta-400
+  - background.accent.magenta.bolder.hovered:
+      desc: 
+      colors:
+        - magenta-800
+        - magenta-300
+  - background.accent.magenta.bolder.pressed:
+      desc: 
+      colors:
+        - magenta-900
+        - magenta-200
+  - background.accent.gray.subtlest:
+      desc: Use for gray backgrounds when there is no meaning tied to the  Reserved for when you only want a hint of 
+      colors:
+        - neutral-200
+        - dark-neutral-300
+  - background.accent.gray.subtlest.hovered:
+      desc: 
+      colors:
+        - neutral-300
+        - dark-neutral-350
+  - background.accent.gray.subtlest.pressed:
+      desc: 
+      colors:
+        - neutral-400
+        - dark-neutral-400
+  - background.accent.gray.subtler:
+      desc: Use for gray backgrounds when there is no meaning tied to the color, such as colored tags.
+      colors:
+        - neutral-300
+        - dark-neutral-400
+  - background.accent.gray.subtler.hovered:
+      desc: 
+      colors:
+        - neutral-400
+        - dark-neutral-500
+  - background.accent.gray.subtler.pressed:
+      desc: 
+      colors:
+        - neutral-500
+        - dark-neutral-600
+  - background.accent.gray.subtle:
+      desc: Use for vibrant gray backgrounds when there is no meaning tied to the color, such as colored tags.
+      colors:
+        - neutral-500
+        - dark-neutral-500
+  - background.accent.gray.subtle.hovered:
+      desc: 
+      colors:
+        - neutral-400
+        - dark-neutral-400
+  - background.accent.gray.subtle.pressed:
+      desc: 
+      colors:
+        - neutral-300
+        - dark-neutral-350
+  - background.accent.gray.bolder:
+      desc: Use for gray backgrounds when there is no meaning tied to the color, and the background needs to pass min 3:1 contrast requirements.
+      colors:
+        - neutral-700
+        - dark-neutral-700
+  - background.accent.gray.bolder.hovered:
+      desc: 
+      colors:
+        - neutral-800
+        - dark-neutral-800
+  - background.accent.gray.bolder.pressed:
+      desc: 
+      colors:
+        - neutral-900
+        - dark-neutral-900
+  - background.disabled:
+      desc: Use for backgrounds of elements in a disabled state.
+      colors:
+        - neutral-100a
+        - dark-neutral-100a
+  - background.input:
+      desc: Use for background of form UI elements, such as text fields, checkboxes, and radio buttons.
+      colors:
+        - neutral-0
+        - dark-neutral-200
+  - background.input.hovered:
+      desc: 
+      colors:
+        - neutral-100
+        - dark-neutral-250
+  - background.input.pressed:
+      desc: 
+      colors:
+        - neutral-0
+        - dark-neutral-200
+  - background.inverse.subtle:
+      desc: Use for backgrounds of elements on a bold background, such as in the buttons on spotlight cards.
+      colors:
+        - rgba(0, 0, 0, 0.16)
+        - rgba(255, 255, 255, 0.16)
+  - background.inverse.subtle.hovered:
+      desc: 
+      colors:
+        - rgba(0, 0, 0, 0.24)
+        - rgba(255, 255, 255, 0.24)
+  - background.inverse.subtle.pressed:
+      desc: 
+      colors:
+        - rgba(0, 0, 0, 0.32)
+        - rgba(255, 255, 255, 0.32)
+  - background.neutral:
+      desc: The default background for neutral elements, such as default buttons.
+      colors:
+        - neutral-200a
+        - dark-neutral-200a
+  - background.neutral.hovered:
+      desc: 
+      colors:
+        - neutral-300a
+        - dark-neutral-300a
+  - background.neutral.pressed:
+      desc: 
+      colors:
+        - neutral-400a
+        - dark-neutral-400a
+  - background.neutral.subtle:
+      desc: Use for the background of elements that appear to have no background in a resting state, such as subtle buttons and menu items.
+      colors:
+        - transparent
+        - transparent
+  - background.neutral.subtle.hovered:
+      desc: 
+      colors:
+        - neutral-200a
+        - dark-neutral-200a
+  - background.neutral.subtle.pressed:
+      desc: 
+      colors:
+        - neutral-300a
+        - dark-neutral-300a
+  - background.neutral.bold:
+      desc: A vibrant background option for neutral UI elements, such as announcement banners.
+      colors:
+        - neutral-800
+        - dark-neutral-800
+  - background.neutral.bold.hovered:
+      desc: 
+      colors:
+        - neutral-900
+        - dark-neutral-900
+  - background.neutral.bold.pressed:
+      desc: 
+      colors:
+        - neutral-1000
+        - dark-neutral-1000
+  - background.selected:
+      desc: Use for the background of elements in a selected state, such as in opened dropdown buttons.
+      colors:
+        - blue-100
+        - blue-1000
+  - background.selected.hovered:
+      desc: 
+      colors:
+        - blue-200
+        - blue-900
+  - background.selected.pressed:
+      desc: 
+      colors:
+        - blue-300
+        - blue-800
+  - background.selected.bold:
+      desc: Use for the backgrounds of elements in a selected state, such as checkboxes and radio buttons.
+      colors:
+        - blue-700
+        - blue-400
+  - background.selected.bold.hovered:
+      desc: 
+      colors:
+        - blue-800
+        - blue-300
+  - background.selected.bold.pressed:
+      desc: 
+      colors:
+        - blue-900
+        - blue-200
+  - background.brand.subtlest:
+      desc: Use for the background of elements used to reinforce our brand, but with less emphasis.
+      colors:
+        - blue-100
+        - blue-1000
+  - background.brand.subtlest.hovered:
+      desc: 
+      colors:
+        - blue-200
+        - blue-900
+  - background.brand.subtlest.pressed:
+      desc: 
+      colors:
+        - blue-300
+        - blue-800
+  - background.brand.bold:
+      desc: Use for the background of elements used to reinforce our brand, but with more emphasis.
+      colors:
+        - blue-700
+        - blue-400
+  - background.brand.bold.hovered:
+      desc: 
+      colors:
+        - blue-800
+        - blue-300
+  - background.brand.bold.pressed:
+      desc: 
+      colors:
+        - blue-900
+        - blue-200
+  - background.brand.boldest:
+      desc: Use for the background of elements used to reinforce our brand, that need to stand out a lot.
+      colors:
+        - blue-1000
+        - blue-100
+  - background.brand.boldest.hovered:
+      desc: 
+      colors:
+        - blue-900
+        - blue-200
+  - background.brand.boldest.pressed:
+      desc: 
+      colors:
+        - blue-800
+        - blue-300
+  - background.danger:
+      desc: Use for backgrounds communicating critical information, such in error section messages.
+      colors:
+        - red-100
+        - red-1000
+  - background.danger.hovered:
+      desc: 
+      colors:
+        - red-200
+        - red-900
+  - background.danger.pressed:
+      desc: 
+      colors:
+        - red-300
+        - red-800
+  - background.danger.bold:
+      desc: A vibrant background option for communicating critical information, such as in danger buttons and error banners.
+      colors:
+        - red-700
+        - red-400
+  - background.danger.bold.hovered:
+      desc: 
+      colors:
+        - red-800
+        - red-300
+  - background.danger.bold.pressed:
+      desc: 
+      colors:
+        - red-900
+        - red-200
+  - background.warning:
+      desc: Use for backgrounds communicating caution, such as in warning section messages.
+      colors:
+        - yellow-100
+        - yellow-1000
+  - background.warning.hovered:
+      desc: 
+      colors:
+        - yellow-200
+        - yellow-900
+  - background.warning.pressed:
+      desc: 
+      colors:
+        - yellow-300
+        - yellow-800
+  - background.warning.bold:
+      desc: A vibrant background option for communicating caution, such as in warning buttons and warning banners.
+      colors:
+        - yellow-400
+        - yellow-400
+  - background.warning.bold.hovered:
+      desc: 
+      colors:
+        - yellow-500
+        - yellow-300
+  - background.warning.bold.pressed:
+      desc: 
+      colors:
+        - yellow-600
+        - yellow-200
+  - background.success:
+      desc: Use for backgrounds communicating a favorable outcome, such as in success section messages. 
+      colors:
+        - green-100
+        - green-1000
+  - background.success.hovered:
+      desc: 
+      colors:
+        - green-200
+        - green-900
+  - background.success.pressed:
+      desc: 
+      colors:
+        - green-300
+        - green-800
+  - background.success.bold:
+      desc: A vibrant background option for communicating a favorable outcome, such as in checked toggles.
+      colors:
+        - green-700
+        - green-400
+  - background.success.bold.hovered:
+      desc: 
+      colors:
+        - green-800
+        - green-300
+  - background.success.bold.pressed:
+      desc: 
+      colors:
+        - green-900
+        - green-200
+  - background.discovery:
+      desc: Use for backgrounds communicating change or something new, such as in discovery section messages.
+      colors:
+        - purple-100
+        - purple-1000
+  - background.discovery.hovered:
+      desc: 
+      colors:
+        - purple-200
+        - purple-900
+  - background.discovery.pressed:
+      desc: 
+      colors:
+        - purple-300
+        - purple-800
+  - background.discovery.bold:
+      desc: A vibrant background option communicating change or something new, such as in onboarding spotlights.
+      colors:
+        - purple-700
+        - purple-400
+  - background.discovery.bold.hovered:
+      desc: 
+      colors:
+        - purple-800
+        - purple-300
+  - background.discovery.bold.pressed:
+      desc: 
+      colors:
+        - purple-900
+        - purple-200
+  - background.information:
+      desc: Use for backgrounds communicating information or something in-progress, such as in information section messages.
+      colors:
+        - blue-100
+        - blue-1000
+  - background.information.hovered:
+      desc: 
+      colors:
+        - blue-200
+        - blue-900
+  - background.information.pressed:
+      desc: 
+      colors:
+        - blue-300
+        - blue-800
+  - background.information.bold:
+      desc: A vibrant background option for communicating information or something in-progress.
+      colors:
+        - blue-700
+        - blue-400
+  - background.information.bold.hovered:
+      desc: 
+      colors:
+        - blue-800
+        - blue-300
+  - background.information.bold.pressed:
+      desc: 
+      colors:
+        - blue-900
+        - blue-200
+icon:
+  - icon:
+      desc: Use for icon-only buttons, or icons paired with text
+      colors:
+        - neutral-800
+        - dark-neutral-800
+  - icon.accent.lime:
+      desc: Use for lime icons on non-bold backgrounds when there is no meaning tied to the color, such as file type icons.
+      colors:
+        - lime-600
+        - lime-500
+  - icon.accent.red:
+      desc: Use for red icons on non-bold backgrounds when there is no meaning tied to the color, such as file type icons.
+      colors:
+        - red-600
+        - red-500
+  - icon.accent.orange:
+      desc: Use for orange icons on non-bold backgrounds when there is no meaning tied to the color, such as file type icons.
+      colors:
+        - orange-600
+        - orange-500
+  - icon.accent.yellow:
+      desc: Use for yellow icons on non-bold backgrounds when there is no meaning tied to the color, such as file type icons.
+      colors:
+        - yellow-600
+        - yellow-500
+  - icon.accent.green:
+      desc: Use for green icons on non-bold backgrounds when there is no meaning tied to the color, such as file type icons.
+      colors:
+        - green-600
+        - green-500
+  - icon.accent.teal:
+      desc: Use for teal icons on non-bold backgrounds when there is no meaning tied to the color, such as file type icons.
+      colors:
+        - teal-600
+        - teal-500
+  - icon.accent.blue:
+      desc: Use for blue icons on non-bold backgrounds when there is no meaning tied to the color, such as file type icons.
+      colors:
+        - blue-600
+        - blue-500
+  - icon.accent.purple:
+      desc: Use for purple icons on non-bold backgrounds when there is no meaning tied to the color, such as file type icons.
+      colors:
+        - purple-600
+        - purple-500
+  - icon.accent.magenta:
+      desc: Use for magenta icons on non-bold backgrounds when there is no meaning tied to the color, such as file type icons.
+      colors:
+        - magenta-600
+        - magenta-500
+  - icon.accent.gray:
+      desc: Use for icons on non-bold gray accent backgrounds, such as file type icons.
+      colors:
+        - neutral-600
+        - dark-neutral-600
+  - icon.disabled:
+      desc: Use for icons in a disabled state.
+      colors:
+        - neutral-400a
+        - dark-neutral-400a
+  - icon.inverse:
+      desc: Use for icons on bold backgrounds.
+      colors:
+        - neutral-0
+        - dark-neutral-100
+  - icon.selected:
+      desc: Use for icons in selected or opened states, such as those used in dropdown buttons.
+      colors:
+        - blue-700
+        - blue-400
+  - icon.brand:
+      desc: Use for icons that reinforce our brand.
+      colors:
+        - blue-700
+        - blue-400
+  - icon.danger:
+      desc: Use for icons communicating critical information, such as those used in error handing.
+      colors:
+        - red-600
+        - red-500
+  - icon.warning:
+      desc: Use for icons communicating caution, such as those used in warning section messages.
+      colors:
+        - orange-600
+        - yellow-500
+  - icon.warning.inverse:
+      desc: Use for icons when on bold warning backgrounds.
+      colors:
+        - neutral-1000
+        - dark-neutral-100
+  - icon.success:
+      desc: Use for icons communicating a favorable outcome, such as those used in success section messaged.
+      colors:
+        - green-600
+        - green-500
+  - icon.discovery:
+      desc: Use for icons communicating change or something new, such as discovery section messages.
+      colors:
+        - purple-600
+        - purple-500
+  - icon.information:
+      desc: Use for icons communicating information or something in-progress, such as information section messages.
+      colors:
+        - blue-600
+        - blue-500
+  - icon.subtle:
+      desc: Use for icons paired with text.subtle
+      colors:
+        - neutral-700
+        - dark-neutral-700
+border:
+  - border:
+      desc: Use to visually group or separate UI elements, such as flat cards or side panel dividers.
+      colors:
+        - neutral-300a
+        - dark-neutral-300a
+  - border.accent.lime:
+      desc: Use for lime borders on non-bold backgrounds when there is no meaning tied to the 
+      colors:
+        - lime-600
+        - lime-500
+  - border.accent.red:
+      desc: Use for red borders on non-bold backgrounds when there is no meaning tied to the 
+      colors:
+        - red-600
+        - red-500
+  - border.accent.orange:
+      desc: Use for orange borders on non-bold backgrounds when there is no meaning tied to the 
+      colors:
+        - orange-600
+        - orange-500
+  - border.accent.yellow:
+      desc: Use for yellow borders on non-bold backgrounds when there is no meaning tied to the 
+      colors:
+        - yellow-600
+        - yellow-500
+  - border.accent.green:
+      desc: Use for green borders on non-bold backgrounds when there is no meaning tied to the 
+      colors:
+        - green-600
+        - green-500
+  - border.accent.teal:
+      desc: Use for teal borders on non-bold backgrounds when there is no meaning tied to the 
+      colors:
+        - teal-600
+        - teal-500
+  - border.accent.blue:
+      desc: Use for blue borders on non-bold backgrounds when there is no meaning tied to the 
+      colors:
+        - blue-600
+        - blue-500
+  - border.accent.purple:
+      desc: Use for purple borders on non-bold backgrounds when there is no meaning tied to the 
+      colors:
+        - purple-600
+        - purple-500
+  - border.accent.magenta:
+      desc: Use for magenta borders on non-bold backgrounds when there is no meaning tied to the 
+      colors:
+        - magenta-600
+        - magenta-500
+  - border.accent.gray:
+      desc: Use for borders on non-bold gray accent backgrounds.
+      colors:
+        - neutral-600
+        - dark-neutral-600
+  - border.disabled:
+      desc: Use for borders of elements in a disabled state.
+      colors:
+        - neutral-200a
+        - dark-neutral-200a
+  - border.focused:
+      desc: Use for focus rings of elements in a focus state.
+      colors:
+        - blue-500
+        - blue-300
+  - border.input:
+      desc: Use for borders of form UI elements, such as text fields, checkboxes, and radio buttons.
+      colors:
+        - neutral-300a
+        - dark-neutral-300a
+  - border.inverse:
+      desc: Use for borders on bold backgrounds.
+      colors:
+        - neutral-0
+        - dark-neutral-0
+  - border.selected:
+      desc: Use for borders or visual indicators of elements in a selected or opened state, such as in tabs or menu items.
+      colors:
+        - blue-700
+        - blue-400
+  - border.brand:
+      desc: Use for borders or visual indicators of elements that reinforce our brand, such as logos or primary buttons.
+      colors:
+        - blue-700
+        - blue-400
+  - border.danger:
+      desc: Use for borders communicating critical information, such as the borders on invalid text fields.
+      colors:
+        - red-600
+        - red-500
+  - border.warning:
+      desc: Use for borders communicating caution.
+      colors:
+        - orange-600
+        - yellow-500
+  - border.success:
+      desc: Use for borders communicating a favorable outcome, such as the borders on validated text fields.
+      colors:
+        - green-600
+        - green-500
+  - border.discovery:
+      desc: Use for borders communicating change or something new, such as the borders in onboarding spotlights.
+      colors:
+        - purple-600
+        - purple-500
+  - border.information:
+      desc: Use for borders communicating information or something in-progress.
+      colors:
+        - blue-600
+        - blue-500
+  - border.bold:
+      desc: A neutral border option that passes min 3:1 contrast ratios.
+      colors:
+        - neutral-600
+        - dark-neutral-600
+surface:
+  - surface:
+      desc: Use as the primary background for the UI.
+      colors:
+        - neutral-0
+        - dark-neutral-100
+  - surface.hovered:
+      desc: 
+      colors:
+        - neutral-200
+        - dark-neutral-200
+  - surface.pressed:
+      desc: 
+      colors:
+        - neutral-300
+        - dark-neutral-250
+  - surface.overlay:
+      desc: Use for the background of elements that sit on top of they UI, such as modals, dialogs, dropdown menus, floating toolbars, and floating single-action buttons. Also use for the background of raised cards in a dragged state. Combine with shadow.overlay.
+      colors:
+        - neutral-0
+        - dark-neutral-250
+  - surface.overlay.hovered:
+      desc: 
+      colors:
+        - neutral-200
+        - dark-neutral-300
+  - surface.overlay.pressed:
+      desc: 
+      colors:
+        - neutral-300
+        - dark-neutral-350
+  - surface.raised:
+      desc: Use for the background of cards that can be moved, such as Jira cards on a Kanban board. Combine with shadow.raised.
+      colors:
+        - neutral-0
+        - dark-neutral-200
+  - surface.raised.hovered:
+      desc: 
+      colors:
+        - neutral-200
+        - dark-neutral-250
+  - surface.raised.pressed:
+      desc: 
+      colors:
+        - neutral-300
+        - dark-neutral-300
+  - surface.sunken:
+      desc: A secondary background for the UI commonly used for grouping items, such as Jira cards in columns.
+      colors:
+        - neutral-100
+        - dark-neutral-0
+shadow:
+  - shadow.overflow:
+      desc: Use to create a shadow when content scrolls under other content.
+      colors:
+        - 0px 0px 8px rgba(9, 30, 66, 0.16),0px 0px 1px rgba(9, 30, 66, 0.12)
+        - 0px 0px 12px rgba(3, 4, 4, 0.56),0px 0px 1px rgba(3, 4, 4, 0.5)
+  - shadow.overlay:
+      desc: Use for the box shadow of elements that sit on top of the UI, such as modals, dropdown menus, flags, and inline dialogs. Combine with elevation.surface.overlay Also use for the box shadow of raised cards in a dragged state.
+      colors:
+        - 0px 8px 12px rgba(9, 30, 66, 0.15),0px 0px 1px rgba(9, 30, 66, 0.31)
+        - 0px 0px 0px rgba(57, 66, 74, 1),0px 8px 12px rgba(3, 4, 4, 0.36),0px 0px 1px rgba(3, 4, 4, 0.5)
+  - shadow.raised:
+      desc: Use for the box shadow of raised card elements, such as Jira cards on a Kanban board. Combine with surface.raised
+      colors:
+        - 0px 1px 1px rgba(9, 30, 66, 0.25),0px 0px 1px rgba(9, 30, 66, 0.31)
+        - 0px 0px 0px rgba(0, 0, 0, 0),0px 1px 1px rgba(3, 4, 4, 0.5),0px 0px 1px rgba(3, 4, 4, 0.5)
+space:
+  - space.0:
+     desc: Use for resetting default spacing styles.
+     value: 0px
+  - space.025:
+     desc: Use for small and compact pieces of UI.
+     value: 2px
+  - space.050:
+     desc: Use for small and compact pieces of UI.
+     value: 4px
+  - space.075:
+     desc: Use for small and compact pieces of UI.
+     value: 6px
+  - space.100:
+     desc: Use for small and compact pieces of UI.
+     value: 8px
+  - space.150:
+     desc: Use for small and compact pieces of UI.
+     value: 12px
+  - space.200:
+     desc: Use for small and compact pieces of UI.
+     value: 16px
+  - space.255:
+     desc: Use for small and compact pieces of UI.
+     value: 20px
+  - space.300:
+     desc: Use for small and compact pieces of UI.
+     value: 24px
+  - space.400:
+     desc: Use for the largest pieces of UI and for layout elements.
+     value: 32px
+  - space.500:
+     desc: Use for the largest pieces of UI and for layout elements.
+     value: 40px
+  - space.600:
+     desc: Use for the largest pieces of UI and for layout elements.
+     value: 48px
+  - space.700:
+     desc: Use for the largest pieces of UI and for layout elements.
+     value: 56px
+  - space.800:
+     desc: Use for the largest pieces of UI and for layout elements.
+     value: 64px
+  - space.1000:
+     desc: Use for the largest pieces of UI and for layout elements.
+     value: 80px

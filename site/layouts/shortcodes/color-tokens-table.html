@@ -1,0 +1,102 @@
+{{ $tokens := index .Site.Data.tokens (.Get 0) }}
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col" class="">Token and description</th>
+      <th scope="col" class="text-nowrap bd-w-24">Light value</th>
+      <th scope="col" class="text-nowrap bd-w-24">Dark value</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ range $tokens }}
+      {{ $list := slice . }}
+      {{ $name :="" }}
+      {{ $desc :="" }}
+      {{ range $k, $v := . }}
+        {{ $name = $k }}
+        {{ $desc =$v.desc }}
+      {{ end }}
+
+      {{ if (or (hasSuffix $name ".pressed") (hasSuffix $name ".hovered")) }}
+        {{ continue }}
+      {{ end }}
+
+      {{ range $tokens }}
+        {{ if (or (isset . (printf "%s.pressed" $name)) (isset . (printf "%s.hovered" $name))) }}
+          {{ $list = $list | append (.) }}
+        {{ end }}
+      {{ end }}
+
+      {{ if eq (len $list) 1 }}
+        {{ range $list }}
+          {{ range $token,$value := . }}
+            <tr>
+              <td class="align-top pt-4 border-bottom-0">
+                <div class="d-flex flex-column gap-2">
+                  <div>
+                    <code class="px-2 d-inline-block">--ds-{{ replace $token "." "-" }}</code>
+                  </div>
+                </div>
+              </td>
+              <td class="pt-4 align-top border-bottom-0">
+                {{- $bg := printf "style=\"background-color:var(--color-%s)\""  (index $value.colors 0) -}}
+                {{ if hasPrefix (index $value.colors 0) "rgb" }}
+                  {{- $bg = printf "style=\"background-color:%s\"" (index $value.colors 0) -}}
+                {{ end }}
+                {{ with $bg }}
+                  <div class="d-inline-block bd-w-24 bd-h-6 rounded border" {{ . | safeHTMLAttr }}></div>
+                {{ end }}
+              </td>
+              <td class="pt-4 align-top border-bottom-0">
+                {{- $bg := printf "style=\"background-color:var(--color-%s)\""  (index $value.colors 1) -}}
+                {{ if hasPrefix (index $value.colors 1) "rgb" }}
+                  {{- $bg = printf "style=\"background-color:%s\"" (index $value.colors 1) -}}
+                {{ end }}
+                {{ with $bg }}
+                  <div class="d-inline-block bd-w-24 bd-h-6 rounded border" {{ . | safeHTMLAttr }}></div>
+                {{ end }}
+              </td>
+            </tr>
+          {{ end }}
+        {{ end }}
+      {{ else }}
+        {{ range $n,$value := $list }}
+          {{ range $token,$value := $value }}
+            <tr>
+              <td class="align-top border-bottom-0 {{ if eq $n 0 }}pt-4{{ end }}">
+                <div class="d-flex flex-column gap-2">
+                  <div>
+                    <code class="px-2 d-inline-block">--ds-{{ replace $token "." "-" }}</code>
+                  </div>
+                </div>
+              </td>
+              <td class="align-top border-bottom-0 {{ if eq $n 0 }}pt-4{{ end }}">
+                {{- $bg := printf "style=\"background-color:var(--color-%s)\""  (index $value.colors 0) -}}
+                {{ if hasPrefix (index $value.colors 0) "rgb" }}
+                  {{- $bg = printf "style=\"background-color:%s\"" (index $value.colors 0) -}}
+                {{ end }}
+                {{ with $bg }}
+                  <div class="d-inline-block bd-w-24 bd-h-6 rounded border" {{ . | safeHTMLAttr }}></div>
+                {{ end }}
+              </td>
+              <td class="align-top border-bottom-0 {{ if eq $n 0 }}pt-4{{ end }}">
+                {{- $bg := printf "style=\"background-color:var(--color-%s)\""  (index $value.colors 1) -}}
+                {{ if hasPrefix (index $value.colors 1) "rgb" }}
+                  {{- $bg = printf "style=\"background-color:%s\"" (index $value.colors 1) -}}
+                {{ end }}
+                {{ with $bg }}
+                  <div class="d-inline-block bd-w-24 bd-h-6 rounded border" {{ . | safeHTMLAttr }}></div>
+                {{ end }}
+              </td>
+            </tr>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+      <tr>
+        <td class="pb-4" colspan="3">
+          <p class="mb-0">{{ $desc }}</p>
+        </td>
+      </tr>
+    {{ end }}
+  </tbody>
+</table>

@@ -8,6 +8,9 @@ menu:
   docs:
 ---
 
+## Quick reference
+
+{{< class-api "margin" "true" >}}
 
 Assign responsive-friendly `margin` values to an element or a subset of its sides with shorthand classes. Includes support for individual properties, all properties, and vertical and horizontal properties.
 
@@ -15,19 +18,15 @@ Assign responsive-friendly `margin` values to an element or a subset of its side
 **Using the CSS Grid layout module?** Consider using [the gap utility]({{< docsref "gap" >}}) instead.
 {{< /callout >}}
 
-## Quick reference
-
-{{< class-api "margin" "true" >}}
-
-## Overview 
+## Overview
 
 The margin utilities that apply to all breakpoints, from `xs` to `xxl`, have no breakpoint abbreviation in them. This is because those classes are applied from `min-width: 0` and up, and thus are not bound by a media query. The remaining breakpoints, however, do include a breakpoint abbreviation.
 
 The classes are named using the format `{property}{sides}-{size}` for `xs` and `{property}{sides}-{breakpoint}-{size}` for `sm`, `md`, `lg`, `xl`, and `xxl`.
 
-Where *property* is `m` - for classes that set `margin`
+Where _property_ is `m` - for classes that set `margin`
 
-Where *sides* is one of:
+Where _sides_ is one of:
 
 - `t` - for classes that set `margin-top`
 - `b` - for classes that set `margin-bottom`
@@ -37,7 +36,7 @@ Where *sides* is one of:
 - `y` - for classes that set both `*-top` and `*-bottom`
 - blank - for classes that set a `margin` on all 4 sides of the element
 
-Where *size* is one of:
+Where _size_ is one of:
 
 - `0` - for classes that eliminate the `margin` by setting it to `0`
 - `1` - (by default) for classes that set the `margin` to `$spacer * .25`
@@ -54,7 +53,7 @@ Where *size* is one of:
 
 (You can add more sizes by adding entries to the `$spacers` Sass map variable.)
 
-## Basic examples
+## Basic usage
 
 ### Add margin to a single side
 
@@ -62,22 +61,20 @@ Control the margin on one side of an element using the `m{t|e|b|s}-{size}` utili
 
 For example, `mt-4` would add `1.5rem` of margin to the top of an element, `me-3` would add `1rem` of margin to the right of an element, `mb-5` would add `3rem` of margin to the bottom of an element, and `ms-2` would add `0.5rem` of margin to the left of an element.
 
-<div class="bd-example bg-light p-0">
-  <div class="position-relative" style="height:14rem;">
-    <div class="position-absolute start-50 top-0 translate-middle-x bg-purple-50">
-      <div class="bg-purple-400 mt-4 py-3 px-4 text-white fw-semibold rounded-bottom">mt-4</div>
-    </div>
-    <div class="position-absolute top-50 end-0 translate-middle-y bg-purple-50">
-      <div class="bg-purple-400 me-3 py-3 px-4 text-white fw-semibold rounded-start">me-3</div>
-    </div>
-    <div class="position-absolute bottom-0 start-50 bg-purple-50">
-      <div class="bg-purple-400 mb-5 py-3 px-4 text-white fw-semibold rounded-top">mb-5</div>
-    </div>
-    <div class="position-absolute top-50 start-0 translate-middle-y bg-purple-50">
-      <div class="bg-purple-400 ms-2 py-3 px-4 text-white fw-semibold rounded-end">ms-2</div>
-    </div>
-  </div>
+{{< example class="position-relative fw-semibold bg-grid-slate-100 bd-h-56" show_source="false">}}
+<div class="position-absolute start-50 top-0 translate-middle-x bg-striped-purple">
+  <div class="text-bg-secondary mt-4 p-4 rounded">mt-4</div>
 </div>
+<div class="position-absolute top-50 end-0 translate-middle-y bg-striped-purple">
+  <div class="text-bg-secondary me-3 p-4 rounded">me-3</div>
+</div>
+<div class="position-absolute bottom-0 start-50 bg-striped-purple">
+  <div class="text-bg-secondary mb-5 p-4 rounded">mb-5</div>
+</div>
+<div class="position-absolute top-50 start-0 translate-middle-y bg-striped-purple">
+  <div class="text-bg-secondary ms-2 p-4 rounded">ms-2</div>
+</div>
+{{</ example >}}
 
 ```html
 <div class="mt-4 ...">mt-4</div>
@@ -90,13 +87,11 @@ For example, `mt-4` would add `1.5rem` of margin to the top of an element, `me-3
 
 Control the horizontal margin of an element using the `mx-{size}` utilities.
 
-<div class="bd-example">
-  <div class="col-md-8 mx-auto text-center fw-semibold">
-    <div class="bg-purple-100 d-inline-block rounded">
-      <div class="bg-purple-400 p-3 px-4 text-white text-center mx-5">mx-5</div>
-    </div>
+{{< example class="text-center fs-sm fw-semibold bg-grid-slate-100" show_source="false">}}
+  <div class="d-inline-block bg-striped-purple">
+      <div class="text-bg-secondary p-4 mx-5 rounded">mx-5</div>
   </div>
-</div>
+{{</ example >}}
 
 ```html
 <div class="mx-5 ...">mx-5</div>
@@ -106,13 +101,11 @@ Control the horizontal margin of an element using the `mx-{size}` utilities.
 
 Control the vertical margin of an element using the `my-{size}` utilities.
 
-<div class="bd-example">
-  <div class="col-md-8 mx-auto text-center fw-semibold">
-    <div class="bg-purple-100 d-inline-block rounded">
-      <div class="bg-purple-400 p-3 px-4 text-white text-center my-5">my-5</div>
-    </div>
+{{< example class="text-center fs-sm fw-semibold bg-grid-slate-100" show_source="false">}}
+  <div class="d-inline-block bg-striped-purple">
+      <div class="text-bg-secondary p-4 my-5 rounded">my-5</div>
   </div>
-</div>
+{{</ example >}}
 
 ```html
 <div class="my-5 ...">my-5</div>
@@ -122,80 +115,84 @@ Control the vertical margin of an element using the `my-{size}` utilities.
 
 Control the margin on all sides of an element using the `m-{size}` utilities.
 
-<div class="bd-example">
-  <div class="col-md-8 mx-auto text-center fw-semibold">
-    <div class="bg-purple-100 d-inline-block rounded">
-      <div class="bg-purple-400 p-3 px-4 text-white text-center m-4">m-4</div>
-    </div>
+{{< example class="text-center fs-sm fw-semibold bg-grid-slate-100" show_source="false">}}
+  <div class="d-inline-block bg-striped-purple">
+      <div class="text-bg-secondary p-4 m-5 rounded">m-5</div>
   </div>
-</div>
+{{</ example >}}
 
 ```html
-<div class="m-4 ...">m-4</div>
+<div class="m-5 ...">m-5</div>
 ```
 
 ### Horizontal centering margin
 
 Additionally, Bootstrap also includes an `.mx-auto` class for horizontally centering fixed-width block level content—that is, content that has `display: block` and a `width` set—by setting the horizontal margins to `auto`.
 
-<div class="bd-example bg-purple-50 ">
-  <div class="mx-auto bg-purple-300 text-white shadow text-center p-3" style="width: 200px;">
-    Centered element
+{{< example class="text-center fs-sm fw-semibold bg-grid-slate-100" show_source="false">}}
+  <div class="bg-striped-purple">
+      <div class="text-bg-secondary p-4 mx-auto rounded col-6">Centered element</div>
   </div>
-</div>
+{{</ example >}}
 
 ```html
-<div class="mx-auto" style="width: 200px;">
-  Centered element
-</div>
+<div class="mx-auto ...">Centered element</div>
 ```
 
 ### Right align margin
 
 Control the righ-align margin of an element using the `ms-auto` utilities.
 
-{{< example >}}
-<nav class="navbar navbar-expand-lg">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="/images/bootstrap-logo.svg" width="36" alt="Logo" />
-    </a>
-    <button class="btn btn-primary ms-auto">Sign up</button>
-  </div>
-</nav>
+{{< example class="bg-grid-slate-100 text-center" show_source="false" >}}
+<div class="d-flex gap-4 bg-striped-purple rounded">
+  <div class="text-bg-secondary p-4 rounded">01</div>
+  <div class="text-bg-secondary p-4 rounded">02</div>
+  <div class="ms-auto text-bg-secondary p-4 rounded">03</div>
+  <div class="text-bg-secondary p-4 rounded">04</div>
+  <div class="text-bg-secondary p-4 rounded">05</div>
+</div>
 {{</ example >}}
+
+```html
+<div class="d-flex gap-4">
+  <div>01</div>
+  <div>02</div>
+  <div class="ms-auto">03</div>
+  <div>04</div>
+  <div>05</div>
+</div>
+```
 
 ## Using negative values
 
-In CSS, `margin` properties can utilize negative values ([`padding`]({{< docsref "padding" >}}) cannot). These negative margins are enabled by default, but can be disabled in Sass by setting `$enable-negative-margins: false`.
+In CSS, `margin` properties can utilize negative values ([`padding`]({{< docsref "padding" >}}) cannot). These negative margins are enabled by default in FastBootstrap, but can be disabled in Sass by setting `$enable-negative-margins: false`.
 
 The syntax is nearly the same as the default, positive margin utilities, but with the addition of `n` before the requested size by the format `{property}{sides}-n{size}`.
 
-<div class="bd-example bg-light">
+{{< example class="bg-grid-slate-100 fw-semibold" show_source="false" >}}
 <div class="col-md-4 mx-auto d-flex flex-column align-items-center">
-  <div class="bg-purple-50 bd-w-36 bd-h-16 rounded d-inline-block shadow-sm"></div>
-  <div class="bg-purple-400 p-4 text-white fw-semibold rounded mt-n5 d-inline-block shadow">mt-n5</div>
+  <div class="bg-purple-subtler border bd-w-36 bd-h-16 rounded d-inline-block bg-striped-purple" style="--bs-border-color:var(--ds-border-discovery)"></div>
+  <div class="text-bg-secondary p-4 rounded mt-n5 d-inline-block">mt-n5</div>
 </div>
-</div>
+{{</ example  >}}
 
 ```html
-  <div class="d-inline-block"></div>
-  <div class="mt-n2 d-inline-block">mt-n2</div>
+<div class="bd-w-36 bd-h-16 ..."></div>
+<div class="mt-n5">mt-n5</div>
 ```
-## Breakpoints and media queries
 
+## Breakpoints and media queries
 
 All margin utilities that supports responsive at specific [breakpoints]({{< docsref "breakpoints" >}}), using the following format `{property}{sides}-{breakpoint}-{size}` for `xs`, `sm`, `md`, `lg`, `xl`, and `xxl`.
 
-
 For example, use `my-md-4` to apply the `my-4` utility at only `medium screen` sizes and above, `my-3` for `xs` by default.
 
-<div class="bd-example bg-light">
-  <div class="col-md-4 mx-auto text-center fw-semibold">
-    <div class="bg-purple-400 p-3 text-white text-center rounded">my-3 my-md-4</div>
+{{< example class="bg-grid-slate-100 text-center fw-semibold" show_source="false" >}}
+  <div class="col-md-4 bg-striped-purple d-inline-block">
+    <div class="text-bg-secondary p-4 rounded my-3 my-md-4 my-lg-6">my-3 my-md-4 my-lg-6</div>
   </div>
-</div>
+{{</ example >}}
 
 ```html
-<div class="my-3 my-md-4 ...">my-3 my-md-4</div>
+<div class="my-3 my-md-4 my-lg-6 ...">my-3 my-md-4 my-lg-6</div>
 ```

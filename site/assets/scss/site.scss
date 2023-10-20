@@ -8,7 +8,7 @@ $enable-cssgrid: true;
 @import "node_modules/bootstrap/scss/grid";
 
 // Load docs components
-@import "variables";
+@import "root";
 @import "navbar";
 @import "sidebar";
 @import "codebox";

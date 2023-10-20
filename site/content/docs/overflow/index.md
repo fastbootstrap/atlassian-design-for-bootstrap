@@ -10,19 +10,21 @@ menu:
 
 Adjust the `overflow` property on the fly with four default values and classes. These classes are not responsive by default.
 
+## Quick reference
+
 {{< class-api "overflow" >}}
 
-## Basic examples
+## Basic usage
 
 ### Showing content that overflows
 
 Use `overflow-visible` to prevent content within an element from being clipped. Note that any content that overflows the bounds of the element will then be visible.
 
-<div class="bd-example d-flex justify-content-center bg-light">
- <div class="overflow-visible p-3 mb-3 mb-md-0 me-md-3 bg-white shadow" style="max-width: 260px; max-height: 100px;">
-    This is an example of using <code>.overflow-visible</code> on an element with set width and height dimensions.
-  </div>
+{{< example class="bg-neutral-subtler bg-grid-slate-100" show_source="false" >}}
+<div class="overflow-visible bd-h-24 bd-max-w-64 mx-auto border bg-body p-3">
+  This is an example of using <code>.overflow-visible</code> on an element with set width and height dimensions.
 </div>
+{{</ example >}}
 
 ```html
 <div class="overflow-visible">...</div>
@@ -32,11 +34,11 @@ Use `overflow-visible` to prevent content within an element from being clipped. 
 
 Use `overflow-hidden` to clip any content within an element that overflows the bounds of that element.
 
-<div class="bd-example d-flex justify-content-center bg-light">
- <div class="overflow-hidden p-3 mb-3 mb-md-0 me-md-3 bg-white shadow" style="max-width: 260px; max-height: 100px;">
-    This is an example of using <code>.overflow-hidden</code> on an element with set width and height dimensions.
-  </div>
+{{< example class="bg-neutral-subtler bg-grid-slate-100" show_source="false" >}}
+<div class="overflow-hidden bd-h-24 bd-max-w-64 mx-auto border bg-body p-3">
+  This is an example of using <code>.overflow-hidden</code> on an element with set width and height dimensions.
 </div>
+{{</ example >}}
 
 ```html
 <div class="overflow-hidden">...</div>
@@ -46,11 +48,11 @@ Use `overflow-hidden` to clip any content within an element that overflows the b
 
 Use `overflow-auto` to add scrollbars to an element in the event that its content overflows the bounds of that element. Unlike `.overflow-scroll`, which always shows scrollbars, this utility will only show them if scrolling is necessary.
 
-<div class="bd-example d-flex justify-content-center bg-light">
- <div class="overflow-auto p-3 mb-3 mb-md-0 me-md-3 bg-white shadow" style="max-width: 260px; max-height: 100px;">
+{{< example class="bg-neutral-subtler bg-grid-slate-100" show_source="false" >}}
+<div class="overflow-auto bd-h-20 bd-max-w-80 mx-auto border bg-body p-3">
     This is an example of using <code>.overflow-auto</code> on an element with set width and height dimensions. By design, this content will vertically scroll.
   </div>
-</div>
+{{</ example >}}
 
 ```html
 <div class="overflow-auto">...</div>
@@ -60,11 +62,11 @@ Use `overflow-auto` to add scrollbars to an element in the event that its conten
 
 Use `overflow-scroll` to add scrollbars to an element. Unlike `.overflow-auto`, which only shows scrollbars if they are necessary, this utility always shows them. 
 
-<div class="bd-example d-flex justify-content-center bg-light">
- <div class="overflow-scroll p-3 mb-3 mb-md-0 me-md-3 bg-white shadow" style="max-width: 260px; max-height: 100px;">
+{{< example class="bg-neutral-subtler bg-grid-slate-100" show_source="false" >}}
+<div class="overflow-scroll bd-h-24 bd-max-w-80 mx-auto border bg-body p-3">
     This is an example of using <code>.overflow-scroll</code> on an element with set width and height dimensions.
-  </div>
 </div>
+{{</ example >}}
 
 ```html
 <div class="overflow-scroll">...</div>
@@ -74,11 +76,11 @@ Use `overflow-scroll` to add scrollbars to an element. Unlike `.overflow-auto`, 
 
 Use `overflow-x-auto` to allow horizontal scrolling if needed.
 
-<div class="bd-example d-flex justify-content-center bg-light">
- <div class="overflow-x-auto p-3 mb-3 mb-md-0 me-md-3 bg-white shadow" style="max-width: 260px; max-height: 100px;">
-    <div class="text-nowrap p-2">This is an example of using <code>.overflow-scroll</code> on an element with set width and height dimensions.</div>
+{{< example class="bg-neutral-subtler bg-grid-slate-100" show_source="false" >}}
+<div class="overflow-x-auto bd-h-24 bd-max-w-80 mx-auto border bg-body p-3">
+    <div class="text-nowrap p-2">This is an example of using <code>.overflow-x-auto</code> on an element with set width and height dimensions.</div>
   </div>
-</div>
+{{</ example >}}
 
 ```html
 <div class="overflow-x-auto">...</div>
@@ -88,12 +90,11 @@ Use `overflow-x-auto` to allow horizontal scrolling if needed.
 
 Use `overflow-y-auto` to allow vertical scrolling if needed.
 
-<div class="bd-example d-flex justify-content-center bg-light">
- <div class="overflow-y-auto p-3 mb-3 mb-md-0 me-md-3 bg-white shadow" style="max-width: 260px; max-height: 100px;">
+{{< example class="bg-neutral-subtler bg-grid-slate-100" show_source="false" >}}
+<div class="overflow-y-auto bd-h-24 bd-max-w-80 mx-auto border bg-body p-3">
     This is an example of using <code>.overflow-y-auto</code> on an element with set width and height dimensions. By design, this content will vertically scroll.
   </div>
-</div>
-
+{{</ example >}}
 
 ```html
 <div class="overflow-y-auto">...</div>

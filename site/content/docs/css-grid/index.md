@@ -39,102 +39,191 @@ Compared to the default grid system:
 
 - Nesting works similarly, but may require you to reset your column counts on each instance of a nested `.grid`. See the [nesting section](#nesting) for details.
 
-## Examples
+## Basic usage
 
 ### Three columns
 
-Three equal-width columns across all viewports and devices can be created by using the `.g-col-4` classes. Add [responsive classes](#responsive) to change the layout by viewport size.
+Three equal-width columns across all viewports and devices can be created by using the `.g-col-4` classes.
 
-{{< example class="bd-example-cssgrid" >}}
-<div class="grid text-center">
-  <div class="g-col-4">.g-col-4</div>
-  <div class="g-col-4">.g-col-4</div>
-  <div class="g-col-4">.g-col-4</div>
+{{< example show_source="false" >}}
+<div class="grid text-center bg-striped-purple">
+  <div class="g-col-4 text-bg-secondary p-3">01</div>
+  <div class="g-col-4 text-bg-secondary p-3">02</div>
+  <div class="g-col-4 text-bg-secondary p-3">03</div>
+  <div class="g-col-4 text-bg-secondary p-3">04</div>
+  <div class="g-col-4 text-bg-secondary p-3">05</div>
+  <div class="g-col-4 text-bg-secondary p-3">06</div>
 </div>
 {{< /example >}}
 
-### Responsive
-
-Use responsive classes to adjust your layout across viewports. Here we start with two columns on the narrowest viewports, and then grow to three columns on medium viewports and above.
-
-{{< example class="bd-example-cssgrid" >}}
-<div class="grid text-center">
-  <div class="g-col-6 g-col-md-4">.g-col-6 .g-col-md-4</div>
-  <div class="g-col-6 g-col-md-4">.g-col-6 .g-col-md-4</div>
-  <div class="g-col-6 g-col-md-4">.g-col-6 .g-col-md-4</div>
+```html
+<div class="grid">
+  <div class="g-col-4">01</div>
+  <div class="g-col-4">02</div>
+  <div class="g-col-4">03</div>
+  <div class="g-col-4">04</div>
+  <div class="g-col-4">05</div>
+  <div class="g-col-4">06</div>
 </div>
-{{< /example >}}
+```
+
+### Responsive columns
+
+Use responsive classes to adjust your layout across viewports. 
+
+Here we start with two columns on the narrowest viewports, and then grow to three columns on medium viewports and above.
+
+{{< example show_source="false" >}}
+<div class="grid text-center bg-striped-purple">
+  <div class="g-col-6 g-col-md-4 text-bg-secondary p-3">01</div>
+  <div class="g-col-6 g-col-md-4 text-bg-secondary p-3">02</div>
+  <div class="g-col-6 g-col-md-4 text-bg-secondary p-3">03</div>
+  <div class="g-col-6 g-col-md-4 text-bg-secondary p-3">04</div>
+  <div class="g-col-6 g-col-md-4 text-bg-secondary p-3">05</div>
+  <div class="g-col-6 g-col-md-4 text-bg-secondary p-3">06</div>
+</div>
+{{</ example >}}
+
+```html
+<div class="grid">
+  <div class="g-col-6 g-col-md-4">01</div>
+  <div class="g-col-6 g-col-md-4">02</div>
+  <div class="g-col-6 g-col-md-4">03</div>
+  <div class="g-col-6 g-col-md-4">04</div>
+  <div class="g-col-6 g-col-md-4">05</div>
+  <div class="g-col-6 g-col-md-4">06</div>
+</div>
+```
 
 Compare that to this two column layout at all viewports.
 
-{{< example class="bd-example-cssgrid" >}}
-<div class="grid text-center">
-  <div class="g-col-6">.g-col-6</div>
-  <div class="g-col-6">.g-col-6</div>
+{{< example show_source="false" >}}
+<div class="grid text-center bg-striped-purple">
+  <div class="g-col-6 text-bg-secondary p-3">01</div>
+  <div class="g-col-6 text-bg-secondary p-3">02</div>
+  <div class="g-col-6 text-bg-secondary p-3">03</div>
+  <div class="g-col-6 text-bg-secondary p-3">04</div>
 </div>
-{{< /example >}}
+{{</ example >}}
 
-## Wrapping
-
-Grid items automatically wrap to the next line when there's no more room horizontally. Note that the `gap` applies to horizontal and vertical gaps between grid items.
-
-{{< example class="bd-example-cssgrid" >}}
-<div class="grid text-center">
-  <div class="g-col-6">.g-col-6</div>
-  <div class="g-col-6">.g-col-6</div>
-
-  <div class="g-col-6">.g-col-6</div>
-  <div class="g-col-6">.g-col-6</div>
+```html
+<div class="grid">
+  <div class="g-col-6">01</div>
+  <div class="g-col-6">02</div>
+  <div class="g-col-6">03</div>
+  <div class="g-col-6">04</div>
 </div>
-{{< /example >}}
+```
+
+### Auto newline
+
+Grid items automatically wrap to the next line when there's no more room horizontally. 
+
+{{< callout >}}
+Note that the `gap` applies to horizontal and vertical gaps between grid items.
+{{</ callout >}}
+
+{{< example show_source="false" >}}
+<div class="grid text-center bg-striped-purple">
+  <div class="g-col-6 text-bg-secondary p-3">01</div>
+  <div class="g-col-6 text-bg-secondary p-3">02</div>
+  <div class="g-col-6 text-bg-secondary p-3">03</div>
+  <div class="g-col-6 text-bg-secondary p-3">04</div>
+</div>
+{{</ example >}}
+
+```html
+<div class="grid">
+  <div class="g-col-6">01</div>
+  <div class="g-col-6">02</div>
+  <div class="g-col-6">03</div>
+  <div class="g-col-6">04</div>
+</div>
+```
 
 ## Starts
 
-Start classes aim to replace our default grid's offset classes, but they're not entirely the same. CSS Grid creates a grid template through styles that tell browsers to "start at this column" and "end at this column." Those properties are `grid-column-start` and `grid-column-end`. Start classes are shorthand for the former. Pair them with the column classes to size and align your columns however you need. Start classes begin at `1` as `0` is an invalid value for these properties.
+Start classes aim to replace our default grid's offset classes, but they're not entirely the same. CSS Grid creates a grid template through styles that tell browsers to "start at this column" and "end at this column." Those properties are `grid-column-start` and `grid-column-end`. Start classes are shorthand for the former. Pair them with the column classes to size and align your columns however you need. **Start classes begin at `1` as `0` is an invalid value for these properties**.
 
-{{< example class="bd-example-cssgrid" >}}
-<div class="grid text-center">
-  <div class="g-col-3 g-start-2">.g-col-3 .g-start-2</div>
-  <div class="g-col-4 g-start-6">.g-col-4 .g-start-6</div>
+{{< example show_source="false" >}}
+<div class="grid text-center bg-striped-purple">
+  <div class="g-col-3 g-start-2 text-bg-secondary p-3">01</div>
+  <div class="g-col-4 g-start-6 text-bg-secondary p-3">02</div>
 </div>
 {{< /example >}}
+
+```html
+<div class="grid">
+  <div class="g-col-3 g-start-2">01</div>
+  <div class="g-col-4 g-start-6">02</div>
+</div>
+```
 
 ## Auto columns
 
 When there are no classes on the grid items (the immediate children of a `.grid`), each grid item will automatically be sized to one column.
 
-{{< example class="bd-example-cssgrid" >}}
-<div class="grid text-center">
-  <div>1</div>
-  <div>1</div>
-  <div>1</div>
-  <div>1</div>
-  <div>1</div>
-  <div>1</div>
-  <div>1</div>
-  <div>1</div>
-  <div>1</div>
-  <div>1</div>
-  <div>1</div>
-  <div>1</div>
+{{< example show_source="false" >}}
+<div class="grid bg-striped-purple text-center">
+  <div class="text-bg-secondary p-2">1</div>
+  <div class="text-bg-secondary p-2">2</div>
+  <div class="text-bg-secondary p-2">3</div>
+  <div class="text-bg-secondary p-2">4</div>
+  <div class="text-bg-secondary p-2">5</div>
+  <div class="text-bg-secondary p-2">6</div>
+  <div class="text-bg-secondary p-2">7</div>
+  <div class="text-bg-secondary p-2">8</div>
+  <div class="text-bg-secondary p-2">9</div>
+  <div class="text-bg-secondary p-2">10</div>
+  <div class="text-bg-secondary p-2">11</div>
+  <div class="text-bg-secondary p-2">12</div>
 </div>
-{{< /example >}}
+{{</ example >}}
+
+```html
+<div class="grid">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+  <div>9</div>
+  <div>10</div>
+  <div>11</div>
+  <div>12</div>
+</div>
+```
 
 This behavior can be mixed with grid column classes.
 
-{{< example class="bd-example-cssgrid" >}}
-<div class="grid text-center">
-  <div class="g-col-6">.g-col-6</div>
-  <div>1</div>
-  <div>1</div>
-  <div>1</div>
-  <div>1</div>
-  <div>1</div>
-  <div>1</div>
+{{< example show_source="false" >}}
+<div class="grid bg-striped-purple text-center">
+  <div class="g-col-6 text-bg-secondary p-2">1</div>
+  <div class="text-bg-secondary p-2">2</div>
+  <div class="text-bg-secondary p-2">3</div>
+  <div class="text-bg-secondary p-2">4</div>
+  <div class="text-bg-secondary p-2">5</div>
+  <div class="text-bg-secondary p-2">6</div>
+  <div class="text-bg-secondary p-2">7</div>
 </div>
-{{< /example >}}
+{{</ example >}}
 
-## Nesting
+```html
+<div class="grid">
+  <div class="g-col-6">1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+</div>
+```
+
+## Nesting grid
 
 Similar to our default grid system, our CSS Grid allows for easy nesting of `.grid`s. However, unlike the default, this grid inherits changes in the rows, columns, and gaps. Consider the example below:
 
@@ -145,8 +234,29 @@ Similar to our default grid system, our CSS Grid allows for easy nesting of `.gr
 
 In practice this allows for more complex and custom layouts when compared to our default grid system.
 
-{{< example class="bd-example-cssgrid" >}}
-<div class="grid text-center" style="--bs-columns: 3;">
+{{< example show_source="false" >}}
+<div class="grid text-center bg-striped-purple" style="--bs-columns: 3;">
+  <div class="text-bg-secondary p-3">
+    First auto-column
+    <div class="grid bg-striped-teal mt-3">
+      <div class="text-bg-dark p-2">Auto-column</div>
+      <div class="text-bg-dark p-2">Auto-column</div>
+    </div>
+  </div>
+  <div class="text-bg-secondary p-3">
+    Second auto-column
+    <div class="grid bg-striped-teal mt-3" style="--bs-columns: 12;">
+      <div class="g-col-6 text-bg-dark p-2">6/12</div>
+      <div class="g-col-4 text-bg-dark p-2">4/12</div>
+      <div class="g-col-2 text-bg-dark p-2">2/12</div>
+    </div>
+  </div>
+  <div class="text-bg-secondary p-3">Third auto-column</div>
+</div>
+{{< /example >}}
+
+```html
+<div class="grid" style="--bs-columns: 3;">
   <div>
     First auto-column
     <div class="grid">
@@ -157,20 +267,20 @@ In practice this allows for more complex and custom layouts when compared to our
   <div>
     Second auto-column
     <div class="grid" style="--bs-columns: 12;">
-      <div class="g-col-6">6 of 12</div>
-      <div class="g-col-4">4 of 12</div>
-      <div class="g-col-2">2 of 12</div>
+      <div class="g-col-6">6/12</div>
+      <div class="g-col-4">4/12</div>
+      <div class="g-col-2">2/12</div>
     </div>
   </div>
   <div>Third auto-column</div>
 </div>
-{{< /example >}}
+```
 
 ## Customizing
 
 Customize the number of columns, the number of rows, and the width of the gaps with local CSS variables.
 
-{{< bs-table "table" >}}
+{{< bs-table "table api-class-table" >}}
 | Variable | Fallback value | Description |
 | --- | --- | --- |
 | `--bs-rows` | `1` | The number of rows in your grid template |
@@ -184,82 +294,113 @@ These CSS variables have no default value; instead, they apply fallback values t
 
 Immediate children elements of `.grid` are grid items, so they'll be sized without explicitly adding a `.g-col` class.
 
-{{< example class="bd-example-cssgrid" >}}
-<div class="grid text-center" style="--bs-columns: 3;">
+{{< example show_source="false" >}}
+<div class="grid text-center bg-striped-purple" style="--bs-columns: 3;">
+  <div class="text-bg-secondary p-3">Auto-column</div>
+  <div class="text-bg-secondary p-3">Auto-column</div>
+  <div class="text-bg-secondary p-3">Auto-column</div>
+</div>
+{{< /example >}}
+
+```html
+<div class="grid" style="--bs-columns: 3;">
   <div>Auto-column</div>
   <div>Auto-column</div>
   <div>Auto-column</div>
 </div>
-{{< /example >}}
+```
 
 ### Columns and gaps
 
 Adjust the number of columns and the gap.
 
-{{< example class="bd-example-cssgrid" >}}
-<div class="grid text-center" style="--bs-columns: 4; --bs-gap: 5rem;">
-  <div class="g-col-2">.g-col-2</div>
-  <div class="g-col-2">.g-col-2</div>
+{{< example show_source="false" >}}
+<div class="grid bg-striped-purple text-center" style="--bs-columns: 4; --bs-gap: 5rem;">
+  <div class="g-col-2 text-bg-secondary p-3">2/4</div>
+  <div class="g-col-2 text-bg-secondary p-3">2/4</div>
 </div>
-{{< /example >}}
+{{</ example >}}
 
-{{< example class="bd-example-cssgrid" >}}
-<div class="grid text-center" style="--bs-columns: 10; --bs-gap: 1rem;">
-  <div class="g-col-6">.g-col-6</div>
-  <div class="g-col-4">.g-col-4</div>
+```html
+<div class="grid" style="--bs-columns: 4; --bs-gap: 5rem;">
+  <div class="g-col-2">2/4</div>
+  <div class="g-col-2">2/4</div>
 </div>
-{{< /example >}}
+```
+
+{{< example show_source="false" >}}
+<div class="grid bg-striped-purple text-center" style="--bs-columns: 10; --bs-gap: 1rem;">
+  <div class="g-col-6 text-bg-secondary p-3">6/10</div>
+  <div class="g-col-4 text-bg-secondary p-3">4/10</div>
+</div>
+{{</ example >}}
+
+```html
+<div class="grid" style="--bs-columns: 10; --bs-gap: 1rem;">
+  <div class="g-col-6">6/10</div>
+  <div class="g-col-4">4/10</div>
+</div>
+```
 
 ### Adding rows
 
 Adding more rows and changing the placement of columns:
 
-{{< example class="bd-example-cssgrid" >}}
-<div class="grid text-center" style="--bs-rows: 3; --bs-columns: 3;">
+{{< example show_source="false" >}}
+<div class="grid bg-striped-purple text-center" style="--bs-rows: 3; --bs-columns: 3;">
+  <div class=" text-bg-secondary p-3">Auto-column</div>
+  <div class="g-start-2 text-bg-secondary p-3" style="grid-row: 2">Auto-column</div>
+  <div class="g-start-3 text-bg-secondary p-3" style="grid-row: 3">Auto-column</div>
+</div>
+{{</ example >}}
+
+```html
+<div class="grid" style="--bs-rows: 3; --bs-columns: 3;">
   <div>Auto-column</div>
   <div class="g-start-2" style="grid-row: 2">Auto-column</div>
   <div class="g-start-3" style="grid-row: 3">Auto-column</div>
 </div>
-{{< /example >}}
+```
 
 ### Gaps
 
 Change the vertical gaps only by modifying the `row-gap`. Note that we use `gap` on `.grid`s, but `row-gap` and `column-gap` can be modified as needed.
 
-{{< example class="bd-example-cssgrid" >}}
-<div class="grid text-center" style="row-gap: 0;">
-  <div class="g-col-6">.g-col-6</div>
-  <div class="g-col-6">.g-col-6</div>
-
-  <div class="g-col-6">.g-col-6</div>
-  <div class="g-col-6">.g-col-6</div>
+{{< example show_source="false" >}}
+<div class="grid text-center bg-striped-purple" style="row-gap: 0;">
+  <div class="g-col-6 text-bg-secondary p-3">01</div>
+  <div class="g-col-6 text-bg-secondary p-3">02</div>
+  <div class="g-col-6 text-bg-dark p-3">03</div>
+  <div class="g-col-6 text-bg-dark p-3">04</div>
 </div>
-{{< /example >}}
+{{</ example >}}
+
+```html
+<div class="grid" style="row-gap: 0;">
+  <div class="g-col-6">01</div>
+  <div class="g-col-6">02</div>
+  <div class="g-col-6">03</div>
+  <div class="g-col-6">04</div>
+</div>
+```
 
 Because of that, you can have different vertical and horizontal `gap`s, which can take a single value (all sides) or a pair of values (vertical and horizontal). This can be applied with an inline style for `gap`, or with our `--bs-gap` CSS variable.
 
-{{< example class="bd-example-cssgrid" >}}
+
+{{< example show_source="false" >}}
+<div class="grid text-center bg-striped-purple" style="--bs-gap: .25rem 1rem;">
+  <div class="g-col-6 text-bg-secondary p-3">01</div>
+  <div class="g-col-6 text-bg-secondary p-3">02</div>
+  <div class="g-col-6 text-bg-dark p-3">03</div>
+  <div class="g-col-6 text-bg-dark p-3">04</div>
+</div>
+{{</ example >}}
+
+```html
 <div class="grid text-center" style="--bs-gap: .25rem 1rem;">
-  <div class="g-col-6">.g-col-6</div>
-  <div class="g-col-6">.g-col-6</div>
-
-  <div class="g-col-6">.g-col-6</div>
-  <div class="g-col-6">.g-col-6</div>
+  <div class="g-col-6">01</div>
+  <div class="g-col-6">02</div>
+  <div class="g-col-6">03</div>
+  <div class="g-col-6">04</div>
 </div>
-{{< /example >}}
-
-## Sass
-
-One limitation of the CSS Grid is that our default classes are still generated by two Sass variables, `$grid-columns` and `$grid-gutter-width`. This effectively predetermines the number of classes generated in our compiled CSS. You have two options here:
-
-- Modify those default Sass variables and recompile your CSS.
-- Use inline or custom styles to augment the provided classes.
-
-For example, you can increase the column count and change the gap size, and then size your "columns" with a mix of inline styles and predefined CSS Grid column classes (e.g., `.g-col-4`).
-
-{{< example class="bd-example-cssgrid" >}}
-<div class="grid text-center" style="--bs-columns: 18; --bs-gap: .5rem;">
-  <div style="grid-column: span 14;">14 columns</div>
-  <div class="g-col-4">.g-col-4</div>
-</div>
-{{< /example >}}
+```

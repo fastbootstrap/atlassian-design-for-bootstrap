@@ -16,60 +16,46 @@ These utility classes float an element to the left or right, or disable floating
 
 {{< class-api "float" >}}
 
-## Examples
-
-{{< example >}}
-<div class="float-start">Float start on all viewport sizes</div><br>
-<div class="float-end p-2">Float end on all viewport sizes</div><br>
-<div class="float-none p-2">Don't float on all viewport sizes</div>
-{{< /example >}}
+## Basic usage
 
 ### Floating elements to the right
 
 Use `float-end` to float an element to the right of its container.
 
-<div class="bd-example bg-light">
-<div class="card shadow col-md-11 mx-auto">
-  <div class="card-body">
-    <div class="float-end ms-4">
-      <div class="ratio ratio-16x9" style="width:160px">
-        <img class="img-fluid rounded-3" src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=320&amp;q=80" />
-      </div>
-    </div>
-    <p>
-      Maybe we can live without libraries, people like you and me. Maybe. Sure, we're too old to change the world, but what about that kid, sitting down, opening a book, right now, in a branch at the local library and
-      finding drawings of pee-pees and wee-wees on the Cat in the Hat and the Five Chinese Brothers? Doesn't HE deserve better? Look. If you think this is about overdue fines and missing books, you'd better think again.
-      This is about that kid's right to read a book without getting his mind warped! Or: maybe that turns you on, Seinfeld; maybe that's how y'get your kicks. You and your good-time buddies.
-    </p>
+{{< example show_source="false" >}}
+<div class="float-end ms-3">
+  <div class="ratio ratio-16x9" style="width:160px">
+    <img class="img-fluid rounded-3" src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=320&amp;q=80" />
   </div>
 </div>
-</div>
+<p>
+  Maybe we can live without libraries, people like you and me. Maybe. Sure, we're too old to change the world, but what about that kid, sitting down, opening a book, right now, in a branch at the local library and
+  finding drawings of pee-pees and wee-wees on the Cat in the Hat and the Five Chinese Brothers? Doesn't HE deserve better? Look. If you think this is about overdue fines and missing books, you'd better think again.
+  This is about that kid's right to read a book without getting his mind warped! Or: maybe that turns you on, Seinfeld; maybe that's how y'get your kicks. You and your good-time buddies.
+</p>
+{{</ example >}}
 
-{{< example show_preview="false" >}}
+```html
 <img class="float-end ..." src="path/to/image.jpg">
 <p>Maybe we can live without libraries, people like you and me. ...</p>
-{{</ example >}}
+```
 
 ### Floating elements to the left
 
 Use `float-start` to float an element to the left of its container.
 
-<div class="bd-example bg-light">
-<div class="card shadow col-md-11 mx-auto">
-  <div class="card-body">
-    <div class="float-start me-4">
-      <div class="ratio ratio-16x9" style="width:160px">
-        <img class="img-fluid rounded-3" src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=320&amp;q=80" />
-      </div>
-    </div>
-    <p>
-      Maybe we can live without libraries, people like you and me. Maybe. Sure, we're too old to change the world, but what about that kid, sitting down, opening a book, right now, in a branch at the local library and
-      finding drawings of pee-pees and wee-wees on the Cat in the Hat and the Five Chinese Brothers? Doesn't HE deserve better? Look. If you think this is about overdue fines and missing books, you'd better think again.
-      This is about that kid's right to read a book without getting his mind warped! Or: maybe that turns you on, Seinfeld; maybe that's how y'get your kicks. You and your good-time buddies.
-    </p>
+{{< example show_source="false" >}}
+<div class="float-start me-3">
+  <div class="ratio ratio-16x9" style="width:160px">
+    <img class="img-fluid rounded-3" src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=320&amp;q=80" />
   </div>
 </div>
-</div>
+<p>
+  Maybe we can live without libraries, people like you and me. Maybe. Sure, we're too old to change the world, but what about that kid, sitting down, opening a book, right now, in a branch at the local library and
+  finding drawings of pee-pees and wee-wees on the Cat in the Hat and the Five Chinese Brothers? Doesn't HE deserve better? Look. If you think this is about overdue fines and missing books, you'd better think again.
+  This is about that kid's right to read a book without getting his mind warped! Or: maybe that turns you on, Seinfeld; maybe that's how y'get your kicks. You and your good-time buddies.
+</p>
+{{</ example >}}
 
 {{< example show_preview="false" >}}
 <img class="float-start ..." src="path/to/image.jpg">
@@ -80,23 +66,19 @@ Use `float-start` to float an element to the left of its container.
 
 Use `float-none` to reset any floats that are applied to an element. This is the default value for the float property.
 
-
-<div class="bd-example bg-light">
-<div class="card shadow col-md-11 mx-auto">
-  <div class="card-body">
-    <div class="float-none mb-3">
-      <div class="ratio ratio-16x9" style="width:160px">
-        <img class="img-fluid rounded-3" src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=320&amp;q=80" />
-      </div>
-    </div>
-    <p>
-      Maybe we can live without libraries, people like you and me. Maybe. Sure, we're too old to change the world, but what about that kid, sitting down, opening a book, right now, in a branch at the local library and
-      finding drawings of pee-pees and wee-wees on the Cat in the Hat and the Five Chinese Brothers? Doesn't HE deserve better? Look. If you think this is about overdue fines and missing books, you'd better think again.
-      This is about that kid's right to read a book without getting his mind warped! Or: maybe that turns you on, Seinfeld; maybe that's how y'get your kicks. You and your good-time buddies.
-    </p>
+{{< example show_source="false" >}}
+<div class="float-none mb-3">
+  <div class="ratio ratio-16x9" style="width:160px">
+    <img class="img-fluid rounded-3" src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=320&amp;q=80" />
   </div>
 </div>
-</div>
+<p>
+  Maybe we can live without libraries, people like you and me. Maybe. Sure, we're too old to change the world, but what about that kid, sitting down, opening a book, right now, in a branch at the local library and
+  finding drawings of pee-pees and wee-wees on the Cat in the Hat and the Five Chinese Brothers? Doesn't HE deserve better? Look. If you think this is about overdue fines and missing books, you'd better think again.
+  This is about that kid's right to read a book without getting his mind warped! Or: maybe that turns you on, Seinfeld; maybe that's how y'get your kicks. You and your good-time buddies.
+</p>
+{{</ example >}}
+
 {{< example show_preview="false" >}}
 <img class="float-none ..." src="path/to/image.jpg">
 <p>Maybe we can live without libraries, people like you and me. ...</p>

@@ -11,18 +11,18 @@ menu:
 
 ## Quick reference
 
-{{< bs-table "table" >}}
+{{< bs-table "table api-class-table" >}}
 | Class | Properties |
 | --- | --- |
-| `.visually-hidden` | <code>position: absolute;<br/>width: 1px;<br/>height: 1px;<br/>overflow: hidden;<br/>...</code> |
-| `.visually-hidden-focusable` | <code>position: absolute;<br/>width: 1px;<br/>height: 1px;<br/>overflow: hidden;<br/>...</code> |
+| `.visually-hidden` | - |
+| `.visually-hidden-focusable` | - |
 {{< /bs-table >}}
 
 Both `visually-hidden` and `visually-hidden-focusable` can also be used as mixins.
 
 ## Basic usage
 
-### visually-hidden
+### .visually-hidden
 
 Use `visually-hidden` to hide an element, but while still allowing it to be exposed to assistive technologies (such as screen readers)
 
@@ -30,7 +30,7 @@ Use `visually-hidden` to hide an element, but while still allowing it to be expo
 <h2 class="visually-hidden">Title for screen readers</h2>
 {{</ example >}}
 
-### visually-hidden-focusable
+### .visually-hidden-focusable
 
 Use `.visually-hidden-focusable` to visually hide an element by default, but to display it when it's focused (e.g. by a keyboard-only user). 
 

@@ -631,6 +631,45 @@ flex:
     responsive: true
     values:
       - fill: 1 1 auto
+gutter:
+  - property: --bs-gutter-x --bs-gutter-y
+    responsive: true
+    class: g
+    values:
+      - 0
+      - 1: 0.25rem
+      - 2: 0.5rem
+      - 3: 0.75rem
+      - 4: 1rem
+      - 5: 1.5rem
+      - 6: 3rem
+      - 7: 6rem
+gutter-x:
+  - property: --bs-gutter-x
+    responsive: true
+    class: gx
+    values:
+      - 0
+      - 1: 0.25rem
+      - 2: 0.5rem
+      - 3: 0.75rem
+      - 4: 1rem
+      - 5: 1.5rem
+      - 6: 3rem
+      - 7: 6rem
+gutter-y:
+  - property: --bs-gutter-y
+    responsive: true
+    class: gy
+    values:
+      - 0
+      - 1: 0.25rem
+      - 2: 0.5rem
+      - 3: 0.75rem
+      - 4: 1rem
+      - 5: 1.5rem
+      - 6: 3rem
+      - 7: 6rem
 animation:
   - property: animation
     class: animate
@@ -708,3 +747,11 @@ max-width:
       - screen-lg: 960px
       - screen-xl: 1140px
       - screen-xxl: 1320px
+aspect-ratio:
+  - property: aspect-ratio
+    class: ratio
+    values:
+      - 1x1: 1 / 1
+      - 4x3: 3 / 4
+      - 16x9: 9 / 16
+      - 21x9: 9 / 21

@@ -9,6 +9,11 @@ menu:
     weight: 10
 ---
 
+FastBootstrap Vs Bootstrap
+
+$enable-negative-margins: enabled | disabled
+
+
 ## Introduction
 
 FastBootstrap is a free, open source frontend framework for rapidly build responsive websites. It built on Bootstrap and Atlassian design, so you can easily migrate from Bootstrap to FastBootstrap without any change HTML, or migrate from FastBootstrap to Bootstrap at any time. 

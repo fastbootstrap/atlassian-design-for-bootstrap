@@ -173,3 +173,83 @@ code {
     color: var(--ds-text-discovery);
   }
 }
+
+.api-class-table {
+  code {
+    background-color: var(--ds-background-discovery);
+    color: var(--ds-text-discovery);
+  }
+
+  .desc {
+    color: var(--ds-text-accent-teal);
+    font-family: var(--bs-font-monospace);
+    letter-spacing: -0.15px;
+  }
+}
+
+.bg-striped-purple {
+  background-color: var(--ds-background-accent-gray-subtlest);
+  background-image: linear-gradient(
+    135deg,
+    var(--ds-background-discovery-bold) 10%,
+    #0000 0,
+    #0000 50%,
+    var(--ds-background-discovery-bold) 0,
+    var(--ds-background-discovery-bold) 60%,
+    #0000 0,
+    #0000
+  );
+  background-size: 7.07px 7.07px;
+}
+
+.bg-striped-teal {
+  background-color: var(--ds-background-accent-gray-subtlest);
+  background-image: linear-gradient(
+    135deg,
+    var(--ds-background-accent-teal-bolder) 10%,
+    #0000 0,
+    #0000 50%,
+    var(--ds-background-accent-teal-bolder) 0,
+    var(--ds-background-accent-teal-bolder) 60%,
+    #0000 0,
+    #0000
+  );
+  background-size: 7.07px 7.07px;
+}
+
+.bg-striped-white {
+  background-image: linear-gradient(135deg, #fff 10%, #0000 0, #0000 50%, #fff 0, #fff 60%, #0000 0, #0000);
+  background-size: 7.07px 7.07px;
+}
+
+.bg-grid-slate-100 {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='%23F3F0FF'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+}
+
+[data-bs-theme="dark"] {
+  .bg-grid-slate-100 {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='%232B273F'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+  }
+}
+
+.bg-neutral-subtler {
+  background-color: #091e4208;
+}
+
+[data-bs-theme="dark"] {
+  .bg-neutral-subtler {
+    background-color: #03040442;
+  }
+}
+
+.bg-purple-subtler {
+  background-color: var(--ds-background-accent-purple-subtler);
+}
+
+.bg-purple-subtle {
+  background-color: var(--ds-background-accent-purple-subtle);
+}
+
+.bg-blue-subtle {
+  background-color: var(--ds-background-accent-blue-subtle);
+}

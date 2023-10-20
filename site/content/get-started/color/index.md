@@ -3,10 +3,11 @@ layout: docs
 title: Color
 description: "Default theme color for our components and element styles."
 toc: true
-group: customize
 menu:
-  docs:    
+  get-started:    
     weight: 20
+aliases:
+  - /docs/color
 ---
 
 We use a subset of all colors to create a smaller color palette for generating color schemes, also available as Sass variables and a Sass map in project’s `scss/_variables.scss` file.

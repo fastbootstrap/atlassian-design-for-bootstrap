@@ -21,18 +21,18 @@ Use `align-content` utilities on flexbox containers to align flex items together
 
 Use `align-content-start` to pack rows in a container against the start of the cross axis:
 
-<div class="bd-example">
-    <div class="d-flex flex-wrap align-content-start gap-3 fs-sm bd-h-56 bg-blue-50 text-center">
-      <div class="w-25 p-3 rounded bg-blue-300 text-white">01</div>
-      <div class="w-25 p-3 rounded bg-blue-300 text-white">02</div>
-      <div class="w-25 p-3 rounded bg-blue-300 text-white">03</div>
-      <div class="w-25 p-3 rounded bg-blue-300 text-white">04</div>
-      <div class="w-25 p-3 rounded bg-blue-300 text-white">05</div>
-    </div>
-</div>
+{{< example class="fs-sm fw-semibold text-center" show_source="false" >}}
+  <div class="grid gap-4 align-content-start bd-h-56 rounded bg-striped-purple" style="--bs-columns: 3;--bs-rows: auto">
+    <div class="p-4 rounded text-bg-secondary">01</div>
+    <div class="p-4 rounded text-bg-secondary">02</div>
+    <div class="p-4 rounded text-bg-secondary">03</div>
+    <div class="p-4 rounded text-bg-secondary">04</div>
+    <div class="p-4 rounded text-bg-secondary">05</div>
+  </div>
+{{</ example >}}
 
 ```html
-<div class="d-flex flex-wrap align-content-start">
+<div class="grid gap-4 align-content-start" style="--bs-columns: 3;">
   <div>01</div>
   <div>02</div>
   <div>03</div>
@@ -45,18 +45,18 @@ Use `align-content-start` to pack rows in a container against the start of the c
 
 Use `align-content-center` to pack rows in a container in the center of the cross axis:
 
-<div class="bd-example">
-    <div class="d-flex flex-wrap align-content-center gap-3 fs-sm bd-h-56 bg-blue-50 text-center">
-      <div class="w-25 p-3 rounded bg-blue-300 text-white">01</div>
-      <div class="w-25 p-3 rounded bg-blue-300 text-white">02</div>
-      <div class="w-25 p-3 rounded bg-blue-300 text-white">03</div>
-      <div class="w-25 p-3 rounded bg-blue-300 text-white">04</div>
-      <div class="w-25 p-3 rounded bg-blue-300 text-white">05</div>
-    </div>
-</div>
+{{< example class="fs-sm fw-semibold text-center" show_source="false" >}}
+  <div class="grid gap-4 align-content-center bd-h-56 rounded bg-striped-purple" style="--bs-columns: 3;--bs-rows: auto">
+    <div class="p-4 rounded text-bg-secondary">01</div>
+    <div class="p-4 rounded text-bg-secondary">02</div>
+    <div class="p-4 rounded text-bg-secondary">03</div>
+    <div class="p-4 rounded text-bg-secondary">04</div>
+    <div class="p-4 rounded text-bg-secondary">05</div>
+  </div>
+{{</ example >}}
 
 ```html
-<div class="d-flex flex-wrap align-content-center">
+<div class="grid gap-4 align-content-center" style="--bs-columns: 3;">
   <div>01</div>
   <div>02</div>
   <div>03</div>
@@ -69,18 +69,18 @@ Use `align-content-center` to pack rows in a container in the center of the cros
 
 Use `align-content-end` to pack rows in a container against the end of the cross axis:
 
-<div class="bd-example">
-    <div class="d-flex flex-wrap align-content-end gap-3 fs-sm bd-h-56 bg-blue-50 text-center">
-      <div class="w-25 p-3 rounded bg-blue-300 text-white">01</div>
-      <div class="w-25 p-3 rounded bg-blue-300 text-white">02</div>
-      <div class="w-25 p-3 rounded bg-blue-300 text-white">03</div>
-      <div class="w-25 p-3 rounded bg-blue-300 text-white">04</div>
-      <div class="w-25 p-3 rounded bg-blue-300 text-white">05</div>
-    </div>
-</div>
+{{< example class="fs-sm fw-semibold text-center" show_source="false" >}}
+  <div class="grid gap-4 align-content-end bd-h-56 rounded bg-striped-purple" style="--bs-columns: 3;--bs-rows: auto">
+    <div class="p-4 rounded text-bg-secondary">01</div>
+    <div class="p-4 rounded text-bg-secondary">02</div>
+    <div class="p-4 rounded text-bg-secondary">03</div>
+    <div class="p-4 rounded text-bg-secondary">04</div>
+    <div class="p-4 rounded text-bg-secondary">05</div>
+  </div>
+{{</ example >}}
 
 ```html
-<div class="d-flex flex-wrap align-content-end">
+<div class="grid gap-4 align-content-end" style="--bs-columns: 3;">
   <div>01</div>
   <div>02</div>
   <div>03</div>
@@ -93,18 +93,18 @@ Use `align-content-end` to pack rows in a container against the end of the cross
 
 Use `align-content-between` to distribute rows in a container such that there is an equal amount of space between each line:
 
-<div class="bd-example">
-    <div class="d-flex flex-wrap align-content-between gap-3 fs-sm bd-h-56 bg-blue-50 text-center">
-      <div class="w-25 p-3 rounded bg-blue-300 text-white">01</div>
-      <div class="w-25 p-3 rounded bg-blue-300 text-white">02</div>
-      <div class="w-25 p-3 rounded bg-blue-300 text-white">03</div>
-      <div class="w-25 p-3 rounded bg-blue-300 text-white">04</div>
-      <div class="w-25 p-3 rounded bg-blue-300 text-white">05</div>
-    </div>
-</div>
+{{< example class="fs-sm fw-semibold text-center" show_source="false" >}}
+  <div class="grid gap-4 align-content-between bd-h-56 rounded bg-striped-purple" style="--bs-columns: 3;--bs-rows: auto">
+    <div class="p-4 rounded text-bg-secondary">01</div>
+    <div class="p-4 rounded text-bg-secondary">02</div>
+    <div class="p-4 rounded text-bg-secondary">03</div>
+    <div class="p-4 rounded text-bg-secondary">04</div>
+    <div class="p-4 rounded text-bg-secondary">05</div>
+  </div>
+{{</ example >}}
 
 ```html
-<div class="d-flex flex-wrap align-content-between">
+<div class="grid gap-4 align-content-between" style="--bs-columns: 3;">
   <div>01</div>
   <div>02</div>
   <div>03</div>
@@ -117,19 +117,18 @@ Use `align-content-between` to distribute rows in a container such that there is
 
 Use `align-content-around` to distribute rows in a container such that there is an equal amount of space around each line:
 
-
-<div class="bd-example">
-    <div class="d-flex flex-wrap align-content-around gap-3 fs-sm bd-h-56 bg-blue-50 text-center">
-      <div class="w-25 p-3 rounded bg-blue-300 text-white">01</div>
-      <div class="w-25 p-3 rounded bg-blue-300 text-white">02</div>
-      <div class="w-25 p-3 rounded bg-blue-300 text-white">03</div>
-      <div class="w-25 p-3 rounded bg-blue-300 text-white">04</div>
-      <div class="w-25 p-3 rounded bg-blue-300 text-white">05</div>
-    </div>
-</div>
+{{< example class="fs-sm fw-semibold text-center" show_source="false" >}}
+  <div class="grid gap-4 align-content-around bd-h-56 rounded bg-striped-purple" style="--bs-columns: 3;--bs-rows: auto">
+    <div class="p-4 rounded text-bg-secondary">01</div>
+    <div class="p-4 rounded text-bg-secondary">02</div>
+    <div class="p-4 rounded text-bg-secondary">03</div>
+    <div class="p-4 rounded text-bg-secondary">04</div>
+    <div class="p-4 rounded text-bg-secondary">05</div>
+  </div>
+{{</ example >}}
 
 ```html
-<div class="d-flex flex-wrap align-content-around">
+<div class="grid gap-4 align-content-around" style="--bs-columns: 3;">
   <div>01</div>
   <div>02</div>
   <div>03</div>
@@ -142,18 +141,18 @@ Use `align-content-around` to distribute rows in a container such that there is 
 
 Use `align-content-stretch` to stretch items to fill the container’s cross axis.
 
-<div class="bd-example">
-    <div class="d-flex flex-wrap align-content-stretch gap-3 fs-sm bd-h-56 bg-blue-50 text-center">
-      <div class="w-25 p-3 rounded bg-blue-300 text-white">01</div>
-      <div class="w-25 p-3 rounded bg-blue-300 text-white">02</div>
-      <div class="w-25 p-3 rounded bg-blue-300 text-white">03</div>
-      <div class="w-25 p-3 rounded bg-blue-300 text-white">04</div>
-      <div class="w-25 p-3 rounded bg-blue-300 text-white">05</div>
-    </div>
-</div>
+{{< example class="fs-sm fw-semibold text-center" show_source="false" >}}
+  <div class="grid gap-4 align-content-stretch bd-h-56 rounded bg-striped-purple" style="--bs-columns: 3;--bs-rows: auto">
+    <div class="p-4 rounded text-bg-secondary">01</div>
+    <div class="p-4 rounded text-bg-secondary">02</div>
+    <div class="p-4 rounded text-bg-secondary">03</div>
+    <div class="p-4 rounded text-bg-secondary">04</div>
+    <div class="p-4 rounded text-bg-secondary">05</div>
+  </div>
+{{</ example >}}
 
 ```html
-<div class="d-flex flex-wrap align-content-stretch">
+<div class="grid gap-4 align-content-stretch" style="--bs-columns: 3;">
   <div>01</div>
   <div>02</div>
   <div>03</div>

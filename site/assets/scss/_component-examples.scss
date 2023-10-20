@@ -10,6 +10,11 @@
   @include media-breakpoint-up(lg) {
     padding: 1.5rem;
   }
+
+  code {
+    background-color: var(--ds-background-accent-blue-subtler);
+    font-weight: 600;
+  }
 }
 
 .bd-code-snippet {
@@ -37,17 +42,19 @@
   }
 }
 
-.bd-example-grid [class^="col"] {
-  border: 1px solid var(--ds-border-accent-purple);
-  padding: 0.75rem;
+%block-box {
+  border: 1px solid var(--ds-background-accent-purple-subtlest);
+  padding: var(--ds-space-150);
   background-color: var(--ds-background-accent-purple-subtle);
+}
+
+.bd-example-grid [class^="col"] {
+  @extend %block-box;
 }
 
 .bd-example-row {
   [class^="col"] {
-    border: 1px solid var(--ds-border-accent-purple);
-    padding: 0.75rem;
-    background-color: var(--ds-background-accent-purple-subtle);
+    @extend %block-box;
   }
 
   .row + .row {
@@ -61,37 +68,6 @@
   }
 }
 
-.bd-example-cssgrid {
-  .grid > * {
-    border: 1px solid var(--ds-border-accent-purple);
-    padding: 0.75rem;
-    background-color: var(--ds-background-accent-purple-subtle);
-  }
-}
-
-.bd-example-flex {
-  div {
-    border: 1px solid var(--ds-border-accent-purple);
-    background-color: var(--ds-background-accent-purple-subtle);
-  }
-}
-
-.bd-example-position-utils {
-  position: relative;
-  padding: 2rem;
-
-  .position-relative {
-    height: 200px;
-    background-color: var(--ds-background-accent-purple-subtle);
-  }
-
-  .position-absolute {
-    width: 2rem;
-    height: 2rem;
-    background-color: #091e42;
-    border-radius: 0.375rem;
-  }
-}
 
 .bd-placeholder-img {
   font-size: 1.125rem;

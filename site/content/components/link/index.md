@@ -3,9 +3,11 @@ layout: docs
 title: Link
 description: "Links allow users to navigate to a different location."
 toc: true
-group: base-styles
+group: utilities
 menu:
-  docs:
+  components:
+aliases:
+ - /docs/link
 ---
 
 ## Basic link

@@ -1,10 +1,6 @@
 docs:
   - name: getting-started
     title: Getting Started
-  - name: customize
-    title: Customize
-  - name: base-styles
-    title: Base Styles
   - name: layout
     title: Layout
   - name: flexbox
@@ -27,6 +23,8 @@ docs:
     title: Animation
   - name: interactivity
     title: Interactivity
+  - name: base-stypes
+    title: Base Styles
 components:    
   - name: actions
     title: Actions
@@ -42,8 +40,11 @@ components:
     title: surfaces
   - name: utilities
     title: Utilities
-design:
-  - name: foundations
-    title: Foundations
-  - name: patterns
-    title: Patterns
+tokens:
+  - name: tokens
+    title: Design Tokens
+get-started:
+  - name: get-started
+    title: Get Started
+  - name: core-concepts
+    title: Core Concepts

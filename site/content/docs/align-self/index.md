@@ -21,16 +21,16 @@ Use `align-self` utilities on flexbox items to individually change their alignme
 
 Use `align-self-auto` to align an item based on the value of the container’s `align-items` property:
 
-<div class="bd-example">
-  <div class="d-flex fw-semibold gap-3 fs-sm align-items-stretch bd-h-24">
-    <div class="p-3 d-flex flex-fill align-items-center justify-content-center rounded bg-blue-100 text-white">01</div>
-    <div class="align-self-auto p-3 d-flex flex-fill align-items-center justify-content-center rounded bg-blue-300 text-white">02</div>
-    <div class="p-3 d-flex flex-fill align-items-center justify-content-center rounded bg-blue-100 text-white">03</div>
+{{< example class="fs-sm fw-semibold" show_source="false" >}}
+  <div class="d-flex align-self-stretch gap-4 bg-striped-purple rounded w-100 bd-h-24">
+    <div class="d-flex flex-fill align-items-center justify-content-center p-4 rounded bg-purple-subtler text-white">01</div>
+    <div class="align-self-auto d-flex flex-fill align-items-center justify-content-center p-4 rounded text-bg-secondary">02</div>
+    <div class="d-flex flex-fill align-items-center justify-content-center p-4 rounded bg-purple-subtler text-white">03</div>
   </div>
-</div>
+{{</ example >}}
 
 ```html
-<div class="d-flex align-items-stretch ...">
+<div class="d-flex align-items-stretch gap-4">
   <div>01</div>
   <div class="align-self-auto ...">02</div>
   <div>03</div>
@@ -41,16 +41,16 @@ Use `align-self-auto` to align an item based on the value of the container’s `
 
 Use `align-self-start` to align an item to the start of the container’s cross axis, despite the container’s `align-items` value:
 
-<div class="bd-example">
-  <div class="d-flex fw-semibold gap-3 fs-sm align-items-stretch bd-h-24">
-    <div class="p-3 d-flex flex-fill align-items-center justify-content-center rounded bg-teal-200 text-white">01</div>
-    <div class="align-self-start p-3 d-flex flex-fill align-items-center justify-content-center rounded bg-teal-400 text-white">02</div>
-    <div class="p-3 d-flex flex-fill align-items-center justify-content-center rounded bg-teal-200 text-white">03</div>
+{{< example class="fs-sm fw-semibold" show_source="false" >}}
+  <div class="d-flex align-self-stretch gap-4 bg-striped-purple rounded w-100 bd-h-24">
+    <div class="d-flex flex-fill align-items-center justify-content-center p-4 rounded bg-purple-subtler text-white">01</div>
+    <div class="align-self-start d-flex flex-fill align-items-center justify-content-center p-4 rounded text-bg-secondary">02</div>
+    <div class="d-flex flex-fill align-items-center justify-content-center p-4 rounded bg-purple-subtler text-white">03</div>
   </div>
-</div>
+{{</ example >}}
 
 ```html
-<div class="d-flex align-items-stretch ...">
+<div class="d-flex align-items-stretch gap-4">
   <div>01</div>
   <div class="align-self-start ...">02</div>
   <div>03</div>
@@ -61,13 +61,13 @@ Use `align-self-start` to align an item to the start of the container’s cross 
 
 Use `align-self-center` to align an item along the center of the container’s cross axis, despite the container’s `align-items` value:
 
-<div class="bd-example">
-  <div class="d-flex fw-semibold gap-3 fs-sm align-items-stretch bd-h-24">
-    <div class="p-3 d-flex flex-fill align-items-center justify-content-center rounded bg-purple-200 text-white">01</div>
-    <div class="align-self-center p-3 d-flex flex-fill align-items-center justify-content-center rounded bg-purple-400 text-white">02</div>
-    <div class="p-3 d-flex flex-fill align-items-center justify-content-center rounded bg-purple-200 text-white">03</div>
+{{< example class="fs-sm fw-semibold" show_source="false" >}}
+  <div class="d-flex align-self-stretch gap-4 bg-striped-purple rounded w-100 bd-h-24">
+    <div class="d-flex flex-fill align-items-center justify-content-center p-4 rounded bg-purple-subtler text-white">01</div>
+    <div class="align-self-center d-flex flex-fill align-items-center justify-content-center p-4 rounded text-bg-secondary">02</div>
+    <div class="d-flex flex-fill align-items-center justify-content-center p-4 rounded bg-purple-subtler text-white">03</div>
   </div>
-</div>
+{{</ example >}}
 
 ```html
 <div class="d-flex align-items-stretch ...">
@@ -81,13 +81,13 @@ Use `align-self-center` to align an item along the center of the container’s c
 
 Use `align-self-end` to align an item to the end of the container’s cross axis, despite the container’s `align-items` value:
 
-<div class="bd-example">
-  <div class="d-flex fw-semibold gap-3 fs-sm align-items-stretch bd-h-24">
-    <div class="p-3 d-flex flex-fill align-items-center justify-content-center rounded bg-blue-100 text-white">01</div>
-    <div class="align-self-end p-3 d-flex flex-fill align-items-center justify-content-center rounded bg-blue-300 text-white">02</div>
-    <div class="p-3 d-flex flex-fill align-items-center justify-content-center rounded bg-blue-100 text-white">03</div>
+{{< example class="fs-sm fw-semibold" show_source="false" >}}
+  <div class="d-flex align-self-stretch gap-4 bg-striped-purple rounded w-100 bd-h-24">
+    <div class="d-flex flex-fill align-items-center justify-content-center p-4 rounded bg-purple-subtler text-white">01</div>
+    <div class="align-self-end d-flex flex-fill align-items-center justify-content-center p-4 rounded text-bg-secondary">02</div>
+    <div class="d-flex flex-fill align-items-center justify-content-center p-4 rounded bg-purple-subtler text-white">03</div>
   </div>
-</div>
+{{</ example >}}
 
 ```html
 <div class="d-flex align-items-stretch ...">
@@ -101,14 +101,13 @@ Use `align-self-end` to align an item to the end of the container’s cross axis
 
 Use `align-self-stretch` to stretch an item to fill the container’s cross axis, despite the container’s `align-items` value. This is the browser default behavior.
 
-<div class="bd-example">
-  <div class="d-flex fw-semibold gap-3 fs-sm align-items-stretch bd-h-24">
-    <div class="p-3 d-flex flex-fill align-items-center justify-content-center rounded bg-purple-100 text-white">01</div>
-    <div class="align-self-stretch p-3 d-flex flex-fill align-items-center justify-content-center rounded bg-purple-400 text-white">02</div>
-    <div class="p-3 d-flex flex-fill align-items-center justify-content-center rounded bg-purple-100 text-white">03</div>
+{{< example class="fs-sm fw-semibold" show_source="false" >}}
+  <div class="d-flex align-self-stretch gap-4 bg-striped-purple rounded w-100 bd-h-24">
+    <div class="d-flex flex-fill align-items-center justify-content-center p-4 rounded bg-purple-subtler text-white">01</div>
+    <div class="align-self-stretch d-flex flex-fill align-items-center justify-content-center p-4 rounded text-bg-secondary">02</div>
+    <div class="d-flex flex-fill align-items-center justify-content-center p-4 rounded bg-purple-subtler text-white">03</div>
   </div>
-</div>
-
+{{</ example >}}
 
 ```html
 <div class="d-flex align-items-stretch ...">

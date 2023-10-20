@@ -9,7 +9,7 @@ menu:
   docs:
 ---
 
-Change the border color using utilities built on our theme colors and [color system]({{< docsref "color" >}}).
+Change the border color using utilities built on our theme colors and color system.
 
 ## Quick reference 
 

@@ -1,9 +1,11 @@
 .bd-navbar {
-  .brand-img {
-    fill: $brand-color;
-  }
+
   .navbar-nav {
     --bs-nav-underline-link-hover-color: transparent;
     --bs-nav-link-active-bg: transparent;
   }
+}
+
+.brand-img {
+  fill: var(--ds-text-brand);
 }

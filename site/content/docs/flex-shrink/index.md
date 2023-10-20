@@ -9,31 +9,31 @@ menu:
     weight: 60
 ---
 
-Use `.flex-shrink-*` utilities to toggle a flex item’s ability to shrink if necessary. For `.flex-shrink-1` is forced to wrap its contents to a new line, “shrinking” to allow more space for the previous flex item with `.w-100`.
-
 ## Quick reference 
 
 {{< class-api "flex-shrink" >}}
 
 ## Basic usage
 
+Use `.flex-shrink-*` utilities to toggle a flex item’s ability to shrink if necessary. For `.flex-shrink-1` is forced to wrap its contents to a new line, “shrinking” to allow more space for the previous flex item with `.w-100`.
+
 ### Shrink
 
 Use `flex-shrink-1` to allow a flex item to shrink if needed:
 
-<div class="bd-example">
-  <div class="d-flex fw-semibold gap-3 fs-sm">
-    <div class="d-flex align-items-center justify-content-center rounded bg-purple-200 text-white p-4 lh-1">01</div>
-    <div class="d-flex flex-shrink-1 align-items-center justify-content-center rounded text-bg-secondary p-4 lh-1" style="width:256px;">02</div>
-    <div class="d-flex align-items-center justify-content-center rounded bg-purple-200 text-white p-4 lh-1">03</div>
+{{< example show_source="false" >}}
+  <div class="d-flex bg-striped-purple gap-4 rounded">
+    <div class="d-flex align-items-center justify-content-center rounded text-bg-dark p-4">01</div>
+    <div class="d-flex flex-shrink-1 align-items-center justify-content-center rounded text-bg-secondary p-4" style="width:256px">02</div>
+    <div class="d-flex align-items-center justify-content-center rounded text-bg-dark p-4">03</div>
   </div>
-</div>
+{{</ example >}}
 
 ```html
-<div class="d-flex ...">
-  <div class="p-4 ...">01</div>
-  <div class="flex-shrink-1 ..." style="width: 256px;">02</div>
-  <div class="p-4 ...">03</div>
+<div class="d-flex">
+  <div>01</div>
+  <div class="flex-shrink-1" style="width:256px">02</div>
+  <div>03</div>
 </div>
 ```
 
@@ -41,21 +41,21 @@ Use `flex-shrink-1` to allow a flex item to shrink if needed:
 
 Use `flex-shrink-0` to prevent a flex item from shrinking:
 
-<div class="bd-example">
+{{< example show_source="false" >}}
   <div class="overflow-auto">
-    <div class="d-flex fw-semibold gap-3 fs-sm">
-      <div class="d-flex flex-fill align-items-center justify-content-center rounded bg-blue-200 text-white p-4 lh-1">01</div>
-      <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded bg-blue-400 text-white p-4 lh-1" style="width:256px;">02</div>
-      <div class="d-none d-md-flex flex-fill align-items-center justify-content-center rounded bg-blue-200 text-white p-4 lh-1">03</div>
+    <div class="d-flex bg-striped-purple gap-4">
+      <div class="d-flex flex-fill align-items-center justify-content-center rounded text-bg-dark p-4">01</div>
+      <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded text-bg-secondary p-4" style="width:256px;">02</div>
+      <div class="d-flex flex-fill align-items-center justify-content-center rounded text-bg-dark p-4">03</div>
     </div>
   </div>
-</div>
+{{</ example >}}
 
 ```html
 <div class="d-flex ...">
-  <div class="flex-fill ...">01</div>
-  <div class="flex-shrink-0 ..." style="width: 256px;">02</div>
-  <div class="flex-fill ...">03</div>
+  <div class="flex-fill">01</div>
+  <div class="flex-shrink-0" style="width: 256px;">02</div>
+  <div class="flex-fill">03</div>
 </div>
 ```
 

@@ -21,16 +21,16 @@ Use `justify-content` utilities on flexbox containers to change the alignment of
 
 Use `justify-content-start` to justify items against the start of the container’s main axis:
 
-<div class="bd-example">
-  <div class="d-flex fw-semibold gap-3 fs-sm justify-content-start">
-    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded bg-purple-300 text-white">01</div>
-    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded bg-purple-300 text-white">02</div>
-    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded bg-purple-300 text-white">03</div>
-  </div>
+{{< example show_source="false" >}}
+<div class="d-flex gap-4 justify-content-start bg-striped-purple rounded">
+  <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-secondary">01</div>
+  <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-secondary">02</div>
+  <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-secondary">03</div>
 </div>
+{{</ example >}}
 
 ```html
-<div class="d-flex justify-content-start ...">
+<div class="d-flex justify-content-start">
   <div>01</div>
   <div>02</div>
   <div>03</div>
@@ -41,16 +41,16 @@ Use `justify-content-start` to justify items against the start of the container�
 
 Use `justify-content-center` to justify items along the center of the container’s main axis:
 
-<div class="bd-example">
-  <div class="d-flex fw-semibold gap-3 fs-sm justify-content-center">
-    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded bg-blue-200 text-white">01</div>
-    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded bg-blue-200 text-white">02</div>
-    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded bg-blue-200 text-white">03</div>
-  </div>
+{{< example show_source="false" >}}
+<div class="d-flex gap-4 justify-content-center bg-striped-teal rounded">
+  <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded bg-blue-subtle">01</div>
+  <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded bg-blue-subtle">02</div>
+  <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded bg-blue-subtle">03</div>
 </div>
+{{</ example >}}
 
 ```html
-<div class="d-flex justify-content-center ...">
+<div class="d-flex justify-content-center">
   <div>01</div>
   <div>02</div>
   <div>03</div>
@@ -62,16 +62,16 @@ Use `justify-content-center` to justify items along the center of the container�
 Use `justify-content-end` to justify items against the end of the container’s main axis:
 
 
-<div class="bd-example">
-  <div class="d-flex fw-semibold gap-3 fs-sm justify-content-end">
-    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded bg-teal-200 text-white">01</div>
-    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded bg-teal-200 text-white">02</div>
-    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded bg-teal-200 text-white">03</div>
+{{< example show_source="false" >}}
+<div class="d-flex gap-4 justify-content-end bg-striped-purple rounded">
+    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-secondary">01</div>
+    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-secondary">02</div>
+    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-secondary">03</div>
   </div>
-</div>
+{{</ example >}}
 
 ```html
-<div class="d-flex justify-content-end ...">
+<div class="d-flex justify-content-end">
   <div>01</div>
   <div>02</div>
   <div>03</div>
@@ -82,16 +82,16 @@ Use `justify-content-end` to justify items against the end of the container’s 
 
 Use `justify-content-between` to justify items along the container’s main axis such that there is an equal amount of space between each item:
 
-<div class="bd-example">
-  <div class="d-flex fw-semibold gap-3 fs-sm justify-content-between">
-    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded bg-purple-200 text-white">01</div>
-    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded bg-purple-200 text-white">02</div>
-    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded bg-purple-200 text-white">03</div>
-  </div>
+{{< example show_source="false" >}}
+<div class="d-flex gap-4 justify-content-between bg-striped-purple rounded">
+  <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-secondary">01</div>
+  <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-secondary">02</div>
+  <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-secondary">03</div>
 </div>
+{{</ example >}}
 
 ```html
-<div class="d-flex justify-content-between ...">
+<div class="d-flex justify-content-between">
   <div>01</div>
   <div>02</div>
   <div>03</div>
@@ -102,13 +102,13 @@ Use `justify-content-between` to justify items along the container’s main axis
 
 Use `justify-content-around` to justify items along the container’s main axis such that there is an equal amount of space on each side of each item:
 
-<div class="bd-example">
-  <div class="d-flex fw-semibold gap-3 fs-sm justify-content-around">
-    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded bg-blue-200 text-white">01</div>
-    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded bg-blue-200 text-white">02</div>
-    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded bg-blue-200 text-white">03</div>
+{{< example show_source="false" >}}
+<div class="d-flex gap-4 justify-content-around bg-striped-purple rounded">
+    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-secondary">01</div>
+    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-secondary">02</div>
+    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-secondary">03</div>
   </div>
-</div>
+{{</ example >}}
 
 ```html
 <div class="d-flex justify-content-around ...">
@@ -122,13 +122,13 @@ Use `justify-content-around` to justify items along the container’s main axis 
 
 Use `justify-content-evenly` to justify items along the container’s main axis such that there is an equal amount of space around each item, but also accounting for the doubling of space you would normally see between each item when using `justify-content-around`:
 
-<div class="bd-example">
-  <div class="d-flex fw-semibold gap-3 fs-sm justify-content-evenly">
-    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded bg-teal-200 text-white">01</div>
-    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded bg-teal-200 text-white">02</div>
-    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded bg-teal-200 text-white">03</div>
+{{< example show_source="false" >}}
+<div class="d-flex gap-4 justify-content-evenly bg-striped-purple rounded">
+    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-secondary">01</div>
+    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-secondary">02</div>
+    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-secondary">03</div>
   </div>
-</div>
+{{</ example >}}
 
 ```html
 <div class="d-flex justify-content-evenly ...">

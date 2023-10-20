@@ -3,9 +3,11 @@ layout: docs
 title: Figures
 description: "Utilities for controlling the displaying related images and text with the figure element."
 toc: true
-group: base-styles
+group: utilities
 menu:
-  docs:    
+  components:    
+aliases:
+  - /docs/figures
 ---
 
 Documentation and examples for displaying related images and text with the figure component in Bootstrap.

@@ -17,41 +17,35 @@
             <a class="nav-link {{ if $active }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
           </li>
         {{ end }}
-        <li class="nav-item ms-auto me-3">
-          <div class="position-relative">
-            <button class="btn border-0" id="bd-theme" type="button" data-bs-toggle="dropdown" data-reference="parent" aria-expanded="false"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></button>
-            <ul class="dropdown-menu dropdown-menu-end" role="menu">
-              <li>
-                <button class="dropdown-item" type="button" id="light-theme-button" data-bs-theme-value="light"><i class="fa-solid fa-sun fa-lg"></i><span class="ms-2">Light</span></button>
-              </li>
-              <li>
-                <button class="dropdown-item" type="button" id="dark-theme-button" data-bs-theme-value="dark"><i class="fa-solid fa-moon fa-lg"></i><span class="ms-2">Dark</span></button>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="nav-item me-lg-4">
-          <button class="bg-transparent fs-sm text-muted rounded-2 btn-search border border-2 border-neutral-40 bd-w-56 text-start py-1 ps-2" type="button" data-bs-toggle="modal" data-bs-target="#searchModal">
-            <svg class="me-1" width="16" height="16" viewBox="0 0 24 24" role="presentation">
-              <path d="M16.436 15.085l3.94 4.01a1 1 0 01-1.425 1.402l-3.938-4.006a7.5 7.5 0 111.423-1.406zM10.5 16a5.5 5.5 0 100-11 5.5 5.5 0 000 11z" fill="currentColor" fill-rule="evenodd"></path>
-            </svg>
-            Search
-          </button>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link rounded-circle" href="{{ .Site.Params.repo }}">
-            <i class="fa-brands fa-github fa-xl"></i>
-          </a>
-        </li>
       </ul>
     </div>
-    <button class="navbar-toggler" type="bdNavbar" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-label="Toggle navigation">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
-        <path
-          fill-rule="evenodd"
-          d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
-      </svg>
-    </button>
+    <div class="d-flex align-items-center ms-auto gap-3">
+      <div class="position-relative">
+        <button class="btn border-0" id="bd-theme" type="button" data-bs-toggle="dropdown" data-reference="parent" aria-expanded="false"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></button>
+        <ul class="dropdown-menu dropdown-menu-end" role="menu">
+          <li>
+            <button class="dropdown-item" type="button" id="light-theme-button" data-bs-theme-value="light"><i class="fa-solid fa-sun fa-lg"></i><span class="ms-2">Light</span></button>
+          </li>
+          <li>
+            <button class="dropdown-item" type="button" id="dark-theme-button" data-bs-theme-value="dark"><i class="fa-solid fa-moon fa-lg"></i><span class="ms-2">Dark</span></button>
+          </li>
+        </ul>
+      </div>
+      <button class="bg-transparent fs-sm text-muted rounded-2 btn-search border border-2 border-neutral-40 bd-w-56 text-start py-1 ps-2 d-none d-lg-block" type="button" data-bs-toggle="modal" data-bs-target="#searchModal">
+        <svg class="me-1" width="16" height="16" viewBox="0 0 24 24" role="presentation">
+          <path d="M16.436 15.085l3.94 4.01a1 1 0 01-1.425 1.402l-3.938-4.006a7.5 7.5 0 111.423-1.406zM10.5 16a5.5 5.5 0 100-11 5.5 5.5 0 000 11z" fill="currentColor" fill-rule="evenodd"></path>
+        </svg>
+        Search
+      </button>
+      <a class="nav-link d-none d-lg-block" href="{{ .Site.Params.repo }}" target="_blank" rel="nofollow"><i class="fa-brands fa-github fa-xl"></i></a>
+      <button class="navbar-toggler" type="bdNavbar" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-label="Toggle navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+          <path
+            fill-rule="evenodd"
+            d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+        </svg>
+      </button>
+    </div>
   </nav>
 </header>
 <div class="offcanvas offcanvas-end w-100 mw-100" tabindex="-1" id="bdNavbar">
@@ -76,5 +70,12 @@
     </ul>
   </div>
 </div>
-
+<ul class="dropdown-menu dropdown-menu-end" role="menu">
+  <li>
+    <button class="dropdown-item" type="button" id="light-theme-button" data-bs-theme-value="light"><i class="fa-solid fa-sun fa-lg"></i><span class="ms-2">Light</span></button>
+  </li>
+  <li>
+    <button class="dropdown-item" type="button" id="dark-theme-button" data-bs-theme-value="dark"><i class="fa-solid fa-moon fa-lg"></i><span class="ms-2">Dark</span></button>
+  </li>
+</ul>
 {{ partial "sections/search" }}

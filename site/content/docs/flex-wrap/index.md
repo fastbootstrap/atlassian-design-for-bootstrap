@@ -21,21 +21,21 @@ Change how flex items wrap in a flex container. Choose from no wrapping at all (
 
 Use `flex-nowrap` to prevent flex items from wrapping, causing inflexible items to overflow the container if necessary:
 
-<div class="bd-example">
-  <div class="overflow-x-auto">
-    <div class="d-flex flex-nowrap fs-sm fw-semibold gap-3">
+{{< example class="bg-grid-slate-100" show_source="false" >}}
+  <div class="overflow-x-auto pb-6 ">
+    <div class="d-flex flex-nowrap gap-4 bg-striped-purple fw-medium">
       <div class="col-5">
-        <div class="text-bg-secondary p-3 rounded d-flex justify-content-center align-items-center">01</div>
+        <div class="text-bg-secondary p-4 rounded d-flex justify-content-center align-items-center">01</div>
       </div>
       <div class="col-5">
-        <div class="text-bg-secondary p-3 rounded d-flex justify-content-center align-items-center">02</div>
+        <div class="text-bg-secondary p-4 rounded d-flex justify-content-center align-items-center">02</div>
       </div>
       <div class="col-5">
-        <div class="text-bg-secondary p-3 rounded d-flex justify-content-center align-items-center">03</div>
+        <div class="text-bg-secondary p-4 rounded d-flex justify-content-center align-items-center">03</div>
       </div>
     </div>
   </div>
-</div>
+{{</ example >}}
 
 ```html
 <div class="d-flex flex-nowrap">
@@ -49,21 +49,19 @@ Use `flex-nowrap` to prevent flex items from wrapping, causing inflexible items 
 
 Use `flex-wrap` to allow flex items to wrap:
 
-<div class="bd-example">
-  <div class="overflow-x-auto">
-    <div class="d-flex flex-wrap fs-sm fw-semibold gap-3">
-      <div class="col-5">
-        <div class="bg-blue-200 text-white p-3 rounded d-flex justify-content-center align-items-center">01</div>
-      </div>
-      <div class="col-5">
-        <div class="bg-blue-200 text-white p-3 rounded d-flex justify-content-center align-items-center">02</div>
-      </div>
-      <div class="col-5">
-        <div class="bg-blue-200 text-white  p-3 rounded d-flex justify-content-center align-items-center">03</div>
-      </div>
-    </div>
+{{< example class="bg-grid-slate-100" show_source="false" >}}
+<div class="d-flex flex-wrap gap-4 fw-medium bg-striped-teal">
+  <div class="col-5">
+    <div class="bg-blue-subtle text-white p-4 rounded d-flex justify-content-center align-items-center">01</div>
+  </div>
+  <div class="col-5">
+    <div class="bg-blue-subtle text-white p-4 rounded d-flex justify-content-center align-items-center">02</div>
+  </div>
+  <div class="col-5">
+    <div class="bg-blue-subtle text-white p-4 rounded d-flex justify-content-center align-items-center">03</div>
   </div>
 </div>
+{{</ example >}}
 
 ```html
 <div class="d-flex flex-wrap">
@@ -77,21 +75,19 @@ Use `flex-wrap` to allow flex items to wrap:
 
 Use `flex-wrap-reverse` to wrap flex items in the reverse direction:
 
-<div class="bd-example">
-  <div class="overflow-x-auto">
-    <div class="d-flex flex-wrap-reverse fs-sm fw-semibold gap-3">
-      <div class="col-5">
-        <div class="text-bg-primary p-3 rounded d-flex justify-content-center align-items-center">01</div>
-      </div>
-      <div class="col-5">
-        <div class="text-bg-primary text-white p-3 rounded d-flex justify-content-center align-items-center">02</div>
-      </div>
-      <div class="col-5">
-        <div class="text-bg-primary text-white  p-3 rounded d-flex justify-content-center align-items-center">03</div>
-      </div>
-    </div>
+{{< example class="bg-grid-slate-100" show_source="false" >}}
+<div class="d-flex flex-wrap-reverse bg-striped-purple gap-4">
+  <div class="col-5">
+    <div class="text-bg-secondary p-4 rounded d-flex justify-content-center align-items-center">01</div>
+  </div>
+  <div class="col-5">
+    <div class="text-bg-secondary p-4 rounded d-flex justify-content-center align-items-center">02</div>
+  </div>
+  <div class="col-5">
+    <div class="text-bg-secondary p-4 rounded d-flex justify-content-center align-items-center">03</div>
   </div>
 </div>
+{{</ example >}}
 
 ```html
 <div class="d-flex flex-wrap-reverse">
