@@ -3,6 +3,8 @@ $body-bg-dark: dark("surface");
 $border-color-dark: $ds-border;
 $link-color-dark: dark("link");
 $link-hover-color-dark: $link-color-dark;
+$body-secondary-color-dark: dark("text-subtle");
+$body-tertiary-color-dark: dark("text-subtlest");
 
 $primary-text-emphasis-dark: $ds-text;
 $secondary-text-emphasis-dark: $ds-text;
@@ -59,4 +61,3 @@ $accordion-icon-color-dark: dark("text");
 $accordion-icon-active-color-dark: dark("text");
 $accordion-button-icon-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='#{$accordion-icon-color-dark}'><path fill-rule='evenodd' d='M6.744 8.744a1.053 1.053 0 000 1.49l4.547 4.557a1 1 0 001.416 0l4.55-4.558a1.051 1.051 0 10-1.488-1.488l-3.77 3.776-3.768-3.776a1.051 1.051 0 00-1.487 0z'></path></svg>");
 $accordion-button-active-icon-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='#{$accordion-icon-active-color-dark}'><path fill-rule='evenodd' d='M6.744 8.744a1.053 1.053 0 000 1.49l4.547 4.557a1 1 0 001.416 0l4.55-4.558a1.051 1.051 0 10-1.488-1.488l-3.77 3.776-3.768-3.776a1.051 1.051 0 00-1.487 0z'></path></svg>");
-
