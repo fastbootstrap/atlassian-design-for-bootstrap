@@ -6,8 +6,8 @@ $enable-dark-mode: true;
 $prefix: bs-;
 
 $null-shadow: 0 0 0 transparent;
-$black: $neutral-1000;
-$white: $neutral-0;
+$black: #000;
+$white: #fff;
 
 $grays: ();
 $indigos: ();
@@ -152,9 +152,7 @@ $success: light("background-success-bold");
 $info: light("background-information-bold");
 $warning: light("background-warning-bold");
 $danger: light("background-danger-bold");
-// to-rgb() not supports rgba(), for fix .text-bg-light
-// we use $neutral-200 instead light("background-neutral");
-$light: $neutral-200;
+$light: light("background-accent-gray-subtler");
 $dark: light("background-neutral-bold");
 
 $primary-text-emphasis: $ds-text;
@@ -164,7 +162,7 @@ $info-text-emphasis: $ds-text;
 $warning-text-emphasis: $ds-text;
 $danger-text-emphasis: $ds-text;
 $light-text-emphasis: $ds-text;
-$dark-text-emphasis: $ds-text;
+$dark-text-emphasis: $ds-text-inverse;
 
 $primary-bg-subtle: $ds-background-brand-subtlest;
 $secondary-bg-subtle: $ds-background-discovery;
@@ -172,8 +170,8 @@ $success-bg-subtle: $ds-background-success;
 $info-bg-subtle: $ds-background-information;
 $warning-bg-subtle: $ds-background-warning;
 $danger-bg-subtle: $ds-background-danger;
-$light-bg-subtle: $ds-background-neutral-bold;
-$dark-bg-subtle: $ds-background-neutral;
+$light-bg-subtle: $ds-background-accent-gray-subtlest;
+$dark-bg-subtle: $ds-background-accent-gray-subtle;
 
 $primary-border-subtle: transparent;
 $secondary-border-subtle: transparent;

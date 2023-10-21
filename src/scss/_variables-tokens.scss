@@ -159,7 +159,6 @@ $ds-space-600: 3rem;
 $ds-space-800: 4rem;
 $ds-space-1000: 5rem;
 
-
 $text-tokens: (
   "text": (
     $neutral-1000,
@@ -1384,6 +1383,10 @@ $ds-background-information-pressed: var(--#{$ds-prefix}background-information-pr
 $ds-background-information-bold: var(--#{$ds-prefix}background-information-bold);
 $ds-background-information-bold-hovered: var(--#{$ds-prefix}background-information-bold-hovered);
 $ds-background-information-bold-pressed: var(--#{$ds-prefix}background-information-bold-pressed);
+$ds-background-accent-gray-subtlest: var(--#{$ds-prefix}background-accent-gray-subtlest);
+$ds-background-accent-gray-subtler: var(--#{$ds-prefix}background-accent-gray-subtler);
+$ds-background-accent-gray-subtle:var(--#{$ds-prefix}background-accent-gray-subtle);
+$ds-background-accent-gray-bolder: var(--#{$ds-prefix}background-accent-gray-bolder);
 
 $ds-icon-disabled: var(--#{$ds-prefix}icon-disabled);
 $ds-icon-inverse: var(--#{$ds-prefix}icon-inverse);
