@@ -233,5 +233,12 @@ $utilities: map-merge(
         "info": $ds-icon-information,
       ),
     ),
+    "break-normal": (
+      property: word-wrap word-break,
+      class: break,
+      values: (
+        normal,
+      ),
+    ),
   )
 );
