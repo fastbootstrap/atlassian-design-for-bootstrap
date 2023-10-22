@@ -240,5 +240,11 @@ $utilities: map-merge(
         normal,
       ),
     ),
+    "border-width": (
+      css-var: true,
+      css-variable-name: border-width,
+      class: border,
+      values: $border-widths
+    ),
   )
 );
