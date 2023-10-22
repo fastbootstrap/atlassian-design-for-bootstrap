@@ -777,3 +777,17 @@ $blankslate-narrow-max-width: 304px;
 $focus-ring-opacity: 0.25;
 $focus-ring-color: rgba(light("border-focused"), $focus-ring-opacity);
 $focus-ring-width: $ds-space-050;
+
+$zindex-levels: (
+  n1: -1,
+  0: 0,
+  1: 1,
+  2: 2,
+  3: 3,
+  10: 10,
+  20: 20,
+  30: 30,
+  40: 40,
+  50: 50,
+  auto: auto,
+);

@@ -84,19 +84,6 @@ $utilities: map-merge(
         100: 1,
       ),
     ),
-    "z-index": (
-      property: z-index,
-      class: z,
-      values: (
-        0,
-        10,
-        20,
-        30,
-        40,
-        50,
-        auto,
-      ),
-    ),
     "overflow": (
       property: overflow,
       values: auto hidden visible scroll,
