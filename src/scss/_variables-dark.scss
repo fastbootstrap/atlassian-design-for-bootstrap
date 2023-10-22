@@ -24,14 +24,14 @@ $danger-bg-subtle-dark: $ds-background-danger;
 $light-bg-subtle-dark: $ds-background-accent-gray-subtle;
 $dark-bg-subtle-dark: $ds-background-accent-gray-subtlest;
 
-$primary-border-subtle-dark: transparent;
-$secondary-border-subtle-dark: transparent;
-$success-border-subtle-dark: transparent;
-$info-border-subtle-dark: transparent;
-$warning-border-subtle-dark: transparent;
-$danger-border-subtle-dark: transparent;
-$light-border-subtle-dark: transparent;
-$dark-border-subtle-dark: transparent;
+$primary-border-subtle-dark: $ds-background-accent-blue-subtle;
+$secondary-border-subtle-dark: $ds-background-accent-purple-subtle;
+$success-border-subtle-dark: $ds-background-accent-green-subtle;
+$info-border-subtle-dark: $ds-background-accent-blue-subtle;
+$warning-border-subtle-dark: $ds-background-accent-yellow-subtle;
+$danger-border-subtle-dark: $ds-background-accent-red-subtle;
+$light-border-subtle-dark: $ds-background-accent-gray-subtlest;
+$dark-border-subtle-dark: $ds-background-accent-gray-subtle;
 
 $btn-close-color-dark: dark("icon-subtle");
 $btn-close-disabled-color: dark("icon-disabled");

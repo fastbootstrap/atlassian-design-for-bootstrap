@@ -173,14 +173,14 @@ $danger-bg-subtle: $ds-background-danger;
 $light-bg-subtle: $ds-background-accent-gray-subtlest;
 $dark-bg-subtle: $ds-background-accent-gray-subtle;
 
-$primary-border-subtle: transparent;
-$secondary-border-subtle: transparent;
-$success-border-subtle: transparent;
-$info-border-subtle: transparent;
-$warning-border-subtle: transparent;
-$danger-border-subtle: transparent;
-$light-border-subtle: transparent;
-$dark-border-subtle: transparent;
+$primary-border-subtle: $ds-background-accent-blue-subtle;
+$secondary-border-subtle: $ds-background-accent-purple-subtle;
+$success-border-subtle: $ds-background-accent-green-subtle;
+$info-border-subtle: $ds-background-accent-blue-subtle;
+$warning-border-subtle: $ds-background-accent-yellow-subtle;
+$danger-border-subtle: $ds-background-accent-red-subtle;
+$light-border-subtle: $ds-background-accent-gray-subtlest;
+$dark-border-subtle: $ds-background-accent-gray-subtle;
 
 // Spacing
 $spacer: 1rem;
