@@ -22,15 +22,15 @@ Control the letter spacing of an element using the `ls-{size}` utilities.
 {{< example class="bg-grid-slate-100" show_source="false" >}}
 <div class="d-flex gap-4 flex-column">
   <div>
-    <span class="text-muted mb-3 fa-sm fw-semibold">ls-tight</span>
+    <span class="text-muted mb-3 fs-sm fw-semibold">ls-tight</span>
     <p class="ls-tight fw-semibold fs-5">The quick brown fox jumps over the lazy dog.</p>
   </div>
   <div>
-    <span class="text-muted mb-3 fa-sm fw-semibold">ls-normal</span>
+    <span class="text-muted mb-3 fs-sm fw-semibold">ls-normal</span>
     <p class="ls-normal fw-semibold fs-5">The quick brown fox jumps over the lazy dog.</p>
   </div>
   <div>
-    <span class="text-muted mb-3 fa-sm fw-semibold">ls-wide</span>
+    <span class="text-muted mb-3 fs-sm fw-semibold">ls-wide</span>
     <p class="ls-wide fw-semibold fs-5">The quick brown fox jumps over the lazy dog.</p>
   </div>
 </div>

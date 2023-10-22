@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Border Overview
+title: Border
 description: "Utilities for controlling the border of an element, including border style and sides."
 toc: true
 group: borders

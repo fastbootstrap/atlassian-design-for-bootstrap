@@ -18,30 +18,32 @@ Use the border radius utilities to easily round an element corners.
 
 Use utilities like `.rounded-3`, `.rounded`, or `.rounded-circle` to apply different border radius sizes to an element.
 
-<div class="bd-example text-center d-flex justify-content-around">
-  <div class="d-flex flex-column">
+{{< example class="bg-neutral-subtler bg-grid-slate-100" show_source="false" >}}
+<div class="text-center d-flex align-items-center justify-content-around">
+  <div class="d-flex flex-column align-items-center">
     <p class="fw-semibold text-muted fs-sm mb-2">rounded</p>
-    <div class="rounded d-inline-block bg-secondary mx-auto" style="width: 64px;height: 64px"></div>
+    <div class="rounded d-inline-block bg-secondary bd-w-16 bd-h-16"></div>
   </div>
-  <div class="d-flex flex-column">
+  <div class="d-flex flex-column align-items-center">
     <p class="fw-semibold text-muted fs-sm mb-2">rounded-3</p>
-    <div class="rounded-3 d-inline-block bg-secondary mx-auto" style="width: 64px;height: 64px"></div>
+    <div class="rounded-3 d-inline-block bg-secondary bd-w-16 bd-h-16"></div>
   </div>
-  <div class="d-flex flex-column">
-    <p class="fw-semibold text-muted fs-sm mb-2">rounded-5</p>
-    <div class="rounded-5 d-inline-block bg-secondary mx-auto" style="width: 64px;height: 64px"></div>
+  <div class="d-flex flex-column align-items-center">
+    <p class="fw-semibold text-muted fs-sm mb-2">rounded-4</p>
+    <div class="rounded-4 d-inline-block bg-secondary bd-w-16 bd-h-16"></div>
   </div>
 
-  <div class="d-flex flex-column">
+  <div class="d-flex flex-column align-items-center">
     <p class="fw-semibold text-muted fs-sm mb-2">rounded-circle</p>
-    <div class="rounded-circle d-inline-block bg-secondary mx-auto" style="width: 64px;height: 64px"></div>
+    <div class="rounded-circle d-inline-block bg-secondary bd-w-16 bd-h-16"></div>
   </div>
 </div>
+{{</ example >}}
 
 ```html
 <div class="rounded ..."></div>
 <div class="rounded-3 ..."></div>
-<div class="rounded-5 ..."></div>
+<div class="rounded-4 ..."></div>
 <div class="rounded-circle ..."></div>
 ```
 
@@ -49,9 +51,10 @@ Use utilities like `.rounded-3`, `.rounded`, or `.rounded-circle` to apply diffe
 
 Use the `rounded-pill` utility to create pill buttons.
 
-<div class="bd-example text-center">
+{{< example class="bg-neutral-subtler bg-grid-slate-100 text-center" show_source="false" >}}
+  <span class="fw-semibold text-muted fs-sm d-block mb-3">rounded-pill</span>
   <button class="btn btn-lg btn-primary fs-sm rounded-pill fw-semibold">Save changes</button>
-</div>
+{{</ example >}}
 
 ```html
 <button class="rounded-pill ...">Save Changes</button>
@@ -61,9 +64,10 @@ Use the `rounded-pill` utility to create pill buttons.
 
 Use `rounded-0` to remove an existing border radius from an element.
 
-<div class="bd-example text-center">
-  <button class="btn btn-lg btn-primary fs-sm rounded-0 fw-semibold">Save changes</button>
-</div>
+{{< example class="bg-neutral-subtler bg-grid-slate-100 text-center" show_source="false" >}}
+<span class="fw-semibold text-muted fs-sm d-block mb-3">rounded-0</span>
+<button class="btn btn-lg btn-primary fs-sm rounded-0 fw-semibold">Save changes</button>
+{{</ example >}}
 
 ```html
 <button class="rounded-0 ...">Save Changes</button>
@@ -73,25 +77,27 @@ Use `rounded-0` to remove an existing border radius from an element.
 
 Use `rounded-{top|end|bottom|start}{-size?}` to only round one side of an element. Sizes range from `0` to `5` by default.
 
-<div class="bd-example text-center d-flex justify-content-around">
-  <div class="d-flex flex-column">
+{{< example class="bg-neutral-subtler bg-grid-slate-100 text-center" show_source="false" >}}
+<div class="text-center d-flex justify-content-around">
+  <div class="d-flex flex-column align-items-center">
     <p class="fw-semibold text-muted fs-sm mb-2">rounded-top-3</p>
-    <div class="rounded-top-3 d-inline-block bg-primary mx-auto" style="width: 64px;height: 64px"></div>
+    <div class="rounded-top-3 d-inline-block bg-secondary bd-w-16 bd-h-16"></div>
   </div>
-  <div class="d-flex flex-column">
+  <div class="d-flex flex-column align-items-center">
     <p class="fw-semibold text-muted fs-sm mb-2">rounded-end-3</p>
-    <div class="rounded-end-3 d-inline-block bg-primary mx-auto" style="width: 64px;height: 64px"></div>
+    <div class="rounded-end-3 d-inline-block bg-secondary bd-w-16 bd-h-16"></div>
   </div>
-  <div class="d-flex flex-column">
+  <div class="d-flex flex-column align-items-center">
     <p class="fw-semibold text-muted fs-sm mb-2">rounded-bottom-3</p>
-    <div class="rounded-bottom-3 d-inline-block bg-primary mx-auto" style="width: 64px;height: 64px"></div>
+    <div class="rounded-bottom-3 d-inline-block bg-secondary bd-w-16 bd-h-16"></div>
   </div>
 
-  <div class="d-flex flex-column">
+  <div class="d-flex flex-column align-items-center">
     <p class="fw-semibold text-muted fs-sm mb-2">rounded-start-3</p>
-    <div class="rounded-start-3 d-inline-block bg-primary mx-auto" style="width: 64px;height: 64px"></div>
+    <div class="rounded-start-3 d-inline-block bg-secondary bd-w-16 bd-h-16"></div>
   </div>
 </div>
+{{</ example >}}
 
 ```html
 <div class="rounded-top-3 ..."></div>

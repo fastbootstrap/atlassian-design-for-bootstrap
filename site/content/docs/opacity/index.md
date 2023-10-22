@@ -18,12 +18,12 @@ The `opacity` property sets the opacity level for an element. The opacity level 
 
 Set the `opacity` of an element using `.opacity-{value}` utilities.
 
-<div class="bd-example d-grid gap-3">
+{{< example class="d-flex flex-column gap-4 bg-neutral-subtler bg-grid-slate-100 text-center" show_source="false" >}}
   <div class="opacity-100 p-3 text-bg-primary rounded">100%</div>
   <div class="opacity-75 p-3 text-bg-primary rounded">75%</div>
   <div class="opacity-50 p-3 text-bg-primary rounded">50%</div>
   <div class="opacity-25 p-3 text-bg-primary rounded">25%</div>
-</div>
+{{</ example >}}
 
 ```html
 <div class="opacity-100">...</div>

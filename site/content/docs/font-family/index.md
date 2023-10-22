@@ -20,7 +20,7 @@ Change a selection to our monospace font stack with `.font-monospace`.
 
 {{< example class="bg-grid-slate-100" show_source="false" >}}
 <div>
-  <span class="text-muted fa-sm fw-medium mb-3">font-monospace</span>
+  <span class="text-muted fs-sm fw-medium mb-3">font-monospace</span>
   <p class="font-monospace fw-semibold fs-5">The quick brown fox jumps over the lazy dog.</p>
 </div>
 {{</ example >}}

@@ -23,23 +23,23 @@ Control the font size of an element using the `fs-{size}` utilities.
 {{< example class="bg-grid-slate-100" show_source="false" >}}
 <div class="d-flex flex-column gap-5">
   <div>
-    <span class="text-muted fa-sm fw-medium mb-3">fs-sm</span>
+    <span class="text-muted fs-sm fw-medium mb-3">fs-sm</span>
     <p class="fs-sm fw-semibold">The quick brown fox jumps over the lazy dog.</p>
   </div>
   <div>
-    <span class="text-muted fa-sm fw-medium mb-3">fs-6</span>
+    <span class="text-muted fs-sm fw-medium mb-3">fs-6</span>
     <p class="fs-6 fw-semibold">The quick brown fox jumps over the lazy dog.</p>
   </div>
   <div>
-    <span class="text-muted fa-sm fw-medium mb-3">fs-5</span>
+    <span class="text-muted fs-sm fw-medium mb-3">fs-5</span>
     <p class="fs-5 fw-semibold">The quick brown fox jumps over the lazy dog.</p>
   </div>
   <div>
-    <span class="text-muted fa-sm fw-medium mb-3">fs-4</span>
+    <span class="text-muted fs-sm fw-medium mb-3">fs-4</span>
     <p class="fs-4 fw-semibold">The quick brown fox jumps over the lazy dog.</p>
   </div>
   <div>
-    <span class="text-muted fa-sm fw-medium mb-3">fs-3</span>
+    <span class="text-muted fs-sm fw-medium mb-3">fs-3</span>
     <p class="fs-3 fw-semibold">The quick brown fox jumps over the lazy dog.</p>
   </div>
 </div>

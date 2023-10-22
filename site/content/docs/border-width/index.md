@@ -16,7 +16,8 @@ menu:
 
 Use the `border` with the `border-2`, `border-4`, or `border-5` utilities to set the border width for all sides of an element.
 
-<div class="bd-example d-flex justify-content-around text-center">
+{{< example class="bg-neutral-subtler bg-grid-slate-100" show_source="false">}}
+<div class="d-flex justify-content-around text-center">
 <div class="d-flex flex-column">
   <p class="fw-semibold text-muted fs-sm mb-2">border</p>
   <div class="border d-inline-block border-secondary mx-auto" style="width: 64px;height: 64px"></div>
@@ -35,6 +36,7 @@ Use the `border` with the `border-2`, `border-4`, or `border-5` utilities to set
   <div class="border border-5 d-inline-block border-secondary mx-auto" style="width: 64px;height: 64px"></div>
 </div>
 </div>
+{{</ example >}}
 
 ```html
 <div class="border border-secondary ..."></div>
@@ -46,7 +48,7 @@ Use the `border` with the `border-2`, `border-4`, or `border-5` utilities to set
 
 Use the `border-{side}` with `border-2`, `border-3` or `border-5` utilities to set the border width for one side of an element.
 
-<div class="bd-example d-flex justify-content-around text-center">
+{{< example class="d-flex justify-content-around text-center bg-neutral-subtler bg-grid-slate-100" show_source="false">}}
 <div class="d-flex flex-column">
   <p class="fw-semibold text-muted fs-sm mb-2">border-top</p>
   <div class="border-top border-4 d-inline-block bg-white border-secondary shadow mx-auto" style="width: 64px;height: 64px"></div>
@@ -64,7 +66,7 @@ Use the `border-{side}` with `border-2`, `border-3` or `border-5` utilities to s
   <p class="fw-semibold text-muted fs-sm mb-2">border-start</p>
   <div class="border-top border-4 d-inline-block bg-white border-secondary shadow mx-auto" style="width: 64px;height: 64px"></div>
 </div>
-</div>
+{{</ example >}}
 
 ```html
 <div class="border-top border-4 border-secondary ..."></div>
@@ -77,10 +79,10 @@ Use the `border-{side}` with `border-2`, `border-3` or `border-5` utilities to s
 
 Use the `border-{side}` and `border-{width}` utilities to set the border width on two sides of an element at the same time.
 
-<div class="bd-example d-flex justify-content-around text-center">
+{{< example class="d-flex justify-content-around text-center bg-neutral-subtler bg-grid-slate-100" show_source="false">}}
   <div class="border-top border-bottom border-4 d-inline-block bg-white border-secondary shadow mx-auto" style="width: 64px;height: 64px"></div>
   <div class="border-end border-start border-4 d-inline-block bg-white border-secondary shadow mx-auto" style="width: 64px;height: 64px"></div>
-</div>
+{{</ example >}}
 
 ```html
 <div class="border-top border-bottom border-4 border-secondary ..."></div>

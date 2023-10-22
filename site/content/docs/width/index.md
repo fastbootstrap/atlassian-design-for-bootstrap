@@ -19,7 +19,7 @@ menu:
 
 Use `w-{number}` to set an element to a fixed width.
 
-{{< example class="d-flex flex-column gap-4 bg-grid-slate-100 text-center fa-sm fw-semibold" show_source="false" >}}
+{{< example class="d-flex flex-column gap-4 bg-grid-slate-100 text-center fs-sm fw-semibold" show_source="false" >}}
 <div class="w-100 px-4 py-2 lh-sm rounded text-bg-secondary ">w-100</div>
 <div class="w-75 px-4 py-2 lh-sm rounded text-bg-secondary ">w-75</div>
 <div class="w-50 px-4 py-2 lh-sm rounded text-bg-secondary ">w-50</div>
@@ -37,7 +37,7 @@ Use `w-{number}` to set an element to a fixed width.
 
 Use `w-auto` to set width of an element to an auto.
 
-{{< example class="d-flex flex-column justify-content-start gap-4 bg-grid-slate-100 text-center fa-sm fw-semibold" show_source="false" >}}
+{{< example class="d-flex flex-column justify-content-start gap-4 bg-grid-slate-100 text-center fs-sm fw-semibold" show_source="false" >}}
 <span class="w-auto align-self-start text-bg-secondary px-4 py-2 lh-sm  rounded">w-auto</span>
 <div class="w-auto text-bg-secondary px-4 py-2 lh-sm rounded">w-auto</div>
 {{</ example >}}

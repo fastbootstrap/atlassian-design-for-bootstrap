@@ -18,22 +18,22 @@ menu:
 
 Control how text is decorated with the `text-decoration-underline`, `text-decoration-none`, and `text-decoration-line-through` utilities.
 
-{{< example class="bg-grid-slate-100" show_source="false" >}}
+{{< example class="bg-neutral-subtler bg-grid-slate-100" show_source="false" >}}
 <div class="d-flex flex-column gap-4">
   <div>
-    <span class="text-body-tertiary fa-sm fw-semibold mb-3 font-spacemono">underline</span>
+    <span class="text-body-tertiary fs-sm fw-semibold mb-3 font-spacemono">underline</span>
     <p class="text-decoration-underline fs-5 fw-semibold">The quick brown fox jumps over the lazy dog.</p>
   </div>
   <div>
-    <span class="text-body-tertiary fa-sm fw-semibold mb-3 font-spacemono">line-through</span>
+    <span class="text-body-tertiary fs-sm fw-semibold mb-3 font-spacemono">line-through</span>
     <p class="text-decoration-line-through fs-5 fw-semibold">The quick brown fox jumps over the lazy dog.</p>
   </div>
   <div>
-    <span class="text-body-tertiary fa-sm fw-semibold mb-3 font-spacemono">overline</span>
+    <span class="text-body-tertiary fs-sm fw-semibold mb-3 font-spacemono">overline</span>
     <p class="text-decoration-overline fs-5 fw-semibold">The quick brown fox jumps over the lazy dog.</p>
   </div>
   <div>
-    <span class="text-body-tertiary fa-sm fw-semibold mb-3 font-spacemono">no-decoration</span>
+    <span class="text-body-tertiary fs-sm fw-semibold mb-3 font-spacemono">no-decoration</span>
     <p class="text-decoration-none fs-5 fw-semibold">The quick brown fox jumps over the lazy dog.</p>
   </div>
 </div>

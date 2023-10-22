@@ -3,7 +3,6 @@ layout: docs
 title: Text Color
 description: "Utilities for controlling the text color of an element."
 toc: true
-status: new
 group: typography
 menu:
   docs:    
@@ -58,7 +57,7 @@ Control the text color of an element using the `text-{color}` utilities.
 
 ### Changing the opacity
 
-Control the opacity of an element’s text color using [the color opacity]({{< docsref "opacity" >}}) utilities.
+Control the opacity of an element’s text color using the color opacity `text-opacity-*` utilities.
 
 {{< example class="bg-grid-slate-100 text-center" show_source="false" >}}
   <p class="text-primary text-opacity-100 fs-5 fw-semibold">The quick brown fox jumps over the lazy dog.</p>

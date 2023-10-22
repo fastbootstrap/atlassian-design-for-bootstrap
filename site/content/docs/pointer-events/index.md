@@ -21,9 +21,9 @@ If possible, the simpler solution is:
 - For form controls, add the `disabled` HTML attribute.
 * For links, remove the `href` attribute, making it a non-interactive anchor or placeholder link.
 
-## Basic example
+## Basic usage
 
-{{< example >}}
+{{< example class="bg-neutral-subtler bg-grid-slate-100" >}}
 <p><a href="#" class="pe-none" tabindex="-1" aria-disabled="true">This link</a> can not be clicked.</p>
 <p><a href="#" class="pe-auto">This link</a> can be clicked (this is default behavior).</p>
 <p class="pe-none"><a href="#" tabindex="-1" aria-disabled="true">This link</a> can not be clicked because the <code>pointer-events</code> property is inherited from its parent. However, <a href="#" class="pe-auto">this link</a> has a <code>pe-auto</code> class and can be clicked.</p>

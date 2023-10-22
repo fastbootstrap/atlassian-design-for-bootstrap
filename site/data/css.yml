@@ -211,9 +211,12 @@ margin:
       - 2: 0.5rem
       - 3: 0.75rem
       - 4: 1rem
-      - 5: 1.5rem
-      - 6: 3rem
-      - 7: 6rem
+      - 5: 1.25rem
+      - 6: 1.5rem
+      - 7: 1.75rem
+      - 8: 2rem
+      - 9: 2.5rem
+      - 10: 3rem
       - auto
   - property: margin-left margin-right
     responsive: true
@@ -224,9 +227,12 @@ margin:
       - 2: 0.5rem
       - 3: 0.75rem
       - 4: 1rem
-      - 5: 1.5rem
-      - 6: 3rem
-      - 7: 6rem
+      - 5: 1.25rem
+      - 6: 1.5rem
+      - 7: 1.75rem
+      - 8: 2rem
+      - 9: 2.5rem
+      - 10: 3rem
       - auto
   - property: margin-top margin-bottom
     responsive: true
@@ -237,9 +243,12 @@ margin:
       - 2: 0.5rem
       - 3: 0.75rem
       - 4: 1rem
-      - 5: 1.5rem
-      - 6: 3rem
-      - 7: 6rem
+      - 5: 1.25rem
+      - 6: 1.5rem
+      - 7: 1.75rem
+      - 8: 2rem
+      - 9: 2.5rem
+      - 10: 3rem
       - auto
   - property: margin-top
     responsive: true
@@ -250,9 +259,12 @@ margin:
       - 2: 0.5rem
       - 3: 0.75rem
       - 4: 1rem
-      - 5: 1.5rem
-      - 6: 3rem
-      - 7: 6rem
+      - 5: 1.25rem
+      - 6: 1.5rem
+      - 7: 1.75rem
+      - 8: 2rem
+      - 9: 2.5rem
+      - 10: 3rem
       - auto
   - property: margin-bottom
     responsive: true
@@ -263,9 +275,12 @@ margin:
       - 2: 0.5rem
       - 3: 0.75rem
       - 4: 1rem
-      - 5: 1.5rem
-      - 6: 3rem
-      - 7: 6rem
+      - 5: 1.25rem
+      - 6: 1.5rem
+      - 7: 1.75rem
+      - 8: 2rem
+      - 9: 2.5rem
+      - 10: 3rem
       - auto
   - property: margin-left
     responsive: true
@@ -276,9 +291,12 @@ margin:
       - 2: 0.5rem
       - 3: 0.75rem
       - 4: 1rem
-      - 5: 1.5rem
-      - 6: 3rem
-      - 7: 6rem
+      - 5: 1.25rem
+      - 6: 1.5rem
+      - 7: 1.75rem
+      - 8: 2rem
+      - 9: 2.5rem
+      - 10: 3rem
       - auto
   - property: margin-right
     responsive: true
@@ -289,9 +307,12 @@ margin:
       - 2: 0.5rem
       - 3: 0.75rem
       - 4: 1rem
-      - 5: 1.5rem
-      - 6: 3rem
-      - 7: 6rem
+      - 5: 1.25rem
+      - 6: 1.5rem
+      - 7: 1.75rem
+      - 8: 2rem
+      - 9: 2.5rem
+      - 10: 3rem
       - auto
 padding:
   - property: padding
@@ -302,9 +323,12 @@ padding:
       - 2: 0.5rem
       - 3: 0.75rem
       - 4: 1rem
-      - 5: 1.5rem
-      - 6: 3rem
-      - 7: 6rem
+      - 5: 1.25rem
+      - 6: 1.5rem
+      - 7: 1.75rem
+      - 8: 2rem
+      - 9: 2.5rem
+      - 10: 3rem
   - property: padding-left padding-right
     class: px
     values:
@@ -313,9 +337,12 @@ padding:
       - 2: 0.5rem
       - 3: 0.75rem
       - 4: 1rem
-      - 5: 1.5rem
-      - 6: 3rem
-      - 7: 6rem
+      - 5: 1.25rem
+      - 6: 1.5rem
+      - 7: 1.75rem
+      - 8: 2rem
+      - 9: 2.5rem
+      - 10: 3rem
   - property: padding-top padding-bottom
     class: py
     values:
@@ -324,9 +351,12 @@ padding:
       - 2: 0.5rem
       - 3: 0.75rem
       - 4: 1rem
-      - 5: 1.5rem
-      - 6: 3rem
-      - 7: 6rem
+      - 5: 1.25rem
+      - 6: 1.5rem
+      - 7: 1.75rem
+      - 8: 2rem
+      - 9: 2.5rem
+      - 10: 3rem
   - property: padding-top
     class: pt
     values:
@@ -334,10 +364,12 @@ padding:
       - 1: 0.25rem
       - 2: 0.5rem
       - 3: 0.75rem
-      - 4: 1rem
-      - 5: 1.5rem
-      - 6: 3rem
-      - 7: 6rem
+      - 5: 1.25rem
+      - 6: 1.5rem
+      - 7: 1.75rem
+      - 8: 2rem
+      - 9: 2.5rem
+      - 10: 3rem
   - property: padding-bottom
     class: pb
     values:
@@ -346,9 +378,12 @@ padding:
       - 2: 0.5rem
       - 3: 0.75rem
       - 4: 1rem
-      - 5: 1.5rem
-      - 6: 3rem
-      - 7: 6rem
+      - 5: 1.25rem
+      - 6: 1.5rem
+      - 7: 1.75rem
+      - 8: 2rem
+      - 9: 2.5rem
+      - 10: 3rem
   - property: padding-left
     class: ps
     values:
@@ -357,9 +392,12 @@ padding:
       - 2: 0.5rem
       - 3: 0.75rem
       - 4: 1rem
-      - 5: 1.5rem
-      - 6: 3rem
-      - 7: 6rem
+      - 5: 1.25rem
+      - 6: 1.5rem
+      - 7: 1.75rem
+      - 8: 2rem
+      - 9: 2.5rem
+      - 10: 3rem
   - property: padding-right
     class: pe
     values:
@@ -368,9 +406,12 @@ padding:
       - 2: 0.5rem
       - 3: 0.75rem
       - 4: 1rem
-      - 5: 1.5rem
-      - 6: 3rem
-      - 7: 6rem
+      - 5: 1.25rem
+      - 6: 1.5rem
+      - 7: 1.75rem
+      - 8: 2rem
+      - 9: 2.5rem
+      - 10: 3rem
 opacity:
   - property: opacity
     values:
@@ -460,6 +501,11 @@ word-wrap:
     class: text
     values:
       - break: break-word
+word-break:
+  - property: word-wrap word-break
+    class: break
+    values:
+      - normal
 text-decoration:
   - property: text-decoration
     values:
@@ -695,7 +741,11 @@ z-index:
   - property: z-index
     class: z
     values:
+      - n1: -1
       - 0
+      - 1
+      - 2
+      - 3
       - 10
       - 20
       - 30
@@ -770,6 +820,54 @@ text-color:
       - light: text-light
       - dark: text-dark
       - white: text-white
-      - blank: text-blank
+      - black: text-black
       - body-secondary: text-body-secondary
       - body-tertiary: text-body-tertiary
+bg-color:
+  - property: background-color
+    class: bg
+    values:
+      - body: bg-body
+      - transparent: bg-transparent bg-checkered
+      - white: bg-white
+      - black: bg-black
+      - primary: bg-primary
+      - primary-subtle: bg-primary-subtle
+      - secondary: bg-secondary
+      - secondary-subtle: bg-secondary-subtle
+      - success: bg-success
+      - success-subtle: bg-success-subtle
+      - danger: bg-danger
+      - danger-subtle: bg-danger-subtle
+      - warning: bg-warning
+      - warning-subtle: bg-warning-subtle
+      - info: bg-info
+      - info-subtle: bg-info-subtle
+      - light: bg-light
+      - light-subtle: bg-light-subtle
+      - dark: bg-dark
+      - dark-subtle: bg-dark-subtle
+      - body-secondary: bg-body-secondary
+      - body-tertiary: bg-body-tertiary
+border-color:
+  - property: border-color
+    class: border
+    values:
+      - white: border-white
+      - black: border-black
+      - primary: border-primary
+      - primary-subtle: border-primary-subtle
+      - secondary: border-secondary
+      - secondary-subtle: border-secondary-subtle
+      - success: border-success
+      - success-subtle: border-success-subtle
+      - danger: border-danger
+      - danger-subtle: border-danger-subtle
+      - warning: border-warning
+      - warning-subtle: border-warning-subtle
+      - info: border-info
+      - info-subtle: border-info-subtle
+      - light: border-light
+      - light-subtle: border-light-subtle
+      - dark: border-dark
+      - dark-subtle: border-dark-subtle

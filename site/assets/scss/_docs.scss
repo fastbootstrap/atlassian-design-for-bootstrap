@@ -253,3 +253,12 @@ code {
 .bg-blue-subtle {
   background-color: var(--ds-background-accent-blue-subtle);
 }
+
+.bg-checkered {
+  background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23F0F0F0' d='M0 0h8v8H0zm8 8h8v8H8z'/%3E%3C/svg%3E");
+  background-size: 16px 16px;
+}
+
+.bd-bg-light {
+  background-color: var(--ds-background-accent-gray-subtlest);
+}

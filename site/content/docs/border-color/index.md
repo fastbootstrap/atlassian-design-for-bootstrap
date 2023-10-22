@@ -3,10 +3,11 @@ layout: docs
 title: Border Color
 description: "Utilities for controlling the border color of an element."
 toc: true
-status: new
 group: borders
 menu:
   docs:
+aliases:
+  - /docs/border
 ---
 
 Change the border color using utilities built on our theme colors and color system.
@@ -14,40 +15,27 @@ Change the border color using utilities built on our theme colors and color syst
 ## Quick reference 
 
 {{< colors.inline >}}
-
-{{ $white := dict "name" "white" "rgb" "255, 255, 255" "hex" "#ffffff" }}
-
-<table class="table">
+<table class="table api-class-table">
   <thead>
     <tr>
       <th>Class</th>
-      <th class="d-none d-md-table-cell">Properties</th>
-      <th>
+      <th class="bd-w-36">Color</th>
     </tr>
   </thead>
   <tbody>
-     {{ range ((index $.Site.Data "theme-colors") | append $white )}}
-     {{ $class := printf "border-%s" .name}}
-      <tr>
-        <td class="text-green-400">.{{ $class }}</td>
-        <td class="text-purple-300 d-none d-md-table-cell">border-color: rgb({{ .rgb }});</td>
-        <td><div class="border {{ $class }}" style="width:46px;height:22px"></td>
-      </tr>
-    {{ end }}
-    {{ range $name,$colors := (index $.Site.Data "colors") }}
-      {{ $keys := slice }}
-      {{ range $key, $_ := $colors }}
-        {{ $keys = $keys | append $key }}
-      {{ end }}
-      {{ range $key := sort $keys }}
-        {{ with index $colors $key }}
-        {{ $class := printf "border-%s-%s" $name $key}}
-          <tr>
-            <td class="text-green-400">.{{ $class }}</td>
-            <td class="text-purple-300 d-none d-md-table-cell">border-color: rgb({{ .rgb }});</td>
-            <td><div class="border {{ $class }}" style="width:46px;height:22px"></td>
-          </tr>
+    {{ range (index $.Site.Data.css "border-color" ) }}
+      {{ $prefix := .class }}
+      {{ range .values }} 
+        {{ $key := . }}
+        {{ $value := . }}
+        {{ if reflect.IsMap . }}
+          {{ range $key, $value = . }}
+          {{ end }}
         {{ end }}
+        <tr>
+          <td><code>{{ printf "%s-%s" $prefix $key }}</code></td>
+          <td><div class="border {{ $value }} bd-w-12 bd-h-6"></div></td>
+        </tr>
       {{ end }}
     {{ end }}
   </tbody>
@@ -60,31 +48,33 @@ Change the border color using utilities built on our theme colors and color syst
 
 Control the border color of an element using the `border-{color}` utilities.
 
-<div class="bd-example d-flex justify-content-around">
-  <div class="border border-primary d-inline-block" style="width:64px;height:64px"></div>
-  <div class="border border-dark d-inline-block" style="width:64px;height:64px"></div>
-  <div class="border border-red-400 d-inline-block" style="width:64px;height:64px"></div>
-  <div class="border border-teal-400 d-inline-block" style="width:64px;height:64px"></div>
+{{< example class="bg-neutral-subtler bg-grid-slate-100" show_source="false" >}}
+<div class="d-flex justify-content-around">
+  <div class="border border-primary d-inline-block bd-w-16 bd-h-16"></div>
+  <div class="border border-secondary d-inline-block bd-w-16 bd-h-16"></div>
+  <div class="border border-secondary-subtle d-inline-block bd-w-16 bd-h-16"></div>
+  <div class="border border-primary-subtle d-inline-block bd-w-16 bd-h-16"></div>
 </div>
+{{</ example >}}
 
 ```html
 <div class="border border-primary ..."></div>
-<div class="border border-dark ..."></div>
-<div class="border border-red-400 ..."></div>
-<div class="border border-teal-400 ..."></div>
+<div class="border border-secondary ..."></div>
+<div class="border border-secondary-subtle ..."></div>
+<div class="border border-primary-subtle ..."></div>
 ```
 
 ### Changing the border color
 
 Use the `border-{color}` to modify the default `border-color` of a component.
 
-<div class="bd-example">
-  <div class="col-md-5 mx-auto">
-    <label for="inputPassword5" class="form-label">Password</label>
-    <input type="password" id="inputPassword5" class="form-control border-danger" aria-describedby="passwordHelpBlock" />
-    <div id="passwordHelpBlock" class="form-text text-danger">Your password must be 8-20 characters long.</div>
+{{< example class="bg-neutral-subtler bg-grid-slate-100" show_source="false" >}}
+  <div class="max-w-xs mx-auto">
+    <label for="emailaddress" class="form-label">Email address</label>
+    <input type="password" id="emailaddress" class="form-control border-danger" />
+    <div id="infeedback" class="form-text text-danger">This field is required.</div>
   </div>
-</div>
+{{</ example >}}
 
 ```html
 <input class="form-control border-danger ..." />
@@ -92,16 +82,32 @@ Use the `border-{color}` to modify the default `border-color` of a component.
 
 ### Changing the opacity
 
-To change that opacity, override `--bs-border-opacity` via custom styles or inline styles. See [border opacity]({{< docsref "border-opacity" >}})
+Control the opacity of an element’s border color using the color opacity `.bg-opacity-*` utilities.
 
-<div class="bd-example d-flex justify-content-around">
-  <div class="border border-4 border-secondary d-inline-block" style="--bs-border-opacity:1;width:64px;height:64px"></div>
-  <div class="border border-4 border-secondary d-inline-block" style="--bs-border-opacity:0.75;width:64px;height:64px"></div>
-  <div class="border border-4 border-secondary d-inline-block" style="--bs-border-opacity:0.5;width:64px;height:64px"></div>
+{{< example class="bg-neutral-subtler bg-grid-slate-100" show_source="false" >}}
+<div class="d-flex justify-content-around">
+  <div class="d-flex flex-column gap-2 align-items-center">
+    <span class="text-body-tertiary fs-sm fw-semibold">border-opacity-100</span>
+    <div class="border-opacity-100 border border-4 border-secondary d-inline-block bd-w-16 bd-h-16"></div>
+  </div>
+  <div class="d-flex flex-column gap-2 align-items-center">
+    <span class="text-body-tertiary fs-sm fw-semibold">border-opacity-75</span>
+    <div class="border-opacity-75 border border-4 border-secondary d-inline-block bd-w-16 bd-h-16"></div>
+  </div>
+  <div class="d-flex flex-column gap-2 align-items-center">
+    <span class="text-body-tertiary fs-sm fw-semibold">border-opacity-50</span>
+    <div class="border-opacity-50 border border-4 border-secondary d-inline-block bd-w-16 bd-h-16"></div>
+  </div>
+  <div class="d-flex flex-column gap-2 align-items-center">
+    <span class="text-body-tertiary fs-sm fw-semibold">border-opacity-25</span>
+    <div class="border-opacity-25 border border-4 border-secondary d-inline-block bd-w-16 bd-h-16"></div>
+  </div>
 </div>
+{{</ example >}}
 
 ```html
-  <div class="border border-4 border-secondary ..." style="--bs-border-opacity: 1"></div>
-  <div class="border border-4 border-secondary ..." style="--bs-border-opacity: .75"></div>
-  <div class="border border-4 border-secondary ..." style="--bs-border-opacity: .5"></div>
+<div class="border-opacity-100 border border-secondary..."></div>
+<div class="border-opacity-75 border border-secondary..."></div>
+<div class="border-opacity-50 border border-secondary..."></div>
+<div class="border-opacity-25 border border-secondary..."></div>
 ```

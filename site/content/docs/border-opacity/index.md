@@ -14,37 +14,34 @@ Use the border opacity utilities to change the opacity of an element's border co
 
 {{< class-api "border-opacity" >}}
 
-## Basic examples
-
+## Basic usage
 
 ### Changing the opacity
 
-Use the `border-opacity-75`, `border-opacity-50`, or `border-opacity-25` to change the opacity of an element’s border color.
-
-<div class="bd-example d-flex justify-content-around">
-  <div class="border border-4 border-secondary border-opacity-100 d-inline-block" style="width:64px;height:64px"></div>
-  <div class="border border-4 border-secondary border-opacity-75 d-inline-block" style="width:64px;height:64px"></div>
-  <div class="border border-4 border-secondary border-opacity-50 d-inline-block" style="width:64px;height:64px"></div>
+{{< example class="bg-neutral-subtler bg-grid-slate-100" show_source="false" >}}
+<div class="d-flex justify-content-around">
+  <div class="d-flex flex-column gap-2 align-items-center">
+    <span class="text-body-tertiary fs-sm fw-semibold">border-opacity-100</span>
+    <div class="border-opacity-100 border border-4 border-secondary d-inline-block bd-w-16 bd-h-16"></div>
+  </div>
+  <div class="d-flex flex-column gap-2 align-items-center">
+    <span class="text-body-tertiary fs-sm fw-semibold">border-opacity-75</span>
+    <div class="border-opacity-75 border border-4 border-secondary d-inline-block bd-w-16 bd-h-16"></div>
+  </div>
+  <div class="d-flex flex-column gap-2 align-items-center">
+    <span class="text-body-tertiary fs-sm fw-semibold">border-opacity-50</span>
+    <div class="border-opacity-50 border border-4 border-secondary d-inline-block bd-w-16 bd-h-16"></div>
+  </div>
+  <div class="d-flex flex-column gap-2 align-items-center">
+    <span class="text-body-tertiary fs-sm fw-semibold">border-opacity-25</span>
+    <div class="border-opacity-25 border border-4 border-secondary d-inline-block bd-w-16 bd-h-16"></div>
+  </div>
 </div>
+{{</ example >}}
 
 ```html
-  <div class="border border-4 border-secondary border-opacity-100 ..."></div>
-  <div class="border border-4 border-secondary border-opacity-75 ..."></div>
-  <div class="border border-4 border-secondary border-opacity-50 ..."></div>
-```
-
-### Customize the opacity
-
-To change that opacity, override `--bs-border-opacity` via custom styles or inline styles.
-
-<div class="bd-example d-flex justify-content-around">
-  <div class="border border-4 border-secondary d-inline-block" style="--bs-border-opacity:1;width:64px;height:64px"></div>
-  <div class="border border-4 border-secondary d-inline-block" style="--bs-border-opacity:0.65;width:64px;height:64px"></div>
-  <div class="border border-4 border-secondary d-inline-block" style="--bs-border-opacity:0.45;width:64px;height:64px"></div>
-</div>
-
-```html
-  <div class="border border-4 border-secondary ..." style="--bs-border-opacity: 1"></div>
-  <div class="border border-4 border-secondary ..." style="--bs-border-opacity: 0.65"></div>
-  <div class="border border-4 border-secondary ..." style="--bs-border-opacity: 0.45"></div>
+<div class="border-opacity-100 border border-secondary..."></div>
+<div class="border-opacity-75 border border-secondary..."></div>
+<div class="border-opacity-50 border border-secondary..."></div>
+<div class="border-opacity-25 border border-secondary..."></div>
 ```

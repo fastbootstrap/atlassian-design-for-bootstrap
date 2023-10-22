@@ -35,9 +35,9 @@ FastBootstrap are dependencies on Bootstrap.
 {{< bs-table >}}
 | JS | Basic Plugins | Popper | Extended Plugins | 
 | --- | --- | --- | --- |
-`bootstrap.js` | <i class="fa-solid fa-check fa-sm"></i> |  | |
-`bootstrap.bundle.js` | <i class="fa-solid fa-check fa-sm"></i> | <i class="fa-solid fa-check fa-sm"></i> | |
-`fastbootstrap.js` | <i class="fa-solid fa-check fa-sm"></i> | <i class="fa-solid fa-check fa-sm"></i> | <i class="fa-solid fa-check fa-sm"></i> |
+`bootstrap.js` | <i class="fa-solid fa-check fs-sm"></i> |  | |
+`bootstrap.bundle.js` | <i class="fa-solid fa-check fs-sm"></i> | <i class="fa-solid fa-check fs-sm"></i> | |
+`fastbootstrap.js` | <i class="fa-solid fa-check fs-sm"></i> | <i class="fa-solid fa-check fs-sm"></i> | <i class="fa-solid fa-check fs-sm"></i> |
 {{</ bs-table >}}
 
 ## Utility-first CSS
