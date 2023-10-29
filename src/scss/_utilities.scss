@@ -231,7 +231,95 @@ $utilities: map-merge(
       css-var: true,
       css-variable-name: border-width,
       class: border,
-      values: $border-widths
+      values: $border-widths,
+    ),
+    "margin-extra": (
+      responsive: true,
+      property: margin,
+      class: m,
+      values: $spacers_extra,
+    ),
+    // Margin utilities
+    "margin-x-extra":
+      (
+        responsive: true,
+        property: margin-right margin-left,
+        class: mx,
+        values: $spacers_extra,
+      ),
+    "margin-y-extra": (
+      responsive: true,
+      property: margin-top margin-bottom,
+      class: my,
+      values: $spacers_extra,
+    ),
+    "margin-top-extra": (
+      responsive: true,
+      property: margin-top,
+      class: mt,
+      values: $spacers_extra,
+    ),
+    "margin-end-extra": (
+      responsive: true,
+      property: margin-right,
+      class: me,
+      values: $spacers_extra,
+    ),
+    "margin-bottom-extra": (
+      responsive: true,
+      property: margin-bottom,
+      class: mb,
+      values: $spacers_extra,
+    ),
+    "margin-start-extra": (
+      responsive: true,
+      property: margin-left,
+      class: ms,
+      values: $spacers_extra,
+    ),
+    // Padding utilities
+    "padding-extra":
+      (
+        responsive: true,
+        property: padding,
+        class: p,
+        values: $spacers_extra,
+      ),
+    "padding-x-extra": (
+      responsive: true,
+      property: padding-right padding-left,
+      class: px,
+      values: $spacers_extra,
+    ),
+    "padding-y-extra": (
+      responsive: true,
+      property: padding-top padding-bottom,
+      class: py,
+      values: $spacers_extra,
+    ),
+    "padding-top-extra": (
+      responsive: true,
+      property: padding-top,
+      class: pt,
+      values: $spacers,
+    ),
+    "padding-end-extra": (
+      responsive: true,
+      property: padding-right,
+      class: pe,
+      values: $spacers_extra,
+    ),
+    "padding-bottom-extra": (
+      responsive: true,
+      property: padding-bottom,
+      class: pb,
+      values: $spacers_extra,
+    ),
+    "padding-start-extra": (
+      responsive: true,
+      property: padding-left,
+      class: ps,
+      values: $spacers_extra,
     ),
   )
 );
