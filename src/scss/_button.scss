@@ -122,10 +122,10 @@ $btn-colors-bs: ("success","dark", "light", "info");
       }
     } @else if $color== "secondary" {
       @include button-variant2(
-        $ds-background-discovery-bold,
+        $ds-background-neutral-bold,
         $border: transparent,
         $color: $ds-text-inverse,
-        $hover-background: $ds-background-discovery-bold-hovered,
+        $hover-background: $ds-background-neutral-bold-hovered,
         $hover-border: transparent,
         $hover-color: $ds-text-inverse,
         $active-background: $ds-background-selected,
@@ -135,7 +135,7 @@ $btn-colors-bs: ("success","dark", "light", "info");
 
       &:not(.active):active {
         --#{$prefix}btn-active-color: #{$ds-text-inverse};
-        --#{$prefix}btn-active-bg: #{$ds-background-discovery-bold-pressed};
+        --#{$prefix}btn-active-bg: #{$ds-background-neutral-bold-pressed};
       }
     }
   }
@@ -180,9 +180,9 @@ $btn-colors-bs: ("success","dark", "light", "info");
     } @else if $color== "secondary" {
       @include button-variant2(
         transparent,
-        $border: $ds-background-discovery-bold,
-        $color: $ds-background-discovery-bold,
-        $hover-background: $ds-background-discovery-bold-hovered,
+        $border: $ds-background-neutral-bold,
+        $color: $ds-background-neutral-bold,
+        $hover-background: $ds-background-neutral-bold-hovered,
         $hover-border: transparent,
         $hover-color: $ds-text-inverse,
         $active-background: $ds-background-selected,
@@ -192,7 +192,7 @@ $btn-colors-bs: ("success","dark", "light", "info");
 
       &:not(.active):active {
         --#{$prefix}btn-active-color: #{$ds-text-inverse};
-        --#{$prefix}btn-active-bg: #{$ds-background-discovery-bold-pressed};
+        --#{$prefix}btn-active-bg: #{$ds-background-neutral-bold-pressed};
       }
     } @else if $color== "danger" {
       @include button-variant2(

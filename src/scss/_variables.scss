@@ -1,8 +1,7 @@
 // BS Settings
 $enable-negative-margins: true;
-$enable-validation-icons: true;
 $enable-shadows: false;
-$enable-dark-mode: true;
+$enable-deprecation-messages: false;
 $prefix: bs-;
 
 $null-shadow: 0 0 0 transparent;
@@ -147,13 +146,13 @@ $oranges: (
 
 // BS
 $primary: light("background-brand-bold");
-$secondary: light("background-discovery-bold");
+$secondary: light("background-neutral-bold");
 $success: light("background-success-bold");
 $info: light("background-information-bold");
 $warning: light("background-warning-bold");
 $danger: light("background-danger-bold");
-$light: light("background-accent-gray-subtler");
-$dark: light("background-neutral-bold");
+$light: $neutral-100;
+$dark: $neutral-1100;
 
 $primary-text-emphasis: $ds-text;
 $secondary-text-emphasis: $ds-text;
@@ -165,22 +164,22 @@ $light-text-emphasis: $ds-text;
 $dark-text-emphasis: $ds-text-inverse;
 
 $primary-bg-subtle: $ds-background-brand-subtlest;
-$secondary-bg-subtle: $ds-background-discovery;
+$secondary-bg-subtle: $ds-background-accent-gray-subtler;
 $success-bg-subtle: $ds-background-success;
 $info-bg-subtle: $ds-background-information;
 $warning-bg-subtle: $ds-background-warning;
 $danger-bg-subtle: $ds-background-danger;
-$light-bg-subtle: $ds-background-accent-gray-subtlest;
-$dark-bg-subtle: $ds-background-accent-gray-subtle;
+$light-bg-subtle: $neutral-100a;
+$dark-bg-subtle: $neutral-600;
 
 $primary-border-subtle: $ds-background-accent-blue-subtle;
-$secondary-border-subtle: $ds-background-accent-purple-subtle;
+$secondary-border-subtle: $ds-background-accent-gray-subtle;
 $success-border-subtle: $ds-background-accent-green-subtle;
 $info-border-subtle: $ds-background-accent-blue-subtle;
 $warning-border-subtle: $ds-background-accent-yellow-subtle;
 $danger-border-subtle: $ds-background-accent-red-subtle;
 $light-border-subtle: $ds-background-accent-gray-subtlest;
-$dark-border-subtle: $ds-background-accent-gray-subtle;
+$dark-border-subtle: $ds-background-neutral-bold;
 
 // Spacing
 $spacer: 1rem;
@@ -194,17 +193,43 @@ $spacers: (
   6: $spacer * 1.5,
   7: $spacer * 1.75,
   8: $spacer * 2,
-  9: $spacer * 2.5,
-  10: $spacer * 3,
+  9: $spacer * 2.25,
+  10: $spacer * 2.5,
+);
+
+// Available on `margin` and `padding`.
+$spacers_extra: (
+  11: $spacer * 2.75,
+  12: $spacer * 3,
+  14: $spacer * 3.5,
+  16: $spacer * 4,
+  20: $spacer * 5,
+  24: $spacer * 6,
+  28: $spacer * 7,
+  32: $spacer * 8,
+  36: $spacer * 9,
+  40: $spacer * 10,
+  44: $spacer * 11,
+  48: $spacer * 12,
+  52: $spacer * 13,
+  56: $spacer * 14,
+  60: $spacer * 15,
+  64: $spacer * 16,
+  68: $spacer * 17,
+  72: $spacer * 18,
+  76: $spacer * 19,
+  80: $spacer * 20,
+  84: $spacer * 21,
+  88: $spacer * 22,
+  92: $spacer * 23,
+  96: $spacer * 24,
 );
 
 // Body
 $body-color: light("text");
 $body-bg: light("surface");
-
 $body-secondary-color: light("text-subtle");
 $body-tertiary-color: light("text-subtlest");
-
 $mark-bg: $yellow-100;
 
 // Typography
@@ -394,6 +419,8 @@ $card-spacer-x: 1.5rem;
 $card-cap-bg: transparent;
 $card-img-overlay-padding: 1.5rem;
 $card-subtitle-color: $ds-text-subtlest;
+$card-title-spacer-y: $ds-space-200;
+$card-bg: var(--#{$ds-prefix}surface-raised);
 
 // Pagination
 $pagination-font-size: 0.875rem;

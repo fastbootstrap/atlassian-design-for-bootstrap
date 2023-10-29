@@ -33,10 +33,5 @@ $space-tokens: (
       $value: nth($values, 2);
       --#{$ds-prefix}#{$color}: #{$value};
     }
-
-    .bg-light {
-      --#{$prefix}bg-opacity: 0.08;
-      --#{$prefix}light-rgb: #{to-rgb(dark("background-neutral"))};
-    }
   }
 }
