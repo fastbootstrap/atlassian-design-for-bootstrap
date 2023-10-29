@@ -40,7 +40,7 @@ Most custom components do not have `position: relative` by default, so we need t
 ## Columns with stretched link
 
 {{< example >}}
-<div class="row g-0 bg-light position-relative">
+<div class="row g-0 position-relative">
   <div class="col-12 col-md-5 mb-md-0 p-md-4">
     <img src="/images/cards/1.jpg" class="img-fluid" alt="...">
   </div>
@@ -98,9 +98,9 @@ If the stretched link doesn’t seem to work, the [containing block](https://dev
       Stretched link will not work here, because <code>position: relative</code> is added to the link
       </a>
     </p>
-    <p class="card-text bg-light" style="transform: rotate(0);">
+    <p class="card-text" style="transform: rotate(0);">
       This 
-      <a href="#" class="text-warning stretched-link">stretched link</a> 
+      <a href="#" class="stretched-link"><code>stretched link</code></a> 
       will only be spread over the <code>p</code>-tag, because a transform is applied to it.
     </p>
   </div>

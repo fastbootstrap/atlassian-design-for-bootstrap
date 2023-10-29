@@ -24,7 +24,7 @@ Use the ratio helper to manage the aspect ratios of external content like `<ifra
 
 Wrap any embed, like an `<iframe>`, in a parent element with `.ratio` and an aspect ratio class. The immediate child element is automatically sized thanks to our universal selector `.ratio > *`.
 
-{{< example class="bg-light">}}
+{{< example >}}
 <div class="ratio ratio-16x9">
   <iframe 
     src="https://www.youtube.com/embed/vlDzYIIOYmM"
@@ -38,7 +38,7 @@ Wrap any embed, like an `<iframe>`, in a parent element with `.ratio` and an asp
 
 Use the `radio-*` as a media container and put an image with `.img-fluid` as a child element.
 
-{{< example class="d-flex flex-column gap-4 text-center" show_source="false" >}}
+{{< example class="d-flex flex-column gap-4 text-center bg-neutral-subtler bg-grid-slate-100" show_source="false" >}}
 <div class="mx-auto bd-max-w-80">
   <div class="ratio ratio-4x3">
     <img class="img-fluid" src="https://images.unsplash.com/photo-1502657877623-f66bf489d236?auto=format&fit=crop&w=800" />
@@ -65,8 +65,8 @@ Each `.ratio-*` class includes a CSS custom property (or CSS variable) in the se
 
 For example, to create a `2x1` aspect ratio, set `--bs-aspect-ratio: 50%` on the `.ratio`.
 
-{{< example show_source="false" >}}
-<div class="ratio mx-auto text-bg-secondary bd-max-w-40 text-center" style="--bs-aspect-ratio: 50%;">
+{{< example class="bg-neutral-subtler bg-grid-slate-100" show_source="false">}}
+<div class="ratio mx-auto text-bg-purple bd-max-w-40 text-center" style="--bs-aspect-ratio: 50%;">
   <div class="d-flex align-items-center justify-content-center fw-semibold">2x1</div>
 </div>
 {{</ example >}}

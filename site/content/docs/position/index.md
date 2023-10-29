@@ -33,14 +33,14 @@ Where *position* is one of:
 - `50` - for `50%` edge position
 - `100` - for `100%` edge position
 
-{{< example class="bg-grid-slate-100" show_source="false" >}}
+{{< example class="bg-grid-slate-100 bg-neutral-subtler" show_source="false" >}}
 <div class="position-relative bg-purple-subtler bd-h-40 max-w-2xl mx-auto">
-  <div class="position-absolute top-0 start-0 bd-w-10 bd-h-10 text-bg-secondary d-inline-flex align-items-center justify-content-center">01</div>
-  <div class="position-absolute top-0 end-0 bd-w-10 bd-h-10 text-bg-secondary d-inline-flex align-items-center justify-content-center">02</div>
-  <div class="position-absolute top-50 start-50 bd-w-10 bd-h-10 text-bg-secondary d-inline-flex align-items-center justify-content-center">03</div>
-  <div class="position-absolute bottom-50 end-50 bd-w-10 bd-h-10 text-bg-secondary d-inline-flex align-items-center justify-content-center">04</div>
-  <div class="position-absolute bottom-0 start-0 bd-w-10 bd-h-10 text-bg-secondary d-inline-flex align-items-center justify-content-center">05</div>
-  <div class="position-absolute bottom-0 end-0 bd-w-10 bd-h-10 text-bg-secondary d-inline-flex align-items-center justify-content-center">06</div>
+  <div class="position-absolute top-0 start-0 bd-w-10 bd-h-10 text-bg-purple d-inline-flex align-items-center justify-content-center">01</div>
+  <div class="position-absolute top-0 end-0 bd-w-10 bd-h-10 text-bg-purple d-inline-flex align-items-center justify-content-center">02</div>
+  <div class="position-absolute top-50 start-50 bd-w-10 bd-h-10 text-bg-purple d-inline-flex align-items-center justify-content-center">03</div>
+  <div class="position-absolute bottom-50 end-50 bd-w-10 bd-h-10 text-bg-purple d-inline-flex align-items-center justify-content-center">04</div>
+  <div class="position-absolute bottom-0 start-0 bd-w-10 bd-h-10 text-bg-purple d-inline-flex align-items-center justify-content-center">05</div>
+  <div class="position-absolute bottom-0 end-0 bd-w-10 bd-h-10 text-bg-purple d-inline-flex align-items-center justify-content-center">06</div>
 </div>
 {{< /example >}}
 
@@ -61,17 +61,17 @@ In addition, you can also center the elements with the transform utility class `
 
 This class applies the transformations `translateX(-50%)` and `translateY(-50%)` to the element which, in combination with the edge positioning utilities, allows you to absolute center an element.
 
-{{< example class="bg-grid-slate-100" show_source="false" >}}
+{{< example class="bg-grid-slate-100 bg-neutral-subtler" show_source="false" >}}
 <div class="position-relative bg-purple-subtler bd-h-40 max-w-2xl mx-auto">
-  <div class="position-absolute top-0 start-0 translate-middle bd-w-10 bd-h-10 text-bg-secondary d-inline-flex align-items-center justify-content-center">01</div>
-  <div class="position-absolute top-0 start-50 translate-middle bd-w-10 bd-h-10 text-bg-secondary d-inline-flex align-items-center justify-content-center">02</div>
-  <div class="position-absolute top-0 start-100 translate-middle bd-w-10 bd-h-10 text-bg-secondary d-inline-flex align-items-center justify-content-center">03</div>
-  <div class="position-absolute top-50 start-0 translate-middle bd-w-10 bd-h-10 text-bg-secondary d-inline-flex align-items-center justify-content-center">04</div>
-  <div class="position-absolute top-50 start-50 translate-middle bd-w-10 bd-h-10 text-bg-secondary d-inline-flex align-items-center justify-content-center">05</div>
-  <div class="position-absolute top-50 start-100 translate-middle bd-w-10 bd-h-10 text-bg-secondary d-inline-flex align-items-center justify-content-center">06</div>
-  <div class="position-absolute top-100 start-0 translate-middle bd-w-10 bd-h-10 text-bg-secondary d-inline-flex align-items-center justify-content-center">07</div>
-  <div class="position-absolute top-100 start-50 translate-middle bd-w-10 bd-h-10 text-bg-secondary d-inline-flex align-items-center justify-content-center">08</div>
-  <div class="position-absolute top-100 start-100 translate-middle bd-w-10 bd-h-10 text-bg-secondary d-inline-flex align-items-center justify-content-center">09</div>
+  <div class="position-absolute top-0 start-0 translate-middle bd-w-10 bd-h-10 text-bg-purple d-inline-flex align-items-center justify-content-center">01</div>
+  <div class="position-absolute top-0 start-50 translate-middle bd-w-10 bd-h-10 text-bg-purple d-inline-flex align-items-center justify-content-center">02</div>
+  <div class="position-absolute top-0 start-100 translate-middle bd-w-10 bd-h-10 text-bg-purple d-inline-flex align-items-center justify-content-center">03</div>
+  <div class="position-absolute top-50 start-0 translate-middle bd-w-10 bd-h-10 text-bg-purple d-inline-flex align-items-center justify-content-center">04</div>
+  <div class="position-absolute top-50 start-50 translate-middle bd-w-10 bd-h-10 text-bg-purple d-inline-flex align-items-center justify-content-center">05</div>
+  <div class="position-absolute top-50 start-100 translate-middle bd-w-10 bd-h-10 text-bg-purple d-inline-flex align-items-center justify-content-center">06</div>
+  <div class="position-absolute top-100 start-0 translate-middle bd-w-10 bd-h-10 text-bg-purple d-inline-flex align-items-center justify-content-center">07</div>
+  <div class="position-absolute top-100 start-50 translate-middle bd-w-10 bd-h-10 text-bg-purple d-inline-flex align-items-center justify-content-center">08</div>
+  <div class="position-absolute top-100 start-100 translate-middle bd-w-10 bd-h-10 text-bg-purple d-inline-flex align-items-center justify-content-center">09</div>
 </div>
 {{< /example >}}
 
@@ -91,17 +91,17 @@ This class applies the transformations `translateX(-50%)` and `translateY(-50%)`
 
 By adding `.translate-middle-x` or `.translate-middle-y` classes, elements can be positioned only in horizontal or vertical direction.
 
-{{< example class="bg-grid-slate-100" show_source="false" >}}
+{{< example class="bg-grid-slate-100 bg-neutral-subtler" show_source="false" >}}
 <div class="position-relative bg-purple-subtler bd-h-40 max-w-2xl mx-auto">
-  <div class="position-absolute top-0 start-0 bd-w-10 bd-h-10 text-bg-secondary d-inline-flex align-items-center justify-content-center">01</div>
-  <div class="position-absolute top-0 start-50 translate-middle-x bd-w-10 bd-h-10 text-bg-secondary d-inline-flex align-items-center justify-content-center">02</div>
-  <div class="position-absolute top-0 end-0 bd-w-10 bd-h-10 text-bg-secondary d-inline-flex align-items-center justify-content-center">03</div>
-  <div class="position-absolute top-50 start-0 translate-middle-y bd-w-10 bd-h-10 text-bg-secondary d-inline-flex align-items-center justify-content-center">04</div>
-  <div class="position-absolute top-50 start-50 translate-middle bd-w-10 bd-h-10 text-bg-secondary d-inline-flex align-items-center justify-content-center">05</div>
-  <div class="position-absolute top-50 end-0 translate-middle-y bd-w-10 bd-h-10 text-bg-secondary d-inline-flex align-items-center justify-content-center">06</div>
-  <div class="position-absolute bottom-0 start-0 bd-w-10 bd-h-10 text-bg-secondary d-inline-flex align-items-center justify-content-center">07</div>
-  <div class="position-absolute bottom-0 start-50 translate-middle-x bd-w-10 bd-h-10 text-bg-secondary d-inline-flex align-items-center justify-content-center">08</div>
-  <div class="position-absolute bottom-0 end-0 bd-w-10 bd-h-10 text-bg-secondary d-inline-flex align-items-center justify-content-center">09</div>
+  <div class="position-absolute top-0 start-0 bd-w-10 bd-h-10 text-bg-purple d-inline-flex align-items-center justify-content-center">01</div>
+  <div class="position-absolute top-0 start-50 translate-middle-x bd-w-10 bd-h-10 text-bg-purple d-inline-flex align-items-center justify-content-center">02</div>
+  <div class="position-absolute top-0 end-0 bd-w-10 bd-h-10 text-bg-purple d-inline-flex align-items-center justify-content-center">03</div>
+  <div class="position-absolute top-50 start-0 translate-middle-y bd-w-10 bd-h-10 text-bg-purple d-inline-flex align-items-center justify-content-center">04</div>
+  <div class="position-absolute top-50 start-50 translate-middle bd-w-10 bd-h-10 text-bg-purple d-inline-flex align-items-center justify-content-center">05</div>
+  <div class="position-absolute top-50 end-0 translate-middle-y bd-w-10 bd-h-10 text-bg-purple d-inline-flex align-items-center justify-content-center">06</div>
+  <div class="position-absolute bottom-0 start-0 bd-w-10 bd-h-10 text-bg-purple d-inline-flex align-items-center justify-content-center">07</div>
+  <div class="position-absolute bottom-0 start-50 translate-middle-x bd-w-10 bd-h-10 text-bg-purple d-inline-flex align-items-center justify-content-center">08</div>
+  <div class="position-absolute bottom-0 end-0 bd-w-10 bd-h-10 text-bg-purple d-inline-flex align-items-center justify-content-center">09</div>
 </div>
 {{</ example >}}
 
@@ -126,7 +126,7 @@ Here are some real life examples of these classes:
 
 {{< example class="bd-example-position-examples d-flex justify-content-around" >}}
 <button type="button" class="btn btn-primary position-relative">
-  Mails <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-bg-secondary">+99 <span class="visually-hidden">unread messages</span></span>
+  Mails <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-bg-purple">+99 <span class="visually-hidden">unread messages</span></span>
 </button>
 
 <button type="button" class="btn btn-primary position-relative">

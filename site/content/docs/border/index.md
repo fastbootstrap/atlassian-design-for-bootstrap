@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Border
+title: Border Side
 description: "Utilities for controlling the border of an element, including border style and sides."
 toc: true
 group: borders
@@ -19,28 +19,30 @@ Use border utilities to add or remove an element’s borders. Choose from all bo
 
 Add borders to an element.
 
-<div class="bd-example d-flex flex-column flex-md-row justify-content-around text-center">
-<div class="d-flex flex-column">
-  <p class="fw-semibold text-muted fs-sm mb-2">border</p>
-  <div class="border d-inline-block mx-auto bg-light" style="width: 64px;height: 64px"></div>
+{{< example class="bg-neutral-subtler bg-grid-slate-100" show_source="false">}}
+<div class="d-flex justify-content-start justify-content-md-around text-center gap-4 overflow-x-auto">
+  <div class="d-flex flex-column">
+    <p class="fw-semibold text-muted fs-sm text-nowrap">border</p>
+    <div class="border d-inline-block border-secondary mx-auto bd-w-16 bd-h-16"></div>
+  </div>
+  <div class="d-flex flex-column">
+    <p class="fw-semibold text-muted fs-sm text-nowrap">border-top</p>
+    <div class="border-top d-inline-block border-secondary mx-auto bd-w-16 bd-h-16"></div>
+  </div>
+  <div class="d-flex flex-column">
+    <p class="fw-semibold text-muted fs-sm text-nowrap">border-end</p>
+    <div class="border-end d-inline-block border-secondary mx-auto bd-w-16 bd-h-16"></div>
+  </div>
+  <div class="d-flex flex-column">
+    <p class="fw-semibold text-muted fs-sm text-nowrap">border-bottom</p>
+    <div class="border-bottom d-inline-block border-secondary mx-auto bd-w-16 bd-h-16"></div>
+  </div>
+  <div class="d-flex flex-column">
+    <p class="fw-semibold text-muted fs-sm text-nowrap">border-start</p>
+    <div class="border-start d-inline-block border-secondary mx-auto bd-w-16 bd-h-16"></div>
+  </div>
 </div>
-<div class="d-flex flex-column">
-  <p class="fw-semibold text-muted fs-sm mb-2">border-top</p>
-  <div class="border-top d-inline-block mx-auto bg-light" style="width: 64px;height: 64px"></div>
-</div>
-<div class="d-flex flex-column">
-  <p class="fw-semibold text-muted fs-sm mb-2">border-end</p>
-  <div class="border-end d-inline-block mx-auto  bg-light" style="width: 64px;height: 64px"></div>
-</div>
-<div class="d-flex flex-column">
-  <p class="fw-semibold text-muted fs-sm mb-2">border-bottom</p>
-  <div class="border-bottom d-inline-block mx-auto bg-light" style="width: 64px;height: 64px"></div>
-</div>
-<div class="d-flex flex-column">
-  <p class="fw-semibold text-muted fs-sm mb-2">border-start</p>
-  <div class="border-start d-inline-block mx-auto bg-light" style="width: 64px;height: 64px"></div>
-</div>
-</div>
+{{</ example >}}
 
 ```html
 <div class="border ..."></div>
@@ -53,24 +55,26 @@ Add borders to an element.
 
 Use the `border-top-0`, `border-end-0` or `border-bottom-0` remove the specified one side border.
 
-<div class="bd-example d-flex flex-column flex-md-row justify-content-around text-center">
+{{< example class="bg-neutral-subtler bg-grid-slate-100" show_source="false">}}
+<div class="d-flex justify-content-start justify-content-md-around text-center gap-4 overflow-x-auto">
 <div class="d-flex flex-column">
-  <p class="fw-semibold text-muted fs-sm mb-2">border-top-0</p>
-  <div class="border border-top-0 d-inline-block mx-auto bg-light" style="width: 64px;height: 64px"></div>
-</div>
-<div class="d-flex flex-column">
-  <p class="fw-semibold text-muted fs-sm mb-2">border-end-0</p>
-  <div class="border border-end-0 d-inline-block mx-auto  bg-light" style="width: 64px;height: 64px"></div>
+  <p class="fw-semibold text-muted fs-sm text-nowrap">border-top-0</p>
+  <div class="border border-top-0 d-inline-block mx-auto border-secondary bd-w-16 bd-h-16"></div>
 </div>
 <div class="d-flex flex-column">
-  <p class="fw-semibold text-muted fs-sm mb-2">border-bottom-0</p>
-  <div class="border border-bottom-0 d-inline-block mx-auto bg-light" style="width: 64px;height: 64px"></div>
+  <p class="fw-semibold text-muted fs-sm text-nowrap">border-end-0</p>
+  <div class="border border-end-0 d-inline-block mx-auto border-secondary bd-w-16 bd-h-16"></div>
 </div>
 <div class="d-flex flex-column">
-  <p class="fw-semibold text-muted fs-sm mb-2">border-start-0</p>
-  <div class="border border-start-0 d-inline-block mx-auto bg-light" style="width: 64px;height: 64px"></div>
+  <p class="fw-semibold text-muted fs-sm text-nowrap">border-bottom-0</p>
+  <div class="border border-bottom-0 d-inline-block mx-auto border-secondary bd-w-16 bd-h-16"></div>
+</div>
+<div class="d-flex flex-column">
+  <p class="fw-semibold text-muted fs-sm text-nowrap">border-start-0</p>
+  <div class="border border-start-0 d-inline-block mx-auto border-secondary bd-w-16 bd-h-16"></div>
 </div>
 </div>
+{{</ example >}}
 
 ```html
 <div class="border border-top-0 ..."></div>
@@ -82,13 +86,6 @@ Use the `border-top-0`, `border-end-0` or `border-bottom-0` remove the specified
 ### Remove all border
 
 Use the `border-0` to remove an element's border.
-
-<div class="bd-example text-center">
-<div class="d-flex flex-column">
-  <p class="fw-semibold text-muted fs-sm mb-2">border-0</p>
-  <div class="border border-0 d-inline-block mx-auto bg-purple-50" style="width: 64px;height: 64px"></div>
-</div>
-</div>
 
 ```html
 <div class="border border-0 ..."></div>

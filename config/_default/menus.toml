@@ -1,6 +1,12 @@
 #### Main Navigation ###########
 
 [[global]]
+name = "Get Started"
+identifier = "get-started"
+url = "/get-started"
+weight = 10
+
+[[global]]
 name = "Components"
 identifier = "components"
 url = "/components"

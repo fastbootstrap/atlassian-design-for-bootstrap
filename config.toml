@@ -16,7 +16,8 @@ description = "Atlassian Design for Bootstrap 5. Powerful and free UI Kits for B
 page_title_suffix = "FastBootstrap"
 github_org = "https://github.com/fastbootstrap"
 repo = "https://github.com/fastbootstrap/atlassian-design-for-bootstrap"
-version_tag = "v1.1.2"
+current_version = "1.1.2"
+download.source = "https://github.com/fastbootstrap/atlassian-design-for-bootstrap/archive/refs/tags/v1.1.2.zip"
 
 [params.cdn]
 css = "https://cdn.jsdelivr.net/npm/fastbootstrap@1.1.2/dist/css/fastbootstrap.min.css"

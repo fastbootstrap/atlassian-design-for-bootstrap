@@ -16,7 +16,7 @@
 
 {{ if isset .page.Site.Data.sidebar $active_menu }}
   {{ range (index .page.Site.Data.sidebar $active_menu) }}
-    <div class="sidebar__section-heading d-block my-2 fw-bold text-capitalize ls-wider fs-sm">{{ .title }}</div>
+    <div class="sidebar__section-heading d-block my-2 fw-semibold text-capitalize ls-wider fs-sm">{{ .title }}</div>
     <ul class="list-unstyled">
       {{ range index $menus .name }}
         <li>

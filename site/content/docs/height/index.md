@@ -21,16 +21,16 @@ Use `h-{number}` to set an element to a fixed height.
 
 {{< example class="bg-grid-slate-100 fa-xs fw-semibold" show_source="false" >}}
 <div class="bd-h-64 d-flex flex-row gap-5 flex-wrap align-items-end  justify-content-center">
-  <div class="h-100 bd-w-8 text-bg-secondary rounded d-flex flex-column justify-content-end pb-4">
+  <div class="h-100 bd-w-8 text-bg-purple rounded d-flex flex-column justify-content-end pb-4">
     <span class="-rotate-90 lh-1">h-100</span>
   </div>
-  <div class="h-75 bd-w-8 text-bg-secondary rounded d-flex flex-column justify-content-end pb-4">
+  <div class="h-75 bd-w-8 text-bg-purple rounded d-flex flex-column justify-content-end pb-4">
     <span class="-rotate-90 lh-1">h-75</span>
   </div>
-  <div class="h-50 bd-w-8 text-bg-secondary rounded d-flex flex-column justify-content-end pb-4">
+  <div class="h-50 bd-w-8 text-bg-purple rounded d-flex flex-column justify-content-end pb-4">
     <span class="-rotate-90 lh-1">h-50</span>
   </div>
-  <div class="h-25 bd-w-8 text-bg-secondary rounded d-flex flex-column justify-content-end pb-4">
+  <div class="h-25 bd-w-8 text-bg-purple rounded d-flex flex-column justify-content-end pb-4">
     <span class="-rotate-90 lh-1">h-25</span>
   </div>
 </div>
@@ -66,7 +66,7 @@ Use `mh-100` to set the maximum height of an element that is full, depending on 
 
 {{< example class="text-center" show_source="false" >}}
 <div class="bg-purple-subtler" style="height:100px">
-  <div class="text-bg-secondary d-inline-block mh-100 p-2" style="height:200px">
+  <div class="text-bg-purple d-inline-block mh-100 p-2" style="height:200px">
     max-height 100%
   </div>
 </div>

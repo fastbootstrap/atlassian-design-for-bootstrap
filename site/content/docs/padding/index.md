@@ -61,21 +61,21 @@ Use the `p{t|s|b|e}-{size}` utilities to apply padding to an individual side, or
 For example, `pt-4` would add `1.5rem` of padding to the top of an element, `pe-3` would add `1rem` of padding to the right of an element, `pb-5` would add `3rem` of padding to the bottom of an element, and `ps-2` would add `0.5rem` of padding to the left of an element.
 
 {{< example class="d-flex flex-wrap align-items-center fs-sm fw-semibold justify-content-center gap-5 bg-grid-slate-100" show_source="false" >}}
-<div class="d-flex flex-column text-bg-secondary rounded">
+<div class="d-flex flex-column text-bg-purple rounded">
   <div class="bg-striped-white lh-base pt-4"></div>
-  <div class="text-bg-secondary p-4 rounded">pt-4</div>
+  <div class="text-bg-purple p-4 rounded">pt-4</div>
 </div>
-<div class="d-flex flex-row-reverse text-bg-secondary rounded">
+<div class="d-flex flex-row-reverse text-bg-purple rounded">
   <div class="bg-striped-white lh-1 pe-3"></div>
-  <div class="text-bg-secondary p-4 rounded">pe-3</div>
+  <div class="text-bg-purple p-4 rounded">pe-3</div>
 </div>
-<div class="d-flex flex-column-reverse text-bg-secondary rounded">
+<div class="d-flex flex-column-reverse text-bg-purple rounded">
   <div class="bg-striped-white lh-base pb-5"></div>
-  <div class="text-bg-secondary p-4 rounded">pb-5</div>
+  <div class="text-bg-purple p-4 rounded">pb-5</div>
 </div>
-<div class="d-flex flex-row text-bg-secondary rounded">
+<div class="d-flex flex-row text-bg-purple rounded">
   <div class="bg-striped-white lh-1 ps-2"></div>
-  <div class="text-bg-secondary p-4 rounded">ps-2</div>
+  <div class="text-bg-purple p-4 rounded">ps-2</div>
 </div>
 {{</ example >}}
 
@@ -91,9 +91,9 @@ For example, `pt-4` would add `1.5rem` of padding to the top of an element, `pe-
 Control the horizontal padding of an element using the `px-{size}` utilities.
 
 {{< example class="d-flex flex-wrap align-items-center fs-sm fw-semibold justify-content-center gap-5 bg-grid-slate-100" show_source="false" >}}
-<div class="d-flex text-bg-secondary rounded">
+<div class="d-flex text-bg-purple rounded">
   <div class="bg-striped-white bd-w-12"></div>
-  <div class="text-bg-secondary p-4 text-center">px-6</div>
+  <div class="text-bg-purple p-4 text-center">px-6</div>
   <div class="bg-striped-white bd-w-12"></div>
 </div>
 {{</ example >}}
@@ -107,9 +107,9 @@ Control the horizontal padding of an element using the `px-{size}` utilities.
 Control the vertical padding of an element using the `py-{size}` utilities.
 
 {{< example class="d-flex justify-content-center s-sm fw-semibold bg-grid-slate-100" show_source="false" >}}
-<div class="d-flex flex-column text-bg-secondary rounded">
+<div class="d-flex flex-column text-bg-purple rounded">
   <div class="bg-striped-white bd-h-12"></div>
-  <div class="text-bg-secondary p-4 text-center">py-6</div>
+  <div class="text-bg-purple p-4 text-center">py-6</div>
   <div class="bg-striped-white bd-h-12"></div>
 </div>
 {{</ example >}}
@@ -123,9 +123,9 @@ Control the vertical padding of an element using the `py-{size}` utilities.
 Control the padding on all sides of an element using the `p-{size}` utilities.
 
 {{< example class="d-flex justify-content-center fs-sm fw-semibold bg-grid-slate-100" show_source="false" >}}
-<div class="text-bg-secondary rounded">
+<div class="text-bg-purple rounded">
 <div class="p-5 bg-striped-white">
-  <div class="text-bg-secondary p-4 rounded">p-5</div>
+  <div class="text-bg-purple p-4 rounded">p-5</div>
 </div>
 </div>
 {{</ example >}}
@@ -141,9 +141,9 @@ All padding utilities that supports responsive at specific [breakpoints]({{< doc
 For example, use `py-md-5` to apply the `py-5` utility at only `medium screen` sizes and above.
 
 {{< example class="d-flex justify-content-center fs-sm fw-semibold bg-grid-slate-100" show_source="false" >}}
-<div class="text-bg-secondary rounded">
+<div class="text-bg-purple rounded">
 <div class="bg-striped-white py-sm-3 py-md-5">
-  <div class="text-bg-secondary p-4 rounded">py-sm-3 py-md-5</div>
+  <div class="text-bg-purple p-4 rounded">py-sm-3 py-md-5</div>
 </div>
 </div>
 {{</ example >}}

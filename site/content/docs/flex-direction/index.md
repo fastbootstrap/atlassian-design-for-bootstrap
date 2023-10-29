@@ -23,9 +23,9 @@ Use `flex-row` to position flex items horizontally in the same direction as text
 
 {{< example class="bg-grid-slate-100" show_source="false" >}}
 <div class="d-flex flex-row gap-4 text-center">
-  <div class="text-bg-secondary rounded d-flex justify-content-center align-items-center bd-w-14 bd-h-14">01</div>
-  <div class="text-bg-secondary rounded d-flex justify-content-center align-items-center bd-w-14 bd-h-14">02</div>
-  <div class="text-bg-secondary rounded d-flex justify-content-center align-items-center bd-w-14 bd-h-14">03</div>
+  <div class="text-bg-purple rounded d-flex justify-content-center align-items-center bd-w-14 bd-h-14">01</div>
+  <div class="text-bg-purple rounded d-flex justify-content-center align-items-center bd-w-14 bd-h-14">02</div>
+  <div class="text-bg-purple rounded d-flex justify-content-center align-items-center bd-w-14 bd-h-14">03</div>
 </div>
 {{</ example >}}
 
@@ -43,9 +43,9 @@ Use `flex-row-reverse` to position flex items horizontally in the opposite direc
 
 {{< example class="bg-grid-slate-100" show_source="false" >}}
 <div class="d-flex flex-row-reverse gap-4">
-  <div class="text-bg-secondary rounded d-flex justify-content-center align-items-center bd-w-14 bd-h-14">01</div>
-  <div class="text-bg-secondary rounded d-flex justify-content-center align-items-center bd-w-14 bd-h-14">02</div>
-  <div class="text-bg-secondary rounded d-flex justify-content-center align-items-center bd-w-14 bd-h-14">03</div>
+  <div class="text-bg-purple rounded d-flex justify-content-center align-items-center bd-w-14 bd-h-14">01</div>
+  <div class="text-bg-purple rounded d-flex justify-content-center align-items-center bd-w-14 bd-h-14">02</div>
+  <div class="text-bg-purple rounded d-flex justify-content-center align-items-center bd-w-14 bd-h-14">03</div>
 </div>
 {{</ example >}}
 
@@ -64,9 +64,9 @@ Use `flex-column` to position flex items vertically.
 {{< example class="bg-grid-slate-100" show_source="false" >}}
   <div class="mx-auto bd-max-w-80 fw-medium">
     <div class="d-flex flex-column gap-4">
-      <div class="text-bg-secondary p-4 rounded d-flex justify-content-center align-items-center">01</div>
-      <div class="text-bg-secondary p-4 rounded d-flex justify-content-center align-items-center">02</div>
-      <div class="text-bg-secondary p-4 rounded d-flex justify-content-center align-items-center">03</div>
+      <div class="text-bg-purple p-4 rounded d-flex justify-content-center align-items-center">01</div>
+      <div class="text-bg-purple p-4 rounded d-flex justify-content-center align-items-center">02</div>
+      <div class="text-bg-purple p-4 rounded d-flex justify-content-center align-items-center">03</div>
     </div>
   </div>
 {{</ example >}}
@@ -124,9 +124,9 @@ For example, use `flex-md-row` to apply the `flex-row` utility at only medium sc
 
 {{< example class="bg-grid-slate-100" show_source="false" >}}
 <div class="d-flex flex-column flex-md-row gap-4 text-center">
-  <div class="text-bg-secondary rounded d-flex justify-content-center align-items-center bd-w-14 bd-h-14">01</div>
-  <div class="text-bg-secondary rounded d-flex justify-content-center align-items-center bd-w-14 bd-h-14">02</div>
-  <div class="text-bg-secondary rounded d-flex justify-content-center align-items-center bd-w-14 bd-h-14">03</div>
+  <div class="text-bg-purple rounded d-flex justify-content-center align-items-center bd-w-14 bd-h-14">01</div>
+  <div class="text-bg-purple rounded d-flex justify-content-center align-items-center bd-w-14 bd-h-14">02</div>
+  <div class="text-bg-purple rounded d-flex justify-content-center align-items-center bd-w-14 bd-h-14">03</div>
 </div>
 {{</ example >}}
 

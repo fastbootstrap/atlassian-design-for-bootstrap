@@ -22,20 +22,20 @@ Use utilities like `.rounded-3`, `.rounded`, or `.rounded-circle` to apply diffe
 <div class="text-center d-flex align-items-center justify-content-around">
   <div class="d-flex flex-column align-items-center">
     <p class="fw-semibold text-muted fs-sm mb-2">rounded</p>
-    <div class="rounded d-inline-block bg-secondary bd-w-16 bd-h-16"></div>
+    <div class="rounded d-inline-block text-bg-purple bd-w-16 bd-h-16"></div>
   </div>
   <div class="d-flex flex-column align-items-center">
     <p class="fw-semibold text-muted fs-sm mb-2">rounded-3</p>
-    <div class="rounded-3 d-inline-block bg-secondary bd-w-16 bd-h-16"></div>
+    <div class="rounded-3 d-inline-block text-bg-purple bd-w-16 bd-h-16"></div>
   </div>
   <div class="d-flex flex-column align-items-center">
     <p class="fw-semibold text-muted fs-sm mb-2">rounded-4</p>
-    <div class="rounded-4 d-inline-block bg-secondary bd-w-16 bd-h-16"></div>
+    <div class="rounded-4 d-inline-block text-bg-purple bd-w-16 bd-h-16"></div>
   </div>
 
   <div class="d-flex flex-column align-items-center">
     <p class="fw-semibold text-muted fs-sm mb-2">rounded-circle</p>
-    <div class="rounded-circle d-inline-block bg-secondary bd-w-16 bd-h-16"></div>
+    <div class="rounded-circle d-inline-block text-bg-purple bd-w-16 bd-h-16"></div>
   </div>
 </div>
 {{</ example >}}
@@ -81,20 +81,20 @@ Use `rounded-{top|end|bottom|start}{-size?}` to only round one side of an elemen
 <div class="text-center d-flex justify-content-around">
   <div class="d-flex flex-column align-items-center">
     <p class="fw-semibold text-muted fs-sm mb-2">rounded-top-3</p>
-    <div class="rounded-top-3 d-inline-block bg-secondary bd-w-16 bd-h-16"></div>
+    <div class="rounded-top-3 d-inline-block text-bg-purple bd-w-16 bd-h-16"></div>
   </div>
   <div class="d-flex flex-column align-items-center">
     <p class="fw-semibold text-muted fs-sm mb-2">rounded-end-3</p>
-    <div class="rounded-end-3 d-inline-block bg-secondary bd-w-16 bd-h-16"></div>
+    <div class="rounded-end-3 d-inline-block text-bg-purple bd-w-16 bd-h-16"></div>
   </div>
   <div class="d-flex flex-column align-items-center">
     <p class="fw-semibold text-muted fs-sm mb-2">rounded-bottom-3</p>
-    <div class="rounded-bottom-3 d-inline-block bg-secondary bd-w-16 bd-h-16"></div>
+    <div class="rounded-bottom-3 d-inline-block text-bg-purple bd-w-16 bd-h-16"></div>
   </div>
 
   <div class="d-flex flex-column align-items-center">
     <p class="fw-semibold text-muted fs-sm mb-2">rounded-start-3</p>
-    <div class="rounded-start-3 d-inline-block bg-secondary bd-w-16 bd-h-16"></div>
+    <div class="rounded-start-3 d-inline-block text-bg-purple bd-w-16 bd-h-16"></div>
   </div>
 </div>
 {{</ example >}}

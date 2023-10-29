@@ -103,22 +103,12 @@ The danger button appears as a final confirmation for a destructive action such 
 <button type="button" class="btn btn-danger active">Selected</button>
 {{</ example >}}
 
-### Secondary button
+### More variants
 
-Called `Discovery` button also.
+Needs more variant button? The following buttons also supports by our theme.
 
 {{< example class="d-flex align-items-start gap-2 flex-wrap" >}}
 <button type="button" class="btn btn-secondary">Secondary button</button>
-<button type="button" class="btn btn-secondary" disabled>Disabled</button>
-<button type="button" class="btn btn-secondary active">Selected</button>
-{{</ example >}}
-
-### More variants
-
-For compatibility with Bootstrap, the following buttons may be not supported by Dark mode.
-
-{{< example class="d-flex align-items-start gap-2 flex-wrap" >}}
-<button type="button" class="btn btn-success">Success button</button>
 <button type="button" class="btn btn-info">Info button</button>
 <button type="button" class="btn btn-light">Light button</button>
 <button type="button" class="btn btn-dark">Dark button</button>

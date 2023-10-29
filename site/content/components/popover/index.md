@@ -155,7 +155,7 @@ You can customize the appearance of popovers using CSS variables. We set a custo
 ```
 
 {{< example >}}
-<button type="button" class="btn btn-secondary"
+<button type="button" class="btn btn-primary"
         data-bs-toggle="popover" data-bs-placement="right"
         data-bs-custom-class="custom-popover"
         data-bs-title="Custom popover"

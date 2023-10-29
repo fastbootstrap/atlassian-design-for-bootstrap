@@ -30,10 +30,10 @@ In the below example, we setting `list-group` container's width to `250px`.
 
 {{< example class="bd-h-60 p-0 overflow-hidden" >}}
 <div class="layout">
-  <main class="layout-main px-4 bg-light">
+  <main class="layout-main px-4">
     <h4>This is main section</h4>
   </main>
-  <aside class="layout-sidebar">
+  <aside class="layout-sidebar border-end">
     <ul class="list-group border-0" style="width:250px;">
       <li class="list-group-item list-group-item-action">
         <a href="#">Menu 1</a>
@@ -58,7 +58,7 @@ In the below example, we setting `list-group` container's width to `250px`.
 
 {{< example class="bd-h-60 p-0" >}}
 <div class="layout">
-  <main class="layout-main px-4 bg-light">
+  <main class="layout-main px-4">
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum nisl nunc, sed viverra diam volutpat
       non. In eu enim arcu. Nunc suscipit ornare ex, nec venenatis nisi gravida nec. Proin fermentum semper ligula, a
       condimentum libero interdum sed. Donec quis ante neque. Morbi dignissim est sit amet blandit vestibulum. Etiam
@@ -66,7 +66,7 @@ In the below example, we setting `list-group` container's width to `250px`.
       metus, venenatis id varius a, porta vel erat. Fusce varius velit non porta vulputate. Mauris et ante eu orci
       mattis ullamcorper a eu velit. Maecenas quis neque in odio consequat mollis.</p>
   </main>
-  <aside class="layout-sidebar bd-h-60">
+  <aside class="layout-sidebar bd-h-60 border-end">
     <ul class="list-group" style="width:250px">
       <li class="list-group-item list-group-item-action">
         <a href="#">Menu 1</a>

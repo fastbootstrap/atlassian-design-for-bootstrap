@@ -3,10 +3,10 @@ layout: docs
 title: Grid
 description: "A responsive grid allows a layout to change dynamically based on the size of the screen. "
 toc: true
-group: layout
+group: grid-system
 menu:
   docs:    
-    weight: 30
+    weight: 20
 ---
 
 Bootstrap's grid system is a powerful mobile-first flexbox grid to build layouts of all shapes and sizes. thanks to a twelve column system(12 columns), six default responsive tiers, Sass variables and mixins, and dozens of predefined classes.
@@ -41,18 +41,18 @@ Bootstrap's grid system uses a series of containers, rows, and columns to layout
 <div class="container bg-striped-purple">
   <div class="row">
     <div class="col-8">
-      <div class="text-bg-secondary p-4 rounded">01</div>
+      <div class="text-bg-purple p-4 rounded">01</div>
     </div>
     <div class="col-4">
-      <div class="text-bg-secondary p-4 rounded">02</div>
+      <div class="text-bg-purple p-4 rounded">02</div>
     </div>
   </div>
   <div class="row mt-4">
     <div class="col-4">
-      <div class="text-bg-secondary p-4 rounded">03</div>
+      <div class="text-bg-purple p-4 rounded">03</div>
     </div>
     <div class="col-8">
-      <div class="text-bg-secondary p-4 rounded">04</div>
+      <div class="text-bg-purple p-4 rounded">04</div>
     </div>
   </div>
 </div>
@@ -171,13 +171,13 @@ For example, here are two grid layouts that apply to every device and viewport, 
 {{< example show_source="false" >}}
 <div class="container text-center text-center bg-striped-purple">
   <div class="row">
-    <div class="col"><div class="text-bg-secondary p-4 rounded">1 of 2</div></div>
-    <div class="col"><div class="text-bg-secondary p-4 rounded">2 of 2</div></div>
+    <div class="col"><div class="text-bg-purple p-4 rounded">1 of 2</div></div>
+    <div class="col"><div class="text-bg-purple p-4 rounded">2 of 2</div></div>
   </div>
   <div class="row mt-4">
-    <div class="col"><div class="text-bg-secondary p-4 rounded">1 of 3</div></div>
-    <div class="col"><div class="text-bg-secondary p-4 rounded">2 of 3</div></div>
-    <div class="col"><div class="text-bg-secondary p-4 rounded">3 of 3</div></div>
+    <div class="col"><div class="text-bg-purple p-4 rounded">1 of 3</div></div>
+    <div class="col"><div class="text-bg-purple p-4 rounded">2 of 3</div></div>
+    <div class="col"><div class="text-bg-purple p-4 rounded">3 of 3</div></div>
   </div>
 </div>
 {{< /example >}}
@@ -202,14 +202,14 @@ Auto-layout for flexbox grid columns also means you can set the width of one col
 {{< example show_source="false" >}}
 <div class="container text-center text-center bg-striped-purple">
   <div class="row">
-    <div class="col"><div class="text-bg-secondary p-4 rounded">1 of 3</div></div>
-    <div class="col-6"><div class="text-bg-secondary p-4 rounded">2 of 3 (wider)</div></div>
-    <div class="col"><div class="text-bg-secondary p-4 rounded">2 of 3</div></div>
+    <div class="col"><div class="text-bg-purple p-4 rounded">1 of 3</div></div>
+    <div class="col-6"><div class="text-bg-purple p-4 rounded">2 of 3 (wider)</div></div>
+    <div class="col"><div class="text-bg-purple p-4 rounded">2 of 3</div></div>
   </div>
   <div class="row mt-4">
-    <div class="col"><div class="text-bg-secondary p-4 rounded">1 of 3</div></div>
-    <div class="col-5"><div class="text-bg-secondary p-4 rounded">2 of 3 (wider)</div></div>
-    <div class="col"><div class="text-bg-secondary p-4 rounded">3 of 3</div></div>
+    <div class="col"><div class="text-bg-purple p-4 rounded">1 of 3</div></div>
+    <div class="col-5"><div class="text-bg-purple p-4 rounded">2 of 3 (wider)</div></div>
+    <div class="col"><div class="text-bg-purple p-4 rounded">3 of 3</div></div>
   </div>
 </div>
 {{< /example >}}
@@ -236,14 +236,14 @@ Use `col-{breakpoint}-auto` classes to size columns based on the natural width o
 {{< example show_source="false" >}}
 <div class="container text-center bg-striped-purple">
   <div class="row justify-content-md-center">
-    <div class="col col-lg-2"><div class="text-bg-secondary p-4 rounded">1 of 3</div></div>
-    <div class="col-md-auto"><div class="text-bg-secondary p-4 rounded">Variable width content</div></div>
-    <div class="col col-lg-2"><div class="text-bg-secondary p-4 rounded">2 of 3</div></div>
+    <div class="col col-lg-2"><div class="text-bg-purple p-4 rounded">1 of 3</div></div>
+    <div class="col-md-auto"><div class="text-bg-purple p-4 rounded">Variable width content</div></div>
+    <div class="col col-lg-2"><div class="text-bg-purple p-4 rounded">2 of 3</div></div>
   </div>
   <div class="row mt-4">
-    <div class="col"><div class="text-bg-secondary p-4 rounded">1 of 3</div></div>
-    <div class="col-md-auto"><div class="text-bg-secondary p-4 rounded">Variable width content</div></div>
-    <div class="col col-lg-2"><div class="text-bg-secondary p-4 rounded">3 of 3</div></div>
+    <div class="col"><div class="text-bg-purple p-4 rounded">1 of 3</div></div>
+    <div class="col-md-auto"><div class="text-bg-purple p-4 rounded">Variable width content</div></div>
+    <div class="col col-lg-2"><div class="text-bg-purple p-4 rounded">3 of 3</div></div>
   </div>
 </div>
 {{< /example >}}
@@ -276,24 +276,24 @@ For grids that are the same from the smallest of devices to the largest, use the
 <div class="container bg-striped-purple">
   <div class="row">
     <div class="col">
-      <div class="text-bg-secondary p-4 rounded">01</div>
+      <div class="text-bg-purple p-4 rounded">01</div>
     </div>
     <div class="col">
-      <div class="text-bg-secondary p-4 rounded">02</div>
+      <div class="text-bg-purple p-4 rounded">02</div>
     </div>
     <div class="col">
-      <div class="text-bg-secondary p-4 rounded">03</div>
+      <div class="text-bg-purple p-4 rounded">03</div>
     </div>
     <div class="col">
-      <div class="text-bg-secondary p-4 rounded">04</div>
+      <div class="text-bg-purple p-4 rounded">04</div>
     </div>
   </div>
   <div class="row mt-4">
     <div class="col-8">
-      <div class="text-bg-secondary p-4 rounded">05</div>
+      <div class="text-bg-purple p-4 rounded">05</div>
     </div>
     <div class="col-4">
-      <div class="text-bg-secondary p-4 rounded">06</div>
+      <div class="text-bg-purple p-4 rounded">06</div>
     </div>
   </div>
 </div>
@@ -323,21 +323,21 @@ Using a single set of `.col-sm-*` classes, you can create a basic grid system th
 <div class="container bg-striped-purple">
   <div class="row">
     <div class="col-sm-8">
-      <div class="text-bg-secondary p-4 rounded">col-sm-8</div>
+      <div class="text-bg-purple p-4 rounded">col-sm-8</div>
     </div>
     <div class="col-sm-4">
-      <div class="text-bg-secondary p-4 rounded">col-sm-4</div>
+      <div class="text-bg-purple p-4 rounded">col-sm-4</div>
     </div>
   </div>
   <div class="row mt-4">
     <div class="col-sm">
-      <div class="text-bg-secondary p-4 rounded">col-sm</div>
+      <div class="text-bg-purple p-4 rounded">col-sm</div>
     </div>
     <div class="col-sm">
-      <div class="text-bg-secondary p-4 rounded">col-sm</div>
+      <div class="text-bg-purple p-4 rounded">col-sm</div>
     </div>
     <div class="col-sm">
-      <div class="text-bg-secondary p-4 rounded">col-sm</div>
+      <div class="text-bg-purple p-4 rounded">col-sm</div>
     </div>
   </div>
 </div>
@@ -365,29 +365,29 @@ Don't want your columns to simply stack in some grid tiers? Use a combination of
 <div class="container bg-striped-purple">
   <div class="row">
     <div class="col-md-8">
-      <div class="text-bg-secondary p-4 rounded">.col-md-8</div>
+      <div class="text-bg-purple p-4 rounded">.col-md-8</div>
     </div>
     <div class="col-6 col-md-4">
-      <div class="text-bg-secondary p-4 rounded">.col-6 .col-md-4</div>
+      <div class="text-bg-purple p-4 rounded">.col-6 .col-md-4</div>
     </div>
   </div>
   <div class="row mt-4">
     <div class="col-6 col-md-4">
-      <div class="text-bg-secondary p-4 rounded">.col-6 .col-md-4</div>
+      <div class="text-bg-purple p-4 rounded">.col-6 .col-md-4</div>
     </div>
     <div class="col-6 col-md-4">
-      <div class="text-bg-secondary p-4 rounded">.col-6 .col-md-4</div>
+      <div class="text-bg-purple p-4 rounded">.col-6 .col-md-4</div>
     </div>
     <div class="col-6 col-md-4">
-      <div class="text-bg-secondary p-4 rounded">.col-6 .col-md-4</div>
+      <div class="text-bg-purple p-4 rounded">.col-6 .col-md-4</div>
     </div>
   </div>
   <div class="row mt-4">
     <div class="col-6">
-      <div class="text-bg-secondary p-4 rounded">.col-6</div>
+      <div class="text-bg-purple p-4 rounded">.col-6</div>
     </div>
     <div class="col-6">
-      <div class="text-bg-secondary p-4 rounded">.col-6</div>
+      <div class="text-bg-purple p-4 rounded">.col-6</div>
     </div>
   </div>
 </div>
@@ -427,16 +427,16 @@ Use these row columns classes to quickly create basic grid layouts or to control
   <div class="d-flex flex-column">
     <div class="row row-cols-2 g-3">
       <div class="col">
-        <div class="text-bg-secondary p-4 rounded">01</div>
+        <div class="text-bg-purple p-4 rounded">01</div>
       </div>
       <div class="col">
-        <div class="text-bg-secondary p-4 rounded">02</div>
+        <div class="text-bg-purple p-4 rounded">02</div>
       </div>
       <div class="col">
-        <div class="text-bg-secondary p-4 rounded">03</div>
+        <div class="text-bg-purple p-4 rounded">03</div>
       </div>
       <div class="col">
-        <div class="text-bg-secondary p-4 rounded">04</div>
+        <div class="text-bg-purple p-4 rounded">04</div>
       </div>
     </div>
   </div>
@@ -460,16 +460,16 @@ Use these row columns classes to quickly create basic grid layouts or to control
   <div class="d-flex flex-column">
     <div class="row row-cols-3 g-3">
       <div class="col">
-        <div class="text-bg-secondary p-4 rounded">01</div>
+        <div class="text-bg-purple p-4 rounded">01</div>
       </div>
       <div class="col">
-        <div class="text-bg-secondary p-4 rounded">02</div>
+        <div class="text-bg-purple p-4 rounded">02</div>
       </div>
       <div class="col">
-        <div class="text-bg-secondary p-4 rounded">03</div>
+        <div class="text-bg-purple p-4 rounded">03</div>
       </div>
       <div class="col">
-        <div class="text-bg-secondary p-4 rounded">04</div>
+        <div class="text-bg-purple p-4 rounded">04</div>
       </div>
     </div>
   </div>
@@ -493,16 +493,16 @@ Use these row columns classes to quickly create basic grid layouts or to control
   <div class="d-flex flex-column">
     <div class="row row-cols-auto g-3">
       <div class="col">
-        <div class="text-bg-secondary p-4 rounded">01</div>
+        <div class="text-bg-purple p-4 rounded">01</div>
       </div>
       <div class="col">
-        <div class="text-bg-secondary p-4 rounded">02</div>
+        <div class="text-bg-purple p-4 rounded">02</div>
       </div>
       <div class="col">
-        <div class="text-bg-secondary p-4 rounded">03</div>
+        <div class="text-bg-purple p-4 rounded">03</div>
       </div>
       <div class="col">
-        <div class="text-bg-secondary p-4 rounded">04</div>
+        <div class="text-bg-purple p-4 rounded">04</div>
       </div>
     </div>
   </div>
@@ -526,16 +526,16 @@ Use these row columns classes to quickly create basic grid layouts or to control
   <div class="d-flex flex-column">
     <div class="row row-cols-4 g-3">
       <div class="col">
-        <div class="text-bg-secondary p-4 rounded">01</div>
+        <div class="text-bg-purple p-4 rounded">01</div>
       </div>
       <div class="col">
-        <div class="text-bg-secondary p-4 rounded">02</div>
+        <div class="text-bg-purple p-4 rounded">02</div>
       </div>
       <div class="col">
-        <div class="text-bg-secondary p-4 rounded">03</div>
+        <div class="text-bg-purple p-4 rounded">03</div>
       </div>
       <div class="col">
-        <div class="text-bg-secondary p-4 rounded">04</div>
+        <div class="text-bg-purple p-4 rounded">04</div>
       </div>
     </div>
   </div>
@@ -558,16 +558,16 @@ Use these row columns classes to quickly create basic grid layouts or to control
   <div class="d-flex flex-column">
     <div class="row row-cols-4 g-3">
       <div class="col">
-        <div class="text-bg-secondary p-4 rounded">01</div>
+        <div class="text-bg-purple p-4 rounded">01</div>
       </div>
       <div class="col">
-        <div class="text-bg-secondary p-4 rounded">02</div>
+        <div class="text-bg-purple p-4 rounded">02</div>
       </div>
       <div class="col-6">
-        <div class="text-bg-secondary p-4 rounded">03</div>
+        <div class="text-bg-purple p-4 rounded">03</div>
       </div>
       <div class="col">
-        <div class="text-bg-secondary p-4 rounded">04</div>
+        <div class="text-bg-purple p-4 rounded">04</div>
       </div>
     </div>
   </div>
@@ -591,16 +591,16 @@ Use these row columns classes to quickly create basic grid layouts or to control
   <div class="d-flex flex-column">
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
       <div class="col">
-        <div class="text-bg-secondary p-4 rounded">01</div>
+        <div class="text-bg-purple p-4 rounded">01</div>
       </div>
       <div class="col">
-        <div class="text-bg-secondary p-4 rounded">02</div>
+        <div class="text-bg-purple p-4 rounded">02</div>
       </div>
       <div class="col">
-        <div class="text-bg-secondary p-4 rounded">03</div>
+        <div class="text-bg-purple p-4 rounded">03</div>
       </div>
       <div class="col">
-        <div class="text-bg-secondary p-4 rounded">04</div>
+        <div class="text-bg-purple p-4 rounded">04</div>
       </div>
     </div>
   </div>
@@ -641,15 +641,15 @@ To nest your content with the default grid, add a new `.row` and set of `.col-sm
 <div class="container bg-purple-subtle bg-striped-purple">
     <div class="row bg-striped-white align-items-center">
     <div class="col-sm-3">
-      <div class="text-bg-secondary p-4">Level 1: .col-sm-3</div>
+      <div class="text-bg-purple p-4">Level 1: .col-sm-3</div>
     </div>
     <div class="col-sm-9">
       <div class="row">
         <div class="col-8 col-sm-6">
-          <div class="text-bg-secondary p-4">Level 2: .col-8 .col-sm-6</div>
+          <div class="text-bg-purple p-4">Level 2: .col-8 .col-sm-6</div>
         </div>
         <div class="col-4 col-sm-6">
-          <div class="text-bg-secondary p-4">Level 2: .col-4 .col-sm-6</div>
+          <div class="text-bg-purple p-4">Level 2: .col-4 .col-sm-6</div>
         </div>
       </div>
     </div>

@@ -1402,7 +1402,7 @@ space:
   - space.200:
      desc: Use for small and compact pieces of UI.
      value: 16px
-  - space.255:
+  - space.250:
      desc: Use for small and compact pieces of UI.
      value: 20px
   - space.300:

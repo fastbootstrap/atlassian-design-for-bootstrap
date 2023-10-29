@@ -31,9 +31,9 @@ Use `.vstack` to create vertical layouts. Stacked items are full-width by defaul
 
 {{< example show_source="false" >}}
 <div class="vstack gap-3 bg-striped-purple text-center">
-  <div class="text-bg-secondary py-3">First item</div>
-  <div class="text-bg-secondary py-3">Second item</div>
-  <div class="text-bg-secondary py-3">Third item</div>
+  <div class="text-bg-purple py-3">First item</div>
+  <div class="text-bg-purple py-3">Second item</div>
+  <div class="text-bg-purple py-3">Third item</div>
 </div>
 {{</ example >}}
 
@@ -49,9 +49,9 @@ You also can use the `d-flex` and `flex-column` to create a vertical stack.
 
 {{< example show_source="false" >}}
 <div class="d-flex flex-column text-center bg-striped-purple gap-3">
-  <div class="text-bg-secondary py-3">First item</div>
-  <div class="text-bg-secondary py-3">Second item</div>
-  <div class="text-bg-secondary py-3">Third item</div>
+  <div class="text-bg-purple py-3">First item</div>
+  <div class="text-bg-purple py-3">Second item</div>
+  <div class="text-bg-purple py-3">Third item</div>
 </div>
 {{</ example >}}
 
@@ -69,9 +69,9 @@ Use `.hstack` for horizontal layouts. Stacked items are vertically centered by d
 
 {{< example show_source="false" >}}
 <div class="hstack text-center bg-striped-purple gap-3">
-  <div class="text-bg-secondary p-3">First item</div>
-  <div class="text-bg-secondary p-3">Second item</div>
-  <div class="text-bg-secondary p-3">Third item</div>
+  <div class="text-bg-purple p-3">First item</div>
+  <div class="text-bg-purple p-3">Second item</div>
+  <div class="text-bg-purple p-3">Third item</div>
 </div>
 {{</ example >}}
 
@@ -87,9 +87,9 @@ Using horizontal margin utilities like [`.ms-auto`]({{< docsref "margin" >}}) as
 
 {{< example show_source="false" >}}
 <div class="hstack text-center bg-striped-purple gap-3">
-  <div class="text-bg-secondary p-3">First item</div>
-  <div class="text-bg-secondary p-3 ms-auto">Second item</div>
-  <div class="text-bg-secondary p-3">Third item</div>
+  <div class="text-bg-purple p-3">First item</div>
+  <div class="text-bg-purple p-3 ms-auto">Second item</div>
+  <div class="text-bg-purple p-3">Third item</div>
 </div>
 {{</ example >}}
 
@@ -122,7 +122,7 @@ Create an inline form with `.hstack`
 {{< example >}}
 <div class="hstack gap-3">
   <input class="form-control me-auto" type="text" placeholder="Add your item here..." />
-  <button type="button" class="btn btn-secondary">Submit</button>
+  <button type="button" class="btn btn-primary">Submit</button>
   <button type="button" class="btn btn-default">Reset</button>
 </div>
 {{</ example >}}

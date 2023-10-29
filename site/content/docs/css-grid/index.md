@@ -47,12 +47,12 @@ Three equal-width columns across all viewports and devices can be created by usi
 
 {{< example show_source="false" >}}
 <div class="grid text-center bg-striped-purple">
-  <div class="g-col-4 text-bg-secondary p-3">01</div>
-  <div class="g-col-4 text-bg-secondary p-3">02</div>
-  <div class="g-col-4 text-bg-secondary p-3">03</div>
-  <div class="g-col-4 text-bg-secondary p-3">04</div>
-  <div class="g-col-4 text-bg-secondary p-3">05</div>
-  <div class="g-col-4 text-bg-secondary p-3">06</div>
+  <div class="g-col-4 text-bg-purple p-3">01</div>
+  <div class="g-col-4 text-bg-purple p-3">02</div>
+  <div class="g-col-4 text-bg-purple p-3">03</div>
+  <div class="g-col-4 text-bg-purple p-3">04</div>
+  <div class="g-col-4 text-bg-purple p-3">05</div>
+  <div class="g-col-4 text-bg-purple p-3">06</div>
 </div>
 {{< /example >}}
 
@@ -75,12 +75,12 @@ Here we start with two columns on the narrowest viewports, and then grow to thre
 
 {{< example show_source="false" >}}
 <div class="grid text-center bg-striped-purple">
-  <div class="g-col-6 g-col-md-4 text-bg-secondary p-3">01</div>
-  <div class="g-col-6 g-col-md-4 text-bg-secondary p-3">02</div>
-  <div class="g-col-6 g-col-md-4 text-bg-secondary p-3">03</div>
-  <div class="g-col-6 g-col-md-4 text-bg-secondary p-3">04</div>
-  <div class="g-col-6 g-col-md-4 text-bg-secondary p-3">05</div>
-  <div class="g-col-6 g-col-md-4 text-bg-secondary p-3">06</div>
+  <div class="g-col-6 g-col-md-4 text-bg-purple p-3">01</div>
+  <div class="g-col-6 g-col-md-4 text-bg-purple p-3">02</div>
+  <div class="g-col-6 g-col-md-4 text-bg-purple p-3">03</div>
+  <div class="g-col-6 g-col-md-4 text-bg-purple p-3">04</div>
+  <div class="g-col-6 g-col-md-4 text-bg-purple p-3">05</div>
+  <div class="g-col-6 g-col-md-4 text-bg-purple p-3">06</div>
 </div>
 {{</ example >}}
 
@@ -99,10 +99,10 @@ Compare that to this two column layout at all viewports.
 
 {{< example show_source="false" >}}
 <div class="grid text-center bg-striped-purple">
-  <div class="g-col-6 text-bg-secondary p-3">01</div>
-  <div class="g-col-6 text-bg-secondary p-3">02</div>
-  <div class="g-col-6 text-bg-secondary p-3">03</div>
-  <div class="g-col-6 text-bg-secondary p-3">04</div>
+  <div class="g-col-6 text-bg-purple p-3">01</div>
+  <div class="g-col-6 text-bg-purple p-3">02</div>
+  <div class="g-col-6 text-bg-purple p-3">03</div>
+  <div class="g-col-6 text-bg-purple p-3">04</div>
 </div>
 {{</ example >}}
 
@@ -125,10 +125,10 @@ Note that the `gap` applies to horizontal and vertical gaps between grid items.
 
 {{< example show_source="false" >}}
 <div class="grid text-center bg-striped-purple">
-  <div class="g-col-6 text-bg-secondary p-3">01</div>
-  <div class="g-col-6 text-bg-secondary p-3">02</div>
-  <div class="g-col-6 text-bg-secondary p-3">03</div>
-  <div class="g-col-6 text-bg-secondary p-3">04</div>
+  <div class="g-col-6 text-bg-purple p-3">01</div>
+  <div class="g-col-6 text-bg-purple p-3">02</div>
+  <div class="g-col-6 text-bg-purple p-3">03</div>
+  <div class="g-col-6 text-bg-purple p-3">04</div>
 </div>
 {{</ example >}}
 
@@ -147,8 +147,8 @@ Start classes aim to replace our default grid's offset classes, but they're not 
 
 {{< example show_source="false" >}}
 <div class="grid text-center bg-striped-purple">
-  <div class="g-col-3 g-start-2 text-bg-secondary p-3">01</div>
-  <div class="g-col-4 g-start-6 text-bg-secondary p-3">02</div>
+  <div class="g-col-3 g-start-2 text-bg-purple p-3">01</div>
+  <div class="g-col-4 g-start-6 text-bg-purple p-3">02</div>
 </div>
 {{< /example >}}
 
@@ -165,18 +165,18 @@ When there are no classes on the grid items (the immediate children of a `.grid`
 
 {{< example show_source="false" >}}
 <div class="grid bg-striped-purple text-center">
-  <div class="text-bg-secondary p-2">1</div>
-  <div class="text-bg-secondary p-2">2</div>
-  <div class="text-bg-secondary p-2">3</div>
-  <div class="text-bg-secondary p-2">4</div>
-  <div class="text-bg-secondary p-2">5</div>
-  <div class="text-bg-secondary p-2">6</div>
-  <div class="text-bg-secondary p-2">7</div>
-  <div class="text-bg-secondary p-2">8</div>
-  <div class="text-bg-secondary p-2">9</div>
-  <div class="text-bg-secondary p-2">10</div>
-  <div class="text-bg-secondary p-2">11</div>
-  <div class="text-bg-secondary p-2">12</div>
+  <div class="text-bg-purple p-2">1</div>
+  <div class="text-bg-purple p-2">2</div>
+  <div class="text-bg-purple p-2">3</div>
+  <div class="text-bg-purple p-2">4</div>
+  <div class="text-bg-purple p-2">5</div>
+  <div class="text-bg-purple p-2">6</div>
+  <div class="text-bg-purple p-2">7</div>
+  <div class="text-bg-purple p-2">8</div>
+  <div class="text-bg-purple p-2">9</div>
+  <div class="text-bg-purple p-2">10</div>
+  <div class="text-bg-purple p-2">11</div>
+  <div class="text-bg-purple p-2">12</div>
 </div>
 {{</ example >}}
 
@@ -201,13 +201,13 @@ This behavior can be mixed with grid column classes.
 
 {{< example show_source="false" >}}
 <div class="grid bg-striped-purple text-center">
-  <div class="g-col-6 text-bg-secondary p-2">1</div>
-  <div class="text-bg-secondary p-2">2</div>
-  <div class="text-bg-secondary p-2">3</div>
-  <div class="text-bg-secondary p-2">4</div>
-  <div class="text-bg-secondary p-2">5</div>
-  <div class="text-bg-secondary p-2">6</div>
-  <div class="text-bg-secondary p-2">7</div>
+  <div class="g-col-6 text-bg-purple p-2">1</div>
+  <div class="text-bg-purple p-2">2</div>
+  <div class="text-bg-purple p-2">3</div>
+  <div class="text-bg-purple p-2">4</div>
+  <div class="text-bg-purple p-2">5</div>
+  <div class="text-bg-purple p-2">6</div>
+  <div class="text-bg-purple p-2">7</div>
 </div>
 {{</ example >}}
 
@@ -236,14 +236,14 @@ In practice this allows for more complex and custom layouts when compared to our
 
 {{< example show_source="false" >}}
 <div class="grid text-center bg-striped-purple" style="--bs-columns: 3;">
-  <div class="text-bg-secondary p-3">
+  <div class="text-bg-purple p-3">
     First auto-column
     <div class="grid bg-striped-teal mt-3">
       <div class="text-bg-dark p-2">Auto-column</div>
       <div class="text-bg-dark p-2">Auto-column</div>
     </div>
   </div>
-  <div class="text-bg-secondary p-3">
+  <div class="text-bg-purple p-3">
     Second auto-column
     <div class="grid bg-striped-teal mt-3" style="--bs-columns: 12;">
       <div class="g-col-6 text-bg-dark p-2">6/12</div>
@@ -251,7 +251,7 @@ In practice this allows for more complex and custom layouts when compared to our
       <div class="g-col-2 text-bg-dark p-2">2/12</div>
     </div>
   </div>
-  <div class="text-bg-secondary p-3">Third auto-column</div>
+  <div class="text-bg-purple p-3">Third auto-column</div>
 </div>
 {{< /example >}}
 
@@ -296,9 +296,9 @@ Immediate children elements of `.grid` are grid items, so they'll be sized witho
 
 {{< example show_source="false" >}}
 <div class="grid text-center bg-striped-purple" style="--bs-columns: 3;">
-  <div class="text-bg-secondary p-3">Auto-column</div>
-  <div class="text-bg-secondary p-3">Auto-column</div>
-  <div class="text-bg-secondary p-3">Auto-column</div>
+  <div class="text-bg-purple p-3">Auto-column</div>
+  <div class="text-bg-purple p-3">Auto-column</div>
+  <div class="text-bg-purple p-3">Auto-column</div>
 </div>
 {{< /example >}}
 
@@ -316,8 +316,8 @@ Adjust the number of columns and the gap.
 
 {{< example show_source="false" >}}
 <div class="grid bg-striped-purple text-center" style="--bs-columns: 4; --bs-gap: 5rem;">
-  <div class="g-col-2 text-bg-secondary p-3">2/4</div>
-  <div class="g-col-2 text-bg-secondary p-3">2/4</div>
+  <div class="g-col-2 text-bg-purple p-3">2/4</div>
+  <div class="g-col-2 text-bg-purple p-3">2/4</div>
 </div>
 {{</ example >}}
 
@@ -330,8 +330,8 @@ Adjust the number of columns and the gap.
 
 {{< example show_source="false" >}}
 <div class="grid bg-striped-purple text-center" style="--bs-columns: 10; --bs-gap: 1rem;">
-  <div class="g-col-6 text-bg-secondary p-3">6/10</div>
-  <div class="g-col-4 text-bg-secondary p-3">4/10</div>
+  <div class="g-col-6 text-bg-purple p-3">6/10</div>
+  <div class="g-col-4 text-bg-purple p-3">4/10</div>
 </div>
 {{</ example >}}
 
@@ -348,9 +348,9 @@ Adding more rows and changing the placement of columns:
 
 {{< example show_source="false" >}}
 <div class="grid bg-striped-purple text-center" style="--bs-rows: 3; --bs-columns: 3;">
-  <div class=" text-bg-secondary p-3">Auto-column</div>
-  <div class="g-start-2 text-bg-secondary p-3" style="grid-row: 2">Auto-column</div>
-  <div class="g-start-3 text-bg-secondary p-3" style="grid-row: 3">Auto-column</div>
+  <div class=" text-bg-purple p-3">Auto-column</div>
+  <div class="g-start-2 text-bg-purple p-3" style="grid-row: 2">Auto-column</div>
+  <div class="g-start-3 text-bg-purple p-3" style="grid-row: 3">Auto-column</div>
 </div>
 {{</ example >}}
 
@@ -368,8 +368,8 @@ Change the vertical gaps only by modifying the `row-gap`. Note that we use `gap`
 
 {{< example show_source="false" >}}
 <div class="grid text-center bg-striped-purple" style="row-gap: 0;">
-  <div class="g-col-6 text-bg-secondary p-3">01</div>
-  <div class="g-col-6 text-bg-secondary p-3">02</div>
+  <div class="g-col-6 text-bg-purple p-3">01</div>
+  <div class="g-col-6 text-bg-purple p-3">02</div>
   <div class="g-col-6 text-bg-dark p-3">03</div>
   <div class="g-col-6 text-bg-dark p-3">04</div>
 </div>
@@ -389,8 +389,8 @@ Because of that, you can have different vertical and horizontal `gap`s, which ca
 
 {{< example show_source="false" >}}
 <div class="grid text-center bg-striped-purple" style="--bs-gap: .25rem 1rem;">
-  <div class="g-col-6 text-bg-secondary p-3">01</div>
-  <div class="g-col-6 text-bg-secondary p-3">02</div>
+  <div class="g-col-6 text-bg-purple p-3">01</div>
+  <div class="g-col-6 text-bg-purple p-3">02</div>
   <div class="g-col-6 text-bg-dark p-3">03</div>
   <div class="g-col-6 text-bg-dark p-3">04</div>
 </div>

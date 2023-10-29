@@ -24,8 +24,8 @@ Use `.flex-fill` to allow a flex item to grow and shrink, taking into account it
 {{< example show_source="false" >}}
 <div class="d-flex gap-4 bg-striped-purple">
   <div class="d-flex align-items-center bd-w-14 bd-h-14 justify-content-center rounded text-bg-dark col-2">01</div>
-  <div class="d-flex flex-fill align-items-center justify-content-center rounded text-bg-secondary col-8">02</div>
-  <div class="d-flex flex-fill align-items-center justify-content-center rounded text-bg-secondary col-4">03</div>
+  <div class="d-flex flex-fill align-items-center justify-content-center rounded text-bg-purple col-8">02</div>
+  <div class="d-flex flex-fill align-items-center justify-content-center rounded text-bg-purple col-4">03</div>
 </div>
 {{</ example >}}
 

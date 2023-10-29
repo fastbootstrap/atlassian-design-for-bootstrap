@@ -23,9 +23,9 @@ Use `justify-content-start` to justify items against the start of the container�
 
 {{< example show_source="false" >}}
 <div class="d-flex gap-4 justify-content-start bg-striped-purple rounded">
-  <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-secondary">01</div>
-  <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-secondary">02</div>
-  <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-secondary">03</div>
+  <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-purple">01</div>
+  <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-purple">02</div>
+  <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-purple">03</div>
 </div>
 {{</ example >}}
 
@@ -64,9 +64,9 @@ Use `justify-content-end` to justify items against the end of the container’s 
 
 {{< example show_source="false" >}}
 <div class="d-flex gap-4 justify-content-end bg-striped-purple rounded">
-    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-secondary">01</div>
-    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-secondary">02</div>
-    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-secondary">03</div>
+    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-purple">01</div>
+    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-purple">02</div>
+    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-purple">03</div>
   </div>
 {{</ example >}}
 
@@ -84,9 +84,9 @@ Use `justify-content-between` to justify items along the container’s main axis
 
 {{< example show_source="false" >}}
 <div class="d-flex gap-4 justify-content-between bg-striped-purple rounded">
-  <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-secondary">01</div>
-  <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-secondary">02</div>
-  <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-secondary">03</div>
+  <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-purple">01</div>
+  <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-purple">02</div>
+  <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-purple">03</div>
 </div>
 {{</ example >}}
 
@@ -104,9 +104,9 @@ Use `justify-content-around` to justify items along the container’s main axis 
 
 {{< example show_source="false" >}}
 <div class="d-flex gap-4 justify-content-around bg-striped-purple rounded">
-    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-secondary">01</div>
-    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-secondary">02</div>
-    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-secondary">03</div>
+    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-purple">01</div>
+    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-purple">02</div>
+    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-purple">03</div>
   </div>
 {{</ example >}}
 
@@ -124,9 +124,9 @@ Use `justify-content-evenly` to justify items along the container’s main axis 
 
 {{< example show_source="false" >}}
 <div class="d-flex gap-4 justify-content-evenly bg-striped-purple rounded">
-    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-secondary">01</div>
-    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-secondary">02</div>
-    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-secondary">03</div>
+    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-purple">01</div>
+    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-purple">02</div>
+    <div class="bd-w-14 bd-h-14 d-flex align-items-center justify-content-center rounded text-bg-purple">03</div>
   </div>
 {{</ example >}}
 

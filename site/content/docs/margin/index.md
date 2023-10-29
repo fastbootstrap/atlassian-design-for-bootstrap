@@ -63,16 +63,16 @@ For example, `mt-4` would add `1.5rem` of margin to the top of an element, `me-3
 
 {{< example class="position-relative fw-semibold bg-grid-slate-100 bd-h-56" show_source="false">}}
 <div class="position-absolute start-50 top-0 translate-middle-x bg-striped-purple">
-  <div class="text-bg-secondary mt-4 p-4 rounded">mt-4</div>
+  <div class="text-bg-purple mt-4 p-4 rounded">mt-4</div>
 </div>
 <div class="position-absolute top-50 end-0 translate-middle-y bg-striped-purple">
-  <div class="text-bg-secondary me-3 p-4 rounded">me-3</div>
+  <div class="text-bg-purple me-3 p-4 rounded">me-3</div>
 </div>
 <div class="position-absolute bottom-0 start-50 bg-striped-purple">
-  <div class="text-bg-secondary mb-5 p-4 rounded">mb-5</div>
+  <div class="text-bg-purple mb-5 p-4 rounded">mb-5</div>
 </div>
 <div class="position-absolute top-50 start-0 translate-middle-y bg-striped-purple">
-  <div class="text-bg-secondary ms-2 p-4 rounded">ms-2</div>
+  <div class="text-bg-purple ms-2 p-4 rounded">ms-2</div>
 </div>
 {{</ example >}}
 
@@ -89,7 +89,7 @@ Control the horizontal margin of an element using the `mx-{size}` utilities.
 
 {{< example class="text-center fs-sm fw-semibold bg-grid-slate-100" show_source="false">}}
   <div class="d-inline-block bg-striped-purple">
-      <div class="text-bg-secondary p-4 mx-5 rounded">mx-5</div>
+      <div class="text-bg-purple p-4 mx-5 rounded">mx-5</div>
   </div>
 {{</ example >}}
 
@@ -103,7 +103,7 @@ Control the vertical margin of an element using the `my-{size}` utilities.
 
 {{< example class="text-center fs-sm fw-semibold bg-grid-slate-100" show_source="false">}}
   <div class="d-inline-block bg-striped-purple">
-      <div class="text-bg-secondary p-4 my-5 rounded">my-5</div>
+      <div class="text-bg-purple p-4 my-5 rounded">my-5</div>
   </div>
 {{</ example >}}
 
@@ -117,7 +117,7 @@ Control the margin on all sides of an element using the `m-{size}` utilities.
 
 {{< example class="text-center fs-sm fw-semibold bg-grid-slate-100" show_source="false">}}
   <div class="d-inline-block bg-striped-purple">
-      <div class="text-bg-secondary p-4 m-5 rounded">m-5</div>
+      <div class="text-bg-purple p-4 m-5 rounded">m-5</div>
   </div>
 {{</ example >}}
 
@@ -131,7 +131,7 @@ Additionally, Bootstrap also includes an `.mx-auto` class for horizontally cente
 
 {{< example class="text-center fs-sm fw-semibold bg-grid-slate-100" show_source="false">}}
   <div class="bg-striped-purple">
-      <div class="text-bg-secondary p-4 mx-auto rounded col-6">Centered element</div>
+      <div class="text-bg-purple p-4 mx-auto rounded col-6">Centered element</div>
   </div>
 {{</ example >}}
 
@@ -145,11 +145,11 @@ Control the righ-align margin of an element using the `ms-auto` utilities.
 
 {{< example class="bg-grid-slate-100 text-center" show_source="false" >}}
 <div class="d-flex gap-4 bg-striped-purple rounded">
-  <div class="text-bg-secondary p-4 rounded">01</div>
-  <div class="text-bg-secondary p-4 rounded">02</div>
-  <div class="ms-auto text-bg-secondary p-4 rounded">03</div>
-  <div class="text-bg-secondary p-4 rounded">04</div>
-  <div class="text-bg-secondary p-4 rounded">05</div>
+  <div class="text-bg-purple p-4 rounded">01</div>
+  <div class="text-bg-purple p-4 rounded">02</div>
+  <div class="ms-auto text-bg-purple p-4 rounded">03</div>
+  <div class="text-bg-purple p-4 rounded">04</div>
+  <div class="text-bg-purple p-4 rounded">05</div>
 </div>
 {{</ example >}}
 
@@ -172,7 +172,7 @@ The syntax is nearly the same as the default, positive margin utilities, but wit
 {{< example class="bg-grid-slate-100 fw-semibold" show_source="false" >}}
 <div class="col-md-4 mx-auto d-flex flex-column align-items-center">
   <div class="bg-purple-subtler border bd-w-36 bd-h-16 rounded d-inline-block bg-striped-purple" style="--bs-border-color:var(--ds-border-discovery)"></div>
-  <div class="text-bg-secondary p-4 rounded mt-n5 d-inline-block">mt-n5</div>
+  <div class="text-bg-purple p-4 rounded mt-n5 d-inline-block">mt-n5</div>
 </div>
 {{</ example  >}}
 
@@ -189,7 +189,7 @@ For example, use `my-md-4` to apply the `my-4` utility at only `medium screen` s
 
 {{< example class="bg-grid-slate-100 text-center fw-semibold" show_source="false" >}}
   <div class="col-md-4 bg-striped-purple d-inline-block">
-    <div class="text-bg-secondary p-4 rounded my-3 my-md-4 my-lg-6">my-3 my-md-4 my-lg-6</div>
+    <div class="text-bg-purple p-4 rounded my-3 my-md-4 my-lg-6">my-3 my-md-4 my-lg-6</div>
   </div>
 {{</ example >}}
 

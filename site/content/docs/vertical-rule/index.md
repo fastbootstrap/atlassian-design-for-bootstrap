@@ -67,9 +67,9 @@ They can also be used in stacks:
 
 {{< example class="bg-neutral-subtler bg-grid-slate-100 text-center">}}
 <div class="hstack gap-3">
-  <div class="text-bg-secondary rounded p-4 lh-1 fs-sm">First item</div>
-  <div class="text-bg-secondary rounded p-4 lh-1 fs-sm ms-auto">Second item</div>
+  <div class="text-bg-purple rounded p-4 lh-1 fs-sm">First item</div>
+  <div class="text-bg-purple rounded p-4 lh-1 fs-sm ms-auto">Second item</div>
   <div class="vr"></div>
-  <div class="text-bg-secondary rounded p-4 lh-1 fs-sm">Third item</div>
+  <div class="text-bg-purple rounded p-4 lh-1 fs-sm">Third item</div>
 </div>
 {{</ example >}}

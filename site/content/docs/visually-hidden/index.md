@@ -1,6 +1,7 @@
 ---
 layout: docs
-title: Visually hidden
+title: Hidden
+seo_title: Visually Hidden
 description: "Use these helpers to visually hide elements but keep them accessible to assistive technologies."
 toc: true
 group: layout

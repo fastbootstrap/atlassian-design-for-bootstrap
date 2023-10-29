@@ -3,10 +3,11 @@ layout: docs
 title: Quick Start
 description: "Get started with FastBootstrap in no time."
 toc: true
-group: getting-started
 menu:
-  docs:   
-    weight: 20
+  get-started:   
+    weight: 10
+aliases:
+  - /docs/quick-start
 ---
 
 Here's a quick example to get you started through production-ready CSS and JavaScript via CDN that without the need for any build steps. 

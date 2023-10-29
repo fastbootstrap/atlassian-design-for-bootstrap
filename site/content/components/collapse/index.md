@@ -26,7 +26,7 @@ Click the buttons below to show and hide another element via class changes:
 - `.collapsing` is applied during transitions
 - `.collapse.show` shows content
 
-{{< example class="bg-light">}}
+{{< example >}}
 <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Button with data-bs-target</button>
 <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Link with href</a>
 <div class="collapse mt-3" id="collapseExample">
@@ -60,7 +60,7 @@ The collapse plugin also supports horizontal collapsing. Add the `.collapse-hori
 A `<button>` or `<a>` can show and hide multiple elements by referencing them with a selector in its `href` or `data-bs-target attribute`. Multiple `<button>` or `<a>` can show and hide an element if they each reference it with their `href` or `data-bs-target` attribute.
 
 
-{{< example class="bg-light" >}}
+{{< example >}}
 <p>
   <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
   <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>

@@ -13,7 +13,7 @@ When selecting a background color, make sure the foreground color contrast passe
 
 ## Quick reference
 
-{{< callout "secondary">}}
+{{< callout >}}
 Similar to the contextual text color classes, set the background of an element to any contextual class. Background utilities **do not set** `color`, so in some cases you’ll want to use `.text-bg-*` color utilities.
 {{</ callout >}}
 
@@ -86,34 +86,34 @@ Control the opacity of an element’s background color using the color opacity `
 <div class="d-flex flex-column gap-4">
   <div>
     <span class="text-body-tertiary fw-semibold fs-sm mb-3">bg-opacity-100</span>
-    <div class="p-5 bg-secondary rounded"></div>
+    <div class="p-5 bg-purple rounded"></div>
   </div>  
   <div>
     <span class="text-body-tertiary fw-semibold fs-sm mb-3">bg-opacity-100</span>
-    <div class="p-5 bg-secondary rounded bg-opacity-100"></div>
+    <div class="p-5 bg-purple rounded bg-opacity-100"></div>
   </div>  
   <div>
     <span class="text-body-tertiary fw-semibold fs-sm mb-3">bg-opacity-75</span>
-    <div class="p-5 bg-secondary rounded bg-opacity-75"></div>
+    <div class="p-5 bg-purple rounded bg-opacity-75"></div>
   </div>  
   <div>
     <span class="text-body-tertiary fw-semibold fs-sm mb-3">bg-opacity-50</span>
-    <div class="p-5 bg-secondary rounded bg-opacity-50"></div>
+    <div class="p-5 bg-purple rounded bg-opacity-50"></div>
   </div>  
   <div>
     <span class="text-body-tertiary fw-semibold fs-sm mb-3">bg-opacity-25</span>
-    <div class="p-5 bg-secondary rounded bg-opacity-25"></div>
+    <div class="p-5 bg-purple rounded bg-opacity-25"></div>
   </div>  
   <div>
     <span class="text-body-tertiary fw-semibold fs-sm mb-3">bg-opacity-10</span>
-    <div class="p-5 bg-secondary rounded bg-opacity-10"></div>
+    <div class="p-5 bg-purple rounded bg-opacity-10"></div>
   </div>  
 </div>
 {{</ example >}}
 
 ```html
-<div class="bg-secondary bg-opacity-100"></div>
-<div class="bg-secondary bg-opacity-75"></div>
-<div class="bg-secondary bg-opacity-50"></div>
+<div class="bg-purple bg-opacity-100"></div>
+<div class="bg-purple bg-opacity-75"></div>
+<div class="bg-purple bg-opacity-50"></div>
 ...
 ```

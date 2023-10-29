@@ -1,6 +1,6 @@
 docs:
-  - name: getting-started
-    title: Getting Started
+  - name: grid-system
+    title: Grid System
   - name: layout
     title: Layout
   - name: flexbox
@@ -46,5 +46,3 @@ tokens:
 get-started:
   - name: get-started
     title: Get Started
-  - name: core-concepts
-    title: Core Concepts

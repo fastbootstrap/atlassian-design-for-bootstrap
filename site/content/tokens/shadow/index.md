@@ -1,9 +1,9 @@
 ---
 layout: docs
-title: Shadow
-seo_title: Shadow tokens
+title: Shadow tokens
 description: "Tokens use for the box shadow of elements."
 toc: false
+status: new
 menu:
   tokens:
 ---

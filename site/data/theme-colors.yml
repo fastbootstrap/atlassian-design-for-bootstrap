@@ -1,27 +1,39 @@
-- name: primary
-  hex: "#0052cc"
-  rgb: "0, 82, 204"
-- name: secondary
-  hex: "#5243AA"
-  rgb: "82, 67, 170"
-- name: success
-  hex: "#00875A"
-  rgb: "0, 135, 90"
-- name: danger
-  hex: "#DE350B"
-  rgb: "222, 53, 11"
-- name: warning
-  hex: "#FFAB00"
-  rgb: "255, 171, 0"
-  contrast_color: dark
-- name: info
-  hex: "#42526E"
-  rgb: "66, 82, 110"
-  contrast_color: dark
-- name: light
-  hex: "#FAFBFC"
-  rgb: "250, 251, 252"
-  contrast_color: dark
-- name: dark
-  hex: "#091E42"
-  rgb: "9, 30, 66"
+- name: Text
+  desc: The default text color of body.
+  light: rgb(23,43,77)
+  dark: rgb(182,194,207)
+- name: background
+  desc: The default background color of body.
+  light: rgb(255,255,255)
+  dark: rgb(29,33,37)
+- name: Secondary
+  desc: Used for lighter text color or background.
+  light: rgb(68,84,111)
+  dark: rgb(159,173,188)
+- name: Tertiary
+  desc: Used for even lighter text or background.
+  light: rgb(98,111,134)
+  dark: rgb(140,155,171)
+- name: Primary
+  desc: Main theme color, used for primary actions or focus styles, and component and form active states.
+  light: rgb(12,102,228)
+  dark:  
+- name: Success
+  desc: Theme color, used for positive or successful actions and information.
+  light: rgb(31,132,90)
+  dark:
+- name: Danger
+  desc: Theme color, used for errors and dangerous actions.
+  light: rgb(201,55,44)
+- name: Warning
+  desc: Theme color, used for non-destructive warning messages.
+  light: rgb(245,205,71)
+- name: Info
+  desc: Theme color, used for informative content or something in progress.
+  light: rgb(12,102,228)
+- name: Light 
+  desc: Additional theme option for less contrasting colors.
+  light: rgb(247,248,249)  
+- name: Dark
+  desc: Additional theme option for higher contrasting colors.
+  light: rgb(9,30,66)

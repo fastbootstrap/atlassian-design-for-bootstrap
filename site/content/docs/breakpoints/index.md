@@ -3,7 +3,7 @@ layout: docs
 title: Breakpoints
 description: "Breakpoints are customizable widths that determine how your responsive layout behaves across device or viewport sizes."
 toc: true
-group: layout
+group: grid-system
 menu:
   docs:    
     weight: 10

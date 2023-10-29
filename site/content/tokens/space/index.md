@@ -1,9 +1,9 @@
 ---
 layout: docs
-title: Space
-seo_title: Space tokens
+title: Space tokens
 description: "Tokens use for the spacing of UI."
 toc: false
+status: new
 menu:
   tokens:
 ---

@@ -24,7 +24,7 @@ Use `flex-shrink-1` to allow a flex item to shrink if needed:
 {{< example show_source="false" >}}
   <div class="d-flex bg-striped-purple gap-4 rounded">
     <div class="d-flex align-items-center justify-content-center rounded text-bg-dark p-4">01</div>
-    <div class="d-flex flex-shrink-1 align-items-center justify-content-center rounded text-bg-secondary p-4" style="width:256px">02</div>
+    <div class="d-flex flex-shrink-1 align-items-center justify-content-center rounded text-bg-purple p-4" style="width:256px">02</div>
     <div class="d-flex align-items-center justify-content-center rounded text-bg-dark p-4">03</div>
   </div>
 {{</ example >}}
@@ -45,7 +45,7 @@ Use `flex-shrink-0` to prevent a flex item from shrinking:
   <div class="overflow-auto">
     <div class="d-flex bg-striped-purple gap-4">
       <div class="d-flex flex-fill align-items-center justify-content-center rounded text-bg-dark p-4">01</div>
-      <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded text-bg-secondary p-4" style="width:256px;">02</div>
+      <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded text-bg-purple p-4" style="width:256px;">02</div>
       <div class="d-flex flex-fill align-items-center justify-content-center rounded text-bg-dark p-4">03</div>
     </div>
   </div>

@@ -4,8 +4,8 @@
 {{ $group := printf "tabs-%s" $id }}
 
 
-<div class="nav nav-tabs bg-light doc-tabs" role="tablist">
-  <div class="container">
+<div class="nav nav-tabs bd-bg-light doc-tabs" role="tablist">
+  <div class="px-4 px-md-6 px-lg-10 px-xl-20">
     <div class="d-flex flex-row gap-3">
       {{ range $index, $tab :=  .Scratch.Get $group }}
         {{ $is_active := eq $index 0 }}
@@ -17,8 +17,8 @@
   </div>
 </div>
 
-<div class="doc-contents pt-5 pb-5 pb-lg-6">
-  <div class="container">
+<div class="px-4 px-md-6 px-lg-10 px-xl-20">
+<div class="pt-5 pb-5 pb-lg-6">
     <div class="tab-content" id="tab-content">
       {{ range $index, $tab :=  .Scratch.Get $group }}
         {{ $is_active := eq $index 0 }}

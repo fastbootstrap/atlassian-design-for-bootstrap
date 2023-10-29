@@ -23,10 +23,10 @@ Use `gap-{size}` to change the gap between both rows and columns in grid and fle
 
 {{< example show_source="false" >}}
   <div class="grid gap-5 text-center bg-striped-purple rounded">
-    <div class="g-col-6 p-4 text-bg-secondary rounded">01</div>
-    <div class="g-col-6 p-4 text-bg-secondary rounded">02</div>
-    <div class="g-col-6 p-4 text-bg-secondary rounded">03</div>
-    <div class="g-col-6 p-4 text-bg-secondary rounded">04</div>
+    <div class="g-col-6 p-4 text-bg-purple rounded">01</div>
+    <div class="g-col-6 p-4 text-bg-purple rounded">02</div>
+    <div class="g-col-6 p-4 text-bg-purple rounded">03</div>
+    <div class="g-col-6 p-4 text-bg-purple rounded">04</div>
   </div>
 {{</ example >}}
 
@@ -46,12 +46,12 @@ Use the nested flex layout with `gap-{size}` to changing the row and column gaps
 {{< example show_source="false" >}}
   <div class="d-flex flex-column gap-5 text-center bg-striped-purple">
     <div class="d-flex gap-3 bg-striped-teal">
-      <div class="p-4 text-bg-secondary rounded flex-fill">01</div>
-      <div class="p-4 text-bg-secondary rounded flex-fill">02</div>
+      <div class="p-4 text-bg-purple rounded flex-fill">01</div>
+      <div class="p-4 text-bg-purple rounded flex-fill">02</div>
     </div>
     <div class="d-flex gap-3 bg-striped-teal">
-      <div class="p-4 text-bg-secondary rounded flex-fill ">03</div>
-      <div class="p-4 text-bg-secondary rounded flex-fill">04</div>
+      <div class="p-4 text-bg-purple rounded flex-fill ">03</div>
+      <div class="p-4 text-bg-purple rounded flex-fill">04</div>
     </div>
   </div>
 {{</ example >}}
@@ -89,10 +89,10 @@ For example, use `gap-md-3` to apply the `gap-3` utility at only medium screen s
 
 <div class="bd-example">
   <div class="grid gap-2 gap-md-3 gap-lg-5">
-    <div class="g-col-6 p-3 text-bg-secondary text-center rounded-3">01</div>
-    <div class="g-col-6 p-3 text-bg-secondary text-center rounded-3">02</div>
-    <div class="g-col-6 p-3 text-bg-secondary text-center rounded-3">03</div>
-    <div class="g-col-6 p-3 text-bg-secondary text-center rounded-3">04</div>
+    <div class="g-col-6 p-3 text-bg-purple text-center rounded-3">01</div>
+    <div class="g-col-6 p-3 text-bg-purple text-center rounded-3">02</div>
+    <div class="g-col-6 p-3 text-bg-purple text-center rounded-3">03</div>
+    <div class="g-col-6 p-3 text-bg-purple text-center rounded-3">04</div>
   </div>
 </div>
 

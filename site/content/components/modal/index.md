@@ -70,7 +70,7 @@ myModal.addEventListener('shown.bs.modal', () => {
 
 Below is a static modal example (meaning its [position]({{< docsref "position" >}}) and [display]({{< docsref "display" >}}) have been overridden). Included are the modal header, modal body (required for `padding`), and modal footer (optional). We ask that you include modal headers with dismiss actions whenever possible, or provide another explicit dismiss action.
 
-{{< example class="bg-light bd-example-modal-static" >}}
+{{< example class="bd-example-modal-static p-0" >}}
 <div class="modal" tabindex="-1">
   <div class="modal-dialog shadow">
     <div class="modal-content">

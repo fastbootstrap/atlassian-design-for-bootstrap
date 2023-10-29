@@ -25,16 +25,16 @@ Elements with the `.invisible` class will be hidden *both* visually and for assi
 
 Use `invisible` to hide an element, but still maintain its place in the DOM, affecting the layout of other elements(compare with `.none` from the [display]({{< docsref "display" >}}) documentation).
 
-{{< example show_source="false" >}}
-<div class="vstack gap-3 text-center bg-striped-purple">
-  <div class="text-bg-secondary p-3">01</div>
-  <div class="invisible text-bg-secondary p-3">02</div>
-  <div class="text-bg-secondary p-3">03</div>
+{{< example class="bg-grid-slate-100 bg-neutral-subtler fw-semibold fs-sm" show_source="false" >}}
+<div class="hstack gap-3 text-center justify-content-around rounded">
+  <div class="text-bg-purple p-4 rounded d-flex flex-fill justify-content-center">01</div>
+  <div class="invisible text-bg-purple p-4 rounded d-flex flex-fill justify-content-center">02</div>
+  <div class="text-bg-purple p-4 rounded d-flex flex-fill justify-content-center">03</div>
 </div>
 {{</ example >}}
 
 ```html
-<div class="vstack gap-3">
+<div class="hstack gap-3">
   <div>01</div>
   <div class="invisible">02</div>
   <div>03</div>
@@ -45,16 +45,16 @@ Use `invisible` to hide an element, but still maintain its place in the DOM, aff
 
 Use `visible` to make an element visible. This is mostly useful for undoing the `invisible` utility at different screen sizes.
 
-{{< example show_source="false" >}}
-<div class="vstack gap-3 text-center bg-striped-purple">
-  <div class="text-bg-secondary p-3">01</div>
-  <div class="visible text-bg-secondary p-3">02</div>
-  <div class="text-bg-secondary p-3">03</div>
+{{< example class="bg-grid-slate-100 bg-neutral-subtler fw-semibold fs-sm" show_source="false" >}}
+<div class="hstack gap-3 text-center justify-content-around rounded">
+  <div class="text-bg-purple p-4 rounded d-flex flex-fill justify-content-center">01</div>
+  <div class="visible text-bg-purple p-4 rounded d-flex flex-fill justify-content-center">02</div>
+  <div class="text-bg-purple p-4 rounded d-flex flex-fill justify-content-center">03</div>
 </div>
 {{</ example >}}
 
 ```html
-<div class="vstack gap-3">
+<div class="hstack gap-3">
   <div>01</div>
   <div class="visible">02</div>
   <div>03</div>

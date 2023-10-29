@@ -1,9 +1,24 @@
 .bd-card {
-  box-shadow: 0 1px 1px rgba(9, 30, 66, 0.25), 0 0 1px 0px rgba(9, 30, 66, 0.31);
+  box-shadow: var(--ds-shadow-raised);
+  transition: box-shadow 0.2s;
 
   &:hover {
-    box-shadow: 0 8px 16px -4px rgba(9, 30, 66, 0.25),
-      0 0 1px rgba(9, 30, 66, 0.31);
+    box-shadow: var(--ds-shadow-overlay);
+  }
+
+  .icon-blue {
+    color: var(--ds-text-inverse);
+    background-color: var(--ds-icon-accent-blue);
+  }
+
+  .icon-yellow {
+    color: var(--ds-text-inverse);
+    background-color: var(--ds-icon-accent-yellow);
+  }
+
+  .icon-purple {
+    color: var(--ds-text-inverse);
+    background-color: var(--ds-icon-accent-purple);
   }
 }
 

@@ -23,9 +23,9 @@ Use `align-items-stretch` to stretch items to fill the container’s cross axis.
 
 {{< example class="fs-sm fw-semibold" show_source="false" >}}
   <div class="d-flex align-items-stretch gap-4 bg-striped-purple rounded w-100">
-    <div class="d-flex flex-fill align-items-center justify-content-center py-2 rounded text-bg-secondary">01</div>
-    <div class="d-flex flex-fill align-items-center justify-content-center py-6 rounded text-bg-secondary">02</div>
-    <div class="d-flex flex-fill align-items-center justify-content-center py-5 rounded text-bg-secondary">03</div>
+    <div class="d-flex flex-fill align-items-center justify-content-center py-2 rounded text-bg-purple">01</div>
+    <div class="d-flex flex-fill align-items-center justify-content-center py-6 rounded text-bg-purple">02</div>
+    <div class="d-flex flex-fill align-items-center justify-content-center py-5 rounded text-bg-purple">03</div>
   </div>
 {{</ example >}}
 
@@ -43,9 +43,9 @@ Use `align-items-start` to align items to the start of the container’s cross a
 
 {{< example class="fs-sm fw-semibold" show_source="false" >}}
   <div class="d-flex align-items-start gap-4 bg-striped-purple rounded w-100">
-    <div class="d-flex flex-fill align-items-center justify-content-center py-2 rounded text-bg-secondary">01</div>
-    <div class="d-flex flex-fill align-items-center justify-content-center py-6 rounded text-bg-secondary">02</div>
-    <div class="d-flex flex-fill align-items-center justify-content-center py-5 rounded text-bg-secondary">03</div>
+    <div class="d-flex flex-fill align-items-center justify-content-center py-2 rounded text-bg-purple">01</div>
+    <div class="d-flex flex-fill align-items-center justify-content-center py-6 rounded text-bg-purple">02</div>
+    <div class="d-flex flex-fill align-items-center justify-content-center py-5 rounded text-bg-purple">03</div>
   </div>
 {{</ example >}}
 
@@ -64,9 +64,9 @@ Use `align-items-center` to align items along the center of the container’s cr
 
 {{< example class="fs-sm fw-semibold" show_source="false" >}}
   <div class="d-flex align-items-center gap-4 bg-striped-purple rounded w-100">
-    <div class="d-flex flex-fill align-items-center justify-content-center py-2 rounded text-bg-secondary">01</div>
-    <div class="d-flex flex-fill align-items-center justify-content-center py-6 rounded text-bg-secondary">02</div>
-    <div class="d-flex flex-fill align-items-center justify-content-center py-5 rounded text-bg-secondary">03</div>
+    <div class="d-flex flex-fill align-items-center justify-content-center py-2 rounded text-bg-purple">01</div>
+    <div class="d-flex flex-fill align-items-center justify-content-center py-6 rounded text-bg-purple">02</div>
+    <div class="d-flex flex-fill align-items-center justify-content-center py-5 rounded text-bg-purple">03</div>
   </div>
 {{</ example >}}
 
@@ -84,9 +84,9 @@ Use `align-items-end` to align items to the end of the container’s cross axis:
 
 {{< example class="fs-sm fw-semibold" show_source="false" >}}
   <div class="d-flex align-items-end gap-4 bg-striped-purple rounded w-100">
-    <div class="d-flex flex-fill align-items-center justify-content-center py-2 rounded text-bg-secondary">01</div>
-    <div class="d-flex flex-fill align-items-center justify-content-center py-6 rounded text-bg-secondary">02</div>
-    <div class="d-flex flex-fill align-items-center justify-content-center py-5 rounded text-bg-secondary">03</div>
+    <div class="d-flex flex-fill align-items-center justify-content-center py-2 rounded text-bg-purple">01</div>
+    <div class="d-flex flex-fill align-items-center justify-content-center py-6 rounded text-bg-purple">02</div>
+    <div class="d-flex flex-fill align-items-center justify-content-center py-5 rounded text-bg-purple">03</div>
   </div>
 {{</ example >}}
 
@@ -104,9 +104,9 @@ Use `align-items-baseline` to align items along the container’s cross axis suc
 
 {{< example class="fs-sm fw-semibold" show_source="false" >}}
   <div class="d-flex align-items-baseline gap-4 bg-striped-purple rounded w-100">
-    <div class="d-flex flex-fill align-items-center justify-content-center pt-2 pb-4 rounded text-bg-secondary">01</div>
-    <div class="d-flex flex-fill align-items-center justify-content-center pt-6 pb-5 rounded text-bg-secondary">02</div>
-    <div class="d-flex flex-fill align-items-center justify-content-center pt-5 pb-3 rounded text-bg-secondary">03</div>
+    <div class="d-flex flex-fill align-items-center justify-content-center pt-2 pb-4 rounded text-bg-purple">01</div>
+    <div class="d-flex flex-fill align-items-center justify-content-center pt-6 pb-5 rounded text-bg-purple">02</div>
+    <div class="d-flex flex-fill align-items-center justify-content-center pt-5 pb-3 rounded text-bg-purple">03</div>
   </div>
 {{</ example >}}
 

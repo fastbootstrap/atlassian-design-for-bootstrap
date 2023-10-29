@@ -1,9 +1,9 @@
 ---
 layout: docs
-title: Color
-seo_title: Color tokens
+title: Color tokens
 description: "Color tokens use for the text, background, icon, border and link of elements."
 toc: true
+status: new
 menu:
   tokens:    
 ---

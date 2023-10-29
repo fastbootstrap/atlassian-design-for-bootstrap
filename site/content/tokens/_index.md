@@ -2,8 +2,9 @@
 title: Tokens
 seo_title: Theme tokens
 sidebar_menu: tokens
+image: /images/tokens@2x.png
+styles:
+  list_icon_css: icon-yellow
 ---
 
-Design tokens are the building blocks of all UI elements. 
-
-As a Bootstrap new theme that based on Atlassian design tokens and following the Bootstrap theme design guide. 
+Design tokens are the single source of truth to name and store design decisions.

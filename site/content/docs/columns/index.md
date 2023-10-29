@@ -3,10 +3,10 @@ layout: docs
 title: Columns
 description: "A responsive grid allows a layout to change dynamically based on the size of the screen. "
 toc: true
-group: layout
+group: grid-system
 menu:
   docs:
-    weight: 50    
+    weight: 30    
 ---
 
 Learn how to modify columns with a handful of options for alignment, ordering, and offsetting thanks to our [flexbox grid system]({{< docsref "grid" >}}). Plus, see how to use column classes to manage widths of non-grid elements.
@@ -14,6 +14,27 @@ Learn how to modify columns with a handful of options for alignment, ordering, a
 {{< callout info >}}
 **Heads up!** Be sure to [read the Grid page]({{< docsref "grid" >}}) first before diving into how to modify and customize your grid columns.
 {{< /callout >}}
+
+## Quick reference
+
+{{< bs-table "table api-class-table" >}}
+| Class | Description |
+| --- | --- |
+| `.col` | Auto width of a row |
+| `.col-auto` | Auto width |
+| `.col-1` | 1/12 of a row |
+| `.col-2` | 2/12 of a row |
+| `.col-3` | 3/12 of a row |
+| `.col-4` | 4/12 of a row |
+| `.col-5` | 5/12 of a row |
+| `.col-6` | 6/12 of a row |
+| `.col-7` | 7/12 of a row |
+| `.col-8` | 8/12 of a row |
+| `.col-9` | 9/12 of a row |
+| `.col-10` | 10/12 of a row |
+| `.col-11` | 11/12 of a row |
+| `.col-12` | Entire width of a row |
+{{< /bs-table >}}
 
 ## How they work
 
@@ -292,11 +313,11 @@ With the move to flexbox in v4, you can use margin utilities like `.me-auto` to 
 
 The `.col-*` classes can also be used outside a `.row` to give an element a specific width. Whenever column classes are used as non-direct children of a row, the paddings are omitted.
 
-{{< example >}}
-<div class="col-3 bg-light p-3 border">
+{{< example class="bg-neutral-subtler bg-grid-slate-100 d-flex flex-column gap-3">}}
+<div class="col-3 text-bg-purple p-3 border">
   .col-3: width of 25%
 </div>
-<div class="col-sm-9 bg-light p-3 border">
+<div class="col-sm-9 text-bg-purple p-3 border">
   .col-sm-9: width of 75% above sm breakpoint
 </div>
 {{< /example >}}

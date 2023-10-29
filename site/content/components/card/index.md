@@ -31,7 +31,7 @@ Responsive card built with the latest Bootstrap 5. The card component is a flexi
 
 Using `.card-img-top` adding an image to reinforce the content. 
 
-{{< example class="bd-example-card d-flex justify-content-center bg-light" >}}
+{{< example class="bd-example-card d-flex justify-content-center " >}}
 <div class="card">
   <img src="/images/cards/1.jpg" class="card-img-top" alt="green iguana" />
   <div class="card-body">
@@ -52,7 +52,7 @@ Using `.card-img-top` adding an image to reinforce the content.
 
 In this example, using the `.card-header`, `.card-footer`, `.card-img-top` and [dropdown menu]({{< docsref "dropdown" >}}) to build.
 
-{{< example class="bd-example-card d-flex justify-content-center bg-light" >}}
+{{< example class="bd-example-card d-flex justify-content-center " >}}
 <div class="card">
   <div class="card-header d-flex align-items-center">
     <span class="avatar text-bg-primary avatar-lg fs-5">R</span>
@@ -93,7 +93,7 @@ In this example, using the `.card-header`, `.card-footer`, `.card-img-top` and [
 
 The building block of a card is the `.card-body`. Use it whenever you need a padded section within a card.
 
-{{< example class="bd-example-card d-flex justify-content-center bg-light" >}}
+{{< example class="bd-example-card d-flex justify-content-center " >}}
 <div class="card">
   <div class="card-body">
     This is some text within a card body.
@@ -105,7 +105,7 @@ The building block of a card is the `.card-body`. Use it whenever you need a pad
 
 Add an optional header `.card-header` within a card.
 
-{{< example class="bd-example-card d-flex justify-content-center bg-light" >}}
+{{< example class="bd-example-card d-flex justify-content-center " >}}
 <div class="card">
   <div class="card-header d-flex align-items-center border-bottom">
     <span class="avatar text-bg-primary avatar-lg fs-5">R</span>
@@ -123,7 +123,7 @@ Add an optional header `.card-header` within a card.
 
 Card headers can be styled by adding `.card-header` to `<h*>` elements.
 
-{{< example class="bd-example-card d-flex justify-content-center bg-light" >}}
+{{< example class="bd-example-card d-flex justify-content-center " >}}
 <div class="card">
   <h5 class="card-header">Featured</h5>
   <div class="card-body">
@@ -139,7 +139,7 @@ Card headers can be styled by adding `.card-header` to `<h*>` elements.
 
 Add an optional footer `.card-footer` within a card.
 
-{{< example class="bd-example-card d-flex justify-content-center bg-light" >}}
+{{< example class="bd-example-card d-flex justify-content-center " >}}
 <div class="card">
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
@@ -162,7 +162,7 @@ Add some navigation to a card’s header (or block) with pills or [tabs]({{< ref
 
 Add the `.card-header-tabs` class to the `.nav-tabs`.
 
-{{< example class="bg-light" >}}
+{{< example class="" >}}
 <div class="card">
   <div class="card-header">
     <ul class="nav nav-tabs card-header-tabs">
@@ -191,7 +191,7 @@ Add the `.card-header-tabs` class to the `.nav-tabs`.
 
 Add the `.card-header-pills` class to the `.nav-pills`.
 
-{{< example class="bg-light" >}}
+{{< example class="" >}}
 <div class="card">
   <div class="card-header">
     <ul class="nav nav-pills card-header-pills">
@@ -224,7 +224,7 @@ Cards assume no specific `width` to start, so they’ll be 100% wide unless othe
 
 Using the grid, wrap cards in columns and rows as needed.
 
-{{< example class="container bg-light" >}}
+{{< example class="container " >}}
 <div class="row">
   <div class="col-sm-6">
     <div class="card">
@@ -255,7 +255,7 @@ Using the grid, wrap cards in columns and rows as needed.
 
 Use our handful of available sizing utilities to quickly set a card’s width.
 
-{{< example class="d-grid gap-3 bg-light" >}}
+{{< example class="d-grid gap-3 " >}}
 <div class="card w-75">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
@@ -277,7 +277,7 @@ Use our handful of available sizing utilities to quickly set a card’s width.
 
 Use custom CSS in your stylesheets or as inline styles to set a width.
 
-{{< example class="d-flex justify-content-center bg-light" >}}
+{{< example class="d-flex justify-content-center " >}}
 <div class="card" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
@@ -291,7 +291,7 @@ Use custom CSS in your stylesheets or as inline styles to set a width.
 
 You can quickly change the text alignment of any card—in its entirety or specific parts—with our [text align classes]({{< docsref "text-align" >}}).
 
-{{< example class="bd-example-card d-grid gap-3 bg-light" >}}
+{{< example class="bd-example-card d-grid gap-3 " >}}
 <div class="card">
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
@@ -325,7 +325,7 @@ You can quickly change the text alignment of any card—in its entirety or speci
 
 Using a combination of grid and utility classes, cards can be made horizontal in a mobile-friendly and responsive way. In the example below, we remove the grid gutters with `.g-0` and use `.col-md-*` classes to make the card horizontal at the `md` breakpoint. Further adjustments may be needed depending on your card content.
 
-{{< example class="bg-light d-flex justify-content-center" >}}
+{{< example class=" d-flex justify-content-center" >}}
 <div class="card" style="max-width: 640px;">
   <div class="row g-0">
     <div class="col-md-4">
@@ -355,7 +355,7 @@ Cards include a few options for working with images. Choose from appending “im
 
 Similar to headers and footers, cards can include top and bottom “image caps”—images at the top or bottom of a card.
 
-{{< example class="bd-example-card d-flex justify-content-center bg-light" >}}
+{{< example class="bd-example-card d-flex justify-content-center " >}}
 <div class="card">
   <img src="/images/cards/1.jpg" class="card-img-top" alt="green iguana" />
   <div class="card-body">
@@ -370,7 +370,7 @@ Similar to headers and footers, cards can include top and bottom “image caps�
 
 Images at the bottom of a card by `.card-img-bottom`.
 
-{{< example class="bd-example-card d-flex justify-content-center bg-light" >}}
+{{< example class="bd-example-card d-flex justify-content-center " >}}
 <div class="card">
   <div class="card-body">
     <h4>Lizard</h4>
@@ -387,7 +387,7 @@ Images at the bottom of a card by `.card-img-bottom`.
 
 Turn an image into a card background and overlay your card’s text. Depending on the image, you may or may not need additional styles or utilities.
 
-{{< example class="bd-example-card d-flex justify-content-center bg-light" >}}
+{{< example class="bd-example-card d-flex justify-content-center " >}}
 <div class="card">
   <img src="/images/cards/1.jpg" class="card-img-top" alt="green iguana" />
   <div class="card-img-overlay text-white">
@@ -639,7 +639,7 @@ Card titles are used by adding `.card-title` to a `<h*>` tag. In the same way, l
 
 Subtitles are used by adding a `.card-subtitle` to a `<h*>` tag. If the `.card-title` and the `.card-subtitle` items are placed in a `.card-body` item, the card title and subtitle are aligned nicely.
 
-{{< example class="bd-example-card d-flex justify-content-center bg-light" >}}
+{{< example class="bd-example-card d-flex justify-content-center " >}}
 <div class="card">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
@@ -655,7 +655,7 @@ Subtitles are used by adding a `.card-subtitle` to a `<h*>` tag. If the `.card-t
 
 `.card-img-top` places an image to the top of the card. With `.card-text`, text can be added to the card. Text within `.card-text` can also be styled with the standard HTML tags.
 
-{{< example class="bd-example-card d-flex justify-content-center bg-light" >}}
+{{< example class="bd-example-card d-flex justify-content-center " >}}
 <div class="card">
   <img src="/images/cards/1.jpg" class="card-img-top" alt="green iguana" />
   <div class="card-body">
@@ -671,9 +671,9 @@ Subtitles are used by adding a `.card-subtitle` to a `<h*>` tag. If the `.card-t
 
 Create lists of content in a card with a flush list group.
 
-{{< example class="bd-example-card d-flex justify-content-center bg-light" >}}
+{{< example class="bd-example-card d-flex justify-content-center " >}}
 <div class="card">
-  <ul class="list-group list-group-flush">
+  <ul class="list-group list-group-flush border-start-0 border-end-0">
     <li class="list-group-item px-3">Cras justo odio</li>
     <li class="list-group-item px-3">Dapibus ac facilisis in</li>
     <li class="list-group-item px-3">Vestibulum at eros</li>
@@ -685,7 +685,7 @@ Create lists of content in a card with a flush list group.
 
 Mix and match multiple content types to create the card you need, or throw everything in there. Shown below are image styles, blocks, text styles, and a list group—all wrapped in a fixed-width card.
 
-{{< example class="bd-example-card d-flex justify-content-center bg-light" >}}
+{{< example class="bd-example-card d-flex justify-content-center " >}}
 <div class="card">
   <img src="/images/cards/1.jpg" class="card-img-top" alt="green iguana" />
   <div class="card-body">
@@ -694,7 +694,7 @@ Mix and match multiple content types to create the card you need, or throw every
       6,000 species, ranging across all continents except Antarctica.
     </p>
   </div>
-  <ul class="list-group list-group-flush">
+  <ul class="list-group list-group-flush border-start-0 border-end-0">
     <li class="list-group-item px-3">Cras justo odio</li>
     <li class="list-group-item px-3">Dapibus ac facilisis in</li>
     <li class="list-group-item px-3">Vestibulum at eros</li>

@@ -23,9 +23,9 @@ Use `flex-grow` to allow a flex item to grow to fill any available space:
 
 {{< example show_source="false" >}}
   <div class="d-flex bg-striped-purple gap-4 rounded">
-    <div class="d-flex align-items-center justify-content-center text-bg-secondary rounded bd-w-14 bd-h-14">01</div>
-    <div class="d-flex flex-grow-1 align-items-center justify-content-center text-bg-secondary rounded bd-w-14 bd-h-14">02</div>
-    <div class="d-flex align-items-center justify-content-center text-bg-secondary rounded bd-w-14 bd-h-14">03</div>
+    <div class="d-flex align-items-center justify-content-center text-bg-purple rounded bd-w-14 bd-h-14">01</div>
+    <div class="d-flex flex-grow-1 align-items-center justify-content-center text-bg-purple rounded bd-w-14 bd-h-14">02</div>
+    <div class="d-flex align-items-center justify-content-center text-bg-purple rounded bd-w-14 bd-h-14">03</div>
   </div>
 {{</ example >}}
 
@@ -43,9 +43,9 @@ Use `flex-grow-0` to prevent a flex item from growing:
 
 {{< example show_source="false" >}}
   <div class="d-flex gap-4 bg-striped-purple">
-  <div class="flex-grow-1 d-flex align-items-center justify-content-center text-bg-secondary rounded bd-w-14 bd-h-14">01</div>
-  <div class="flex-grow-0 d-flex align-items-center justify-content-center text-bg-secondary rounded bd-w-14 bd-h-14">02</div>
-  <div class="flex-grow-1 d-flex align-items-center justify-content-center text-bg-secondary rounded bd-w-14 bd-h-14">03</div>
+  <div class="flex-grow-1 d-flex align-items-center justify-content-center text-bg-purple rounded bd-w-14 bd-h-14">01</div>
+  <div class="flex-grow-0 d-flex align-items-center justify-content-center text-bg-purple rounded bd-w-14 bd-h-14">02</div>
+  <div class="flex-grow-1 d-flex align-items-center justify-content-center text-bg-purple rounded bd-w-14 bd-h-14">03</div>
   </div>
 {{</ example >}}
 

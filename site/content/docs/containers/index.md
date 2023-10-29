@@ -3,10 +3,10 @@ layout: docs
 title: Containers
 description: "Containers are a fundamental building block of Bootstrap that contain, pad, and align your content within a given device or viewport."
 toc: true
-group: layout
+group: grid-system
 menu:
   docs:    
-    weight: 20 
+    weight: 10 
 ---
 
 Containers are a fundamental building block of Bootstrap that contain, pad, and align your content within a given device or viewport.

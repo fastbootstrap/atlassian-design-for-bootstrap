@@ -3,7 +3,7 @@ layout: docs
 title: Gutters
 description: "Gutters are the padding between columns used to responsively space and align content in the Bootstrap grid system."
 toc: true
-group: layout
+group: grid-system
 menu:
   docs: 
     weight: 50   
@@ -37,10 +37,10 @@ For example, in the following example we've increased the padding with `.px-5`:
 <div class="container bg-striped-purple gx-0 text-center">
   <div class="row gx-5">
     <div class="col">
-     <div class="p-3 text-bg-secondary">Custom column padding</div>
+     <div class="p-3 text-bg-purple">Custom column padding</div>
     </div>
     <div class="col">
-      <div class="p-3 text-bg-secondary">Custom column padding</div>
+      <div class="p-3 text-bg-purple">Custom column padding</div>
     </div>
   </div>
 </div>
@@ -65,10 +65,10 @@ An alternative solution is to add a wrapper around the `.row` with the `.overflo
 <div class="container overflow-hidden gx-0 bg-striped-purple text-center">
   <div class="row gx-5">
     <div class="col">
-     <div class="p-3 text-bg-secondary">Custom column padding</div>
+     <div class="p-3 text-bg-purple">Custom column padding</div>
     </div>
     <div class="col">
-      <div class="p-3 text-bg-secondary">Custom column padding</div>
+      <div class="p-3 text-bg-purple">Custom column padding</div>
     </div>
   </div>
 </div>
@@ -95,16 +95,16 @@ An alternative solution is to add a wrapper around the `.row` with the `.overflo
 <div class="container overflow-hidden text-center bg-striped-purple px-0">
   <div class="row gy-5">
     <div class="col-6">
-      <div class="p-3 text-bg-secondary">Custom column padding</div>
+      <div class="p-3 text-bg-purple">Custom column padding</div>
     </div>
     <div class="col-6">
-      <div class="p-3 text-bg-secondary">Custom column padding</div>
+      <div class="p-3 text-bg-purple">Custom column padding</div>
     </div>
     <div class="col-6">
-      <div class="p-3 text-bg-secondary">Custom column padding</div>
+      <div class="p-3 text-bg-purple">Custom column padding</div>
     </div>
     <div class="col-6">
-      <div class="p-3 text-bg-secondary">Custom column padding</div>
+      <div class="p-3 text-bg-purple">Custom column padding</div>
     </div>
   </div>
 </div>
@@ -137,16 +137,16 @@ An alternative solution is to add a wrapper around the `.row` with the `.overflo
 <div class="container text-center bg-striped-purple px-0">
   <div class="row g-3">
     <div class="col-6">
-      <div class="p-3 text-bg-secondary">Custom column padding</div>
+      <div class="p-3 text-bg-purple">Custom column padding</div>
     </div>
     <div class="col-6">
-      <div class="p-3 text-bg-secondary">Custom column padding</div>
+      <div class="p-3 text-bg-purple">Custom column padding</div>
     </div>
     <div class="col-6">
-      <div class="p-3 text-bg-secondary">Custom column padding</div>
+      <div class="p-3 text-bg-purple">Custom column padding</div>
     </div>
     <div class="col-6">
-      <div class="p-3 text-bg-secondary">Custom column padding</div>
+      <div class="p-3 text-bg-purple">Custom column padding</div>
     </div>
   </div>
 </div>
@@ -179,34 +179,34 @@ Gutter classes can also be added to [row columns]({{< docsref "grid#row-columns"
 <div class="container text-center bg-striped-purple px-0">
   <div class="row row-cols-2 row-cols-lg-5 g-1 g-lg-3">
     <div class="col">
-      <div class="p-3 text-bg-secondary">Row column</div>
+      <div class="p-3 text-bg-purple">Row column</div>
     </div>
     <div class="col">
-      <div class="p-3 text-bg-secondary">Row column</div>
+      <div class="p-3 text-bg-purple">Row column</div>
     </div>
     <div class="col">
-      <div class="p-3 text-bg-secondary">Row column</div>
+      <div class="p-3 text-bg-purple">Row column</div>
     </div>
     <div class="col">
-      <div class="p-3 text-bg-secondary">Row column</div>
+      <div class="p-3 text-bg-purple">Row column</div>
     </div>
     <div class="col">
-      <div class="p-3 text-bg-secondary">Row column</div>
+      <div class="p-3 text-bg-purple">Row column</div>
     </div>
     <div class="col">
-      <div class="p-3 text-bg-secondary">Row column</div>
+      <div class="p-3 text-bg-purple">Row column</div>
     </div>
     <div class="col">
-      <div class="p-3 text-bg-secondary">Row column</div>
+      <div class="p-3 text-bg-purple">Row column</div>
     </div>
     <div class="col">
-      <div class="p-3 text-bg-secondary">Row column</div>
+      <div class="p-3 text-bg-purple">Row column</div>
     </div>
     <div class="col">
-      <div class="p-3 border text-bg-secondary">Row column</div>
+      <div class="p-3 border text-bg-purple">Row column</div>
     </div>
     <div class="col">
-      <div class="p-3 text-bg-secondary">Row column</div>
+      <div class="p-3 text-bg-purple">Row column</div>
     </div>
   </div>
 </div>
@@ -242,7 +242,7 @@ In practice, here's how it looks. Note you can continue to use this with all oth
 
 {{< example show_source="false" >}}
 <div class="row g-0 text-center">
-  <div class="col-sm-6 col-md-8 text-bg-secondary p-5">.col-sm-6 .col-md-8</div>
+  <div class="col-sm-6 col-md-8 text-bg-purple p-5">.col-sm-6 .col-md-8</div>
   <div class="col-6 col-md-4 text-bg-dark p-5">.col-6 .col-md-4</div>
 </div>
 {{< /example >}}

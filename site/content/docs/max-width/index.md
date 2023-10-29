@@ -46,16 +46,16 @@ These values are automatically derived from the SASS variable  `$container-max-w
 {{< example class="bg-grid-slate-100 fw-semibold text-center" show_source="false" >}}
 <div class="d-flex flex-column gap-4">
   <div class="container max-w-xs">
-    <div class=" py-2 text-bg-secondary rounded">.max-w-xs</div>
+    <div class=" py-2 text-bg-purple rounded">.max-w-xs</div>
   </div>
   <div class="container max-w-screen-sm">
-    <div class=" py-2 text-bg-secondary rounded">.max-w-screen-sm</div>
+    <div class=" py-2 text-bg-purple rounded">.max-w-screen-sm</div>
   </div>
   <div class="container max-w-screen-md">
-    <div class=" py-2 text-bg-secondary rounded">.max-w-screen-md</div>
+    <div class=" py-2 text-bg-purple rounded">.max-w-screen-md</div>
   </div>
   <div class="container max-w-screen-lg">
-    <div class=" py-2 text-bg-secondary rounded">.max-w-screen-lg</div>
+    <div class=" py-2 text-bg-purple rounded">.max-w-screen-lg</div>
   </div>
 </div>
 {{</ example >}}

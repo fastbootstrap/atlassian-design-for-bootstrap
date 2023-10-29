@@ -85,8 +85,7 @@ Add `.alert-primary` to the alert.
 </div>
 {{</ example >}}
 
-
-### Secondary
+### More styles
 
 Add `.alert-secondary` to the alert.
 
@@ -95,8 +94,6 @@ Add `.alert-secondary` to the alert.
   A simple secondary alert—check it out!
 </div>
 {{</ example >}}
-
-### More styles
 
 Add `.alert-info` to the alert for display information.
 

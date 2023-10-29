@@ -202,7 +202,7 @@ Fancy larger or smaller pagination? Add `.pagination-lg` or `.pagination-sm` for
 
 ## Colors
 
-Use the `.bg-{color}` to `.page-link` to modify the current active page backround.
+Use the `.text-bg-{color}` to `.page-link` to modify the current active page backround.
 
 {{< example >}}
 <nav aria-label="Page navigation example">
@@ -210,7 +210,7 @@ Use the `.bg-{color}` to `.page-link` to modify the current active page backroun
     <li class="page-item">
       <a class="page-link disabled" href="#"><i class="fas fa-angle-left"></i></a>
     </li>
-    <li class="page-item active"><a class="page-link bg-primary" href="#">1</a></li>
+    <li class="page-item active"><a class="page-link text-bg-primary" href="#">1</a></li>
     <li class="page-item"><a class="page-link" href="#">2</a></li>
     <li class="page-item"><a class="page-link" href="#">3</a></li>
     <li class="page-item"><a class="page-link" href="#">4</a></li>
@@ -226,7 +226,7 @@ Use the `.bg-{color}` to `.page-link` to modify the current active page backroun
     <li class="page-item">
       <a class="page-link disabled" href="#"><i class="fas fa-angle-left"></i></a>
     </li>
-    <li class="page-item active"><a class="page-link bg-secondary" href="#">1</a></li>
+    <li class="page-item active"><a class="page-link text-bg-secondary" href="#">1</a></li>
     <li class="page-item"><a class="page-link" href="#">2</a></li>
     <li class="page-item"><a class="page-link" href="#">3</a></li>
     <li class="page-item"><a class="page-link" href="#">4</a></li>
@@ -242,7 +242,7 @@ Use the `.bg-{color}` to `.page-link` to modify the current active page backroun
     <li class="page-item">
       <a class="page-link disabled" href="#"><i class="fas fa-angle-left"></i></a>
     </li>
-    <li class="page-item active"><a class="page-link bg-info" href="#">1</a></li>
+    <li class="page-item active"><a class="page-link text-bg-light" href="#">1</a></li>
     <li class="page-item"><a class="page-link" href="#">2</a></li>
     <li class="page-item"><a class="page-link" href="#">3</a></li>
     <li class="page-item"><a class="page-link" href="#">4</a></li>

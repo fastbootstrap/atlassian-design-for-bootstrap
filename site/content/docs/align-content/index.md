@@ -23,11 +23,11 @@ Use `align-content-start` to pack rows in a container against the start of the c
 
 {{< example class="fs-sm fw-semibold text-center" show_source="false" >}}
   <div class="grid gap-4 align-content-start bd-h-56 rounded bg-striped-purple" style="--bs-columns: 3;--bs-rows: auto">
-    <div class="p-4 rounded text-bg-secondary">01</div>
-    <div class="p-4 rounded text-bg-secondary">02</div>
-    <div class="p-4 rounded text-bg-secondary">03</div>
-    <div class="p-4 rounded text-bg-secondary">04</div>
-    <div class="p-4 rounded text-bg-secondary">05</div>
+    <div class="p-4 rounded text-bg-purple">01</div>
+    <div class="p-4 rounded text-bg-purple">02</div>
+    <div class="p-4 rounded text-bg-purple">03</div>
+    <div class="p-4 rounded text-bg-purple">04</div>
+    <div class="p-4 rounded text-bg-purple">05</div>
   </div>
 {{</ example >}}
 
@@ -47,11 +47,11 @@ Use `align-content-center` to pack rows in a container in the center of the cros
 
 {{< example class="fs-sm fw-semibold text-center" show_source="false" >}}
   <div class="grid gap-4 align-content-center bd-h-56 rounded bg-striped-purple" style="--bs-columns: 3;--bs-rows: auto">
-    <div class="p-4 rounded text-bg-secondary">01</div>
-    <div class="p-4 rounded text-bg-secondary">02</div>
-    <div class="p-4 rounded text-bg-secondary">03</div>
-    <div class="p-4 rounded text-bg-secondary">04</div>
-    <div class="p-4 rounded text-bg-secondary">05</div>
+    <div class="p-4 rounded text-bg-purple">01</div>
+    <div class="p-4 rounded text-bg-purple">02</div>
+    <div class="p-4 rounded text-bg-purple">03</div>
+    <div class="p-4 rounded text-bg-purple">04</div>
+    <div class="p-4 rounded text-bg-purple">05</div>
   </div>
 {{</ example >}}
 
@@ -71,11 +71,11 @@ Use `align-content-end` to pack rows in a container against the end of the cross
 
 {{< example class="fs-sm fw-semibold text-center" show_source="false" >}}
   <div class="grid gap-4 align-content-end bd-h-56 rounded bg-striped-purple" style="--bs-columns: 3;--bs-rows: auto">
-    <div class="p-4 rounded text-bg-secondary">01</div>
-    <div class="p-4 rounded text-bg-secondary">02</div>
-    <div class="p-4 rounded text-bg-secondary">03</div>
-    <div class="p-4 rounded text-bg-secondary">04</div>
-    <div class="p-4 rounded text-bg-secondary">05</div>
+    <div class="p-4 rounded text-bg-purple">01</div>
+    <div class="p-4 rounded text-bg-purple">02</div>
+    <div class="p-4 rounded text-bg-purple">03</div>
+    <div class="p-4 rounded text-bg-purple">04</div>
+    <div class="p-4 rounded text-bg-purple">05</div>
   </div>
 {{</ example >}}
 
@@ -95,11 +95,11 @@ Use `align-content-between` to distribute rows in a container such that there is
 
 {{< example class="fs-sm fw-semibold text-center" show_source="false" >}}
   <div class="grid gap-4 align-content-between bd-h-56 rounded bg-striped-purple" style="--bs-columns: 3;--bs-rows: auto">
-    <div class="p-4 rounded text-bg-secondary">01</div>
-    <div class="p-4 rounded text-bg-secondary">02</div>
-    <div class="p-4 rounded text-bg-secondary">03</div>
-    <div class="p-4 rounded text-bg-secondary">04</div>
-    <div class="p-4 rounded text-bg-secondary">05</div>
+    <div class="p-4 rounded text-bg-purple">01</div>
+    <div class="p-4 rounded text-bg-purple">02</div>
+    <div class="p-4 rounded text-bg-purple">03</div>
+    <div class="p-4 rounded text-bg-purple">04</div>
+    <div class="p-4 rounded text-bg-purple">05</div>
   </div>
 {{</ example >}}
 
@@ -119,11 +119,11 @@ Use `align-content-around` to distribute rows in a container such that there is 
 
 {{< example class="fs-sm fw-semibold text-center" show_source="false" >}}
   <div class="grid gap-4 align-content-around bd-h-56 rounded bg-striped-purple" style="--bs-columns: 3;--bs-rows: auto">
-    <div class="p-4 rounded text-bg-secondary">01</div>
-    <div class="p-4 rounded text-bg-secondary">02</div>
-    <div class="p-4 rounded text-bg-secondary">03</div>
-    <div class="p-4 rounded text-bg-secondary">04</div>
-    <div class="p-4 rounded text-bg-secondary">05</div>
+    <div class="p-4 rounded text-bg-purple">01</div>
+    <div class="p-4 rounded text-bg-purple">02</div>
+    <div class="p-4 rounded text-bg-purple">03</div>
+    <div class="p-4 rounded text-bg-purple">04</div>
+    <div class="p-4 rounded text-bg-purple">05</div>
   </div>
 {{</ example >}}
 
@@ -143,11 +143,11 @@ Use `align-content-stretch` to stretch items to fill the container’s cross axi
 
 {{< example class="fs-sm fw-semibold text-center" show_source="false" >}}
   <div class="grid gap-4 align-content-stretch bd-h-56 rounded bg-striped-purple" style="--bs-columns: 3;--bs-rows: auto">
-    <div class="p-4 rounded text-bg-secondary">01</div>
-    <div class="p-4 rounded text-bg-secondary">02</div>
-    <div class="p-4 rounded text-bg-secondary">03</div>
-    <div class="p-4 rounded text-bg-secondary">04</div>
-    <div class="p-4 rounded text-bg-secondary">05</div>
+    <div class="p-4 rounded text-bg-purple">01</div>
+    <div class="p-4 rounded text-bg-purple">02</div>
+    <div class="p-4 rounded text-bg-purple">03</div>
+    <div class="p-4 rounded text-bg-purple">04</div>
+    <div class="p-4 rounded text-bg-purple">05</div>
   </div>
 {{</ example >}}
 

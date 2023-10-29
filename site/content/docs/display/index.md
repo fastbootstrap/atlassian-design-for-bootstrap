@@ -121,15 +121,15 @@ CSS Grid is `disabled` by default on Bootstrap. You can see our [CSS Grid]({{< d
 {{< example class="bg-neutral-subtler" show_source="false" >}}
 
 <div class="grid gap-4 text-center fw-semibold bg-striped-purple rounded-3">
-  <div class="g-col-4 p-3 text-bg-secondary rounded-3">01</div>
-  <div class="g-col-4 p-3 text-bg-secondary rounded-3">02</div>
-  <div class="g-col-4 p-3 text-bg-secondary rounded-3">03</div>
-  <div class="g-col-4 p-3 text-bg-secondary rounded-3">04</div>
-  <div class="g-col-4 p-3 text-bg-secondary rounded-3">05</div>
-  <div class="g-col-4 p-3 text-bg-secondary rounded-3">06</div>
-  <div class="g-col-4 p-3 text-bg-secondary rounded-3">07</div>
-  <div class="g-col-4 p-3 text-bg-secondary rounded-3">08</div>
-  <div class="g-col-4 p-3 text-bg-secondary rounded-3">09</div>
+  <div class="g-col-4 p-3 text-bg-purple rounded-3">01</div>
+  <div class="g-col-4 p-3 text-bg-purple rounded-3">02</div>
+  <div class="g-col-4 p-3 text-bg-purple rounded-3">03</div>
+  <div class="g-col-4 p-3 text-bg-purple rounded-3">04</div>
+  <div class="g-col-4 p-3 text-bg-purple rounded-3">05</div>
+  <div class="g-col-4 p-3 text-bg-purple rounded-3">06</div>
+  <div class="g-col-4 p-3 text-bg-purple rounded-3">07</div>
+  <div class="g-col-4 p-3 text-bg-purple rounded-3">08</div>
+  <div class="g-col-4 p-3 text-bg-purple rounded-3">09</div>
 </div>
 {{</ example >}}
 
@@ -207,8 +207,8 @@ Use `d-none` to set an element to `display: none` and remove it from the page la
 
 <div class="d-flex gap-4 bg-striped-purple text-center">
   <div class="d-flex align-items-center justify-content-center bd-w-14 bd-h-14 d-none">01</div>
-  <div class="d-flex align-items-center justify-content-center bd-w-14 bd-h-14 text-bg-secondary">02</div>
-  <div class="d-flex align-items-center justify-content-center bd-w-14 bd-h-14 text-bg-secondary">03</div>
+  <div class="d-flex align-items-center justify-content-center bd-w-14 bd-h-14 text-bg-purple">02</div>
+  <div class="d-flex align-items-center justify-content-center bd-w-14 bd-h-14 text-bg-purple">03</div>
 </div>
 {{</ example >}}
 
@@ -251,7 +251,7 @@ To show an element only on a given interval of screen sizes you can combine one 
 
 {{< example >}}
 <div class="p-5 text-bg-primary d-lg-none">hide on lg and wider screens</div>
-<div class="p-5 text-bg-secondary d-none d-lg-block">hide on screens smaller than lg</div>
+<div class="p-5 text-bg-purple d-none d-lg-block">hide on screens smaller than lg</div>
 {{< /example >}}
 
 ## Breakpoints

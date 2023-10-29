@@ -215,8 +215,32 @@ margin:
       - 6: 1.5rem
       - 7: 1.75rem
       - 8: 2rem
-      - 9: 2.5rem
-      - 10: 3rem
+      - 9: 2.25rem
+      - 10: 2.5rem
+      - 11: 2.75rem
+      - 12: 3rem
+      - 14: 3.5rem
+      - 16: 4rem
+      - 20: 5rem
+      - 24: 6rem
+      - 28: 7rem
+      - 32: 8rem
+      - 36: 9rem
+      - 40: 10rem
+      - 44: 11rem
+      - 48: 12rem
+      - 52: 13rem
+      - 56: 14rem
+      - 60: 15rem
+      - 64: 16rem
+      - 68: 17rem
+      - 72: 18rem
+      - 76: 19rem
+      - 80: 20rem
+      - 84: 21rem
+      - 88: 22rem
+      - 92: 23rem
+      - 96: 24rem
       - auto
   - property: margin-left margin-right
     responsive: true
@@ -231,8 +255,32 @@ margin:
       - 6: 1.5rem
       - 7: 1.75rem
       - 8: 2rem
-      - 9: 2.5rem
-      - 10: 3rem
+      - 9: 2.25rem
+      - 10: 2.5rem
+      - 11: 2.75rem
+      - 12: 3rem
+      - 14: 3.5rem
+      - 16: 4rem
+      - 20: 5rem
+      - 24: 6rem
+      - 28: 7rem
+      - 32: 8rem
+      - 36: 9rem
+      - 40: 10rem
+      - 44: 11rem
+      - 48: 12rem
+      - 52: 13rem
+      - 56: 14rem
+      - 60: 15rem
+      - 64: 16rem
+      - 68: 17rem
+      - 72: 18rem
+      - 76: 19rem
+      - 80: 20rem
+      - 84: 21rem
+      - 88: 22rem
+      - 92: 23rem
+      - 96: 24rem
       - auto
   - property: margin-top margin-bottom
     responsive: true
@@ -247,8 +295,32 @@ margin:
       - 6: 1.5rem
       - 7: 1.75rem
       - 8: 2rem
-      - 9: 2.5rem
-      - 10: 3rem
+      - 9: 2.25rem
+      - 10: 2.5rem
+      - 11: 2.75rem
+      - 12: 3rem
+      - 14: 3.5rem
+      - 16: 4rem
+      - 20: 5rem
+      - 24: 6rem
+      - 28: 7rem
+      - 32: 8rem
+      - 36: 9rem
+      - 40: 10rem
+      - 44: 11rem
+      - 48: 12rem
+      - 52: 13rem
+      - 56: 14rem
+      - 60: 15rem
+      - 64: 16rem
+      - 68: 17rem
+      - 72: 18rem
+      - 76: 19rem
+      - 80: 20rem
+      - 84: 21rem
+      - 88: 22rem
+      - 92: 23rem
+      - 96: 24rem
       - auto
   - property: margin-top
     responsive: true
@@ -263,8 +335,32 @@ margin:
       - 6: 1.5rem
       - 7: 1.75rem
       - 8: 2rem
-      - 9: 2.5rem
-      - 10: 3rem
+      - 9: 2.25rem
+      - 10: 2.5rem
+      - 11: 2.75rem
+      - 12: 3rem
+      - 14: 3.5rem
+      - 16: 4rem
+      - 20: 5rem
+      - 24: 6rem
+      - 28: 7rem
+      - 32: 8rem
+      - 36: 9rem
+      - 40: 10rem
+      - 44: 11rem
+      - 48: 12rem
+      - 52: 13rem
+      - 56: 14rem
+      - 60: 15rem
+      - 64: 16rem
+      - 68: 17rem
+      - 72: 18rem
+      - 76: 19rem
+      - 80: 20rem
+      - 84: 21rem
+      - 88: 22rem
+      - 92: 23rem
+      - 96: 24rem
       - auto
   - property: margin-bottom
     responsive: true
@@ -279,8 +375,32 @@ margin:
       - 6: 1.5rem
       - 7: 1.75rem
       - 8: 2rem
-      - 9: 2.5rem
-      - 10: 3rem
+      - 9: 2.25rem
+      - 10: 2.5rem
+      - 11: 2.75rem
+      - 12: 3rem
+      - 14: 3.5rem
+      - 16: 4rem
+      - 20: 5rem
+      - 24: 6rem
+      - 28: 7rem
+      - 32: 8rem
+      - 36: 9rem
+      - 40: 10rem
+      - 44: 11rem
+      - 48: 12rem
+      - 52: 13rem
+      - 56: 14rem
+      - 60: 15rem
+      - 64: 16rem
+      - 68: 17rem
+      - 72: 18rem
+      - 76: 19rem
+      - 80: 20rem
+      - 84: 21rem
+      - 88: 22rem
+      - 92: 23rem
+      - 96: 24rem
       - auto
   - property: margin-left
     responsive: true
@@ -295,8 +415,32 @@ margin:
       - 6: 1.5rem
       - 7: 1.75rem
       - 8: 2rem
-      - 9: 2.5rem
-      - 10: 3rem
+      - 9: 2.25rem
+      - 10: 2.5rem
+      - 11: 2.75rem
+      - 12: 3rem
+      - 14: 3.5rem
+      - 16: 4rem
+      - 20: 5rem
+      - 24: 6rem
+      - 28: 7rem
+      - 32: 8rem
+      - 36: 9rem
+      - 40: 10rem
+      - 44: 11rem
+      - 48: 12rem
+      - 52: 13rem
+      - 56: 14rem
+      - 60: 15rem
+      - 64: 16rem
+      - 68: 17rem
+      - 72: 18rem
+      - 76: 19rem
+      - 80: 20rem
+      - 84: 21rem
+      - 88: 22rem
+      - 92: 23rem
+      - 96: 24rem
       - auto
   - property: margin-right
     responsive: true
@@ -311,8 +455,32 @@ margin:
       - 6: 1.5rem
       - 7: 1.75rem
       - 8: 2rem
-      - 9: 2.5rem
-      - 10: 3rem
+      - 9: 2.25rem
+      - 10: 2.5rem
+      - 11: 2.75rem
+      - 12: 3rem
+      - 14: 3.5rem
+      - 16: 4rem
+      - 20: 5rem
+      - 24: 6rem
+      - 28: 7rem
+      - 32: 8rem
+      - 36: 9rem
+      - 40: 10rem
+      - 44: 11rem
+      - 48: 12rem
+      - 52: 13rem
+      - 56: 14rem
+      - 60: 15rem
+      - 64: 16rem
+      - 68: 17rem
+      - 72: 18rem
+      - 76: 19rem
+      - 80: 20rem
+      - 84: 21rem
+      - 88: 22rem
+      - 92: 23rem
+      - 96: 24rem
       - auto
 padding:
   - property: padding
@@ -327,8 +495,32 @@ padding:
       - 6: 1.5rem
       - 7: 1.75rem
       - 8: 2rem
-      - 9: 2.5rem
-      - 10: 3rem
+      - 9: 2.25rem
+      - 10: 2.5rem
+      - 11: 2.75rem
+      - 12: 3rem
+      - 14: 3.5rem
+      - 16: 4rem
+      - 20: 5rem
+      - 24: 6rem
+      - 28: 7rem
+      - 32: 8rem
+      - 36: 9rem
+      - 40: 10rem
+      - 44: 11rem
+      - 48: 12rem
+      - 52: 13rem
+      - 56: 14rem
+      - 60: 15rem
+      - 64: 16rem
+      - 68: 17rem
+      - 72: 18rem
+      - 76: 19rem
+      - 80: 20rem
+      - 84: 21rem
+      - 88: 22rem
+      - 92: 23rem
+      - 96: 24rem
   - property: padding-left padding-right
     class: px
     values:
@@ -341,8 +533,32 @@ padding:
       - 6: 1.5rem
       - 7: 1.75rem
       - 8: 2rem
-      - 9: 2.5rem
-      - 10: 3rem
+      - 9: 2.25rem
+      - 10: 2.5rem
+      - 11: 2.75rem
+      - 12: 3rem
+      - 14: 3.5rem
+      - 16: 4rem
+      - 20: 5rem
+      - 24: 6rem
+      - 28: 7rem
+      - 32: 8rem
+      - 36: 9rem
+      - 40: 10rem
+      - 44: 11rem
+      - 48: 12rem
+      - 52: 13rem
+      - 56: 14rem
+      - 60: 15rem
+      - 64: 16rem
+      - 68: 17rem
+      - 72: 18rem
+      - 76: 19rem
+      - 80: 20rem
+      - 84: 21rem
+      - 88: 22rem
+      - 92: 23rem
+      - 96: 24rem
   - property: padding-top padding-bottom
     class: py
     values:
@@ -355,8 +571,32 @@ padding:
       - 6: 1.5rem
       - 7: 1.75rem
       - 8: 2rem
-      - 9: 2.5rem
-      - 10: 3rem
+      - 9: 2.25rem
+      - 10: 2.5rem
+      - 11: 2.75rem
+      - 12: 3rem
+      - 14: 3.5rem
+      - 16: 4rem
+      - 20: 5rem
+      - 24: 6rem
+      - 28: 7rem
+      - 32: 8rem
+      - 36: 9rem
+      - 40: 10rem
+      - 44: 11rem
+      - 48: 12rem
+      - 52: 13rem
+      - 56: 14rem
+      - 60: 15rem
+      - 64: 16rem
+      - 68: 17rem
+      - 72: 18rem
+      - 76: 19rem
+      - 80: 20rem
+      - 84: 21rem
+      - 88: 22rem
+      - 92: 23rem
+      - 96: 24rem
   - property: padding-top
     class: pt
     values:
@@ -364,12 +604,37 @@ padding:
       - 1: 0.25rem
       - 2: 0.5rem
       - 3: 0.75rem
+      - 4: 1rem
       - 5: 1.25rem
       - 6: 1.5rem
       - 7: 1.75rem
       - 8: 2rem
-      - 9: 2.5rem
-      - 10: 3rem
+      - 9: 2.25rem
+      - 10: 2.5rem
+      - 11: 2.75rem
+      - 12: 3rem
+      - 14: 3.5rem
+      - 16: 4rem
+      - 20: 5rem
+      - 24: 6rem
+      - 28: 7rem
+      - 32: 8rem
+      - 36: 9rem
+      - 40: 10rem
+      - 44: 11rem
+      - 48: 12rem
+      - 52: 13rem
+      - 56: 14rem
+      - 60: 15rem
+      - 64: 16rem
+      - 68: 17rem
+      - 72: 18rem
+      - 76: 19rem
+      - 80: 20rem
+      - 84: 21rem
+      - 88: 22rem
+      - 92: 23rem
+      - 96: 24rem
   - property: padding-bottom
     class: pb
     values:
@@ -382,8 +647,32 @@ padding:
       - 6: 1.5rem
       - 7: 1.75rem
       - 8: 2rem
-      - 9: 2.5rem
-      - 10: 3rem
+      - 9: 2.25rem
+      - 10: 2.5rem
+      - 11: 2.75rem
+      - 12: 3rem
+      - 14: 3.5rem
+      - 16: 4rem
+      - 20: 5rem
+      - 24: 6rem
+      - 28: 7rem
+      - 32: 8rem
+      - 36: 9rem
+      - 40: 10rem
+      - 44: 11rem
+      - 48: 12rem
+      - 52: 13rem
+      - 56: 14rem
+      - 60: 15rem
+      - 64: 16rem
+      - 68: 17rem
+      - 72: 18rem
+      - 76: 19rem
+      - 80: 20rem
+      - 84: 21rem
+      - 88: 22rem
+      - 92: 23rem
+      - 96: 24rem
   - property: padding-left
     class: ps
     values:
@@ -396,8 +685,32 @@ padding:
       - 6: 1.5rem
       - 7: 1.75rem
       - 8: 2rem
-      - 9: 2.5rem
-      - 10: 3rem
+      - 9: 2.25rem
+      - 10: 2.5rem
+      - 11: 2.75rem
+      - 12: 3rem
+      - 14: 3.5rem
+      - 16: 4rem
+      - 20: 5rem
+      - 24: 6rem
+      - 28: 7rem
+      - 32: 8rem
+      - 36: 9rem
+      - 40: 10rem
+      - 44: 11rem
+      - 48: 12rem
+      - 52: 13rem
+      - 56: 14rem
+      - 60: 15rem
+      - 64: 16rem
+      - 68: 17rem
+      - 72: 18rem
+      - 76: 19rem
+      - 80: 20rem
+      - 84: 21rem
+      - 88: 22rem
+      - 92: 23rem
+      - 96: 24rem
   - property: padding-right
     class: pe
     values:
@@ -410,8 +723,32 @@ padding:
       - 6: 1.5rem
       - 7: 1.75rem
       - 8: 2rem
-      - 9: 2.5rem
-      - 10: 3rem
+      - 9: 2.25rem
+      - 10: 2.5rem
+      - 11: 2.75rem
+      - 12: 3rem
+      - 14: 3.5rem
+      - 16: 4rem
+      - 20: 5rem
+      - 24: 6rem
+      - 28: 7rem
+      - 32: 8rem
+      - 36: 9rem
+      - 40: 10rem
+      - 44: 11rem
+      - 48: 12rem
+      - 52: 13rem
+      - 56: 14rem
+      - 60: 15rem
+      - 64: 16rem
+      - 68: 17rem
+      - 72: 18rem
+      - 76: 19rem
+      - 80: 20rem
+      - 84: 21rem
+      - 88: 22rem
+      - 92: 23rem
+      - 96: 24rem
 opacity:
   - property: opacity
     values:
@@ -577,9 +914,12 @@ gap:
       - 2: 0.5rem
       - 3: 0.75rem
       - 4: 1rem
-      - 5: 1.5rem
-      - 6: 3rem
-      - 7: 6rem
+      - 5: 1.25rem
+      - 6: 1.5rem
+      - 7: 1.75rem
+      - 8: 2rem
+      - 9: 2.25rem
+      - 10: 2.5rem
 flex-direction:
   - property: flex-direction
     responsive: true
@@ -689,9 +1029,12 @@ gutter:
       - 2: 0.5rem
       - 3: 0.75rem
       - 4: 1rem
-      - 5: 1.5rem
-      - 6: 3rem
-      - 7: 6rem
+      - 5: 1.25rem
+      - 6: 1.5rem
+      - 7: 1.75rem
+      - 8: 2rem
+      - 9: 2.25rem
+      - 10: 2.5rem
 gutter-x:
   - property: --bs-gutter-x
     responsive: true
@@ -702,9 +1045,12 @@ gutter-x:
       - 2: 0.5rem
       - 3: 0.75rem
       - 4: 1rem
-      - 5: 1.5rem
-      - 6: 3rem
-      - 7: 6rem
+      - 5: 1.25rem
+      - 6: 1.5rem
+      - 7: 1.75rem
+      - 8: 2rem
+      - 9: 2.25rem
+      - 10: 2.5rem
 gutter-y:
   - property: --bs-gutter-y
     responsive: true
@@ -715,9 +1061,12 @@ gutter-y:
       - 2: 0.5rem
       - 3: 0.75rem
       - 4: 1rem
-      - 5: 1.5rem
-      - 6: 3rem
-      - 7: 6rem
+      - 5: 1.25rem
+      - 6: 1.5rem
+      - 7: 1.75rem
+      - 8: 2rem
+      - 9: 2.25rem
+      - 10: 2.5rem
 animation:
   - property: animation
     class: animate
@@ -821,6 +1170,7 @@ text-color:
       - dark: text-dark
       - white: text-white
       - black: text-black
+      - body: text-body
       - body-secondary: text-body-secondary
       - body-tertiary: text-body-tertiary
 bg-color:

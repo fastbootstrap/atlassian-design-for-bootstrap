@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Box shadow
+title: Box Shadow
 description: "Use the box-shadow utilities to controlling the shadow of an element."
 toc: true
 group: effects

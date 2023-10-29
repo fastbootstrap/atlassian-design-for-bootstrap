@@ -25,13 +25,13 @@ Use `flex-nowrap` to prevent flex items from wrapping, causing inflexible items 
   <div class="overflow-x-auto pb-6 ">
     <div class="d-flex flex-nowrap gap-4 bg-striped-purple fw-medium">
       <div class="col-5">
-        <div class="text-bg-secondary p-4 rounded d-flex justify-content-center align-items-center">01</div>
+        <div class="text-bg-purple p-4 rounded d-flex justify-content-center align-items-center">01</div>
       </div>
       <div class="col-5">
-        <div class="text-bg-secondary p-4 rounded d-flex justify-content-center align-items-center">02</div>
+        <div class="text-bg-purple p-4 rounded d-flex justify-content-center align-items-center">02</div>
       </div>
       <div class="col-5">
-        <div class="text-bg-secondary p-4 rounded d-flex justify-content-center align-items-center">03</div>
+        <div class="text-bg-purple p-4 rounded d-flex justify-content-center align-items-center">03</div>
       </div>
     </div>
   </div>
@@ -78,13 +78,13 @@ Use `flex-wrap-reverse` to wrap flex items in the reverse direction:
 {{< example class="bg-grid-slate-100" show_source="false" >}}
 <div class="d-flex flex-wrap-reverse bg-striped-purple gap-4">
   <div class="col-5">
-    <div class="text-bg-secondary p-4 rounded d-flex justify-content-center align-items-center">01</div>
+    <div class="text-bg-purple p-4 rounded d-flex justify-content-center align-items-center">01</div>
   </div>
   <div class="col-5">
-    <div class="text-bg-secondary p-4 rounded d-flex justify-content-center align-items-center">02</div>
+    <div class="text-bg-purple p-4 rounded d-flex justify-content-center align-items-center">02</div>
   </div>
   <div class="col-5">
-    <div class="text-bg-secondary p-4 rounded d-flex justify-content-center align-items-center">03</div>
+    <div class="text-bg-purple p-4 rounded d-flex justify-content-center align-items-center">03</div>
   </div>
 </div>
 {{</ example >}}

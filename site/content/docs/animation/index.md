@@ -20,14 +20,14 @@ menu:
 Add the `animate-spin` utility to add a linear spin animation to elements like loading indicators.
 
 {{< example class="bg-neutral-subtler bg-grid-slate-100 text-center" show_source="false" >}}
-  <button type="button" class="btn btn-secondary fw-semibold pe-none">
+  <button type="button" class="btn btn-primary fw-semibold pe-none">
     <i class="animate-spin fas fa-spinner"></i>
     Processing...
   </button>
 {{</ example >}}
 
 ```html
-<button type="button" class="btn btn-secondary ...">
+<button type="button" class="btn btn-primary ...">
   <i class="animate-spin fas fa-spinner"></i>
   Processing...
 </button>
@@ -39,10 +39,10 @@ Add the `animate-ping` utility to make an element scale and fade like a radar pi
 
 {{< example class="bg-neutral-subtler bg-grid-slate-100 text-center" >}}
   <div class="position-relative d-inline-flex">
-    <button type="button" class="btn btn-outline-secondary pe-none fw-semibold ">Transactions</button>
+    <button type="button" class="btn btn-outline-primary pe-none fw-semibold ">Transactions</button>
     <span class="d-flex position-absolute bd-h-3 bd-w-3 top-0 end-0 mt-n1 me-n1">
-      <span class="animate-ping position-absolute h-100 w-100 rounded-circle bg-secondary bg-opacity-75"></span>
-      <span class="rounded-circle bd-h-3 bd-w-3 bg-secondary"></span>
+      <span class="animate-ping position-absolute h-100 w-100 rounded-circle bg-primary bg-opacity-75"></span>
+      <span class="rounded-circle bd-h-3 bd-w-3 bg-primary"></span>
     </span>
   </div>
 {{</ example >}}

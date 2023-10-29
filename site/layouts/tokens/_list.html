@@ -1,0 +1,66 @@
+{{ define "main" }}
+  <div class="d-flex flex-column flex-lg-row">
+    <div class="sidebar d-flex flex-column border-end">
+      <div class="d-flex d-lg-none align-items-center">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center py-3">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
+              </ol>
+            </nav>
+            <button class="btn btn-sm p-0 border-0" data-bs-toggle="collapse" href="#sidebar-nav" aria-expanded="false"><i class="fas fa-chevron-down"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="collapse d-lg-block" id="sidebar-nav">
+        <div class="sidebar__inner py-3 py-lg-4">
+          {{ partial "sidebar.html" (dict "page" . "active_menu" .Params.sidebar_menu) }}
+        </div>
+      </div>
+    </div>
+
+    <main id="main" class="d-flex flex-column flex-grow-1">
+      <div class="bg-neutral-subtler px-4 px-md-6 px-lg-10 px-xl-20">
+        <div class="row g-0">
+          <div class="col-12 col-md-8 col-lg-6">
+            <div class="py-4 py-md-6 py-lg-10 py-xl-20">
+              <h1 class="mb-0">{{ .Title | markdownify }}</h1>
+              <p class="mt-3 text-body-secondary">{{ .Content | markdownify }}</p>
+            </div>
+          </div>
+          {{- with .Param "image" -}}
+            <div class="d-none d-md-block col-md-4 col-lg-6">
+              <img class="w-100 h-auto max-w-sm" src="{{ . }}" />
+            </div>
+          {{- end -}}
+        </div>
+      </div>
+      <div class="max-w-screen-lg">
+        <div class="px-4 px-md-6 px-lg-10 px-xl-20 mt-8">
+          <div class="row g-4">
+            {{ range .Pages }}
+              <div class="col-md-6">
+                <a href="{{ .RelPermalink }}" class="text-reset text-decoration-none">
+                <div class="card bd-card max-w-sm border-0 bg-body">
+                  <div class="card-body">
+                    <div class="rounded bd-w-12 bd-h-12 mb-4 d-flex justify-content-center align-items-center" style="color:var(--ds-text-inverse);background-color: var(--ds-icon-accent-yellow);">
+                        <i class="fa-solid fa-code"></i>
+                    </div>                    
+                    <h2 class="card-title h5 d-flex align-items-center">{{ .Title }}
+                      {{- with .Params.status -}}
+                      <span class="lozenge me-2 me-lg-4 text-uppercase fw-medium fs-xs new ms-auto">{{ . }}</span>
+                      {{- end -}}</h2>
+                    <p class="text-body-tertiary fs-sm">{{ .Description }}</p>                    
+                  </div> 
+                </a>
+                </div>
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+{{ end }}

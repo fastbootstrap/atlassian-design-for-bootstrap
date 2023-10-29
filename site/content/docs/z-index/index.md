@@ -20,11 +20,11 @@ Utilities for controlling the stack order of an element.
 
 {{< example class="bg-neutral-subtler bg-grid-slate-100" show_source="false" >}}
 <div class="d-flex justify-content-center">
-  <div class="d-flex align-items-center justify-content-center border border-2 rounded-circle z-40 border-white text-bg-secondary bd-w-16 bd-h-16">05</div>
-  <div class="d-flex align-items-center justify-content-center border border-2 rounded-circle z-30 border-white text-bg-secondary bd-w-16 bd-h-16 ms-n3">04</div>
-  <div class="d-flex align-items-center justify-content-center border border-2 rounded-circle z-20 border-white text-bg-secondary bd-w-16 bd-h-16 ms-n3">03</div>
-  <div class="d-flex align-items-center justify-content-center border border-2 rounded-circle z-10 border-white text-bg-secondary bd-w-16 bd-h-16 ms-n3">02</div>
-  <div class="d-flex align-items-center justify-content-center border border-2 rounded-circle z-0 border-white text-bg-secondary bd-w-16 bd-h-16 ms-n3">01</div>
+  <div class="d-flex align-items-center justify-content-center border border-2 rounded-circle z-40 border-white text-bg-purple bd-w-16 bd-h-16">05</div>
+  <div class="d-flex align-items-center justify-content-center border border-2 rounded-circle z-30 border-white text-bg-purple bd-w-16 bd-h-16 ms-n3">04</div>
+  <div class="d-flex align-items-center justify-content-center border border-2 rounded-circle z-20 border-white text-bg-purple bd-w-16 bd-h-16 ms-n3">03</div>
+  <div class="d-flex align-items-center justify-content-center border border-2 rounded-circle z-10 border-white text-bg-purple bd-w-16 bd-h-16 ms-n3">02</div>
+  <div class="d-flex align-items-center justify-content-center border border-2 rounded-circle z-0 border-white text-bg-purple bd-w-16 bd-h-16 ms-n3">01</div>
 </div>
 {{</ example >}}
 
