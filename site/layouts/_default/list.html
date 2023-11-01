@@ -1,5 +1,6 @@
 {{ define "main" }}
-<div class="d-flex flex-column flex-lg-row">
+<div class="bd-layout">
+  <aside class="bd-sidebar border-end">
     <div class="sidebar d-flex flex-column border-end flex-shrink-0">
       <div class="collapse d-lg-block" id="sidebar-nav">
         <div class="sidebar__inner py-3 py-lg-4">
@@ -7,8 +8,9 @@
         </div>
       </div>
     </div>
-  
-    <main id="main" class="d-flex flex-column flex-grow-1">
+  </aside>
+  <main class="bd-main">
+    <div class="bd-intro">
       <div class="bd-bg-light px-4 px-md-6 px-lg-10 px-xl-20">
         <div class="row g-0">
           <div class="col-12 col-md-8 col-lg-6">
@@ -24,11 +26,14 @@
           {{- end -}}
         </div>
       </div>
+    </div>
+    <div class="bd-main-content">
       <div class="max-w-screen-lg">
         <div class="px-4 px-md-6 px-lg-10 px-xl-20 my-8">
           {{ partial "page-list" (dict "pages" .Pages "icon_css" .Params.styles.list_icon_css ) }}
         </div>
       </div>
-    </main>
-  </div>
+    </div>
+  </main>
+</div>
 {{ end }}

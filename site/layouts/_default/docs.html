@@ -1,56 +1,56 @@
 {{ define "main" }}
-  <div class="d-flex flex-column flex-lg-row">
-    <div class="sidebar border-end">
-      <div class="d-flex d-lg-none align-items-center">
-        <div class="container">
-          <div class="d-flex justify-content-between align-items-center py-3">
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb mb-0">
-                <li class="breadcrumb-item"><a href="/">Home</a></li>
-                {{ if and .Parent (ne .Parent.IsHome true) }}
-                  <li class="breadcrumb-item"><a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a></li>
-                {{ end }}
-                <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
-              </ol>
-            </nav>
-            <button class="btn btn-sm p-0 border-0" data-bs-toggle="collapse" href="#sidebar-nav" aria-expanded="false"><i class="fas fa-chevron-down"></i></button>
+  <div class="bd-layout">
+    <aside class="bd-sidebar border-end">
+      <div class="sidebar">
+        <div class="d-flex d-lg-none align-items-center">
+          <div class="container">
+            <div class="d-flex justify-content-between align-items-center py-3">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item"><a href="/">Home</a></li>
+                  {{ if and .Parent (ne .Parent.IsHome true) }}
+                    <li class="breadcrumb-item"><a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a></li>
+                  {{ end }}
+                  <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
+                </ol>
+              </nav>
+              <button class="btn btn-sm p-0 border-0" data-bs-toggle="collapse" href="#sidebar-nav" aria-expanded="false"><i class="fas fa-chevron-down"></i></button>
+            </div>
           </div>
         </div>
+        <div class="collapse d-lg-block py-3 py-lg-4" id="sidebar-nav">
+          {{ partial "sidebar.html" (dict "page" . "active_menu" $.CurrentSection.Params.sidebar_menu) }}
+        </div>
       </div>
-      <div class="collapse d-lg-block py-3 py-lg-4" id="sidebar-nav">
-        {{ partial "sidebar.html" (dict "page" . "active_menu" $.CurrentSection.Params.sidebar_menu) }}
-      </div>
-    </div>
-
-    <main class="doc-main d-flex flex-grow-1 flex-column">
-      <div class="bd-bg-light px-4 px-md-6 px-lg-10 px-xl-20">
-        <div class="py-4 py-md-6 py-lg-10 py-xl-20">
-          <div class="d-flex align-items-center gap-2">
-            <h1 class="fw-semibold fs-2">{{ .Title | markdownify }}</h1>
-            {{ with .Params.status }}<span class="lozenge {{ . }} fw-normal">{{ . }}</span>{{ end }}
-          </div>
-          <p class="mt-3 text-body-secondary">{{ .Page.Params.Description | markdownify }}</p>
-        </div>      
-      </div>
-
+    </aside>
+    <main class="bd-main">
       {{ with .Params.tabs }}
         {{ $.Content }}
       {{ else }}
-        <div class="px-4 px-md-6 px-lg-10 px-xl-20">
-        <div class="pt-5 pb-5 pb-lg-6">
-            <div class="d-flex flex-column flex-lg-row-reverse justify-content-lg-end gap-xl-6">
-              {{ if (eq .Page.Params.toc true) }}
-                <div class="doc-nav align-self-start d-none d-xl-flex flex-column fs-sm">
-                  <span class="fw-semibold fs-xs text-uppercase">Contents</span>
-                  <div class="doc-nav-content position-relative mt-2">
-                    {{ .TableOfContents }}
-                  </div>
-                </div>
-              {{ end }}
-              <div class="doc-content d-flex flex-grow-1 flex-column" data-bs-spy="scroll" data-bs-target=".doc-nav-content" data-bs-smooth-scroll="true" tabindex="0">
-                {{ .Content }}
+        <div class="bd-intro">
+          <div class="bd-bg-light px-4 px-md-6 px-lg-10 px-xl-20">
+            <div class="py-4 py-md-6 py-lg-10 py-xl-20">
+              <div class="d-flex align-items-center gap-2">
+                <h1 class="fw-semibold fs-2">{{ .Title | markdownify }}</h1>
+                {{ with .Params.status }}<span class="lozenge {{ . }} fw-normal">{{ . }}</span>{{ end }}
               </div>
+              <p class="mt-3 text-body-secondary">{{ .Params.Description | markdownify }}</p>
             </div>
+          </div>
+        </div>
+        <div class="bd-main-content">
+          <div class="bd-toc d-none d-xl-block py-8">
+            {{ if (eq .Page.Params.toc true) }}
+              <div class="doc-nav fs-sm pe-3">
+                <span class="fw-semibold fs-xs text-uppercase">Contents</span>
+                <div class="doc-nav-content position-relative mt-2">
+                  {{ .TableOfContents }}
+                </div>
+              </div>
+            {{ end }}
+          </div>
+          <div class="bd-content px-4 px-md-6 px-lg-10 px-xl-20 py-8" data-bs-spy="scroll" id="doc-content" data-bs-target=".doc-nav-content" data-bs-smooth-scroll="true" tabindex="0">
+            {{ .Content }}
           </div>
         </div>
       {{ end }}
@@ -58,5 +58,4 @@
   </div>
 {{ end }}
 {{ define "footer" }}
-  
 {{ end }}

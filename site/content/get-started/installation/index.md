@@ -2,7 +2,7 @@
 layout: docs
 title: Installation
 description: "FastBootstrap installation guide."
-toc: false
+toc: true
 menu:
   get-started:   
     weight: 1

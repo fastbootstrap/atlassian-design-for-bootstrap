@@ -6,20 +6,62 @@ code {
   overflow-wrap: break-word;
 }
 
-.doc-intro {
-  max-width: 640px;
+.bd-layout {
+  display: flex;
+  flex-direction: column;
+  
+  @include media-breakpoint-up(lg) {
+    display: grid;
+    grid-template-areas: "sidebar main";
+    grid-template-columns: min-content 1fr;
+    gap: 0;
+  }
 }
 
-.doc-content {
-  @include media-breakpoint-up(lg) {
-    max-width: 760px;
-  }
+.bd-sidebar {
+  grid-area: sidebar;
+}
 
-  & > h2,
-  & > h3,
-  & > h4,
-  & > h5,
-  & > h6 {
+.bd-main {
+  grid-area: main;
+  display: grid;
+  grid-template-areas:
+    "intro"
+    "content"
+    "footer";
+  grid-template-rows: auto 1fr;
+
+  .tab-content {
+    grid-area: content;
+  }
+}
+
+.bd-intro {
+  grid-area: intro;
+}
+
+.bd-main-content {
+  display: grid;
+  grid-area: content;
+  grid-template-areas: "content toc";
+  grid-template-columns: 1fr min-content;
+}
+
+.bd-toc {
+  grid-area: toc;
+  width: 220px;
+}
+
+.bd-content {
+  min-width: 1px;
+  grid-area: content;
+  position: relative;
+
+  > h2,
+  > h3,
+  > h4,
+  > h5,
+  > h6 {
     margin-top: 8px;
     margin-bottom: 16px;
 
@@ -33,7 +75,7 @@ code {
     }
   }
 
-  & > p {
+  > p {
     margin-bottom: 16px;
     word-break: break-word;
     line-height: 1.6;
@@ -47,27 +89,27 @@ code {
     }
   }
 
-  & > h2 {
+  > h2 {
     font-size: 24px;
   }
 
-  & > h3 {
+  > h3 {
     font-size: 20px;
   }
 
-  & > h4 {
+  > h4 {
     font-size: 18px;
   }
 
-  & > h5 {
+  > h5 {
     font-size: 16px;
   }
 
-  & > h6 {
+  > h6 {
     font-size: 14px;
   }
 
-  & > ul > li {
+  > ul > li {
     margin-bottom: 4px;
 
     &:last-child {
