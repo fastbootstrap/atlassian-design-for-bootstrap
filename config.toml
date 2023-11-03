@@ -16,11 +16,11 @@ description = "FastBootstrap is a beautiful Bootstrap theme for your next projec
 page_title_suffix = "FastBootstrap Theme"
 github_org = "https://github.com/fastbootstrap"
 repo = "https://github.com/fastbootstrap/atlassian-design-for-bootstrap"
-current_version = "1.1.2"
-download.source = "https://github.com/fastbootstrap/atlassian-design-for-bootstrap/archive/refs/tags/v1.1.2.zip"
+current_version = "2.0.0"
+download.source = "https://github.com/fastbootstrap/atlassian-design-for-bootstrap/archive/refs/tags/v2.0.0.zip"
 
 [params.cdn]
-css = "https://cdn.jsdelivr.net/npm/fastbootstrap@1.1.2/dist/css/fastbootstrap.min.css"
-css_hash = "sha256-xLGBU65wCDv2/qEdq3ZYw2Qdiia/wxxeGepRyZmpQdY="
-js = "https://cdn.jsdelivr.net/npm/fastbootstrap@1.1.2/dist/js/fastbootstrap.min.js"
-js_hash = "sha256-+c+/OCMmtlZadi89VaV1yUOkk1T4BD2pwBFpY3OcrqI="
+css = "https://cdn.jsdelivr.net/npm/fastbootstrap@2.0.0/dist/css/fastbootstrap.min.css"
+css_hash = "sha256-EkS1lBVeD1Dv7HGBICgtEPKeIz4ffoKbo5gRiPvD6/8="
+js = "https://cdn.jsdelivr.net/npm/fastbootstrap@2.0.0/dist/js/fastbootstrap.min.js"
+js_hash = "sha256-o0tNXN7ia0O9G0qNbrzBkEEiQTv+GeW5EO4LjnfDkZk="
