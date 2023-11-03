@@ -9,6 +9,7 @@
     --#{$prefix}form-check-focus-border-color: transparent;
     --#{$prefix}form-check-checked-hover-bg: #{$form-switch-checked-hover-bg};
     --#{$prefix}form-check-checked-border-color: transparent;
+    --#{$prefix}form-check-checked-hover-border-color: transparent;
     --#{$prefix}form-check-checked-bg: #{$form-switch-checked-bg};
     --#{$prefix}form-switch-checked-bg-image: #{escape-svg($form-switch-checked-bg-image)};
     --#{$prefix}form-check-disabled-bg: #{$form-switch-disabled-bg};
