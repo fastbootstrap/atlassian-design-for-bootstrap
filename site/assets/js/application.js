@@ -1,6 +1,12 @@
 (() => {
   'use strict';
 
+  const clipboard = new ClipboardJS('.bd-clipboard');
+  clipboard.on('success', (event) => {
+    const status = event.trigger.querySelector('.status');
+    status.innerHTML='<i class="fa-solid fa-check text-success"></i>';
+  });
+
   document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach((tooltip) => {
     new bootstrap.Tooltip(tooltip);
   });

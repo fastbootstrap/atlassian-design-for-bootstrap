@@ -1,18 +1,14 @@
 ---
 layout: docs
 title: Installation
-description: "FastBootstrap installation guide."
+description: "Download the compiled CSS and JS, all source code."
 toc: true
 menu:
   get-started:   
     weight: 1
 ---
 
-Download FastBootstrap theme to get the compiled CSS and JavaScript, source code, or include it with your favorite package managers like npm and more.
-
-{{< callout >}}
-FastBootstrap is an open source, if your like this project, don't forget to Star it.
-{{</ callout >}}
+Download FastBootstrap to get the compiled CSS and JavaScript, source code, or include it with your favorite package managers like npm and more.
 
 ## Compiled CSS and JS
 
@@ -25,6 +21,23 @@ Download ready-to-use compiled code for **FastBootstrap v{{< param "current_vers
 
 ## CDN via jsDelivr
 
+We recommend using [jsDelivr](https://www.jsdelivr.com/) to deliver cached version of FastBootstrap’s compiled CSS and JS to your project.
+
+### CSS file
+
+Place this tag in your head.
+
+```html
+<link href="{{< param "cdn.css">}}" rel="stylesheet" integrity="{{< param "cdn.css_hash">}}" crossorigin="anonymous">
+```
+
+### JS file
+
+Place this tag in your head or just before your close body tag.
+
+```html
+<script src="{{< param "cdn.js" >}}" integrity="{{< param "cdn.js_hash" >}}" crossorigin="anonymous"></script>
+```
 
 ## Source files
 

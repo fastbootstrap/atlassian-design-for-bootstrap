@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Max Width
+title: Max-Width
 description: "Utilities for setting the maximum width of an element."
 toc: true
 status: new

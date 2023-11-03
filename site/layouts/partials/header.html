@@ -19,7 +19,7 @@
         {{ end }}
       </ul>
     </div>
-    <div class="d-flex align-items-center ms-auto gap-3">
+    <div class="d-flex align-items-center ms-auto gap-3 me-2 me-lg-3">
       <div class="position-relative">
         <button class="btn border-0" id="bd-theme" type="button" data-bs-toggle="dropdown" data-reference="parent" aria-expanded="false"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></button>
         <ul class="dropdown-menu dropdown-menu-end" role="menu">
@@ -37,7 +37,7 @@
         </svg>
         Search
       </button>
-      <a class="nav-link d-none d-lg-block" href="{{ .Site.Params.repo }}" target="_blank" rel="nofollow"><i class="fa-brands fa-github fa-xl"></i></a>
+      <a class="nav-link d-none d-lg-block" href="{{ .Site.Params.repo }}" title="Github repository" target="_blank" rel="nofollow"><i class="fa-brands fa-github fa-xl"></i></a>
       <button class="navbar-toggler" type="bdNavbar" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-label="Toggle navigation">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
           <path
@@ -59,11 +59,12 @@
   </div>
   <div class="offcanvas-body px-5">
     <div class="d-flex flex-column">
+        <a class="py-2 fw-bold text-reset" href="/">Home</a>
       {{ range .Site.Menus.global }}<a class="py-2 fw-bold text-reset" href="{{ .URL }}">{{ .Name }}</a>{{ end }}
     </div>
     <ul class="list-inline mt-3 text-center border-top pt-5">
       <li>
-        <a class="nav-link rounded-circle" href="{{ .Site.Params.repo }}">
+        <a class="nav-link rounded-circle" data-bs-toggle="tooltip" data-bs-title="Github repository" href="{{ .Site.Params.repo }}">
           <i class="fa-brands fa-github fa-xl"></i>
         </a>
       </li>

@@ -1,6 +1,6 @@
 baseURL = "https://fastbootstrap.com"
 languageCode = "en"
-title = "FastBootstrap: Bootstrap UI Components with Atlassian Design"
+title = "Awesome Bootstrap Theme with Atlassian Design - FastBootstrap"
 
 enableRobotsTXT = true
 disableKinds = ["404", "taxonomy", "term", "RSS"]
@@ -12,8 +12,8 @@ enableInlineShortcodes = true
 home = ["HTML", "JSON", "RSS"]
 
 [params]
-description = "Atlassian Design for Bootstrap 5. Powerful and free UI Kits for Bootstrap with Atlassian Design."
-page_title_suffix = "FastBootstrap"
+description = "FastBootstrap is a beautiful Bootstrap theme for your next project with quick start. Powerful and free UI Kits that designed with Atlassian Design."
+page_title_suffix = "FastBootstrap Theme"
 github_org = "https://github.com/fastbootstrap"
 repo = "https://github.com/fastbootstrap/atlassian-design-for-bootstrap"
 current_version = "1.1.2"

@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Min Width
+title: Min-Width
 description: "Utilities for setting the minium width of an element."
 toc: true
 status: new

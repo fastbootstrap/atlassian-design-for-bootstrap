@@ -1,6 +1,7 @@
 $utilities: (
   "width": (
     property: width,
+    responsive: true,
     class: bd-w,
     values: (
       0: 0,
@@ -42,6 +43,7 @@ $utilities: (
   ),
   "height": (
     property: height,
+    responsive: true,
     class: bd-h,
     values: (
       0: 0,
