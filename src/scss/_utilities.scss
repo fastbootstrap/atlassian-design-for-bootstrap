@@ -301,7 +301,7 @@ $utilities: map-merge(
       responsive: true,
       property: padding-top,
       class: pt,
-      values: $spacers,
+      values: $spacers_extra,
     ),
     "padding-end-extra": (
       responsive: true,
