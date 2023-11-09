@@ -56,7 +56,6 @@
     "postcss": "^8.4.16",
     "postcss-cli": "^10.0.0",
     "prettier": "^2.7.0",
-    "prettier-plugin-go-template": "^0.0.13",
     "rtlcss": "^4.0.0",
     "sass": "^1.52.3",
     "terser": "^5.15.0"
