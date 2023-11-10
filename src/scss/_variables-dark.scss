@@ -1,6 +1,6 @@
 $body-color-dark: dark("text");
 $body-bg-dark: dark("surface");
-$border-color-dark: dark("border");
+$border-color-dark: $ds-border;;
 $link-color-dark: dark("link");
 $link-hover-color-dark: $link-color-dark;
 $body-secondary-color-dark: dark("text-subtle");

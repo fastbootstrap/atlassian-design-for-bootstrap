@@ -247,7 +247,7 @@ $link-decoration: none;
 $link-hover-decoration: underline;
 
 // Border
-$border-color: light("border");
+$border-color: $ds-border;
 
 $border-radius: 0.25rem;
 $border-radius-sm: 0.1875rem;
