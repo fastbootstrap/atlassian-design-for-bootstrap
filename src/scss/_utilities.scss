@@ -321,5 +321,13 @@ $utilities: map-merge(
       class: ps,
       values: $spacers_extra,
     ),
+    "subtle-border-color": (
+      property: border-color,
+      class: border,
+      local-vars: (
+        "border-opacity": 1,
+      ),
+      values: $utilities-border-subtle,
+    ),
   )
 );

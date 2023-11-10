@@ -1,6 +1,6 @@
 $body-color-dark: dark("text");
 $body-bg-dark: dark("surface");
-$border-color-dark: $ds-border;
+$border-color-dark: dark("border");
 $link-color-dark: dark("link");
 $link-hover-color-dark: $link-color-dark;
 $body-secondary-color-dark: dark("text-subtle");
@@ -24,14 +24,14 @@ $danger-bg-subtle-dark: $ds-background-danger;
 $light-bg-subtle-dark: $dark-neutral-200a;
 $dark-bg-subtle-dark: $dark-neutral-0;
 
-$primary-border-subtle-dark: $ds-background-accent-blue-subtle;
-$secondary-border-subtle-dark: $ds-background-accent-purple-subtle;
-$success-border-subtle-dark: $ds-background-accent-green-subtle;
-$info-border-subtle-dark: $ds-background-accent-blue-subtle;
-$warning-border-subtle-dark: $ds-background-accent-yellow-subtle;
-$danger-border-subtle-dark: $ds-background-accent-red-subtle;
-$light-border-subtle-dark: $ds-background-accent-gray-subtlest;
-$dark-border-subtle-dark: $ds-background-accent-gray-subtle;
+$primary-border-subtle-dark: dark("background-accent-blue-subtle");
+$secondary-border-subtle-dark: dark("background-accent-purple-subtle");
+$success-border-subtle-dark: dark("background-accent-green-subtle");
+$info-border-subtle-dark: dark("background-accent-blue-subtle");
+$warning-border-subtle-dark: dark("background-accent-yellow-subtle");
+$danger-border-subtle-dark: dark("background-accent-red-subtle");
+$light-border-subtle-dark: dark("background-accent-gray-subtlest");
+$dark-border-subtle-dark: dark("background-accent-gray-subtle");
 
 $btn-close-color-dark: dark("icon-subtle");
 $btn-close-disabled-color: dark("icon-disabled");

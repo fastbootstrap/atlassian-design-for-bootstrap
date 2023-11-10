@@ -17,6 +17,10 @@ $space-tokens: (
 
 :root,
 [data-bs-theme="light"] {
+  @each $color, $value in $theme-colors-border-subtle {
+    --#{$prefix}#{$color}-border-subtle-rgb: #{to-rgb($value)};
+  }
+
   @each $color, $values in $color-tokens {
     $value: nth($values, 1);
     --#{$ds-prefix}#{$color}: #{$value};
@@ -29,6 +33,10 @@ $space-tokens: (
 
 @if $enable-dark-mode {
   @include color-mode(dark, true) {
+    @each $color, $value in $theme-colors-border-subtle-dark {
+      --#{$prefix}#{$color}-border-subtle-rgb: #{to-rgb($value)};
+    }
+
     @each $color, $values in $color-tokens {
       $value: nth($values, 2);
       --#{$ds-prefix}#{$color}: #{$value};

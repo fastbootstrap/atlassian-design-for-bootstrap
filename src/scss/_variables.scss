@@ -172,14 +172,14 @@ $danger-bg-subtle: $ds-background-danger;
 $light-bg-subtle: $neutral-100a;
 $dark-bg-subtle: $neutral-600;
 
-$primary-border-subtle: $ds-background-accent-blue-subtle;
-$secondary-border-subtle: $ds-background-accent-gray-subtle;
-$success-border-subtle: $ds-background-accent-green-subtle;
-$info-border-subtle: $ds-background-accent-blue-subtle;
-$warning-border-subtle: $ds-background-accent-yellow-subtle;
-$danger-border-subtle: $ds-background-accent-red-subtle;
-$light-border-subtle: $ds-background-accent-gray-subtlest;
-$dark-border-subtle: $ds-background-neutral-bold;
+$primary-border-subtle: light("background-accent-blue-subtle");
+$secondary-border-subtle: light("background-accent-gray-subtle");
+$success-border-subtle: light("background-accent-green-subtle");
+$info-border-subtle: light("background-accent-blue-subtle");
+$warning-border-subtle: light("background-accent-yellow-subtle");
+$danger-border-subtle: light("background-accent-red-subtle");
+$light-border-subtle: light("background-accent-gray-subtlest");
+$dark-border-subtle: light("background-neutral-bold");
 
 // Spacing
 $spacer: 1rem;
@@ -247,7 +247,7 @@ $link-decoration: none;
 $link-hover-decoration: underline;
 
 // Border
-$border-color: $ds-border;
+$border-color: light("border");
 
 $border-radius: 0.25rem;
 $border-radius-sm: 0.1875rem;
@@ -817,4 +817,16 @@ $zindex-levels: (
   40: 40,
   50: 50,
   auto: auto,
+);
+
+// Utilities of Border
+$utilities-border-subtle: (
+  "primary-subtle": rgba-css-var("primary-border-subtle", "border"),
+  "secondary-subtle": rgba-css-var("secondary-border-subtle", "border"),
+  "success-subtle": rgba-css-var("success-border-subtle", "border"),
+  "info-subtle": rgba-css-var("info-border-subtle", "border"),
+  "warning-subtle": rgba-css-var("warning-border-subtle", "border"),
+  "danger-subtle": rgba-css-var("danger-border-subtle", "border"),
+  "light-subtle": rgba-css-var("light-border-subtle", "border"),
+  "dark-subtle": rgba-css-var("dark-border-subtle", "border"),
 );
