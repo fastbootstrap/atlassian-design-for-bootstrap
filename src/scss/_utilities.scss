@@ -329,5 +329,42 @@ $utilities: map-merge(
       ),
       values: $utilities-border-subtle,
     ),
+    "border": (
+      property: border,
+      values: (
+        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) rgba-css-var("border-color", "border"),
+        0: 0,
+      ),
+    ),
+    "border-top": (
+      property: border-top,
+      values: (
+        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) rgba-css-var("border-color", "border"),
+        0: 0,
+      ),
+    ),
+    "border-end": (
+      property: border-right,
+      class: border-end,
+      values: (
+        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) rgba-css-var("border-color", "border"),
+        0: 0,
+      ),
+    ),
+    "border-bottom": (
+      property: border-bottom,
+      values: (
+        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) rgba-css-var("border-color", "border"),
+        0: 0,
+      ),
+    ),
+    "border-start": (
+      property: border-left,
+      class: border-start,
+      values: (
+        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) rgba-css-var("border-color", "border"),
+        0: 0,
+      ),
+    ),
   )
 );

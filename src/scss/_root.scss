@@ -17,6 +17,10 @@ $space-tokens: (
 
 :root,
 [data-bs-theme="light"] {
+  // https://github.com/fastbootstrap/atlassian-design-for-bootstrap/issues/7
+  --#{$prefix}border-color-rgb: #{to-rgb(light("border"))};
+  --#{$prefix}border-opacity: #{opacity(light("border"))};
+
   @each $color, $value in $theme-colors-border-subtle {
     --#{$prefix}#{$color}-border-subtle-rgb: #{to-rgb($value)};
   }
@@ -33,6 +37,9 @@ $space-tokens: (
 
 @if $enable-dark-mode {
   @include color-mode(dark, true) {
+    --#{$prefix}border-color-rgb: #{to-rgb(dark("border"))};
+    --#{$prefix}border-opacity: #{opacity(dark("border"))};
+
     @each $color, $value in $theme-colors-border-subtle-dark {
       --#{$prefix}#{$color}-border-subtle-rgb: #{to-rgb($value)};
     }
