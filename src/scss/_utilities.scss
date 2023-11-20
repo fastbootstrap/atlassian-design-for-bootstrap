@@ -366,5 +366,19 @@ $utilities: map-merge(
         0: 0,
       ),
     ),
+    "link-underline": (
+      property: text-decoration,
+      class: link-underline,
+      local-vars: (
+        "link-underline-opacity": 1,
+      ),
+      values:
+        map-merge(
+          (
+            null: underline solid rgba(var(--#{$prefix}link-color-rgb), var(--#{$prefix}link-underline-opacity, 1)),
+          ),
+          map-loop($utilities-links-underline, "join", underline solid, "$value")
+        ),
+    ),
   )
 );
