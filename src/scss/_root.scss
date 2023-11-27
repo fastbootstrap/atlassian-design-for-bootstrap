@@ -20,6 +20,8 @@ $space-tokens: (
   // https://github.com/fastbootstrap/atlassian-design-for-bootstrap/issues/7
   --#{$prefix}border-color-rgb: #{to-rgb(light("border"))};
   --#{$prefix}border-opacity: #{opacity(light("border"))};
+  --#{$prefix}form-valid-icon: #{escape-svg($form-feedback-icon-valid)};
+  --#{$prefix}form-invalid-icon: #{escape-svg($form-feedback-icon-invalid)};
 
   @each $color, $value in $theme-colors-border-subtle {
     --#{$prefix}#{$color}-border-subtle-rgb: #{to-rgb($value)};
@@ -39,6 +41,8 @@ $space-tokens: (
   @include color-mode(dark, true) {
     --#{$prefix}border-color-rgb: #{to-rgb(dark("border"))};
     --#{$prefix}border-opacity: #{opacity(dark("border"))};
+    --#{$prefix}form-valid-icon: #{escape-svg($form-feedback-icon-valid-dark)};
+    --#{$prefix}form-invalid-icon: #{escape-svg($form-feedback-icon-invalid-dark)};
 
     @each $color, $value in $theme-colors-border-subtle-dark {
       --#{$prefix}#{$color}-border-subtle-rgb: #{to-rgb($value)};

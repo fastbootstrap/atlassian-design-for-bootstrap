@@ -1,6 +1,6 @@
 $body-color-dark: dark("text");
 $body-bg-dark: dark("surface");
-$border-color-dark: $ds-border;;
+$border-color-dark: $ds-border;
 $link-color-dark: dark("link");
 $link-hover-color-dark: $link-color-dark;
 $body-secondary-color-dark: dark("text-subtle");
@@ -56,6 +56,9 @@ $form-valid-color-dark: $ds-text-success;
 $form-valid-border-color-dark: $ds-border-success;
 $form-invalid-color-dark: $ds-text-danger;
 $form-invalid-border-color-dark: $ds-border-danger;
+
+$form-feedback-icon-valid-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M12 20a8 8 0 110-16 8 8 0 010 16zm1.364-10.964l-2.152 4.11-1.543-1.39a1 1 0 10-1.338 1.487l2.5 2.25a1 1 0 001.555-.279l2.75-5.25a1 1 0 00-1.772-.928z' fill='#{dark('text-success')}'></path></svg>");
+$form-feedback-icon-invalid-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><g><path d='M13.416 4.417a2.002 2.002 0 00-2.832 0l-6.168 6.167a2.002 2.002 0 000 2.833l6.168 6.167a2.002 2.002 0 002.832 0l6.168-6.167a2.002 2.002 0 000-2.833l-6.168-6.167z' fill='#{dark('text-danger')}'></path><path d='M12 14a1 1 0 01-1-1V8a1 1 0 012 0v5a1 1 0 01-1 1m0 3a1 1 0 010-2 1 1 0 010 2' fill='#{dark('surface')}'></path></g></svg>");
 
 $accordion-icon-color-dark: dark("text");
 $accordion-icon-active-color-dark: dark("text");
