@@ -1,8 +1,7 @@
 name: Publish on NPM
 
 on:
-  release:
-    types: [published]
+  workflow_dispatch:
 
 jobs:
   publish:
