@@ -14,6 +14,7 @@ $warning-text-emphasis-dark: $ds-text !default;
 $danger-text-emphasis-dark: $ds-text !default;
 $light-text-emphasis-dark: $ds-text !default;
 $dark-text-emphasis-dark: $ds-text !default;
+$discovery-text-emphasis-dark: $ds-text !default;
 
 $primary-bg-subtle-dark: $ds-background-brand-subtlest !default;
 $secondary-bg-subtle-dark: $ds-background-accent-gray-subtler !default;
@@ -23,6 +24,7 @@ $warning-bg-subtle-dark: $ds-background-warning !default;
 $danger-bg-subtle-dark: $ds-background-danger !default;
 $light-bg-subtle-dark: $dark-neutral-200a !default;
 $dark-bg-subtle-dark: $dark-neutral-0 !default;
+$discovery-bg-subtle-dark: $ds-background-discovery !default;
 
 $primary-border-subtle-dark: dark("background-accent-blue-subtle") !default;
 $secondary-border-subtle-dark: dark("background-accent-gray-subtle") !default;
@@ -32,6 +34,7 @@ $warning-border-subtle-dark: dark("background-accent-yellow-subtle") !default;
 $danger-border-subtle-dark: dark("background-accent-red-subtle") !default;
 $light-border-subtle-dark: dark("background-accent-gray-subtlest") !default;
 $dark-border-subtle-dark: dark("background-accent-gray-subtle") !default;
+$discovery-border-subtle-dark: dark("background-accent-purple-subtle") !default;
 
 $btn-close-color-dark: dark("icon-subtle") !default;
 $btn-close-disabled-color: dark("icon-disabled") !default;
@@ -64,3 +67,39 @@ $accordion-icon-color-dark: dark("text") !default;
 $accordion-icon-active-color-dark: dark("text") !default;
 $accordion-button-icon-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='#{$accordion-icon-color-dark}'><path fill-rule='evenodd' d='M6.744 8.744a1.053 1.053 0 000 1.49l4.547 4.557a1 1 0 001.416 0l4.55-4.558a1.051 1.051 0 10-1.488-1.488l-3.77 3.776-3.768-3.776a1.051 1.051 0 00-1.487 0z'></path></svg>") !default;
 $accordion-button-active-icon-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='#{$accordion-icon-active-color-dark}'><path fill-rule='evenodd' d='M6.744 8.744a1.053 1.053 0 000 1.49l4.547 4.557a1 1 0 001.416 0l4.55-4.558a1.051 1.051 0 10-1.488-1.488l-3.77 3.776-3.768-3.776a1.051 1.051 0 00-1.487 0z'></path></svg>") !default;
+
+$theme-colors-text-dark: (
+  "primary": $primary-text-emphasis-dark,
+  "secondary": $secondary-text-emphasis-dark,
+  "success": $success-text-emphasis-dark,
+  "info": $info-text-emphasis-dark,
+  "warning": $warning-text-emphasis-dark,
+  "danger": $danger-text-emphasis-dark,
+  "light": $light-text-emphasis-dark,
+  "dark": $dark-text-emphasis-dark,
+  "discovery": $discovery-text-emphasis-dark,
+) !default;
+
+$theme-colors-bg-subtle-dark: (
+  "primary": $primary-bg-subtle-dark,
+  "secondary": $secondary-bg-subtle-dark,
+  "success": $success-bg-subtle-dark,
+  "info": $info-bg-subtle-dark,
+  "warning": $warning-bg-subtle-dark,
+  "danger": $danger-bg-subtle-dark,
+  "light": $light-bg-subtle-dark,
+  "dark": $dark-bg-subtle-dark,
+  "discovery": $discovery-bg-subtle-dark,
+) !default;
+
+$theme-colors-border-subtle-dark: (
+  "primary": $primary-border-subtle-dark,
+  "secondary": $secondary-border-subtle-dark,
+  "success": $success-border-subtle-dark,
+  "info": $info-border-subtle-dark,
+  "warning": $warning-border-subtle-dark,
+  "danger": $danger-border-subtle-dark,
+  "light": $light-border-subtle-dark,
+  "dark": $dark-border-subtle-dark,
+  "discovery": $discovery-border-subtle-dark,
+) !default;
