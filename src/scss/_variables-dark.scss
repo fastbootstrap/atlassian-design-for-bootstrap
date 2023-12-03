@@ -1,66 +1,66 @@
-$body-color-dark: dark("text");
-$body-bg-dark: dark("surface");
-$border-color-dark: $ds-border;
-$link-color-dark: dark("link");
-$link-hover-color-dark: $link-color-dark;
-$body-secondary-color-dark: dark("text-subtle");
-$body-tertiary-color-dark: dark("text-subtlest");
+$body-color-dark: dark("text") !default;
+$body-bg-dark: dark("surface") !default;
+$border-color-dark: $ds-border !default;
+$link-color-dark: dark("link") !default;
+$link-hover-color-dark: $link-color-dark !default;
+$body-secondary-color-dark: dark("text-subtle") !default;
+$body-tertiary-color-dark: dark("text-subtlest") !default;
 
-$primary-text-emphasis-dark: $ds-text;
-$secondary-text-emphasis-dark: $ds-text;
-$success-text-emphasis-dark: $ds-text;
-$info-text-emphasis-dark: $ds-text;
-$warning-text-emphasis-dark: $ds-text;
-$danger-text-emphasis-dark: $ds-text;
-$light-text-emphasis-dark: $ds-text;
-$dark-text-emphasis-dark: $ds-text;
+$primary-text-emphasis-dark: $ds-text !default;
+$secondary-text-emphasis-dark: $ds-text !default;
+$success-text-emphasis-dark: $ds-text !default;
+$info-text-emphasis-dark: $ds-text !default;
+$warning-text-emphasis-dark: $ds-text !default;
+$danger-text-emphasis-dark: $ds-text !default;
+$light-text-emphasis-dark: $ds-text !default;
+$dark-text-emphasis-dark: $ds-text !default;
 
-$primary-bg-subtle-dark: $ds-background-brand-subtlest;
-$secondary-bg-subtle-dark: $ds-background-accent-gray-subtler;
-$success-bg-subtle-dark: $ds-background-success;
-$info-bg-subtle-dark: $ds-background-information;
-$warning-bg-subtle-dark: $ds-background-warning;
-$danger-bg-subtle-dark: $ds-background-danger;
-$light-bg-subtle-dark: $dark-neutral-200a;
-$dark-bg-subtle-dark: $dark-neutral-0;
+$primary-bg-subtle-dark: $ds-background-brand-subtlest !default;
+$secondary-bg-subtle-dark: $ds-background-accent-gray-subtler !default;
+$success-bg-subtle-dark: $ds-background-success !default;
+$info-bg-subtle-dark: $ds-background-information !default;
+$warning-bg-subtle-dark: $ds-background-warning !default;
+$danger-bg-subtle-dark: $ds-background-danger !default;
+$light-bg-subtle-dark: $dark-neutral-200a !default;
+$dark-bg-subtle-dark: $dark-neutral-0 !default;
 
-$primary-border-subtle-dark: dark("background-accent-blue-subtle");
-$secondary-border-subtle-dark: dark("background-accent-gray-subtle");
-$success-border-subtle-dark: dark("background-accent-green-subtle");
-$info-border-subtle-dark: dark("background-accent-blue-subtle");
-$warning-border-subtle-dark: dark("background-accent-yellow-subtle");
-$danger-border-subtle-dark: dark("background-accent-red-subtle");
-$light-border-subtle-dark: dark("background-accent-gray-subtlest");
-$dark-border-subtle-dark: dark("background-accent-gray-subtle");
+$primary-border-subtle-dark: dark("background-accent-blue-subtle") !default;
+$secondary-border-subtle-dark: dark("background-accent-gray-subtle") !default;
+$success-border-subtle-dark: dark("background-accent-green-subtle") !default;
+$info-border-subtle-dark: dark("background-accent-blue-subtle") !default;
+$warning-border-subtle-dark: dark("background-accent-yellow-subtle") !default;
+$danger-border-subtle-dark: dark("background-accent-red-subtle") !default;
+$light-border-subtle-dark: dark("background-accent-gray-subtlest") !default;
+$dark-border-subtle-dark: dark("background-accent-gray-subtle") !default;
 
-$btn-close-color-dark: dark("icon-subtle");
-$btn-close-disabled-color: dark("icon-disabled");
+$btn-close-color-dark: dark("icon-subtle") !default;
+$btn-close-disabled-color: dark("icon-disabled") !default;
 
 // Checkboxes
-$form-check-input-checked-bg-image-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{dark('icon-inverse')}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/></svg>");
-$form-check-input-disabled-bg-image-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{dark('icon-disabled')}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/></svg>");
-$form-check-input-indeterminate-disabled-bg-image-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{dark('icon-disabled')}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/></svg>");
-$form-check-input-indeterminate-bg-image-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{dark('icon-inverse')}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/></svg>");
-$form-check-radio-checked-bg-image-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{dark('icon-inverse')}'/></svg>");
-$form-check-radio-disabled-bg-image-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{dark('icon-disabled')}'/></svg>");
+$form-check-input-checked-bg-image-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{dark('icon-inverse')}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/></svg>") !default;
+$form-check-input-disabled-bg-image-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{dark('icon-disabled')}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/></svg>") !default;
+$form-check-input-indeterminate-disabled-bg-image-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{dark('icon-disabled')}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/></svg>") !default;
+$form-check-input-indeterminate-bg-image-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{dark('icon-inverse')}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/></svg>") !default;
+$form-check-radio-checked-bg-image-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{dark('icon-inverse')}'/></svg>") !default;
+$form-check-radio-disabled-bg-image-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{dark('icon-disabled')}'/></svg>") !default;
 
-$form-select-indicator-color-dark: dark("text-subtle");
-$form-select-indicator-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$form-select-indicator-color-dark}' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/></svg>");
-$form-select-disabled-indicator-color-dark: dark("text-disabled");
-$form-select-disabled-indicator-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$form-select-disabled-indicator-color-dark}' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/></svg>");
+$form-select-indicator-color-dark: dark("text-subtle") !default;
+$form-select-indicator-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$form-select-indicator-color-dark}' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/></svg>") !default;
+$form-select-disabled-indicator-color-dark: dark("text-disabled") !default;
+$form-select-disabled-indicator-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$form-select-disabled-indicator-color-dark}' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/></svg>") !default;
 
-$form-switch-color-dark: dark("icon-inverse");
-$form-switch-focus-bg-image-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{dark('icon-inverse')}'/></svg>") !default;
+$form-switch-color-dark: dark("icon-inverse") !default;
+$form-switch-focus-bg-image-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{dark('icon-inverse')}'/></svg>") !default !default;
 
-$form-valid-color-dark: $ds-text-success;
-$form-valid-border-color-dark: $ds-border-success;
-$form-invalid-color-dark: $ds-text-danger;
-$form-invalid-border-color-dark: $ds-border-danger;
+$form-valid-color-dark: $ds-text-success !default;
+$form-valid-border-color-dark: $ds-border-success !default;
+$form-invalid-color-dark: $ds-text-danger !default;
+$form-invalid-border-color-dark: $ds-border-danger !default;
 
-$form-feedback-icon-valid-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M12 20a8 8 0 110-16 8 8 0 010 16zm1.364-10.964l-2.152 4.11-1.543-1.39a1 1 0 10-1.338 1.487l2.5 2.25a1 1 0 001.555-.279l2.75-5.25a1 1 0 00-1.772-.928z' fill='#{dark('text-success')}'></path></svg>");
-$form-feedback-icon-invalid-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><g><path d='M13.416 4.417a2.002 2.002 0 00-2.832 0l-6.168 6.167a2.002 2.002 0 000 2.833l6.168 6.167a2.002 2.002 0 002.832 0l6.168-6.167a2.002 2.002 0 000-2.833l-6.168-6.167z' fill='#{dark('text-danger')}'></path><path d='M12 14a1 1 0 01-1-1V8a1 1 0 012 0v5a1 1 0 01-1 1m0 3a1 1 0 010-2 1 1 0 010 2' fill='#{dark('surface')}'></path></g></svg>");
+$form-feedback-icon-valid-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M12 20a8 8 0 110-16 8 8 0 010 16zm1.364-10.964l-2.152 4.11-1.543-1.39a1 1 0 10-1.338 1.487l2.5 2.25a1 1 0 001.555-.279l2.75-5.25a1 1 0 00-1.772-.928z' fill='#{dark('text-success')}'></path></svg>") !default;
+$form-feedback-icon-invalid-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><g><path d='M13.416 4.417a2.002 2.002 0 00-2.832 0l-6.168 6.167a2.002 2.002 0 000 2.833l6.168 6.167a2.002 2.002 0 002.832 0l6.168-6.167a2.002 2.002 0 000-2.833l-6.168-6.167z' fill='#{dark('text-danger')}'></path><path d='M12 14a1 1 0 01-1-1V8a1 1 0 012 0v5a1 1 0 01-1 1m0 3a1 1 0 010-2 1 1 0 010 2' fill='#{dark('surface')}'></path></g></svg>") !default;
 
-$accordion-icon-color-dark: dark("text");
-$accordion-icon-active-color-dark: dark("text");
-$accordion-button-icon-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='#{$accordion-icon-color-dark}'><path fill-rule='evenodd' d='M6.744 8.744a1.053 1.053 0 000 1.49l4.547 4.557a1 1 0 001.416 0l4.55-4.558a1.051 1.051 0 10-1.488-1.488l-3.77 3.776-3.768-3.776a1.051 1.051 0 00-1.487 0z'></path></svg>");
-$accordion-button-active-icon-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='#{$accordion-icon-active-color-dark}'><path fill-rule='evenodd' d='M6.744 8.744a1.053 1.053 0 000 1.49l4.547 4.557a1 1 0 001.416 0l4.55-4.558a1.051 1.051 0 10-1.488-1.488l-3.77 3.776-3.768-3.776a1.051 1.051 0 00-1.487 0z'></path></svg>");
+$accordion-icon-color-dark: dark("text") !default;
+$accordion-icon-active-color-dark: dark("text") !default;
+$accordion-button-icon-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='#{$accordion-icon-color-dark}'><path fill-rule='evenodd' d='M6.744 8.744a1.053 1.053 0 000 1.49l4.547 4.557a1 1 0 001.416 0l4.55-4.558a1.051 1.051 0 10-1.488-1.488l-3.77 3.776-3.768-3.776a1.051 1.051 0 00-1.487 0z'></path></svg>") !default;
+$accordion-button-active-icon-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='#{$accordion-icon-active-color-dark}'><path fill-rule='evenodd' d='M6.744 8.744a1.053 1.053 0 000 1.49l4.547 4.557a1 1 0 001.416 0l4.55-4.558a1.051 1.051 0 10-1.488-1.488l-3.77 3.776-3.768-3.776a1.051 1.051 0 00-1.487 0z'></path></svg>") !default;
