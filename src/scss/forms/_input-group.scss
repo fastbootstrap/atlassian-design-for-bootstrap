@@ -10,11 +10,15 @@
   @include transition($input-transition);
 }
 
+// .input-group-start deprecated
+// .input-group-end deprecated
+.input-group-prefix,
+.input-group-suffix,
 .input-group-start,
 .input-group-end {
   .input-group-text {
     background-color: $input-bg;
-    margin-left: 0;
+    margin-left: 0 !important; // fix bootstrap 's inputgroup `margin-left`
   }
 
   > .form-control {
@@ -32,6 +36,15 @@
         background-color: $input-focus-bg;
         border-color: $input-focus-border-color;
       }
+      // fix validation feedback
+      @each $state in map-keys($form-validation-states) {
+        @include form-validation-state-selector($state) {
+          + .input-group-text,
+          + .input-group-text + .input-group-text {
+            border-color: $input-focus-border-color; // reset to the original border `focus` style
+          }
+        }
+      }
     }
 
     &.is-invalid {
@@ -48,6 +61,7 @@
   }
 }
 
+.input-group-prefix,
 .input-group-start {
   flex-direction: row-reverse;
 
@@ -65,6 +79,7 @@
   }
 }
 
+.input-group-suffix,
 .input-group-end {
   flex-direction: row;
 
