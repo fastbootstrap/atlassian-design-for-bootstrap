@@ -1,23 +1,6 @@
 {
-  "overrides": [
-    {
-      "files": "*.js",
-      "options": {
-        "singleQuote": true,
-        "printWidth": 1000
-      }
-    },
-    {
-      "files": "*.yml",
-      "options": {
-        "singleQuote": true
-      }
-    },
-    {
-      "files": "*.scss",
-      "options": {
-        "printWidth": 120
-      }
-    }
-  ]
+  "singleQuote": true,
+  "tabWidth": 2,
+  "printWidth": 120,
+  "quoteProps": "as-needed"
 }
