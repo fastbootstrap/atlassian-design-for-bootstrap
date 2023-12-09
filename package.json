@@ -32,36 +32,36 @@
     "css-minify-rtl": "cleancss -O1 --format breakWith=lf --with-rebase --source-map --source-map-inline-sources --output dist/css/ --batch --batch-suffix \".min\" \"dist/css/*rtl.css\" \"!dist/css/*.min.css\"",
     "css-prefix": "npm-run-all --aggregate-output --parallel css-prefix-*",
     "css-prefix-main": "postcss --config build/postcss.config.js --replace \"dist/css/*.css\" \"!dist/css/*.rtl*.css\" \"!dist/css/*.min.css\"",
-    "js": "npm-run-all js-compile js-minify",
-    "js-compile": "rollup --config build/rollup.config.js --sourcemap",
-    "js-minify": "terser --compress passes=2 --mangle --comments \"/^!/\" --source-map \"content=dist/js/fastbootstrap.js.map,includeSources,url=fastbootstrap.min.js.map\" --output dist/js/fastbootstrap.min.js dist/js/fastbootstrap.js",
-    "dist": "npm-run-all --aggregate-output --parallel css js"
+    "js": "npm-run-all build-vite",
+    "dist": "npm-run-all --aggregate-output --parallel css js",
+    "build-vite": "vite build -c vite.config.ts",
+    "lint:ts": "eslint -c .eslintrc.cjs --ext .ts src/ts"
   },
   "dependencies": {
-    "bootstrap": "^5.3.2"
+    "bootstrap": "^5.3.2",
+    "bootstrap.native": "^5.0.11"
   },
   "devDependencies": {
-    "@babel/cli": "^7.18.10",
-    "@babel/core": "^7.19.0",
-    "@babel/preset-env": "^7.19.0",
-    "@popperjs/core": "^2.11.6",
-    "@rollup/plugin-babel": "^5.3.1",
-    "@rollup/plugin-node-resolve": "^14.0.0",
-    "@rollup/plugin-replace": "^4.0.0",
+    "@thednp/event-listener": "^2.0.4",
+    "@thednp/shorty": "^2.0.0",
     "@types/node": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.2",
+    "@typescript-eslint/parser": "^6.13.2",
     "autoprefixer": "^10.4.8",
     "clean-css-cli": "^5.6.1",
     "cross-env": "^7.0.3",
+    "eslint": "^8.55.0",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.16",
     "postcss-cli": "^10.0.0",
     "prettier": "^2.7.0",
     "rtlcss": "^4.0.0",
     "sass": "^1.52.3",
-    "terser": "^5.15.0"
+    "typescript": "^5.3.2",
+    "vite": "^5.0.5"
   },
   "files": [
     "dist/{css,js}/*.{css,js,map}",
-    "src/{js,scss}/**/*.{js,scss}"
+    "src/{ts,scss}/**/*.{ts,scss}"
   ]
 }
