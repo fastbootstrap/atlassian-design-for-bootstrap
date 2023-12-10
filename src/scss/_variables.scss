@@ -198,7 +198,8 @@ $theme-colors: (
 ) !default;
 
 // Spacing
-$spacer: 1rem !default;
+// https://atlassian.design/foundations/spacing/
+$spacer: $ds-space-100 * 2 !default;
 $spacers: (
   0: 0,
   1: $spacer * 0.25,
@@ -211,15 +212,15 @@ $spacers: (
   8: $spacer * 2,
   9: $spacer * 2.25,
   10: $spacer * 2.5,
-) !default;
-
-// Available on `margin` and `padding`.
-$spacers_extra: (
   11: $spacer * 2.75,
   12: $spacer * 3,
   14: $spacer * 3.5,
   16: $spacer * 4,
   20: $spacer * 5,
+) !default;
+
+// Available on `margin` and `padding`.
+$spacers_extra: (
   24: $spacer * 6,
   28: $spacer * 7,
   32: $spacer * 8,

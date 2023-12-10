@@ -1,230 +1,22 @@
+/**
+* Override the Bootstrap utilities CSS
+*/
 $utilities: map-merge(
   $utilities,
   (
-    "align": (
-      property: vertical-align,
-      class: align,
-      values: baseline top middle bottom text-bottom text-top sub super,
-    ),
-    "border-style": (
-      property: border-style,
-      css-var: true,
-      css-variable-name: border-style,
-      class: border,
-      values: solid dashed dotted double hidden none,
-    ),
-    "font-size": (
-      rfs: true,
-      property: font-size,
-      class: fs,
-      values:
-        map-merge(
-          $font-sizes,
-          (
-            xs: 0.75rem,
-            sm: 0.875rem,
-          )
-        ),
-    ),
-    "line-height": (
-      property: line-height,
-      class: lh,
-      values: (
-        1: 1,
-        sm: $line-height-sm,
-        base: $line-height-base,
-        md: 1.75,
-        lg: $line-height-lg,
-      ),
-    ),
-    "font-weight": (
-      property: font-weight,
-      class: fw,
-      values: (
-        thin: 100,
-        extralight: 200,
-        lighter: $font-weight-lighter,
-        light: $font-weight-light,
-        normal: $font-weight-normal,
-        medium: $font-weight-medium,
-        semibold: $font-weight-semibold,
-        bold: $font-weight-bold,
-        bolder: $font-weight-bolder,
-        extrabold: 700,
-        black: 900,
-      ),
-    ),
-    "text-align":
-      map-merge(
-        map-get($utilities, "text-align"),
-        (
-          values: (
-            start: left,
-            end: right,
-            center: center,
-            justify: justify,
-          ),
-        )
-      ),
-    "text-decoration":
-      map-merge(
-        map-get($utilities, "text-decoration"),
-        (
-          values: none underline line-through overline,
-        )
-      ),
-    "text-opacity": (
-      css-var: true,
-      class: text-opacity,
-      values: (
-        0: 0,
-        25: 0.25,
-        50: 0.5,
-        75: 0.75,
-        100: 1,
-      ),
-    ),
-    "overflow": (
-      property: overflow,
-      values: auto hidden visible scroll,
-    ),
-    "overflow-x": (
-      property: overflow-x,
-      values: auto hidden visible scroll,
-    ),
-    "overflow-y": (
-      property: overflow-y,
-      values: auto hidden visible scroll,
-    ),
-    "clear": (
+    "order": (
       responsive: true,
-      property: clear,
+      property: order,
       values: (
-        start: left,
-        end: right,
-        both: both,
-        none: none,
-      ),
-    ),
-    "letter-spacing": (
-      property: letter-spacing,
-      class: ls,
-      values: (
-        tighter: -0.05em,
-        tight: -0.025em,
-        normal: 0em,
-        wide: 0.025em,
-        wider: 0.05em,
-        widest: 0.1em,
-      ),
-    ),
-    "order":
-      map-merge(
-        map-get($utilities, "order"),
-        (
-          values: (
-            first: -9999,
-            0: 0,
-            1: 1,
-            2: 2,
-            3: 3,
-            4: 4,
-            5: 5,
-            6: 6,
-            7: 7,
-            8: 8,
-            9: 9,
-            10: 10,
-            11: 11,
-            12: 12,
-            last: 9999,
-          ),
-        )
-      ),
-    "rotate": (
-      property: transform,
-      class: rotate,
-      values: (
-        none: none,
-        0: rotate(0deg),
-        45: rotate(45deg),
-        90: rotate(90deg),
-        180: rotate(180deg),
-      ),
-    ),
-    "nagative-rotate": (
-      property: transform,
-      class: -rotate,
-      values: (
-        45: rotate(-45deg),
-        90: rotate(-90deg),
-      ),
-    ),
-    "min-width": (
-      property: min-width,
-      class: min-w,
-      values: (
-        0: 0px,
-        full: 100%,
-        min: min-content,
-        max: max-content,
-        fit: fit-content,
-      ),
-    ),
-    "max-width": (
-      property: max-width,
-      class: max-w,
-      values: (
-        0: 0px,
-        none: none,
-        xs: 20rem,
-        sm: 24rem,
-        md: 28rem,
-        lg: 32rem,
-        xl: 36rem,
-        2xl: 42rem,
-        3xl: 48rem,
-        4xl: 56rem,
-        5xl: 64rem,
-        full: 100%,
-        min: min-content,
-        max: max-content,
-        fit: fit-content,
-        screen-sm: map-get($container-max-widths, "sm"),
-        screen-md: map-get($container-max-widths, "md"),
-        screen-lg: map-get($container-max-widths, "lg"),
-        screen-xl: map-get($container-max-widths, "xl"),
-        screen-xxl: map-get($container-max-widths, "xxl"),
-      ),
-    ),
-    "shadow": (
-      property: box-shadow,
-      class: shadow,
-      values: (
-        null: $box-shadow,
-        sm: $box-shadow-sm,
-        lg: $box-shadow-lg,
-        md: $box-shadow-md,
-        none: none,
-      ),
-    ),
-    "icon-text": (
-      property: color,
-      class: icon,
-      values: (
-        "primary": $ds-icon-brand,
-        "secondary": $ds-icon-discovery,
-        "danger": $ds-icon-danger,
-        "warning": $ds-icon-warning,
-        "success": $ds-icon-success,
-        "info": $ds-icon-information,
-      ),
-    ),
-    "break-normal": (
-      property: word-wrap word-break,
-      class: break,
-      values: (
-        normal,
+        first: -9999,
+        0: 0,
+        1: 1,
+        2: 2,
+        3: 3,
+        4: 4,
+        5: 5,
+        6: 6,
+        last: 9999,
       ),
     ),
     "border-width": (
@@ -232,102 +24,6 @@ $utilities: map-merge(
       css-variable-name: border-width,
       class: border,
       values: $border-widths,
-    ),
-    "margin-extra": (
-      responsive: true,
-      property: margin,
-      class: m,
-      values: $spacers_extra,
-    ),
-    // Margin utilities
-    "margin-x-extra":
-      (
-        responsive: true,
-        property: margin-right margin-left,
-        class: mx,
-        values: $spacers_extra,
-      ),
-    "margin-y-extra": (
-      responsive: true,
-      property: margin-top margin-bottom,
-      class: my,
-      values: $spacers_extra,
-    ),
-    "margin-top-extra": (
-      responsive: true,
-      property: margin-top,
-      class: mt,
-      values: $spacers_extra,
-    ),
-    "margin-end-extra": (
-      responsive: true,
-      property: margin-right,
-      class: me,
-      values: $spacers_extra,
-    ),
-    "margin-bottom-extra": (
-      responsive: true,
-      property: margin-bottom,
-      class: mb,
-      values: $spacers_extra,
-    ),
-    "margin-start-extra": (
-      responsive: true,
-      property: margin-left,
-      class: ms,
-      values: $spacers_extra,
-    ),
-    // Padding utilities
-    "padding-extra":
-      (
-        responsive: true,
-        property: padding,
-        class: p,
-        values: $spacers_extra,
-      ),
-    "padding-x-extra": (
-      responsive: true,
-      property: padding-right padding-left,
-      class: px,
-      values: $spacers_extra,
-    ),
-    "padding-y-extra": (
-      responsive: true,
-      property: padding-top padding-bottom,
-      class: py,
-      values: $spacers_extra,
-    ),
-    "padding-top-extra": (
-      responsive: true,
-      property: padding-top,
-      class: pt,
-      values: $spacers_extra,
-    ),
-    "padding-end-extra": (
-      responsive: true,
-      property: padding-right,
-      class: pe,
-      values: $spacers_extra,
-    ),
-    "padding-bottom-extra": (
-      responsive: true,
-      property: padding-bottom,
-      class: pb,
-      values: $spacers_extra,
-    ),
-    "padding-start-extra": (
-      responsive: true,
-      property: padding-left,
-      class: ps,
-      values: $spacers_extra,
-    ),
-    "subtle-border-color": (
-      property: border-color,
-      class: border,
-      local-vars: (
-        "border-opacity": 1,
-      ),
-      values: $utilities-border-subtle,
     ),
     "border": (
       property: border,
@@ -365,20 +61,6 @@ $utilities: map-merge(
         null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) rgba-css-var("border-color", "border"),
         0: 0,
       ),
-    ),
-    "link-underline": (
-      property: text-decoration,
-      class: link-underline,
-      local-vars: (
-        "link-underline-opacity": 1,
-      ),
-      values:
-        map-merge(
-          (
-            null: underline solid rgba(var(--#{$prefix}link-color-rgb), var(--#{$prefix}link-underline-opacity, 1)),
-          ),
-          map-loop($utilities-links-underline, "join", underline solid, "$value")
-        ),
     ),
   )
 );

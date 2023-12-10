@@ -1,0 +1,180 @@
+/**
+*  Extended utilities CSS by FastBootstrap.
+*/
+$utilities: map-merge(
+  $utilities,
+  (
+    "__font-size": (
+      rfs: true,
+      property: font-size,
+      class: fs,
+      values: (
+        xs: 0.75rem,
+        sm: 0.875rem,
+      ),
+    ),
+    "__align": (
+      property: vertical-align,
+      class: align,
+      values: sub super,
+    ),
+    "___border-style": (
+      property: border-style,
+      css-var: true,
+      css-variable-name: border-style,
+      class: border,
+      values: solid dashed dotted double hidden none,
+    ),
+    "__line-height": (
+      property: line-height,
+      class: lh,
+      values: (
+        md: 1.75,
+      ),
+    ),
+    "__font-weight": (
+      property: font-weight,
+      class: fw,
+      values: (
+        thin: 100,
+        extralight: 200,
+        black: 900,
+      ),
+    ),
+    "__text-align": (
+      responsive: true,
+      property: text-align,
+      class: text,
+      values: (
+        justify: justify,
+      ),
+    ),
+    "__text-decoration": (
+      property: text-decoration,
+      values: overline,
+    ),
+    "__text-opacity": (
+      css-var: true,
+      class: text-opacity,
+      values: 0,
+    ),
+    "___clear": (
+      responsive: true,
+      property: clear,
+      values: (
+        start: left,
+        end: right,
+        both: both,
+        none: none,
+      ),
+    ),
+    "___letter-spacing": (
+      property: letter-spacing,
+      class: ls,
+      values: (
+        tighter: -0.05em,
+        tight: -0.025em,
+        normal: 0em,
+        wide: 0.025em,
+        wider: 0.05em,
+        widest: 0.1em,
+      ),
+    ),
+    "___rotate": (
+      property: transform,
+      class: rotate,
+      values: (
+        none: none,
+        0: rotate(0deg),
+        45: rotate(45deg),
+        90: rotate(90deg),
+        180: rotate(180deg),
+      ),
+    ),
+    "___nagative-rotate": (
+      property: transform,
+      class: -rotate,
+      values: (
+        45: rotate(-45deg),
+        90: rotate(-90deg),
+      ),
+    ),
+    "___min-width": (
+      property: min-width,
+      class: min-w,
+      values: (
+        0: 0px,
+        full: 100%,
+        min: min-content,
+        max: max-content,
+        fit: fit-content,
+      ),
+    ),
+    "__max-width": (
+      property: max-width,
+      class: max-w,
+      values: (
+        0: 0px,
+        none: none,
+        xs: 20rem,
+        sm: 24rem,
+        md: 28rem,
+        lg: 32rem,
+        xl: 36rem,
+        2xl: 42rem,
+        3xl: 48rem,
+        4xl: 56rem,
+        5xl: 64rem,
+        full: 100%,
+        min: min-content,
+        max: max-content,
+        fit: fit-content,
+        screen-sm: map-get($container-max-widths, "sm"),
+        screen-md: map-get($container-max-widths, "md"),
+        screen-lg: map-get($container-max-widths, "lg"),
+        screen-xl: map-get($container-max-widths, "xl"),
+        screen-xxl: map-get($container-max-widths, "xxl"),
+      ),
+    ),
+    "__shadow": (
+      property: box-shadow,
+      class: shadow,
+      values: (
+        md: $box-shadow-md,
+      ),
+    ),
+    "___icon-text": (
+      property: color,
+      class: icon,
+      values: (
+        "primary": $ds-icon-brand,
+        "secondary": $ds-icon-discovery,
+        "danger": $ds-icon-danger,
+        "warning": $ds-icon-warning,
+        "success": $ds-icon-success,
+        "info": $ds-icon-information,
+      ),
+    ),
+    "___break-normal": (
+      property: word-wrap word-break,
+      class: break,
+      values: normal,
+    ),
+    "___border-color-subtle": (
+      property: border-color,
+      class: border,
+      local-vars: (
+        "border-opacity": 1,
+      ),
+      values: $utilities-border-subtle,
+    ),
+    "__link-underline": (
+      property: text-decoration,
+      class: link-underline,
+      local-vars: (
+        "link-underline-opacity": 1,
+      ),
+      values: map-loop($utilities-links-underline, "join", underline solid, "$value"),
+    ),
+  )
+);
