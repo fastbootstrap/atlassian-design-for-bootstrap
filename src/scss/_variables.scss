@@ -836,18 +836,6 @@ $zindex-levels: (
   auto: auto,
 ) !default;
 
-// Utilities of Border
-$utilities-border-subtle: (
-  "primary-subtle": rgba-css-var("primary-border-subtle", "border"),
-  "secondary-subtle": rgba-css-var("secondary-border-subtle", "border"),
-  "success-subtle": rgba-css-var("success-border-subtle", "border"),
-  "info-subtle": rgba-css-var("info-border-subtle", "border"),
-  "warning-subtle": rgba-css-var("warning-border-subtle", "border"),
-  "danger-subtle": rgba-css-var("danger-border-subtle", "border"),
-  "light-subtle": rgba-css-var("light-border-subtle", "border"),
-  "dark-subtle": rgba-css-var("dark-border-subtle", "border"),
-) !default;
-
 $theme-colors-text: (
   "primary": $primary-text-emphasis,
   "secondary": $secondary-text-emphasis,
@@ -882,4 +870,29 @@ $theme-colors-border-subtle: (
   "light": $light-border-subtle,
   "dark": $dark-border-subtle,
   "discovery": $discovery-border-subtle,
+) !default;
+
+// Utilities of Border
+$utilities-border-subtle: (
+  "primary-subtle": rgba-css-var("primary-border-subtle", "border"),
+  "secondary-subtle": rgba-css-var("secondary-border-subtle", "border"),
+  "success-subtle": rgba-css-var("success-border-subtle", "border"),
+  "info-subtle": rgba-css-var("info-border-subtle", "border"),
+  "warning-subtle": rgba-css-var("warning-border-subtle", "border"),
+  "danger-subtle": rgba-css-var("danger-border-subtle", "border"),
+  "light-subtle": rgba-css-var("light-border-subtle", "border"),
+  "dark-subtle": rgba-css-var("dark-border-subtle", "border"),
+  "discovery-subtle": rgba-css-var("discovery-border-subtle", "border"),
+) !default;
+
+$utilities-bg-subtle: (
+  "primary-subtle": $primary-bg-subtle,
+  "secondary-subtle": $secondary-bg-subtle,
+  "success-subtle": $success-bg-subtle,
+  "info-subtle": $info-bg-subtle,
+  "warning-subtle": $warning-bg-subtle,
+  "danger-subtle": $danger-bg-subtle,
+  "light-subtle": $light-bg-subtle,
+  "dark-subtle": $dark-bg-subtle,
+  "discovery-subtle": $discovery-bg-subtle,
 ) !default;
