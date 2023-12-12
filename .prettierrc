@@ -2,5 +2,13 @@
   "singleQuote": false,
   "tabWidth": 2,
   "printWidth": 120,
-  "quoteProps": "as-needed"
+  "quoteProps": "as-needed",
+  "overrides": [
+    {
+      "files": ["*.ts", "*.js"],
+      "options": {
+        "singleQuote": true
+      }
+    }
+  ]
 }
