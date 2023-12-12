@@ -10,5 +10,20 @@ import ScrollSpy from './scrollspy';
 import Tab from './tab';
 import Toast from './toast';
 import Tooltip from './tooltip';
+import { initCallback } from 'bootstrap.native';
 
-export { Alert, Button, Carousel, Collapse, Dropdown, Modal, Offcanvas, Popover, ScrollSpy, Tab, Toast, Tooltip };
+export {
+  Alert,
+  Button,
+  Carousel,
+  Collapse,
+  Dropdown,
+  Modal,
+  Offcanvas,
+  Popover,
+  ScrollSpy,
+  Tab,
+  Toast,
+  Tooltip,
+  initCallback,
+};
