@@ -1,0 +1,23 @@
+@each $value in $transition-delays {
+  .delay-#{$value} {
+    transition-delay: if($value==0, #{$value}s, #{$value}ms);
+  }
+}
+
+@each $value in $transition-durations {
+  .duration-#{$value} {
+    transition-duration: if($value==0, #{$value}s, #{$value}ms);
+  }
+}
+
+@each $key, $value in $transition-timing-functions {
+  .#{$key} {
+    transition-timing-function: #{$value};
+  }
+}
+
+@each $key, $value in $transition-propertys {
+  .transition#{if($key,"-" + #{$key},"")} {
+    transition-property: if($value, $value, $key);
+  }
+}

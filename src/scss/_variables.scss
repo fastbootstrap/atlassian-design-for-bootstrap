@@ -897,3 +897,66 @@ $utilities-bg-subtle: (
   "dark-subtle": $dark-bg-subtle,
   "discovery-subtle": $discovery-bg-subtle,
 ) !default;
+
+// transform & transition
+$transform-scales: (0, 50, 75, 90, 95, 100, 105, 110, 125, 150) !default;
+$transition-delays: (0, 75, 100, 150, 200, 300, 500, 700, 1000) !default;
+$transition-durations: (0, 75, 100, 150, 200, 300, 500, 700, 1000) !default;
+$transition-timing-functions: (
+  ease-linear: linear,
+  ease-in: cubic-bezier(0.4, 0, 1, 1),
+  ease-out: cubic-bezier(0, 0, 0.2, 1),
+  ease-in-out: cubic-bezier(0.4, 0, 0.2, 1),
+) !default;
+
+$transition-propertys: (
+  null: (
+    color,
+    background-color,
+    border-color,
+    text-decoration-color,
+    fill,
+    stroke,
+    opacity,
+    box-shadow,
+    transform,
+    filter,
+    backdrop-filter,
+  ),
+  "colors": (
+    color,
+    background-color,
+    border-color,
+    text-decoration-color,
+    fill,
+    stroke,
+  ),
+  "opacity": null,
+  "shadow": null,
+  "transform": null,
+  "none": null,
+  "all": null,
+); // ** Not support override it.
+
+$transform-origins: (
+  "center": null,
+  "top": null,
+  "top-right": (
+    top right,
+  ),
+  "right": "right",
+  "bottom-right": (
+    bottom right,
+  ),
+  "bottom": null,
+  "bottom-left": (
+    bottom left,
+  ),
+  "left": null,
+  "top-left": (
+    top left,
+  ),
+) !default;
+
+$transform-rotates: (0, 1, 2, 3, 6, 12, 45, 90, 180) !default;
+$transform-skews: (0, 1, 2, 3, 6, 12) !default;

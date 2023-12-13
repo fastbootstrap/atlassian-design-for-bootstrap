@@ -1,0 +1,118 @@
+/** transform-scale */
+@mixin make-scale($value, $x: null, $y: null) {
+  $value: calc($value/100);
+  @if ($x) {
+    --#{$prefix}scale-x: #{$value};
+  }
+  @if ($y) {
+    --#{$prefix}scale-y: #{$value};
+  }
+}
+
+%transform {
+  --#{$prefix}translate-x: 0;
+  --#{$prefix}translate-y: 0;
+  --#{$prefix}rotate: 0;
+  --#{$prefix}skew-x: 0;
+  --#{$prefix}skew-y: 0;
+  --#{$prefix}scale-x: 1;
+  --#{$prefix}scale-y: 1;
+  transform: translate(var(--#{$prefix}translate-x), var(--#{$prefix}translate-y)) rotate(var(--#{$prefix}rotate))
+    skewX(var(--#{$prefix}skew-x)) skewY(var(--#{$prefix}skew-y)) scaleX(var(--#{$prefix}scale-x))
+    scaleY(var(--#{$prefix}scale-y));
+}
+
+@each $value in $transform-scales {
+  .scale-#{$value} {
+    @extend %transform;
+    @include make-scale($value, true, true);
+  }
+
+  .scale-#{$value}-hover:hover {
+    @extend .scale-#{$value};
+  }
+
+  .scale-x-#{$value} {
+    @extend %transform;
+    @include make-scale($value, $x: true);
+  }
+
+  .scale-x-#{$value}-hover:hover {
+    @extend .scale-x-#{$value};
+  }
+
+  .scale-y-#{$value} {
+    @extend %transform;
+    @include make-scale($value, $y: true);
+  }
+
+  .scale-y-#{$value}-hover:hover {
+    @extend .scale-y-#{$value};
+  }
+}
+
+/** transform-origin */
+@each $key, $value in $transform-origins {
+  .origin-#{$key} {
+    transform-origin: #{if($value, $value, $key)};
+  }
+}
+
+/** transform-rotate */
+@each $value in $transform-rotates {
+  .rotate-#{$value} {
+    @extend %transform;
+    --#{$prefix}rotate: #{$value}deg;
+  }
+
+  // negative ??
+  @if ($value !=0) {
+    .-rotate-#{$value} {
+      @extend %transform;
+      --#{$prefix}rotate: -#{$value}deg;
+    }
+  }
+}
+
+/** transform-skew */
+@each $value in $transform-skews {
+  .skew-x-#{$value} {
+    @extend %transform;
+    --#{$prefix}skew-x: #{$value}deg;
+  }
+  .skew-y-#{$value} {
+    @extend %transform;
+    --#{$prefix}skew-y: #{$value}deg;
+  }
+}
+
+//* translates */
+@each $key,
+  $value
+    in map-merge(
+      (
+        "px": "1px",
+      ),
+      $spacers
+    )
+{
+  .translate-x-#{$key} {
+    @extend %transform;
+    --#{$prefix}translate-x: #{$value};
+  }
+
+  .-translate-x-#{$key} {
+    @extend %transform;
+    --#{$prefix}translate-x: -#{$value};
+  }
+
+  .translate-y-#{$key} {
+    @extend %transform;
+    --#{$prefix}translate-y: #{$value};
+  }
+
+  .-translate-y-#{$key} {
+    @extend %transform;
+    --#{$prefix}translate-y: -#{$value};
+  }
+}
