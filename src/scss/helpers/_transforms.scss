@@ -80,10 +80,22 @@
     @extend %transform;
     --#{$prefix}skew-x: #{$value}deg;
   }
+
+  .-skew-x-#{$value} {
+    @extend %transform;
+    --#{$prefix}skew-x: -#{$value}deg;
+  }
+
   .skew-y-#{$value} {
     @extend %transform;
     --#{$prefix}skew-y: #{$value}deg;
   }
+
+  .-skew-y-#{$value} {
+    @extend %transform;
+    --#{$prefix}skew-y: -#{$value}deg;
+  }
+
 }
 
 //* translates */
