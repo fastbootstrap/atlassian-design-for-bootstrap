@@ -128,6 +128,7 @@ $utilities: map-merge(
       property: color,
       class: icon,
       values: (
+        "body": $ds-icon,
         "primary": $ds-icon-brand,
         "danger": $ds-icon-danger,
         "warning": $ds-icon-warning,
