@@ -99,20 +99,36 @@
   .translate-x-#{$key} {
     @extend %transform;
     --#{$prefix}translate-x: #{$value};
+
+    &-hover:hover {
+      @extend .translate-x-#{$key};
+    }
   }
 
   .-translate-x-#{$key} {
     @extend %transform;
     --#{$prefix}translate-x: -#{$value};
+
+    &-hover:hover {
+      @extend .-translate-x-#{$key};
+    }
   }
 
   .translate-y-#{$key} {
     @extend %transform;
     --#{$prefix}translate-y: #{$value};
+
+    &-hover:hover {
+      @extend .translate-y-#{$key};
+    }
   }
 
   .-translate-y-#{$key} {
     @extend %transform;
     --#{$prefix}translate-y: -#{$value};
+
+    &-hover:hover {
+      @extend .-translate-y-#{$key};
+    }
   }
 }
