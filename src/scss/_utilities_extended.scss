@@ -158,5 +158,13 @@ $utilities: map-merge(
       ),
       values: map-loop($utilities-links-underline, "join", underline solid, "$value"),
     ),
+    "__flex": (
+      responsive: true,
+      property: flex,
+      values: (
+        1: 1 1 0%,
+        none: none,
+      ),
+    ),
   )
 );
