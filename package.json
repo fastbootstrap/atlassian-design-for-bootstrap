@@ -32,8 +32,7 @@
     "css-minify-rtl": "cleancss -O1 --format breakWith=lf --with-rebase --source-map --source-map-inline-sources --output dist/css/ --batch --batch-suffix \".min\" \"dist/css/*rtl.css\" \"!dist/css/*.min.css\"",
     "css-prefix": "npm-run-all --aggregate-output --parallel css-prefix-*",
     "css-prefix-main": "postcss --config build/postcss.config.js --replace \"dist/css/*.css\" \"!dist/css/*.rtl*.css\" \"!dist/css/*.min.css\"",
-    "js": "npm-run-all build-vite",
-    "dist": "npm-run-all --aggregate-output --parallel css js",
+    "dist": "npm-run-all --aggregate-output --parallel css",
     "build-vite": "vite build -c vite.config.ts",
     "lint:ts": "eslint -c .eslintrc.cjs --ext .ts src/ts"
   },
