@@ -260,7 +260,7 @@ $btn-colors-bs: ("success", "dark", "light", "info");
 
       &:not(.active):active {
         --#{$prefix}btn-active-color: #{$ds-text-inverse};
-        --#{$prefix}btn-active-bg: #{$ds-background-warning-bold-pressed};
+        --#{$prefix}btn-active-bg: #{$ds-background-discovery-bold-pressed};
       }
     }
   }
