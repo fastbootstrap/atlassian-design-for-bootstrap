@@ -62,5 +62,17 @@ $utilities: map-merge(
         0: 0,
       ),
     ),
+    "shadow": (
+      state: hover,
+      property: box-shadow,
+      class: shadow,
+      values: (
+        null: var(--#{$prefix}box-shadow),
+        sm: var(--#{$prefix}box-shadow-sm),
+        md: var(--#{$prefix}box-shadow-md),
+        lg: var(--#{$prefix}box-shadow-lg),
+        none: none,
+      ),
+    ),
   )
 );

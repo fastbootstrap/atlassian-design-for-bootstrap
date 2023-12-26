@@ -22,7 +22,8 @@ $space-tokens: (
   --#{$prefix}border-opacity: #{opacity(light("border"))};
   --#{$prefix}form-valid-icon: #{escape-svg($form-feedback-icon-valid)};
   --#{$prefix}form-invalid-icon: #{escape-svg($form-feedback-icon-invalid)};
-
+  --#{$prefix}box-shadow-md: #{$box-shadow-md};
+  
   @each $color, $value in $theme-colors-border-subtle {
     --#{$prefix}#{$color}-border-subtle-rgb: #{to-rgb($value)};
   }

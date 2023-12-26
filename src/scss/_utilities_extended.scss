@@ -117,13 +117,6 @@ $utilities: map-merge(
         screen-xxl: map-get($container-max-widths, "xxl"),
       ),
     ),
-    "__shadow": (
-      property: box-shadow,
-      class: shadow,
-      values: (
-        md: $box-shadow-md,
-      ),
-    ),
     "___icon-text": (
       property: color,
       class: icon,
