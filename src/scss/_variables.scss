@@ -984,3 +984,17 @@ $transform-origins: (
 
 $transform-rotates: (0, 1, 2, 3, 6, 12, 45, 90, 180) !default;
 $transform-skews: (0, 1, 2, 3, 6, 12) !default;
+
+// Typography
+
+$text-decoration-color: (
+  "primary": var(--#{$prefix}primary),
+  "secondary": var(--#{$prefix}secondary),
+  "success": var(--#{$prefix}success),
+  "info": var(--#{$prefix}info),
+  "warning": var(--#{$prefix}warning),
+  "danger": var(--#{$prefix}danger),
+  "light": var(--#{$prefix}light),
+  "dark": var(--#{$prefix}dark),
+  "discovery": var(--#{$prefix}discovery),
+) !default;

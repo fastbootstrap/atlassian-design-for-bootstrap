@@ -159,5 +159,55 @@ $utilities: map-merge(
         none: none,
       ),
     ),
+    "___underline-offset": (
+      property: text-underline-offset,
+      class: underline-offset,
+      values: (
+        auto: auto,
+        0: 0,
+        1: 1px,
+        2: 2px,
+        4: 4px,
+        8: 8px,
+      ),
+    ),
+    "___decoration-style": (
+      property: text-decoration-style,
+      class: decoration,
+      values: (
+        solid,
+        double,
+        dotted,
+        dashed,
+        wavy,
+      ),
+    ),
+    "___decoration-thickness": (
+      property: text-decoration-thickness,
+      class: decoration,
+      values: (
+        auto: auto,
+        from-font: from-font,
+        0: 0px,
+        1: 1px,
+        2: 2px,
+        4: 4px,
+        8: 8px,
+      ),
+    ),
+    "___coration-color": (
+      property: text-decoration-color,
+      class: decoration,
+      values:
+        map-merge(
+          $text-decoration-color,
+          (
+            current: currentColor,
+            transparent: transparent,
+            black: var(--#{$prefix}black),
+            white: var(--#{$prefix}white),
+          )
+        ),
+    ),
   )
 );
