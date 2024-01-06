@@ -11,6 +11,7 @@
   --bs-border-opacity: 0.14;
   --bs-form-valid-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3e%3cpath d='M12 20a8 8 0 110-16 8 8 0 010 16zm1.364-10.964l-2.152 4.11-1.543-1.39a1 1 0 10-1.338 1.487l2.5 2.25a1 1 0 001.555-.279l2.75-5.25a1 1 0 00-1.772-.928z' fill='%23216e4e'%3e%3c/path%3e%3c/svg%3e");
   --bs-form-invalid-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3e%3cg%3e%3cpath d='M13.416 4.417a2.002 2.002 0 00-2.832 0l-6.168 6.167a2.002 2.002 0 000 2.833l6.168 6.167a2.002 2.002 0 002.832 0l6.168-6.167a2.002 2.002 0 000-2.833l-6.168-6.167z' fill='%23ae2a19'%3e%3c/path%3e%3cpath d='M12 14a1 1 0 01-1-1V8a1 1 0 012 0v5a1 1 0 01-1 1m0 3a1 1 0 010-2 1 1 0 010 2' fill='%23ffffff'%3e%3c/path%3e%3c/g%3e%3c/svg%3e");
+  --bs-box-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
   --bs-primary-border-subtle-rgb: 87, 157, 255;
   --bs-secondary-border-subtle-rgb: 133, 144, 162;
   --bs-success-border-subtle-rgb: 75, 206, 151;
@@ -5345,7 +5346,7 @@ textarea.form-control-lg {
 }
 .btn-outline-discovery:not(.active):active {
   --bs-btn-active-color: var(--ds-text-inverse);
-  --bs-btn-active-bg: var(--ds-background-warning-bold-pressed);
+  --bs-btn-active-bg: var(--ds-background-discovery-bold-pressed);
 }
 
 .btn-link {
@@ -11043,15 +11044,39 @@ textarea.form-control-lg {
   box-shadow: var(--bs-box-shadow) !important;
 }
 
+.shadow-hover:hover {
+  box-shadow: var(--bs-box-shadow) !important;
+}
+
 .shadow-sm {
   box-shadow: var(--bs-box-shadow-sm) !important;
+}
+
+.shadow-sm-hover:hover {
+  box-shadow: var(--bs-box-shadow-sm) !important;
+}
+
+.shadow-md {
+  box-shadow: var(--bs-box-shadow-md) !important;
+}
+
+.shadow-md-hover:hover {
+  box-shadow: var(--bs-box-shadow-md) !important;
 }
 
 .shadow-lg {
   box-shadow: var(--bs-box-shadow-lg) !important;
 }
 
+.shadow-lg-hover:hover {
+  box-shadow: var(--bs-box-shadow-lg) !important;
+}
+
 .shadow-none {
+  box-shadow: none !important;
+}
+
+.shadow-none-hover:hover {
   box-shadow: none !important;
 }
 
@@ -13756,6 +13781,30 @@ textarea.form-control-lg {
   letter-spacing: 0.1em !important;
 }
 
+.tracking-tighter {
+  letter-spacing: -0.05em !important;
+}
+
+.tracking-tight {
+  letter-spacing: -0.025em !important;
+}
+
+.tracking-normal {
+  letter-spacing: 0em !important;
+}
+
+.tracking-wide {
+  letter-spacing: 0.025em !important;
+}
+
+.tracking-wider {
+  letter-spacing: 0.05em !important;
+}
+
+.tracking-widest {
+  letter-spacing: 0.1em !important;
+}
+
 .min-w-0 {
   min-width: 0px !important;
 }
@@ -13866,10 +13915,6 @@ textarea.form-control-lg {
 
 .max-w-screen-xxl {
   max-width: 1320px !important;
-}
-
-.shadow-md {
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1) !important;
 }
 
 .icon-body {
@@ -14010,6 +14055,148 @@ textarea.form-control-lg {
 
 .flex-none {
   flex: none !important;
+}
+
+.underline-offset-auto {
+  text-underline-offset: auto !important;
+}
+
+.underline-offset-0 {
+  text-underline-offset: 0 !important;
+}
+
+.underline-offset-1 {
+  text-underline-offset: 1px !important;
+}
+
+.underline-offset-2 {
+  text-underline-offset: 2px !important;
+}
+
+.underline-offset-4 {
+  text-underline-offset: 4px !important;
+}
+
+.underline-offset-8 {
+  text-underline-offset: 8px !important;
+}
+
+.decoration-solid {
+  -webkit-text-decoration-style: solid !important;
+  text-decoration-style: solid !important;
+}
+
+.decoration-double {
+  -webkit-text-decoration-style: double !important;
+  text-decoration-style: double !important;
+}
+
+.decoration-dotted {
+  -webkit-text-decoration-style: dotted !important;
+  text-decoration-style: dotted !important;
+}
+
+.decoration-dashed {
+  -webkit-text-decoration-style: dashed !important;
+  text-decoration-style: dashed !important;
+}
+
+.decoration-wavy {
+  -webkit-text-decoration-style: wavy !important;
+  text-decoration-style: wavy !important;
+}
+
+.decoration-auto {
+  text-decoration-thickness: auto !important;
+}
+
+.decoration-from-font {
+  text-decoration-thickness: from-font !important;
+}
+
+.decoration-0 {
+  text-decoration-thickness: 0px !important;
+}
+
+.decoration-1 {
+  text-decoration-thickness: 1px !important;
+}
+
+.decoration-2 {
+  text-decoration-thickness: 2px !important;
+}
+
+.decoration-4 {
+  text-decoration-thickness: 4px !important;
+}
+
+.decoration-8 {
+  text-decoration-thickness: 8px !important;
+}
+
+.decoration-primary {
+  -webkit-text-decoration-color: var(--bs-primary) !important;
+  text-decoration-color: var(--bs-primary) !important;
+}
+
+.decoration-secondary {
+  -webkit-text-decoration-color: var(--bs-secondary) !important;
+  text-decoration-color: var(--bs-secondary) !important;
+}
+
+.decoration-success {
+  -webkit-text-decoration-color: var(--bs-success) !important;
+  text-decoration-color: var(--bs-success) !important;
+}
+
+.decoration-info {
+  -webkit-text-decoration-color: var(--bs-info) !important;
+  text-decoration-color: var(--bs-info) !important;
+}
+
+.decoration-warning {
+  -webkit-text-decoration-color: var(--bs-warning) !important;
+  text-decoration-color: var(--bs-warning) !important;
+}
+
+.decoration-danger {
+  -webkit-text-decoration-color: var(--bs-danger) !important;
+  text-decoration-color: var(--bs-danger) !important;
+}
+
+.decoration-light {
+  -webkit-text-decoration-color: var(--bs-light) !important;
+  text-decoration-color: var(--bs-light) !important;
+}
+
+.decoration-dark {
+  -webkit-text-decoration-color: var(--bs-dark) !important;
+  text-decoration-color: var(--bs-dark) !important;
+}
+
+.decoration-discovery {
+  -webkit-text-decoration-color: var(--bs-discovery) !important;
+  text-decoration-color: var(--bs-discovery) !important;
+}
+
+.decoration-current {
+  -webkit-text-decoration-color: currentColor !important;
+  text-decoration-color: currentColor !important;
+}
+
+.decoration-transparent {
+  -webkit-text-decoration-color: transparent !important;
+  text-decoration-color: transparent !important;
+}
+
+.decoration-black {
+  -webkit-text-decoration-color: var(--bs-black) !important;
+  text-decoration-color: var(--bs-black) !important;
+}
+
+.decoration-white {
+  -webkit-text-decoration-color: var(--bs-white) !important;
+  text-decoration-color: var(--bs-white) !important;
 }
 
 @media (min-width: 576px) {
