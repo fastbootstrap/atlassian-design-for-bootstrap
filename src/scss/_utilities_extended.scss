@@ -80,6 +80,18 @@ $utilities: map-merge(
         widest: 0.1em,
       ),
     ),
+    "___letter-spacing-new": (
+      property: letter-spacing,
+      class: tracking,
+      values: (
+        tighter: -0.05em,
+        tight: -0.025em,
+        normal: 0em,
+        wide: 0.025em,
+        wider: 0.05em,
+        widest: 0.1em,
+      ),
+    ),
     "___min-width": (
       property: min-width,
       class: min-w,
