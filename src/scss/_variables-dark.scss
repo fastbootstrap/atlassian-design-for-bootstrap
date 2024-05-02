@@ -53,7 +53,7 @@ $form-select-disabled-indicator-color-dark: dark("text-disabled") !default;
 $form-select-disabled-indicator-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$form-select-disabled-indicator-color-dark}' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/></svg>") !default;
 
 $form-switch-color-dark: dark("icon-inverse") !default;
-$form-switch-focus-bg-image-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{dark('icon-inverse')}'/></svg>") !default !default;
+$form-switch-focus-bg-image-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{dark('icon-inverse')}'/></svg>") !default;
 
 $form-valid-color-dark: $ds-text-success !default;
 $form-valid-border-color-dark: $ds-border-success !default;
