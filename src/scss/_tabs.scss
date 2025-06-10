@@ -14,7 +14,7 @@
     background-color: $nav-tabs-border-color;
   }
 
-  & > .nav-item {
+  .nav-item {
     padding-left: var(--#{$prefix}nav-link-padding-x);
     padding-right: var(--#{$prefix}nav-link-padding-x);
 
