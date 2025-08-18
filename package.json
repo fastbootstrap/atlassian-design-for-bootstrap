@@ -32,35 +32,24 @@
     "css-minify-rtl": "cleancss -O1 --format breakWith=lf --with-rebase --source-map --source-map-inline-sources --output dist/css/ --batch --batch-suffix \".min\" \"dist/css/*rtl.css\" \"!dist/css/*.min.css\"",
     "css-prefix": "npm-run-all --aggregate-output --parallel css-prefix-*",
     "css-prefix-main": "postcss --config build/postcss.config.js --replace \"dist/css/*.css\" \"!dist/css/*.rtl*.css\" \"!dist/css/*.min.css\"",
-    "dist": "npm-run-all --aggregate-output --parallel css",
-    "build-vite": "vite build -c vite.config.ts",
-    "lint:ts": "eslint -c .eslintrc.cjs --ext .ts src/ts"
+    "dist": "npm-run-all --aggregate-output --parallel css"
   },
   "dependencies": {
-    "bootstrap": "^5.3.2",
-    "bootstrap.native": "^5.0.11"
+    "bootstrap": "^5.3.2"
   },
   "devDependencies": {
-    "@thednp/event-listener": "^2.0.4",
-    "@thednp/shorty": "^2.0.0",
-    "@types/node": "^18.0.0",
-    "@typescript-eslint/eslint-plugin": "^6.13.2",
-    "@typescript-eslint/parser": "^6.13.2",
     "autoprefixer": "^10.4.8",
     "clean-css-cli": "^5.6.1",
     "cross-env": "^7.0.3",
-    "eslint": "^8.55.0",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.16",
     "postcss-cli": "^10.0.0",
     "prettier": "^2.7.0",
     "rtlcss": "^4.0.0",
-    "sass": "^1.52.3",
-    "typescript": "^5.3.2",
-    "vite": "^5.0.5"
+    "sass": "^1.52.3"
   },
   "files": [
-    "dist/{css,js}/*.{css,js,map}",
-    "src/{ts,scss}/**/*.{ts,scss}"
+    "dist/{css}/*.{css,map}",
+    "src/{scss}/**/*.{scss}"
   ]
 }
