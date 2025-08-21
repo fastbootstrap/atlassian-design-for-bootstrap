@@ -1,7 +1,9 @@
+@import "bootstrap/scss/functions";
+
 @function light($token) {
-  @return nth(map-get($color-tokens, $token), 1);
+  @return map-get($light-theme-color-tokens, $token);
 }
 
 @function dark($token) {
-  @return nth(map-get($color-tokens, $token), 2);
+  @return map-get($dark-theme-color-tokens, $token);
 }

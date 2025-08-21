@@ -1,147 +1,41 @@
 $ds-prefix: ds-;
 
-/* Colors system */
-// https://atlassian.design/foundations/color-new/color-palette-new
-$lime-100: #eefbda;
-$lime-200: #d3f1a7;
-$lime-300: #b3df72;
-$lime-400: #94c748;
-$lime-500: #82b536;
-$lime-600: #6a9a23;
-$lime-700: #5b7f24;
-$lime-800: #4c6b1f;
-$lime-900: #37471f;
-$lime-1000: #2a3818;
+$design-tokens: (
+  "spacing": 0.25rem,
+);
 
-$blue-100: #e9f2ff;
-$blue-200: #cce0ff;
-$blue-300: #85b8ff;
-$blue-400: #579dff;
-$blue-500: #388bff;
-$blue-600: #1d7afc;
-$blue-700: #0c66e4;
-$blue-800: #0055cc;
-$blue-900: #09326c;
-$blue-1000: #092957;
+// Opacity
+$opacity-tokens: (
+  "opacity-disabled": 0.4,
+  "opacity-loading": 0.2,
+);
 
-$purple-100: #f3f0ff;
-$purple-200: #dfd8fd;
-$purple-300: #b8acf6;
-$purple-400: #9f8fef;
-$purple-500: #8f7ee7;
-$purple-600: #8270db;
-$purple-700: #6e5dc6;
-$purple-800: #5e4db2;
-$purple-900: #352c63;
-$purple-1000: #2b2451;
-
-$red-100: #ffedeb;
-$red-200: #ffd2cc;
-$red-300: #ff9c8f;
-$red-400: #f87462;
-$red-500: #ef5c48;
-$red-600: #e34935;
-$red-700: #ca3521;
-$red-800: #ae2a19;
-$red-900: #601e16;
-$red-1000: #4f1c16;
-
-$orange-100: #fff4e5;
-$orange-200: #ffe2bd;
-$orange-300: #fec57b;
-$orange-400: #faa53d;
-$orange-500: #f18d13;
-$orange-600: #d97008;
-$orange-700: #b65c02;
-$orange-800: #974f0c;
-$orange-900: #5f3811;
-$orange-1000: #4a2b0f;
-
-$yellow-100: #fff7d6;
-$yellow-200: #f8e6a0;
-$yellow-300: #f5cd47;
-$yellow-400: #e2b203;
-$yellow-500: #cf9f02;
-$yellow-600: #b38600;
-$yellow-700: #946f00;
-$yellow-800: #7f5f01;
-$yellow-900: #533f04;
-$yellow-1000: #3f3102;
-
-$green-100: #dffcf0;
-$green-200: #baf3db;
-$green-300: #7ee2b8;
-$green-400: #4bce97;
-$green-500: #2abb7f;
-$green-600: #22a06b;
-$green-700: #1f845a;
-$green-800: #216e4e;
-$green-900: #164b35;
-$green-1000: #143c2b;
-
-$teal-100: #e3fafc;
-$teal-200: #c1f0f5;
-$teal-300: #8bdbe5;
-$teal-400: #60c6d2;
-$teal-500: #37b4c3;
-$teal-600: #1d9aaa;
-$teal-700: #1d7f8c;
-$teal-800: #206b74;
-$teal-900: #1d474c;
-$teal-1000: #15373b;
-
-$magenta-100: #ffecf8;
-$magenta-200: #fdd0ec;
-$magenta-300: #f797d2;
-$magenta-400: #e774bb;
-$magenta-500: #da62ac;
-$magenta-600: #cd519d;
-$magenta-700: #ae4787;
-$magenta-800: #943d73;
-$magenta-900: #50253f;
-$magenta-1000: #421f34;
-
-$neutral-0: #ffffff;
-$neutral-100: #f7f8f9;
-$neutral-200: #f1f2f4;
-$neutral-300: #dcdfe4;
-$neutral-400: #b3b9c4;
-$neutral-500: #8590a2;
-$neutral-600: #758195;
-$neutral-700: #626f86;
-$neutral-800: #44546f;
-$neutral-900: #2c3e5d;
-$neutral-1000: #172b4d;
-$neutral-1100: #091e42;
-$neutral-100a: rgba(9, 30, 66, 0.03);
-$neutral-200a: rgba(9, 30, 66, 0.06);
-$neutral-300a: rgba(9, 30, 66, 0.14);
-$neutral-400a: rgba(9, 30, 66, 0.31);
-$neutral-500a: rgba(9, 30, 66, 0.49);
-
-$dark-neutral-n100: #101214;
-$dark-neutral-0: #161a1d;
-$dark-neutral-100: #1d2125;
-$dark-neutral-200: #22272b;
-$dark-neutral-250: #282e33;
-$dark-neutral-300: #2c333a;
-$dark-neutral-350: #38414a;
-$dark-neutral-400: #454f59;
-$dark-neutral-500: #596773;
-$dark-neutral-600: #738496;
-$dark-neutral-700: #8c9bab;
-$dark-neutral-800: #9fadbc;
-$dark-neutral-900: #b6c2cf;
-$dark-neutral-1000: #c7d1db;
-$dark-neutral-1100: #dee4ea;
-$dark-neutral-n100a: rgba(3, 4, 4, 0.26);
-$dark-neutral-100a: rgba(188, 214, 240, 0.04);
-$dark-neutral-200a: rgba(161, 189, 217, 0.08);
-$dark-neutral-250a: rgba(200, 225, 249, 0.1);
-$dark-neutral-300a: rgba(166, 197, 226, 0.16);
-$dark-neutral-350a: rgba(195, 222, 254, 0.2);
-$dark-neutral-400a: rgba(191, 219, 248, 0.28);
-$dark-neutral-500a: rgba(155, 180, 202, 0.5);
+// Space
+$space-tokens: (
+  "space-0": 0,
+  "space-025": 0.125rem,
+  "space-050": 0.25rem,
+  "space-075": 0.375rem,
+  "space-100": 0.5rem,
+  "space-150": 0.75rem,
+  "space-200": 1rem,
+  "space-250": 1.25rem,
+  "space-300": 1.5rem,
+  "space-400": 2rem,
+  "space-500": 2.5rem,
+  "space-600": 3rem,
+  "space-800": 4rem,
+  "space-1000": 5rem,
+  "space-negative-025": -0.125rem,
+  "space-negative-050": -0.25rem,
+  "space-negative-075": -0.375rem,
+  "space-negative-100": -0.5rem,
+  "space-negative-150": -0.75rem,
+  "space-negative-200": -1rem,
+  "space-negative-250": -1.25rem,
+  "space-negative-300": -1.5rem,
+  "space-negative-400": -2rem,
+);
 
 // Spacing
 $ds-space-0: 0;
@@ -158,8 +52,17 @@ $ds-space-500: 2.5rem;
 $ds-space-600: 3rem;
 $ds-space-800: 4rem;
 $ds-space-1000: 5rem;
+$ds-space-negative-025: -0.125rem;
+$ds-space-negative-050: -0.25rem;
+$ds-space-negative-075: -0.375rem;
+$ds-space-negative-100: -0.5rem;
+$ds-space-negative-150: -0.75rem;
+$ds-space-negative-200: -1rem;
+$ds-space-negative-250: -1.25rem;
+$ds-space-negative-300: -1.5rem;
+$ds-space-negative-400: -2rem;
 
-$text-tokens: (
+$color-text-tokens: (
   "text": (
     $neutral-1000,
     $dark-neutral-900,
@@ -245,8 +148,8 @@ $text-tokens: (
     $dark-neutral-1100,
   ),
   "text-disabled": (
-    $neutral-400a,
-    $dark-neutral-400a,
+    $neutral-400-alpha,
+    $dark-neutral-400-alpha,
   ),
   "text-inverse": (
     $neutral-0,
@@ -294,7 +197,7 @@ $text-tokens: (
   ),
 );
 
-$link-tokens: (
+$color-link-tokens: (
   "link": (
     $blue-700,
     $blue-400,
@@ -307,9 +210,13 @@ $link-tokens: (
     $purple-800,
     $purple-300,
   ),
+  "link-visited-pressed": (
+    $purple-900,
+    $purple-200,
+  ),
 );
 
-$icon-tokens: (
+$color-icon-tokens: (
   "icon": (
     $neutral-800,
     $dark-neutral-800,
@@ -319,8 +226,8 @@ $icon-tokens: (
     $lime-500,
   ),
   "icon-accent-red": (
+    $red-700,
     $red-600,
-    $red-500,
   ),
   "icon-accent-orange": (
     $orange-600,
@@ -328,7 +235,7 @@ $icon-tokens: (
   ),
   "icon-accent-yellow": (
     $yellow-600,
-    $yellow-500,
+    $yellow-300,
   ),
   "icon-accent-green": (
     $green-600,
@@ -355,8 +262,8 @@ $icon-tokens: (
     $dark-neutral-600,
   ),
   "icon-disabled": (
-    $neutral-400a,
-    $dark-neutral-400a,
+    $neutral-400-alpha,
+    $dark-neutral-400-alpha,
   ),
   "icon-inverse": (
     $neutral-0,
@@ -400,10 +307,10 @@ $icon-tokens: (
   ),
 );
 
-$border-tokens: (
+$color-border-tokens: (
   "border": (
-    $neutral-300a,
-    $dark-neutral-300a,
+    $neutral-300-alpha,
+    $dark-neutral-300-alpha,
   ),
   "border-accent-lime": (
     $lime-600,
@@ -446,16 +353,16 @@ $border-tokens: (
     $dark-neutral-600,
   ),
   "border-disabled": (
-    $neutral-200a,
-    $dark-neutral-200a,
+    $neutral-200-alpha,
+    $dark-neutral-200-alpha,
   ),
   "border-focused": (
     $blue-500,
     $blue-300,
   ),
   "border-input": (
-    $neutral-300a,
-    $dark-neutral-300a,
+    $neutral-500,
+    $dark-neutral-600,
   ),
   "border-inverse": (
     $neutral-0,
@@ -491,11 +398,11 @@ $border-tokens: (
   ),
   "border-bold": (
     $neutral-600,
-    $dark-neutral-500,
+    $dark-neutral-600,
   ),
 );
 
-$background-tokens: (
+$color-background-tokens: (
   "background-accent-lime-subtlest": (
     $lime-100,
     $lime-1000,
@@ -544,7 +451,7 @@ $background-tokens: (
     $lime-900,
     $lime-200,
   ),
-  "ackground-accent-red-subtlest": (
+  "background-accent-red-subtlest": (
     $red-100,
     $red-1000,
   ),
@@ -665,15 +572,15 @@ $background-tokens: (
     $yellow-700,
   ),
   "background-accent-yellow-subtle": (
-    $yellow-400,
+    $yellow-300,
     $yellow-800,
   ),
   "background-accent-yellow-subtle-hovered": (
-    $yellow-300,
+    $yellow-400,
     $yellow-900,
   ),
   "background-accent-yellow-subtle-pressed": (
-    $yellow-200,
+    $yellow-500,
     $yellow-1000,
   ),
   "background-accent-yellow-bolder": (
@@ -977,8 +884,8 @@ $background-tokens: (
     $dark-neutral-900,
   ),
   "background-disabled": (
-    $neutral-100a,
-    $dark-neutral-100a,
+    $neutral-100-alpha,
+    $dark-neutral-100-alpha,
   ),
   "background-input": (
     $neutral-0,
@@ -993,40 +900,40 @@ $background-tokens: (
     $dark-neutral-200,
   ),
   "background-inverse-subtle": (
-    #00000029,
-    #ffffff29,
+    rgba(0, 0, 0, 0.161),
+    rgba(255, 255, 255, 0.161),
   ),
   "background-inverse-subtle-hovered": (
-    #0000003d,
-    #ffffff3d,
+    rgba(0, 0, 0, 0.239),
+    rgba(255, 255, 255, 0.239),
   ),
   "background-inverse-subtle-pressed": (
-    #00000052,
-    #ffffff52,
+    rgba(0, 0, 0, 0.322),
+    rgba(255, 255, 255, 0.322),
   ),
   "background-neutral": (
-    $neutral-200a,
-    $dark-neutral-200a,
+    $neutral-200-alpha,
+    $dark-neutral-200-alpha,
   ),
   "background-neutral-hovered": (
-    $neutral-300a,
-    $dark-neutral-300a,
+    $neutral-300-alpha,
+    $dark-neutral-300-alpha,
   ),
   "background-neutral-pressed": (
-    $neutral-400a,
-    $dark-neutral-400a,
+    $neutral-400-alpha,
+    $dark-neutral-400-alpha,
   ),
   "background-neutral-subtle": (
     transparent,
     transparent,
   ),
   "background-neutral-subtle-hovered": (
-    $neutral-200a,
-    $dark-neutral-200a,
+    $neutral-200-alpha,
+    $dark-neutral-200-alpha,
   ),
   "background-neutral-subtle-pressed": (
-    $neutral-300a,
-    $dark-neutral-300a,
+    $neutral-300-alpha,
+    $dark-neutral-300-alpha,
   ),
   "background-neutral-bold": (
     $neutral-800,
@@ -1222,33 +1129,44 @@ $background-tokens: (
   ),
 );
 
-$blanket-tokens: (
+$color-blanket-tokens: (
   "blanket": (
-    $neutral-500a,
-    #10121499,
+    $neutral-500-alpha,
+    rgba(16, 18, 20, 0.6),
   ),
   "blanket-selected": (
-    #388bff14,
-    #1d7afc14,
+    rgba(56, 139, 255, 0.078),
+    rgba(29, 122, 252, 0.078),
   ),
   "blanket-danger": (
-    #ef5c4814,
-    #e3493514,
+    rgba(239, 92, 72, 0.078),
+    rgba(227, 73, 53, 0.078),
   ),
 );
 
-$skeleton-tokens: (
+$color-interaction-tokens: (
+  "interaction-hovered": (
+    rgba(0, 0, 0, 0.161),
+    rgba(255, 255, 255, 0.2),
+  ),
+  "interaction-pressed": (
+    rgba(0, 0, 0, 0.322),
+    rgba(255, 255, 255, 0.361),
+  ),
+);
+
+$color-skeleton-tokens: (
   "skeleton": (
-    $neutral-200a,
-    $dark-neutral-200a,
+    $neutral-200-alpha,
+    $dark-neutral-200-alpha,
   ),
   "skeleton-subtle": (
-    $neutral-100a,
-    $dark-neutral-100a,
+    $neutral-100-alpha,
+    $dark-neutral-100-alpha,
   ),
 );
 
-$ds-surface-tokens: (
+$elevation-surface-tokens: (
   "surface": (
     $neutral-0,
     $dark-neutral-100,
@@ -1259,7 +1177,7 @@ $ds-surface-tokens: (
   ),
   "surface-pressed": (
     $neutral-300,
-    $dark-neutral-300,
+    $dark-neutral-250,
   ),
   "surface-overlay": (
     $neutral-0,
@@ -1291,18 +1209,26 @@ $ds-surface-tokens: (
   ),
 );
 
-$shadow-tokens: (
+$elevation-shadow-tokens: (
   "shadow-overflow": (
-    "0px 0px 8px #091E4229, 0px 0px 1px #091E421F",
-    "0px 0px 12px #0304048F, 0px 0px 1px #03040480",
+    "0px 0px 8px rgba(9, 30, 66, 0.16), 0px 0px 1px rgba(9, 30, 66, 0.12)",
+    "0px 0px 12px rgba(3, 4, 4, 0.56), 0px 0px 1px rgba(3, 4, 4, 0.5)",
+  ),
+  "shadow-overflow-perimeter": (
+    rgba(9, 30, 66, 0.122),
+    rgba(3, 4, 4, 0.502),
+  ),
+  "shadow-overflow-spread": (
+    rgba(9, 30, 66, 0.161),
+    rgba(3, 4, 4, 0.561),
   ),
   "shadow-overlay": (
-    "0px 8px 12px #091E4226, 0px 0px 1px #091E424F",
-    "0px 0px 0px 1px #39424a, 0px 8px 12px #0304045C, 0px 0px 1px 1px #03040480",
+    "0px 8px 12px rgba(9, 30, 66, 0.15), 0px 0px 1px rgba(9, 30, 66, 0.31)",
+    "0px 0px 0px rgba(57, 66, 74, 1), 0px 8px 12px rgba(3, 4, 4, 0.36), 0px 0px 1px rgba(3, 4, 4, 0.5)",
   ),
   "shadow-raised": (
-    "0px 1px 1px #091E4240, 0px 0px 1px #091E424F",
-    "0px 0px 0px 1px #00000000, 0px 1px 1px #03040480, 0px 0px 1px #03040480",
+    "0px 1px 1px rgba(9, 30, 66, 0.25),0px 0px 1px rgba(9, 30, 66, 0.31)",
+    "0px 0px 0px rgba(0, 0, 0, 0),0px 1px 1px rgba(3, 4, 4, 0.5),0px 0px 1px rgba(3, 4, 4, 0.5)",
   ),
 );
 
@@ -1415,14 +1341,34 @@ $ds-shadow-overlay: var(--#{$ds-prefix}shadow-overlay);
 $ds-shadow-overflow: var(--#{$ds-prefix}shadow-overflow);
 $ds-shadow-raised: var(--#{$ds-prefix}shadow-raised);
 
-$color-tokens: map-merge-multiple(
-  $text-tokens,
-  $link-tokens,
-  $background-tokens,
-  $border-tokens,
-  $icon-tokens,
-  $blanket-tokens,
-  $skeleton-tokens,
-  $ds-surface-tokens,
-  $shadow-tokens
-);
+$light-theme-color-tokens: ();
+$dark-theme-color-tokens: ();
+
+@each $key,
+  $values
+    in map-merge-multiple(
+      $color-text-tokens,
+      $color-link-tokens,
+      $color-background-tokens,
+      $color-border-tokens,
+      $color-icon-tokens,
+      $color-blanket-tokens,
+      $color-skeleton-tokens,
+      $color-interaction-tokens,
+      $elevation-surface-tokens,
+      $elevation-shadow-tokens
+    )
+{
+  $light-theme-color-tokens: map-merge(
+    $light-theme-color-tokens,
+    (
+      $key: nth($values, 1),
+    )
+  );
+  $dark-theme-color-tokens: map-merge(
+    $dark-theme-color-tokens,
+    (
+      $key: nth($values, 2),
+    )
+  );
+}

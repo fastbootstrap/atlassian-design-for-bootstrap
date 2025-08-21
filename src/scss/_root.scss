@@ -1,40 +1,24 @@
-$space-tokens: (
-  "space-0": $ds-space-0,
-  "space-025": $ds-space-025,
-  "space-050": $ds-space-050,
-  "space-075": $ds-space-075,
-  "space-100": $ds-space-100,
-  "space-150": $ds-space-150,
-  "space-200": $ds-space-200,
-  "space-250": $ds-space-250,
-  "space-300": $ds-space-300,
-  "space-400": $ds-space-400,
-  "space-500": $ds-space-500,
-  "space-600": $ds-space-600,
-  "space-800": $ds-space-800,
-  "space-1000": $ds-space-1000,
-);
-
 :root,
-[data-bs-theme="light"] {
+:host {
+  @each $key, $value in $ds-colors {
+    --color-#{$key}: #{$value};
+  }
+}
+
+@include color-mode(light, true) {
   // https://github.com/fastbootstrap/atlassian-design-for-bootstrap/issues/7
   --#{$prefix}border-color-rgb: #{to-rgb(light("border"))};
   --#{$prefix}border-opacity: #{opacity(light("border"))};
   --#{$prefix}form-valid-icon: #{escape-svg($form-feedback-icon-valid)};
   --#{$prefix}form-invalid-icon: #{escape-svg($form-feedback-icon-invalid)};
   --#{$prefix}box-shadow-md: #{$box-shadow-md};
-  
+
   @each $color, $value in $theme-colors-border-subtle {
     --#{$prefix}#{$color}-border-subtle-rgb: #{to-rgb($value)};
   }
 
-  @each $color, $values in $color-tokens {
-    $value: nth($values, 1);
-    --#{$ds-prefix}#{$color}: #{$value};
-  }
-
-  @each $name, $value in $space-tokens {
-    --#{$ds-prefix}#{$name}: #{$value};
+  @each $key, $value in $light-theme-color-tokens {
+    --#{$ds-prefix}#{$key}: #{$value};
   }
 }
 
@@ -49,9 +33,8 @@ $space-tokens: (
       --#{$prefix}#{$color}-border-subtle-rgb: #{to-rgb($value)};
     }
 
-    @each $color, $values in $color-tokens {
-      $value: nth($values, 2);
-      --#{$ds-prefix}#{$color}: #{$value};
+    @each $key, $value in $dark-theme-color-tokens {
+      --#{$ds-prefix}#{$key}: #{$value};
     }
   }
 }

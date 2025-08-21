@@ -12,137 +12,9 @@ $grays: () !default;
 $indigos: () !default;
 $pinks: () !default;
 $cyans: () !default;
+$colors: () !default;
 
-$neutrals: (
-  "neutral-100": $neutral-100,
-  "neutral-200": $neutral-200,
-  "neutral-300": $neutral-300,
-  "neutral-400": $neutral-400,
-  "neutral-500": $neutral-500,
-  "neutral-600": $neutral-600,
-  "neutral-700": $neutral-700,
-  "neutral-800": $neutral-800,
-  "neutral-900": $neutral-900,
-  "neutral-1000": $neutral-1000,
-  "neutral-1100": $neutral-1100,
-) !default;
-
-$blues: (
-  "blue-100": $blue-100,
-  "blue-200": $blue-200,
-  "blue-300": $blue-300,
-  "blue-400": $blue-400,
-  "blue-500": $blue-500,
-  "blue-600": $blue-600,
-  "blue-700": $blue-700,
-  "blue-800": $blue-800,
-  "blue-900": $blue-900,
-  "blue-1000": $blue-1000,
-) !default;
-
-$yellows: (
-  "yellow-100": $yellow-100,
-  "yellow-200": $yellow-200,
-  "yellow-300": $yellow-300,
-  "yellow-400": $yellow-400,
-  "yellow-500": $yellow-500,
-  "yellow-600": $yellow-600,
-  "yellow-700": $yellow-700,
-  "yellow-800": $yellow-800,
-  "yellow-900": $yellow-900,
-  "yellow-1000": $yellow-1000,
-) !default;
-
-$greens: (
-  "green-100": $green-100,
-  "green-200": $green-200,
-  "green-300": $green-300,
-  "green-400": $green-400,
-  "green-500": $green-500,
-  "green-600": $green-600,
-  "green-700": $green-700,
-  "green-800": $green-800,
-  "green-900": $green-900,
-  "green-1000": $green-1000,
-) !default;
-
-$purples: (
-  "purple-100": $purple-100,
-  "purple-200": $purple-200,
-  "purple-300": $purple-300,
-  "purple-400": $purple-400,
-  "purple-500": $purple-500,
-  "purple-600": $purple-600,
-  "purple-700": $purple-700,
-  "purple-800": $purple-800,
-  "purple-900": $purple-900,
-  "purple-1000": $purple-1000,
-) !default;
-
-$teals: (
-  "teal-100": $teal-100,
-  "teal-200": $teal-200,
-  "teal-300": $teal-300,
-  "teal-400": $teal-400,
-  "teal-500": $teal-500,
-  "teal-600": $teal-600,
-  "teal-700": $teal-700,
-  "teal-800": $teal-800,
-  "teal-900": $teal-900,
-  "teal-1000": $teal-1000,
-) !default;
-
-$reds: (
-  "red-100": $red-100,
-  "red-200": $red-200,
-  "red-300": $red-300,
-  "red-400": $red-400,
-  "red-500": $red-500,
-  "red-600": $red-600,
-  "red-700": $red-700,
-  "red-800": $red-800,
-  "red-900": $red-900,
-  "red-1000": $red-1000,
-) !default;
-
-$limes: (
-  "lime-100": $lime-100,
-  "lime-200": $lime-200,
-  "lime-300": $lime-300,
-  "lime-400": $lime-400,
-  "lime-500": $lime-500,
-  "lime-600": $lime-600,
-  "lime-700": $lime-700,
-  "lime-800": $lime-800,
-  "lime-900": $lime-900,
-  "lime-1000": $lime-1000,
-) !default;
-
-$magentas: (
-  "magenta-100": $magenta-100,
-  "magenta-200": $magenta-200,
-  "magenta-300": $magenta-300,
-  "magenta-400": $magenta-400,
-  "magenta-500": $magenta-500,
-  "magenta-600": $magenta-600,
-  "magenta-700": $magenta-700,
-  "magenta-800": $magenta-800,
-  "magenta-900": $magenta-900,
-  "magenta-1000": $magenta-1000,
-) !default;
-
-$oranges: (
-  "orange-100": $orange-100,
-  "orange-200": $orange-200,
-  "orange-300": $orange-300,
-  "orange-400": $orange-400,
-  "orange-500": $orange-500,
-  "orange-600": $orange-600,
-  "orange-700": $orange-700,
-  "orange-800": $orange-800,
-  "orange-900": $orange-900,
-  "orange-1000": $orange-1000,
-) !default;
+$spacing: 0.25rem;
 
 // BS
 $primary: light("background-brand-bold") !default;
@@ -171,7 +43,7 @@ $success-bg-subtle: $ds-background-success !default;
 $info-bg-subtle: $ds-background-information !default;
 $warning-bg-subtle: $ds-background-warning !default;
 $danger-bg-subtle: $ds-background-danger !default;
-$light-bg-subtle: $neutral-100a !default;
+$light-bg-subtle: $neutral-100-alpha !default;
 $dark-bg-subtle: $neutral-600 !default;
 $discovery-bg-subtle: $ds-background-discovery !default;
 
@@ -386,7 +258,7 @@ $table-active-bg: $ds-background-selected !default;
 $table-hover-bg-factor: 1 !default;
 $table-hover-bg: $ds-background-neutral-subtle-hovered !default;
 
-$table-striped-bg: $neutral-100a !default;
+$table-striped-bg: $neutral-100-alpha !default;
 
 // Figure
 $figure-caption-font-size: 0.875rem !default;
