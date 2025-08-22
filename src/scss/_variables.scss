@@ -25,7 +25,6 @@ $warning: light("background-warning-bold") !default;
 $danger: light("background-danger-bold") !default;
 $light: $neutral-100 !default;
 $dark: $neutral-1100 !default;
-$discovery: light("background-discovery-bold") !default;
 
 $primary-text-emphasis: $ds-text !default;
 $secondary-text-emphasis: $ds-text !default;
@@ -35,7 +34,6 @@ $warning-text-emphasis: $ds-text !default;
 $danger-text-emphasis: $ds-text !default;
 $light-text-emphasis: $ds-text !default;
 $dark-text-emphasis: $ds-text-inverse !default;
-$discovery-text-emphasis: $ds-text !default;
 
 $primary-bg-subtle: $ds-background-brand-subtlest !default;
 $secondary-bg-subtle: $ds-background-accent-gray-subtler !default;
@@ -45,7 +43,6 @@ $warning-bg-subtle: $ds-background-warning !default;
 $danger-bg-subtle: $ds-background-danger !default;
 $light-bg-subtle: $neutral-100-alpha !default;
 $dark-bg-subtle: $neutral-600 !default;
-$discovery-bg-subtle: $ds-background-discovery !default;
 
 $primary-border-subtle: light("background-accent-blue-subtle") !default;
 $secondary-border-subtle: light("background-accent-gray-subtle") !default;
@@ -55,7 +52,6 @@ $warning-border-subtle: light("background-accent-yellow-subtle") !default;
 $danger-border-subtle: light("background-accent-red-subtle") !default;
 $light-border-subtle: light("background-accent-gray-subtlest") !default;
 $dark-border-subtle: light("background-neutral-bold") !default;
-$discovery-border-subtle: light("background-accent-purple-subtle") !default;
 
 $theme-colors: (
   "primary": $primary,
@@ -66,7 +62,6 @@ $theme-colors: (
   "danger": $danger,
   "light": $light,
   "dark": $dark,
-  "discovery": $discovery,
 ) !default;
 
 // Spacing
@@ -722,7 +717,6 @@ $theme-colors-text: (
   "danger": $danger-text-emphasis,
   "light": $light-text-emphasis,
   "dark": $dark-text-emphasis,
-  "discovery": $discovery-text-emphasis,
 ) !default;
 
 $theme-colors-bg-subtle: (
@@ -734,7 +728,6 @@ $theme-colors-bg-subtle: (
   "danger": $danger-bg-subtle,
   "light": $light-bg-subtle,
   "dark": $dark-bg-subtle,
-  "discovery": $discovery-bg-subtle,
 ) !default;
 
 $theme-colors-border-subtle: (
@@ -746,7 +739,6 @@ $theme-colors-border-subtle: (
   "danger": $danger-border-subtle,
   "light": $light-border-subtle,
   "dark": $dark-border-subtle,
-  "discovery": $discovery-border-subtle,
 ) !default;
 
 // Utilities of Border
@@ -759,7 +751,6 @@ $utilities-border-subtle: (
   "danger-subtle": rgba-css-var("danger-border-subtle", "border"),
   "light-subtle": rgba-css-var("light-border-subtle", "border"),
   "dark-subtle": rgba-css-var("dark-border-subtle", "border"),
-  "discovery-subtle": rgba-css-var("discovery-border-subtle", "border"),
 ) !default;
 
 $utilities-bg-subtle: (
@@ -771,7 +762,6 @@ $utilities-bg-subtle: (
   "danger-subtle": $danger-bg-subtle,
   "light-subtle": $light-bg-subtle,
   "dark-subtle": $dark-bg-subtle,
-  "discovery-subtle": $discovery-bg-subtle,
 ) !default;
 
 // transform & transition
@@ -872,5 +862,4 @@ $text-decoration-color: (
   "danger": var(--#{$prefix}danger),
   "light": var(--#{$prefix}light),
   "dark": var(--#{$prefix}dark),
-  "discovery": var(--#{$prefix}discovery),
 ) !default;
