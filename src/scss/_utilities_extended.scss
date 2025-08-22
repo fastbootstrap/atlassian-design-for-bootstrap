@@ -4,6 +4,14 @@
 $utilities: map-merge(
   $utilities,
   (
+    "__font-family": (
+      property: font-family,
+      class: font,
+      values: (
+        sans: var(--font-sans),
+        serif: var(--font-serif),
+      ),
+    ),
     "__font-size": (
       rfs: true,
       property: font-size,

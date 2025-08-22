@@ -3,6 +3,8 @@
   @each $key, $value in $ds-colors {
     --color-#{$key}: #{$value};
   }
+  --font-sans: #{inspect($font-family-sans)};
+  --font-serif: #{inspect($font-family-serif)};
 }
 
 @include color-mode(light, true) {

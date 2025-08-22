@@ -2,7 +2,7 @@
 $enable-negative-margins: false !default;
 $enable-shadows: false !default;
 $enable-deprecation-messages: false !default;
-$prefix: bs- !default;
+$prefix: "" !default;
 
 $null-shadow: 0 0 0 transparent !default;
 $black: #000 !default;
@@ -122,10 +122,14 @@ $body-tertiary-color: light("text-subtlest") !default;
 $mark-bg: $yellow-100 !default;
 
 // Typography
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Fira Sans",
-  "Droid Sans", "Helvetica Neue", sans-serif !default;
-$font-family-monospace: "SFMono-Medium", "SF Mono", "Segoe UI Mono", "Roboto Mono", "Ubuntu Mono", Menlo, Consolas,
-  Courier, monospace !default;
+$font-family-sans-serif: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, "Helvetica Neue",
+  sans-serif !default;
+$font-family-monospace: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
+  monospace !default;
+$font-family-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+  "Noto Color Emoji" !default;
+$font-family-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif !default;
+
 $line-height-base: 1.42857142857143 !default; //  1.5 ?
 
 // Links
